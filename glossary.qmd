@@ -1,0 +1,83 @@
+# Glossary {.unnumbered}
+
+### artificial intelligence (AI) {#glossary-artificial-intelligence}
+
+A computer program that does things that usually need human thinking, like seeing, talking, translating, or making choices. Most AI today learns from examples.
+
+> **Example:**
+>
+> Face unlock on a phone, a translation app, and a chatbot all use AI.
+
+**See Also:** {{< glink "machine learning" >}}, {{< glink "computer program" >}}
+
+***
+
+### chatbot {#glossary-chatbot}
+
+An AI program that you talk to with words. You type or say something, and it answers.
+
+> **Example:**
+>
+> ChatGPT, Gemini, and Claude are chatbots.
+
+**See Also:** {{< glink "artificial intelligence" >}}, {{< glink prediction >}}
+
+***
+
+### computer program {#glossary-computer-program}
+
+A list of steps that a computer follows. Apps and games are computer programs.
+
+**See Also:** {{< glink rule >}}
+
+***
+
+### data {#glossary-data}
+
+Information, like pictures, words, numbers, or sounds. An AI learns from data.
+
+> **Example:**
+>
+> The Quick, Draw! AI learned from data: about 50 million drawings.
+
+**See Also:** {{< glink "machine learning" >}}
+
+***
+
+### machine learning {#glossary-machine-learning}
+
+A way to make AI. People do not write the rules. They give the computer many examples, and the computer finds the patterns by itself.
+
+**See Also:** {{< glink data >}}, {{< glink pattern >}}, {{< glink rule >}}
+
+***
+
+### pattern {#glossary-pattern}
+
+Something that is the same, or repeats, in many examples.
+
+> **Example:**
+>
+> In most drawings of a cat, the ears are two triangles on top of the head. That is a pattern.
+
+***
+
+### prediction {#glossary-prediction}
+
+A best guess about something you do not know yet. A prediction can be wrong.
+
+> **Example:**
+>
+> A phone keyboard makes a prediction about your next word.
+
+***
+
+### rule {#glossary-rule}
+
+An exact instruction that a computer follows: "If this happens, do that." In a normal computer program, a person writes the rules.
+
+> **Example:**
+>
+> An alarm clock follows one rule: "If the time is 7:00, ring."
+
+**See Also:** {{< glink "computer program" >}}, {{< glink "machine learning" >}}

@@ -1,0 +1,16 @@
+# Introduction {.unnumbered}
+
+**Unit 3: Brains and Neural Networks** (Weeks 4-6)
+
+A real look at how brain cells work, and how computer scientists copied the idea to build AI. We will act out a neural network as a class, watch one learn in real time on screen, and see how the same basic idea powers everything from chatbots to image generators and self-driving cars.
+
+***
+
+## What You'll Learn
+
+By the end of this unit, you will be able to:
+
+* Explain how a brain cell (neuron) sends a signal
+* Explain how an artificial neural network copies that idea
+* Act out a neural network as a class
+* Watch a neural network learn, and train one yourself

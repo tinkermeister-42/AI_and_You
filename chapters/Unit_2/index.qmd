@@ -1,0 +1,16 @@
+# Introduction {.unnumbered}
+
+**Unit 2: Where AI Came From** (Weeks 2-3)
+
+The story of AI from the 1950s to ChatGPT. The big dreams, the big failures, and the moments that changed everything. We will build a class timeline, watch some great short films, and meet the people who built the tools we use today.
+
+***
+
+## What You'll Learn
+
+By the end of this unit, you will be able to:
+
+* Tell the story of AI from the 1950s to today
+* Explain why early AI built on rules did not work for seeing and language
+* Name the people and moments that changed AI
+* Build a class timeline

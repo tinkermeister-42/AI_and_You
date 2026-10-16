@@ -1,0 +1,83 @@
+project:
+  type: book
+  post-render:
+    - bash ./scripts/build-glossary.sh
+
+resources:
+  - glossary.json
+  - scripts/*.js
+  # Printable lesson sheets.  The student copy is linked from each lesson page.
+  # The _KEY copy sits beside it and is deliberately not linked: it is
+  # reachable only by typing the URL.  Built by ./build.sh.
+  - handouts/Unit_*/*.pdf
+
+extensions:
+  - glossary
+  - headings
+
+format:
+  html:
+    theme:
+      - flatly
+    fontsize: 1.1em
+    linestretch: 1.6
+    css:
+      - styles/glossary-tooltips.css
+      - styles/custom-callouts.css
+      - styles/custom-general.css
+      - styles/ai-and-you.css
+    include-after-body:
+      - scripts/inject-custom.html
+
+book:
+  title: "AI and You"
+  author: "Andy Ross"
+  favicon: images/logo.png
+  image: images/logo.png
+  search: true
+
+  navbar:
+    search: true
+
+  sidebar:
+    search: true
+    logo: images/logo.png
+    collapse-level: 1
+
+  chapters:
+    - file: index.md
+
+    - part: "Unit 1: The Big Question"
+      chapters:
+        - file: chapters/Unit_1/index.qmd
+        - file: chapters/Unit_1/1.1_What_Is_AI.qmd
+
+    - part: "Unit 2: Where AI Came From"
+      chapters:
+        - file: chapters/Unit_2/index.qmd
+
+    - part: "Unit 3: Brains and Neural Networks"
+      chapters:
+        - file: chapters/Unit_3/index.qmd
+
+    - part: "Unit 4: Using AI Well"
+      chapters:
+        - file: chapters/Unit_4/index.qmd
+
+    - part: "Unit 5: When AI Gets It Wrong"
+      chapters:
+        - file: chapters/Unit_5/index.qmd
+
+    - part: "Unit 6: AI in the Real World"
+      chapters:
+        - file: chapters/Unit_6/index.qmd
+
+    - part: "Unit 7: AI and Being Human"
+      chapters:
+        - file: chapters/Unit_7/index.qmd
+
+    - part: "Unit 8: The Big Question, Again"
+      chapters:
+        - file: chapters/Unit_8/index.qmd
+
+    - file: glossary.qmd

@@ -1,0 +1,137 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\usepackage{amssymb}
+\usepackage{pifont}
+
+% one cell of the AI-or-not table: \yes is the right column, \no is not
+\newcommand{\yes}{\ifkey\textcolor{keyred}{\Large$\checkmark$}\else\Large$\square$\fi}
+\newcommand{\no}{\Large$\square$}
+\newcommand{\blank}[1]{\underline{\hspace{#1}}}
+\renewcommand{\arraystretch}{1.55}
+% ragged columns: no hyphenated words for students reading in a second language
+\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+
+\lessontitle{What Is AI?}
+\partner
+
+\vspace{0.6em}
+{\large\textbf{1. AI or not?}} Check one box for each thing.
+
+\vspace{0.3em}
+\begin{tabular}{|R{3.6in}|c|c|c|}
+\hline
+\textbf{Thing} & \textbf{AI} & \textbf{Not AI} & \textbf{Not sure} \\ \hline
+Calculator                                   & \no  & \yes & \no \\ \hline
+Translation app                              & \yes & \no  & \no \\ \hline
+Alarm clock                                  & \no  & \yes & \no \\ \hline
+Face unlock on a phone                       & \yes & \no  & \no \\ \hline
+``Videos for you'' on YouTube or TikTok      & \yes & \no  & \no \\ \hline
+Spell check                                  & \no  & \no  & \yes \ifkey\textcolor{keyred}{\small\ it depends}\fi \\ \hline
+Chatbot (like ChatGPT or Gemini)             & \yes & \no  & \no \\ \hline
+Maps app: ``Arrive in 12 min''               & \yes & \no  & \no \\ \hline
+Enemy in a video game                        & \no  & \no  & \yes \ifkey\textcolor{keyred}{\small\ it depends}\fi \\ \hline
+Self-driving car                             & \yes & \no  & \no \\ \hline
+\end{tabular}
+
+\vspace{0.7em}
+What do all the AI things have in common? They all \dots
+
+\vspace{0.5em}
+\blank{6.5in}\par
+\vspace{-1.6em}\ans{learn from examples and make predictions (best guesses).}
+
+\vspace{2.0em}
+{\large\textbf{2. Write a rule for ``cat.''}} A computer gets a picture. Your rule tells the computer: \textbf{Is this a cat?}
+
+\vspace{0.8em}
+It is a cat if it has \blank{4.9in}\par
+\vspace{-1.6em}\hspace{1.4in}\ans{Answers vary. Example: pointy ears, whiskers, and four legs.}
+
+\vspace{1.0em}
+\blank{6.5in}
+
+\vspace{0.8em}
+\begin{center}\resizebox{0.92\linewidth}{!}{\fig{Unit_1/1.1_cat_rule_test}}\end{center}
+
+\vspace{0.2em}
+Test your rule on each picture.
+
+\vspace{0.3em}
+\begin{tabular}{|c|R{2.4in}|R{2.4in}|}
+\hline
+\textbf{Picture} & \textbf{My rule says} (cat / not a cat) & \textbf{Is my rule right?} (yes / no) \\ \hline
+A & \ans{cat (example rule)} & \ans{yes} \\ \hline
+B & \ans{cat} & \ans{no, it is a fox} \\ \hline
+C & \ans{not a cat (no legs)} & \ans{no, it is a cat} \\ \hline
+\end{tabular}
+
+\newpage
+
+{\large\textbf{3. Quick, Draw!}} Go to \texttt{quickdraw.withgoogle.com}. Play all 6 rounds.
+
+\vspace{0.3em}
+\begin{tabular}{|c|R{2.0in}|R{1.75in}|R{1.85in}|}
+\hline
+\textbf{Round} & \textbf{Word} & \textbf{Did the AI guess it?} & \textbf{About how many seconds?} \\ \hline
+1 & \ans{Answers vary.} & & \\ \hline
+2 & & & \\ \hline
+3 & & & \\ \hline
+4 & & & \\ \hline
+5 & & & \\ \hline
+6 & & & \\ \hline
+\end{tabular}
+
+\vspace{0.8em}
+Pick a drawing that the AI did \textbf{not} guess. What did the AI guess it was?
+
+\vspace{0.6em}
+\blank{6.5in}
+
+\vspace{1.1em}
+{\large\textbf{4. Words in my language.}} Write each word in your language.
+
+\vspace{0.3em}
+{\renewcommand{\arraystretch}{1.85}\begin{tabular}{|R{1.65in}|R{3.25in}|R{1.55in}|}
+\hline
+\textbf{Word} & \textbf{Meaning} & \textbf{In my language} \\ \hline
+artificial intelligence (AI) & a computer program that does things that usually need human thinking & \ans{Answers vary.} \\ \hline
+computer program & a list of steps that a computer follows & \\ \hline
+rule & an exact instruction: ``If this happens, do that.'' & \\ \hline
+data & information, like pictures, words, or numbers & \\ \hline
+pattern & something that is the same in many examples & \\ \hline
+machine learning & a computer finds patterns in many examples & \\ \hline
+prediction & a best guess about something you do not know yet & \\ \hline
+\end{tabular}}
+
+\vfill
+\noindent{\Large\ding{34}}\,\dotfill\ \textit{Cut here. Mr. Ross keeps this part.}\ \dotfill
+
+\vspace{0.6em}
+\noindent\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{%
+\vspace{0.4em}
+Name \blank{2.6in} \hfill Date \blank{1.4in}
+
+\vspace{0.8em}
+{\Large\textbf{The Big Question: Is AI like a human brain?}}
+
+\vspace{0.5em}
+Circle one: \qquad \textbf{\large Yes} \qquad\qquad \textbf{\large A little} \qquad\qquad \textbf{\large No}
+
+\vspace{0.7em}
+My reason: \blank{5.6in}\par
+\vspace{-1.6em}\hspace{0.95in}\ans{Answers vary. Any answer with a reason is a good answer.}
+
+\vspace{0.9em}
+\blank{6.6in}
+
+\vspace{0.9em}
+\blank{6.6in}
+
+\vspace{0.5em}
+{\small\textit{Sentence starters:} I think AI is / is not / is a little like a human brain because \dots \quad AI and my brain both \dots \quad My brain can \dots, but AI cannot.}
+\vspace{0.3em}
+}}
+
+\end{document}

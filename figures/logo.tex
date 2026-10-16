@@ -1,0 +1,15 @@
+\documentclass[border=0pt]{standalone}
+\input{preamble}
+% Site logo and favicon.  Build by hand (it is not a Unit figure):
+%   cd figures && pdflatex logo.tex
+%   pdftocairo -svg logo.pdf ../images/logo.svg
+%   pdftocairo -png -singlefile -scale-to 256 logo.pdf ../images/logo
+\begin{document}
+\begin{tikzpicture}
+\fill[ink, rounded corners=10pt] (0,0) rectangle (3,3);
+\node[cloud, cloud puffs=10, cloud puff arc=115, aspect=1.4, draw=brainpink!60, fill=brainpink!35,
+      line width=1.2pt, minimum width=2.4cm, minimum height=1.55cm] at (1.5,1.85) {};
+\node[font=\fontsize{40}{40}\selectfont\bfseries, text=white] at (1.5,1.82) {AI};
+\node[font=\Large\bfseries, text=white] at (1.5,0.55) {\& You};
+\end{tikzpicture}
+\end{document}
