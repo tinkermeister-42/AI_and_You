@@ -1,0 +1,336 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI and You",
+    "section": "",
+    "text": "Welcome to AI and You\nA mini-block class with Mr. Ross at Frederick Douglass High School",
+    "crumbs": [
+      "Welcome to AI and You"
+    ]
+  },
+  {
+    "objectID": "index.html#about-the-class",
+    "href": "index.html#about-the-class",
+    "title": "AI and You",
+    "section": "🧭 About the Class",
+    "text": "🧭 About the Class\nAI is everywhere now. It writes, draws, talks, answers questions, and even pretends to be a friend. Some people say it thinks like a human brain. Is that true? In this class we will find out.\nWe will see what AI can do, learn the story of how it was built, look at how it works (and how it is a little like the brain in your head), and try it out for real tasks. By the end, you will know how to use AI well, spot it when it is wrong, and decide for yourself what you think about it and the world it is building.",
+    "crumbs": [
+      "Welcome to AI and You"
+    ]
+  },
+  {
+    "objectID": "index.html#about-your-teacher",
+    "href": "index.html#about-your-teacher",
+    "title": "AI and You",
+    "section": "👋 About Your Teacher",
+    "text": "👋 About Your Teacher\nBefore teaching, Mr. Ross spent over 15 years working in AI and data science, including time at Wolfram Research (the makers of Mathematica) and nearly a decade helping build a data science team at a Missouri company. He has a background in biology and statistics and still does AI work outside of school. He has been working with these tools since long before ChatGPT existed.",
+    "crumbs": [
+      "Welcome to AI and You"
+    ]
+  },
+  {
+    "objectID": "index.html#what-you-will-learn",
+    "href": "index.html#what-you-will-learn",
+    "title": "AI and You",
+    "section": "🎯 What You Will Learn",
+    "text": "🎯 What You Will Learn\n\nHow to use AI tools for writing, school, art, and real-life problems.\nThe basic story of how AI was built and how it works.\nHow AI is and is not like the human brain.\nHow to catch AI when it makes things up or gets things wrong.\nHow AI is changing creativity, friendship, jobs, and the news.\nWhat AI might mean for your future, and what you think about that.",
+    "crumbs": [
+      "Welcome to AI and You"
+    ]
+  },
+  {
+    "objectID": "index.html#the-units",
+    "href": "index.html#the-units",
+    "title": "AI and You",
+    "section": "🗺️ The Units",
+    "text": "🗺️ The Units\n\n\n\nUnit\nWeeks\nWhat we do\n\n\n\n\n1: The Big Question\n1\nPlay with AI. Write your first answer: is AI like a human brain?\n\n\n2: Where AI Came From\n2-3\nThe story of AI from the 1950s to ChatGPT.\n\n\n3: Brains and Neural Networks\n4-6\nHow brain cells work, and how computers copy the idea.\n\n\n4: Using AI Well\n7-11\nUse AI for writing, research, translation, math, and art. Finish a real project.\n\n\n5: When AI Gets It Wrong\n12-13\nCatch AI when it is wrong, biased, or fake.\n\n\n6: AI in the Real World\n14-15\nPrivacy, scams, jobs, school, and the news.\n\n\n7: AI and Being Human\n16\nAI friends, AI art, and the hard questions.\n\n\n8: The Big Question, Again\n17\nAnswer the big question again in a final project.",
+    "crumbs": [
+      "Welcome to AI and You"
+    ]
+  },
+  {
+    "objectID": "index.html#how-each-lesson-works",
+    "href": "index.html#how-each-lesson-works",
+    "title": "AI and You",
+    "section": "🧩 How Each Lesson Works",
+    "text": "🧩 How Each Lesson Works\nEvery lesson is 40 minutes, and every lesson includes a hands-on activity.\n\n\n\n\n\n\n\n\n\nPart\nWhat you do\n\n\n\n\n🔥\nWarm Up\nA quick question or game to start thinking.\n\n\n👥\nLearn Together\nNew ideas with pictures and examples.\n\n\n🛠️\nTry It\nUse a real AI tool or do an activity.\n\n\n🧠\nThe Big Question\nIs AI like a human brain? Add to your answer.\n\n\n📺\nWatch\nA short video. Turn on captions in your language.\n\n\n🚀\nGo Further\nProjects and links to explore on your own.\n\n\n\nEach lesson has a printable sheet to write on in class.\n\nThis book was written by Mr. Ross in collaboration with Claude, an AI assistant made by Anthropic.",
+    "crumbs": [
+      "Welcome to AI and You"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/index.html",
+    "href": "chapters/Unit_1/index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "What You’ll Learn\nUnit 1: The Big Question (Week 1)\nWe start by playing with AI and asking the question that will run through the whole class: is this thing really like a human brain? You will write down your first answer. We will come back to it at the end of the semester.\nBy the end of this unit, you will be able to:",
+    "crumbs": [
+      "Unit 1: The Big Question",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/index.html#what-youll-learn",
+    "href": "chapters/Unit_1/index.html#what-youll-learn",
+    "title": "Introduction",
+    "section": "",
+    "text": "Find AI in your everyday life\nExplain how AI is different from a normal computer program\nExplain how AI learns from examples and makes predictions\nWrite your first answer to the big question",
+    "crumbs": [
+      "Unit 1: The Big Question",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/index.html#topics-in-this-unit",
+    "href": "chapters/Unit_1/index.html#topics-in-this-unit",
+    "title": "Introduction",
+    "section": "Topics in This Unit",
+    "text": "Topics in This Unit\nWhat Is AI?\nSort things into AI and not AI, try to write a rule for “cat,” and play a drawing game against an AI.",
+    "crumbs": [
+      "Unit 1: The Big Question",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.1_What_Is_AI.html",
+    "href": "chapters/Unit_1/1.1_What_Is_AI.html",
+    "title": "1.1 - What Is AI?",
+    "section": "",
+    "text": "🔥 Warm Up\nYour phone opens when it sees your face. A video app knows what you want to watch next. A chatbot writes a story in two seconds.\nAll of these use AI. But what is AI? How is it different from a normal computer program? And is it like a human brain?\nToday you sort things into AI and not AI. You try to teach a computer what a cat is. Then you play a drawing game against an AI.\nLook at these 10 things. Which ones use AI?\nPress a choice on each card: AI, Not AI, or Not sure. Talk with a partner. You do not need to agree.",
+    "crumbs": [
+      "Unit 1: The Big Question",
+      "1.1 - What Is AI?"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.1_What_Is_AI.html#warmup",
+    "href": "chapters/Unit_1/1.1_What_Is_AI.html#warmup",
+    "title": "1.1 - What Is AI?",
+    "section": "",
+    "text": "👀 Show Mr. Ross's answers\n    ↺ Start over\n  \n\n\n\n\n\n\nThey all learn from examples, and they all make guesses.\nThe calculator and the alarm clock do not learn. They only follow rules that a person wrote.",
+    "crumbs": [
+      "Unit 1: The Big Question",
+      "1.1 - What Is AI?"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.1_What_Is_AI.html#learn",
+    "href": "chapters/Unit_1/1.1_What_Is_AI.html#learn",
+    "title": "1.1 - What Is AI?",
+    "section": "👥 Learn Together",
+    "text": "👥 Learn Together\n\n1.1.1 - What Does “AI” Mean?\nAI means artificial intelligence.\n\n\n\n\n\n\n\n\nWord\nMeaning\nExample\n\n\n\n\nArtificial\nmade by people\nArtificial flowers are made of plastic or paper.\n\n\nIntelligence\nthe ability to learn, understand, and solve problems\nYou use intelligence to learn a new language.\n\n\n\nSo AI is a computer program that does things that usually need human thinking. AI can see faces, understand speech, translate languages, and write.\nMost AI today does these things in a new way. It learns from examples. Let’s see why.\n\n\n\n1.1.2 - Can You Write a Rule for “Cat”?\nA normal computer program follows rules. A person writes every rule.\n\n\n\nProgram\nA rule a person wrote\n\n\n\n\n🔢 Calculator\nIf someone presses 2 + 3 =, show 5.\n\n\n⏰ Alarm clock\nIf the time is 7:00, ring.\n\n\n\nThese rules are easy to write. Now try a hard one.\n\nA computer gets a picture. Write a rule that tells the computer: Is this a cat?\nStart like this: “It is a cat if it has …”\nWrite your rule on your sheet. Then test your rule on these three pictures. Does your rule give the right answer for each one?\n\n\n\n\n\n\n\nProbably not. Many students write: “It is a cat if it has pointy ears, whiskers, and four legs.”\n\nPicture B is a fox. It has pointy ears, whiskers, and four legs. The rule says “cat.” That is wrong.\nPicture C is a cat. It is sleeping, so you cannot see its legs. The rule says “not a cat.” That is wrong too.\n\nYou can fix the rule. But then a new picture breaks it again.\n\nFor many years, scientists tried to build AI with rules. Rules worked for some jobs, like playing chess. Rules did not work well for seeing, hearing, or language. (You will learn this story in Unit 2.)\nSo scientists tried a different idea:\n\nDo not write the rules.\nShow the computer many examples. Each example has the right answer.\nLet the computer find the pattern by itself.\n\nThis idea is called machine learning. The examples are called data.\n\n\n\n\n\n\n\nNormal program: a person writes the rules. The computer follows them.\nMachine learning: a person gives examples. The computer makes its own rules.\n\n\n\n\n\n1.1.3 - AI Makes Predictions\nFinish this sentence:\n\nAfter school, I like to eat …\n\nYou did not know the answer from the sentence. You made a prediction. You used patterns from your own life.\nAI makes predictions too.\n\n\n\n\n\n\nA phone keyboard predicts your next word.\nA video app predicts the next video you will like.\nA chatbot predicts the next word of its answer. Then it predicts the next one. It does this again and again, very fast.\n\n\nAI does not know the answer. It makes its best guess from patterns. Most of the time, the guess is good. Sometimes it is very wrong. In Unit 5, you will learn how to catch it.",
+    "crumbs": [
+      "Unit 1: The Big Question",
+      "1.1 - What Is AI?"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.1_What_Is_AI.html#try-it",
+    "href": "chapters/Unit_1/1.1_What_Is_AI.html#try-it",
+    "title": "1.1 - What Is AI?",
+    "section": "🛠️ Try It",
+    "text": "🛠️ Try It\n\n1.1.4 - Quick, Draw!\nQuick, Draw! is a game made by Google. You draw. An AI tries to guess what you are drawing.\nThe AI learned from about 50 million drawings. People from all over the world made them.\n✏️ Open Quick, Draw!\n\n\nClick Let’s Draw!\nThe game shows a word. Draw it. You have 20 seconds. (If you do not know the word, ask a partner.)\nPlay all 6 rounds.\nWrite your results on your sheet. Did the AI guess? About how many seconds did it take?\nAt the end, click a drawing that the AI did not guess. Look at what the AI guessed.\nLook at how other people drew the same thing.\n\n\n\nThe game saves your drawings and your country. Google shares the drawings with scientists around the world. Do not write your name or anything private in a drawing.\n\n\nThe AI learned from millions of drawings. Your first lines looked like the start of drawings it saw before. So it made a prediction. It did not wait for the whole picture.\n\n\nMaybe your drawing was different from most people’s drawings. AI learns what is common in its data. When something is rare or different, AI often guesses wrong.\nYou will see this problem again in Unit 5, when we study bias.",
+    "crumbs": [
+      "Unit 1: The Big Question",
+      "1.1 - What Is AI?"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.1_What_Is_AI.html#big-question",
+    "href": "chapters/Unit_1/1.1_What_Is_AI.html#big-question",
+    "title": "1.1 - What Is AI?",
+    "section": "🧠 The Big Question",
+    "text": "🧠 The Big Question\n\n\n\n\n\nThis question goes through the whole class. You do not need to know the answer today. Use what you saw: the cards, the cat rule, and the drawing game.\n\nIs AI like a human brain?\n\nOn your sheet, circle one: Yes, A little, or No.\nWrite one reason.\nTell a partner your answer and your reason.\nMr. Ross keeps your answer. You will read it again in Week 17.\n\n\n\n\nI think AI is / is not / is a little like a human brain because …\nAI and my brain both …\nMy brain can … , but AI cannot.\nI agree with ___ because …\nI disagree with ___ because …",
+    "crumbs": [
+      "Unit 1: The Big Question",
+      "1.1 - What Is AI?"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.1_What_Is_AI.html#watch",
+    "href": "chapters/Unit_1/1.1_What_Is_AI.html#watch",
+    "title": "1.1 - What Is AI?",
+    "section": "📺 Watch",
+    "text": "📺 Watch\nWatch this at home or if we have time in class. It shows more examples of machine learning in your life.\n\n\nWhile you watch: Find two things in your life that use machine learning.\nCaptions in your language: Press CC to turn on captions. Then press ⚙️ Settings, then Subtitles/CC, then Auto-translate. Choose your language.",
+    "crumbs": [
+      "Unit 1: The Big Question",
+      "1.1 - What Is AI?"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.1_What_Is_AI.html#go-further",
+    "href": "chapters/Unit_1/1.1_What_Is_AI.html#go-further",
+    "title": "1.1 - What Is AI?",
+    "section": "🚀 Go Further",
+    "text": "🚀 Go Further\n\nFor one day, write down every time you see or use AI. Look at your phone, your apps, games, stores, and cars. Bring your list to class. Who found the most?\n\n\nPlay Quick, Draw! again. Find a word that the AI never guesses from your drawings. Then look at how other people drew that word. Why did the AI miss yours?\n\nMore to explore\n\nQuick, Draw! The Data: Pick one word. Look at hundreds of drawings of it. What do most people draw?\nAutoDraw: Draw something fast and messy. AI guesses what you wanted and gives you a clean picture.\nTeachable Machine: Teach a computer to know your own pictures or sounds. We will use it in Unit 3.\nHow AI Works (Code.org): More short videos about AI. We will watch some of them in this class.",
+    "crumbs": [
+      "Unit 1: The Big Question",
+      "1.1 - What Is AI?"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_2/index.html",
+    "href": "chapters/Unit_2/index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "What You’ll Learn\nUnit 2: Where AI Came From (Weeks 2-3)\nThe story of AI from the 1950s to ChatGPT. The big dreams, the big failures, and the moments that changed everything. We will build a class timeline, watch some great short films, and meet the people who built the tools we use today.\nBy the end of this unit, you will be able to:",
+    "crumbs": [
+      "Unit 2: Where AI Came From",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_2/index.html#what-youll-learn",
+    "href": "chapters/Unit_2/index.html#what-youll-learn",
+    "title": "Introduction",
+    "section": "",
+    "text": "Tell the story of AI from the 1950s to today\nExplain why early AI built on rules did not work for seeing and language\nName the people and moments that changed AI\nBuild a class timeline",
+    "crumbs": [
+      "Unit 2: Where AI Came From",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_3/index.html",
+    "href": "chapters/Unit_3/index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "What You’ll Learn\nUnit 3: Brains and Neural Networks (Weeks 4-6)\nA real look at how brain cells work, and how computer scientists copied the idea to build AI. We will act out a neural network as a class, watch one learn in real time on screen, and see how the same basic idea powers everything from chatbots to image generators and self-driving cars.\nBy the end of this unit, you will be able to:",
+    "crumbs": [
+      "Unit 3: Brains and Neural Networks",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_3/index.html#what-youll-learn",
+    "href": "chapters/Unit_3/index.html#what-youll-learn",
+    "title": "Introduction",
+    "section": "",
+    "text": "Explain how a brain cell (neuron) sends a signal\nExplain how an artificial neural network copies that idea\nAct out a neural network as a class\nWatch a neural network learn, and train one yourself",
+    "crumbs": [
+      "Unit 3: Brains and Neural Networks",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_4/index.html",
+    "href": "chapters/Unit_4/index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "What You’ll Learn\nUnit 4: Using AI Well (Weeks 7-11)\nThe heart of the class. You will learn how to ask AI good questions, use it to help with writing, research, translation, math, and art, and finish a real project that uses AI to do something useful in your life. We will have time to revise, get feedback, and do the work right.\nBy the end of this unit, you will be able to:",
+    "crumbs": [
+      "Unit 4: Using AI Well",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_4/index.html#what-youll-learn",
+    "href": "chapters/Unit_4/index.html#what-youll-learn",
+    "title": "Introduction",
+    "section": "",
+    "text": "Write clear prompts and improve them\nUse AI to help with writing, research, translation, math, and art\nCheck AI’s work before you use it\nFinish a real project that uses AI to do something useful in your life",
+    "crumbs": [
+      "Unit 4: Using AI Well",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_5/index.html",
+    "href": "chapters/Unit_5/index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "What You’ll Learn\nUnit 5: When AI Gets It Wrong (Weeks 12-13)\nAI lies, AI is biased, and AI can be used to fake videos and voices. We will learn how to catch it, how to check its work, and why “AI cheat detectors” do not really work. You will build your own toolkit for spotting AI-generated content.\nBy the end of this unit, you will be able to:",
+    "crumbs": [
+      "Unit 5: When AI Gets It Wrong",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_5/index.html#what-youll-learn",
+    "href": "chapters/Unit_5/index.html#what-youll-learn",
+    "title": "Introduction",
+    "section": "",
+    "text": "Catch AI when it makes things up\nExplain where bias in AI comes from\nSpot fake pictures, videos, and voices\nExplain why AI cheat detectors do not really work\nBuild your own toolkit for spotting AI-generated content",
+    "crumbs": [
+      "Unit 5: When AI Gets It Wrong",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_6/index.html",
+    "href": "chapters/Unit_6/index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "What You’ll Learn\nUnit 6: AI in the Real World (Weeks 14-15)\nWhat AI means for your privacy, your future job, your school, and the news you see. We will look at real scams, real changes happening in the workplace right now, and have honest conversations about what is coming.\nBy the end of this unit, you will be able to:",
+    "crumbs": [
+      "Unit 6: AI in the Real World",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_6/index.html#what-youll-learn",
+    "href": "chapters/Unit_6/index.html#what-youll-learn",
+    "title": "Introduction",
+    "section": "",
+    "text": "Protect your privacy when you use AI\nRecognize real AI scams\nDescribe how AI is changing jobs right now\nThink about how AI changes the news you see",
+    "crumbs": [
+      "Unit 6: AI in the Real World",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_7/index.html",
+    "href": "chapters/Unit_7/index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "What You’ll Learn\nUnit 7: AI and Being Human (Week 16)\nAI can write poems, make art, and act like a friend. What does that mean for us? We will talk about AI companions, AI art, and the harder questions: can a machine be creative? Can it really care about you? Should you care about it?\nBy the end of this unit, you will be able to:",
+    "crumbs": [
+      "Unit 7: AI and Being Human",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_7/index.html#what-youll-learn",
+    "href": "chapters/Unit_7/index.html#what-youll-learn",
+    "title": "Introduction",
+    "section": "",
+    "text": "Talk about AI companions and AI friends\nDecide what you think about AI art\nGive your opinion on hard questions: Can a machine be creative? Can it care about you?",
+    "crumbs": [
+      "Unit 7: AI and Being Human",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_8/index.html",
+    "href": "chapters/Unit_8/index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "What You’ll Learn\nUnit 8: The Big Question, Again (Week 17)\nWe come back to where we started. Now that you know how AI works, is it really like a brain? You will share what you think in a final project of your choice: a poster, a video, a slideshow, or a talk.\nBy the end of this unit, you will be able to:",
+    "crumbs": [
+      "Unit 8: The Big Question, Again",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_8/index.html#what-youll-learn",
+    "href": "chapters/Unit_8/index.html#what-youll-learn",
+    "title": "Introduction",
+    "section": "",
+    "text": "Read your first answer from Week 1\nUse what you learned to answer the big question again\nShare your answer in a final project: a poster, a video, a slideshow, or a talk",
+    "crumbs": [
+      "Unit 8: The Big Question, Again",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "glossary.html",
+    "href": "glossary.html",
+    "title": "Glossary",
+    "section": "",
+    "text": "artificial intelligence (AI)\nA computer program that does things that usually need human thinking, like seeing, talking, translating, or making choices. Most AI today learns from examples.\n\nExample:\nFace unlock on a phone, a translation app, and a chatbot all use AI.\n\nSee Also: machine learning, computer program\n\n\n\nchatbot\nAn AI program that you talk to with words. You type or say something, and it answers.\n\nExample:\nChatGPT, Gemini, and Claude are chatbots.\n\nSee Also: artificial intelligence, prediction\n\n\n\ncomputer program\nA list of steps that a computer follows. Apps and games are computer programs.\nSee Also: rule\n\n\n\ndata\nInformation, like pictures, words, numbers, or sounds. An AI learns from data.\n\nExample:\nThe Quick, Draw! AI learned from data: about 50 million drawings.\n\nSee Also: machine learning\n\n\n\nmachine learning\nA way to make AI. People do not write the rules. They give the computer many examples, and the computer finds the patterns by itself.\nSee Also: data, pattern, rule\n\n\n\npattern\nSomething that is the same, or repeats, in many examples.\n\nExample:\nIn most drawings of a cat, the ears are two triangles on top of the head. That is a pattern.\n\n\n\n\nprediction\nA best guess about something you do not know yet. A prediction can be wrong.\n\nExample:\nA phone keyboard makes a prediction about your next word.\n\n\n\n\nrule\nAn exact instruction that a computer follows: “If this happens, do that.” In a normal computer program, a person writes the rules.\n\nExample:\nAn alarm clock follows one rule: “If the time is 7:00, ring.”\n\nSee Also: computer program, machine learning",
+    "crumbs": [
+      "Glossary"
+    ]
+  }
+]
