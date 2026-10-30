@@ -238,6 +238,6 @@ To know what something means, not only what it looks like. Whether AI can unders
 
 > **Example:**
 >
-> In the Chinese Room, the person copies correct replies in Chinese, but they do not understand Chinese.
+> In the Klingon Room, the person copies correct replies in Klingon, but they do not understand Klingon.
 
 **See Also:** {{< glink "ELIZA effect" >}}

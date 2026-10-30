@@ -126,7 +126,7 @@ The teacher wants kids' hands on real things in every lesson.
 - **Famous experiments, acted out.** The teacher wants classic experiments
   and thought experiments folded in where they fit, in a `.experiment`
   callout, with the class physically acting them out when possible: the
-  Turing test (1.2), the Chinese Room (1.3), Pavlov (2.3), Rule 30 and the Game of Life (2.1, the teacher worked at Wolfram
+  Turing test (1.2), the Chinese Room (1.3, acted out in Klingon as "the Klingon Room": the teacher does not want a real language playing the unreadable one), Pavlov (2.3), Rule 30 and the Game of Life (2.1, the teacher worked at Wolfram
   Research), Clever Hans and the husky that was really a snow detector (4.2), the trolley problem and
   the Moral Machine (6.4), the paperclip maximizer (6.5), replacing a brain
   one neuron at a time (6.6)

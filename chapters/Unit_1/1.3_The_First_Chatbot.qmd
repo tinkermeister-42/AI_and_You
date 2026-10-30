@@ -4,7 +4,7 @@ In 1966, people at a university in Massachusetts talked to a computer program na
 
 ELIZA understood nothing. It followed a list of {{< glink slug="rule" text="rules" >}} that one person wrote.
 
-Today, you chat with ELIZA, read its rules, and write your own. Then you act out a famous puzzle: a person who answers notes in Chinese without knowing any Chinese.
+Today, you chat with ELIZA, read its rules, and write your own. Then you act out a famous puzzle: a person who answers notes in a language they do not know.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
@@ -12,7 +12,7 @@ Today, you chat with ELIZA, read its rules, and write your own. Then you act out
 - [🔥]{.icon} **Warm Up** Be ELIZA [5 min]{.time}
 - [👥]{.icon} **Learn Together** How ELIZA works [8 min]{.time}
 - [🛠️]{.icon} **Try It** Change ELIZA's rules [10 min]{.time}
-- [🧪]{.icon} **Famous Experiment** The Chinese Room [10 min]{.time}
+- [🧪]{.icon} **Famous Experiment** The Klingon Room [10 min]{.time}
 - [💬]{.icon} **Talk About It** Does it understand? [7 min]{.time}
 :::
 
@@ -28,7 +28,7 @@ Today, you chat with ELIZA, read its rules, and write your own. Then you act out
 - [🔑]{.icon} {{< glink "key word" >}}: a word that a program looks for to decide what to do
 - [📏]{.icon} {{< glink rule >}}: an exact instruction, like "If this happens, do that."
 - [🪞]{.icon} {{< glink "ELIZA effect" >}}: when people feel that a computer understands them, but it does not
-- [🀄]{.icon} {{< glink "understand" >}}: to know what something means, not only what it looks like
+- [💡]{.icon} {{< glink "understand" >}}: to know what something means, not only what it looks like
 :::
 ::::
 
@@ -37,7 +37,7 @@ Today, you chat with ELIZA, read its rules, and write your own. Then you act out
 :::
 
 :::{.guided-notes-link}
-[Chinese Room rule book and note cards](/handouts/Unit_1/1.3_Chinese_Room_Rule_Book.pdf){target="_blank"} - print one set for each group.
+[Klingon Room rule book and note cards](/handouts/Unit_1/1.3_Klingon_Room_Rule_Book.pdf){target="_blank"} - print one set for each group.
 :::
 
 {{< warmup >}}
@@ -127,50 +127,50 @@ Nobody wrote rules in your language. ELIZA can only do what its rules say. A rul
 :::{.experiment title="The Chinese Room (John Searle, 1980)"}
 A philosopher named **John Searle** asked people to imagine this:
 
-![](/images/Unit_1/1.3_chinese_room.svg){width="560px" fig-align="center" fig-alt="A person who knows Chinese passes a note in Chinese into a closed room. Inside, a person who does not know Chinese looks in a rule book and passes a reply in Chinese back out."}
-
-- A person sits in a closed room. They do **not** know any Chinese.
-- Notes in Chinese come in through a slot.
+- A person sits in a closed room. They do **not** know the language of the notes.
+- Notes come in through a slot.
 - The person has a **rule book**. It says: *"If you see these shapes, send back those shapes."*
 - The person finds the shapes and copies the reply. They pass it out.
-- Outside, people who know Chinese read the replies. The replies make sense! They think someone in the room knows Chinese.
+- Outside, people who know the language read the replies. The replies make sense! They think someone in the room knows the language.
 
-**Does anyone in the room understand Chinese?**
+**Does anyone in the room understand the language?**
 :::
 
-**Act it out.** Work in a group of **2 to 4**: one person in the room, the rest outside. Each group needs one rule book and one set of note cards. (Only 4 in class? Be one group, and take turns going in the room.)
+**Act it out: the Klingon Room.** Searle imagined notes in Chinese, a language he could not read. We will use **Klingon**. It is a language made up for the *Star Trek* TV shows and movies. (Some fans really speak it!)
+
+![](/images/Unit_1/1.3_klingon_room.svg){width="560px" fig-align="center" fig-alt="A person who knows Klingon passes a note into a closed room. Inside, a person who does not know Klingon looks in a rule book and passes a reply in Klingon back out."}
+
+Work in a group of **2 to 4**: one person in the room, the rest outside. Each group needs one rule book and one set of note cards. (Only 4 in class? Be one group, and take turns going in the room.)
 
 :::{.steps}
 1. One person is **in the room**. Sit behind a folder or a book so the others cannot see you. Take the rule book.
 2. Everyone else is **outside**. Share the note cards. Fold back the English part.
-3. Pass one note into the room. The person in the room finds the same shapes in the rule book and copies the reply on the back. Pass it out.
+3. Pass one note into the room. The person in the room finds the note that looks **exactly** the same in the rule book. They copy the reply on the back. Pass it out.
 4. Outside: check the reply with the English on your card. Does it make sense?
 5. Do all 6 notes. Then switch: a new person goes in the room.
 :::
 
-:::{.gotcha title="If you read Chinese"}
-You cannot be in the room, because you already know what the notes say! Be the person outside who checks the replies.
-:::
+:::{.think title="Look at the note that asks, &quot;Do you speak Klingon?&quot; What did the room say?"}
+The room answered: *"Yes. I am learning Klingon."*
 
-:::{.think title="Look at note 6. What did the room say?"}
-Note 6 asks: *"Can you speak Chinese?"* The room answered: *"Yes, I can speak Chinese."*
+But the person in the room does not know any Klingon. The answer sounds right, and it is **not true**.
 
-But the person in the room does not know any Chinese. The answer is perfect, and it is **not true**.
+Now look at the note about the bathroom. The room said: *"I don't understand."* That one is true! But the room only said it because a rule told it to.
 :::
 
 {{< talk >}}
 
-Searle said: the person in the room does not understand Chinese. They only follow rules. **A computer is the same.** It follows rules, so it does not understand anything.
+Searle said: the person in the room does not understand the language. They only follow rules. **A computer is the same.** It follows rules, so it does not understand anything.
 
 Other people disagree. They say: maybe the person does not understand, but the **whole room** (the person plus the book) does.
 
 What do you think?
 
 :::{.frames}
-- The person in the room **does** / **does not** understand Chinese, because ...
-- The whole room **does** / **does not** understand Chinese, because ...
-- ELIZA is like the Chinese Room because ...
-- Today's chatbots are **like** / **not like** the Chinese Room, because ...
+- The person in the room **does** / **does not** understand Klingon, because ...
+- The whole room **does** / **does not** understand Klingon, because ...
+- ELIZA is like the Klingon Room because ...
+- Today's chatbots are **like** / **not like** the Klingon Room, because ...
 :::
 
 {{< further >}}

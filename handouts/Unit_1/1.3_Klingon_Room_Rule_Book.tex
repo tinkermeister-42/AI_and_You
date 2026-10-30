@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\usepackage{textcomp}
+% Klingon in a typewriter font, so the apostrophes stay straight.
+% Phrases: Omniglot, "Useful phrases in Klingon".
+\newcommand{\kl}[1]{{\ttfamily\bfseries #1}}
+\renewcommand{\arraystretch}{2.0}
+
+\begin{document}
+
+{\Large\bfseries The Klingon Room: Rule Book\ifkey\ \textcolor{keyred}{KEY}\fi}\par\vspace{0.6em}
+
+\textbf{For the person in the room.} A note comes in. Find the note that looks \textbf{exactly} the same in the left column. Big and small letters matter! Copy the reply from the right column onto the back of the note. Pass it out.
+
+\vspace{0.3em}
+You do not need to know what the notes say. Just match the shapes.
+
+\vspace{0.8em}
+\begin{center}
+\begin{tabular}{|c|m{2.9in}|m{3.0in}|}
+\hline
+ & \textbf{If the note looks like this \dots} & \textbf{\dots copy this reply.} \\ \hline
+1 & \Large\kl{qatlho\textquotesingle{}!}\ifkey\par{\normalsize\textcolor{keyred}{Thank you!}}\fi & \Large\kl{Qapla\textquotesingle{}!}\ifkey\par{\normalsize\textcolor{keyred}{Success!}}\fi \\ \hline
+2 & \Large\kl{tlhIngan Hol Dajatlh\textquotesingle{}a\textquotesingle{}?}\ifkey\par{\normalsize\textcolor{keyred}{Do you speak Klingon?}}\fi & \Large\kl{HIja\textquotesingle{}. tlhIngan Hol vIghojtaH.}\ifkey\par{\normalsize\textcolor{keyred}{Yes. I am learning Klingon.}}\fi \\ \hline
+3 & \Large\kl{bIpIv\textquotesingle{}a\textquotesingle{}?}\ifkey\par{\normalsize\textcolor{keyred}{Are you well?}}\fi & \Large\kl{jIpIv.}\ifkey\par{\normalsize\textcolor{keyred}{I am fine.}}\fi \\ \hline
+4 & \Large\kl{nuqDaq \textquotesingle{}oH puchpa\textquotesingle{}\textquotesingle{}e\textquotesingle{}?}\ifkey\par{\normalsize\textcolor{keyred}{Where is the bathroom?}}\fi & \Large\kl{jIyajbe\textquotesingle{}.}\ifkey\par{\normalsize\textcolor{keyred}{I don't understand.}}\fi \\ \hline
+5 & \Large\kl{nuqneH}\ifkey\par{\normalsize\textcolor{keyred}{Hello!}}\fi & \Large\kl{bIpIv\textquotesingle{}a\textquotesingle{}?}\ifkey\par{\normalsize\textcolor{keyred}{Are you well?}}\fi \\ \hline
+6 & \Large\kl{nuq \textquotesingle{}oH ponglIj\textquotesingle{}e\textquotesingle{}?}\ifkey\par{\normalsize\textcolor{keyred}{What is your name?}}\fi & \Large\kl{Mara jIH.}\ifkey\par{\normalsize\textcolor{keyred}{I am Mara.}}\fi \\ \hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+\textbf{Note cards, for the people outside the room.} Cut out the cards. Pass one note into the room. When the reply comes back, check it with the meaning on your card. Does the reply make sense?
+
+\vspace{0.6em}
+\newcommand{\notecard}[3]{%
+  \begin{tikzpicture}
+    \draw[dashed, line width=0.8pt, rounded corners=3pt] (0,0) rectangle (8.3,4.9);
+    \node[anchor=north west, font=\Large, text width=7.6cm, align=left] at (0.35,4.5) {\kl{#1}};
+    \draw[black!40, line width=0.6pt, dash pattern=on 4pt off 2pt] (0.2,3.3) -- (8.1,3.3);
+    \node[anchor=south east, font=\scriptsize, text=black!55] at (8.1,3.32) {fold here};
+    \node[anchor=north west, font=\small, text width=7.6cm, align=left] at (0.35,3.05)
+      {\textbf{The note means:} #2\\[0.35em]\textbf{A good reply means:} #3};
+    \node[anchor=south west, font=\footnotesize\itshape, text=black!55] at (0.35,0.2)
+      {Fold this part back before the note goes in.};
+  \end{tikzpicture}}
+\noindent\notecard{nuqneH}{Hello!}{Are you well?}\hfill\notecard{bIpIv\textquotesingle{}a\textquotesingle{}?}{Are you well?}{I am fine.}
+
+\vspace{0.4em}
+\noindent\notecard{nuq \textquotesingle{}oH ponglIj\textquotesingle{}e\textquotesingle{}?}{What is your name?}{I am \dots}\hfill\notecard{qatlho\textquotesingle{}!}{Thank you!}{Success! (Klingons say this to wish you well.)}
+
+\vspace{0.4em}
+\noindent\notecard{nuqDaq \textquotesingle{}oH puchpa\textquotesingle{}\textquotesingle{}e\textquotesingle{}?}{Where is the bathroom?}{It is over there. (Or: I don't understand.)}\hfill\notecard{tlhIngan Hol Dajatlh\textquotesingle{}a\textquotesingle{}?}{Do you speak Klingon?}{Yes. I am learning Klingon. (Is that true?)}
+
+\end{document}
