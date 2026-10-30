@@ -1,0 +1,118 @@
+```{=html}
+<!-- prompt_builder.html: Lesson 3.1. Build a prompt from three parts
+     (task, context, format), see it in color, copy it into the class AI tool.
+     Nothing is sent anywhere. -->
+<div class="pb" id="pb">
+  <div class="pb-bar">
+    <span class="pb-label">Start from a weak prompt:</span>
+    <select class="pb-weak" aria-label="Weak prompt">
+      <option value="">(choose one)</option>
+      <option>Tell me about dogs.</option>
+      <option>Help with my essay.</option>
+      <option>Explain volcanoes.</option>
+      <option>Make a study plan.</option>
+      <option>Give me a recipe.</option>
+    </select>
+  </div>
+
+  <div class="pb-part pb-t">
+    <label><b>1. Task:</b> What do you want the AI to do?</label>
+    <textarea rows="2" data-part="task"></textarea>
+    <div class="pb-chips" data-for="task">
+      <button type="button">Explain</button><button type="button">Give me 3 ideas for</button><button type="button">Make a quiz about</button><button type="button">Help me plan</button>
+    </div>
+  </div>
+  <div class="pb-part pb-c">
+    <label><b>2. Context:</b> Who are you? What is it for? What do you already know?</label>
+    <textarea rows="2" data-part="context"></textarea>
+    <div class="pb-chips" data-for="context">
+      <button type="button">I am in high school.</button><button type="button">I am learning English.</button><button type="button">This is for a short speech.</button><button type="button">I already know</button>
+    </div>
+  </div>
+  <div class="pb-part pb-f">
+    <label><b>3. Format:</b> What should the answer look like?</label>
+    <textarea rows="2" data-part="format"></textarea>
+    <div class="pb-chips" data-for="format">
+      <button type="button">Use simple words.</button><button type="button">Make it a list of 5.</button><button type="button">Keep it under 100 words.</button><button type="button">Make a table.</button><button type="button">Answer in my language:</button>
+    </div>
+  </div>
+
+  <div class="pb-h">Your prompt</div>
+  <div class="pb-out" aria-live="polite"></div>
+  <div class="pb-bar">
+    <button type="button" class="pb-btn pb-copy">📋 Copy my prompt</button>
+    <button type="button" class="pb-btn pb-plain pb-clear">↺ Clear</button>
+    <span class="pb-copied"></span>
+  </div>
+  <ul class="pb-check"></ul>
+</div>
+
+<style>
+.pb { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.pb-bar { display: flex; flex-wrap: wrap; gap: 0.4rem 0.7rem; align-items: center; margin: 0.4rem 0; }
+.pb-label, .pb-h { font-weight: bold; }
+.pb-part { border-radius: 8px; padding: 0.45rem 0.6rem; margin: 0.45rem 0; }
+.pb-t { background: #fef3c7; } .pb-c { background: #dbeafe; } .pb-f { background: #ede9fe; }
+.pb-part label { display: block; margin-bottom: 0.2rem; }
+.pb-part textarea { width: 100%; box-sizing: border-box; font-size: 1rem; padding: 0.35rem; border: 1px solid #b8c4cf; border-radius: 6px; }
+.pb-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.3rem; }
+.pb-chips button { border: 1px solid #94a3b8; background: #fff; border-radius: 999px; padding: 0.05rem 0.6rem; cursor: pointer; font-size: 0.88rem; }
+.pb-out { background: #fff; border: 1px solid #e3e8ed; border-radius: 8px; padding: 0.5rem 0.7rem; min-height: 2.5em; font-size: 1.05rem; line-height: 1.7; }
+.pb-out span { border-radius: 4px; padding: 0.05rem 0.2rem; }
+.pb-out .t { background: #fde68a; } .pb-out .c { background: #bfdbfe; } .pb-out .f { background: #ddd6fe; }
+.pb-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.3rem 0.8rem; font-weight: 600; cursor: pointer; }
+.pb-btn.pb-plain { background: #fff; color: #2c3e50; }
+.pb-copied { color: #1e8449; font-weight: 600; }
+.pb-check { list-style: none; padding-left: 0; margin: 0.4rem 0 0; }
+.pb-check li { margin: 0.15rem 0; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("pb");
+  if (!root) return;
+  const box = (p) => root.querySelector(`textarea[data-part="${p}"]`);
+  const out = root.querySelector(".pb-out"), check = root.querySelector(".pb-check"), copied = root.querySelector(".pb-copied");
+  const esc = (s) => s.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+  const words = (s) => s.trim().split(/\s+/).filter(Boolean).length;
+  const text = () => ["task", "context", "format"].map((p) => box(p).value.trim()).filter(Boolean).join(" ");
+
+  function show() {
+    const parts = [["task", "t"], ["context", "c"], ["format", "f"]].filter(([p]) => box(p).value.trim());
+    out.innerHTML = parts.length ? parts.map(([p, k]) => `<span class="${k}">${esc(box(p).value.trim())}</span>`).join(" ")
+      : "<i>Your prompt shows up here.</i>";
+    const t = box("task").value, c = box("context").value, f = box("format").value;
+    const tips = [];
+    tips.push(words(t) >= 4 ? "✅ Task: you said what you want." : "⬜ Task: say more about what you want. What topic? What job?");
+    tips.push(words(c) >= 3 ? "✅ Context: the AI knows who it is for." : "⬜ Context: who are you, and what is it for? The AI cannot guess.");
+    tips.push(words(f) >= 2 ? "✅ Format: the AI knows what the answer should look like." : "⬜ Format: how long? A list? A table? Simple words? Which language?");
+    check.innerHTML = tips.map((x) => `<li>${x}</li>`).join("");
+    copied.textContent = "";
+  }
+
+  root.querySelectorAll(".pb-chips").forEach((row) => row.addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    const ta = box(row.dataset.for);
+    ta.value = (ta.value.trim() ? ta.value.trim() + " " : "") + b.textContent + (/[.:]$/.test(b.textContent) ? " " : " ");
+    ta.focus(); show();
+  }));
+  root.querySelectorAll("textarea").forEach((ta) => ta.addEventListener("input", show));
+  root.querySelector(".pb-weak").addEventListener("change", (e) => {
+    box("task").value = e.target.value; box("context").value = ""; box("format").value = ""; show();
+  });
+  root.querySelector(".pb-clear").addEventListener("click", () => {
+    root.querySelectorAll("textarea").forEach((ta) => (ta.value = "")); root.querySelector(".pb-weak").value = ""; show();
+  });
+  root.querySelector(".pb-copy").addEventListener("click", async () => {
+    const s = text(); if (!s) return;
+    try { await navigator.clipboard.writeText(s); copied.textContent = "Copied! Paste it into your class AI tool."; }
+    catch (err) {
+      const r = document.createRange(); r.selectNodeContents(out);
+      const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+      copied.textContent = "Press Ctrl + C to copy.";
+    }
+  });
+  show();
+})();
+</script>
+```

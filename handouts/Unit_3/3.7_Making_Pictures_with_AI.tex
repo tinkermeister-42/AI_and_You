@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\lessontitle{Making Pictures with AI}
+\partner
+
+\vspace{0.4em}
+{\large\textbf{1. Find the picture in the static.}} Cover the last square. At which step can you guess the picture?
+
+\vspace{0.4em}
+\begin{center}\resizebox{0.85\linewidth}{!}{\fig{Unit_3/3.7_noise_steps}}\end{center}
+
+My guess at step 3: \ansline{1.6in}{Answers vary.} \quad My guess at step 6: \ansline{1.6in}{a heart}
+
+\vspace{1.0em}
+{\large\textbf{2. From noise to picture.}}
+
+\vspace{0.5em}
+\textbf{Training:} the computer adds \ansline{1.2in}{noise} to millions of pictures. A neural network practices guessing
+
+\vspace{0.5em}
+\ansline{3.4in}{which part of the picture is noise.}
+
+\vspace{0.7em}
+\textbf{Making a picture:} the AI starts with pure \ansline{1.0in}{noise.} It removes \ansline{2.2in}{a little noise at a time,}
+
+\vspace{0.5em}
+again and again. My \ansline{1.0in}{words} guide every guess. This is called \ansline{1.3in}{diffusion.}
+
+\vspace{0.7em}
+Why does the same prompt make a different picture each time? \ansline{2.4in}{It starts from new random}
+
+\vspace{0.5em}
+\ansline{6.9in}{noise each time.}
+
+\vspace{1.0em}
+{\large\textbf{3. The noise demo.}}
+
+\vspace{0.5em}
+I could guess the picture at step \ansline{0.6in}{Answers vary.}
+
+\vspace{0.7em}
+\textbf{New noise, same words:} what changed? \ansline{3.8in}{The colors and the place. Same kind of thing.}
+
+\vspace{0.7em}
+\textbf{Same noise, new words:} what changed? \ansline{3.8in}{The whole picture.}
+
+\newpage
+
+{\large\textbf{4. My picture prompt.}} Mr. Ross makes the pictures.
+
+\vspace{0.3em}
+\begin{tabular}{|R{1.0in}|R{5.5in}|}
+\hline
+Subject & \ans{a small orange cat} \\[0.4em] \hline
+Action & \ans{reading a book} \\[0.4em] \hline
+Place & \ans{in a library at night} \\[0.4em] \hline
+Style & \ans{watercolor painting} \\[0.4em] \hline
+Details & \ans{warm yellow light} \\[0.4em] \hline
+\end{tabular}
+
+\vspace{0.8em}
+He made it twice. How were the two pictures different? \ansline{3.0in}{Answers vary.}
+
+\vspace{0.7em}
+I changed the style to \ansline{1.6in}{Answers vary.} What changed? \ansline{2.6in}{}
+
+\vspace{0.7em}
+One mistake in a picture: \ansline{4.9in}{Answers vary. Wrong number of things, words spelled wrong.}
+
+\vspace{1.0em}
+{\large\textbf{5. What goes wrong?}} Image generators often get these wrong:
+
+\vspace{0.5em}
+\ansline{2.1in}{counting} \quad \ansline{2.1in}{words in the picture} \quad \ansline{2.1in}{showing only what is most common}
+
+\vspace{1.0em}
+Why should I never make AI pictures of real people? \ansline{2.7in}{A fake picture of a real person}
+
+\vspace{0.5em}
+\ansline{6.9in}{can hurt them, even as a joke.}
+
+\vspace{1.0em}
+{\large\textbf{6. Talk about it.}} An AI picture (is / is not) art, because \ansline{3.1in}{Answers vary.}
+
+\vspace{0.6em}
+The credit should go to \ansline{4.9in}{Answers vary. The person, the company, or the artists who trained it.}
+
+\end{document}

@@ -1,0 +1,143 @@
+# 3.2 - Keep Talking {.unnumbered}
+
+When you ask a teacher a question and you do not understand the answer, you do not walk away. You say, "Can you say that another way?" or "Can you show me an example?"
+
+You can do the same with a chatbot. The first answer is only a first try. The second and third answers are often much better.
+
+Today you learn the follow-up questions that turn a bad answer into a useful one.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** What is wrong with this answer? [5 min]{.time}
+- [👥]{.icon} **Learn Together** The chat is the prompt [10 min]{.time}
+- [🛠️]{.icon} **Try It** The follow-up challenge [18 min]{.time}
+- [💬]{.icon} **Talk About It** Should it agree with you? [7 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can use follow-up questions to make an answer more useful.
+- [ ] I can explain why a chatbot remembers what I said earlier in a chat.
+- [ ] I can explain why a new chat starts over.
+- [ ] I can explain why a chatbot that always agrees with me is a problem.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [↩️]{.icon} {{< glink "follow-up question" >}}: a question you ask after an answer, to make it better
+- [🪟]{.icon} {{< glink "context window" >}}: all the words a chatbot can read at one time
+- [⌨️]{.icon} {{< glink prompt >}}: what you type to tell an AI what you want
+- [🔮]{.icon} {{< glink prediction >}}: a best guess about something you do not know yet
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_3/3.2_Keep_Talking.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+A student asked a chatbot, "What is photosynthesis?" Here is an answer like the one they got:
+
+> Photosynthesis is the biochemical process by which photoautotrophic organisms convert electromagnetic radiation into chemical energy, synthesizing glucose from carbon dioxide and water while releasing molecular oxygen as a byproduct.
+
+On your sheet, circle 3 hard words. What would you say to the chatbot next?
+
+:::{.think title="One follow-up question"}
+The student typed: **"Explain it in simple words. I am in high school and I am learning English. Use 3 short sentences."**
+
+The new answer: *Plants make their own food. They use sunlight, water, and air. They give off oxygen, the gas we breathe.*
+
+Same facts. Now the student can use them.
+:::
+
+{{< learn >}}
+
+### 3.2.1 - The Chat Is the Prompt
+
+When you send a new message, the chatbot does not read only your new message. It reads the **whole chat** again, from the top. Then it predicts its answer.
+
+![](/images/Unit_3/3.2_conversation.svg){width="680px" fig-align="center" fig-alt="Three rows. Message 1: the chatbot reads one question and writes a long, hard answer. Message 2: the chatbot reads the question, its own first answer, and the follow-up 'Use simpler words', then writes a short, simple answer. New chat: the chatbot reads only 'What did I just ask you?' and cannot see the old chat."}
+
+So your follow-up question works because the old messages are still part of the {{< glink prompt >}}. The words a chatbot can read at one time are called its {{< glink "context window" >}}. A very long chat can be too big for it. Then the chatbot may lose the oldest part.
+
+:::{.remember}
+A **new chat** starts over. The chatbot cannot see your old chat. If you need the context, type it again.
+:::
+
+***
+
+### 3.2.2 - Follow-Up Moves
+
+| Move | Say this | Use it when the answer is ... |
+|---|---|---|
+| **Simpler** | "Explain it in simple words." | too hard to read |
+| **Shorter** | "Say it in 3 sentences." | too long |
+| **Example** | "Give me an example." | too general |
+| **Why?** | "Why? Show me the steps." | hard to believe |
+| **Fix it** | "That is not what I meant. I meant ..." | about the wrong thing |
+| **New shape** | "Make it a table." or "Make it a list." | hard to use |
+| **Language** | "Say it in English and in Arabic." | hard to understand in English |
+
+***
+
+### 3.2.3 - Careful When You Push Back
+
+Try telling a chatbot, **"Are you sure? I think that is wrong."** Many chatbots will say sorry and change the answer. They sometimes do this even when the first answer was **right**.
+
+A chatbot predicts what comes next in the chat. After "I think that is wrong," an answer that agrees with you is a likely next answer. So when you need to know if something is true, do not ask the chatbot if it is sure. Check a real source. (You will do this in Lesson 3.4, and test it more in Unit 4.)
+
+:::{.note title="Right now (fall 2026)"}
+Some AI tools now have a **memory** feature. They save facts about you from one chat to the next. If your class AI tool has one, Mr. Ross will show you where it is. Do not let it save private information.
+:::
+
+{{< tryit >}}
+
+### 3.2.4 - The Follow-Up Challenge
+
+Work with a partner, or in a group of 3.
+
+:::{.steps}
+1. Choose a hard topic from another class: photosynthesis, the water cycle, slope, the U.S. Constitution, or your own idea.
+2. Ask your class AI tool: **"What is ...?"** Read the answer.
+3. On your sheet, give the answer a score from 1 to 5. (1 = I cannot use this. 5 = I can use this today.)
+4. Use **one** follow-up move. Score the new answer.
+5. Do it 2 more times, with different moves. Which move helped the most?
+:::
+
+:::{.gotcha title="Class size"}
+**Small class (4 or 5):** work as one group. Each person chooses the next follow-up move. **Big class:** two teams get the same topic and 3 follow-ups each. Read both final answers aloud. Which team got the more useful answer?
+:::
+
+### 3.2.5 - The New Chat Test
+
+:::{.steps}
+1. In the **same** chat, ask: "What topic did I ask about?" What does it say?
+2. Open a **new** chat. Ask the same question. What does it say now?
+3. Write what happened on your sheet. Use the picture in 3.2.1 to explain why.
+:::
+
+{{< talk >}}
+
+Imagine a chatbot that **always** agrees with you. If you say the Earth is flat, it says, "Good point!" Is that helpful or dangerous? Who could it hurt?
+
+:::{.frames}
+- The follow-up move that helped me most was ... , because ...
+- A chatbot remembers the chat because ...
+- A chatbot that always agrees with me is (helpful / dangerous) because ...
+- To know if an answer is true, I should ...
+:::
+
+{{< further >}}
+
+:::{.project title="Practice a Job Interview"}
+Type: **"You are a job interviewer at a grocery store. Ask me one question at a time. Wait for my answer. After each answer, give me one tip."** Keep talking for 5 questions. What was the best tip? (Do not use your real name or address.)
+:::
+
+:::{.project title="Quiz Me"}
+Type: **"Quiz me on the water cycle. Ask one question at a time. Tell me if I am right before the next question."** How is this different from just reading the answer?
+:::
+
+:::{.project title="Follow-Up Cards in Your Language"}
+Make a set of cards with the follow-up moves from 3.2.2, in your home language. Test each one with your class AI tool. Do they work as well as in English?
+:::

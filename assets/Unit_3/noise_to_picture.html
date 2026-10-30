@@ -1,0 +1,130 @@
+```{=html}
+<!-- noise_to_picture.html: Lesson 3.7. The idea of a diffusion image
+     generator: start from noise, remove a little at a time, guided by words.
+     This demo cheats: it already has the finished picture (an emoji). -->
+<div class="np" id="np">
+  <div class="np-bar">
+    <span class="np-label">Your words:</span>
+    <span class="np-words"></span>
+  </div>
+  <div class="np-bar">
+    <span class="np-label">Noise:</span>
+    <button type="button" class="np-btn np-plain np-seed">🎲 New noise</button>
+    <span class="np-seedtxt"></span>
+  </div>
+  <div class="np-main">
+    <canvas class="np-canvas" width="64" height="64" aria-label="The picture"></canvas>
+    <div class="np-side">
+      <div class="np-step"></div>
+      <div class="np-bar">
+        <button type="button" class="np-btn np-one">➡️ Remove some noise</button>
+        <button type="button" class="np-btn np-plain np-play">▶️ Play</button>
+        <button type="button" class="np-btn np-plain np-reset">↺ Back to noise</button>
+      </div>
+      <div class="np-msg"></div>
+    </div>
+  </div>
+  <div class="np-strip"></div>
+</div>
+
+<style>
+.np { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.np-bar { display: flex; flex-wrap: wrap; gap: 0.35rem 0.6rem; align-items: center; margin: 0.35rem 0; }
+.np-label { font-weight: bold; }
+.np-words button { border: 1px solid #b8c4cf; background: #fff; border-radius: 999px; padding: 0.1rem 0.7rem; cursor: pointer; margin: 0.1rem; }
+.np-words button.on { background: #2c3e50; color: #fff; border-color: #2c3e50; }
+.np-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.3rem 0.8rem; font-weight: 600; cursor: pointer; }
+.np-btn.np-plain { background: #fff; color: #2c3e50; }
+.np-seedtxt { color: #555; font-size: 0.9rem; }
+.np-main { display: flex; flex-wrap: wrap; gap: 0.9rem; align-items: flex-start; margin-top: 0.4rem; }
+.np-canvas { width: 256px; max-width: 100%; height: auto; image-rendering: pixelated; border: 1px solid #2c3e50; border-radius: 6px; }
+.np-side { flex: 1 1 220px; }
+.np-step { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.3rem; }
+.np-msg { margin-top: 0.4rem; line-height: 1.5; }
+.np-strip { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 0.7rem; }
+.np-strip canvas { width: 44px; height: 44px; image-rendering: pixelated; border: 1px solid #ccd5dd; border-radius: 3px; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("np");
+  if (!root) return;
+  const W = 64, STEPS = 10;
+  const WORDS = [["a cat", "🐱"], ["a house", "🏠"], ["a sunflower", "🌻"], ["a car", "🚗"], ["a rocket", "🚀"], ["a pizza", "🍕"]];
+  const BGS = ["#bfe3ff", "#ffe8b0", "#d8f5c8", "#f5d0e6", "#e3dcff", "#fff3c4"];
+  const cv = root.querySelector(".np-canvas"), cx = cv.getContext("2d");
+  const strip = root.querySelector(".np-strip"), stepTxt = root.querySelector(".np-step"), msg = root.querySelector(".np-msg");
+  let word = 0, seed = 1, step = 0, noise = null, target = null, timer = null;
+
+  function rng(a) { return () => { a |= 0; a = (a + 0x6d2b79f5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+  function makeNoise() {
+    const r = rng(seed * 9973), n = new Float32Array(W * W * 3);
+    for (let i = 0; i < n.length; i += 2) {  // Box-Muller: two normal numbers at a time
+      const u = Math.max(r(), 1e-9), v = r(), m = Math.sqrt(-2 * Math.log(u));
+      n[i] = m * Math.cos(2 * Math.PI * v); if (i + 1 < n.length) n[i + 1] = m * Math.sin(2 * Math.PI * v);
+    }
+    return n;
+  }
+  function makeTarget() {
+    // The "finished picture": the emoji, moved and sized a little by the noise seed,
+    // so new noise gives a new version of the same thing.
+    const r = rng(seed * 31 + 7), off = document.createElement("canvas"); off.width = off.height = W;
+    const o = off.getContext("2d");
+    o.fillStyle = BGS[Math.floor(r() * BGS.length)]; o.fillRect(0, 0, W, W);
+    const size = 38 + Math.floor(r() * 12), dx = Math.floor(r() * 13) - 6, dy = Math.floor(r() * 13) - 6;
+    o.textAlign = "center"; o.textBaseline = "middle"; o.font = `${size}px "Noto Color Emoji","Apple Color Emoji","Segoe UI Emoji",sans-serif`;
+    o.fillText(WORDS[word][1], W / 2 + dx, W / 2 + dy + 2);
+    let d = o.getImageData(0, 0, W, W).data;
+    const bg = [d[0], d[1], d[2]]; let diff = 0;
+    for (let i = 0; i < d.length; i += 4) diff += Math.abs(d[i] - bg[0]) + Math.abs(d[i + 1] - bg[1]) + Math.abs(d[i + 2] - bg[2]);
+    if (diff < 2000) {  // no emoji font: write the word instead
+      o.fillStyle = "#2c3e50"; o.font = "bold 13px sans-serif"; o.fillText(WORDS[word][0], W / 2, W / 2);
+      d = o.getImageData(0, 0, W, W).data;
+    }
+    const t = new Float32Array(W * W * 3);
+    for (let p = 0, q = 0; p < d.length; p += 4, q += 3) { t[q] = d[p] / 127.5 - 1; t[q + 1] = d[p + 1] / 127.5 - 1; t[q + 2] = d[p + 2] / 127.5 - 1; }
+    return t;
+  }
+  const signal = (k) => Math.sin((Math.PI / 2) * (k / STEPS)) ** 2;  // how much picture is left at step k
+  function frame(k) {
+    const a = Math.sqrt(signal(k)), b = Math.sqrt(1 - signal(k)), img = cx.createImageData(W, W);
+    for (let p = 0, q = 0; q < target.length; p += 4, q += 3) {
+      for (let c = 0; c < 3; c++) img.data[p + c] = Math.max(0, Math.min(255, (a * target[q + c] + b * noise[q + c] + 1) * 127.5));
+      img.data[p + 3] = 255;
+    }
+    return img;
+  }
+  function draw() {
+    cx.putImageData(frame(step), 0, 0);
+    stepTxt.textContent = `Step ${step} of ${STEPS}`;
+    const s = strip.children[step]; if (s) s.getContext("2d").putImageData(frame(step), 0, 0);
+    msg.innerHTML = step === 0 ? `Pure noise. Nothing is there yet. The words are "<b>${WORDS[word][0]}</b>."`
+      : step < STEPS / 2 ? "Colors and blobs. Can you guess the picture yet?"
+      : step < STEPS ? "Now you can see shapes. The details come last."
+      : `Done: ${WORDS[word][0]}! Try <b>New noise</b> with the same words, or new words with the same noise.`;
+    root.dataset.step = step;
+  }
+  function reset() {
+    clearInterval(timer); timer = null; step = 0; noise = makeNoise(); target = makeTarget();
+    root.querySelector(".np-seedtxt").textContent = `noise number ${seed}`;
+    strip.innerHTML = "";
+    for (let k = 0; k <= STEPS; k++) { const c = document.createElement("canvas"); c.width = c.height = W; strip.appendChild(c); }
+    draw();
+  }
+  function one() { if (step < STEPS) { step++; draw(); } else { clearInterval(timer); timer = null; } }
+
+  const wbox = root.querySelector(".np-words");
+  WORDS.forEach(([w], i) => {
+    const b = document.createElement("button"); b.type = "button"; b.textContent = w;
+    b.addEventListener("click", () => { word = i; wbox.querySelectorAll("button").forEach((x) => x.classList.toggle("on", x === b)); reset(); });
+    wbox.appendChild(b);
+  });
+  wbox.firstChild.classList.add("on");
+  root.querySelector(".np-seed").addEventListener("click", () => { seed = 1 + Math.floor(Math.random() * 9999); reset(); });
+  root.querySelector(".np-one").addEventListener("click", one);
+  root.querySelector(".np-play").addEventListener("click", () => { if (step >= STEPS) reset(); clearInterval(timer); timer = setInterval(one, 450); });
+  root.querySelector(".np-reset").addEventListener("click", reset);
+  reset();
+})();
+</script>
+```

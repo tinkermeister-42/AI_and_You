@@ -85,6 +85,10 @@ The teacher wants kids' hands on real things in every lesson.
   MagicSchool. When a lesson needs a chatbot, the page says "your class AI
   tool" and the activity works with any chatbot. Never write steps for one
   product's menus
+- **MagicSchool is locked down and likely makes no images.** Image
+  generation runs on the projector: students write the prompts, Mr. Ross
+  makes the pictures. Do not plan student steps around web search, links,
+  or memory features either; give a path that works without them
 - **Students see AI built, but do not build it.** The teacher builds AI
   professionally. In Unit 2 he trains a real model live (his Pokémon stats
   demo: the CSV from his old Algebra site, a neural network instead of the
@@ -196,6 +200,9 @@ Keep the repository clean. Dead branches are clutter.
 - The branch is deleted once it is merged
 - **Nothing is merged or deleted without the teacher signing off on it.**
   Propose it, show what would land, and wait
+- **First draft (fall 2026): squash each finished unit into `main` without
+  asking.** The teacher reads the lessons on the site anyway. Deleting
+  branches is still his
 
 Two things that bite:
 

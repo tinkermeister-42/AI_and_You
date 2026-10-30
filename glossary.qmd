@@ -32,11 +32,29 @@ In a transformer, the way the AI looks at all the other words to decide which on
 
 ***
 
+### audience {#glossary-audience}
+
+The people who will read, see, or use your work.
+
+***
+
 ### axon {#glossary-axon}
 
 The long part of a neuron that carries the signal away from the cell body, toward other neurons.
 
 **See Also:** {{< glink neuron >}}, {{< glink synapse >}}
+
+***
+
+### back translation {#glossary-back-translation}
+
+Translating a translation back to the first language, to check it. If the meaning changed, something went wrong.
+
+> **Example:**
+>
+> English → Spanish → English again.
+
+**See Also:** {{< glink translate >}}
 
 ***
 
@@ -100,6 +118,22 @@ Learning to connect two things that happen together. Ivan Pavlov's dogs learned 
 
 ***
 
+### context {#glossary-context}
+
+The facts around your question: who you are, what the answer is for, and what you already know. A chatbot cannot guess these, so you tell it.
+
+**See Also:** {{< glink prompt >}}
+
+***
+
+### context window {#glossary-context-window}
+
+All the words a chatbot can read at one time. In a chat, it holds your old messages too. That is why a follow-up question works. A new chat starts with an empty context window.
+
+**See Also:** {{< glink "follow-up question" >}}, {{< glink token >}}
+
+***
+
 ### data {#glossary-data}
 
 Information, like pictures, words, numbers, or sounds. An AI learns from data.
@@ -140,6 +174,22 @@ One of the short branches of a neuron. Dendrites take in signals from other neur
 
 ***
 
+### diffusion {#glossary-diffusion}
+
+A way to make a picture: start with noise, then remove a little noise at a time, again and again, guided by words. A neural network guesses which part is noise.
+
+**See Also:** {{< glink "image generator" >}}, {{< glink noise >}}
+
+***
+
+### draft {#glossary-draft}
+
+A first try at a piece of writing. You will change it to make it better.
+
+**See Also:** {{< glink revise >}}
+
+***
+
 ### edge {#glossary-edge}
 
 A place in a picture where it changes fast from dark to light. Edges show where things begin and end.
@@ -172,6 +222,32 @@ When many simple parts work together and make something bigger and more complica
 
 ***
 
+### estimate {#glossary-estimate}
+
+A quick answer that is close, but not exact. You can use it to check if an answer makes sense.
+
+> **Example:**
+>
+> $3847 \times 29$ is about $4000 \times 30 = 120000$.
+
+***
+
+### fact-check {#glossary-fact-check}
+
+To find out if something is true, using good sources.
+
+**See Also:** {{< glink "lateral reading" >}}, {{< glink source >}}
+
+***
+
+### feedback {#glossary-feedback}
+
+Comments that tell you what is good about your work and what to make better. Good feedback is kind, specific, and helpful.
+
+**See Also:** {{< glink revise >}}
+
+***
+
 ### filter {#glossary-filter}
 
 A small grid of numbers that slides over a picture. At each spot, it multiplies and adds. A filter can find edges or make a picture blurry.
@@ -180,11 +256,49 @@ A small grid of numbers that slides over a picture. At each spot, it multiplies 
 
 ***
 
+### follow-up question {#glossary-follow-up-question}
+
+A question you ask after an answer, to make the answer better. For example: "Explain it in simple words" or "Give me an example."
+
+**See Also:** {{< glink "context window" >}}
+
+***
+
+### format {#glossary-format}
+
+What an answer should look like: a list, a table, 3 sentences, simple words, or a certain language.
+
+**See Also:** {{< glink prompt >}}
+
+***
+
+### gallery walk {#glossary-gallery-walk}
+
+Walking around the room to look at everyone's work and leave feedback notes, like visitors in an art gallery.
+
+**See Also:** {{< glink feedback >}}
+
+***
+
 ### GPU {#glossary-gpu}
 
 A computer chip first made for video games. It can do thousands of small math problems at the same time, so it is very good for training neural networks. GPU means "graphics processing unit."
 
 **See Also:** {{< glink "neural network" >}}
+
+***
+
+### hallucination {#glossary-hallucination}
+
+When AI writes something false as if it were true, like a book or a court case that does not exist. The AI sounds just as sure as when it is right.
+
+**See Also:** {{< glink fact-check >}}
+
+***
+
+### hint {#glossary-hint}
+
+A small help that shows you the next step, but not the answer.
 
 ***
 
@@ -197,6 +311,14 @@ Big promises and excitement, more than the facts show.
 > In 1970, a scientist said that a machine as smart as a person was 3 to 8 years away. That was hype.
 
 **See Also:** {{< glink "AI winter" >}}
+
+***
+
+### image generator {#glossary-image-generator}
+
+An AI that makes a new picture from words. Many image generators use diffusion.
+
+**See Also:** {{< glink diffusion >}}
 
 ***
 
@@ -248,11 +370,27 @@ A transformer trained on a huge amount of text to predict the next word. Chatbot
 
 ***
 
+### lateral reading {#glossary-lateral-reading}
+
+Checking a fact by opening new tabs to see what other sources say, instead of reading only one page. "Lateral" means "to the side." Professional fact-checkers do this.
+
+**See Also:** {{< glink fact-check >}}
+
+***
+
 ### learning curve {#glossary-learning-curve}
 
 A graph that shows how you get better with practice. The time or the number of mistakes usually drops fast at first, then more slowly.
 
 **See Also:** {{< glink synapse >}}
+
+***
+
+### low-resource language {#glossary-low-resource-language}
+
+A language with not much writing online for AI to learn from. AI usually makes more mistakes in these languages.
+
+**See Also:** {{< glink dataset >}}
 
 ***
 
@@ -277,6 +415,14 @@ A kind of AI made of many small parts that work a little like brain cells. Each 
 A cell that sends signals. Your brain has about 86 billion neurons. A neuron fires (sends a signal) only when the signals coming in add up to enough.
 
 **See Also:** {{< glink dendrite >}}, {{< glink axon >}}, {{< glink synapse >}}, {{< glink "neural network" >}}
+
+***
+
+### noise {#glossary-noise}
+
+Random dots with no picture in them, like the static on an old TV.
+
+**See Also:** {{< glink diffusion >}}
 
 ***
 
@@ -330,6 +476,12 @@ One tiny square of a picture. A computer stores each pixel as a number. In a bla
 
 ***
 
+### plagiarism {#glossary-plagiarism}
+
+Turning in someone else's words or ideas as your own. Turning in AI writing as your own, when the assignment does not allow it, is plagiarism too.
+
+***
+
 ### prediction {#glossary-prediction}
 
 A best guess about something you do not know yet. A prediction can be wrong.
@@ -340,6 +492,32 @@ A best guess about something you do not know yet. A prediction can be wrong.
 
 ***
 
+### product {#glossary-product}
+
+The thing you make in a project, like a flyer, a study guide, or a plan.
+
+***
+
+### prompt {#glossary-prompt}
+
+What you type to tell an AI what you want. A good prompt has a task, context, and a format.
+
+> **Example:**
+>
+> "I am in 10th grade. Give me 3 reasons dogs make good pets. Use simple words."
+
+**See Also:** {{< glink task >}}, {{< glink context >}}, {{< glink format >}}
+
+***
+
+### prompt log {#glossary-prompt-log}
+
+A list of every prompt you used in a project, and what you did with each answer.
+
+**See Also:** {{< glink prompt >}}
+
+***
+
 ### random {#glossary-random}
 
 With no pattern, so you cannot guess what comes next.
@@ -347,6 +525,20 @@ With no pattern, so you cannot guess what comes next.
 > **Example:**
 >
 > The middle of Rule 30 looks random.
+
+***
+
+### revise {#glossary-revise}
+
+To change your work to make it better, often after feedback.
+
+**See Also:** {{< glink feedback >}}, {{< glink draft >}}
+
+***
+
+### rubric {#glossary-rubric}
+
+A chart that shows how your work will be graded.
 
 ***
 
@@ -362,11 +554,33 @@ An exact instruction that a computer follows: "If this happens, do that." In a n
 
 ***
 
+### source {#glossary-source}
+
+Where a fact comes from: a book, a website, a news story, or a person.
+
+**See Also:** {{< glink fact-check >}}
+
+***
+
+### style {#glossary-style}
+
+The way a picture looks: a photo, a cartoon, a watercolor painting, pixel art.
+
+***
+
 ### synapse {#glossary-synapse}
 
 The tiny gap between two neurons. Chemicals carry the signal across it. When you practice, the synapses you use get stronger.
 
 **See Also:** {{< glink neuron >}}
+
+***
+
+### task {#glossary-task}
+
+The job you want the AI to do, like "explain," "give me 3 ideas," or "make a quiz."
+
+**See Also:** {{< glink prompt >}}
 
 ***
 
@@ -427,6 +641,14 @@ Starting from an AI that already learned something, then teaching it a new job w
 A kind of neural network, first shared by Google scientists in 2017. It uses attention to connect the words in a sentence. It is the T in GPT.
 
 **See Also:** {{< glink attention >}}, {{< glink "neural network" >}}, {{< glink "large language model" >}}
+
+***
+
+### translate {#glossary-translate}
+
+To change words from one language to another, with the same meaning.
+
+**See Also:** {{< glink "back translation" >}}
 
 ***
 

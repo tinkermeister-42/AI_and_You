@@ -17,3 +17,34 @@ By the end of this unit, you will be able to:
 * Check AI's work before you use it
 * Use AI honestly in school
 * Finish a real project that uses AI to solve a problem in your life
+
+***
+
+## Topics in This Unit
+
+[**Asking Good Questions**](3.1_Asking_Good_Questions.qmd)\
+The three parts of a good prompt: task, context, and format.
+
+[**Keep Talking**](3.2_Keep_Talking.qmd)\
+Follow-up questions turn a bad answer into a useful one.
+
+[**Writing with AI, Not by AI**](3.3_Writing_with_AI.qmd)\
+The AI use ladder, feedback you control, and an honest AI note.
+
+[**Research and Checking**](3.4_Research_and_Checking.qmd)\
+Why chatbots make things up, and how fact-checkers check.
+
+[**AI and Your Language**](3.5_AI_and_Your_Language.qmd)\
+You are the expert: grade AI translations in your language.
+
+[**AI and Math**](3.6_AI_and_Math.qmd)\
+Rules and predictions, three ways to check, and hints instead of answers.
+
+[**Making Pictures with AI**](3.7_Making_Pictures_with_AI.qmd)\
+From noise to picture: how image generators work.
+
+[**Project: Solve a Real Problem**](3.8_Project_Solve_a_Real_Problem.qmd)\
+Plan and start a project that uses AI to help in your life.
+
+[**Project: Feedback and Share**](3.9_Project_Feedback_and_Share.qmd)\
+Give and get feedback, make it better, and share it.
