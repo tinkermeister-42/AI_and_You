@@ -40,7 +40,7 @@ Everyone stands in a line (or sits in a row). Everyone follows **one rule**:
 
 > When the person on your left raises their hands, raise your hands. Put them down after one second.
 
-Mr. Ross starts it at one end. Watch what happens. Then try it again, faster.
+Your teacher starts it at one end. Watch what happens. Then try it again, faster.
 
 :::{.think title="Who was in charge of the wave?"}
 Nobody! Each person only watched one neighbor. But together, you made a wave that moved down the line.
@@ -52,7 +52,7 @@ When many simple parts make something bigger that nobody planned, we call it **{
 
 ### 2.1.1 - One Row, One Rule
 
-Before he was a teacher, Mr. Ross worked at **Wolfram Research**. Its founder is **Stephen Wolfram**. He spent years on one question: *how can very simple rules make very complicated things?* He studied rows of squares like this one.
+Mr. Ross, who wrote this book, worked at **Wolfram Research** before he became a teacher. Its founder is **Stephen Wolfram**. He spent years on one question: *how can very simple rules make very complicated things?* He studied rows of squares like this one.
 
 Picture a row of squares. Each square is black or white. Every square looks at **itself** and its **two neighbors**. Then the rule card says what color it will be in the next row.
 
@@ -97,10 +97,10 @@ Decide your new color, but wait for "Go!" If you change early, your neighbors wi
 
 ### 2.1.4 - Watch the Game of Life
 
-The **Game of Life** is a grid, not a row. Each square follows simple rules about its 8 neighbors. Mr. Ross shows it on the projector.
+The **Game of Life** is a grid, not a row. Each square follows simple rules about its 8 neighbors. Your teacher shows it on the projector.
 
 :::{.steps}
-1. Mr. Ross chooses **The Game of Life**, adds a **glider**, and presses **Run**.
+1. Your teacher chooses **The Game of Life**, adds a **glider**, and presses **Run**.
 2. Watch the glider. What does it do?
 3. Look closely at one square. Does it move?
 :::
@@ -133,7 +133,7 @@ Use the rules tool in 2.1.4, with a partner.
 :::
 
 :::{.project title="Rule 30 with Cups"}
-Make Rule 30 on a table with paper cups: cup up is white, cup down is black. Make 6 rows. Ask Mr. Ross to take a photo of your table.
+Make Rule 30 on a table with paper cups: cup up is white, cup down is black. Make 6 rows. Ask your teacher to take a photo of your table.
 :::
 
 :::{.watch title="Inventing the Game of Life (Numberphile)"}

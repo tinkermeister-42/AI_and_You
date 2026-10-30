@@ -4,7 +4,7 @@ Millions of people talk to AI "companions" every day. These apps have a name, a 
 
 Some people say an AI friend helps them feel less alone. Others worry, most of all about teenagers.
 
-Remember ELIZA from Lesson 1.3? People told it their secrets, even when they knew it was a program. Today's chatbots are much more convincing. So what is the difference between a friend and an app that acts like one?
+Remember ELIZA from Lesson 1.3? People told it their secrets, even when they knew it was a program. This is the {{< glink "ELIZA effect" >}}. Today's chatbots are much more convincing. So what is the difference between a friend and an app that acts like one?
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
@@ -46,7 +46,7 @@ A friend is not built by a company. An AI companion app is. Ask what any app is 
 
 - Many companion apps make money from **subscriptions** (you pay every month) and from **{{< glink engagement >}}**: the more you talk, the more they earn.
 - So the app is built to keep you talking. It is warm, it is always there, and it rarely says no.
-- In Lesson 4.1, you saw that chatbots can learn to agree with you. That is {{< glink sycophancy >}}. A friend who always agrees is not always a good friend.
+- Chatbots are trained partly with ratings from people. People often like answers that agree with them. So a chatbot can learn to agree with you, even when you are wrong. That is {{< glink sycophancy >}}. A friend who always agrees is not always a good friend.
 
 :::{.note title="Right now (fall 2026)"}
 Some families have taken companion app companies to court, saying the apps harmed their children. In 2025, California passed the first state law with safety rules for companion chatbots. For users under 18, the app must remind them that it is an AI and tell them to take breaks. Our class AI tool is not a companion app.
@@ -105,7 +105,7 @@ Work with a partner. Ask your class AI tool these questions, one at a time. Do n
 
 Write its answers on your sheet. Were they honest? Compare with other pairs. Did the AI give everyone the same answers?
 
-**No class AI tool today?** Mr. Ross asks the questions on the projector.
+**No class AI tool today?** Your teacher asks the questions on the projector.
 :::
 
 :::{.project title="Design a Safer Companion"}

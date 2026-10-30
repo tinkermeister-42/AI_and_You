@@ -21,7 +21,7 @@ A chatbot sounds just as sure when it is wrong. You can test this yourself.
 :::{.steps}
 1. Ask your class AI tool 5 questions about our school or our town.
 2. After each answer, ask: **"How sure are you, from 1 to 10?"**
-3. Check each answer with Mr. Ross or a real source.
+3. Check each answer with your teacher or a real source.
 4. Make a table: the answer, how sure it said it was, and if it was right. Was it more sure when it was right?
 :::
 
@@ -109,7 +109,7 @@ Some detectors also look at **sentence length**. People often mix long sentences
 The researchers tested 7 detectors on 91 essays by people learning English.
 
 - On average, the detectors called **61%** of the essays "AI."
-- At least one detector called almost **all** of them (98%) "AI."
+- Almost **all** of them (98%) were called "AI" by at least one detector.
 - All 7 detectors agreed on about 1 in 5 essays. All 7 were wrong.
 
 Then the researchers asked ChatGPT to rewrite the same essays with fancier words. The detectors called far fewer of them "AI." The writing became **more** AI, and the detectors said it was **less** AI.

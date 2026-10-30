@@ -48,7 +48,7 @@ When you think about AI in 20 years, do you feel **hopeful**, **worried**, or **
 
 | Hopes | Worries |
 |---|---|
-| New medicines. In 2024, AI that predicts the shape of proteins won a Nobel Prize. | Today's harms: bias, scams, fakes, and jobs (Units 4 and 5) |
+| New medicines. Proteins are tiny parts that do most of the work inside your body. AI can predict the shape of a protein, and the shape helps scientists make medicines. | Today's harms: bias, scams, fakes, and jobs (Units 4 and 5) |
 | A tutor and a translator for every person, in every language | People using AI to hurt others: weapons, lies, spying |
 | Help with hard problems, like climate and disease | Losing control: an AI that is very powerful, with a goal that is a little bit wrong |
 
@@ -63,7 +63,7 @@ The philosopher Nick Bostrom told this story. A company builds a very powerful A
 
 The AI is very good at its goal. It builds factories. It uses all the metal it can find. Then it starts using metal from cars, buildings, and everything else. It never hated people. It just had one goal, and nobody told it what else mattered.
 
-This is not a prediction. It is a story to show a real problem. A goal that is a little bit wrong can go very wrong when a machine is very powerful. Making an AI's goals match what people really want is called {{< glink alignment >}}.
+This is not a prediction. It is a story to show a real problem. A goal that is a little bit wrong can go very wrong when a machine is very powerful. Making an AI's goals match what people really want is called {{< glink alignment >}}. It is hard, because people do not always agree on {{< glink ethics >}}: what is right and wrong.
 :::
 
 Now act it out. Use paper chains instead of paper clips.

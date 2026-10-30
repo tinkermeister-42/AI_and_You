@@ -50,7 +50,7 @@ An app has millions of videos and posts. It can show you only a few. So an AI ma
 
 ![](/images/Unit_5/5.4_feed_loop.svg){width="520px" fig-align="center" fig-alt="A loop. You click a story. The app learns: more of this. It shows you more of the same kind. You see less of everything else. Then you click again."}
 
-Every click, like, share, and second you watch teaches the app. This is the same idea as training in Unit 2: the AI fixes its weights after every example. Here, **you** are the example.
+The steps the app follows to choose are its {{< glink algorithm >}}. Every click, like, share, and second you watch teaches the app. This is the same idea as training in Unit 2: the AI fixes its weights after every example. Here, **you** are the example.
 
 ***
 
@@ -58,7 +58,7 @@ Every click, like, share, and second you watch teaches the app. This is the same
 
 - **Different worlds.** Your feed and your friend's feed can be very different. You may not know what the other person sees. This is called a {{< glink "filter bubble" >}}.
 - **Angry stories win.** People click and share angry and scary stories more. So the app learns to show more of them.
-- **Fake news looks real.** AI can write whole news websites, with no reporters at all.
+- **Fake news looks real.** AI can write whole news websites, with no reporters at all. The feed does not check if a story is true. It only predicts if you will click.
 
 :::{.note title="Right now (fall 2026)"}
 NewsGuard is a company that checks news sites. It has found more than **3,700** websites that publish news written mostly by AI, with little or no human checking. They are in 16 languages (June 2026).
@@ -99,7 +99,7 @@ Should an app show you what you **like**, or what is **important**? Who should d
 {{< further >}}
 
 :::{.project title="Day 2: Trace a Story Back"}
-Mr. Ross shows a news story or picture that spread online this month. Work with a partner.
+Your teacher shows a news story or picture that spread online this month. Work with a partner.
 
 1. Use the SIFT steps from Lesson 4.3.
 2. Ask your class AI tool: **"Is this story true? Give me 3 sources."** Then check every source yourself. Does it say what the AI says?

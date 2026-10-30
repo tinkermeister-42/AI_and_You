@@ -1,6 +1,6 @@
 # 2.7 - Train Your Own AI {.unnumbered}
 
-Until now, someone else trained the AI: the class, or Mr. Ross.
+Until now, someone else trained the AI: the class, or your teacher.
 
 Today, **you** train an AI to recognize hand signs, with your camera, in about 10 minutes. No code. No account.
 
@@ -73,7 +73,7 @@ Work in a group of **2 or 3**, with one computer that has a camera.
 :::
 
 :::{.teacher title="Class size and cameras"}
-**Small class:** each pair trains its own model, then you swap computers and test each other's. **Large class, or no cameras?** Mr. Ross trains one model on the projector. Everyone comes up and adds pictures of **their** hands. A class model has more kinds of hands in it. Is it better?
+**Small class:** each pair trains its own model, then you swap computers and test each other's. **Large class, or no cameras?** The teacher trains one model on the projector. Everyone comes up and adds pictures of **their** hands. A class model has more kinds of hands in it. Is it better?
 :::
 
 ### 2.7.3 - Fool It
@@ -111,6 +111,7 @@ Open Teachable Machine again with your partner. Train Rock and Paper like yester
 3. Now make your AI harder to fool. Add more **kinds** of examples: both hands, different people, near and far, different light. Train again.
 4. Test all the tricks again. Did your AI get better? Write what changed on your sheet.
 5. **Class model:** train one model with pictures from **everyone**. Test it on a teacher who was not in the pictures. Is it better than a one-person model?
+6. Train a new model on one of your Warm Up ideas. Then try to fool it.
 :::
 
 :::{.project title="Hello in Three Languages"}

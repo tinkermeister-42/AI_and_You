@@ -44,6 +44,8 @@ Do it **3 times**. Write the times on your sheet. Did you get faster?
 
 ### 2.3.1 - Practice Makes Connections Stronger
 
+Did you get faster with your other hand? Your hand did not change in 3 tries. Your brain did.
+
 When you do something new, a group of neurons fires together. When you do it again and again, the synapses between those neurons get **stronger**. The signal passes more easily. The skill gets faster and smoother.
 
 Scientists say it with a short rhyme:
@@ -59,7 +61,7 @@ When you stop practicing, unused connections can get weaker. That is why you for
 2. Pavlov's team played a sound, a clicking **metronome**, right before they gave the dogs food. They did this many times.
 3. Soon, the dogs drooled when they heard the clicking, **with no food at all**.
 
-The dogs' brains connected the sound with food. This kind of learning is called {{< glink conditioning >}}. Pavlov won a Nobel Prize in 1904 for his work on how the body digests food.
+The dogs' brains connected the sound with food. This kind of learning is called {{< glink conditioning >}}.
 :::
 
 :::{.remember title="Learning changes connections"}

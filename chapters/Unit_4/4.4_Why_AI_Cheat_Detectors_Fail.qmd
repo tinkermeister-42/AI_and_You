@@ -2,7 +2,7 @@
 
 Some schools use "AI detectors." A teacher puts in a student's essay. The detector says: "87% likely written by AI."
 
-In 2023, researchers at Stanford University tested 7 popular detectors. They used 91 essays written by **people learning English**, for an English test. The detectors said **61%** of them were written by AI. At least one detector blamed almost **all** of them (98%).
+In 2023, researchers at Stanford University tested 7 popular detectors. They used 91 essays written by **people learning English**, for an English test. The detectors said **61%** of them were written by AI. Almost **all** of them (98%) were called AI by at least one detector.
 
 Every one of those essays was written by a person. Today you find out why detectors blame people who write in a second language, like many students in this room.
 
@@ -37,7 +37,7 @@ Every one of those essays was written by a person. Today you find out why detect
 
 {{< warmup >}}
 
-Mr. Ross reads 4 short paragraphs. Some were written by students in Lesson 3.3 (no names). Some were written by AI. After each one, hold up **H** for human or **A** for AI.
+Your teacher reads 4 short paragraphs. Some were written by students in Lesson 3.3 (no names). Some were written by AI. After each one, hold up **H** for human or **A** for AI.
 
 How many did the class get right? Was it easy?
 
@@ -47,7 +47,7 @@ How many did the class get right? Was it easy?
 
 Remember Lesson 2.9: a chatbot picks likely next words. So AI writing is very {{< glink predictable >}}. Most words are the words you would guess.
 
-An AI {{< glink detector >}} measures how predictable the words are. Very predictable writing: it says "AI." Surprising words: it says "human."
+In the warm-up, you tried to tell human writing from AI writing. It was hard. An AI {{< glink detector >}} tries to do the same job. It measures how predictable the words are. Very predictable writing: it says "AI." Surprising words: it says "human."
 
 ***
 
@@ -77,7 +77,7 @@ A detector score is a **guess**. It is not proof. If someone says you used AI, y
 - **Use version history.** Many writing apps save every change you make, with the time.
 - **Keep your notes,** even messy ones, and your notes in your home language.
 - **Be ready to talk** about your writing: why you chose your words, what you changed.
-- **Write an AI note** (Lesson 3.3) when you use AI the allowed way.
+- **Write an AI note** (Lesson 3.3) when you use AI the allowed way. It says what you did and what the AI did.
 
 {{< tryit >}}
 

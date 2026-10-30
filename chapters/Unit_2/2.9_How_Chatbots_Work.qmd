@@ -78,7 +78,7 @@ Start with **My**: My → friend → likes → rice → and → beans → end.
 
 ### 2.9.2 - From Counting to ChatGPT
 
-A real chatbot has the same goal: predict the next word. But it is much, much bigger.
+A real chatbot is a {{< glink "large language model" >}} (Lesson 1.6). It has the same goal: predict the next word. But it is much, much bigger.
 
 | | The tiny chatbot | A real chatbot |
 |---|---|---|
@@ -101,7 +101,7 @@ You are the chatbot. Work in a group of 2 to 4 (or alone).
 1. Finish the count table on your sheet for the training text above.
 2. Start with **I** or **My**.
 3. Look up the word. If there is only one next word, write it.
-4. If there are two or more choices, **roll a die**. Your sheet shows which numbers go with which word. (More common words get more numbers.)
+4. If there are two or more choices, **roll a die**. A die is {{< glink random >}}: you cannot guess what it will show. Your sheet shows which numbers go with which word. (More common words get more numbers.)
 5. Keep going until you reach the end of the sentence. Write 3 sentences.
 6. Did you write a sentence that is **not** in the training text?
 :::

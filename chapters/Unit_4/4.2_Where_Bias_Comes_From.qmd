@@ -42,7 +42,7 @@ For Clever Hans, Round 2: seal a math problem in an envelope. Nobody in the room
 
 In Turkish, there is one word for "he" and "she": **o**. So "O bir doktor" can mean "He is a doctor" **or** "She is a doctor."
 
-Mr. Ross types these into Google Translate, from Turkish to English:
+Your teacher types these into Google Translate, from Turkish to English:
 
 > O bir doktor. O bir hemşire. *(doctor, nurse)*
 
@@ -94,7 +94,7 @@ The AI learned to look at the **snow**, not the animal. Many people who tested i
 :::{.steps}
 1. Choose one student to be **Hans**, one to be the **questioner**, and everyone else to be the **crowd**.
 2. **Round 1:** the questioner shows a math card to the crowd, but not to Hans. Hans taps on the desk. The crowd leans back a little when Hans reaches the answer. Does Hans look smart?
-3. **Round 2:** Mr. Ross gives the questioner a closed envelope. **Nobody** in the room knows the answer. Hans taps. What happens?
+3. **Round 2:** Your teacher gives the questioner a closed envelope. **Nobody** in the room knows the answer. Hans taps. What happens?
 4. **Round 3:** Hans turns around and faces the wall. The crowd knows the answer again. What happens?
 :::
 
@@ -125,7 +125,7 @@ Work with a partner. Use Google Translate or your class AI tool. Write what happ
 :::
 
 :::{.project title="Who Does It Show?"}
-Use your prompts from Lesson 3.7. Mr. Ross makes pictures of "a doctor," "a nurse," "a scientist," and "a basketball player," 4 times each. Count who the AI shows. Make a chart. Is it fair?
+Did you count pictures in Lesson 3.7? Bring your counts. If not, give your teacher these prompts: "a doctor," "a nurse," "a scientist," and "a basketball player." Your teacher makes each one 4 times. Count who the AI shows. Make a chart. Is it fair?
 :::
 
 :::{.project title="Missing from the Data"}

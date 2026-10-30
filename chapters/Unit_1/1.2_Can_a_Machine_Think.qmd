@@ -19,7 +19,7 @@ He made a game to find out. Today, you play his game with a real AI.
 - [ ] I can explain the question Alan Turing asked in 1950.
 - [ ] I can explain how the imitation game (the Turing test) works.
 - [ ] I can play the imitation game as a judge, a player, or a helper.
-- [ ] I can explain why fooling a person is not the same as thinking.
+- [ ] I can explain why people disagree about whether fooling a person means a machine thinks.
 :::
 
 ::::{.vocab}
@@ -79,7 +79,7 @@ In 2025, scientists played Turing's game with almost 300 judges. Each judge chat
 
 ![](/images/Unit_1/1.2_turing_test_2025.svg){width="640px" fig-align="center" fig-alt="Bar chart. GPT-4.5 with a persona was picked as the human 73% of the time. LLaMa-3.1 with a persona: 56%. ELIZA, from 1966: 23%. GPT-4o with no persona: 21%. A dashed line marks 50%, a coin flip."}
 
-GPT-4.5 was picked as the human **73%** of the time. But it only did this well with a {{< glink persona >}}. The scientists told it: *Act like a shy young person who uses slang.* Short answers with small mistakes look human.
+GPT-4.5 was picked as the human **73%** of the time. The judges picked the chatbot more often than the real person. The researchers said it passed Turing's test. But it only did this well with a {{< glink persona >}}. The scientists told it: *Act like a shy young person who uses slang.* Short answers with small mistakes look human. (ELIZA is a chatbot from 1966. You meet it in the next lesson.)
 
 {{< tryit >}}
 

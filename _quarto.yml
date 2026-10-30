@@ -75,7 +75,7 @@ book:
         - file: chapters/Unit_2/2.3_How_Brains_Learn.qmd
         - file: chapters/Unit_2/2.4_The_Artificial_Neuron.qmd
         - file: chapters/Unit_2/2.5_Train_a_Human_Neural_Network.qmd
-        - file: chapters/Unit_2/2.6_Watch_Mr_Ross_Build_an_AI.qmd
+        - file: chapters/Unit_2/2.6_Watch_Your_Teacher_Build_an_AI.qmd
         - file: chapters/Unit_2/2.7_Train_Your_Own_AI.qmd
         - file: chapters/Unit_2/2.8_How_AI_Sees.qmd
         - file: chapters/Unit_2/2.9_How_Chatbots_Work.qmd

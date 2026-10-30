@@ -72,7 +72,7 @@ Some of these poems were written by people. Some were written by an AI. Work wit
 :::{.steps}
 1. Read each poem out loud with your partner.
 2. On your sheet, vote: **person** or **AI**? Write one clue for each vote.
-3. Mr. Ross counts the class votes. Then he shows the answers.
+3. Your teacher counts the class votes, then shows the answers.
 4. How many did the class get right? Was it more than guessing?
 :::
 
@@ -133,6 +133,7 @@ An AI picture wins an art contest. Who should own it: the person who wrote the p
 - Something is creative when ...
 - An AI picture should belong to ... because ...
 - It (does / does not) matter who made it, because ...
+- Jason Allen said, "Humans lost." I (agree / disagree), because ...
 :::
 
 {{< further >}}
@@ -141,7 +142,7 @@ An AI picture wins an art contest. Who should own it: the person who wrote the p
 Now try pictures. Work with a partner.
 
 1. Each student draws a small picture on paper: a place, an animal, or a food. No names on it.
-2. Mr. Ross makes AI pictures of the same things (or pairs make one each with the class AI tool, taking turns).
+2. Your teacher makes AI pictures of the same things (or pairs make one each with the class AI tool, taking turns).
 3. Hang all the pictures on the wall, mixed together, with numbers.
 4. Walk around. For each number, vote: person or AI? Count the votes.
 :::

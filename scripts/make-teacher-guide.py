@@ -60,7 +60,7 @@ md = [f"""---
 title: "AI and You: Teacher Guide"
 ---
 
-This page is for Mr. Ross. Nothing in the book links here, and it is not in the site search. Bookmark this address.
+This page is for teachers. Nothing in the book links here, and it is not in the site search. Bookmark this address.
 
 It is rebuilt every time the book is rendered, so it always matches the lessons.
 

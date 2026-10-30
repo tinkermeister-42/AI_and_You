@@ -48,7 +48,7 @@ The spelling is perfect. But it wants you to **hurry** (12 hours), and it has a 
 
 ### 5.2.1 - The Warning Signs
 
-Almost every {{< glink scam >}} uses some of these tricks:
+Many scams come from an {{< glink imposter >}}: someone who pretends to be a real company, a government office, or a person you love. Almost every {{< glink scam >}} uses some of these tricks:
 
 | Warning sign | What it sounds like |
 |---|---|
@@ -70,7 +70,7 @@ A real company or government office will never ask you to pay with **gift cards*
 - **Perfect language:** no more spelling mistakes, in English or in your home language.
 - **Fast and cheap:** one scammer can send thousands of different messages.
 - **Personal:** AI can use things you posted online to make a message about **you**.
-- **Fake voices:** a call can sound like someone you love (Lesson 4.3).
+- **Fake voices:** a call can sound like someone you love (Lesson 4.3). Ask for your family safe word.
 
 So do not look for bad spelling. Look for the warning signs.
 

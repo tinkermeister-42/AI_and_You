@@ -138,7 +138,7 @@ Each person has a job.
 3. Everyone writes each step on the sheet.
 4. After T10, the scorekeeper writes the number of mistakes. That was **pass 1**.
 5. Do **pass 2** with the same cards. Keep going until a whole pass has **0 mistakes**.
-6. Now use the **test cards**, X1 to X6. **Do not fix the weights on a test!** Just record what the neuron says.
+6. Now use the **test cards**, X1 to X6. They are the {{< glink "test data" >}}: the neuron never trained on them. **Do not fix the weights on a test!** Just record what the neuron says.
 :::
 
 :::{.think title="What happened on the test cards?"}

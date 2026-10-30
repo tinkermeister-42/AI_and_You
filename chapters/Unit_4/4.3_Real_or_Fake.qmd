@@ -80,22 +80,22 @@ Fact-checkers do not stare at a picture. They ask **where it came from**. Use th
 
 ### 4.3.3 - Fake Voices
 
-AI can copy a voice from a short recording, maybe a video someone posted online. Scammers use {{< glink "voice clone" >}} calls that sound like a family member in trouble: "Mom, I need money right now!"
+Fakes are not only pictures. AI can make fake voices, too. It can copy a voice from a short recording, maybe a video someone posted online. Scammers use {{< glink "voice clone" >}} calls that sound like a family member in trouble: "Mom, I need money right now!"
 
 :::{.remember title="What you can do"}
-Choose a **family safe word**: a secret word that only your family knows. If someone calls in a panic asking for money, ask for the safe word. Then hang up and call the person back on their real number.
+Choose a **family safe word**: a secret word that only your family knows. If someone calls in a panic asking for money, ask for the safe word. Then hang up and call the person back on their real number. Calling back is the same idea as SIFT: you check the source, not the voice.
 :::
 
 {{< tryit >}}
 
 ### 4.3.4 - Trace It Back
 
-Work with a partner. Mr. Ross shows 2 pictures that went around online. For each one:
+Work with a partner. Your teacher shows 2 pictures that went around online. For each one:
 
 :::{.steps}
 1. **Stop.** Write how the picture makes you feel.
 2. **Find better coverage.** Search for a few words that describe it, plus "fact check." Or describe the picture to your class AI tool and ask: **"Have fact-checkers written about this picture? Give me sources."** Then open the sources yourself.
-3. **Trace to the original.** Mr. Ross does a reverse image search on the projector. Where did the picture first appear? Who posted it?
+3. **Trace to the original.** Your teacher does a reverse image search on the projector. Where did the picture first appear? Who posted it?
 4. Decide: real, fake, or real but used in a misleading way. Write your proof.
 :::
 

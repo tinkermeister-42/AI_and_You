@@ -107,7 +107,7 @@ The teacher wants kids' hands on real things in every lesson.
   turns), web search with cited sources, documents and slides. It cannot
   make audio, video, or voice clones; students cannot switch models or
   settings; no memory between chats. Photo upload is unconfirmed: never make
-  it required. Every activity that uses Raina needs a fallback: Mr. Ross runs
+  it required. Every activity that uses Raina needs a fallback: the teacher runs
   it on the projector, or an unplugged version. Raina is the only AI tool
   students may use with an account. District rule for any other site: it is
   allowed if it needs no login, is not blocked on the school network, and
@@ -138,7 +138,7 @@ The teacher wants kids' hands on real things in every lesson.
    only for a video that passes the video rule (Links, Videos and Tools)
 
 - **The Big Question is a bookend, not a theme.** "Is AI like a human
-  brain?" is asked in 1.1 (students write an answer Mr. Ross keeps) and asked
+  brain?" is asked in 1.1 (students write an answer the teacher keeps) and asked
   again in 6.6, the last lesson. Nothing in between is organized around it;
   no unit is devoted to it, and lessons do not end with it. The brain
   comparison comes up only where the content raises it (Unit 2).
@@ -322,6 +322,12 @@ is a sentence that costs them the idea.
   fine for roles in a group activity ("one student is the robot")
 - **Lead with the concrete.** A picture, a game, or a story first; the idea
   after. The cat rule in 1.1.2 is the pattern to copy
+- **"Your teacher", not "Mr. Ross".** Another teacher may use this book.
+  Student pages, sheets and widgets say "your teacher". "Mr. Ross" appears
+  only where the book credits the author: the home page, the syllabus header,
+  About Your Teacher and credit line, the footer, and a lesson that says where
+  an idea came from ("Mr. Ross, who wrote this book, ..."). Teacher blocks
+  say "the teacher"
 - **Say what is true.** No "AI thinks" or "AI knows" as plain fact. Whether
   AI is like a brain is the question the class is asking, so the book does
   not answer it in passing

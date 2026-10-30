@@ -3,7 +3,7 @@
 <div class="aion" id="aion">
   <div class="aion-grid"></div>
   <div class="aion-bar">
-    <button type="button" class="aion-reveal">👀 Show Mr. Ross's answers</button>
+    <button type="button" class="aion-reveal">👀 Show the answers</button>
     <button type="button" class="aion-reset">↺ Start over</button>
   </div>
 </div>
@@ -128,11 +128,11 @@
   const reveal = root.querySelector(".aion-reveal");
   reveal.addEventListener("click", () => {
     const shown = root.classList.toggle("revealed");
-    reveal.textContent = shown ? "🙈 Hide the answers" : "👀 Show Mr. Ross's answers";
+    reveal.textContent = shown ? "🙈 Hide the answers" : "👀 Show the answers";
   });
   root.querySelector(".aion-reset").addEventListener("click", () => {
     root.classList.remove("revealed");
-    reveal.textContent = "👀 Show Mr. Ross's answers";
+    reveal.textContent = "👀 Show the answers";
     root.querySelectorAll(".aion-choices button").forEach((x) => x.setAttribute("aria-pressed", "false"));
   });
 })();

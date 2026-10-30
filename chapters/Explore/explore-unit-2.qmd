@@ -121,7 +121,7 @@ But if no straight line can split the cards, the neuron never stops making mista
 
 Train again, but shuffle the training cards first. Use the **Check Our Math** tool in Lesson 2.5, or do it on paper. Do you end with the same weights? Does the neuron still get the training cards right? Do different weights give different answers on the test cards?
 
-## From Lesson 2.6: Watch Mr. Ross Build an AI {#explore-2-6}
+## From Lesson 2.6: Watch Your Teacher Build an AI {#explore-2-6}
 
 ### How a Network Draws a Curved Border
 
@@ -149,7 +149,7 @@ The Pokédex has 1,281 Pokémon. That is small for AI. A big image AI learns fro
 
 ### Why Teachable Machine Learns So Fast
 
-Mr. Ross's Pokémon AI in Lesson 2.6 started from nothing. Teachable Machine does not. It starts with a network that **already learned** from millions of pictures, like the ImageNet pictures in Lesson 1.5. That network already knows about edges, shapes, and colors (you will see how in Lesson 2.8).
+The Pokémon AI in Lesson 2.6 started from nothing. Teachable Machine does not. It starts with a network that **already learned** from millions of pictures, like the ImageNet pictures in Lesson 1.5. That network already knows about edges, shapes, and colors (you will see how in Lesson 2.8).
 
 So Teachable Machine only learns the **last step** from your pictures: which shapes go with "rock." That is why it needs only about 50 pictures and a few seconds.
 

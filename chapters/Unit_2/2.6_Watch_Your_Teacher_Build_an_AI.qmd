@@ -1,10 +1,10 @@
-# 2.6 - Watch Mr. Ross Build an AI {.unnumbered}
+# 2.6 - Watch Your Teacher Build an AI {.unnumbered}
 
 In Lesson 2.5, the class trained one neuron on 10 cards. It took about 20 minutes, and every step was done by hand.
 
 A computer can do the same work on **hundreds** of Pokémon, with **many** neurons, in a few seconds.
 
-Mr. Ross built AI for his job for many years. Today, he builds one in front of you. Your job is to **predict** what will happen, and then to test the AI.
+Mr. Ross, who wrote this book, built AI for his job for many years. He made this Pokémon AI. Today, your teacher builds it in front of you. Your job is to **predict** what will happen, and then to test the AI.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
@@ -32,7 +32,7 @@ Mr. Ross built AI for his job for many years. Today, he builds one in front of y
 ::::
 
 :::{.guided-notes-link}
-[Printable lesson sheet](/handouts/Unit_2/2.6_Watch_Mr_Ross_Build_an_AI.pdf){target="_blank"} - the sheet you write on today.
+[Printable lesson sheet](/handouts/Unit_2/2.6_Watch_Your_Teacher_Build_an_AI.pdf){target="_blank"} - the sheet you write on today.
 :::
 
 :::{.teacher title="Before class"}
@@ -57,7 +57,7 @@ A computer does it in a few seconds.
 
 ![](/images/Unit_2/2.6_build_steps.svg){width="560px" fig-align="center" fig-alt="Six steps. 1, get data: the Pokédex, 1,281 Pokémon. 2, ask a question: what type is it? 3, split the data: 80% train, 20% test. 4, build the network: how many neurons? 5, train: many passes, fix the weights. 6, test, then use it on Pokémon it never saw."}
 
-1. **Get data.** Mr. Ross's {{< glink dataset >}} has **1,281 Pokémon**. For each one, it has 8 numbers: height, weight, HP, Attack, Defense, Special Attack, Special Defense, and Speed. It also has the type.
+1. **Get data.** The {{< glink dataset >}} has **1,281 Pokémon**. For each one, it has 8 numbers: height, weight, HP, Attack, Defense, Special Attack, Special Defense, and Speed. It also has the type.
 2. **Ask a question.** For example: *Is it Fighting or Psychic?*
 3. **Split the data.** Most Pokémon go into the **training data**. The rest go into the {{< glink "test data" >}}. The network never trains on the test data.
 4. **Build the network.** Choose how many neurons it has.
@@ -74,7 +74,7 @@ An AI can do the same thing. The only fair check is data it has **never seen**.
 
 ### 2.6.2 - Predict, Train, and Test
 
-Mr. Ross runs the AI on the projector. Before each run, **predict** the test score on your sheet. Then watch.
+Your teacher runs the AI on the projector. Before each run, **predict** the test score on your sheet. Then watch.
 
 :::{.steps}
 1. **Run 1:** *Fighting or Psychic?* with 2 numbers (Attack and Special Attack). This is the class neuron's question, with 140 Pokémon. Watch the colored map: it shows what the network says for every Attack and Special Attack.
@@ -105,7 +105,7 @@ The network beat guessing, but not by much. The numbers alone do not decide a Po
 
 {{< talk >}}
 
-Mr. Ross built this AI in a few minutes, with data he downloaded. Now imagine someone builds an AI like this to decide who gets a job or who gets a loan.
+This AI took only a few minutes to build, with data anyone can find online. Now imagine someone builds an AI like this to decide who gets a job or who gets a loan.
 
 :::{.frames}
 - The test data must be kept apart because ...

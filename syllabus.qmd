@@ -26,7 +26,7 @@ Before teaching, Mr. Ross spent more than 15 years working in AI and data scienc
 
 ## The Big Question
 
-On the first day, you answer one question: **Is AI like a human brain?** Mr. Ross keeps your answer. On the last day, you answer again, with everything you learned in between.
+On the first day, you answer one question: **Is AI like a human brain?** Your teacher keeps your answer. On the last day, you answer again, with everything you learned in between.
 
 ## The Units
 
@@ -47,7 +47,7 @@ The story of AI, from Alan Turing's question "Can machines think?" to ChatGPT. Y
 
 ### Unit 2: Brains and Neural Networks
 
-How simple rules make complex behavior, how brain cells work, and how computer scientists copied the idea. You become a neuron, then the class trains a neural network made of people, using Pokémon cards. You watch Mr. Ross build a real AI. You train your own AI with a camera. You see how AI sees pictures and how chatbots write.
+How simple rules make complex behavior, how brain cells work, and how computer scientists copied the idea. You become a neuron, then the class trains a neural network made of people, using Pokémon cards. You watch your teacher build a real AI. You train your own AI with a camera. You see how AI sees pictures and how chatbots write.
 
 ### Unit 3: Using AI Well
 
@@ -82,7 +82,7 @@ Each lesson has a **printable sheet** to write on. If you miss a class, read the
 
 - **A Chromebook** and this book. The demos in the book work in any web browser, need no account, and send nothing anywhere.
 - **Our class AI tool:** Raina, in MagicSchool. This is the only AI tool you use with an account in this class.
-- **A few free websites** that need no login, like Google Translate and Teachable Machine. Mr. Ross checks each one first.
+- **A few free websites** that need no login, like Google Translate and Teachable Machine. Your teacher checks each one first.
 
 ## Your Privacy
 
