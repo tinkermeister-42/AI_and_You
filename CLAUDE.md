@@ -241,6 +241,9 @@ Syntax: `:::{.callout-type title="Title"} … :::`. New types need an entry in
   health details. Prompts use stand-ins ("my grandmother", "Student Name").
   Camera activities show hands and objects, never faces. Writing that goes
   into a tool is about a topic, not about the student
+- **No phones in class.** Missouri law bans phones in the classroom. Any
+  step that uses a phone says to try it at home ("Try it at home: ..."). In
+  class, students use Chromebooks
 - **Home languages are an asset.** About 14 languages are spoken in the
   school. Activities that test AI in a student's own language make that
   student the expert

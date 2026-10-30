@@ -108,12 +108,12 @@ Apps ask for **permission** to use your location, camera, microphone, and contac
 
 1. On your sheet, look at the 6 apps and the permissions they ask for.
 2. For each one, decide: does the app **need** it to work? Write yes or no.
-3. If you have a phone and your teacher allows it, open your phone's settings. Find **Privacy** or **Permissions**. Which apps can see your location?
-4. Choose one permission you will turn off. Why?
+3. Choose one permission you would turn off. Why?
+4. **Try it at home:** open your phone's settings. Find **Privacy** or **Permissions**. Which apps can see your location? Turn off one you do not need.
 :::
 
 :::{.project title="Teach Your Family"}
-Show someone in your family how to turn off location for the camera on their phone. Explain why, in your home language.
+At home, show someone in your family how to turn off location for the camera on their phone. Explain why, in your home language.
 :::
 
 :::{.explore-link}

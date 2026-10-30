@@ -30,7 +30,7 @@ AI makes predictions too.
 AI does not *know* the answer. It makes its best guess from patterns. Most of the time, the guess is good. Sometimes it is very wrong. In Unit 4, you will learn how to catch it.
 :::
 
-**Try it:** Open a text message on a phone. Type "I am going to" and tap the middle word the phone suggests, again and again. What sentence does your phone write? Is it like you?
+**Try it at home:** Open a text message on a phone. Type "I am going to" and tap the middle word the phone suggests, again and again. What sentence does your phone write? Is it like you?
 
 ### More to Try
 

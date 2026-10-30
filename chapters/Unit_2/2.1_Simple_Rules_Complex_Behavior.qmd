@@ -133,7 +133,7 @@ Use the rules tool in 2.1.4, with a partner.
 :::
 
 :::{.project title="Rule 30 with Cups"}
-Make Rule 30 on a table with paper cups: cup up is white, cup down is black. Make 6 rows. Take a photo of your table.
+Make Rule 30 on a table with paper cups: cup up is white, cup down is black. Make 6 rows. Ask Mr. Ross to take a photo of your table.
 :::
 
 :::{.watch title="Inventing the Game of Life (Numberphile)"}

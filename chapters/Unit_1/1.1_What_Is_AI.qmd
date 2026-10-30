@@ -178,7 +178,7 @@ Watch this at home or if we have time in class. It shows more examples of machin
 :::
 
 :::{.project title="AI Detective"}
-For one day, write down every time you see or use AI. Look at your phone, your apps, games, stores, and cars. Bring your list to class. Who found the most?
+For one day, write down every time you see or use AI, at school and at home. At home, look at your phone and your apps. Look at games, stores, and cars too. Bring your list to class. Who found the most?
 :::
 
 :::{.explore-link}
