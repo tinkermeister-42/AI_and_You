@@ -248,6 +248,13 @@ Syntax: `:::{.callout-type title="Title"} … :::`. New types need an entry in
   Teachable Machine). Anything that needs a student account must be allowed
   under the district's AI Use Plan; Claude.ai and ChatGPT have age limits.
   "Your class AI tool" covers whatever students have (likely MagicSchool)
+- **Show the famous pictures the text mentions, when they are free.** Public
+  domain or CC licensed only (check Wikimedia Commons; skip anything whose
+  copyright is disputed, like Jason Allen's contest winner). This workspace
+  cannot download from Wikimedia, so embed the Commons thumbnail
+  (`upload.wikimedia.org/.../thumb/...`, a standard width like 500px) with
+  the credit and license in the caption, and keep both wikimedia domains on
+  the firewall list
 - **Privacy:** when a tool saves what students make, say so in a `.gotcha`
   next to the activity (see Quick, Draw! in 1.1)
 - **No personal information in any AI tool, ever.** Never ask or let a

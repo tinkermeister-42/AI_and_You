@@ -2,6 +2,8 @@
 
 In March 2023, a photo of Pope Francis went around the world. He was wearing a huge, white, puffy winter jacket, like a rapper. Millions of people shared it. Many believed it.
 
+![The picture of Pope Francis that went around the world in March 2023. ([Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pope_Francis_in_puffy_winter_jacket.jpg){target="_blank"}, public domain)](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pope_Francis_in_puffy_winter_jacket.jpg/500px-Pope_Francis_in_puffy_winter_jacket.jpg){width="340px" fig-align="center" fig-alt="Pope Francis walking outside in a long, white, very puffy winter jacket, with a silver cross on a chain."}
+
 It was not a photo. A man in Chicago made it with an AI image generator, as a joke. He did not expect so many people to believe it.
 
 Today you test your eyes against AI faces. Then you learn something surprising: looking for clues stops working. You need a better way to check.
