@@ -77,6 +77,10 @@ ELIZA was made in 1966 by **Joseph Weizenbaum**, a professor at MIT. ELIZA does 
 - ELIZA is a **normal program**: a person wrote the rules (like the calculator in Lesson 1.1).
 :::
 
+Here is a real conversation with ELIZA. Find one answer where ELIZA copied your words and swapped "my" for "your."
+
+![A conversation with a copy of ELIZA made in 2005. The person's words come from Weizenbaum's 1966 paper about ELIZA. (Screenshot, public domain, Wikimedia Commons)](/images/Unit_1/1.3_eliza_conversation.png){width="620px" fig-align="center" fig-alt="White text on a dark screen. A large ELIZA title. ELIZA: Is something troubling you? YOU: Men are all alike. ELIZA: What is the connection, do you suppose? YOU: They're always bugging us about something or other. ELIZA: Can you think of a specific example? YOU: Well, my boyfriend made me come here. ELIZA: Is it important to you that your boyfriend made you come here? YOU: He says I'm depressed much of the time. ELIZA: I am sorry to hear that you are depressed. YOU: It's true. I am unhappy. ELIZA: Can you explain what made you unhappy?"}
+
 ***
 
 ### 1.3.2 - People Believed It
