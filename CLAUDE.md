@@ -277,6 +277,9 @@ Things that bite:
   files with new timestamps, so `check-site-assets.py` may call a PDF or SVG
   stale when it is not. If the sources did not change since the build,
   `touch handouts/Unit_*/*.pdf images/Unit_*/*.svg`; otherwise rebuild
+- **An interrupted deploy leaves a worktree behind.** The next `deploy.sh`
+  dies with "'gh-pages' is already used by worktree". Fix with
+  `git worktree list`, then `git worktree remove --force <path>`
 - **Session credentials may not delete branches.** A 403 on
   `git push origin --delete` is a permission limit; branch removal is the
   teacher's to do
