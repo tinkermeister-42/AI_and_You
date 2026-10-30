@@ -249,8 +249,9 @@ Syntax: `:::{.callout-type title="Title"} … :::`. New types need an entry in
   under the district's AI Use Plan; Claude.ai and ChatGPT have age limits.
   "Your class AI tool" covers whatever students have (likely MagicSchool)
 - **Show the famous pictures the text mentions, when they are free.** Public
-  domain or CC licensed only (check Wikimedia Commons; skip anything whose
-  copyright is disputed, like Jason Allen's contest winner). Keep a copy in
+  domain or CC licensed only (check Wikimedia Commons; go by the Permission
+  line on the Commons page: Jason Allen's winner is in, because the
+  Copyright Office ruled it cannot have a copyright, and 6.1 says he is suing). Keep a copy in
   `images/Unit_X/` with the credit and license in the caption. Never embed an
   address you could not open: this workspace cannot reach Wikimedia, so ask
   the teacher to attach the file (the first tries, built from file names,

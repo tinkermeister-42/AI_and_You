@@ -2,6 +2,8 @@
 
 In 2022, a man named Jason Allen won first prize for digital art at the Colorado State Fair. His picture showed people in a huge, glowing hall.
 
+![*Théâtre D'opéra Spatial* (Space Opera Theater), by Jason Allen with Midjourney, 2022. It won first prize. (Public domain: the U.S. Copyright Office ruled that it cannot have a copyright.)](/images/Unit_6/6.1_theatre_dopera_spatial.jpg){width="620px" fig-align="center" fig-alt="A painting-like AI picture. Three women in long orange and white gowns stand in a dark, golden hall. A huge round window in the back wall glows with white light and shows a bright land outside."}
+
 He did not paint it. He wrote prompts for an image generator, made hundreds of pictures, chose one, and changed it. Many artists were angry. Allen told a newspaper, "It's over. A.I. won. Humans lost."
 
 Was he right? Today you test your own eyes and ears: can you tell what a person made from what an AI made?
@@ -62,10 +64,9 @@ The AI does not copy one picture or one poem. It learned patterns from all of th
 :::{.note title="Right now (fall 2026)"}
 In the United States, the Copyright Office says a work made **only** by AI cannot have a {{< glink copyright >}}. A person's own creative choices can. Artists, writers, and news companies have taken AI companies to court for training on their work without asking. Some cases are still being decided.
 
-Jason Allen also went to court. He wants a copyright for his winning picture. Until a court decides who owns it, this book does not show it. You can see it on [Wikipedia](https://en.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_D%27op%C3%A9ra_Spatial){target="_blank"}.
+Jason Allen's picture is a real test. In 2023, the Copyright Office said it was made mostly by AI, so it cannot have a copyright. That is why this book can show it. Allen took the Copyright Office to court. The case is still being decided.
 :::
 
-![Another picture Jason Allen made with Midjourney in 2022. It is **not** the one that won. (Wikimedia Commons, public domain: made by AI)](/images/Unit_6/6.1_allen_midjourney.jpg){width="560px" fig-align="center" fig-alt="A painting-like AI picture. Women in long white and red dresses stand at a curved glass wall in outer space. Spaceships and bright stars fly past."}
 
 {{< tryit >}}
 
