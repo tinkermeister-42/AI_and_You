@@ -188,7 +188,33 @@ AlphaGo first learned from 160,000 games played by people. Then it played millio
 
 In game 2 against Lee Sedol, AlphaGo made a move that surprised the experts. At first, they thought it was a mistake. It helped AlphaGo win. People still talk about **move 37**.
 
-[AlphaGo, the full film (YouTube)](https://www.youtube.com/watch?v=WXuK6gekU1Y){target="_blank"}: Google DeepMind made a film about the match. Watch the part about move 37 and how Lee Sedol felt.
+[AlphaGo, the full film (2017)](https://www.youtube.com/watch?v=WXuK6gekU1Y){target="_blank"}: Google DeepMind made a film about the match. Watch the part about move 37 and how Lee Sedol felt. At school, [watch it on yout-ube.com](https://yout-ube.com/watch?v=WXuK6gekU1Y){target="_blank"}.
+
+### The Test That Trains AI
+
+{{< glink CAPTCHA >}} is short for "Completely Automated Public **Turing test** to tell Computers and Humans Apart." It is the Turing test from Lesson 1.2, turned around. A computer gives the test, and it tries to find out if **you** are a person.
+
+In 2003, Luis von Ahn, a young computer scientist from Guatemala, and his teachers at Carnegie Mellon University named the CAPTCHA. Then he had a second idea. People solved millions of CAPTCHAs every day. Could that work do something useful?
+
+In 2007, his team made **reCAPTCHA**. It showed two words. The computer knew one word. The other word came from an old book or newspaper, and the computer could not read it. Your answer helped turn old pages into text a computer can search. Google bought reCAPTCHA in 2009. (Later, von Ahn started another company, to teach languages for free: Duolingo.)
+
+### What the CAPTCHAs Asked For
+
+From 2012, the pictures came from photos of streets: house numbers, signs, traffic lights, crosswalks, buses. Google said this work helps to "improve maps, and solve hard AI problems."
+
+Some people think the street pictures also trained self-driving cars. In 2021, Google said no: the answers were only used to improve Google Maps. What do you think? How could you check? (Use lateral reading, Lesson 3.4.)
+
+### AI Beats the Test
+
+A CAPTCHA works only if computers cannot solve it. In 2024, researchers at ETH Zurich, a university in Switzerland, made an AI that solved Google's picture CAPTCHAs every time.
+
+So today, many websites check you without a puzzle. They watch how you move the mouse and how you type, and guess if you are a person.
+
+The test made to stop computers helped train them. Now the computers pass it.
+
+:::{.think title="Look closely"}
+Next time you see a CAPTCHA, look at what it asks you to find. What could an AI learn from your answer? Show someone in your family. Did they know?
+:::
 
 ### More to Try
 

@@ -10,6 +10,7 @@
   "back-translation": "Translating a translation back to the first language, to check it. If the meaning changed, something went wrong.",
   "bias": "When a system is unfair to some people, or works better for some people than for others. In AI, bias usually comes from the training data, from people missing in the data, or from shortcuts. (A different meaning: {{< glink slug=“bias-number” text=“bias, a number in a neuron” >}}.)",
   "bias-number": "In a neuron, an extra number that is always added to the total. It does the same job as a threshold. (The word “bias” has another meaning too: being unfair. See Unit 4.)",
+  "captcha": "A short test on a website that checks if you are a person, not a computer program. “Click every picture with a bus” is a CAPTCHA. Some CAPTCHAs also use your answers to label data for AI.",
   "career": "The work you do over many years of your life. A career can include many different jobs.",
   "cellular-automaton": "A row or grid of cells. Each cell is a color, like black or white. At each step, every cell changes by following the same rule, which looks only at its neighbors. More than one is called cellular automata.",
   "chatbot": "An AI program that you talk to with words. You type or say something, and it answers.",

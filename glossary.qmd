@@ -106,6 +106,18 @@ In a neuron, an extra number that is always added to the total. It does the same
 
 ***
 
+### CAPTCHA {#glossary-captcha}
+
+A short test on a website that checks if you are a person, not a computer program. "Click every picture with a bus" is a CAPTCHA. Some CAPTCHAs also use your answers to label data for AI.
+
+> **Example:**
+>
+> CAPTCHA stands for "Completely Automated Public Turing test to tell Computers and Humans Apart."
+
+**See Also:** {{< glink label >}}, {{< glink "Turing test" >}}
+
+***
+
 ### career {#glossary-career}
 
 The work you do over many years of your life. A career can include many different jobs.

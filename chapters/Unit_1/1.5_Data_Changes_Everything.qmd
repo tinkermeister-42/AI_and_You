@@ -115,6 +115,17 @@ If the labelers said a hot dog is a sandwich, the AI will say it too. The AI doe
 What if all the labelers came from one country? You will think about this in Unit 4.
 :::
 
+:::{.real-world title="You have done this job before"}
+Have you ever clicked every picture with a traffic light, to prove you are not a robot? That test is a {{< glink CAPTCHA >}}.
+
+Google's reCAPTCHA uses those clicks to label data for AI. Look at what it asked for, and you can see what AI was learning:
+
+- **2007:** blurry words from old books and newspapers. Computers were learning to read.
+- **From 2012:** house numbers, street signs, traffic lights, crosswalks, and buses, from photos of streets. Computers were learning to see a street.
+
+Every time you solved one, you were a labeler too. Nobody paid you.
+:::
+
 {{< talk >}}
 
 49,000 people labeled ImageNet. Most people do not know their names. The scientists became famous.
@@ -123,6 +134,7 @@ What if all the labelers came from one country? You will think about this in Uni
 - The people who labeled the data **should** / **should not** get credit, because ...
 - People disagreed about picture ... because ...
 - If the labelers all came from one country, the AI might ...
+- People who solve CAPTCHAs (should / should not) be told that they label data for AI, because ...
 - The most important part of the new recipe is ... because ...
 :::
 
