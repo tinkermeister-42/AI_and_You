@@ -73,6 +73,8 @@ In AI, {{< glink bias >}} means a system is unfair to some people, or works bett
 :::{.experiment title="Clever Hans, the horse that did math (1904)"}
 In Berlin, a horse named Hans seemed to do arithmetic. His owner asked, "What is 3 + 2?" Hans tapped his hoof 5 times. Crowds came to see him. Experts could not find a trick.
 
+![Clever Hans and his owner, Wilhelm von Osten, in Berlin. The boards hold numbers and letters. Hans answered by tapping. (Photo from the early 1900s, public domain)](/images/Unit_4/4.2_clever_hans.jpg){width="560px" fig-align="center" fig-alt="An old black and white photo. An old man with a white beard and a long white coat stands next to a dark horse in front of a brick building. Two chalkboards with numbers and letters lean on the ground."}
+
 In 1907, a scientist named Oskar Pfungst tried two tests:
 
 - When the person asking **did not know** the answer, Hans got it wrong.
