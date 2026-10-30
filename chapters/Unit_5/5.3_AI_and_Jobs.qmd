@@ -12,7 +12,7 @@ Will AI do the same thing to jobs today, or something different? Experts disagre
 - [🔥]{.icon} **Warm Up** My dream job [5 min]{.time}
 - [👥]{.icon} **Learn Together** A job is a bundle of tasks [10 min]{.time}
 - [🛠️]{.icon} **Try It** Sort the tasks [18 min]{.time}
-- [💬]{.icon} **Talk About It** Who decides? [7 min]{.time}
+- [💬]{.icon} **Talk About It** Is he right? [7 min]{.time}
 :::
 
 :::{.objectives}
@@ -68,9 +68,24 @@ Experts disagree about how fast AI is changing jobs.
 Both can be true: the change may start with young workers in a few kinds of jobs.
 :::
 
+***
+
+### 5.3.3 - Robots Are Learning Too
+
+The table above is about right now. Robots are learning fast.
+
+Chatbots learned words from millions of examples. Now some robots learn **movements** from many examples, with the same kind of AI. Robots usually start in places that are the same every day, like a warehouse or a truck yard. A messy place, like the pipes under an old house, is much harder. Experts disagree about how long it will take.
+
+:::{.note title="Right now (fall 2026)"}
+- Self-driving semi trucks carry freight on highways in Texas and nearby states. Some still have a person riding along, just in case.
+- In some truck yards, trucks with no driver back trailers up to the loading dock.
+- Robots that walk on two legs are being tested in some warehouses and factories.
+- No robot can go into a house it has never seen and fix a leaking pipe. Not yet.
+:::
+
 {{< tryit >}}
 
-### 5.3.3 - Sort the Tasks
+### 5.3.4 - Sort the Tasks
 
 Work with a partner. Choose one dream job: yours or your partner's.
 
@@ -91,12 +106,23 @@ Use the job cards on your sheet: nurse, electrician, store manager, or interpret
 
 {{< talk >}}
 
-If AI can do some tasks in a job, a company can let workers do more, or hire fewer workers. Who should decide? What skills should you learn now?
+In 2024, Mr. Ross's father-in-law said:
+
+> "It may be able to drive, but I'd love to see it try to back up a semi."
+
+(A semi is a big truck that pulls a trailer. He meant that a computer could never back one up.) Today, in some truck yards, trucks with no driver do it.
+
+In 2026, he said:
+
+> "Kids need to not worry about college and become plumbers and electricians."
+
+Is he right this time? Will robots do the work of plumbers and electricians someday? When? What should **you** learn now?
 
 :::{.frames}
-- In my dream job, AI could ... , but a person still has to ...
-- The task that is hardest for AI is ... because ...
-- If AI does part of a job, the company should ... because ...
+- I think he (is / is not) right, because ...
+- A job that robots will do soon is ... , because ...
+- A job that will need people for a long time is ... , because ...
+- If AI or robots do part of a job, the company should ... because ...
 - A skill I want to learn now is ...
 :::
 
@@ -109,6 +135,7 @@ Interview an adult about their job: someone in your family, a coach, or someone 
 2. Ask: "Do you use AI or computers for any of them? Which ones?"
 3. Sort their tasks the same way you did in class.
 4. Ask: "What part of your job would you never give to a machine?"
+5. Ask: "Do you think a robot or AI could do your job someday? When?"
 
 Do not write the person's name. Write their job only.
 :::

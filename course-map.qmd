@@ -60,7 +60,7 @@ Most lessons also have a **🚀 Go Further** part. It can fill a second day, or 
 |---|---|---|
 | 5.1 | [Your Data, Your Privacy](chapters/Unit_5/5.1_Your_Data_Your_Privacy.qmd) | Check what your apps can see. Find the hidden location in a photo. |
 | 5.2 | [AI Scams](chapters/Unit_5/5.2_AI_Scams.qmd) | Sort real messages from scams. Make a family safety plan in your home language. |
-| 5.3 | [AI and Jobs](chapters/Unit_5/5.3_AI_and_Jobs.qmd) | Break your dream job into tasks. Sort what AI can do, can help with, and cannot do. |
+| 5.3 | [AI and Jobs](chapters/Unit_5/5.3_AI_and_Jobs.qmd) | Break your dream job into tasks. Sort what AI can do, can help with, and cannot do. Will robots do the trades too? |
 | 5.4 | [AI and the News](chapters/Unit_5/5.4_AI_and_the_News.qmd) | Compare two news feeds. Trace a fake picture back to where it started. |
 
 ## Unit 6: AI and Our Future
