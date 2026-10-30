@@ -57,6 +57,8 @@ When you stop practicing, unused connections can get weaker. That is why you for
 :::{.experiment title="Pavlov's Dogs (1890s)"}
 **Ivan Pavlov** was a scientist in Russia. He studied dogs.
 
+![A drawing of a Pavlov experiment. A tube carries saliva from the dog's cheek to a scale on the wall, so the scientists can measure how much the dog drools. The person sits behind a wall, so the dog cannot see him. (Wellcome Collection, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/){target="_blank"})](/images/Unit_2/2.3_pavlov_experiment.png){width="620px" fig-align="center" fig-alt="A line drawing. A dog stands on a table, held up by straps. A tube goes from its cheek, through a wall, to a measuring scale. A bowl of food sits near the dog. On the other side of the wall, a man sits at a table and watches the scale."}
+
 1. Dogs drool (make saliva in their mouths) when they see food. Nobody teaches them this.
 2. Pavlov's team played a sound, a clicking **metronome**, right before they gave the dogs food. They did this many times.
 3. Soon, the dogs drooled when they heard the clicking, **with no food at all**.
