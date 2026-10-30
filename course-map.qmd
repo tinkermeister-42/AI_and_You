@@ -12,10 +12,10 @@ Most lessons also have a **🚀 Go Further** part. It can fill a second day, or 
 |---|---|---|
 | 1.1 | [What Is AI?](chapters/Unit_1/1.1_What_Is_AI.qmd) | Sort things into AI and not AI. Write a rule for "cat." Play Quick, Draw! |
 | 1.2 | [Can a Machine Think? (1950)](chapters/Unit_1/1.2_Can_a_Machine_Think.qmd) | Play Turing's imitation game. Catch the AI hiding among your classmates. |
-| 1.3 | [The First Chatbot (1966)](chapters/Unit_1/1.3_The_First_Chatbot.qmd) | Chat with ELIZA. Read its rules, then add your own. Act out the Chinese Room, in Klingon. |
+| 1.3 | [The First Chatbot (1966)](chapters/Unit_1/1.3_The_First_Chatbot.qmd) | Be ELIZA with a rule card. Act out the Chinese Room, in Klingon. |
 | 1.4 | [Rules Win at Games (1956 to 1997)](chapters/Unit_1/1.4_Rules_Win_at_Games.qmd) | Play a tic-tac-toe bot. Turn its rules off one at a time until you can beat it. |
 | 1.5 | [Data Changes Everything (2009 to 2016)](chapters/Unit_1/1.5_Data_Changes_Everything.qmd) | Label pictures like the ImageNet workers did. Find where people disagree. |
-| 1.6 | [Transformers and ChatGPT (2017 to today)](chapters/Unit_1/1.6_Transformers_and_ChatGPT.qmd) | Find what "it" means in a sentence. Build a sentence one vote at a time. Finish the class timeline. |
+| 1.6 | [Transformers and ChatGPT (2017 to today)](chapters/Unit_1/1.6_Transformers_and_ChatGPT.qmd) | Find what "it" means in a sentence. Build a sentence one vote at a time, like a chatbot. |
 
 ## Unit 2: Brains and Neural Networks
 

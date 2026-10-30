@@ -58,16 +58,7 @@ Alan Turing saw this problem in 1950. So he did not try to define "thinking." He
 
 {{< learn >}}
 
-### 1.2.1 - Who Was Alan Turing?
-
-- Alan Turing was born in London in 1912. He was a mathematician.
-- In 1936, he wrote about a machine that could do any calculation if you gave it the right steps. Every computer today uses this idea.
-- In World War II, he helped break the secret code of the German military.
-- Today, his face is on the British 50 pound bank note.
-
-***
-
-### 1.2.2 - The Imitation Game
+### 1.2.1 - The Imitation Game
 
 Turing called his test **the imitation game**. (To *imitate* means to copy someone.) Today, people call it the {{< glink "Turing test" >}}.
 
@@ -80,35 +71,19 @@ Turing called his test **the imitation game**. (To *imitate* means to copy someo
 
 If the judge cannot tell, the machine passes the test.
 
-:::{.remember title="Turing's prediction (1950)"}
-Turing said: in about 50 years, a judge will pick the right player **70 times out of 100, or less**. The judge gets 5 minutes of questions.
-
-So a machine passes if it fools the judge at least 30 times out of 100.
-:::
-
 ***
 
-### 1.2.3 - Has a Machine Passed?
+### 1.2.2 - Has a Machine Passed?
 
-In 2025, scientists at the University of California, San Diego played Turing's game. Almost 300 people were judges.
-
-Each judge chatted with a person and a chatbot **at the same time**, for 5 minutes. Then the judge picked: **Which one is the human?**
+In 2025, scientists played Turing's game with almost 300 judges. Each judge chatted with a person and a chatbot for 5 minutes. Then the judge picked: **Which one is the human?**
 
 ![](/images/Unit_1/1.2_turing_test_2025.svg){width="640px" fig-align="center" fig-alt="Bar chart. GPT-4.5 with a persona was picked as the human 73% of the time. LLaMa-3.1 with a persona: 56%. ELIZA, from 1966: 23%. GPT-4o with no persona: 21%. A dashed line marks 50%, a coin flip."}
 
-GPT-4.5 was picked as the human **73%** of the time. That is more often than the real humans were picked!
-
-But there is a catch. The chatbot only did this well with a {{< glink persona >}}. The scientists told it: *Act like a shy young person who uses slang.*
-
-:::{.think title="Why did the persona help the chatbot?"}
-A normal chatbot writes long, perfect answers. Real teenagers write short answers. They make spelling mistakes. They use slang.
-
-The long, perfect answers were a clue. The persona hid the clue.
-:::
+GPT-4.5 was picked as the human **73%** of the time. But it only did this well with a {{< glink persona >}}. The scientists told it: *Act like a shy young person who uses slang.* Short answers with small mistakes look human.
 
 {{< tryit >}}
 
-### 1.2.4 - Play the Imitation Game
+### 1.2.3 - Play the Imitation Game
 
 Work in a group of **3 or 4**. Each person has a job.
 
@@ -130,7 +105,7 @@ Work in a group of **3 or 4**. Each person has a job.
 2. **Judge:** Type a question in the box below. Then turn around.
 3. **Human player and AI helper:** Press the button to see your box. Type your answers. Then hide the boxes again.
 4. **Judge:** Turn back. Read **A** and **B**. Press the one you think is the AI.
-5. Play **5 rounds**. Then switch jobs.
+5. Play **3 rounds**. Then switch jobs, if there is time.
 :::
 
 {{< include /assets/Unit_1/imitation_game.html >}}
@@ -143,14 +118,13 @@ The AI answers in one second. A person needs time to type. **AI helper:** wait u
 
 - What did you eat for breakfast?
 - What is the weather outside right now?
-- What is 4,567 × 89? (A person needs a long time. Does the AI answer fast?)
 - Tell me about the room you are in.
 - Say "good morning" in your home language.
 
 :::{.think title="Which questions caught the AI? Why?"}
 Questions about **right here, right now** often catch the AI. It cannot see the room or the weather. It has to make up an answer.
 
-Hard math answered very fast is a clue too. So is perfect spelling.
+Perfect spelling is a clue too.
 :::
 
 {{< talk >}}
@@ -178,11 +152,11 @@ Do you agree? If a machine fools you, does that mean it thinks?
 
 {{< further >}}
 
-:::{.project title="The Persona Experiment"}
-The scientists found that the persona made the chatbot harder to catch. Test it yourself!
+:::{.project title="Day 2: The Persona Experiment"}
+The scientists found that the persona made the chatbot harder to catch. Test it yourself! Use the same groups and jobs as yesterday.
 
 1. Play 5 rounds where the AI helper gives **no** instructions to the AI.
-2. Play 5 rounds with the persona instructions from Step 1.
+2. Play 5 rounds with the persona instructions from yesterday.
 3. Compare the judge's score. Put every group's results on the board. Which AI was harder to catch?
 :::
 
@@ -190,6 +164,6 @@ The scientists found that the persona made the chatbot harder to catch. Test it 
 Each group writes its best question for catching the AI. The class tests every question. Which question catches the AI most often?
 :::
 
-**More to explore**
-
-- [The Turing Test (TED-Ed lesson)](https://www.ted.com/talks/alex_gendler_the_turing_test_can_a_computer_pass_for_a_human){target="_blank"}: The same video on TED, with subtitles in many languages.
+:::{.explore-link}
+🔭 **Explore More:** [who Alan Turing was, and the full 2025 study](/chapters/Explore/explore-unit-1.qmd#explore-1-2). For students who want to learn more on their own.
+:::

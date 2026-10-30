@@ -4,23 +4,21 @@ On November 30, 2022, a company called OpenAI shared a chatbot named **ChatGPT**
 
 ChatGPT came from an idea that Google scientists shared in 2017. The idea is called **attention**. You use it every time you read.
 
-Today, you see how attention works. You build a sentence the way a chatbot does: one word at a time. Then you finish the class timeline, from 1950 to today.
+Today, you see how attention works. Then you build a sentence the way a chatbot does: one word at a time.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
 
-- [🔥]{.icon} **Warm Up** What does "it" mean? [4 min]{.time}
-- [👥]{.icon} **Learn Together** Attention, GPT, and today [10 min]{.time}
-- [🛠️]{.icon} **Try It** Attention and the next word [14 min]{.time}
-- [🗓️]{.icon} **Finish the Timeline** 1950 to today [7 min]{.time}
-- [💬]{.icon} **Talk About It** Whose words? [5 min]{.time}
+- [🔥]{.icon} **Warm Up** What does "it" mean? [5 min]{.time}
+- [👥]{.icon} **Learn Together** Attention and GPT [12 min]{.time}
+- [🛠️]{.icon} **Try It** Next word, by vote [16 min]{.time}
+- [💬]{.icon} **Talk About It** Whose words? [7 min]{.time}
 :::
 
 :::{.objectives}
 - [ ] I can explain what attention means for a transformer.
 - [ ] I can explain what the letters in GPT mean.
 - [ ] I can build a sentence one word at a time, like a chatbot.
-- [ ] I can put the big moments in AI history in order.
 :::
 
 ::::{.vocab}
@@ -73,26 +71,11 @@ A GPT is a {{< glink "large language model" >}}. It learned by playing one game,
 There are many chatbots built this way: ChatGPT, Gemini, Claude, Copilot, Llama, and more. Most AI tools made for schools are built on top of models like these.
 :::
 
-***
-
-### 1.6.3 - AI Wins Nobel Prizes (2024)
-
-The Nobel Prize is one of the biggest prizes in science. In 2024, two Nobel Prizes went to AI.
-
-- **Physics:** John Hopfield and Geoffrey Hinton, for early discoveries that made neural networks possible.
-- **Chemistry:** Demis Hassabis and John Jumper, for **AlphaFold**. It is an AI that predicts the shape of proteins (the tiny machines inside your body). They shared the prize with David Baker, who designs new proteins.
+In 2024, two Nobel Prizes, among the biggest prizes in science, went to scientists who worked on AI.
 
 {{< tryit >}}
 
-### 1.6.4 - See the Attention
-
-Click the word that **"it"** means. Then change the last word. Watch which words light up.
-
-{{< include /assets/Unit_1/attention.html >}}
-
-***
-
-### 1.6.5 - Be the Chatbot: Next Word, by Vote
+### 1.6.3 - Be the Chatbot: Next Word, by Vote
 
 A chatbot writes one word at a time. It picks a word that is likely to come next. Now the class does the same thing.
 
@@ -114,9 +97,35 @@ Usually it is **ordinary**. The most common word wins every time, so the sentenc
 Chatbots have the same problem. So they do not always pick the top word. Sometimes they pick the second or third word, on purpose, to make the writing more interesting.
 :::
 
-### 1.6.6 - Finish the Class Timeline
+{{< talk >}}
 
-Put every card from Unit 1 on the wall, in order. Is anything missing? With a partner, pick one card and explain it to the class in 2 sentences.
+ChatGPT learned from text that people wrote: books, websites, news, and more. Most of those writers were never asked.
+
+:::{.frames}
+- Writers **should** / **should not** be asked before AI learns from their words, because ...
+- A chatbot writes one word at a time by ...
+- In 10 years, I think AI will ... , because ...
+:::
+
+{{< watch >}}
+
+:::{.watch title="How Chatbots and Large Language Models Work (Code.org)"}
+{{< video https://www.youtube.com/watch?v=X-AWdfSFCHQ title="How Chatbots and Large Language Models Work (Code.org)" >}}
+
+**While you watch:** How does a chatbot decide which word comes next?
+
+**Captions in your language:** Press **CC** to turn on captions. Then press ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**. Choose your language.
+:::
+
+{{< further >}}
+
+:::{.project title="Day 2: See the Attention, and Finish the Timeline"}
+1. In the demo below, click the word that **"it"** means. Then change the last word. Watch which words light up.
+2. Put every card from Unit 1 on the wall, in order. Use the list below. Is anything missing?
+3. With a partner, pick one card and explain it to the class in 2 sentences.
+:::
+
+{{< include /assets/Unit_1/attention.html >}}
 
 | Year | What happened |
 |---|---|
@@ -133,32 +142,14 @@ Put every card from Unit 1 on the wall, in order. Is anything missing? With a pa
 | 2024 | Nobel Prizes for AI. |
 | 2025 | A chatbot passes the Turing test. |
 
-{{< talk >}}
-
-ChatGPT learned from text that people wrote: books, websites, news, and more. Most of those writers were never asked.
-
-:::{.frames}
-- Writers **should** / **should not** be asked before AI learns from their words, because ...
-- The most important moment on our timeline is ... because ...
-- In 10 years, I think AI will ... , because ...
-:::
-
-{{< watch >}}
-
-:::{.watch title="How Chatbots and Large Language Models Work (Code.org)"}
-{{< video https://www.youtube.com/watch?v=X-AWdfSFCHQ title="How Chatbots and Large Language Models Work (Code.org)" >}}
-
-**While you watch:** How does a chatbot decide which word comes next?
-
-**Captions in your language:** Press **CC** to turn on captions. Then press ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**. Choose your language.
-:::
-
-{{< further >}}
-
 :::{.project title="Trick the Attention"}
 Write your own tricky "it" sentence, where one word changes what "it" means. Ask your class AI tool: *"In this sentence, what does 'it' mean?"* Does it get it right? Try your sentence in your home language too.
 :::
 
 :::{.project title="People of AI"}
 With a partner, make a poster about one person from Unit 1: Alan Turing, Joseph Weizenbaum, John Searle, Fei-Fei Li, Geoffrey Hinton, or Demis Hassabis. Where were they from? What did they do? Hang it next to their card on the timeline.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [the 2024 Nobel Prizes for AI, and who won them](/chapters/Explore/explore-unit-1.qmd#explore-1-6). For students who want to learn more on their own.
 :::
