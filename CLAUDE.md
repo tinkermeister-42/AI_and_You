@@ -165,6 +165,11 @@ The teacher wants kids' hands on real things in every lesson.
 - **Course map and unit intro change with the lesson.** Writing a lesson
   means linking it in `course-map.qmd`, adding it under "Topics in This
   Unit" in its unit `index.qmd`, and adding it to `_quarto.yml`
+- **The syllabus is part of the book** (`syllabus.qmd`, after the home page).
+  Keep it current in the same change: unit names, weeks, lesson counts, what
+  each unit does, tools, and the privacy and honesty rules. When this
+  session can reach the claude.ai project, also refresh the project's copy
+  (`claude/AI_and_You_syllabus.md`)
 - **Sheet snippets live in `handouts/Unit_X/parts/`.** A `.tex` that a sheet
   `\input`s (a generated grid, say) must not sit next to the sheets: the
   build and the asset check treat every `handouts/Unit_X/*.tex` as a sheet

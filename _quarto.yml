@@ -49,6 +49,7 @@ book:
 
   chapters:
     - file: index.md
+    - file: syllabus.qmd
     - file: course-map.qmd
 
     - part: "Unit 1: Where AI Came From"

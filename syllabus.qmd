@@ -1,0 +1,95 @@
+# Syllabus {.unnumbered}
+
+**AI and You**
+A mini-block class with Mr. Ross, Frederick Douglass High School
+
+## About the Class
+
+AI is everywhere now. It writes, draws, talks, answers questions, and even pretends to be a friend. Some people say it thinks like a human brain. Is that true?
+
+In this class, you will learn how AI was built and how it works. You will use it for real tasks. You will act out famous experiments, train a neural network made of people, and test AI in your own language.
+
+By the end, you will know how to use AI well and how to catch it when it is wrong. And you will decide for yourself what you think about it, and about the world it is building.
+
+## About Your Teacher
+
+Before teaching, Mr. Ross spent more than 15 years working in AI and data science. He worked at Wolfram Research, the makers of Mathematica. Then he spent nearly ten years helping build a data science team at a Missouri company. He has a background in biology and statistics, and he still does AI work outside of school. He has worked with these tools since long before ChatGPT existed.
+
+## What You Will Learn
+
+- How AI was built, from the first ideas in the 1950s to the chatbots of today
+- How neural networks learn, and how they are like the brain and different from it
+- How to use AI well for writing, research, translation, math, and pictures
+- How to catch AI when it makes things up, is unfair, or is used to fake things
+- How AI is changing privacy, jobs, the news, creativity, and friendship
+- What AI might mean for the future, and what you can do about it
+
+## The Big Question
+
+On the first day, you answer one question: **Is AI like a human brain?** Mr. Ross keeps your answer. On the last day, you answer again, with everything you learned in between.
+
+## The Units
+
+The weeks are a plan. School events, field trips, and assemblies will move them.
+
+| Unit | Weeks | Lessons |
+|---|---|---|
+| [1: Where AI Came From](chapters/Unit_1/index.qmd) | 1 to 2 | 6 |
+| [2: Brains and Neural Networks](chapters/Unit_2/index.qmd) | 3 to 6 | 9 |
+| [3: Using AI Well](chapters/Unit_3/index.qmd) | 7 to 10 | 9 |
+| [4: When AI Gets It Wrong](chapters/Unit_4/index.qmd) | 11 to 12 | 4 |
+| [5: AI in the Real World](chapters/Unit_5/index.qmd) | 13 to 14 | 4 |
+| [6: AI and Our Future](chapters/Unit_6/index.qmd) | 15 to 17 | 6 |
+
+### Unit 1: Where AI Came From
+
+The story of AI, from Alan Turing's question "Can machines think?" to ChatGPT. You play the imitation game and act out the Klingon Room. You play against a game bot made of rules. You label pictures the way the ImageNet workers did. The class builds a timeline on the wall. You also write your first answer to the Big Question.
+
+### Unit 2: Brains and Neural Networks
+
+How simple rules make complex behavior, how brain cells work, and how computer scientists copied the idea. You become a neuron, then the class trains a neural network made of people, using Pokémon cards. You watch Mr. Ross build a real AI. You train your own AI with a camera. You see how AI sees pictures and how chatbots write.
+
+### Unit 3: Using AI Well
+
+The heart of the class. You learn to write good prompts and ask follow-up questions. You get feedback on your own writing. You check facts, test translations in your home language, check AI's math, and write prompts for pictures. Then you finish a real project that uses AI to solve a problem in your life. You share it with the class.
+
+### Unit 4: When AI Gets It Wrong
+
+AI makes things up. It can be unfair to some people. It can be used to fake pictures and voices. You catch a chatbot inventing facts about our school. You act out the story of Clever Hans the horse. You test your eyes against fake faces. And you find out why AI cheat detectors blame students who are learning English.
+
+### Unit 5: AI in the Real World
+
+What AI means for your privacy, your future job, and the news you see. You find the hidden location inside a photo. You sort real messages from scams. You break your dream job into tasks. And you watch a news feed learn what you like.
+
+### Unit 6: AI and Our Future
+
+AI art, AI friends, the hidden costs of AI, the rules for AI, and possible futures. You act out the trolley problem and the paper clip machine. In the last lesson, you replace a "brain" one cell at a time. Then you read your answer from the first day, and answer the Big Question again.
+
+## How Each Class Works
+
+Every lesson has a hands-on activity.
+
+- **Warm Up:** a quick question or game.
+- **Learn Together:** one big idea, with pictures and examples.
+- **Try It:** a demo on the page, our class AI tool, or an activity you act out.
+- **Talk About It:** a hard question to talk about with a partner. Sentence starters help.
+- **Go Further:** more to do in class on a second day, when there is time.
+- **Explore More:** extra pages for students who want to learn more on their own.
+
+Each lesson has a **printable sheet** to write on. If you miss a class, read the lesson page and do the Try It. The page has everything you need.
+
+## What We Use
+
+- **A Chromebook** and this book. The demos in the book work in any web browser, need no account, and send nothing anywhere.
+- **Our class AI tool:** Raina, in MagicSchool. This is the only AI tool you use with an account in this class.
+- **A few free websites** that need no login, like Google Translate and Teachable Machine. Mr. Ross checks each one first.
+
+## Your Privacy
+
+**Never type or upload personal information into any AI tool.** That means no names, yours or anyone else's. No pictures of yourself or other people. No addresses, phone numbers, birthdays, or student numbers. When a prompt needs a person, write "my friend" or "my grandmother" instead.
+
+## Using AI Honestly
+
+In this class, you learn when AI helps you learn and when it does the learning for you. Each assignment says how much AI you may use. If it does not say, ask first. When you use AI, write a short **AI note** that says what it did and what you did.
+
+*This syllabus and this book were written by Mr. Ross in collaboration with Claude, an AI assistant made by Anthropic.*
