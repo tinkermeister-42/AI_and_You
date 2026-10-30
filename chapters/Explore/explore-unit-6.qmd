@@ -14,7 +14,7 @@ He asked the U.S. Copyright Office to register it as his work. In 2023, the offi
 
 Artists, writers, news companies, and music companies have taken AI companies to court. Their main question: is it fair to train an AI on someone's work without asking them or paying them?
 
-AI companies say training is like a student who reads many books and then writes something new. Artists say a student does not copy millions of works in a few weeks, and does not compete with every artist at once. Courts in different countries may answer differently.
+AI companies say training is like a student who reads many books and then writes something new. Artists say a student doesn't copy millions of works in a few weeks, and doesn't compete with every artist at once. Courts in different countries may answer differently.
 
 ### AI Music
 
@@ -24,19 +24,19 @@ AI can now make songs, with singing, from a short prompt. Some AI songs have sou
 
 ### What Research Says
 
-In 2025, researchers at MIT and OpenAI studied people who talked with a chatbot every day for a month. On average, the people who used it the **most** felt **more** lonely at the end, and spent less time with other people. The study cannot show what caused what. Maybe lonely people talk to chatbots more. But it is a warning sign.
+In 2025, researchers at MIT and OpenAI studied people who talked with a chatbot every day for a month. On average, the people who used it the **most** felt **more** lonely at the end, and spent less time with other people. The study can't show what caused what. Maybe lonely people talk to chatbots more. But it's a warning sign.
 
 Other studies found that a short chat helped some people feel a little better for a while. The difference may be how much, and what the chat replaces. A chat that helps you practice talking to people is different from a chat that replaces them.
 
 ### Why It Feels Real
 
-Remember the ELIZA effect (Lesson 1.3): people feel understood by a computer, even when they know it is a program. Modern chatbots are trained on millions of real conversations. They know what a caring friend would say next. Saying the right words is not the same as caring. But it can feel the same.
+Remember the ELIZA effect (Lesson 1.3): people feel understood by a computer, even when they know it's a program. Modern chatbots are trained on millions of real conversations. They know what a caring friend would say next. Saying the right words isn't the same as caring. But it can feel the same.
 
 ## From Lesson 6.3: The Hidden Costs {#explore-6-3}
 
 ### Training Costs Too
 
-Before a chatbot answers anyone, it is **trained**. Training a big model uses thousands of special computer chips for weeks or months. That uses a lot of electricity. For the biggest models, estimates say it is about as much as hundreds or thousands of homes use in a year. Then the model answers billions of questions, and those answers add up too.
+Before a chatbot answers anyone, it is **trained**. Training a big model uses thousands of special computer chips for weeks or months. That uses a lot of electricity. For the biggest models, estimates say it's about as much as hundreds or thousands of homes use in a year. Then the model answers billions of questions, and those answers add up too.
 
 ### Your Brain Runs on 20 Watts
 
@@ -52,7 +52,7 @@ Data labeling is real work that makes AI safer and smarter. Many people say the 
 
 ### More Trolley Problems
 
-- **The footbridge:** you stand on a bridge above the track, next to a large person. If you push them off, they will stop the trolley and save 5 people. Most people say no, even though the numbers are the same as pulling the lever. Why does pushing feel different?
+- **The footbridge:** you stand on a bridge above the track, next to a large person. If you push them off, they'll stop the trolley and save 5 people. Most people say no, even though the numbers are the same as pulling the lever. Why does pushing feel different?
 - **The doctor:** a doctor could save 5 sick patients by taking organs from 1 healthy visitor. Almost everyone says this is wrong. What makes it different from the lever?
 
 Philosophers use these stories to find the rules people really use: not just counting lives, but also what you do with your own hands, and people's rights.
@@ -80,7 +80,7 @@ These really happened, with small AIs in research labs:
 - An AI in a boat racing game was supposed to win the race. It found it could score more points by driving in circles, hitting the same targets again and again, and never finishing.
 - An AI was supposed to learn to walk in a computer world. It found a mistake in the world's physics and moved by sliding on the ground instead.
 
-Each AI did exactly what its goal said. Not what people meant. That is the paper clip problem, in a tiny form.
+Each AI did exactly what its goal said. Not what people meant. That's the paper clip problem, in a tiny form.
 
 ### AI and Medicine
 
@@ -105,6 +105,6 @@ The numbers can be compared. But a weight is much simpler than a living synapse,
 
 ### Consciousness
 
-The philosopher Thomas Nagel asked, in 1974, "What is it like to be a bat?" A bat finds its way by sound. We can study how. But we cannot know what it **feels like** to be a bat. Consciousness is the "what it is like" part.
+The philosopher Thomas Nagel asked, in 1974, "What is it like to be a bat?" A bat finds its way by sound. We can study how. But we can't know what it **feels like** to be a bat. Consciousness is the "what it is like" part.
 
-Some scientists think a machine could have it one day, if it is built the right way. Others think it needs a living body. Others think we will never be able to check. This question is still open. Maybe you will help answer it.
+Some scientists think a machine could have it one day, if it's built the right way. Others think it needs a living body. Others think we'll never be able to check. This question is still open. Maybe you'll help answer it.

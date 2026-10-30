@@ -316,6 +316,9 @@ read well below grade level, and some have had little school before. Reading
 is the barrier, not the ideas. Every sentence a student has to decode twice
 is a sentence that costs them the idea.
 
+- **Friendly and conversational.** Use contractions: don't, can't, it's,
+  you'll, that's. Keep the full form inside quotation marks (quotes and
+  prompts), in bold emphasis ("Do **not**"), and in ELIZA's rule patterns
 - **Short sentences.** One idea each. Split a sentence before adding a clause
 - **Common words.** Prefer "use" to "utilize", "shows" to "demonstrates"
 - **No colloquialisms or figurative idioms**, where the literal words do not

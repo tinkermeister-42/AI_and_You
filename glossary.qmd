@@ -2,7 +2,7 @@
 
 ### AI winter {#glossary-ai-winter}
 
-A time when people stopped giving money to AI research, because AI did not do what people promised. There were AI winters in the 1970s and around 1990.
+A time when people stopped giving money to AI research, because AI didn't do what people promised. There were AI winters in the 1970s and around 1990.
 
 **See Also:** {{< glink hype >}}
 
@@ -88,7 +88,7 @@ When a system is unfair to some people, or works better for some people than for
 
 > **Example:**
 >
-> A face program that is right 99% of the time for some faces and 65% of the time for others is biased.
+> A face program that's right 99% of the time for some faces and 65% of the time for others is biased.
 
 **See Also:** {{< glink stereotype >}}, {{< glink shortcut >}}
 
@@ -96,7 +96,7 @@ When a system is unfair to some people, or works better for some people than for
 
 ### bias (a number in a neuron) {#glossary-bias-number}
 
-In a neuron, an extra number that is always added to the total. It does the same job as a threshold. (The word "bias" has another meaning too: being unfair. See Unit 4.)
+In a neuron, an extra number that's always added to the total. It does the same job as a threshold. (The word "bias" has another meaning too: being unfair. See Unit 4.)
 
 > **Example:**
 >
@@ -108,7 +108,7 @@ In a neuron, an extra number that is always added to the total. It does the same
 
 ### CAPTCHA {#glossary-captcha}
 
-A short test on a website that checks if you are a person, not a computer program. "Click every picture with a bus" is a CAPTCHA. Some CAPTCHAs also use your answers to label data for AI.
+A short test on a website that checks if you're a person, not a computer program. "Click every picture with a bus" is a CAPTCHA. Some CAPTCHAs also use your answers to label data for AI.
 
 > **Example:**
 >
@@ -190,7 +190,7 @@ Being aware: having thoughts and feelings that you experience from the inside. N
 
 ### context {#glossary-context}
 
-The facts around your question: who you are, what the answer is for, and what you already know. A chatbot cannot guess these, so you tell it.
+The facts around your question: who you are, what the answer is for, and what you already know. A chatbot can't guess these, so you tell it.
 
 **See Also:** {{< glink prompt >}}
 
@@ -198,7 +198,7 @@ The facts around your question: who you are, what the answer is for, and what yo
 
 ### context window {#glossary-context-window}
 
-All the words a chatbot can read at one time. In a chat, it holds your old messages too. That is why a follow-up question works. A new chat starts with an empty context window.
+All the words a chatbot can read at one time. In a chat, it holds your old messages too. That's why a follow-up question works. A new chat starts with an empty context window.
 
 **See Also:** {{< glink "follow-up question" >}}, {{< glink token >}}
 
@@ -206,7 +206,7 @@ All the words a chatbot can read at one time. In a chat, it holds your old messa
 
 ### copyright {#glossary-copyright}
 
-The law that says who owns a creative work, like a song, a book, or a picture, and who is allowed to copy it. In the United States, a work made only by AI cannot have a copyright.
+The law that says who owns a creative work, like a song, a book, or a picture, and who is allowed to copy it. In the United States, a work made only by AI can't have a copyright.
 
 ***
 
@@ -288,7 +288,7 @@ A way to make a picture: start with noise, then remove a little noise at a time,
 
 ### draft {#glossary-draft}
 
-A first try at a piece of writing. You will change it to make it better.
+A first try at a piece of writing. You'll change it to make it better.
 
 **See Also:** {{< glink revise >}}
 
@@ -304,7 +304,7 @@ A place in a picture where it changes fast from dark to light. Edges show where 
 
 ### ELIZA effect {#glossary-eliza-effect}
 
-When people feel that a computer understands them, but it does not. It is named after ELIZA, a chatbot from 1966.
+When people feel that a computer understands them, but it doesn't. It's named after ELIZA, a chatbot from 1966.
 
 > **Example:**
 >
@@ -328,7 +328,7 @@ When many simple parts work together and make something bigger and more complica
 
 ### engagement {#glossary-engagement}
 
-How much time and attention you give an app. Many apps earn more money when your engagement is higher, so they are built to keep you there.
+How much time and attention you give an app. Many apps earn more money when your engagement is higher, so they're built to keep you there.
 
 **See Also:** {{< glink feed >}}
 
@@ -336,7 +336,7 @@ How much time and attention you give an app. Many apps earn more money when your
 
 ### estimate {#glossary-estimate}
 
-A quick answer that is close, but not exact. You can use it to check if an answer makes sense.
+A quick answer that's close, but not exact. You can use it to check if an answer makes sense.
 
 > **Example:**
 >
@@ -366,7 +366,7 @@ To find out if something is true, using good sources.
 
 ### false positive {#glossary-false-positive}
 
-When a test says "yes" but the true answer is "no." When a detector calls human writing "AI," that is a false positive.
+When a test says "yes" but the true answer is "no." When a detector calls human writing "AI," that's a false positive.
 
 **See Also:** {{< glink detector >}}
 
@@ -430,7 +430,7 @@ Walking around the room to look at everyone's work and leave feedback notes, lik
 
 ### goal {#glossary-goal}
 
-What an AI is trying to do, like "win the game" or "get more clicks." An AI follows its goal exactly, even when that is not what people really wanted.
+What an AI is trying to do, like "win the game" or "get more clicks." An AI follows its goal exactly, even when that isn't what people really wanted.
 
 **See Also:** {{< glink alignment >}}
 
@@ -438,7 +438,7 @@ What an AI is trying to do, like "win the game" or "get more clicks." An AI foll
 
 ### GPU {#glossary-gpu}
 
-A computer chip first made for video games. It can do thousands of small math problems at the same time, so it is very good for training neural networks. GPU means "graphics processing unit."
+A computer chip first made for video games. It can do thousands of small math problems at the same time, so it's very good for training neural networks. GPU means "graphics processing unit."
 
 **See Also:** {{< glink "neural network" >}}
 
@@ -446,7 +446,7 @@ A computer chip first made for video games. It can do thousands of small math pr
 
 ### hallucination {#glossary-hallucination}
 
-When AI writes something false as if it were true, like a book or a court case that does not exist. The AI sounds just as sure as when it is right.
+When AI writes something false as if it were true, like a book or a court case that doesn't exist. The AI sounds just as sure as when it's right.
 
 **See Also:** {{< glink fact-check >}}
 
@@ -480,7 +480,7 @@ An AI that makes a new picture from words. Many image generators use diffusion.
 
 ### imposter {#glossary-imposter}
 
-Someone who pretends to be another person or a real company, like a scammer who says they are from your bank.
+Someone who pretends to be another person or a real company, like a scammer who says they're from your bank.
 
 **See Also:** {{< glink scam >}}, {{< glink "voice clone" >}}
 
@@ -568,7 +568,7 @@ A language with not much writing online for AI to learn from. AI usually makes m
 
 ### machine learning {#glossary-machine-learning}
 
-A way to make AI. People do not write the rules. They give the computer many examples, and the computer finds the patterns by itself.
+A way to make AI. People don't write the rules. They give the computer many examples, and the computer finds the patterns by itself.
 
 **See Also:** {{< glink data >}}, {{< glink pattern >}}, {{< glink rule >}}
 
@@ -612,7 +612,7 @@ When an AI memorizes its training examples instead of learning the real pattern.
 
 > **Example:**
 >
-> A student who memorizes the answers to one practice test, but cannot solve new problems.
+> A student who memorizes the answers to one practice test, but can't solve new problems.
 
 **See Also:** {{< glink training >}}, {{< glink "test data" >}}
 
@@ -620,11 +620,11 @@ When an AI memorizes its training examples instead of learning the real pattern.
 
 ### pattern {#glossary-pattern}
 
-Something that is the same, or repeats, in many examples.
+Something that's the same, or repeats, in many examples.
 
 > **Example:**
 >
-> In most drawings of a cat, the ears are two triangles on top of the head. That is a pattern.
+> In most drawings of a cat, the ears are two triangles on top of the head. That's a pattern.
 
 ***
 
@@ -658,7 +658,7 @@ One tiny square of a picture. A computer stores each pixel as a number. In a bla
 
 ### plagiarism {#glossary-plagiarism}
 
-Turning in someone else's words or ideas as your own. Turning in AI writing as your own, when the assignment does not allow it, is plagiarism too.
+Turning in someone else's words or ideas as your own. Turning in AI writing as your own, when the assignment doesn't allow it, is plagiarism too.
 
 ***
 
@@ -672,7 +672,7 @@ Easy to guess before it happens. AI writing is very predictable, because a chatb
 
 ### prediction {#glossary-prediction}
 
-A best guess about something you do not know yet. A prediction can be wrong.
+A best guess about something you don't know yet. A prediction can be wrong.
 
 > **Example:**
 >
@@ -716,7 +716,7 @@ A list of every prompt you used in a project, and what you did with each answer.
 
 ### random {#glossary-random}
 
-With no pattern, so you cannot guess what comes next.
+With no pattern, so you can't guess what comes next.
 
 > **Example:**
 >
@@ -726,7 +726,7 @@ With no pattern, so you cannot guess what comes next.
 
 ### recommendation {#glossary-recommendation}
 
-Something an app chooses for you, because it predicts you will click it or like it.
+Something an app chooses for you, because it predicts you'll click it or like it.
 
 **See Also:** {{< glink feed >}}, {{< glink prediction >}}
 
@@ -788,7 +788,7 @@ A trick to steal your money or your information. AI makes scam messages harder t
 
 ### shortcut {#glossary-shortcut}
 
-A clue that gives the right answer in the training examples, but is not the real reason. Clever Hans the horse watched people's faces instead of doing math. An AI learned to look for snow instead of wolves.
+A clue that gives the right answer in the training examples, but isn't the real reason. Clever Hans the horse watched people's faces instead of doing math. An AI learned to look for snow instead of wolves.
 
 **See Also:** {{< glink bias >}}
 
@@ -824,7 +824,7 @@ The way a picture looks: a photo, a cartoon, a watercolor painting, pixel art.
 
 ### sycophancy {#glossary-sycophancy}
 
-Agreeing with someone just to please them, even when they are wrong. A chatbot can learn this, because people often give good ratings to answers that agree with them.
+Agreeing with someone just to please them, even when they're wrong. A chatbot can learn this, because people often give good ratings to answers that agree with them.
 
 **See Also:** {{< glink hallucination >}}
 
@@ -896,7 +896,7 @@ All the examples an AI learned from: pictures, text, sounds, or numbers. An AI i
 
 ### transfer learning {#glossary-transfer-learning}
 
-Starting from an AI that already learned something, then teaching it a new job with a few new examples. It is much faster than starting from nothing.
+Starting from an AI that already learned something, then teaching it a new job with a few new examples. It's much faster than starting from nothing.
 
 > **Example:**
 >
@@ -908,7 +908,7 @@ Starting from an AI that already learned something, then teaching it a new job w
 
 ### transformer {#glossary-transformer}
 
-A kind of neural network, first shared by Google scientists in 2017. It uses attention to connect the words in a sentence. It is the T in GPT.
+A kind of neural network, first shared by Google scientists in 2017. It uses attention to connect the words in a sentence. It's the T in GPT.
 
 **See Also:** {{< glink attention >}}, {{< glink "neural network" >}}, {{< glink "large language model" >}}
 
@@ -932,7 +932,7 @@ A famous thought experiment: a runaway trolley will hit 5 people. Would you pull
 
 ### Turing test {#glossary-turing-test}
 
-A game Alan Turing described in 1950. He called it the imitation game. A judge chats in writing with a person and a machine. If the judge cannot tell which one is the machine, the machine passes.
+A game Alan Turing described in 1950. He called it the imitation game. A judge chats in writing with a person and a machine. If the judge can't tell which one is the machine, the machine passes.
 
 **See Also:** {{< glink judge >}}, {{< glink chatbot >}}
 
@@ -944,7 +944,7 @@ To know what something means, not only what it looks like. Whether AI can unders
 
 > **Example:**
 >
-> In the Klingon Room, the person copies correct replies in Klingon, but they do not understand Klingon.
+> In the Klingon Room, the person copies correct replies in Klingon, but they don't understand Klingon.
 
 **See Also:** {{< glink "ELIZA effect" >}}
 
@@ -952,7 +952,7 @@ To know what something means, not only what it looks like. Whether AI can unders
 
 ### verification code {#glossary-verification-code}
 
-A short number a website sends you, to prove it is really you. Never share it with anyone.
+A short number a website sends you, to prove it's really you. Never share it with anyone.
 
 **See Also:** {{< glink scam >}}
 
@@ -984,7 +984,7 @@ A clue that something is wrong. Scam warning signs: hurry, fear, a prize, a secr
 
 ### watt-hour {#glossary-watt-hour}
 
-An amount of electricity. A 10-watt light bulb that is on for one hour uses 10 watt-hours. Charging a phone uses about 15 watt-hours.
+An amount of electricity. A 10-watt light bulb that's on for one hour uses 10 watt-hours. Charging a phone uses about 15 watt-hours.
 
 ***
 

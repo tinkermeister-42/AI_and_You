@@ -2,7 +2,7 @@
 
 In some U.S. cities, you can call a taxi, and it comes with **nobody** in the driver's seat. An AI drives.
 
-Most of the time, the AI's job is simple: follow the road rules and do not hit anything. But what should it do when a crash cannot be stopped? Who decides? The company? The government? The people who ride in it, or the people walking on the street?
+Most of the time, the AI's job is simple: follow the road rules and don't hit anything. But what should it do when a crash can't be stopped? Who decides? The company? The government? The people who ride in it, or the people walking on the street?
 
 Today you act out one of the most famous thought experiments in the world, and then you make the rules.
 
@@ -47,13 +47,13 @@ Name 3 rules at our school. Who made each one: the teacher, the principal, the d
 ### 6.4.1 - The Trolley Problem
 
 :::{.experiment title="The trolley problem (1967)"}
-A trolley (a train on a city street) is rolling down the track. It cannot stop. Ahead, 5 people are on the track. You stand next to a lever. If you pull it, the trolley moves to a side track, where there is **1** person.
+A trolley (a train on a city street) is rolling down the track. It can't stop. Ahead, 5 people are on the track. You stand next to a lever. If you pull it, the trolley moves to a side track, where there is **1** person.
 
 ![](/images/Unit_6/6.4_trolley.svg){width="520px" fig-align="center" fig-alt="A trolley rolls toward 5 people on the main track. A side track has 1 person. A person stands next to the lever that switches the tracks."}
 
 Do you pull the lever?
 
-The philosopher Philippa Foot asked a question like this in 1967. People have argued about it ever since. There is no answer everyone agrees on. Questions about what is right and wrong are called {{< glink ethics >}}.
+The philosopher Philippa Foot asked a question like this in 1967. People have argued about it ever since. There's no answer everyone agrees on. Questions about what is right and wrong are called {{< glink ethics >}}.
 :::
 
 Most people say they would pull the lever: 1 is fewer than 5. But change the story a little, and many people change their answer. What if you had to **push** a person onto the track to stop the trolley? The numbers are the same. Most people say no.
@@ -80,7 +80,7 @@ Scientists at MIT made a website with questions like these about self-driving ca
 :::
 
 :::{.think title="Do real AI cars do this?"}
-Engineers say these exact choices almost never happen on real roads. Their job is to stop the car before there is a choice. But the hard question is real: someone writes the rules, and someone is {{< glink responsible >}} when something goes wrong.
+Engineers say these exact choices almost never happen on real roads. Their job is to stop the car before there's a choice. But the hard question is real: someone writes the rules, and someone is {{< glink responsible >}} when something goes wrong.
 :::
 
 {{< talk >}}

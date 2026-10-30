@@ -92,15 +92,15 @@ Look at the colored map. The class neuron's rule was one straight line. This net
 :::
 
 :::{.think title="Run 2 used MORE numbers. Why was it often not better?"}
-Height, weight, speed, and the other numbers do not say much about Fighting or Psychic. They add noise. The network found "patterns" in the training data that were not real. So the **training** score went up, but the **test** score did not.
+Height, weight, speed, and the other numbers don't say much about Fighting or Psychic. They add noise. The network found "patterns" in the training data that weren't real. So the **training** score went up, but the **test** score didn't.
 
 This is called {{< glink overfitting >}}: learning the training examples by heart instead of the real pattern. Look for the gap between the blue line (training) and the orange line (test).
 :::
 
 :::{.think title="Run 3: why was it so bad at all 18 types?"}
-The network beat guessing, but not by much. The numbers alone do not decide a Pokémon's type. A Water type and a Normal type can have almost the same stats.
+The network beat guessing, but not by much. The numbers alone don't decide a Pokémon's type. A Water type and a Normal type can have almost the same stats.
 
-**An AI can only learn what is in its data.** If the answer is not in the data, no network can find it.
+**An AI can only learn what is in its data.** If the answer isn't in the data, no network can find it.
 :::
 
 {{< talk >}}

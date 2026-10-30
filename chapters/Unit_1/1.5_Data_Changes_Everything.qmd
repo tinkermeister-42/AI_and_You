@@ -4,7 +4,7 @@ How did you learn what a dog is? Nobody gave you a rule. You saw many dogs: big 
 
 In 2006, a young scientist named **Fei-Fei Li** had an idea. Maybe computers need the same thing: not rules, but **millions of examples**.
 
-Today, you do the job that thousands of people did for her project: you label pictures. And you find out that people do not always agree.
+Today, you do the job that thousands of people did for her project: you label pictures. And you find out that people don't always agree.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
@@ -47,7 +47,7 @@ Tell a partner.
 :::{.think title="How many examples does a child see?"}
 A lot! Fei-Fei Li says: think of a child's eyes as a camera that takes about 5 pictures every second. By age 3, the child has seen **hundreds of millions** of pictures. Children learn from examples, not rules.
 
-Fei-Fei Li thought: computers have rules, but they do not have enough examples.
+Fei-Fei Li thought: computers have rules, but they don't have enough examples.
 :::
 
 {{< learn >}}
@@ -58,7 +58,7 @@ In 2006, Fei-Fei Li, a scientist at Princeton University, started a project call
 
 ![](/images/Unit_1/1.5_imagenet_numbers.svg){width="660px" fig-align="center" fig-alt="ImageNet in three numbers: 14 million pictures, more than 20,000 kinds of things, labeled by 49,000 people in 167 countries."}
 
-The pictures came from the internet. But the internet does not say what is in each picture. **People** had to look and decide. Each person saw a word, like *chair*, and a group of pictures. They clicked every picture that showed a chair.
+The pictures came from the internet. But the internet doesn't say what is in each picture. **People** had to look and decide. Each person saw a word, like *chair*, and a group of pictures. They clicked every picture that showed a chair.
 
 ImageNet was shared with the world in 2009. It was the biggest set of labeled pictures anyone had made.
 
@@ -70,7 +70,7 @@ Every year, scientists entered a contest. Their programs looked at ImageNet pict
 
 ![](/images/Unit_1/1.5_imagenet_contest.svg){width="560px" fig-align="center" fig-alt="Bar chart of how often the best AI got the picture wrong in the ImageNet contest. 2010: 28%. 2011: 26%. 2012, a neural network: 15%. 2014: 7%. 2015: 4%. A person gets it wrong about 5% of the time."}
 
-In 2012, a team from Toronto used a {{< glink "neural network" >}}. (You will learn how neural networks work in Unit 2.) Their mistakes dropped from about 26% to **15%**. Nobody had seen a jump that big.
+In 2012, a team from Toronto used a {{< glink "neural network" >}}. (You'll learn how neural networks work in Unit 2.) Their mistakes dropped from about 26% to **15%**. Nobody had seen a jump that big.
 
 They trained their network on two {{< glink slug="gpu" text="GPUs" >}}, chips made for **video games**. A GPU can do thousands of small math problems at the same time.
 
@@ -79,11 +79,11 @@ They trained their network on two {{< glink slug="gpu" text="GPUs" >}}, chips ma
 2. **Neural networks** that learn from the data
 3. **Fast chips** (GPUs) to do the math
 
-AI did not get better because people wrote better rules. It got better because of examples.
+AI didn't get better because people wrote better rules. It got better because of examples.
 :::
 
 :::{.real-world title="AlphaGo (2016)"}
-Go is a board game from China. It is much harder for computers than chess. In 2016, a neural network called **AlphaGo** played Lee Sedol, one of the best Go players in the world. AlphaGo won, 4 games to 1.
+Go is a board game from China. It's much harder for computers than chess. In 2016, a neural network called **AlphaGo** played Lee Sedol, one of the best Go players in the world. AlphaGo won, 4 games to 1.
 
 Deep Blue used rules that people wrote (Lesson 1.4). AlphaGo learned from examples. First it learned from games that people played. Then it played millions of games against itself.
 :::
@@ -96,7 +96,7 @@ Do the job of the ImageNet workers.
 
 :::{.steps}
 1. Choose the **sandwich** round.
-2. Work **alone** first. Click every picture that shows a sandwich. Do not talk!
+2. Work **alone** first. Click every picture that shows a sandwich. Don't talk!
 3. Press **I'm done**. Write your picture numbers on your sheet.
 4. Compare with a partner (or a group of 3). Which pictures did you **disagree** on?
 :::
@@ -106,19 +106,19 @@ Do the job of the ImageNet workers.
 **Class vote.** Your teacher picks the hardest picture. Everyone votes. How many said yes? How many said no?
 
 :::{.think title="Is a hot dog a sandwich? Is a chair with wheels a chair?"}
-There is no right answer! People decide. And different people decide differently.
+There's no right answer! People decide. And different people decide differently.
 
 ImageNet had this problem too. So the workers got instructions, and several people labeled each picture. If most people agreed, the label stayed.
 :::
 
 :::{.gotcha title="An AI learns what the labelers decided"}
-If the labelers said a hot dog is a sandwich, the AI will say it too. The AI does not know what a sandwich *really* is. It only knows what people labeled.
+If the labelers said a hot dog is a sandwich, the AI will say it too. The AI doesn't know what a sandwich *really* is. It only knows what people labeled.
 
-What if all the labelers came from one country? The AI would learn their idea of a sandwich. In Unit 4, you will see more ways that AI learns unfair patterns.
+What if all the labelers came from one country? The AI would learn their idea of a sandwich. In Unit 4, you'll see more ways that AI learns unfair patterns.
 :::
 
 :::{.real-world title="You have done this job before"}
-Have you ever clicked every picture with a traffic light, to prove you are not a robot? That test is a {{< glink CAPTCHA >}}.
+Have you ever clicked every picture with a traffic light, to prove you aren't a robot? That test is a {{< glink CAPTCHA >}}.
 
 Google's reCAPTCHA uses those clicks to label data for AI. Look at what it asked for, and you can see what AI was learning:
 
@@ -130,13 +130,13 @@ Every time you solved one, you were a labeler too. Nobody paid you.
 
 {{< talk >}}
 
-49,000 people labeled ImageNet. Most people do not know their names. The scientists became famous.
+49,000 people labeled ImageNet. Most people don't know their names. The scientists became famous.
 
 :::{.frames}
 - The people who labeled the data **should** / **should not** get credit, because ...
 - People disagreed about picture ... because ...
 - If the labelers all came from one country, the AI might ...
-- People who solve CAPTCHAs (should / should not) be told that they label data for AI, because ...
+- People who solve CAPTCHAs (should / shouldn't) be told that they label data for AI, because ...
 - The most important part of the new recipe is ... because ...
 :::
 
@@ -145,9 +145,9 @@ Every time you solved one, you were a labeler too. Nobody paid you.
 :::{.watch title="How we teach computers to understand pictures (Fei-Fei Li, TED, 2015)"}
 {{< ytvideo 40riCqvRoMs title="How we teach computers to understand pictures (Fei-Fei Li, TED, 2015)" >}}
 
-Fei-Fei Li gave this talk in 2015, three years after the Toronto team's neural network won. It is history now: computers can do much more today. The talk is 18 minutes. In class, we watch the first part.
+Fei-Fei Li gave this talk in 2015, three years after the Toronto team's neural network won. It's history now: computers can do much more today. The talk is 18 minutes. In class, we watch the first part.
 
-**While you watch:** Fei-Fei Li compares computers to children. In 2015, what could children do that computers could not?
+**While you watch:** Fei-Fei Li compares computers to children. In 2015, what could children do that computers couldn't?
 
 **Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::

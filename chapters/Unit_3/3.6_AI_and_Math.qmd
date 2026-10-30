@@ -14,14 +14,14 @@ How can that be? Today you find out, and you test it yourself.
 :::
 
 :::{.objectives}
-- [ ] I can explain why a calculator is always right on arithmetic, but a chatbot is not.
+- [ ] I can explain why a calculator is always right on arithmetic, but a chatbot isn't.
 - [ ] I can check an AI answer with a calculator, an estimate, or by plugging it in.
 - [ ] I can find a wrong step in a solution.
 :::
 
 ::::{.vocab}
 :::{.word-cards}
-- [📏]{.icon} {{< glink estimate >}}: a quick answer that is close, but not exact. Use it to check.
+- [📏]{.icon} {{< glink estimate >}}: a quick answer that's close, but not exact. Use it to check.
 - [🧩]{.icon} {{< glink token >}}: a word or a piece of a word that a chatbot reads and writes
 - [📜]{.icon} {{< glink rule >}}: an exact step that a computer follows every time
 :::
@@ -61,9 +61,9 @@ Remember Lesson 1.1: some computers follow **rules**, and some learn from **exam
 This picture shows the idea. Real chatbots split numbers into pieces in different ways.
 
 :::{.note title="Right now (fall 2026)"}
-In July 2025, AI from Google DeepMind and OpenAI scored at **gold-medal** level at the International Mathematical Olympiad. It is a contest for the best high school math students in the world.
+In July 2025, AI from Google DeepMind and OpenAI scored at **gold-medal** level at the International Mathematical Olympiad. It's a contest for the best high school math students in the world.
 
-Many AI tools now use a calculator or computer code behind the scenes for arithmetic. Some do not. Even the best ones still make mistakes. Always check.
+Many AI tools now use a calculator or computer code behind the scenes for arithmetic. Some don't. Even the best ones still make mistakes. Always check.
 :::
 
 ***
@@ -97,7 +97,7 @@ Work with a partner.
 | $8374615 \times 293847$ | very big |
 
 :::{.gotcha title="It might get them all right"}
-That is a good result too! Write it down. Your class AI tool may use a calculator behind the scenes. Try asking: "Did you use a calculator for that?" Then check its answer to **that** question.
+That's a good result too! Write it down. Your class AI tool may use a calculator behind the scenes. Try asking: "Did you use a calculator for that?" Then check its answer to **that** question.
 :::
 
 :::{.teacher title="Class size"}
@@ -118,11 +118,11 @@ Should students be allowed to use AI on math homework? When does it help you lea
 {{< further >}}
 
 :::{.project title="Day 2: The Hint Challenge"}
-If AI does your homework, you did not learn it. Then the test comes, and the AI is not there. So ask for a {{< glink hint >}} instead:
+If AI does your homework, you didn't learn it. Then the test comes, and the AI isn't there. So ask for a {{< glink hint >}} instead:
 
-> I am learning to solve equations. Do not give me the answer. Give me one hint for the first step of $2x - 7 = 11$. Then wait for me to try.
+> I am learning to solve equations. Don't give me the answer. Give me one hint for the first step of $2x - 7 = 11$. Then wait for me to try.
 
-1. Use this prompt. Do not let the AI give you the answer.
+1. Use this prompt. Don't let the AI give you the answer.
 2. Write each hint and each of your steps on your sheet.
 3. Check your answer by plugging it in.
 

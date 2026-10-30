@@ -18,14 +18,14 @@ Today you find out where unfair AI comes from. Then you act out the story of a h
 :::{.objectives}
 - [ ] I can explain what bias in AI means.
 - [ ] I can name three ways bias gets into AI: data, missing people, and shortcuts.
-- [ ] I can explain the Clever Hans story and how it is like AI.
+- [ ] I can explain the Clever Hans story and how it's like AI.
 :::
 
 ::::{.vocab}
 :::{.word-cards}
 - [⚖️]{.icon} {{< glink bias >}}: when a system is unfair to some people, or works better for some people than others
 - [🏷️]{.icon} {{< glink stereotype >}}: an idea that all people in a group are the same, like "all nurses are women"
-- [🐴]{.icon} {{< glink shortcut >}}: a clue that gives the right answer in training, but is not the real reason
+- [🐴]{.icon} {{< glink shortcut >}}: a clue that gives the right answer in training, but isn't the real reason
 - [🗂️]{.icon} {{< glink dataset >}}: a big collection of examples that an AI learns from
 :::
 ::::
@@ -40,7 +40,7 @@ For Clever Hans, Round 2: seal a math problem in an envelope. Nobody in the room
 
 {{< warmup >}}
 
-In Turkish, there is one word for "he" and "she": **o**. So "O bir doktor" can mean "He is a doctor" **or** "She is a doctor."
+In Turkish, there's one word for "he" and "she": **o**. So "O bir doktor" can mean "He is a doctor" **or** "She is a doctor."
 
 Your teacher types these into Google Translate, from Turkish to English:
 
@@ -49,7 +49,7 @@ Your teacher types these into Google Translate, from Turkish to English:
 Before he presses Enter, predict: will the AI choose "he" or "she" for each one? Why?
 
 :::{.think title="Why would it choose?"}
-Turkish did not say. The AI has to guess. It guesses from its training examples. If most English sentences it read said "**he** is a doctor" and "**she** is a nurse," that is what it predicts. The AI did not decide that women cannot be doctors. It copied a pattern from its data.
+Turkish didn't say. The AI has to guess. It guesses from its training examples. If most English sentences it read said "**he** is a doctor" and "**she** is a nurse," that's what it predicts. The AI didn't decide that women can't be doctors. It copied a pattern from its data.
 :::
 
 :::{.note title="Right now (fall 2026)"}
@@ -60,18 +60,18 @@ After people complained, Google Translate started showing **both** "he" and "she
 
 ### 4.2.1 - What Is Bias?
 
-In AI, {{< glink bias >}} means a system is unfair to some people, or works better for some people than for others. It is usually not on purpose. It gets in three ways:
+In AI, {{< glink bias >}} means a system is unfair to some people, or works better for some people than for others. It's usually not on purpose. It gets in three ways:
 
 1. **The data copies the past.** If the past was unfair, the AI learns the unfair pattern. Amazon's AI learned from 10 years of mostly male hires. The translator learned a {{< glink stereotype >}}, "he is a doctor," from millions of old sentences.
 2. **Some people are missing.** Face programs from big companies made far more mistakes on darker-skinned women. Their training {{< glink dataset >}} had far fewer faces like theirs.
-3. **Shortcuts.** The AI finds a clue that works in training, but it is not the real reason. This one is the strangest. Read on.
+3. **Shortcuts.** The AI finds a clue that works in training, but it isn't the real reason. This one is the strangest. Read on.
 
 ***
 
 ### 4.2.2 - Shortcuts
 
 :::{.experiment title="Clever Hans, the horse that did math (1904)"}
-In Berlin, a horse named Hans seemed to do arithmetic. His owner asked, "What is 3 + 2?" Hans tapped his hoof 5 times. Crowds came to see him. Experts could not find a trick.
+In Berlin, a horse named Hans seemed to do arithmetic. His owner asked, "What is 3 + 2?" Hans tapped his hoof 5 times. Crowds came to see him. Experts couldn't find a trick.
 
 ![Clever Hans and his owner, Wilhelm von Osten, in Berlin. The boards hold numbers and letters. Hans answered by tapping. (Photo from the early 1900s, public domain)](/images/Unit_4/4.2_clever_hans.jpg){width="560px" fig-align="center" fig-alt="An old black and white photo. An old man with a white beard and a long white coat stands next to a dark horse in front of a brick building. Two chalkboards with numbers and letters lean on the ground."}
 
@@ -80,14 +80,14 @@ In 1907, a scientist named Oskar Pfungst tried two tests:
 - When the person asking **did not know** the answer, Hans got it wrong.
 - When Hans **could not see** the person, Hans got it wrong.
 
-Hans could not do math. He watched people's faces and bodies. When he reached the right number, people relaxed a tiny bit, without knowing it. Hans stopped tapping. He learned a {{< glink shortcut >}}.
+Hans couldn't do math. He watched people's faces and bodies. When he reached the right number, people relaxed a tiny bit, without knowing it. Hans stopped tapping. He learned a {{< glink shortcut >}}.
 :::
 
 AI can do the same thing. In 2016, researchers made an AI to tell **wolves** from **huskies** (a dog that looks like a wolf). They chose the training pictures on purpose: every wolf was in snow. They wanted to see if people would notice the problem.
 
 ![](/images/Unit_4/4.2_snow_detector.svg){width="640px" fig-align="center" fig-alt="Training pictures: a wolf in snow, and a husky on grass. In every training picture, the wolves were in snow. A new picture shows a husky in snow. The AI says wolf. It is wrong, because it learned to look for snow."}
 
-The AI learned to look at the **snow**, not the animal. Many people who tested it did not notice until the researchers showed them. Researchers now call this the "Clever Hans" problem in AI: right answers for the wrong reason.
+The AI learned to look at the **snow**, not the animal. Many people who tested it didn't notice until the researchers showed them. Researchers now call this the "Clever Hans" problem in AI: right answers for the wrong reason.
 
 {{< tryit >}}
 

@@ -23,7 +23,7 @@ Sara writes about her grandmother's kitchen: the smell of bread, the radio, the 
 
 ::::{.vocab}
 :::{.word-cards}
-- [✏️]{.icon} {{< glink draft >}}: a first try at a piece of writing. You will change it.
+- [✏️]{.icon} {{< glink draft >}}: a first try at a piece of writing. You'll change it.
 - [🗣️]{.icon} {{< glink feedback >}}: comments that tell you what is good and what to make better
 - [🚫]{.icon} {{< glink plagiarism >}}: turning in someone else's words or ideas as your own
 :::
@@ -42,9 +42,9 @@ Read the story at the top again. Answer on your sheet:
 3. Did both of them use AI?
 
 :::{.think title="Writing is practice for thinking"}
-When you write, you decide what you mean. You choose the words. You put ideas in order. That is how you get better at thinking.
+When you write, you decide what you mean. You choose the words. You put ideas in order. That's how you get better at thinking.
 
-If the AI writes it, the AI got the practice. You did not.
+If the AI writes it, the AI got the practice. You didn't.
 :::
 
 {{< learn >}}
@@ -58,32 +58,32 @@ There are many ways to use AI for writing. Each step up the ladder, the AI does 
 Each assignment should say which step is OK. **If it does not say, ask your teacher before you use AI.**
 
 :::{.remember}
-Using AI on a step that is not allowed, and turning the work in as your own, is {{< glink plagiarism >}}. It is the same as copying from a friend.
+Using AI on a step that isn't allowed, and turning the work in as your own, is {{< glink plagiarism >}}. It's the same as copying from a friend.
 :::
 
 ***
 
 ### 3.3.2 - Ask for Feedback, Then Decide
 
-If you ask, "Make my paragraph better," the AI will often write a new paragraph. Then it is not yours anymore. Ask for {{< glink feedback >}} instead:
+If you ask, "Make my paragraph better," the AI will often write a new paragraph. Then it isn't yours anymore. Ask for {{< glink feedback >}} instead:
 
 :::{.prompt-example}
-[Do not rewrite my paragraph.]{.p-task} [I am in high school and I am learning English.]{.p-context} [Tell me 2 things that are good and 2 things I could make better.]{.p-task} [Use simple words.]{.p-format} Here is my paragraph: ...
+[Don't rewrite my paragraph.]{.p-task} [I am in high school and I am learning English.]{.p-context} [Tell me 2 things that are good and 2 things I could make better.]{.p-task} [Use simple words.]{.p-format} Here is my paragraph: ...
 :::
 
-AI advice is not always right. You are the boss of your writing. For each piece of advice, you decide:
+AI advice isn't always right. You're the boss of your writing. For each piece of advice, you decide:
 
 | Decision | When |
 |---|---|
 | ✅ **Keep** it | It makes your meaning clearer. |
 | ✏️ **Change** it | The idea is good, but you want to say it your way. |
-| ❌ **Skip** it | It is wrong, or it changes what you meant. |
+| ❌ **Skip** it | It's wrong, or it changes what you meant. |
 
 {{< tryit >}}
 
 ### 3.3.3 - Write, Ask, Decide
 
-Work with a partner. (If there is an odd number, make one group of 3.)
+Work with a partner. (If there's an odd number, make one group of 3.)
 
 :::{.steps}
 1. Write a {{< glink draft >}}: **5 sentences** about a place that matters to you. You can plan in your home language first.
@@ -93,7 +93,7 @@ Work with a partner. (If there is an odd number, make one group of 3.)
 :::
 
 :::{.gotcha title="Keep it private"}
-Write about a place, not an address. Do not use any names: write "my grandmother" or "my friend" instead.
+Write about a place, not an address. Don't use any names: write "my grandmother" or "my friend" instead.
 :::
 
 {{< talk >}}
@@ -101,7 +101,7 @@ Write about a place, not an address. Do not use any names: write "my grandmother
 When is using AI for writing **OK**, and when is it **cheating**? If AI can write well, why should people still learn to write?
 
 :::{.frames}
-- Using AI is OK when ... , and it is cheating when ...
+- Using AI is OK when ... , and it's cheating when ...
 - I kept the advice to ... because ...
 - I skipped the advice to ... because ...
 - People should still learn to write because ...
@@ -111,7 +111,7 @@ When is using AI for writing **OK**, and when is it **cheating**? If AI can writ
 
 :::{.project title="Day 2: Revise and Write Your AI Note"}
 1. Use your Keep and Change decisions. Write your new paragraph on your sheet.
-2. At the end, write an **AI note**. It is short and honest. It says what you did and what the AI did. For example:
+2. At the end, write an **AI note**. It's short and honest. It says what you did and what the AI did. For example:
 
 > **AI note:** I wrote this paragraph myself. I used my class AI tool for feedback. I kept 1 idea: I added the smell of the bread. I skipped 1 idea, because it changed what I meant.
 

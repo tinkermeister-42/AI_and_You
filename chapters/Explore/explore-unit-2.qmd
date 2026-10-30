@@ -31,7 +31,7 @@ Try them yourself with the rules tool in Lesson 2.1.
 
 ### A Big Book About Simple Rules
 
-In 2002, Stephen Wolfram wrote a very big book about simple rules, called *A New Kind of Science*. It has more than 1,000 pages of pictures like Rule 30. He argues that simple rules can explain many things in nature: shells, plants, snowflakes, and maybe even physics. Many scientists liked the pictures but did not agree with all of his ideas. You can decide for yourself.
+In 2002, Stephen Wolfram wrote a very big book about simple rules, called *A New Kind of Science*. It has more than 1,000 pages of pictures like Rule 30. He argues that simple rules can explain many things in nature: shells, plants, snowflakes, and maybe even physics. Many scientists liked the pictures but didn't agree with all of his ideas. You can decide for yourself.
 
 ## From Lesson 2.2: Your Brain Is Made of Cells {#explore-2-2}
 
@@ -40,7 +40,7 @@ In 2002, Stephen Wolfram wrote a very big book about simple rules, called *A New
 - About **86 billion** neurons.
 - Hundreds of **trillions** of synapses (connections). One neuron can connect to thousands of others.
 - Signals move from about **0.5** to **120 meters per second**. The fastest signals are as fast as a race car. The slowest are slower than walking.
-- Your whole brain runs on about **20 watts** of power. That is less than an old light bulb.
+- Your whole brain runs on about **20 watts** of power. That's less than an old light bulb.
 
 ### Slow Parts, Fast Brain
 
@@ -50,7 +50,7 @@ The answer is **at the same time**. Billions of neurons work together, all at on
 
 ### Try It: Measure the Speed of a Signal
 
-Use the squeeze chain from Lesson 2.2. Measure how far a signal travels: from one hand, up the arm, to the brain, and down the other arm. That is about 1.5 meters. Divide that distance by the time for one person. Is your answer close to 120 meters per second? Why not? (Hint: the brain has to decide to squeeze. That takes time too.)
+Use the squeeze chain from Lesson 2.2. Measure how far a signal travels: from one hand, up the arm, to the brain, and down the other arm. That's about 1.5 meters. Divide that distance by the time for one person. Is your answer close to 120 meters per second? Why not? (Hint: the brain has to decide to squeeze. That takes time too.)
 
 ## From Lesson 2.3: How Brains Learn {#explore-2-3}
 
@@ -58,13 +58,13 @@ Use the squeeze chain from Lesson 2.2. Measure how far a signal travels: from on
 
 To drive a taxi in London, a driver must learn about 25,000 streets by heart. It takes 3 or 4 years. The test is called "The Knowledge."
 
-In 2000, scientists in London used brain scans on taxi drivers. One part of the brain helps with places and maps. It is called the **hippocampus**. In taxi drivers, the back of it was bigger than in other people. Drivers with more years on the job had bigger ones.
+In 2000, scientists in London used brain scans on taxi drivers. One part of the brain helps with places and maps. It's called the **hippocampus**. In taxi drivers, the back of it was bigger than in other people. Drivers with more years on the job had bigger ones.
 
-The brain is not fixed. Practice changes it, even its size, at any age.
+The brain isn't fixed. Practice changes it, even its size, at any age.
 
 ### Learning Without Trying
 
-Pavlov's dogs did not try to learn. Their brains connected the sound and the food by themselves, because the two happened together again and again.
+Pavlov's dogs didn't try to learn. Their brains connected the sound and the food by themselves, because the two happened together again and again.
 
 Think about your phone. Does a sound make you reach for it before you think? Apps and games are built to make sounds and pictures that you learn to react to. Now you know how that works, and you can notice it.
 
@@ -76,7 +76,7 @@ In 1943, Warren McCulloch and Walter Pitts showed that a neuron could be written
 
 The newspapers were very excited. One story said the Navy expected it to walk, talk, see, and even be conscious one day. (You read about this in Lesson 1.4.)
 
-### The Problem One Neuron Cannot Solve
+### The Problem One Neuron Can't Solve
 
 Try to make one neuron that answers this question with two inputs, A and B:
 
@@ -89,9 +89,9 @@ Try to make one neuron that answers this question with two inputs, A and B:
 | 0 | 1 | YES |
 | 1 | 1 | NO |
 
-Choose weights for A and B and a threshold. Test all 4 rows. You will not find any that work! Here is why. To say YES when only A is on, A needs a big enough weight. The same for B. But then when **both** are on, the total is even bigger, and the neuron says YES again.
+Choose weights for A and B and a threshold. Test all 4 rows. You won't find any that work! Here is why. To say YES when only A is on, A needs a big enough weight. The same for B. But then when **both** are on, the total is even bigger, and the neuron says YES again.
 
-In 1969, Marvin Minsky and Seymour Papert wrote a famous book that proved one neuron cannot solve problems like this. Many people stopped working on neural networks for years. This was part of an AI winter (Lesson 1.4).
+In 1969, Marvin Minsky and Seymour Papert wrote a famous book that proved one neuron can't solve problems like this. Many people stopped working on neural networks for years. This was part of an AI winter (Lesson 1.4).
 
 ### The Fix: More Neurons
 
@@ -119,7 +119,7 @@ So the new total is bigger by $A \times A + S \times S + 1$. That number is alwa
 
 Frank Rosenblatt used this fix rule for his perceptron in 1958. Mathematicians later proved something surprising. If **any** straight line can split the training cards into two groups, the fix rule will always find one. It makes a limited number of mistakes, and then it stops making them.
 
-But if no straight line can split the cards, the neuron never stops making mistakes. (See the problem one neuron cannot solve, in the section for Lesson 2.4.)
+But if no straight line can split the cards, the neuron never stops making mistakes. (See the problem one neuron can't solve, in the section for Lesson 2.4.)
 
 ### Shuffle the Cards
 
@@ -143,33 +143,33 @@ In class, the data was split into two piles: training and test. Real data scient
 2. **Checking data** (scientists call it *validation data*): people use it to make choices, like how many hidden neurons to use.
 3. **Test data:** used only once, at the very end.
 
-Why three? Say you try 10 network sizes, and you keep the one with the best test score. Then you used the test data to make a choice. The test score is not a fair check anymore. A third pile stays a fair check.
+Why three? Say you try 10 network sizes, and you keep the one with the best test score. Then you used the test data to make a choice. The test score isn't a fair check anymore. A third pile stays a fair check.
 
 ### The Data Behind the AI
 
-The Pokédex has 1,281 Pokémon. That is small for AI. A big image AI learns from millions or billions of pictures. A chatbot learns from a huge amount of text. The steps are the same six steps you saw in class. Only the size is different.
+The Pokédex has 1,281 Pokémon. That's small for AI. A big image AI learns from millions or billions of pictures. A chatbot learns from a huge amount of text. The steps are the same six steps you saw in class. Only the size is different.
 
 ## From Lesson 2.7: Train Your Own AI {#explore-2-7}
 
 ### Why Teachable Machine Learns So Fast
 
-The Pokémon AI in Lesson 2.6 started from nothing. Teachable Machine does not. It starts with a network that **already learned** from millions of pictures, like the ImageNet pictures in Lesson 1.5. That network already knows about edges, shapes, and colors (you will see how in Lesson 2.8).
+The Pokémon AI in Lesson 2.6 started from nothing. Teachable Machine doesn't. It starts with a network that **already learned** from millions of pictures, like the ImageNet pictures in Lesson 1.5. That network already knows about edges, shapes, and colors (you'll see how in Lesson 2.8).
 
-So Teachable Machine only learns the **last step** from your pictures: which shapes go with "rock." That is why it needs only about 50 pictures and a few seconds.
+So Teachable Machine only learns the **last step** from your pictures: which shapes go with "rock." That's why it needs only about 50 pictures and a few seconds.
 
-This is called {{< glink "transfer learning" >}}: starting from an AI that already learned something, then teaching it a new job. It is like learning a new sport when you already know how to run and catch.
+This is called {{< glink "transfer learning" >}}: starting from an AI that already learned something, then teaching it a new job. It's like learning a new sport when you already know how to run and catch.
 
 ### Transfer Learning Everywhere
 
-Most AI today uses transfer learning. A company trains one very big network, for a very long time, at a high cost. Then many people teach it new jobs with a small number of examples. A chatbot is one big network that learned from a huge amount of text. Then it is taught to follow instructions and have conversations.
+Most AI today uses transfer learning. A company trains one very big network, for a very long time, at a high cost. Then many people teach it new jobs with a small number of examples. A chatbot is one big network that learned from a huge amount of text. Then it's taught to follow instructions and have conversations.
 
-**Think about it:** what if the first big network learned something unfair? Then every AI built on top of it can have the same problem. (You will study this in Unit 4.)
+**Think about it:** what if the first big network learned something unfair? Then every AI built on top of it can have the same problem. (You'll study this in Unit 4.)
 
 ## From Lesson 2.8: How AI Sees {#explore-2-8}
 
 ### Layers: From Edges to a Cat
 
-In Lesson 2.8, a filter found edges. But an edge is not a cat. How does a network get from edges to "cat"?
+In Lesson 2.8, a filter found edges. But an edge isn't a cat. How does a network get from edges to "cat"?
 
 A vision network has many layers of neurons. Each layer builds on the one before.
 
@@ -195,7 +195,7 @@ The tiny chatbot in Lesson 2.9 keeps a **table of counts**. It looks back only 1
 
 Try it. To look back 2 words, the table needs a row for every **pair** of words. A language has tens of thousands of words, so there are hundreds of millions of pairs. To look back 1,000 words, there are more rows than atoms in the universe. And most long sentences have **never** been written before, so the table would have no count for them.
 
-So a real chatbot does not store a table. It stores what it learned as **weights** in a neural network: billions of numbers, like the weights in Lesson 2.4. The network learns patterns, not exact sentences. It can make a good guess about a sentence it has never seen.
+So a real chatbot doesn't store a table. It stores what it learned as **weights** in a neural network: billions of numbers, like the weights in Lesson 2.4. The network learns patterns, not exact sentences. It can make a good guess about a sentence it has never seen.
 
 | | The tiny chatbot | A real chatbot |
 |---|---|---|

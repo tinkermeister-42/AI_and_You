@@ -2,7 +2,7 @@
 
 In the 1970s, banks started using ATMs: machines that give you cash. Many people thought bank tellers would lose their jobs. The machines could count money faster than any person.
 
-That is not what happened next. Banks opened more branches, and for many years the number of tellers did not go down. But the **job changed**. Tellers counted less cash and helped people more.
+That isn't what happened next. Banks opened more branches, and for many years the number of tellers didn't go down. But the **job changed**. Tellers counted less cash and helped people more.
 
 Will AI do the same thing to jobs today, or something different? Experts disagree. Today you look at **your** dream job, one task at a time.
 
@@ -62,7 +62,7 @@ When a machine does tasks that people used to do, that is {{< glink automation >
 :::{.note title="Right now (fall 2026)"}
 Experts disagree about how fast AI is changing jobs.
 
-- A 2025 Stanford study looked at the jobs AI can do most. Since 2022, workers aged 22 to 25 in those jobs had about 13% fewer jobs than expected. Older workers in the same jobs were not hurt.
+- A 2025 Stanford study looked at the jobs AI can do most. Since 2022, workers aged 22 to 25 in those jobs had about 13% fewer jobs than expected. Older workers in the same jobs weren't hurt.
 - A 2025 Yale study found no big change in the whole job market yet.
 
 Both can be true: the change may start with young workers in a few kinds of jobs.
@@ -90,7 +90,7 @@ Chatbots learned words from millions of examples. Now some robots learn **moveme
 Work with a partner. Choose one dream job: yours or your partner's.
 
 :::{.steps}
-1. Ask your class AI tool: **"List 10 tasks a [job] does in a normal week. Use simple words."** Do not type your name or anything about you.
+1. Ask your class AI tool: **"List 10 tasks a [job] does in a normal week. Use simple words."** Don't type your name or anything about you.
 2. Check the list. Is anything missing or wrong? Ask yourself: what would a real person in this job say?
 3. On your sheet, sort each task: **AI can do it**, **AI can help**, or **A person does it**. Write why for 3 of them.
 4. Look at your sort. Which skills will matter most in this job in 10 years?
@@ -121,7 +121,7 @@ In 2026, he said:
 Is he right this time? Will robots do the work of plumbers and electricians someday? When? What should **you** learn now, for your {{< glink career >}}?
 
 :::{.frames}
-- I think he (is / is not) right, because ...
+- I think he (is / isn't) right, because ...
 - A job that robots will do soon is ... , because ...
 - A job that will need people for a long time is ... , because ...
 - If AI or robots do part of a job, the company should ... because ...
@@ -139,7 +139,7 @@ Interview an adult about their job: someone in your family, a coach, or someone 
 4. Ask: "What part of your job would you never give to a machine?"
 5. Ask: "Do you think a robot or AI could do your job someday? When?"
 
-Do not write the person's name. Write their job only.
+Don't write the person's name. Write their job only.
 :::
 
 :::{.project title="Jobs That Need People Who Speak Two Languages"}

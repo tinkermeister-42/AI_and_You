@@ -26,7 +26,7 @@ The spelling is no longer the clue. Today you learn the clues that still work.
 - [🎣]{.icon} {{< glink scam >}}: a trick to steal your money or your information
 - [🚩]{.icon} {{< glink "warning sign" >}}: a clue that something is wrong
 - [🎭]{.icon} {{< glink imposter >}}: someone who pretends to be another person or a real company
-- [🔑]{.icon} {{< glink "verification code" >}}: a short number a website sends you to prove it is really you
+- [🔑]{.icon} {{< glink "verification code" >}}: a short number a website sends you to prove it's really you
 :::
 ::::
 
@@ -38,7 +38,7 @@ The spelling is no longer the clue. Today you learn the clues that still work.
 
 This text message comes to your phone. Would you click the link? Why or why not? Vote with your hand.
 
-> **Delivery Service:** Your package could not be delivered. Update your address in 12 hours or it will be sent back: deliv-update-help.co
+> **Delivery Service:** Your package couldn't be delivered. Update your address in 12 hours or it will be sent back: deliv-update-help.co
 
 :::{.think title="What did you notice?"}
 The spelling is perfect. But it wants you to **hurry** (12 hours), and it has a **strange link**. Were you even waiting for a package? These are warning signs.
@@ -60,7 +60,7 @@ Many scams come from an {{< glink imposter >}}: someone who pretends to be a rea
 | 🔗 **A link or a code** | "Click here." "Send me the code we sent you." |
 
 :::{.remember}
-A real company or government office will never ask you to pay with **gift cards**. It will never ask for a **verification code** you got by text. When you are not sure, stop. Do not click. Call the person or the company on a number **you already know**.
+A real company or government office will never ask you to pay with **gift cards**. It will never ask for a **verification code** you got by text. When you aren't sure, stop. Don't click. Call the person or the company on a number **you already know**.
 :::
 
 ***
@@ -72,7 +72,7 @@ A real company or government office will never ask you to pay with **gift cards*
 - **Personal:** AI can use things you posted online to make a message about **you**.
 - **Fake voices:** a call can sound like someone you love (Lesson 4.3). Ask for your family safe word.
 
-So do not look for bad spelling. Look for the warning signs.
+So don't look for bad spelling. Look for the warning signs.
 
 :::{.note title="Right now (fall 2026)"}
 In 2025, people in the United States reported losing **$15.9 billion** to scams, more than ever before (Federal Trade Commission, March 2026). Text messages were the most common way scammers first reached people. The biggest losses were paid by bank transfer and crypto.
@@ -115,14 +115,14 @@ Make a safety card for your family, in your home language. Work with a partner.
 
 1. On your sheet, write the plan in English: the warning signs, "Never pay with gift cards," "Never share a code," "Call back on a number you know," and who to ask for help.
 2. Ask your class AI tool to translate it into your home language. Do **not** type any names, phone numbers, or your family's safe word.
-3. Check the translation. You are the expert (Lesson 3.5). Fix any mistakes.
+3. Check the translation. You're the expert (Lesson 3.5). Fix any mistakes.
 4. Add your family's phone numbers by hand, at home, on the paper card.
 
 **No class AI tool today?** Translate it yourself, or with a family member.
 :::
 
 :::{.project title="Scam Hunt"}
-At home, with your family, look at the text messages and emails you got this week. Did any have warning signs? Do not click any links. Tell the class what you found, without names or numbers.
+At home, with your family, look at the text messages and emails you got this week. Did any have warning signs? Don't click any links. Tell the class what you found, without names or numbers.
 :::
 
 :::{.explore-link}

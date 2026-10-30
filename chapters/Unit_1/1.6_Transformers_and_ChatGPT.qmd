@@ -26,7 +26,7 @@ Today, you see how attention works. Then you build a sentence the way a chatbot 
 - [🔦]{.icon} {{< glink attention >}}: when an AI looks at all the other words to decide which ones matter
 - [🔀]{.icon} {{< glink transformer >}}: a kind of neural network that uses attention. The T in GPT
 - [📚]{.icon} {{< glink "large language model" >}}: a transformer trained on a huge amount of text to predict the next word
-- [🔮]{.icon} {{< glink prediction >}}: a best guess about something you do not know yet
+- [🔮]{.icon} {{< glink prediction >}}: a best guess about something you don't know yet
 :::
 ::::
 
@@ -42,9 +42,9 @@ Read these two sentences. What does **"it"** mean in each one? Write your answer
 > 2. The animal didn't cross the street because **it** was too **wide**.
 
 :::{.think title="How did you know?"}
-In sentence 1, "it" means **the animal**. Animals get tired. Streets do not.
+In sentence 1, "it" means **the animal**. Animals get tired. Streets don't.
 
-In sentence 2, "it" means **the street**. Streets can be wide. Animals are not "too wide" to cross.
+In sentence 2, "it" means **the street**. Streets can be wide. Animals aren't "too wide" to cross.
 
 Only one word changed. To decide, you looked back at other words in the sentence. You **paid attention** to the right words.
 :::
@@ -76,11 +76,11 @@ There are many chatbots built this way: ChatGPT, Gemini, Claude, Copilot, Llama,
 
 ### 1.6.3 - Be the Chatbot: Next Word, by Vote
 
-A chatbot writes one word at a time. It picks a word that is likely to come next. Now the class does the same thing.
+A chatbot writes one word at a time. It picks a word that's likely to come next. Now the class does the same thing.
 
 :::{.steps}
 1. Your teacher writes the start of a sentence on the board: **After school, my friends and I ...**
-2. Everyone writes **one** next word on a small paper. Do not talk!
+2. Everyone writes **one** next word on a small paper. Don't talk!
 3. Your teacher counts the words. The word with the most votes goes on the board.
 4. Do it again for the next word. Keep going until the sentence ends (about 8 words).
 5. Now give the same start to your class AI tool: *"Finish this sentence: After school, my friends and I"*. Compare its sentence with the class sentence.
@@ -93,7 +93,7 @@ With only 4 or 5 people, many words get 1 vote. Break a tie by rolling a die, or
 :::{.think title="Was the class sentence surprising or ordinary?"}
 Usually it is **ordinary**. The most common word wins every time, so the sentence uses common words.
 
-Chatbots have the same problem. So they do not always pick the top word. Sometimes they pick the second or third word, on purpose, to make the writing more interesting.
+Chatbots have the same problem. So they don't always pick the top word. Sometimes they pick the second or third word, on purpose, to make the writing more interesting.
 :::
 
 {{< talk >}}

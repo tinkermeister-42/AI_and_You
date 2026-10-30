@@ -8,7 +8,7 @@ This page goes with Unit 5. Read it on your own, if you want to learn more. Noth
 
 A **data broker** is a company that collects information about people and sells it. It buys data from apps, stores, and websites. It puts the pieces together into a file about one person: where they live, what they buy, where they go.
 
-You never signed up with a data broker. Most people do not even know their names. Some states now have laws that let you ask a data broker to delete your file.
+You never signed up with a data broker. Most people don't even know their names. Some states now have laws that let you ask a data broker to delete your file.
 
 ### Searching by Face
 
@@ -21,14 +21,14 @@ Some police departments have used these tools. People disagree about them. Suppo
 When you type into a chatbot, your words go to the company's computers. Some companies use chats to train their next AI, unless you turn that off. School AI tools have their own rules.
 
 :::{.note title="Right now (fall 2026)"}
-AI companies keep changing their rules about chats. Ask your teacher what our class AI tool does with what you type. The safest rule does not change: never type anything personal.
+AI companies keep changing their rules about chats. Ask your teacher what our class AI tool does with what you type. The safest rule doesn't change: never type anything personal.
 :::
 
 ## From Lesson 5.2: AI Scams {#explore-5-2}
 
 ### The Scams That Cost the Most
 
-The biggest losses often start with a friendly message from a stranger: "Sorry, wrong number!" The stranger becomes a friend over weeks. Then they share a "great investment," often in crypto. The website shows your money growing. It is fake. When you try to take the money out, it is gone.
+The biggest losses often start with a friendly message from a stranger: "Sorry, wrong number!" The stranger becomes a friend over weeks. Then they share a "great investment," often in crypto. The website shows your money growing. It's fake. When you try to take the money out, it's gone.
 
 Warning signs: a stranger who becomes a close friend fast, never meets you in person or on video, and talks about money.
 
@@ -42,7 +42,7 @@ Her daughter was safe the whole time, at a sports practice. The voice was made w
 
 - Tell a trusted adult first.
 - In the United States, you can report scams to the Federal Trade Commission at ReportFraud.ftc.gov. It works in English and Spanish.
-- Do not feel ashamed. Scams fool smart people every day. Reporting helps stop the scammer.
+- Don't feel ashamed. Scams fool smart people every day. Reporting helps stop the scammer.
 
 ## From Lesson 5.3: AI and Jobs {#explore-5-3}
 
@@ -54,7 +54,7 @@ Later, people started banking on their phones. Then teller jobs did go down. The
 
 ### Machines That Changed Work Before
 
-- **Tractors.** In 1900, about 4 in 10 workers in the United States worked on farms. Today it is fewer than 2 in 100. Farms grow more food than ever.
+- **Tractors.** In 1900, about 4 in 10 workers in the United States worked on farms. Today it's fewer than 2 in 100. Farms grow more food than ever.
 - **Spreadsheets.** Programs like Excel do in seconds the math that clerks did by hand. Jobs that only added up numbers went away. Jobs that used the numbers to make decisions grew.
 
 Some people say AI is the same story again: some jobs shrink, new jobs grow. Others say AI is different, because it can do thinking work, not just hand work. Nobody knows for sure yet.
@@ -62,17 +62,17 @@ Some people say AI is the same story again: some jobs shrink, new jobs grow. Oth
 ### The Jobs Studies
 
 - **Stanford (August 2025):** Erik Brynjolfsson and other researchers looked at millions of paychecks. In the jobs most exposed to AI, like software and customer service, workers aged 22 to 25 had about 13% fewer jobs than expected. Older workers in the same jobs did fine. One idea: AI does many of the tasks that beginners used to learn on.
-- **Yale (October 2025):** Researchers looked at the whole job market since ChatGPT came out. They did not find a big change yet.
+- **Yale (October 2025):** Researchers looked at the whole job market since ChatGPT came out. They didn't find a big change yet.
 
 ## From Lesson 5.4: AI and the News {#explore-5-4}
 
 ### "People Like You"
 
-A feed does not learn only from you. It also learns from people **like** you. If many people who watched the same 5 videos as you then watched a sixth video, the app guesses you will like it too. This is called a **recommendation system**. It is a kind of machine learning.
+A feed doesn't learn only from you. It also learns from people **like** you. If many people who watched the same 5 videos as you then watched a sixth video, the app guesses you'll like it too. This is called a **recommendation system**. It's a kind of machine learning.
 
 ### News Websites Written by AI
 
-Some websites look like local newspapers. They have a name, a logo, and new stories every hour. But no reporters work there. AI writes the stories, often by rewriting other news. Some of it is wrong. The sites make money from ads.
+Some websites look like local newspapers. They have a name, a logo, and new stories every hour. But no reporters work there. AI writes the stories, often by rewriting other news. Some of it's wrong. The sites make money from ads.
 
 How to check: Is there a list of real reporters with real names? Does the site have a phone number and an address? Do other news sites ever mention it?
 

@@ -2,7 +2,7 @@
 
 Two students ask a chatbot for help with the same speech.
 
-Maria types: **"Tell me about dogs."** She gets a long page about the history of dogs, dog breeds, and dog food. She cannot use most of it.
+Maria types: **"Tell me about dogs."** She gets a long page about the history of dogs, dog breeds, and dog food. She can't use most of it.
 
 Kofi types: **"I am in 10th grade. I am writing a 1-minute speech about why dogs make good pets. Give me 3 reasons, with one short example each. Use simple words."** He gets exactly what he needs. Same chatbot. Different question.
 
@@ -26,7 +26,7 @@ Kofi types: **"I am in 10th grade. I am writing a 1-minute speech about why dogs
 :::{.word-cards}
 - [⌨️]{.icon} {{< glink prompt >}}: what you type to tell an AI what you want
 - [🎯]{.icon} {{< glink task >}}: the job you want the AI to do
-- [🧭]{.icon} {{< glink context >}}: the facts around your question: who you are, what it is for
+- [🧭]{.icon} {{< glink context >}}: the facts around your question: who you are, what it's for
 - [📋]{.icon} {{< glink format >}}: what the answer should look like: a list, a table, 3 sentences
 :::
 ::::
@@ -44,7 +44,7 @@ Each person below typed a short question. Guess what they **really** wanted. Wri
 3. "Give me a recipe." (Lin has rice, eggs, and onions. She has 20 minutes.)
 
 :::{.think title="Why can a chatbot not guess?"}
-You know Tomás, Amina, and Lin. The chatbot does not. It only has the words they typed. Everything else, it has to guess.
+You know Tomás, Amina, and Lin. The chatbot doesn't. It only has the words they typed. Everything else, it has to guess.
 :::
 
 {{< learn >}}
@@ -72,7 +72,7 @@ Here is Kofi's prompt again, in color:
 | [**Format**]{.p-format} | What should the answer look like? | 3 reasons, one example each, simple words |
 
 :::{.remember}
-**Task, context, format.** You do not need all three every time. But when an answer is not useful, one of them is usually missing.
+**Task, context, format.** You don't need all three every time. But when an answer isn't useful, one of them is usually missing.
 :::
 
 ***
@@ -88,11 +88,11 @@ An AI tool may save what you type. A person at the company may read it. So **nev
 - passwords
 - private facts about another person
 
-For context, "I am in high school" is enough. The AI does not need to know **which** high school.
+For context, "I am in high school" is enough. The AI doesn't need to know **which** high school.
 :::
 
 :::{.note title="Right now (fall 2026)"}
-Your class AI tool is **Raina**, in MagicSchool. Your teacher will show you how to open it. In this book, it is called **your class AI tool**.
+Your class AI tool is **Raina**, in MagicSchool. Your teacher will show you how to open it. In this book, it's called **your class AI tool**.
 
 Many popular chatbots have age rules. ChatGPT says users must be at least 13, and users under 18 need a parent's permission. Claude.ai says users must be 18. Use the tool your school gives you.
 :::
@@ -124,7 +124,7 @@ Some people get much better help from AI, just because they know how to ask. Is 
 :::{.frames}
 - A good prompt is like ... because ...
 - The second answer was better because I added ...
-- It is (fair / not fair) that some people get better answers, because ...
+- It's (fair / not fair) that some people get better answers, because ...
 - People who could be left behind are ... , because ...
 :::
 

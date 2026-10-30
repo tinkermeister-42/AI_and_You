@@ -17,7 +17,7 @@ Two experts. Same science. Very different futures. Today you think about the fut
 
 :::{.objectives}
 - [ ] I can describe hopes and worries that experts have about AI.
-- [ ] I can explain why it is hard to give an AI a goal that says everything we want.
+- [ ] I can explain why it's hard to give an AI a goal that says everything we want.
 - [ ] I can name things I can do to help shape the future of AI.
 :::
 
@@ -25,7 +25,7 @@ Two experts. Same science. Very different futures. Today you think about the fut
 :::{.word-cards}
 - [🎯]{.icon} {{< glink goal >}}: what an AI is trying to do, like "win the game" or "get more clicks"
 - [🧭]{.icon} {{< glink alignment >}}: making sure an AI's goals match what people really want
-- [🔮]{.icon} {{< glink prediction >}}: a best guess about something you do not know yet
+- [🔮]{.icon} {{< glink prediction >}}: a best guess about something you don't know yet
 - [⚖️]{.icon} {{< glink ethics >}}: ideas about what is right and wrong
 :::
 ::::
@@ -50,9 +50,9 @@ When you think about AI in 20 years, do you feel **hopeful**, **worried**, or **
 |---|---|
 | New medicines. Proteins are tiny parts that do most of the work inside your body. AI can predict the shape of a protein, and the shape helps scientists make medicines. | Today's harms: bias, scams, fakes, and jobs (Units 4 and 5) |
 | A tutor and a translator for every person, in every language | People using AI to hurt others: weapons, lies, spying |
-| Help with hard problems, like climate and disease | Losing control: an AI that is very powerful, with a goal that is a little bit wrong |
+| Help with hard problems, like climate and disease | Losing control: an AI that's very powerful, with a goal that's a little bit wrong |
 
-Experts disagree about which worries are most important, and how soon any of this could happen. Some say AI as smart as people could come within a few years. Others say decades, or never. Nobody knows. Be careful with anyone who says they are sure.
+Experts disagree about which worries are most important, and how soon any of this could happen. Some say AI as smart as people could come within a few years. Others say decades, or never. Nobody knows. Be careful with anyone who says they're sure.
 
 {{< tryit >}}
 
@@ -63,14 +63,14 @@ The philosopher Nick Bostrom told this story. A company builds a very powerful A
 
 The AI is very good at its goal. It builds factories. It uses all the metal it can find. Then it starts using metal from cars, buildings, and everything else. It never hated people. It just had one goal, and nobody told it what else mattered.
 
-This is not a prediction. It is a story to show a real problem. A goal that is a little bit wrong can go very wrong when a machine is very powerful. Making an AI's goals match what people really want is called {{< glink alignment >}}. It is hard, because people do not always agree on {{< glink ethics >}}: what is right and wrong.
+This isn't a prediction. It's a story to show a real problem. A goal that's a little bit wrong can go very wrong when a machine is very powerful. Making an AI's goals match what people really want is called {{< glink alignment >}}. It's hard, because people don't always agree on {{< glink ethics >}}: what is right and wrong.
 :::
 
 Now act it out. Use paper chains instead of paper clips.
 
 :::{.steps}
 1. One student is the **robot**. The robot's goal card says: *Make the longest paper chain you can.* The robot follows the exact words, and nothing else.
-2. The robot points to every piece of paper in the room it could use: your homework, the posters, this book. (Point only. Do not tear anything!)
+2. The robot points to every piece of paper in the room it could use: your homework, the posters, this book. (Point only. Don't tear anything!)
 3. The class writes one new rule on the board to stop it, like "Only use paper from the blue box."
 4. The **loophole finder** (another student) looks for a trick around the new rule. The robot follows the trick.
 5. Keep adding rules for 3 rounds. Can the class write a goal with no loopholes?
@@ -81,12 +81,12 @@ Now act it out. Use paper chains instead of paper clips.
 :::
 
 :::{.think title="Have you seen this before?"}
-Yes! In Lesson 5.4, the feed had one goal: more clicks. Nobody told it "and do not make people angry." So it showed more angry stories. That is a small, real paper clip problem.
+Yes! In Lesson 5.4, the feed had one goal: more clicks. Nobody told it "and do not make people angry." So it showed more angry stories. That's a small, real paper clip problem.
 :::
 
 {{< talk >}}
 
-You will live most of your life with AI. What can **you** do to help it go well?
+You'll live most of your life with AI. What can **you** do to help it go well?
 
 :::{.frames}
 - When I think about AI in the future, I feel ... because ...
@@ -97,7 +97,7 @@ You will live most of your life with AI. What can **you** do to help it go well?
 
 :::{.remember title="Things you can do"}
 - **Understand it.** You now know more about how AI works than most adults.
-- **Check it.** Do not believe it just because it sounds sure (Unit 4).
+- **Check it.** Don't believe it just because it sounds sure (Unit 4).
 - **Protect yourself and your family** from scams and fakes (Units 4 and 5).
 - **Speak up.** Tell school leaders and lawmakers what you think. One day, vote.
 - **Choose your path.** People who understand AI and people are needed in every job, from nurses to lawmakers.

@@ -1,6 +1,6 @@
 # 3.7 - Making Pictures with AI {.unnumbered}
 
-Type "an orange cat reading a book in a library, watercolor." Wait a few seconds. A picture appears. Nobody drew it. It did not exist before.
+Type "an orange cat reading a book in a library, watercolor." Wait a few seconds. A picture appears. Nobody drew it. It didn't exist before.
 
 How? The AI starts with **static**, like an old TV with no signal. Then it removes a little static at a time, again and again, until a picture is left.
 
@@ -40,9 +40,9 @@ Picture tools share one usage limit with graphs. Plan turns for pairs, and be re
 Look at the first three squares on your sheet. Cover the last one. At which step can you guess the picture? Write your guess.
 
 :::{.think title="When could you see it?"}
-At step 0, there is no picture at all. It is only {{< glink noise >}}. At step 3, maybe you see a dark shape. At step 6, most people can see it. The details come last.
+At step 0, there's no picture at all. It's only {{< glink noise >}}. At step 3, maybe you see a dark shape. At step 6, most people can see it. The details come last.
 
-An image generator works the same way, but it does not know the picture ahead of time. It has to guess it.
+An image generator works the same way, but it doesn't know the picture ahead of time. It has to guess it.
 :::
 
 {{< learn >}}
@@ -58,7 +58,7 @@ An {{< glink "image generator" >}} learns in two parts.
 **Making a picture.** Now you type words. The AI starts with pure noise. The network guesses which part is noise, and removes a little of it. It does this again and again, often 20 to 50 times. Your words guide every guess. This is called {{< glink diffusion >}}.
 
 :::{.remember}
-The AI does not copy a picture or glue pieces together. It starts from noise and removes it, step by step, guided by what it learned from millions of pictures.
+The AI doesn't copy a picture or glue pieces together. It starts from noise and removes it, step by step, guided by what it learned from millions of pictures.
 :::
 
 ***
@@ -81,10 +81,10 @@ Work with a partner. (In a big class, groups of 3 share one computer.)
 
 {{< include /assets/Unit_3/noise_to_picture.html >}}
 
-This shows the idea, but it cheats. This demo already has the finished picture (an emoji), and it mixes the noise away. A real image generator does not have the picture. Its neural network has to **guess** what to remove, using what it learned from millions of pictures.
+This shows the idea, but it cheats. This demo already has the finished picture (an emoji), and it mixes the noise away. A real image generator doesn't have the picture. Its neural network has to **guess** what to remove, using what it learned from millions of pictures.
 
 :::{.gotcha title="Never make pictures of real people"}
-Do not make AI pictures of classmates, teachers, or anyone real. A fake picture of a real person can hurt them, even as a joke. (More in Lesson 4.3.)
+Don't make AI pictures of classmates, teachers, or anyone real. A fake picture of a real person can hurt them, even as a joke. (More in Lesson 4.3.)
 :::
 
 {{< talk >}}
@@ -94,14 +94,14 @@ Is a picture made by AI **art**? Who should get the credit: the person who wrote
 :::{.frames}
 - The noise turned into a picture when ...
 - The same prompt made different pictures because ...
-- An AI picture (is / is not) art, because ...
+- An AI picture (is / isn't) art, because ...
 - The credit should go to ... , because ...
 :::
 
 {{< further >}}
 
 :::{.project title="Day 2: Write Picture Prompts"}
-Work with a partner, or in a group of 3. Picture tools have a limit on how many pictures a class can make, so each pair shares turns. If your class AI tool cannot make pictures today, give your prompts to your teacher. Your teacher makes them on the projector.
+Work with a partner, or in a group of 3. Picture tools have a limit on how many pictures a class can make, so each pair shares turns. If your class AI tool can't make pictures today, give your prompts to your teacher. Your teacher makes them on the projector.
 
 A good picture prompt says what you want to **see**:
 

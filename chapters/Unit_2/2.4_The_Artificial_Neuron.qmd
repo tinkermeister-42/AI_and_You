@@ -80,7 +80,7 @@ A weight can be **negative**. A negative weight says: *this input makes me LESS 
 | Fires only if the total is big enough | Fires only if the total passes the threshold |
 
 :::{.remember}
-An artificial neuron is only **multiply, add, compare**. That is all. A neural network is many of these, connected together.
+An artificial neuron is only **multiply, add, compare**. That's all. A neural network is many of these, connected together.
 :::
 
 {{< tryit >}}
@@ -96,7 +96,7 @@ An artificial neuron is only **multiply, add, compare**. That is all. A neural n
 :::
 
 :::{.teacher title="Class size"}
-**4 students:** one neuron and three inputs. **More students:** make two or three neurons. Then connect them: the neurons' answers become the inputs for one more neuron. That is a **network**!
+**4 students:** one neuron and three inputs. **More students:** make two or three neurons. Then connect them: the neurons' answers become the inputs for one more neuron. That's a **network**!
 :::
 
 {{< talk >}}
@@ -112,7 +112,7 @@ Today, **you** chose every weight. But ChatGPT has billions of weights. Nobody c
 {{< further >}}
 
 :::{.project title="Day 2: Build a Neuron That Sees"}
-This neuron looks at a 3 by 3 picture. Each square is an input: **1** if it is black, **0** if it is white. Each square has its own **weight**. The neuron says **X** if the total is more than the threshold. Otherwise it says **O**. Work with a partner.
+This neuron looks at a 3 by 3 picture. Each square is an input: **1** if it's black, **0** if it's white. Each square has its own **weight**. The neuron says **X** if the total is more than the threshold. Otherwise it says **O**. Work with a partner.
 
 1. Draw an X. All the weights are 0. What does the neuron say? Why?
 2. Change the weights with **+** and **−**. Try to get **6 out of 6** right on the test pictures.
@@ -135,5 +135,5 @@ Make the picture bigger in your head: 5 by 5 squares. On grid paper, choose weig
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [the first neuron machine, and the problem one neuron cannot solve](/chapters/Explore/explore-unit-2.qmd#explore-2-4). Read it on your own, if you want to learn more.
+🔭 **Explore More:** [the first neuron machine, and the problem one neuron can't solve](/chapters/Explore/explore-unit-2.qmd#explore-2-4). Read it on your own, if you want to learn more.
 :::

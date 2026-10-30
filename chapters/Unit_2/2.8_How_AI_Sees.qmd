@@ -21,7 +21,7 @@ So how does a self-driving car find a person in the street? How does your phone 
 
 ::::{.vocab}
 :::{.word-cards}
-- [🟦]{.icon} {{< glink pixel >}}: one tiny square of a picture. It is stored as a number.
+- [🟦]{.icon} {{< glink pixel >}}: one tiny square of a picture. It's stored as a number.
 - [🔍]{.icon} {{< glink filter >}}: a small grid of numbers that slides over a picture to find something, like edges
 - [📐]{.icon} {{< glink edge >}}: a place where a picture changes fast from dark to light
 - [👁️]{.icon} {{< glink "computer vision" >}}: AI that finds things in pictures and video
@@ -50,20 +50,20 @@ Zoom in on any photo and you see tiny squares. Each square is a {{< glink pixel 
 
 - In a black-and-white picture, each pixel is one number: **0** is black, **255** is white, and the numbers between are grays.
 - In a color picture, each pixel is **three** numbers: how much red, green, and blue.
-- A phone photo can have about **12 million** pixels. That is about 36 million numbers!
+- A phone photo can have about **12 million** pixels. That's about 36 million numbers!
 
 ***
 
 ### 2.8.2 - Finding Edges with a Filter
 
-Where does a picture change fast from dark to light? That is an {{< glink edge >}}. Edges show where things begin and end.
+Where does a picture change fast from dark to light? That's an {{< glink edge >}}. Edges show where things begin and end.
 
 A {{< glink filter >}} is a small 3 by 3 grid of numbers. It slides over the picture, one square at a time. At each square:
 
 1. **Multiply** the 9 picture numbers by the 9 filter numbers.
 2. **Add** them up.
 
-That is the same **multiply and add** as the neuron in Lesson 2.4! If the answer is big, there is an edge here. If the answer is 0, the picture is the same on both sides: no edge.
+That's the same **multiply and add** as the neuron in Lesson 2.4! If the answer is big, there's an edge here. If the answer is 0, the picture is the same on both sides: no edge.
 
 ***
 
@@ -95,7 +95,7 @@ The **side-to-side** filter compares the top with the bottom. It finds edges tha
 
 A real network has many filters like these, and it learns them by itself. (See Explore More to find out how.)
 
-Edges are only the first step. A real network puts edges together into shapes. Then it puts shapes together into parts, like an eye or a wheel. That is how a network can find a person in a picture.
+Edges are only the first step. A real network puts edges together into shapes. Then it puts shapes together into parts, like an eye or a wheel. That's how a network can find a person in a picture.
 :::
 
 {{< talk >}}

@@ -4,7 +4,7 @@ In 2018, reporters at *The New York Times* looked at location data that phone ap
 
 The reporters found her. She was a math teacher. The apps knew where she lived, where she worked, and where she went after work.
 
-Your phone collects information about you all day. Some of it is even hidden inside your photos. Today you find it.
+Your phone collects information about you all day. Some of it's even hidden inside your photos. Today you find it.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
@@ -48,7 +48,7 @@ Where you go. Who you call and text. Your photos. What you search for. What vide
 
 | Data you **give** | Data you **leak** |
 |---|---|
-| You know you are sharing it. | You may not know you are sharing it. |
+| You know you're sharing it. | You may not know you're sharing it. |
 | What you type, post, and upload | Where your phone is |
 | Your name when you sign up | What you click, and how long you look |
 | A photo you post | Hidden information inside the photo |
@@ -87,7 +87,7 @@ Work with a partner. This demo runs on your computer. The photo never leaves it.
 {{< include /assets/Unit_5/photo_secrets.html >}}
 
 :::{.gotcha title="Keep it private"}
-Do not put photos of yourself or anyone else into your class AI tool or any website. If you try the demo with your own photo, it stays on this computer. Do not show a classmate's location to anyone.
+Don't put photos of yourself or anyone else into your class AI tool or any website. If you try the demo with your own photo, it stays on this computer. Don't show a classmate's location to anyone.
 :::
 
 {{< talk >}}
@@ -98,7 +98,7 @@ Many apps are free. The company makes money from your data. Is that a fair trade
 - My phone knows ... about me.
 - The sample photo showed ...
 - A free app is (fair / not fair) because ...
-- Apps (should / should not) be allowed to sell location data, because ...
+- Apps (should / shouldn't) be allowed to sell location data, because ...
 :::
 
 {{< further >}}
@@ -109,7 +109,7 @@ Apps ask for **permission** to use your location, camera, microphone, and contac
 1. On your sheet, look at the 6 apps and the permissions they ask for.
 2. For each one, decide: does the app **need** it to work? Write yes or no.
 3. Choose one permission you would turn off. Why?
-4. **Try it at home:** open your phone's settings. Find **Privacy** or **Permissions**. Which apps can see your location? Turn off one you do not need.
+4. **Try it at home:** open your phone's settings. Find **Privacy** or **Permissions**. Which apps can see your location? Turn off one you don't need.
 :::
 
 :::{.project title="Teach Your Family"}

@@ -43,14 +43,14 @@ Keep every student's Big Question answer. You hand them back in Lesson 6.6.
 
 Look at these 10 things. Which ones use AI?
 
-Press a choice on each card: **AI**, **Not AI**, or **Not sure**. Talk with a partner. You do not need to agree.
+Press a choice on each card: **AI**, **Not AI**, or **Not sure**. Talk with a partner. You don't need to agree.
 
 {{< include /assets/Unit_1/ai_or_not.html >}}
 
 :::{.think title="Look at the things that are AI. What do they have in common?"}
 They all **learn from examples**, and they all **make guesses**.
 
-The calculator and the alarm clock do not learn. They only follow rules that a person wrote.
+The calculator and the alarm clock don't learn. They only follow rules that a person wrote.
 :::
 
 {{< learn >}}
@@ -87,15 +87,15 @@ Write your rule on your sheet. Then test your rule on these three pictures. Does
 :::{.think title="Did your rule work for all three pictures?"}
 Probably not. Many students write: *"It is a cat if it has pointy ears, whiskers, and four legs."*
 
-- **Picture B** is a fox. It has pointy ears, whiskers, and four legs. The rule says "cat." That is wrong.
-- **Picture C** is a cat. It is sleeping, so you cannot see its legs. The rule says "not a cat." That is wrong too.
+- **Picture B** is a fox. It has pointy ears, whiskers, and four legs. The rule says "cat." That's wrong.
+- **Picture C** is a cat. It's sleeping, so you can't see its legs. The rule says "not a cat." That's wrong too.
 
 You can fix the rule. But then a new picture breaks it again.
 :::
 
 So scientists tried a different idea:
 
-1. Do not write the rules.
+1. Don't write the rules.
 2. Show the computer many **examples**. Each example has the right answer.
 3. Let the computer find the {{< glink pattern >}} by itself.
 
@@ -112,7 +112,7 @@ This idea is called {{< glink "machine learning" >}}. The examples are called {{
 
 ### 1.1.3 - Quick, Draw!
 
-Quick, Draw! is a game made by Google. You draw. An AI tries to guess what you are drawing.
+Quick, Draw! is a game made by Google. You draw. An AI tries to guess what you're drawing.
 
 The AI learned from about **50 million** drawings. People from all over the world made them.
 
@@ -120,24 +120,24 @@ The AI learned from about **50 million** drawings. People from all over the worl
 
 :::{.steps}
 1. Click **Let's Draw!**
-2. The game shows a word. Draw it. You have **20 seconds**. (If you do not know the word, ask a partner.)
+2. The game shows a word. Draw it. You have **20 seconds**. (If you don't know the word, ask a partner.)
 3. Play all **6 rounds**.
 4. Write your results on your sheet. Did the AI guess? About how many seconds did it take?
 :::
 
 :::{.gotcha title="The game saves your drawings"}
-The game saves your drawings and your country. Google shares the drawings with scientists around the world. Do not write your name or anything private in a drawing.
+The game saves your drawings and your country. Google shares the drawings with scientists around the world. Don't write your name or anything private in a drawing.
 :::
 
 :::{.think title="Sometimes the AI guessed before you finished. How did it do that?"}
-The AI learned from millions of drawings. Your first lines looked like the start of drawings it saw before. So it made a {{< glink prediction >}}: a best guess. It did not wait for the whole picture.
+The AI learned from millions of drawings. Your first lines looked like the start of drawings it saw before. So it made a {{< glink prediction >}}: a best guess. It didn't wait for the whole picture.
 :::
 
 {{< bigq >}}
 
 ![](/images/Unit_1/1.1_big_question.svg){width="460px" fig-align="center" fig-alt="A drawing of a human brain, a question mark, and a robot head labeled AI."}
 
-We will come back to this question on the last day of class. You do not need to know the answer today. Use what you saw: the cards, the cat rule, and the drawing game.
+We'll come back to this question on the last day of class. You don't need to know the answer today. Use what you saw: the cards, the cat rule, and the drawing game.
 
 :::{.big-question}
 [Is AI like a human brain?]{.bq}
@@ -145,13 +145,13 @@ We will come back to this question on the last day of class. You do not need to 
 1. On your sheet, circle one: **Yes**, **A little**, or **No**.
 2. Write one reason.
 3. Tell a partner your answer and your reason.
-4. Your teacher keeps your answer. You will read it again in the last lesson of the class.
+4. Your teacher keeps your answer. You'll read it again in the last lesson of the class.
 :::
 
 :::{.frames}
 - I think AI **is** / **is not** / **is a little** like a human brain because ...
 - AI and my brain both ...
-- My brain can ... , but AI cannot.
+- My brain can ... , but AI can't.
 - I agree with ___ because ...
 - I disagree with ___ because ...
 :::
@@ -162,7 +162,7 @@ We will come back to this question on the last day of class. You do not need to 
 1. Play Quick, Draw! again. Find a word that the AI never guesses from your drawings.
 2. At the end of the game, click that drawing. What did the AI guess?
 3. Look at how other people drew the same word. How is your drawing different?
-4. Talk with a partner: AI learns what is **common** in its data. When a drawing is rare or different, AI often guesses wrong. (You will see this problem again in Unit 4, when we study **bias**.)
+4. Talk with a partner: AI learns what is **common** in its data. When a drawing is rare or different, AI often guesses wrong. (You'll see this problem again in Unit 4, when we study **bias**.)
 :::
 
 :::{.project title="AI Detective"}

@@ -4,7 +4,7 @@ In 1966, people at a university in Massachusetts talked to a computer program na
 
 ELIZA understood nothing. It followed a list of {{< glink slug="rule" text="rules" >}} that one person wrote.
 
-Today, you play ELIZA yourself and see how it works. Then you act out a famous puzzle: a person who answers notes in a language they do not know.
+Today, you play ELIZA yourself and see how it works. Then you act out a famous puzzle: a person who answers notes in a language they don't know.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
@@ -25,7 +25,7 @@ Today, you play ELIZA yourself and see how it works. Then you act out a famous p
 :::{.word-cards}
 - [🔑]{.icon} {{< glink "key word" >}}: a word that a program looks for to decide what to do
 - [📏]{.icon} {{< glink rule >}}: an exact instruction, like "If this happens, do that."
-- [🪞]{.icon} {{< glink "ELIZA effect" >}}: when people feel that a computer understands them, but it does not
+- [🪞]{.icon} {{< glink "ELIZA effect" >}}: when people feel that a computer understands them, but it doesn't
 - [💡]{.icon} {{< glink "understand" >}}: to know what something means, not only what it looks like
 :::
 ::::
@@ -44,7 +44,7 @@ Print the Klingon Room rule book: one copy for each group.
 
 {{< warmup >}}
 
-Work with a partner (or a group of 3, taking turns). One of you is **ELIZA**. ELIZA can only answer with the rule card. ELIZA cannot think of anything new!
+Work with a partner (or a group of 3, taking turns). One of you is **ELIZA**. ELIZA can only answer with the rule card. ELIZA can't think of anything new!
 
 | If your partner says ... | ELIZA says ... |
 |---|---|
@@ -58,21 +58,21 @@ Work with a partner (or a group of 3, taking turns). One of you is **ELIZA**. EL
 2. Switch jobs.
 
 :::{.think title="Was it hard to be ELIZA? Did your partner's answers make sense?"}
-Being ELIZA is easy. You do not need to understand anything. You only look for the key words and follow the card.
+Being ELIZA is easy. You don't need to understand anything. You only look for the key words and follow the card.
 
-Sometimes ELIZA's answer sounds caring. Sometimes it sounds strange. ELIZA cannot tell the difference.
+Sometimes ELIZA's answer sounds caring. Sometimes it sounds strange. ELIZA can't tell the difference.
 :::
 
 {{< learn >}}
 
 ### 1.3.1 - How ELIZA Works
 
-ELIZA was made in 1966 by **Joseph Weizenbaum**, a professor at MIT. ELIZA does not learn. Weizenbaum wrote every rule by hand. Here is how ELIZA answers one sentence:
+ELIZA was made in 1966 by **Joseph Weizenbaum**, a professor at MIT. ELIZA doesn't learn. Weizenbaum wrote every rule by hand. Here is how ELIZA answers one sentence:
 
 ![](/images/Unit_1/1.3_eliza_steps.svg){width="620px" fig-align="center" fig-alt="You type: I feel sad about my brother. Step 1: find the key words, I feel. Step 2: copy the rest, sad about my brother. Step 3: swap words, my becomes your. Step 4: fill in the reply. ELIZA says: Why do you feel sad about your brother?"}
 
 :::{.remember}
-- ELIZA looks for {{< glink slug="key-word" text="key words" >}}. It does not know what the words mean.
+- ELIZA looks for {{< glink slug="key-word" text="key words" >}}. It doesn't know what the words mean.
 - If no rule matches, ELIZA says something that fits anything, like "Please go on."
 - ELIZA is a **normal program**: a person wrote the rules (like the calculator in Lesson 1.1).
 :::
@@ -105,14 +105,14 @@ A philosopher named **John Searle** asked people to imagine this:
 **Does anyone in the room understand the language?**
 :::
 
-**Act it out: the Klingon Room.** Searle imagined notes in Chinese, a language he could not read. We will use **Klingon**. It is a language made up for the *Star Trek* TV shows and movies. (Some fans really speak it!)
+**Act it out: the Klingon Room.** Searle imagined notes in Chinese, a language he couldn't read. We'll use **Klingon**. It's a language made up for the *Star Trek* TV shows and movies. (Some fans really speak it!)
 
 ![](/images/Unit_1/1.3_klingon_room.svg){width="560px" fig-align="center" fig-alt="A person who knows Klingon passes a note into a closed room. Inside, a person who does not know Klingon looks in a rule book and passes a reply in Klingon back out."}
 
 Work in a group of **2 to 4**: one person in the room, the rest outside. Each group needs one rule book and one set of note cards. (Only 4 in class? Be one group, and take turns going in the room.)
 
 :::{.steps}
-1. One person is **in the room**. Sit behind a folder or a book so the others cannot see you. Take the rule book.
+1. One person is **in the room**. Sit behind a folder or a book so the others can't see you. Take the rule book.
 2. Everyone else is **outside**. Share the note cards. Fold back the English part.
 3. Pass one note into the room. The person in the room finds the note that looks **exactly** the same in the rule book. They copy the reply on the back. Pass it out.
 4. Outside: check the reply with the English on your card. Does it make sense?
@@ -122,16 +122,16 @@ Work in a group of **2 to 4**: one person in the room, the rest outside. Each gr
 :::{.think title="Look at the note that asks, &quot;Do you speak Klingon?&quot; What did the room say?"}
 The room answered: *"Yes. I am learning Klingon."*
 
-But the person in the room does not know any Klingon. The answer sounds right, and it is **not true**.
+But the person in the room doesn't know any Klingon. The answer sounds right, and it is **not true**.
 
 Now look at the note about the bathroom. The room said: *"I don't understand."* That one is true! But the room only said it because a rule told it to.
 :::
 
 {{< talk >}}
 
-Searle said: the person in the room does not understand the language. They only follow rules. **A computer is the same.** It follows rules, so it does not understand anything.
+Searle said: the person in the room doesn't understand the language. They only follow rules. **A computer is the same.** It follows rules, so it doesn't understand anything.
 
-Other people disagree. They say: maybe the person does not understand, but the **whole room** (the person plus the book) does.
+Other people disagree. They say: maybe the person doesn't understand, but the **whole room** (the person plus the book) does.
 
 What do you think?
 
@@ -155,7 +155,7 @@ What do you think?
 {{< include /assets/Unit_1/eliza.html >}}
 
 :::{.gotcha title="ELIZA does not understand you"}
-Do not tell ELIZA anything private. It is a game. (Nothing you type here leaves your computer.)
+Don't tell ELIZA anything private. It's a game. (Nothing you type here leaves your computer.)
 
 If you need to talk about something real, talk to a person: a teacher, the school counselor, or your family.
 :::

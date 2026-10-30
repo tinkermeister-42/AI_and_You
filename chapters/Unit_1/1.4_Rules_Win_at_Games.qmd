@@ -4,7 +4,7 @@ In 1958, a newspaper wrote about a new computer. It said the computer would soon
 
 Did that happen? Not in 1958. Not for a long time.
 
-For about 40 years, scientists tried to build AI out of rules. Rules did not work for seeing or talking. But rules did work for one thing: **games**. Today, you play a game against a bot made only of rules. Then you break it.
+For about 40 years, scientists tried to build AI out of rules. Rules didn't work for seeing or talking. But rules did work for one thing: **games**. Today, you play a game against a bot made only of rules. Then you break it.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
@@ -43,16 +43,16 @@ Long ago, people made big promises about AI. Read each one. Did it come true by 
 |---|---|---|---|
 | **A** | 1958 | A newspaper | A new computer will soon walk, talk, see, write, make copies of itself, and know that it exists. |
 | **B** | 1958 | Two scientists | Within 10 years, a computer will be the world chess champion. |
-| **C** | 1970 | Marvin Minsky | In 3 to 8 years, we will have a machine as smart as an average person. |
+| **C** | 1970 | Marvin Minsky | In 3 to 8 years, we'll have a machine as smart as an average person. |
 
 :::{.think title="Which promises came true?"}
 **None of them came true by the time they said.**
 
 Parts of Promise **A** came true much later. Today, AI can talk, see, and write. Can it know that it exists? Nobody knows.
 
-Promise **B** came true later. A computer beat the world chess champion in **1997**. That is 39 years later, not 10.
+Promise **B** came true later. A computer beat the world chess champion in **1997**. That's 39 years later, not 10.
 
-Promise **C** did not come true by the 1970s. Today, some people say AI is getting close. Other people strongly disagree. You will think about this in Unit 6.
+Promise **C** didn't come true by the 1970s. Today, some people say AI is getting close. Other people strongly disagree. You'll think about this in Unit 6.
 :::
 
 {{< learn >}}
@@ -70,11 +70,11 @@ People call these times **{{< glink slug="ai-winter" text="AI winters" >}}**. (I
 :::{.think title="This time is different"}
 The promises in the Warm Up were **{{< glink hype >}}**. In 1958 and 1970, they were much bigger than what the machines could do. When the promises failed, the money stopped.
 
-But the promises were not all wrong. Some were only too early.
+But the promises weren't all wrong. Some were only too early.
 
 Today is different. AI already does many things people once only dreamed about. It talks, writes, translates, and finds things in pictures. Millions of people use it every day. Many big promises today start from things AI can already do.
 
-That does not mean every promise will come true. When you hear one, ask: **What can AI already do? Who checked it?**
+That doesn't mean every promise will come true. When you hear one, ask: **What can AI already do? Who checked it?**
 :::
 
 ***
@@ -90,11 +90,11 @@ In May 1997, IBM's computer **{{< glink "Deep Blue" >}}** played the world chess
 
 - People wrote Deep Blue's rules for judging a chess position.
 - Then it checked about **200 million** positions every second.
-- Deep Blue did not learn like the drawing AI in Lesson 1.1. It used rules and speed.
+- Deep Blue didn't learn like the drawing AI in Lesson 1.1. It used rules and speed.
 :::
 
 :::{.remember}
-Deep Blue could beat the best chess player in the world. But its rules could not tell a cat from a dog. Rules that work in a small world do not work in the big, messy real world.
+Deep Blue could beat the best chess player in the world. But its rules couldn't tell a cat from a dog. Rules that work in a small world don't work in the big, messy real world.
 :::
 
 {{< tryit >}}
@@ -115,13 +115,13 @@ This bot plays tic-tac-toe. It has 8 rules. It checks them **in order** and uses
 :::{.think title="With all the rules on, could anyone beat the bot?"}
 No. With all 8 rules, the bot never loses. The best you can do is a tie.
 
-Some rules matter more than others. Turn off **Block** and the bot does not stop you from winning. Turn off **Side** and nothing changes.
+Some rules matter more than others. Turn off **Block** and the bot doesn't stop you from winning. Turn off **Side** and nothing changes.
 :::
 
 :::{.think title="Tic-tac-toe needs 8 rules. How many rules would a cat finder need?"}
-No one knows. People tried for years and could not write them. A cat can be any color, any size, in any position, in any light. There are too many cases.
+No one knows. People tried for years and couldn't write them. A cat can be any color, any size, in any position, in any light. There are too many cases.
 
-That is why AI changed. In the next lesson, you will see what happened when scientists stopped writing rules and started collecting **examples**.
+That's why AI changed. In the next lesson, you'll see what happened when scientists stopped writing rules and started collecting **examples**.
 :::
 
 {{< talk >}}
@@ -133,13 +133,13 @@ Deep Blue beat the best chess player in the world. Is Deep Blue **smart**?
 - The most important rule for the bot was ... because ...
 - Rules work for games, but not for ... , because ...
 - AI today is different from AI in 1970 because ...
-- One promise about AI today that I think (will / will not) come true is ... , because ...
+- One promise about AI today that I think (will / won't) come true is ... , because ...
 :::
 
 {{< further >}}
 
 :::{.project title="Rule Book Battle"}
-Play tic-tac-toe on paper with a partner. One of you is the **bot**. The bot must follow the 8 rules on your sheet, in order. The bot cannot think! Can the human win? Switch jobs.
+Play tic-tac-toe on paper with a partner. One of you is the **bot**. The bot must follow the 8 rules on your sheet, in order. The bot can't think! Can the human win? Switch jobs.
 :::
 
 :::{.project title="My AI Promise for 2036"}

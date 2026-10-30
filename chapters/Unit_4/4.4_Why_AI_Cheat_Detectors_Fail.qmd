@@ -18,7 +18,7 @@ Every one of those essays was written by a person. Today you find out why detect
 :::{.objectives}
 - [ ] I can explain how an AI detector makes its guess.
 - [ ] I can explain why detectors blame people who write in simple English.
-- [ ] I can explain why a detector score is not proof.
+- [ ] I can explain why a detector score isn't proof.
 - [ ] I can protect myself with evidence of my own work.
 :::
 
@@ -53,7 +53,7 @@ In the warm-up, you tried to tell human writing from AI writing. It was hard. An
 
 ### 4.4.2 - Who Gets Blamed
 
-What kind of **human** writing is very predictable? Writing with short sentences and common words. That is how many people write in a second language. It is also what teachers ask English learners to do!
+What kind of **human** writing is very predictable? Writing with short sentences and common words. That's how many people write in a second language. It's also what teachers ask English learners to do!
 
 So detectors make a {{< glink "false positive" >}}: they say "AI" when a person wrote it. The Stanford study found this happens far more to people learning English. Essays by U.S. 8th graders who grew up speaking English were called human more than 90% of the time.
 
@@ -61,7 +61,7 @@ So detectors make a {{< glink "false positive" >}}: they say "AI" when a person 
 
 ### 4.4.3 - Detectors Miss AI, Too
 
-It is easy to fool a detector: ask the AI to use rare words, or change some words by hand. So detectors blame honest students who write simply, and miss people who cheat carefully.
+It's easy to fool a detector: ask the AI to use rare words, or change some words by hand. So detectors blame honest students who write simply, and miss people who cheat carefully.
 
 :::{.note title="Right now (fall 2026)"}
 Many schools still use AI detectors. The companies that sell them say their tools are now accurate and rarely wrong. Researchers who test them keep finding mistakes, most often for people writing in a second language.
@@ -71,9 +71,9 @@ Many schools still use AI detectors. The companies that sell them say their tool
 
 ### 4.4.4 - Protect Yourself
 
-A detector score is a **guess**. It is not proof. If someone says you used AI, you need {{< glink evidence >}} of your own work:
+A detector score is a **guess**. It isn't proof. If someone says you used AI, you need {{< glink evidence >}} of your own work:
 
-- **Keep your drafts.** Do not delete your first tries.
+- **Keep your drafts.** Don't delete your first tries.
 - **Use version history.** Many writing apps save every change you make, with the time.
 - **Keep your notes,** even messy ones, and your notes in your home language.
 - **Be ready to talk** about your writing: why you chose your words, what you changed.
@@ -94,7 +94,7 @@ Work with a partner.
 
 {{< include /assets/Unit_4/toy_detector.html >}}
 
-This is a **toy**. It only counts common words. The yellow words are the ones it did not expect. Real detectors use a language model to measure how predictable each word is. They are better than this toy, but they make the same kind of mistake.
+This is a **toy**. It only counts common words. The yellow words are the ones it didn't expect. Real detectors use a language model to measure how predictable each word is. They're better than this toy, but they make the same kind of mistake.
 
 :::{.teacher title="Class size"}
 **Small class:** everyone tests their own paragraph, then the class looks at all the results together. **Big class:** make a big chart on the board with two columns: "Human writing called AI" and "Human writing called human." Every pair adds tally marks.
@@ -107,7 +107,7 @@ Should our school use AI detectors? If a teacher thinks a student used AI, what 
 :::{.frames}
 - The toy detector called my writing ... because ...
 - Detectors blame people learning English because ...
-- A detector score is not proof because ...
+- A detector score isn't proof because ...
 - Instead of a detector, a teacher could ...
 :::
 

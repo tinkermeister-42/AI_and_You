@@ -1,10 +1,10 @@
 # 3.5 - AI and Your Language {.unnumbered}
 
-About 14 languages are spoken at our school. AI can translate many of them. It is very good at some languages and weak at others.
+About 14 languages are spoken at our school. AI can translate many of them. It's very good at some languages and weak at others.
 
-How good is it at **your** language? The people who made the AI cannot tell you. They do not speak it. You do.
+How good is it at **your** language? The people who made the AI can't tell you. They don't speak it. You do.
 
-Today, you are the expert. You grade the AI.
+Today, you're the expert. You grade the AI.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
@@ -40,14 +40,14 @@ On your sheet, write **"Good morning! How are you?"** in every language you know
 Then share. Your teacher makes a list on the board of every language in the room. How many are there?
 
 :::{.think title="Everyone is an expert"}
-If you speak only English, you are still the expert on English. Today, pair up with someone who speaks another language. You will learn some of it.
+If you speak only English, you're still the expert on English. Today, pair up with someone who speaks another language. You'll learn some of it.
 :::
 
 {{< learn >}}
 
 ### 3.5.1 - How AI Learned to Translate
 
-People did not write rules for every language. The AI learned from **examples**: millions of texts that exist in two languages. A website in English and Spanish. A report from the United Nations in six languages. A book and its translation.
+People didn't write rules for every language. The AI learned from **examples**: millions of texts that exist in two languages. A website in English and Spanish. A report from the United Nations in six languages. A book and its translation.
 
 An AI is only as good as its training examples. Some languages have a lot of writing online. Some have very little. A language with little writing for AI to learn from is called a {{< glink "low-resource language" >}}. AI makes more mistakes in these languages.
 
@@ -61,10 +61,10 @@ Google Translate works with almost **250** languages. Your class AI tool may wor
 
 ### 3.5.2 - Hard in Every Language
 
-- **Idioms:** "It's raining cats and dogs" means it is raining very hard. A word-by-word translation makes no sense.
+- **Idioms:** "It's raining cats and dogs" means it's raining very hard. A word-by-word translation makes no sense.
 - **Words with two meanings:** "a break" can be a rest, or a time when someone is less strict with you.
 
-To check a translation, translate it **back**: English → your language → English again. If the meaning changed, something went wrong. This is {{< glink "back translation" >}}. It is a good test, but the best test is a person who speaks the language. That is you.
+To check a translation, translate it **back**: English → your language → English again. If the meaning changed, something went wrong. This is {{< glink "back translation" >}}. It's a good test, but the best test is a person who speaks the language. That's you.
 
 {{< tryit >}}
 
@@ -88,7 +88,7 @@ D. My teacher gave me a break.
 E. A sentence **you** would really need to say. (At the doctor? At a store?)
 
 :::{.gotcha title="What you type goes to the company"}
-Google Translate and your class AI tool send your words to a company's computers. Do not type names or private information, like a letter from a doctor or your address.
+Google Translate and your class AI tool send your words to a company's computers. Don't type names or private information, like a letter from a doctor or your address.
 :::
 
 :::{.teacher title="Class size"}
@@ -104,7 +104,7 @@ Should a hospital or a court use AI to translate? When do you need a human trans
 :::{.frames}
 - AI did best in ... , maybe because ...
 - AI made a mistake in my language when ...
-- A hospital (should / should not) use AI translation, because ...
+- A hospital (should / shouldn't) use AI translation, because ...
 - A human translator is needed when ...
 :::
 

@@ -2,9 +2,9 @@
 
 In May 2025, a big newspaper, the *Chicago Sun-Times*, printed a summer reading list. It had 15 books. At least 10 of them **do not exist**.
 
-One was *Tidewater Dreams* by Isabel Allende. Allende is a real, famous writer. She never wrote that book. The person who made the list used AI and did not check.
+One was *Tidewater Dreams* by Isabel Allende. Allende is a real, famous writer. She never wrote that book. The person who made the list used AI and didn't check.
 
-Ask a chatbot about a famous city, and it is usually right. Ask it about **our school**, and it may invent a principal, a mascot, and the year the school opened. It says them the same way it says true things.
+Ask a chatbot about a famous city, and it's usually right. Ask it about **our school**, and it may invent a principal, a mascot, and the year the school opened. It says them the same way it says true things.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
@@ -41,14 +41,14 @@ Have the real answers ready for the questions about our school and Columbia: the
 
 Two of these stories are true. One is made up. Which one? Vote with your hand: 1, 2, or 3.
 
-1. In 2024, Google's AI search told people to put **glue** on pizza, so the cheese would not slide off.
+1. In 2024, Google's AI search told people to put **glue** on pizza, so the cheese wouldn't slide off.
 2. In 2024, an airline's chatbot invented a refund rule. A court made the airline follow the chatbot's made-up rule.
-3. In 2025, a newspaper printed a summer reading list. Most of the books did not exist.
+3. In 2025, a newspaper printed a summer reading list. Most of the books didn't exist.
 
 :::{.answers title="Answer"}
-**All three are true.** That is the trick.
+**All three are true.** That's the trick.
 
-1. The glue answer came from an old joke post online. The AI repeated it as advice. This is a different mistake from the one you study today. The AI did not mix facts. It repeated a joke as if it were true. So always check where a fact comes from.
+1. The glue answer came from an old joke post online. The AI repeated it as advice. This is a different mistake from the one you study today. The AI didn't mix facts. It repeated a joke as if it were true. So always check where a fact comes from.
 2. The airline was Air Canada. It told the court the chatbot was responsible for its own mistakes. The court said no: the airline is responsible for its chatbot.
 3. This is the *Chicago Sun-Times* list from the top of this page.
 :::
@@ -63,7 +63,7 @@ Now look at what happens with **facts**. This tiny chatbot read 10 sentences. Ev
 
 {{< include /assets/Unit_4/fact_mixer.html >}}
 
-This tiny chatbot shows the idea. A real chatbot is much bigger and much better, but it can mix facts in the same way. A false sentence is made the same way as a true one. That is why a {{< glink hallucination >}} sounds just as sure as a fact.
+This tiny chatbot shows the idea. A real chatbot is much bigger and much better, but it can mix facts in the same way. A false sentence is made the same way as a true one. That's why a {{< glink hallucination >}} sounds just as sure as a fact.
 
 ***
 
@@ -76,7 +76,7 @@ This tiny chatbot shows the idea. A real chatbot is much bigger and much better,
 | **Sources and links** | A fake title looks like a real one | books, court cases, websites |
 | **Very new events** | They happened after it was trained | this week's news |
 
-For these kinds of questions, always {{< glink verify >}} the answer. Check that it is true with a real {{< glink source >}}.
+For these kinds of questions, always {{< glink verify >}} the answer. Check that it's true with a real {{< glink source >}}.
 
 {{< tryit >}}
 
@@ -86,7 +86,7 @@ Work with a partner, or in a group of 3.
 
 :::{.steps}
 1. Ask your class AI tool the questions about our school and town on your sheet.
-2. Mark each answer: ✅ true, ❌ false, or ❓ I do not know. Your teacher has the real answers.
+2. Mark each answer: ✅ true, ❌ false, or ❓ I don't know. Your teacher has the real answers.
 3. Count your ❌. Which kind of question from 4.1.2 did it get wrong?
 :::
 
@@ -108,7 +108,7 @@ When a chatbot makes something up and someone gets hurt, who is responsible: the
 {{< further >}}
 
 :::{.project title="Day 2: Make It Agree"}
-Companies train chatbots partly with ratings: people pick the answer they like better. People often like answers that agree with them. So a chatbot can learn to agree with you, even when you are wrong. This is called {{< glink sycophancy >}}.
+Companies train chatbots partly with ratings: people pick the answer they like better. People often like answers that agree with them. So a chatbot can learn to agree with you, even when you're wrong. This is called {{< glink sycophancy >}}.
 
 Work with a partner. Write what happens on your sheet.
 

@@ -1,6 +1,6 @@
 # 3.2 - Keep Talking {.unnumbered}
 
-When you ask a teacher a question and you do not understand the answer, you do not walk away. You say, "Can you say that another way?" or "Can you show me an example?"
+When you ask a teacher a question and you don't understand the answer, you don't walk away. You say, "Can you say that another way?" or "Can you show me an example?"
 
 You can do the same with a chatbot. The first answer is only a first try. The second and third answers are often much better.
 
@@ -53,14 +53,14 @@ Same facts. Now the student can use them.
 
 ### 3.2.1 - The Chat Is the Prompt
 
-When you send a new message, the chatbot does not read only your new message. It reads the **whole chat** again, from the top. Then it predicts its answer.
+When you send a new message, the chatbot doesn't read only your new message. It reads the **whole chat** again, from the top. Then it predicts its answer.
 
 ![](/images/Unit_3/3.2_conversation.svg){width="680px" fig-align="center" fig-alt="Three rows. Message 1: the chatbot reads one question and writes a long, hard answer. Message 2: the chatbot reads the question, its own first answer, and the follow-up 'Use simpler words', then writes a short, simple answer. New chat: the chatbot reads only 'What did I just ask you?' and cannot see the old chat."}
 
 So your follow-up question works because the old messages are still part of the {{< glink prompt >}}. The words a chatbot can read at one time are called its {{< glink "context window" >}}.
 
 :::{.remember}
-A **new chat** starts over. The chatbot cannot see your old chat. If you need the context, type it again.
+A **new chat** starts over. The chatbot can't see your old chat. If you need the context, type it again.
 :::
 
 ***
@@ -86,7 +86,7 @@ Work with a partner, or in a group of 3.
 :::{.steps}
 1. Choose a hard topic from another class: photosynthesis, the water cycle, slope, the U.S. Constitution, or your own idea.
 2. Ask your class AI tool: **"What is ...?"** Read the answer.
-3. On your sheet, give the answer a score from 1 to 5. (1 = I cannot use this. 5 = I can use this today.)
+3. On your sheet, give the answer a score from 1 to 5. (1 = I can't use this. 5 = I can use this today.)
 4. Use **one** follow-up move. Score the new answer.
 5. Do it 2 more times, with different moves. Which move helped the most?
 :::
@@ -103,7 +103,7 @@ You kept asking until the answer was useful. When is it better to keep talking, 
 - The follow-up move that helped me most was ... , because ...
 - A chatbot remembers the chat because ...
 - I would start a new chat when ...
-- It (is / is not) fair that I have to keep asking, because ...
+- It (is / isn't) fair that I have to keep asking, because ...
 :::
 
 {{< further >}}
@@ -117,7 +117,7 @@ Test the picture in 3.2.1 for yourself.
 :::
 
 :::{.project title="Practice a Job Interview"}
-Type: **"You are a job interviewer at a grocery store. Ask me one question at a time. Wait for my answer. After each answer, give me one tip."** Keep talking for 5 questions. What was the best tip? (Do not type your name or anything else about who you are.)
+Type: **"You are a job interviewer at a grocery store. Ask me one question at a time. Wait for my answer. After each answer, give me one tip."** Keep talking for 5 questions. What was the best tip? (Don't type your name or anything else about who you are.)
 :::
 
 :::{.project title="Quiz Me"}

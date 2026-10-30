@@ -2,9 +2,9 @@
 
 In 2022, a man named Jason Allen won first prize for digital art at the Colorado State Fair. His picture showed people in a huge, glowing hall.
 
-![*Théâtre D'opéra Spatial* (Space Opera Theater), by Jason Allen with Midjourney, 2022. It won first prize. (Public domain: the U.S. Copyright Office ruled that it cannot have a copyright.)](/images/Unit_6/6.1_theatre_dopera_spatial.jpg){width="620px" fig-align="center" fig-alt="A painting-like AI picture. Three women in long orange and white gowns stand in a dark, golden hall. A huge round window in the back wall glows with white light and shows a bright land outside."}
+![*Théâtre D'opéra Spatial* (Space Opera Theater), by Jason Allen with Midjourney, 2022. It won first prize. (Public domain: the U.S. Copyright Office ruled that it can't have a copyright.)](/images/Unit_6/6.1_theatre_dopera_spatial.jpg){width="620px" fig-align="center" fig-alt="A painting-like AI picture. Three women in long orange and white gowns stand in a dark, golden hall. A huge round window in the back wall glows with white light and shows a bright land outside."}
 
-He did not paint it. He wrote prompts for an image generator, made hundreds of pictures, chose one, and changed it. Many artists were angry. Allen told a newspaper, "It's over. A.I. won. Humans lost."
+He didn't paint it. He wrote prompts for an image generator, made hundreds of pictures, chose one, and changed it. Many artists were angry. Allen told a newspaper, "It's over. A.I. won. Humans lost."
 
 Was he right? Today you test your own eyes and ears: can you tell what a person made from what an AI made?
 
@@ -50,7 +50,7 @@ Is each one **creative**? Vote with your hand: yes or no.
 4. A chatbot writes a poem.
 
 :::{.think title="No easy answer"}
-People do not agree on what "creative" means. Does it need something new? Something with feelings behind it? A choice someone made? Keep your answer in mind for the end of class.
+People don't agree on what "creative" means. Does it need something new? Something with feelings behind it? A choice someone made? Keep your answer in mind for the end of class.
 :::
 
 {{< learn >}}
@@ -59,12 +59,12 @@ People do not agree on what "creative" means. Does it need something new? Someth
 
 An image generator learned from millions of pictures. A chatbot learned from millions of books, poems, and songs. Most of that {{< glink "training data" >}} was made by people. Most of those people were never asked, and never paid.
 
-The AI does not copy one picture or one poem. It learned patterns from all of them (Lessons 2.9 and 3.7). So is the new work the AI's? The prompt writer's? Or does it belong a little to all the artists it learned from?
+The AI doesn't copy one picture or one poem. It learned patterns from all of them (Lessons 2.9 and 3.7). So is the new work the AI's? The prompt writer's? Or does it belong a little to all the artists it learned from?
 
 :::{.note title="Right now (fall 2026)"}
-In the United States, the Copyright Office says a work made **only** by AI cannot have a {{< glink copyright >}}. A person's own creative choices can. Artists, writers, and news companies have taken AI companies to court for training on their work without asking. Some cases are still being decided.
+In the United States, the Copyright Office says a work made **only** by AI can't have a {{< glink copyright >}}. A person's own creative choices can. Artists, writers, and news companies have taken AI companies to court for training on their work without asking. Some cases are still being decided.
 
-Jason Allen's picture is a real test. In 2023, the Copyright Office said it was made mostly by AI, so it cannot have a copyright. That is why this book can show it. Allen took the Copyright Office to court. The case is still being decided.
+Jason Allen's picture is a real test. In 2023, the Copyright Office said it was made mostly by AI, so it can't have a copyright. That's why this book can show it. Allen took the Copyright Office to court. The case is still being decided.
 :::
 
 
@@ -137,7 +137,7 @@ An AI picture wins an art contest. Who should own it: the person who wrote the p
 - I thought Poem ... was by a person because ...
 - Something is creative when ...
 - An AI picture should belong to ... because ...
-- It (does / does not) matter who made it, because ...
+- It (does / doesn't) matter who made it, because ...
 - Jason Allen said, "Humans lost." I (agree / disagree), because ...
 :::
 

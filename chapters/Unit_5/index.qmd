@@ -4,13 +4,13 @@
 
 What AI means for your privacy, your future job, and the news you see.
 
-We will look at real scams, real changes happening at work right now, and have honest conversations about what is coming.
+We'll look at real scams, real changes happening at work right now, and have honest conversations about what is coming.
 
 ***
 
 ## What You'll Learn
 
-By the end of this unit, you will be able to:
+By the end of this unit, you'll be able to:
 
 * Protect your privacy when you use apps and AI
 * Recognize AI scams and help your family stay safe
@@ -31,4 +31,4 @@ The warning signs that still work when AI writes perfect scam messages.
 A job is a bundle of tasks: what AI can do, what it can help with, and what people do.
 
 [**AI and the News**](5.4_AI_and_the_News.qmd)\
-How a feed learns what you like, and why your feed is not your friend's.
+How a feed learns what you like, and why your feed isn't your friend's.

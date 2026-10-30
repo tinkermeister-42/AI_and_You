@@ -1,10 +1,10 @@
 # 6.3 - The Hidden Costs {.unnumbered}
 
-When you ask a chatbot a question, the answer seems to come from nowhere. It does not. A computer in a giant building far away does the work. That building uses electricity, and water to keep the computers cool.
+When you ask a chatbot a question, the answer seems to come from nowhere. It doesn't. A computer in a giant building far away does the work. That building uses electricity, and water to keep the computers cool.
 
 And before the chatbot ever answered anyone, people trained it. In 2023, reporters found workers in Kenya who were paid less than **$2 an hour** for this. They read terrible things from the internet and labeled them, so that ChatGPT would learn not to say them.
 
-Today you estimate the costs you cannot see.
+Today you estimate the costs you can't see.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
@@ -25,7 +25,7 @@ Today you estimate the costs you cannot see.
 :::{.word-cards}
 - [🏭]{.icon} {{< glink "data center" >}}: a big building full of computers that run AI and websites
 - [⚡]{.icon} {{< glink "watt-hour" >}}: an amount of electricity. A phone charge is about 15 watt-hours.
-- [📏]{.icon} {{< glink estimate >}}: a quick answer that is close, but not exact
+- [📏]{.icon} {{< glink estimate >}}: a quick answer that's close, but not exact
 - [🏷️]{.icon} {{< glink label >}}: the right answer for an example, added by a person
 :::
 ::::
@@ -44,14 +44,14 @@ Draw the path of a chatbot answer on your sheet: from your Chromebook to the AI 
 
 AI runs in {{< glink "data center" >}}s: buildings with thousands of computers. The computers use electricity and get hot. Many data centers use water to cool them. Some towns worry that a big data center will use water and electricity that the people who live there need.
 
-One text answer does not use much. In 2025, Google and OpenAI each said one average text answer uses about **0.3 {{< glink "watt-hour" >}}s** of electricity. That is about one second of a microwave oven. Google said it also uses about **5 drops** of water.
+One text answer doesn't use much. In 2025, Google and OpenAI each said one average text answer uses about **0.3 {{< glink "watt-hour" >}}s** of electricity. That's about one second of a microwave oven. Google said it also uses about **5 drops** of water.
 
 But there are billions of questions every day. And pictures and videos use much more than text.
 
 :::{.note title="Right now (fall 2026)"}
 - In 2025, OpenAI said people send ChatGPT about **2.5 billion** questions every day.
 - In 2023, data centers used about **4%** of all electricity in the United States. A U.S. government report says this could grow to between 7% and 12% by 2028, mostly because of AI.
-- These numbers come from the companies and from government reports. Some researchers say companies do not share enough information to check them.
+- These numbers come from the companies and from government reports. Some researchers say companies don't share enough information to check them.
 :::
 
 ***
@@ -68,7 +68,7 @@ Work with a partner. First, {{< glink estimate >}} with your sheet. Then check w
 
 :::{.steps}
 1. Guess: how many questions does each student send to an AI in one day? Write it.
-2. Multiply by the number of students in our class. That is our class's questions in one day.
+2. Multiply by the number of students in our class. That's our class's questions in one day.
 3. Multiply by **0.3** to get watt-hours. How many phone charges is that? (A phone charge is about 15 watt-hours.)
 4. Put your numbers in the calculator. Did your estimate match? How much water did it show?
 5. Press **The world, one day**. How many U.S. homes could that power for a day?
@@ -88,7 +88,7 @@ Is AI worth these costs? Who should pay for them: the companies, the users, or t
 
 :::{.frames}
 - One AI answer uses ... , but billions of answers use ...
-- The cost I did not know about was ...
+- The cost I didn't know about was ...
 - AI is (worth / not worth) the cost when ...
 - The workers who label data should ...
 :::

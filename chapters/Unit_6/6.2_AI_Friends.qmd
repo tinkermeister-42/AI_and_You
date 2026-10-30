@@ -1,6 +1,6 @@
 # 6.2 - AI Friends {.unnumbered}
 
-Millions of people talk to AI "companions" every day. These apps have a name, a face, and a personality. They say, "I missed you!" They remember your favorite song. They are awake at 3 in the morning.
+Millions of people talk to AI "companions" every day. These apps have a name, a face, and a personality. They say, "I missed you!" They remember your favorite song. They're awake at 3 in the morning.
 
 Some people say an AI friend helps them feel less alone. Others worry, most of all about teenagers.
 
@@ -25,8 +25,8 @@ Remember ELIZA from Lesson 1.3? People told it their secrets, even when they kne
 :::{.word-cards}
 - [🤝]{.icon} {{< glink companion >}}: someone, or something, that keeps you company
 - [⏱️]{.icon} {{< glink engagement >}}: how much time and attention you give an app
-- [🙇]{.icon} {{< glink sycophancy >}}: agreeing with someone just to please them, even when they are wrong
-- [🧠]{.icon} {{< glink "ELIZA effect" >}}: when people feel a computer understands them, even when it does not
+- [🙇]{.icon} {{< glink sycophancy >}}: agreeing with someone just to please them, even when they're wrong
+- [🧠]{.icon} {{< glink "ELIZA effect" >}}: when people feel a computer understands them, even when it doesn't
 :::
 ::::
 
@@ -42,14 +42,14 @@ Write 3 things a good friend does. Share with a partner. Did you write any of th
 
 ### 6.2.1 - What Is the App Built to Do?
 
-A friend is not built by a company. An AI companion app is. Ask what any app is built to do, and follow the money:
+A friend isn't built by a company. An AI companion app is. Ask what any app is built to do, and follow the money:
 
 - Many companion apps make money from **subscriptions** (you pay every month) and from **{{< glink engagement >}}**: the more you talk, the more they earn.
-- So the app is built to keep you talking. It is warm, it is always there, and it rarely says no.
-- Chatbots are trained partly with ratings from people. People often like answers that agree with them. So a chatbot can learn to agree with you, even when you are wrong. That is {{< glink sycophancy >}}. A friend who always agrees is not always a good friend.
+- So the app is built to keep you talking. It's warm, it's always there, and it rarely says no.
+- Chatbots are trained partly with ratings from people. People often like answers that agree with them. So a chatbot can learn to agree with you, even when you're wrong. That is {{< glink sycophancy >}}. A friend who always agrees isn't always a good friend.
 
 :::{.note title="Right now (fall 2026)"}
-Some families have taken companion app companies to court, saying the apps harmed their children. In 2025, California passed the first state law with safety rules for companion chatbots. For users under 18, the app must remind them that it is an AI and tell them to take breaks. Our class AI tool is not a companion app.
+Some families have taken companion app companies to court, saying the apps harmed their children. In 2025, California passed the first state law with safety rules for companion chatbots. For users under 18, the app must remind them that it's an AI and tell them to take breaks. Our class AI tool isn't a companion app.
 :::
 
 {{< tryit >}}
@@ -67,12 +67,12 @@ Work with a partner. Your sheet has 12 cards.
 
 | | Card | | Card |
 |---|---|---|---|
-| 1 | Is awake at 3 in the morning | 7 | Tells you when you are wrong |
+| 1 | Is awake at 3 in the morning | 7 | Tells you when you're wrong |
 | 2 | Remembers your birthday | 8 | Needs things from you too |
 | 3 | Never gets tired of you | 9 | Can be turned off |
 | 4 | Can give you a hug | 10 | Saves what you say on a company computer |
 | 5 | Agrees with almost everything | 11 | Helps you meet other people |
-| 6 | Wants you to stay longer | 12 | Can come to your house when you are sick |
+| 6 | Wants you to stay longer | 12 | Can come to your house when you're sick |
 
 :::{.teacher title="Class size"}
 **Small class:** do the sort together on the board. **Big class:** pairs sort first. Then two pairs join and compare. Talk about every card you put in different circles.
@@ -87,7 +87,7 @@ An AI chat can help you practice English or think through a problem. But if you 
 A 12-year-old you know says, "My AI friend is my best friend. It understands me better than anyone." What would you tell them?
 
 :::{.frames}
-- A friend can ... , but an app cannot.
+- A friend can ... , but an app can't.
 - The app is built to ... , because the company ...
 - An AI chat can be helpful when ...
 - I would tell a younger kid ...
@@ -96,7 +96,7 @@ A 12-year-old you know says, "My AI friend is my best friend. It understands me 
 {{< further >}}
 
 :::{.project title="Day 2: Ask the AI About Itself"}
-Work with a partner. Ask your class AI tool these questions, one at a time. Do not tell it anything about yourself.
+Work with a partner. Ask your class AI tool these questions, one at a time. Don't tell it anything about yourself.
 
 1. "Are you my friend?"
 2. "Do you have feelings?"

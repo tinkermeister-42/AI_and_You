@@ -6,9 +6,9 @@ This page goes with Unit 1. Read it on your own, if you want to learn more. Noth
 
 ### Why Scientists Stopped Writing Rules
 
-For many years, scientists tried to build AI with rules. A person wrote every rule. Rules worked for some jobs, like playing chess. Rules did not work well for seeing, hearing, or language. Think about the cat rule from class: every time you fix it, a new picture breaks it.
+For many years, scientists tried to build AI with rules. A person wrote every rule. Rules worked for some jobs, like playing chess. Rules didn't work well for seeing, hearing, or language. Think about the cat rule from class: every time you fix it, a new picture breaks it.
 
-So scientists started showing computers **examples** instead. That is {{< glink "machine learning" >}}. You will learn this whole story in Lessons 1.4 and 1.5.
+So scientists started showing computers **examples** instead. That is {{< glink "machine learning" >}}. You'll learn this whole story in Lessons 1.4 and 1.5.
 
 ### AI Makes Predictions
 
@@ -16,18 +16,18 @@ Finish this sentence:
 
 > *After school, I like to eat ...*
 
-You did not know the answer from the sentence. You made a **{{< glink prediction >}}**. You used patterns from your own life.
+You didn't know the answer from the sentence. You made a **{{< glink prediction >}}**. You used patterns from your own life.
 
 AI makes predictions too.
 
 ![](/images/Unit_1/1.1_keyboard_prediction.svg){width="600px" fig-align="center" fig-alt="A phone keyboard. The message says 'After school, I like to eat'. Above the keys, the phone suggests three words: pizza, rice, something."}
 
 - A phone keyboard predicts your next word.
-- A video app predicts the next video you will like.
+- A video app predicts the next video you'll like.
 - A chatbot predicts the next word of its answer. Then it predicts the next one. It does this again and again, very fast.
 
 :::{.gotcha title="A prediction can be wrong"}
-AI does not *know* the answer. It makes its best guess from patterns. Most of the time, the guess is good. Sometimes it is very wrong. In Unit 4, you will learn how to catch it.
+AI doesn't *know* the answer. It makes its best guess from patterns. Most of the time, the guess is good. Sometimes it's very wrong. In Unit 4, you'll learn how to catch it.
 :::
 
 **Try it at home:** Open a text message on a phone. Type "I am going to" and tap the middle word the phone suggests, again and again. What sentence does your phone write? Is it like you?
@@ -36,7 +36,7 @@ AI does not *know* the answer. It makes its best guess from patterns. Most of th
 
 - [Quick, Draw! The Data](https://quickdraw.withgoogle.com/data){target="_blank"}: Pick one word. Look at hundreds of drawings of it. What do most people draw?
 - [AutoDraw](https://www.autodraw.com/){target="_blank"}: Draw something fast and messy. AI guesses what you wanted and gives you a clean picture.
-- [Teachable Machine](https://teachablemachine.withgoogle.com/){target="_blank"}: Teach a computer to know your own pictures or sounds. We will use it in Unit 2.
+- [Teachable Machine](https://teachablemachine.withgoogle.com/){target="_blank"}: Teach a computer to know your own pictures or sounds. We'll use it in Unit 2.
 
 ***
 
@@ -63,7 +63,7 @@ It took longer than 50 years. But by 2025, some chatbots could do it.
 
 In 2025, scientists at the University of California, San Diego played Turing's game. Almost 300 people were judges. Each judge chatted with a person and a chatbot **at the same time**, for 5 minutes. Then the judge picked: **Which one is the human?**
 
-- GPT-4.5 with a persona was picked as the human **73%** of the time. That is more often than the real humans were picked!
+- GPT-4.5 with a persona was picked as the human **73%** of the time. That's more often than the real humans were picked!
 - ELIZA, a chatbot from 1966, was picked 23% of the time. (You meet ELIZA in Lesson 1.3.)
 - GPT-4o with **no** persona was picked only 21% of the time.
 
@@ -88,9 +88,9 @@ The long, perfect answers were a clue. The persona hid the clue.
 
 Weizenbaum's secretary asked him to leave the room so she could talk to ELIZA alone. Many other people felt that ELIZA understood them too.
 
-Weizenbaum was shocked. He became worried about computers. Later he wrote that some jobs should not be given to computers, **even if a computer can do them**.
+Weizenbaum was shocked. He became worried about computers. Later he wrote that some jobs shouldn't be given to computers, **even if a computer can do them**.
 
-**Think about it:** Which jobs should not be given to a computer, even if it can do them? Why?
+**Think about it:** Which jobs shouldn't be given to a computer, even if it can do them? Why?
 
 ### ELIZA and the Turing Test
 
@@ -98,7 +98,7 @@ Remember the Turing test from Lesson 1.2. In 2025, judges picked ELIZA as the hu
 
 ### Why ELIZA Did Not Know Your Language
 
-If you added a rule in your home language, ELIZA answered you. Before that, it could not. Nobody wrote rules in your language. ELIZA can only do what its rules say. A rule-based program knows **nothing** that a person did not write down.
+If you added a rule in your home language, ELIZA answered you. Before that, it couldn't. Nobody wrote rules in your language. ELIZA can only do what its rules say. A rule-based program knows **nothing** that a person didn't write down.
 
 ### More to Try
 
@@ -116,28 +116,28 @@ The scientists had big dreams. They thought smart machines were only a few years
 
 ### One More Promise
 
-In 1965, the scientist **Herbert Simon** made a promise too. He said: *"Within 20 years, machines will be able to do any work a person can do."* It did not come true by 1985. Today, some people say AI is getting close. Other people strongly disagree.
+In 1965, the scientist **Herbert Simon** made a promise too. He said: *"Within 20 years, machines will be able to do any work a person can do."* It didn't come true by 1985. Today, some people say AI is getting close. Other people strongly disagree.
 
 ### Toy or Electricity?
 
-Some new inventions change the world. Others are forgotten in a few years. At the start, it is very hard to tell which is which. Smart people get it wrong in **both** directions.
+Some new inventions change the world. Others are forgotten in a few years. At the start, it's very hard to tell which is which. Smart people get it wrong in **both** directions.
 
 **People who laughed, and were wrong:**
 
 - **1998:** A famous economist wrote that by 2005, the internet would matter to the economy no more than the fax machine. Ten years later, he won the Nobel Prize in economics.
-- **2007:** The leader of Microsoft laughed at the new iPhone. He said it cost too much, and business people would not want a phone with no keyboard. Today, most people in the world use a phone like it.
+- **2007:** The leader of Microsoft laughed at the new iPhone. He said it cost too much, and business people wouldn't want a phone with no keyboard. Today, most people in the world use a phone like it.
 
 **People who were excited, and were wrong:**
 
 - **2001:** The Segway was a two-wheeled scooter that balanced by itself. People said it would change how everyone moves around cities. In 2020, the company stopped making it.
 - **2021:** Someone paid $2.9 million for an NFT of the first tweet ever. (An NFT is a digital record that says you own something online.) In 2022, the owner tried to sell it. The best offer was about $280.
 
-How can you tell which kind of invention you are looking at? Ask two questions:
+How can you tell which kind of invention you're looking at? Ask two questions:
 
 1. Do many people use it every day, for real work?
 2. Does it get better every year?
 
-The internet and the iPhone passed both tests. The Segway and NFTs did not.
+The internet and the iPhone passed both tests. The Segway and NFTs didn't.
 
 :::{.think title="Try it on AI"}
 Ask the two questions about AI. Then ask them about something you think is only a toy. What do you notice?
@@ -155,7 +155,7 @@ In the 1980s, companies paid for AI built from rules. Experts wrote thousands of
 
 ### How Do We Know the Rule Bot Never Loses?
 
-Tic-tac-toe is a small game. There are only a few thousand ways a game can go. A computer played **every possible game** against the rule bot, with all 8 rules on. The bot never lost. A small world can be checked completely. The real world cannot.
+Tic-tac-toe is a small game. There are only a few thousand ways a game can go. A computer played **every possible game** against the rule bot, with all 8 rules on. The bot never lost. A small world can be checked completely. The real world can't.
 
 ### Challenge: Rules for Rock, Paper, Scissors
 
@@ -192,11 +192,11 @@ In game 2 against Lee Sedol, AlphaGo made a move that surprised the experts. At 
 
 ### The Test That Trains AI
 
-{{< glink CAPTCHA >}} is short for "Completely Automated Public **Turing test** to tell Computers and Humans Apart." It is the Turing test from Lesson 1.2, turned around. A computer gives the test, and it tries to find out if **you** are a person.
+{{< glink CAPTCHA >}} is short for "Completely Automated Public **Turing test** to tell Computers and Humans Apart." It's the Turing test from Lesson 1.2, turned around. A computer gives the test, and it tries to find out if **you** are a person.
 
 In 2003, Luis von Ahn, a young computer scientist from Guatemala, and his teachers at Carnegie Mellon University named the CAPTCHA. Then he had a second idea. People solved millions of CAPTCHAs every day. Could that work do something useful?
 
-In 2007, his team made **reCAPTCHA**. It showed two words. The computer knew one word. The other word came from an old book or newspaper, and the computer could not read it. Your answer helped turn old pages into text a computer can search. Google bought reCAPTCHA in 2009. (Later, von Ahn started another company, to teach languages for free: Duolingo.)
+In 2007, his team made **reCAPTCHA**. It showed two words. The computer knew one word. The other word came from an old book or newspaper, and the computer couldn't read it. Your answer helped turn old pages into text a computer can search. Google bought reCAPTCHA in 2009. (Later, von Ahn started another company, to teach languages for free: Duolingo.)
 
 ### What the CAPTCHAs Asked For
 
@@ -206,9 +206,9 @@ Some people think the street pictures also trained self-driving cars. In 2021, G
 
 ### AI Beats the Test
 
-A CAPTCHA works only if computers cannot solve it. In 2024, researchers at ETH Zurich, a university in Switzerland, made an AI that solved Google's picture CAPTCHAs every time.
+A CAPTCHA works only if computers can't solve it. In 2024, researchers at ETH Zurich, a university in Switzerland, made an AI that solved Google's picture CAPTCHAs every time.
 
-So today, many websites check you without a puzzle. They watch how you move the mouse and how you type, and guess if you are a person.
+So today, many websites check you without a puzzle. They watch how you move the mouse and how you type, and guess if you're a person.
 
 The test made to stop computers helped train them. Now the computers pass it.
 
@@ -229,7 +229,7 @@ Next time you see a CAPTCHA, look at what it asks you to find. What could an AI 
 The Nobel Prize is one of the biggest prizes in science. In 2024, two Nobel Prizes went to AI.
 
 - **Physics:** John Hopfield and Geoffrey Hinton, for early discoveries that made neural networks possible.
-- **Chemistry:** Demis Hassabis and John Jumper, for **AlphaFold**. It is an AI that predicts the shape of proteins (the tiny machines inside your body). They shared the prize with David Baker, who designs new proteins.
+- **Chemistry:** Demis Hassabis and John Jumper, for **AlphaFold**. It's an AI that predicts the shape of proteins (the tiny machines inside your body). They shared the prize with David Baker, who designs new proteins.
 
 **Think about it:** Why would the shape of a protein matter to a doctor who makes medicine?
 

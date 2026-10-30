@@ -2,20 +2,20 @@
 
 **Unit 4: When AI Gets It Wrong**
 
-AI makes things up. AI can be unfair to some people. AI can be used to fake pictures, videos, and voices. We will learn how to catch it, how to check its work, and why “AI cheat detectors” do not really work.
+AI makes things up. AI can be unfair to some people. AI can be used to fake pictures, videos, and voices. We'll learn how to catch it, how to check its work, and why “AI cheat detectors” don't really work.
 
-You will learn why looking for clues stops working, and what to check instead.
+You'll learn why looking for clues stops working, and what to check instead.
 
 ***
 
 ## What You'll Learn
 
-By the end of this unit, you will be able to:
+By the end of this unit, you'll be able to:
 
 * Catch AI when it makes things up
 * Explain where bias in AI comes from
 * Spot fake pictures, videos, and voices
-* Explain why AI cheat detectors do not really work
+* Explain why AI cheat detectors don't really work
 
 ***
 

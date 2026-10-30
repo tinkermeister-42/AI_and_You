@@ -4,7 +4,7 @@ In March 2023, a photo of Pope Francis went around the world. He was wearing a h
 
 ![The picture of Pope Francis that went around the world in March 2023. (Public domain)](/images/Unit_4/4.3_pope_puffy_jacket.jpg){width="340px" fig-align="center" fig-alt="Pope Francis walking outside in a long, white, very puffy winter jacket, with a silver cross on a chain."}
 
-It was not a photo. A man in Chicago made it with an AI image generator, as a joke. He did not expect so many people to believe it.
+It wasn't a photo. A man in Chicago made it with an AI image generator, as a joke. He didn't expect so many people to believe it.
 
 Today you test your eyes against AI faces. Then you learn something surprising: looking for clues stops working. You need a better way to check.
 
@@ -26,7 +26,7 @@ Today you test your eyes against AI faces. Then you learn something surprising: 
 ::::{.vocab}
 :::{.word-cards}
 - [🎭]{.icon} {{< glink deepfake >}}: a fake picture, video, or voice of a real person, made with AI
-- [🔄]{.icon} {{< glink "reverse image search" >}}: searching with a picture to find where else it is online
+- [🔄]{.icon} {{< glink "reverse image search" >}}: searching with a picture to find where else it's online
 - [🗣️]{.icon} {{< glink "voice clone" >}}: an AI copy of a person's voice, made from a short recording
 - [📚]{.icon} {{< glink source >}}: where a fact comes from: a book, a website, a person
 :::
@@ -60,16 +60,16 @@ An AI fake of a real person, like the Pope picture, is called a {{< glink deepfa
 |---|---|
 | Hands with 6 fingers | Newer tools draw hands well. |
 | Messy words on signs | Newer tools can write words. |
-| Earrings that do not match | Newer tools fix this. |
+| Earrings that don't match | Newer tools fix this. |
 | Strange, blurry backgrounds | Newer tools fix this too. |
 
-Every time people find a clue, the companies fix it. So looking for clues in the picture does not work for long.
+Every time people find a clue, the companies fix it. So looking for clues in the picture doesn't work for long.
 
 ***
 
 ### 4.3.2 - Check the Source, Not the Picture
 
-Fact-checkers do not stare at a picture. They ask **where it came from**. Use the four steps called **SIFT**:
+Fact-checkers don't stare at a picture. They ask **where it came from**. Use the four steps called **SIFT**:
 
 | Step | What you do |
 |---|---|
@@ -82,7 +82,7 @@ Fact-checkers do not stare at a picture. They ask **where it came from**. Use th
 
 ### 4.3.3 - Fake Voices
 
-Fakes are not only pictures. AI can make fake voices, too. It can copy a voice from a short recording, maybe a video someone posted online. Scammers use {{< glink "voice clone" >}} calls that sound like a family member in trouble: "Mom, I need money right now!"
+Fakes aren't only pictures. AI can make fake voices, too. It can copy a voice from a short recording, maybe a video someone posted online. Scammers use {{< glink "voice clone" >}} calls that sound like a family member in trouble: "Mom, I need money right now!"
 
 :::{.remember title="What you can do"}
 Choose a **family safe word**: a secret word that only your family knows. If someone calls in a panic asking for money, ask for the safe word. Then hang up and call the person back on their real number. Calling back is the same idea as SIFT: you check the source, not the voice.
@@ -127,7 +127,7 @@ Make a poster of the SIFT steps in your home language. Add one real example of a
 :::
 
 :::{.project title="Our Family Safe Word"}
-Explain voice clones to your family, in your home language. Help them choose a safe word. (Do not tell anyone at school what it is!)
+Explain voice clones to your family, in your home language. Help them choose a safe word. (Don't tell anyone at school what it is!)
 :::
 
 :::{.explore-link}

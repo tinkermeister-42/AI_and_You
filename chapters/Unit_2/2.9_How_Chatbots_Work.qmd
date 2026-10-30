@@ -2,7 +2,7 @@
 
 In Lesson 1.6, you learned that a chatbot writes **one word at a time**. It predicts the next word, again and again.
 
-But how does it choose the next word? Today, you build the simplest chatbot possible. It does only one thing: it **counts** which word comes next. Then it writes. You will be surprised what counting can do, and what it cannot.
+But how does it choose the next word? Today, you build the simplest chatbot possible. It does only one thing: it **counts** which word comes next. Then it writes. You'll be surprised what counting can do, and what it can't.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
@@ -16,16 +16,16 @@ But how does it choose the next word? Today, you build the simplest chatbot poss
 :::{.objectives}
 - [ ] I can make a table of which word comes next in a text.
 - [ ] I can use the table to write a sentence, like a chatbot.
-- [ ] I can explain how a real chatbot is like my tiny chatbot, and how it is different.
-- [ ] I can explain why a chatbot can write something that sounds right but is not true.
+- [ ] I can explain how a real chatbot is like my tiny chatbot, and how it's different.
+- [ ] I can explain why a chatbot can write something that sounds right but isn't true.
 :::
 
 ::::{.vocab}
 :::{.word-cards}
-- [🔮]{.icon} {{< glink prediction >}}: a best guess about something you do not know yet
+- [🔮]{.icon} {{< glink prediction >}}: a best guess about something you don't know yet
 - [📚]{.icon} {{< glink "large language model" >}}: a transformer trained on a huge amount of text to predict the next word
 - [🧩]{.icon} {{< glink token >}}: a word or a piece of a word that a chatbot reads and writes
-- [🎲]{.icon} {{< glink random >}}: with no pattern, so you cannot guess what comes next
+- [🎲]{.icon} {{< glink random >}}: with no pattern, so you can't guess what comes next
 :::
 ::::
 
@@ -35,7 +35,7 @@ But how does it choose the next word? Today, you build the simplest chatbot poss
 
 {{< warmup >}}
 
-Finish each sentence with **one word**. Do not think too long!
+Finish each sentence with **one word**. Don't think too long!
 
 1. Peanut butter and ...
 2. Once upon a ...
@@ -46,7 +46,7 @@ Compare with a partner. Which ones did you both answer the same?
 :::{.think title="Why did you agree on some and not others?"}
 You have read "peanut butter and **jelly**" and "once upon a **time**" many times. Your brain counted! When one next word is very common, everyone predicts it.
 
-"I am going to the ..." has many good answers: store, park, school, bathroom. There is no single winner.
+"I am going to the ..." has many good answers: store, park, school, bathroom. There's no single winner.
 :::
 
 {{< learn >}}
@@ -78,7 +78,7 @@ Start with **My**: My → friend → likes → rice → and → beans → end.
 
 ### 2.9.2 - From Counting to ChatGPT
 
-A real chatbot is a {{< glink "large language model" >}} (Lesson 1.6). It has the same goal: predict the next word. But it is much, much bigger.
+A real chatbot is a {{< glink "large language model" >}} (Lesson 1.6). It has the same goal: predict the next word. But it's much, much bigger.
 
 | | The tiny chatbot | A real chatbot |
 |---|---|---|
@@ -88,20 +88,20 @@ A real chatbot is a {{< glink "large language model" >}} (Lesson 1.6). It has th
 | **Picks the next word by** | counting | predicting, with a little chance mixed in |
 
 :::{.remember}
-Both chatbots predict the next word. **Neither one checks if a sentence is true.** A sentence can sound perfect and still be wrong. (You will catch this in Unit 4.)
+Both chatbots predict the next word. **Neither one checks if a sentence is true.** A sentence can sound perfect and still be wrong. (You'll catch this in Unit 4.)
 :::
 
 {{< tryit >}}
 
 ### 2.9.3 - The Dice Chatbot
 
-You are the chatbot. Work in a group of 2 to 4 (or alone).
+You're the chatbot. Work in a group of 2 to 4 (or alone).
 
 :::{.steps}
 1. Finish the count table on your sheet for the training text above.
 2. Start with **I** or **My**.
-3. Look up the word. If there is only one next word, write it.
-4. If there are two or more choices, **roll a die**. A die is {{< glink random >}}: you cannot guess what it will show. Your sheet shows which numbers go with which word. (More common words get more numbers.)
+3. Look up the word. If there's only one next word, write it.
+4. If there are two or more choices, **roll a die**. A die is {{< glink random >}}: you can't guess what it will show. Your sheet shows which numbers go with which word. (More common words get more numbers.)
 5. Keep going until you reach the end of the sentence. Write 3 sentences.
 6. Did you write a sentence that is **not** in the training text?
 :::
@@ -150,9 +150,9 @@ A little chance makes the writing more interesting. Too much chance makes it str
 :::
 
 :::{.think title="Could the tiny chatbot write in your language?"}
-Yes! It does not know any language. It only counts. So it works for any language that puts spaces between words.
+Yes! It doesn't know any language. It only counts. So it works for any language that puts spaces between words.
 
-But it can only write words that were in its training text. A real chatbot that read very little text in your language will write it less well. (You will test this in Unit 3.)
+But it can only write words that were in its training text. A real chatbot that read very little text in your language will write it less well. (You'll test this in Unit 3.)
 :::
 
 :::{.project title="Two Words Back"}

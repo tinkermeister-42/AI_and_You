@@ -24,7 +24,7 @@ In 2018, YouTube said that **more than 70%** of the time people spent watching c
 ::::{.vocab}
 :::{.word-cards}
 - [📰]{.icon} {{< glink feed >}}: the list of posts, videos, or stories an app shows you
-- [🎯]{.icon} {{< glink recommendation >}}: something an app chooses for you, because it predicts you will like it
+- [🎯]{.icon} {{< glink recommendation >}}: something an app chooses for you, because it predicts you'll like it
 - [⚙️]{.icon} {{< glink algorithm >}}: a set of steps a computer follows to make a choice
 - [🫧]{.icon} {{< glink "filter bubble" >}}: when an app shows you only what you already like, so you miss everything else
 :::
@@ -58,10 +58,10 @@ The steps the app follows to choose are its {{< glink algorithm >}}. Every click
 
 - **Different worlds.** Your feed and your friend's feed can be very different. You may not know what the other person sees. This is called a {{< glink "filter bubble" >}}.
 - **Angry stories win.** People click and share angry and scary stories more. So the app learns to show more of them.
-- **Fake news looks real.** AI can write whole news websites, with no reporters at all. The feed does not check if a story is true. It only predicts if you will click.
+- **Fake news looks real.** AI can write whole news websites, with no reporters at all. The feed doesn't check if a story is true. It only predicts if you'll click.
 
 :::{.note title="Right now (fall 2026)"}
-NewsGuard is a company that checks news sites. It has found more than **3,700** websites that publish news written mostly by AI, with little or no human checking. They are in 16 languages (June 2026).
+NewsGuard is a company that checks news sites. It has found more than **3,700** websites that publish news written mostly by AI, with little or no human checking. They're in 16 languages (June 2026).
 :::
 
 {{< tryit >}}
@@ -71,7 +71,7 @@ NewsGuard is a company that checks news sites. It has found more than **3,700** 
 Work with a partner. Each partner uses their own computer. This demo uses made-up stories.
 
 :::{.steps}
-1. Click **10 stories** you really want to read. Do not look at your partner's screen.
+1. Click **10 stories** you really want to read. Don't look at your partner's screen.
 2. Watch the bars: what does the app think you like?
 3. After 10 clicks, compare feeds with your partner. How many stories are the same?
 4. Press **Start over**. This time, click only the angry stories. What happens to your feed?

@@ -1,6 +1,6 @@
 # 2.3 - How Brains Learn {.unnumbered}
 
-Think of something that was very hard the first time: riding a bike, writing in a new alphabet, a move in a sport. Now it is easy. You do not even think about it.
+Think of something that was very hard the first time: riding a bike, writing in a new alphabet, a move in a sport. Now it's easy. You don't even think about it.
 
 What changed? Not your hands. **Your brain** changed. Practice made some connections between your neurons stronger.
 
@@ -36,7 +36,7 @@ Today, you watch your own brain learn something new, and you measure it.
 
 {{< warmup >}}
 
-Write your full name with your **other hand** (the one you do not usually write with). Your partner times you.
+Write your full name with your **other hand** (the one you don't usually write with). Your partner times you.
 
 Do it **3 times**. Write the times on your sheet. Did you get faster?
 
@@ -44,7 +44,7 @@ Do it **3 times**. Write the times on your sheet. Did you get faster?
 
 ### 2.3.1 - Practice Makes Connections Stronger
 
-Did you get faster with your other hand? Your hand did not change in 3 tries. Your brain did.
+Did you get faster with your other hand? Your hand didn't change in 3 tries. Your brain did.
 
 When you do something new, a group of neurons fires together. When you do it again and again, the synapses between those neurons get **stronger**. The signal passes more easily. The skill gets faster and smoother.
 
@@ -52,12 +52,12 @@ Scientists say it with a short rhyme:
 
 > **Neurons that fire together, wire together.**
 
-When you stop practicing, unused connections can get weaker. That is why you forget things you never use.
+When you stop practicing, unused connections can get weaker. That's why you forget things you never use.
 
 :::{.experiment title="Pavlov's Dogs (1890s)"}
 **Ivan Pavlov** was a scientist in Russia. He studied dogs.
 
-![A drawing of a Pavlov experiment. A tube carries saliva from the dog's cheek to a scale on the wall, so the scientists can measure how much the dog drools. The person sits behind a wall, so the dog cannot see him. (Wellcome Collection, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/){target="_blank"})](/images/Unit_2/2.3_pavlov_experiment.png){width="620px" fig-align="center" fig-alt="A line drawing. A dog stands on a table, held up by straps. A tube goes from its cheek, through a wall, to a measuring scale. A bowl of food sits near the dog. On the other side of the wall, a man sits at a table and watches the scale."}
+![A drawing of a Pavlov experiment. A tube carries saliva from the dog's cheek to a scale on the wall, so the scientists can measure how much the dog drools. The person sits behind a wall, so the dog can't see him. (Wellcome Collection, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/){target="_blank"})](/images/Unit_2/2.3_pavlov_experiment.png){width="620px" fig-align="center" fig-alt="A line drawing. A dog stands on a table, held up by straps. A tube goes from its cheek, through a wall, to a measuring scale. A bowl of food sits near the dog. On the other side of the wall, a man sits at a table and watches the scale."}
 
 1. Dogs drool (make saliva in their mouths) when they see food. Nobody teaches them this.
 2. Pavlov's team played a sound, a clicking **metronome**, right before they gave the dogs food. They did this many times.
@@ -69,7 +69,7 @@ The dogs' brains connected the sound with food. This kind of learning is called 
 :::{.remember title="Learning changes connections"}
 In a brain, learning means changing **how strong the connections are** between neurons.
 
-AI copies this idea. In a neural network, the strength of each connection is a number called a **weight**. Learning means changing the weights. You will see this in the next lesson.
+AI copies this idea. In a neural network, the strength of each connection is a number called a **weight**. Learning means changing the weights. You'll see this in the next lesson.
 :::
 
 {{< tryit >}}
@@ -104,7 +104,7 @@ And think about Pavlov: is there a **sound** that makes you reach for your phone
 :::{.frames}
 - My brain learned the mirror drawing because ...
 - Brain learning and AI learning are **the same** / **different** because ...
-- The sound ... makes me want to ... . That is like Pavlov's dogs because ...
+- The sound ... makes me want to ... . That's like Pavlov's dogs because ...
 :::
 
 {{< further >}}
@@ -118,7 +118,7 @@ Use the mirror drawing tool in 2.3.2 again, with a partner.
 :::
 
 :::{.think title="Why was the new mirror hard?"}
-Your brain learned **one** skill: up and down flipped. It did not learn every mirror skill. A new mirror needs new connections.
+Your brain learned **one** skill: up and down flipped. It didn't learn every mirror skill. A new mirror needs new connections.
 
 AI is like this too. An AI trained for one job is often bad at a job that looks almost the same.
 :::

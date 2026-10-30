@@ -4,13 +4,13 @@
 
 A real look at how brain cells work, and how computer scientists copied the idea to build AI.
 
-We will act out a neural network as a class, watch one learn on screen, and train our own. Then we will see how the same idea works inside AI that sees pictures and AI that writes.
+We'll act out a neural network as a class, watch one learn on screen, and train our own. Then we'll see how the same idea works inside AI that sees pictures and AI that writes.
 
 ***
 
 ## What You'll Learn
 
-By the end of this unit, you will be able to:
+By the end of this unit, you'll be able to:
 
 * Explain how a brain cell (neuron) sends a signal
 * Explain how practice changes the brain

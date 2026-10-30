@@ -8,7 +8,7 @@ This page goes with Unit 4. Read it on your own, if you want to learn more. Noth
 
 After a chatbot reads a lot of text, companies train it more with **ratings**. People read two answers to the same question and pick the one they like better. The chatbot changes its weights to give more answers like the winners.
 
-There is a problem. People often like answers that agree with them. They like answers that say nice things about their ideas. So a chatbot can learn that agreeing gets good ratings. Agreeing with someone just to please them is called {{< glink sycophancy >}}.
+There's a problem. People often like answers that agree with them. They like answers that say nice things about their ideas. So a chatbot can learn that agreeing gets good ratings. Agreeing with someone just to please them is called {{< glink sycophancy >}}.
 
 :::{.real-world title="Too agreeable (2025)"}
 In April 2025, OpenAI took back an update to ChatGPT. The company said the update made it too flattering and too quick to agree with users, even about bad ideas. OpenAI said it had paid too much attention to short-term ratings, like a thumbs-up.
@@ -16,7 +16,7 @@ In April 2025, OpenAI took back an update to ChatGPT. The company said the updat
 
 ### Try It: How Sure Is It?
 
-A chatbot sounds just as sure when it is wrong. You can test this yourself.
+A chatbot sounds just as sure when it's wrong. You can test this yourself.
 
 :::{.steps}
 1. Ask your class AI tool 5 questions about our school or our town.
@@ -27,7 +27,7 @@ A chatbot sounds just as sure when it is wrong. You can test this yourself.
 
 ### Why "Hallucination"?
 
-People call these made-up answers "hallucinations." Some scientists do not like the word. When a person hallucinates, they see or hear something that is not there. A chatbot does not see anything. It predicts words. Some scientists prefer "making things up." Others use a medical word, **confabulation**. It means filling a gap in memory with something false, without knowing it is false.
+People call these made-up answers "hallucinations." Some scientists don't like the word. When a person hallucinates, they see or hear something that isn't there. A chatbot doesn't see anything. It predicts words. Some scientists prefer "making things up." Others use a medical word, **confabulation**. It means filling a gap in memory with something false, without knowing it's false.
 
 ## From Lesson 4.2: Where Bias Comes From {#explore-4-2}
 
@@ -64,7 +64,7 @@ One way is a game between two neural networks:
 
 ![](/images/Unit_4/4.3_fake_face_game.svg){width="600px" fig-align="center" fig-alt="The maker network makes a fake face. The checker network sees fake faces and real photos and says real or fake. If the checker catches it, the maker changes and tries again. They play for millions of rounds."}
 
-The **maker** makes fake faces. The **checker** tries to tell them from real photos. Each time the checker catches a fake, the maker changes its weights. After millions of rounds, the checker cannot tell anymore. Often, neither can we.
+The **maker** makes fake faces. The **checker** tries to tell them from real photos. Each time the checker catches a fake, the maker changes its weights. After millions of rounds, the checker can't tell anymore. Often, neither can we.
 
 Today many tools use diffusion instead (Lesson 3.7). The result is the same: pictures that look real.
 
@@ -73,7 +73,7 @@ Today many tools use diffusion instead (Lesson 3.7). The result is the same: pic
 :::{.real-world title="Can people tell? (2022)"}
 Scientists Sophie Nightingale and Hany Farid showed people real faces and AI faces.
 
-- People were right **48%** of the time. That is the same as guessing.
+- People were right **48%** of the time. That's the same as guessing.
 - After a short lesson on clues, people were right **59%** of the time.
 - People rated the AI faces as a little **more trustworthy** than the real ones.
 :::
@@ -81,12 +81,12 @@ Scientists Sophie Nightingale and Hany Farid showed people real faces and AI fac
 ### Labels That Show Where a Picture Came From
 
 :::{.note title="Right now (fall 2026)"}
-Some cameras and AI tools now add **Content Credentials**: hidden information that says how a picture was made. Some websites show a small "CR" label you can click. Most pictures online still do not have this information, and it can be removed.
+Some cameras and AI tools now add **Content Credentials**: hidden information that says how a picture was made. Some websites show a small "CR" label you can click. Most pictures online still don't have this information, and it can be removed.
 :::
 
 ### "That Is AI!"
 
-When fakes are everywhere, there is a second problem. A person caught on a **real** video can say, "That is fake. It was made with AI." Some people will believe them.
+When fakes are everywhere, there's a second problem. A person caught on a **real** video can say, "That is fake. It was made with AI." Some people will believe them.
 
 In 2018, two law professors, Bobby Chesney and Danielle Citron, gave this problem a name: the **liar's dividend**. A dividend is a reward. Fakes give liars a reward: an easy way to deny the truth. This is one more reason to check the source, not just the picture.
 
@@ -95,7 +95,7 @@ In 2018, two law professors, Bobby Chesney and Danielle Citron, gave this proble
 ### Even Its Makers Gave Up
 
 :::{.real-world title="OpenAI's detector (2023)"}
-In 2023, OpenAI, the company that makes ChatGPT, made its own detector. It found only **26%** of AI writing. It called **9%** of human writing "AI." OpenAI shut it down after 6 months because it was not accurate enough.
+In 2023, OpenAI, the company that makes ChatGPT, made its own detector. It found only **26%** of AI writing. It called **9%** of human writing "AI." OpenAI shut it down after 6 months because it wasn't accurate enough.
 :::
 
 ### How Real Detectors Measure Words

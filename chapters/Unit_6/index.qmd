@@ -2,15 +2,15 @@
 
 **Unit 6: AI and Our Future**
 
-AI can write poems, make art, and act like a friend. It also uses energy and water, and it depends on people's work. Who decides how it is used? Where is all of this going?
+AI can write poems, make art, and act like a friend. It also uses energy and water, and it depends on people's work. Who decides how it's used? Where is all of this going?
 
-We will talk about AI art, AI friends, the hidden costs of AI, the rules for AI, and possible futures. At the end, we come back to the question from the first day.
+We'll talk about AI art, AI friends, the hidden costs of AI, the rules for AI, and possible futures. At the end, we come back to the question from the first day.
 
 ***
 
 ## What You'll Learn
 
-By the end of this unit, you will be able to:
+By the end of this unit, you'll be able to:
 
 * Decide what you think about AI art and AI friends
 * Describe the hidden costs of AI

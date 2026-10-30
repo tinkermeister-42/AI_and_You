@@ -2,15 +2,15 @@
 
 **Unit 3: Using AI Well**
 
-The heart of the class. You will learn how to ask AI good questions. You will use it to help with writing, research, translation, math, and art.
+The heart of the class. You'll learn how to ask AI good questions. You'll use it to help with writing, research, translation, math, and art.
 
-Then you will finish a real project that uses AI to do something useful in your life. We will have time to get feedback, make it better, and do the work right.
+Then you'll finish a real project that uses AI to do something useful in your life. We'll have time to get feedback, make it better, and do the work right.
 
 ***
 
 ## What You'll Learn
 
-By the end of this unit, you will be able to:
+By the end of this unit, you'll be able to:
 
 * Write clear prompts and make them better
 * Use AI to help with writing, research, translation, math, and art
@@ -35,7 +35,7 @@ The AI use ladder, and feedback you control.
 Why chatbots make things up, and how fact-checkers check.
 
 [**AI and Your Language**](3.5_AI_and_Your_Language.qmd)\
-You are the expert: grade AI translations in your language.
+You're the expert: grade AI translations in your language.
 
 [**AI and Math**](3.6_AI_and_Math.qmd)\
 Rules and predictions, and three ways to check an AI's math.

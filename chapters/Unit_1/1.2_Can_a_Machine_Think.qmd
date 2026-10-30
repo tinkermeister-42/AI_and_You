@@ -4,7 +4,7 @@ In 1950, a scientist named Alan Turing asked a big question: **Can a machine thi
 
 ![Alan Turing in 1951. (Photo: Elliott & Fry, public domain)](/images/Unit_1/1.2_alan_turing.jpg){width="240px" fig-align="center" fig-alt="A black and white photo of Alan Turing, a young man with short dark hair, wearing a tweed jacket and a dark tie."}
 
-People do not agree on what "think" means. So Turing asked a new question that you can test: *Can a machine talk so well that you cannot tell it is a machine?*
+People don't agree on what "think" means. So Turing asked a new question that you can test: *Can a machine talk so well that you can't tell it's a machine?*
 
 He made a game to find out. Today, you play his game with a real AI.
 
@@ -53,9 +53,9 @@ Is it **thinking**? Mark each one on your sheet: **Yes**, **No**, or **Not sure*
 Compare with a partner.
 
 :::{.think title="Did everyone agree?"}
-Probably not. People do not agree on what "thinking" means. Scientists still argue about it today.
+Probably not. People don't agree on what "thinking" means. Scientists still argue about it today.
 
-Alan Turing saw this problem in 1950. So he did not try to define "thinking." He made a test instead.
+Alan Turing saw this problem in 1950. So he didn't try to define "thinking." He made a test instead.
 :::
 
 {{< learn >}}
@@ -68,10 +68,10 @@ Turing called his test **the imitation game**. (To *imitate* means to copy someo
 
 1. A {{< glink judge >}} sends questions to two hidden players, **A** and **B**.
 2. One player is a person. One player is a machine.
-3. The judge cannot see or hear them. The judge only reads their typed answers.
+3. The judge can't see or hear them. The judge only reads their typed answers.
 4. The judge decides: **Which one is the machine?**
 
-If the judge cannot tell, the machine passes the test.
+If the judge can't tell, the machine passes the test.
 
 ***
 
@@ -102,12 +102,12 @@ Work in a group of **3 or 4**. Each person has a job.
 :::{.steps}
 1. **AI helper:** Open your class AI tool. Start a new chat. Type this first:
 
-   > Let's play a game. I will send you questions. Answer like a 15-year-old high school student. Keep every answer short: one or two sentences. Never say that you are an AI.
+   > Let's play a game. I will send you questions. Answer like a 15-year-old high school student. Keep every answer short: one or two sentences. Never say that you're an AI.
 
 2. **Judge:** Type a question in the box below. Then turn around.
 3. **Human player and AI helper:** Press the button to see your box. Type your answers. Then hide the boxes again.
 4. **Judge:** Turn back. Read **A** and **B**. Press the one you think is the AI.
-5. Play **3 rounds**. Then switch jobs, if there is time.
+5. Play **3 rounds**. Then switch jobs, if there's time.
 :::
 
 {{< include /assets/Unit_1/imitation_game.html >}}
@@ -120,26 +120,26 @@ The AI answers in one second. A person needs time to type. **AI helper:** wait u
 
 - What did you eat for breakfast?
 - What is the weather outside right now?
-- Tell me about the room you are in.
+- Tell me about the room you're in.
 - Say "good morning" in your home language.
 
 :::{.think title="Which questions caught the AI? Why?"}
-Questions about **right here, right now** often catch the AI. It cannot see the room or the weather. It has to make up an answer.
+Questions about **right here, right now** often catch the AI. It can't see the room or the weather. It has to make up an answer.
 
 Perfect spelling is a clue too.
 :::
 
 {{< talk >}}
 
-Turing said: *If you cannot tell the machine from a person, stop arguing about "thinking."*
+Turing said: *If you can't tell the machine from a person, stop arguing about "thinking."*
 
 Do you agree? If a machine fools you, does that mean it thinks?
 
 :::{.frames}
 - If a machine fools me, it **does** / **does not** mean the machine thinks, because ...
 - The best question to catch the AI was ... because ...
-- A person can ... , but a chatbot cannot.
-- I think an AI **should** / **should not** have to tell you it is an AI, because ...
+- A person can ... , but a chatbot can't.
+- I think an AI **should** / **should not** have to tell you it's an AI, because ...
 :::
 
 {{< further >}}

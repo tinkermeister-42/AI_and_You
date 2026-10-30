@@ -2,19 +2,19 @@
 
 **Unit 1: Where AI Came From**
 
-We start with a question: what is AI? Then we follow its story from the 1950s to ChatGPT. You will see the big dreams, the big failures, and the moments that changed everything.
+We start with a question: what is AI? Then we follow its story from the 1950s to ChatGPT. You'll see the big dreams, the big failures, and the moments that changed everything.
 
-Every lesson adds cards to a **class timeline** on the wall. You will play with the same ideas the scientists tried: a chatbot made of rules, a game bot, and pictures that need labels.
+Every lesson adds cards to a **class timeline** on the wall. You'll play with the same ideas the scientists tried: a chatbot made of rules, a game bot, and pictures that need labels.
 
 ***
 
 ## What You'll Learn
 
-By the end of this unit, you will be able to:
+By the end of this unit, you'll be able to:
 
 * Explain how AI is different from a normal computer program
 * Tell the story of AI from the 1950s to today
-* Explain why AI built on rules did not work well for seeing and language
+* Explain why AI built on rules didn't work well for seeing and language
 * Explain why data and fast computer chips changed AI
 * Name the people and moments that changed AI
 
@@ -29,7 +29,7 @@ Sort things into AI and not AI, try to write a rule for “cat,” and play a dr
 Learn Alan Turing's question from 1950. Play his imitation game with a real AI.
 
 [**The First Chatbot**](1.3_The_First_Chatbot.qmd)\
-Be ELIZA with paper and see how its rules work. Then act out the Klingon Room: answer notes in a language you do not know.
+Be ELIZA with paper and see how its rules work. Then act out the Klingon Room: answer notes in a language you don't know.
 
 [**Rules Win at Games**](1.4_Rules_Win_at_Games.qmd)\
 Big promises, AI winters, and a chess computer. Play a tic-tac-toe bot and turn off its rules.

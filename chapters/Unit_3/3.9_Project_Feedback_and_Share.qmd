@@ -14,7 +14,7 @@ Today you look at each other's projects and leave feedback. Then you choose what
 :::
 
 :::{.objectives}
-- [ ] I can give feedback that is kind, specific, and helpful.
+- [ ] I can give feedback that's kind, specific, and helpful.
 - [ ] I can choose the feedback that will make my project better.
 - [ ] I can explain what AI did and what a person did in my project.
 :::
@@ -39,7 +39,7 @@ Which feedback helps more? Why?
 2. "The price on your flyer is easy to see. The date is very small. Maybe make it bigger?"
 
 :::{.think title="The second one"}
-The first one is kind, but you cannot do anything with it. The second one is **kind**, **specific** (the price, the date), and **helpful** (make it bigger). You know exactly what to change.
+The first one is kind, but you can't do anything with it. The second one is **kind**, **specific** (the price, the date), and **helpful** (make it bigger). You know exactly what to change.
 :::
 
 {{< learn >}}
@@ -69,7 +69,7 @@ Use these starters on your notes:
 2. Walk to another project. Read it. Leave a sticky note: **I like**, **I wonder**, or **What if**.
 3. Visit **3 projects**. Every project should get at least 3 notes.
 4. Go back to your project. Read your notes with your partner.
-5. Choose the **2 most useful** notes. Write them on your sheet. These are the changes you will make.
+5. Choose the **2 most useful** notes. Write them on your sheet. These are the changes you'll make.
 :::
 
 :::{.teacher title="Class size"}
@@ -84,7 +84,7 @@ Which note was the most useful? In your project, what did AI do well, and what d
 - The most useful note said ... , because ...
 - We will {{< glink revise >}} our project by ...
 - AI helped us by ...
-- A person had to ... , because AI could not ...
+- A person had to ... , because AI couldn't ...
 :::
 
 {{< further >}}
@@ -103,7 +103,7 @@ Which note was the most useful? In your project, what did AI do well, and what d
 :::
 
 :::{.project title="A Real Audience"}
-Share your product with the people it is for: your family, another class, a coach, or the ELL teachers. Ask them: "Is this useful?" What did they say?
+Share your product with the people it's for: your family, another class, a coach, or the ELL teachers. Ask them: "Is this useful?" What did they say?
 :::
 
 :::{.project title="How We Used AI"}

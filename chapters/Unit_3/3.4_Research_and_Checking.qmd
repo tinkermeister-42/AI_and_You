@@ -4,7 +4,7 @@ In 2023, two lawyers in New York had to write a report for a court. One of them 
 
 ChatGPT gave him six cases. Each one had a name, a date, and quotes. **None of the six cases were real.** The judge fined the lawyers and their law firm $5,000.
 
-The lawyer said he did not know a chatbot could make things up. Today you learn to check, so this never happens to you.
+The lawyer said he didn't know a chatbot could make things up. Today you learn to check, so this never happens to you.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
@@ -16,7 +16,7 @@ The lawyer said he did not know a chatbot could make things up. Today you learn 
 :::
 
 :::{.objectives}
-- [ ] I can explain why a chatbot can write a fact that is not true.
+- [ ] I can explain why a chatbot can write a fact that isn't true.
 - [ ] I can check a fact with lateral reading.
 - [ ] I can choose trusted sources to check a fact.
 :::
@@ -43,7 +43,7 @@ Two of these court cases are real. One was made up by ChatGPT for the lawyers in
 3. *Miranda v. Arizona* (1966)
 
 :::{.answers title="Answer"}
-Number 2 is made up. It was one of the six fake cases. It looks just like a real case name: two names, "v.", and a year. That is why it fooled the lawyer.
+Number 2 is made up. It was one of the six fake cases. It looks just like a real case name: two names, "v.", and a year. That's why it fooled the lawyer.
 
 To find out, you could search for it. The real cases are on many trusted websites. The fake one shows up only in news stories **about** the fake cases.
 :::
@@ -52,21 +52,21 @@ To find out, you could search for it. The real cases are on many trusted website
 
 ### 3.4.1 - Why a Chatbot Makes Things Up
 
-A chatbot predicts likely words. It does not look up each fact in a book. A fake court case has the same shape as a real one, so the fake words look very likely.
+A chatbot predicts likely words. It doesn't look up each fact in a book. A fake court case has the same shape as a real one, so the fake words look very likely.
 
-When AI writes something false as if it were true, it is called a {{< glink hallucination >}}. The chatbot does not know it is wrong. It sounds just as sure as when it is right. (You will study this more in Lesson 4.1.)
+When AI writes something false as if it were true, it's called a {{< glink hallucination >}}. The chatbot doesn't know it's wrong. It sounds just as sure as when it's right. (You'll study this more in Lesson 4.1.)
 
 ***
 
 ### 3.4.2 - Lateral Reading
 
-Professional fact-checkers do not read one page carefully from top to bottom. They open **new tabs** and see what other sources say. This is called {{< glink "lateral reading" >}}. ("Lateral" means "to the side.")
+Professional fact-checkers don't read one page carefully from top to bottom. They open **new tabs** and see what other sources say. This is called {{< glink "lateral reading" >}}. ("Lateral" means "to the side.")
 
 :::{.steps}
 1. Choose **one** fact.
 2. Open a new tab. Search for the fact.
 3. Find it in **2 trusted sources** that agree.
-4. Mark it: ✅ found in 2 sources, ❌ wrong, or ❓ cannot find.
+4. Mark it: ✅ found in 2 sources, ❌ wrong, or ❓ can't find.
 :::
 
 | Usually trusted | Use with care | Be careful |
@@ -89,7 +89,7 @@ Our school is named after **Frederick Douglass**. Let's check what a chatbot say
 :::
 
 :::{.teacher title="Class size"}
-**Small class (4 or 5):** work as one group. Each person checks a different fact. **Big class:** make it a race between teams. A team gets 1 point for each fact checked in 2 sources. A team **loses** 2 points for a check that is wrong. Speed is good. Being right is better.
+**Small class (4 or 5):** work as one group. Each person checks a different fact. **Big class:** make it a race between teams. A team gets 1 point for each fact checked in 2 sources. A team **loses** 2 points for a check that's wrong. Speed is good. Being right is better.
 :::
 
 {{< talk >}}
@@ -99,7 +99,7 @@ AI can make things up, and it sounds sure when it does. Should students use AI f
 :::{.frames}
 - The chatbot got ... right, and it got ... wrong.
 - A source I trust is ... because ...
-- Students (should / should not) use AI for research, because ...
+- Students (should / shouldn't) use AI for research, because ...
 - Before I use a fact from AI, I will ...
 :::
 
@@ -108,7 +108,7 @@ AI can make things up, and it sounds sure when it does. Should students use AI f
 :::{.watch title="Check Yourself with Lateral Reading (Crash Course)"}
 {{< ytvideo GoQG6Tin-1E title="Check Yourself with Lateral Reading: Crash Course Navigating Digital Information #3" >}}
 
-**While you watch:** What do fact-checkers do that most people do not?
+**While you watch:** What do fact-checkers do that most people don't?
 
 **Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
@@ -116,7 +116,7 @@ AI can make things up, and it sounds sure when it does. Should students use AI f
 {{< further >}}
 
 :::{.project title="Day 2: Check the AI's Sources"}
-1. Ask your class AI tool: **"Give me 3 sources about Frederick Douglass."** (If it will not give links, ask for book titles and authors.)
+1. Ask your class AI tool: **"Give me 3 sources about Frederick Douglass."** (If it won't give links, ask for book titles and authors.)
 2. Check each one. Is it real? Search for it, or look in the school library catalog.
 3. Does the source really say what the AI said?
 4. Sort the sources on your sheet: usually trusted, use with care, or be careful.
