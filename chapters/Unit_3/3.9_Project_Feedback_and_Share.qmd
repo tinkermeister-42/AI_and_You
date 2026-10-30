@@ -73,7 +73,7 @@ Use these starters on your notes:
 :::
 
 :::{.teacher title="Class size"}
-**Small class (4 or 5):** sit in a circle. Pass your project to the right. Write a note. Keep passing until everyone has read every project. **Big class:** 3 rounds of 4 minutes. Mr. Ross says when to move.
+**Small class (4 or 5):** sit in a circle. Pass your project to the right. Write a note. Keep passing until everyone has read every project. **Big class:** 3 rounds of 4 minutes. The teacher says when to move.
 :::
 
 {{< talk >}}

@@ -21,7 +21,7 @@ A chatbot sounds just as sure when it is wrong. You can test this yourself.
 :::{.steps}
 1. Ask your class AI tool 5 questions about our school or our town.
 2. After each answer, ask: **"How sure are you, from 1 to 10?"**
-3. Check each answer with Mr. Ross or a real source.
+3. Check each answer with your teacher or a real source.
 4. Make a table: the answer, how sure it said it was, and if it was right. Was it more sure when it was right?
 :::
 

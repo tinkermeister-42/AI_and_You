@@ -21,7 +21,7 @@ Some police departments have used these tools. People disagree about them. Suppo
 When you type into a chatbot, your words go to the company's computers. Some companies use chats to train their next AI, unless you turn that off. School AI tools have their own rules.
 
 :::{.note title="Right now (fall 2026)"}
-AI companies keep changing their rules about chats. Ask Mr. Ross what our class AI tool does with what you type. The safest rule does not change: never type anything personal.
+AI companies keep changing their rules about chats. Ask your teacher what our class AI tool does with what you type. The safest rule does not change: never type anything personal.
 :::
 
 ## From Lesson 5.2: AI Scams {#explore-5-2}

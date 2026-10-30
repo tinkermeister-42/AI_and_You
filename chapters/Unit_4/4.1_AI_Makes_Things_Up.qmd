@@ -84,7 +84,7 @@ Work with a partner, or in a group of 3.
 
 :::{.steps}
 1. Ask your class AI tool the questions about our school and town on your sheet.
-2. Mark each answer: ✅ true, ❌ false, or ❓ I do not know. Mr. Ross has the real answers.
+2. Mark each answer: ✅ true, ❌ false, or ❓ I do not know. Your teacher has the real answers.
 3. Count your ❌. Which kind of question from 4.1.2 did it get wrong?
 :::
 

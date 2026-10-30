@@ -101,7 +101,7 @@ Is a picture made by AI **art**? Who should get the credit: the person who wrote
 {{< further >}}
 
 :::{.project title="Day 2: Write Picture Prompts"}
-Work with a partner, or in a group of 3. Picture tools have a limit on how many pictures a class can make, so each pair shares turns. If your class AI tool cannot make pictures today, give your prompts to Mr. Ross. He makes them on the projector.
+Work with a partner, or in a group of 3. Picture tools have a limit on how many pictures a class can make, so each pair shares turns. If your class AI tool cannot make pictures today, give your prompts to your teacher. Your teacher makes them on the projector.
 
 A good picture prompt says what you want to **see**:
 
@@ -122,11 +122,11 @@ A good picture prompt says what you want to **see**:
 :::
 
 :::{.project title="One Subject, Five Styles"}
-Choose one subject, like "a bus at our school." Write 5 prompts for it in 5 styles: photo, cartoon, pixel art, oil painting, and a style from your home country. Make the 5 pictures, or give the prompts to Mr. Ross. Make a poster of the 5 pictures.
+Choose one subject, like "a bus at our school." Write 5 prompts for it in 5 styles: photo, cartoon, pixel art, oil painting, and a style from your home country. Make the 5 pictures, or give the prompts to your teacher. Make a poster of the 5 pictures.
 :::
 
 :::{.project title="Who Does It Show?"}
-Write prompts for "a doctor," "a nurse," "a scientist," and "a basketball player." Mr. Ross makes each one 4 times. Count who the AI shows: men or women, young or old, skin colors. What do you notice? Bring your results to Lesson 4.2.
+Write prompts for "a doctor," "a nurse," "a scientist," and "a basketball player." Your teacher makes each one 4 times. Count who the AI shows: men or women, young or old, skin colors. What do you notice? Bring your results to Lesson 4.2.
 :::
 
 :::{.explore-link}

@@ -65,7 +65,7 @@ Most people say they would pull the lever: 1 is fewer than 5. But change the sto
 :::{.steps}
 1. Make two tracks on the floor with tape or desks. One student stands at the **lever**.
 2. Students (or paper people, if the class is small) stand on the tracks: 5 on the main track, 1 on the side track.
-3. Mr. Ross reads each round from your sheet. The lever student decides out loud. Then **everyone** votes by walking to one side of the room: **pull** or **do not pull**.
+3. Your teacher reads each round from your sheet. The lever student decides out loud. Then **everyone** votes by walking to one side of the room: **pull** or **do not pull**.
 4. After each round, one person from each side says why.
 :::
 
@@ -107,7 +107,7 @@ Work in groups of 3 or 4 (in a class of 4, one group).
 :::{.note title="Right now (fall 2026)"}
 - The **European Union** passed the first big AI law in 2024. It bans some uses, like scoring people on their behavior. It has strict rules for "high-risk" AI, like AI that helps choose who gets a job. The rules start in steps through 2027.
 - The **United States** has no single national AI law. Many states have their own, like California and Colorado. In December 2025, the President ordered the government to challenge state AI laws it sees as too strict. As of spring 2026, the state laws were still in force. Leaders disagree about who should make the rules.
-- Our **school district** has its own rules for AI use. Ask Mr. Ross what they say.
+- Our **school district** has its own rules for AI use. Ask your teacher what they say.
 :::
 :::
 

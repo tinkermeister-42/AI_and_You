@@ -37,7 +37,7 @@ Every one of those essays was written by a person. Today you find out why detect
 
 {{< warmup >}}
 
-Mr. Ross reads 4 short paragraphs. Some were written by students in Lesson 3.3 (no names). Some were written by AI. After each one, hold up **H** for human or **A** for AI.
+Your teacher reads 4 short paragraphs. Some were written by students in Lesson 3.3 (no names). Some were written by AI. After each one, hold up **H** for human or **A** for AI.
 
 How many did the class get right? Was it easy?
 

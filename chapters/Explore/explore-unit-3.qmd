@@ -47,7 +47,7 @@ Why? A chatbot predicts what comes next in the chat. After "I think that is wron
 The words a chatbot can read at one time are its context window. A very long chat can be too big for it. Then the chatbot may lose the oldest part of the chat, and forget what you said at the start. If a long chat starts to go wrong, start a new chat and type the important context again.
 
 :::{.note title="Right now (fall 2026)"}
-Some AI tools now have a **memory** feature. They save facts about you from one chat to the next. If your class AI tool has one, Mr. Ross will show you where it is. Do not let it save private information.
+Some AI tools now have a **memory** feature. They save facts about you from one chat to the next. If your class AI tool has one, your teacher will show you where it is. Do not let it save private information.
 :::
 
 ### Follow-Up Moves in Your Language
@@ -91,7 +91,7 @@ Some chatbots do not only predict words. They also search the web, read some pag
 So a link is a place to **start** checking, not proof. Open it and read it yourself.
 
 :::{.note title="Right now (fall 2026)"}
-Many chatbots can now search the web and show links. Some school AI tools cannot search the web at all, and some will not give links. Ask Mr. Ross what yours can do.
+Many chatbots can now search the web and show links. Some school AI tools cannot search the web at all, and some will not give links. Ask your teacher what yours can do.
 :::
 
 ### Harder Topics to Check
@@ -154,7 +154,7 @@ Some of the newest image tools work in a different way, but many still use diffu
 
 ### The Counting Test
 
-Write prompts for "exactly 3 red balls," then 5, then 7, then 12. Give them to Mr. Ross, or try them at home with a tool you are allowed to use. Count the balls in each picture. When does the AI start to get it wrong? Why do you think counting is hard for an AI that removes noise a little at a time?
+Write prompts for "exactly 3 red balls," then 5, then 7, then 12. Give them to your teacher, or try them at home with a tool you are allowed to use. Count the balls in each picture. When does the AI start to get it wrong? Why do you think counting is hard for an AI that removes noise a little at a time?
 
 ***
 

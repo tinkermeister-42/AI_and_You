@@ -99,7 +99,7 @@ Should an app show you what you **like**, or what is **important**? Who should d
 {{< further >}}
 
 :::{.project title="Day 2: Trace a Story Back"}
-Mr. Ross shows a news story or picture that spread online this month. Work with a partner.
+Your teacher shows a news story or picture that spread online this month. Work with a partner.
 
 1. Use the SIFT steps from Lesson 4.3.
 2. Ask your class AI tool: **"Is this story true? Give me 3 sources."** Then check every source yourself. Does it say what the AI says?

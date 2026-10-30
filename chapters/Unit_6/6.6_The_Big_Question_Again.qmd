@@ -1,6 +1,6 @@
 # 6.6 - The Big Question, Again {.unnumbered}
 
-On the first day of this class, you answered a question: *Is AI like a human brain?* Mr. Ross kept your answer.
+On the first day of this class, you answered a question: *Is AI like a human brain?* Your teacher kept your answer.
 
 Since then, you were a neuron. You trained a neural network with Pokémon cards. You sat in the Klingon Room. You caught chatbots making things up, and you saw how AI changes jobs, news, and friendship.
 
@@ -40,7 +40,7 @@ Bring back the Big Question answers from Lesson 1.1. Make orange cards and rule 
 
 {{< warmup >}}
 
-Mr. Ross gives you your answer from the first day. Read it. On your sheet, copy what you circled: **Yes**, **A little**, or **No**, and your reason. Do you still agree with yourself?
+Your teacher gives you your answer from the first day. Read it. On your sheet, copy what you circled: **Yes**, **A little**, or **No**, and your reason. Do you still agree with yourself?
 
 {{< learn >}}
 
@@ -74,14 +74,14 @@ After all 86 billion neurons are chips, are you still you? Do you still feel any
 Now act it out with the squeeze chain from Lesson 2.2.
 
 :::{.steps}
-1. Stand in a line and hold hands. You are neurons in a brain. Mr. Ross starts a squeeze. Time how long it takes to reach the end.
-2. Mr. Ross gives one student an orange card. That student is now a **chip**. The chip follows a rule card: *When you feel a squeeze, squeeze the next hand.* Pass the squeeze again. Did anything change?
+1. Stand in a line and hold hands. You are neurons in a brain. Your teacher starts a squeeze. Time how long it takes to reach the end.
+2. Your teacher gives one student an orange card. That student is now a **chip**. The chip follows a rule card: *When you feel a squeeze, squeeze the next hand.* Pass the squeeze again. Did anything change?
 3. Replace one more student at a time, until everyone is a chip. Pass the squeeze each time.
 4. Is the line still a "brain"? When did it stop, or did it?
 :::
 
 :::{.teacher title="Class size"}
-**4 students:** make a line of 4 with Mr. Ross. Replace one student each round. **Big class:** make two lines. One line stays all neurons. Compare the squeeze times.
+**4 students:** make a line of 4 with the teacher. Replace one student each round. **Big class:** make two lines. One line stays all neurons. Compare the squeeze times.
 :::
 
 {{< talk >}}
@@ -113,7 +113,7 @@ Split into two teams: **"AI is like a brain"** and **"AI is not like a brain."**
 2. Each team speaks for 2 minutes. Then each team answers the other for 1 minute.
 3. At the end, everyone votes for the side they **really** believe.
 
-In a class of 4, make two teams of 2. Mr. Ross can join the smaller team.
+In a class of 4, make two teams of 2. Your teacher can join the smaller team.
 :::
 
 :::{.project title="A Letter to Next Year's Class"}

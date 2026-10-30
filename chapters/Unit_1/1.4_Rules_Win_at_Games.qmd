@@ -141,7 +141,7 @@ Play tic-tac-toe on paper with a partner. One of you is the **bot**. The bot mus
 :::
 
 :::{.project title="My AI Promise for 2036"}
-Write one promise about AI for 10 years from now. Use the form: *"By 2036, AI will ..."* Mr. Ross keeps the promises. Will you be right, or will it be hype?
+Write one promise about AI for 10 years from now. Use the form: *"By 2036, AI will ..."* Your teacher keeps the promises. Will you be right, or will it be hype?
 :::
 
 :::{.explore-link}

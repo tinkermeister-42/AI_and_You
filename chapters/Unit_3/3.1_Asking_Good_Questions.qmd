@@ -92,7 +92,7 @@ For context, "I am in high school" is enough. The AI does not need to know **whi
 :::
 
 :::{.note title="Right now (fall 2026)"}
-Your class AI tool is **Raina**, in MagicSchool. Mr. Ross will show you how to open it. In this book, it is called **your class AI tool**.
+Your class AI tool is **Raina**, in MagicSchool. Your teacher will show you how to open it. In this book, it is called **your class AI tool**.
 
 Many popular chatbots have age rules. ChatGPT says users must be at least 13, and users under 18 need a parent's permission. Claude.ai says users must be 18. Use the tool your school gives you.
 :::
@@ -114,7 +114,7 @@ Work with a partner, or in a group of 3. (In a class of 4, make two pairs.)
 {{< include /assets/Unit_3/prompt_builder.html >}}
 
 :::{.teacher title="Big class? Make it a race"}
-Split into two teams. Mr. Ross puts one weak prompt on the projector. Each team writes a better prompt in 3 minutes. Mr. Ross tries both on the projector. The class votes: which answer is more useful? Then switch to a new weak prompt.
+Split into two teams. The teacher puts one weak prompt on the projector. Each team writes a better prompt in 3 minutes. The teacher tries both on the projector. The class votes: which answer is more useful? Then switch to a new weak prompt.
 :::
 
 {{< talk >}}
