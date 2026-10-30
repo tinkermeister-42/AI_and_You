@@ -48,6 +48,8 @@ Long ago, people made big promises about AI. Read each one. Did it come true by 
 :::{.think title="Which promises came true?"}
 **None of them came true by the time they said.**
 
+Parts of Promise **A** came true much later. Today, AI can talk, see, and write. Can it know that it exists? Nobody knows.
+
 Promise **B** came true later. A computer beat the world chess champion in **1997**. That is 39 years later, not 10.
 
 Promise **C** did not come true by the 1970s. Today, some people say AI is getting close. Other people strongly disagree. You will think about this in Unit 6.
@@ -65,10 +67,14 @@ People call these times **{{< glink slug="ai-winter" text="AI winters" >}}**. (I
 
 ![](/images/Unit_1/1.4_ai_winters.svg){width="700px" fig-align="center" fig-alt="A timeline from 1950 to 2000. 1956: AI gets its name. Big dreams until the early 1970s. Then an AI winter in the late 1970s. Rules for business in the 1980s. Then another AI winter around 1990. 1997: Deep Blue wins at chess."}
 
-:::{.gotcha title="Watch out for hype"}
-The promises in the Warm Up were **{{< glink hype >}}**: big promises, more than the facts showed. Hype brings money and attention. When the promises fail, people stop trusting the field.
+:::{.think title="This time is different"}
+The promises in the Warm Up were **{{< glink hype >}}**. In 1958 and 1970, they were much bigger than what the machines could do. When the promises failed, the money stopped.
 
-People make big promises about AI today too. When you hear one, ask: **Who says this? What do they get if I believe it?**
+But the promises were not all wrong. Some were only too early.
+
+Today is different. AI already does many things people once only dreamed about. It talks, writes, translates, and finds things in pictures. Millions of people use it every day. Many big promises today start from things AI can already do.
+
+That does not mean every promise will come true. When you hear one, ask: **What can AI already do? Who checked it?**
 :::
 
 ***
@@ -124,7 +130,8 @@ Deep Blue beat the best chess player in the world. Is Deep Blue **smart**?
 - I think Deep Blue **is** / **is not** smart, because ...
 - The most important rule for the bot was ... because ...
 - Rules work for games, but not for ... , because ...
-- People make big promises about AI because ...
+- AI today is different from AI in 1970 because ...
+- One promise about AI today that I think (will / will not) come true is ... , because ...
 :::
 
 {{< further >}}
