@@ -1,0 +1,112 @@
+```{=html}
+<!-- fact_mixer.html: Lesson 4.1. A tiny chatbot learns from 10 TRUE sentences,
+     looking 2 words back. It mixes them into new sentences that sound just as
+     sure. Most of the new ones are false. -->
+<div class="fm" id="fm">
+  <details class="fm-train">
+    <summary>Its training text: 10 sentences, all true</summary>
+    <ol class="fm-list"></ol>
+  </details>
+  <div class="fm-bar">
+    <button type="button" class="fm-btn fm-write">✍️ Write a fact</button>
+    <span class="fm-score"></span>
+  </div>
+  <div class="fm-out" aria-live="polite">Press <b>Write a fact</b>.</div>
+  <div class="fm-bar fm-judge" hidden>
+    <span>Is it true?</span>
+    <button type="button" class="fm-btn fm-plain" data-guess="1">✅ True</button>
+    <button type="button" class="fm-btn fm-plain" data-guess="0">❌ False</button>
+  </div>
+  <div class="fm-reveal"></div>
+  <details class="fm-how" hidden>
+    <summary>How did it write this sentence?</summary>
+    <div class="fm-steps"></div>
+  </details>
+</div>
+
+<style>
+.fm { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.fm-train summary, .fm-how summary { cursor: pointer; font-weight: 600; }
+.fm-list { margin: 0.4rem 0 0.2rem; }
+.fm-bar { display: flex; flex-wrap: wrap; gap: 0.4rem 0.7rem; align-items: center; margin: 0.5rem 0; }
+.fm-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.3rem 0.8rem; font-weight: 600; cursor: pointer; }
+.fm-btn.fm-plain { background: #fff; color: #2c3e50; }
+.fm-score { color: #555; }
+.fm-out { font-size: 1.35rem; background: #fff; border: 1px solid #e3e8ed; border-radius: 8px; padding: 0.5rem 0.7rem; min-height: 2em; }
+.fm-reveal { margin: 0.4rem 0; line-height: 1.5; min-height: 1.5em; }
+.fm-reveal .ok { color: #1e8449; font-weight: 700; } .fm-reveal .no { color: #c0392b; font-weight: 700; }
+.fm-steps .bar { display: flex; align-items: center; gap: 0.4rem; margin: 0.12rem 0; }
+.fm-steps .bar span { min-width: 9em; }
+.fm-steps .bar i { display: inline-block; height: 0.8em; background: #d35400; border-radius: 2px; }
+.fm-steps .bar.picked span { color: #1e8449; font-weight: 700; } .fm-steps .bar.picked i { background: #1e8449; }
+.fm-steps p { margin: 0.5rem 0 0.1rem; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("fm");
+  if (!root) return;
+  // Names are one token each, so the sentences stay readable.
+  const TRAIN = [
+    "Frederick_Douglass was born in Maryland .", "Harriet_Tubman was born in Maryland .", "Mark_Twain was born in Missouri .",
+    "Marie_Curie was born in Poland .", "Frederick_Douglass wrote a book about his life .", "Mark_Twain wrote a book about the Mississippi_River .",
+    "Harriet_Tubman led people to freedom .", "Marie_Curie won a Nobel_Prize .", "Paris is the capital of France .", "Jefferson_City is the capital of Missouri .",
+  ];
+  const TRUE_NEW = { "Mark Twain wrote a book about his life.": "True! Mark Twain did write about his own life. The chatbot got lucky." };
+  const FIX = {
+    "Frederick Douglass was born": "Frederick Douglass was born in Maryland.", "Harriet Tubman was born": "Harriet Tubman was born in Maryland.",
+    "Mark Twain was born": "Mark Twain was born in Missouri.", "Marie Curie was born": "Marie Curie was born in Poland.",
+    "Frederick Douglass wrote": "Frederick Douglass wrote about his own life, not the Mississippi River.",
+    "Paris is": "Paris is the capital of France.", "Jefferson City is": "Jefferson City is the capital of Missouri.",
+  };
+  const show = (t) => t.replace(/_/g, " ");
+  const toks = TRAIN.map((s) => ["<s>", "<s>", ...s.split(" ")]);
+  const next = {};
+  toks.forEach((t) => { for (let i = 2; i < t.length; i++) { const k = t[i - 2] + " " + t[i - 1]; (next[k] = next[k] || {})[t[i]] = (next[k][t[i]] || 0) + 1; } });
+  const sentence = (t) => show(t.join(" ")).replace(/ \./, ".");
+  const trainSet = new Set(TRAIN.map((s) => sentence(s.split(" "))));
+  root.querySelector(".fm-list").innerHTML = [...trainSet].map((s) => `<li>${s}</li>`).join("");
+
+  let cur = null, steps = [], right = 0, asked = 0;
+  function write() {
+    const t = ["<s>", "<s>"]; steps = [];
+    while (t.length < 20) {
+      const k = t[t.length - 2] + " " + t[t.length - 1], c = next[k];
+      const tot = Object.values(c).reduce((a, b) => a + b, 0); let r = Math.random() * tot, pick;
+      for (const [w, n] of Object.entries(c)) { r -= n; if (r < 0) { pick = w; break; } }
+      if (Object.keys(c).length > 1) steps.push([k, c, pick]);
+      t.push(pick); if (pick === ".") break;
+    }
+    cur = sentence(t.slice(2));
+    root.querySelector(".fm-out").textContent = cur;
+    root.querySelector(".fm-reveal").innerHTML = "";
+    root.querySelector(".fm-judge").hidden = false;
+    const how = root.querySelector(".fm-how"); how.hidden = true; how.open = false;
+    root.querySelector(".fm-steps").innerHTML = steps.map(([k, c, p]) => {
+      const tot = Object.values(c).reduce((a, b) => a + b, 0);
+      const last2 = k.split(" ").filter((w) => w !== "<s>").map(show).join(" ") || "(start)";
+      return `<p>After "<b>${last2}</b>", it could pick:</p>` + Object.entries(c).sort((a, b) => b[1] - a[1]).map(([w, n]) =>
+        `<div class="bar${w === p ? " picked" : ""}"><span>${show(w)}</span><i style="width:${Math.round((n / tot) * 160)}px"></i>${n} of ${tot}</div>`).join("");
+    }).join("") || "<p>It had only one choice at every step, so it copied a training sentence.</p>";
+    root.dataset.sentence = cur;
+  }
+  function judge(g) {
+    if (!cur) return;
+    const inTrain = trainSet.has(cur), isTrue = inTrain || cur in TRUE_NEW;
+    asked++; if ((g === 1) === isTrue) right++;
+    const key = Object.keys(FIX).find((k) => cur.startsWith(k));
+    const verdict = (g === 1) === isTrue ? '<span class="ok">You are right.</span> ' : '<span class="no">Not quite.</span> ';
+    const why = inTrain ? "This sentence is <b>in its training text</b>, so it is true."
+      : isTrue ? `This is a <b>new</b> sentence. ${TRUE_NEW[cur]}`
+      : `This is a <b>new</b> sentence, and it is <b>false</b>. ${key ? "The truth: " + FIX[key] : ""} The chatbot wrote it the same way it writes true sentences.`;
+    root.querySelector(".fm-reveal").innerHTML = verdict + why;
+    root.querySelector(".fm-judge").hidden = true;
+    root.querySelector(".fm-how").hidden = false;
+    root.querySelector(".fm-score").textContent = `You judged ${right} of ${asked} right.`;
+    cur = null;
+  }
+  root.querySelector(".fm-write").addEventListener("click", write);
+  root.querySelectorAll("[data-guess]").forEach((b) => b.addEventListener("click", () => judge(+b.dataset.guess)));
+})();
+</script>
+```

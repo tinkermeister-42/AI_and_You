@@ -58,6 +58,18 @@ Translating a translation back to the first language, to check it. If the meanin
 
 ***
 
+### bias {#glossary-bias}
+
+When a system is unfair to some people, or works better for some people than for others. In AI, bias usually comes from the training data, from people missing in the data, or from shortcuts. (A different meaning: {{< glink slug="bias-number" text="bias, a number in a neuron" >}}.)
+
+> **Example:**
+>
+> A face program that is right 99% of the time for some faces and 65% of the time for others is biased.
+
+**See Also:** {{< glink stereotype >}}, {{< glink shortcut >}}
+
+***
+
 ### bias (a number in a neuron) {#glossary-bias-number}
 
 In a neuron, an extra number that is always added to the total. It does the same job as a threshold. (The word "bias" has another meaning too: being unfair. See Unit 4.)
@@ -166,11 +178,27 @@ A chess computer made by IBM. In 1997, it beat the world chess champion, Garry K
 
 ***
 
+### deepfake {#glossary-deepfake}
+
+A fake picture, video, or voice of a real person, made with AI.
+
+**See Also:** {{< glink "voice clone" >}}, {{< glink "reverse image search" >}}
+
+***
+
 ### dendrite {#glossary-dendrite}
 
 One of the short branches of a neuron. Dendrites take in signals from other neurons.
 
 **See Also:** {{< glink neuron >}}
+
+***
+
+### detector {#glossary-detector}
+
+A tool that tries to tell if something was made by AI. AI writing detectors make many mistakes, most often with people who write in a second language.
+
+**See Also:** {{< glink "false positive" >}}, {{< glink predictable >}}
 
 ***
 
@@ -232,11 +260,25 @@ A quick answer that is close, but not exact. You can use it to check if an answe
 
 ***
 
+### evidence {#glossary-evidence}
+
+Facts or things that show something is true, like your drafts, your notes, and the version history of your writing.
+
+***
+
 ### fact-check {#glossary-fact-check}
 
 To find out if something is true, using good sources.
 
 **See Also:** {{< glink "lateral reading" >}}, {{< glink source >}}
+
+***
+
+### false positive {#glossary-false-positive}
+
+When a test says "yes" but the true answer is "no." When a detector calls human writing "AI," that is a false positive.
+
+**See Also:** {{< glink detector >}}
 
 ***
 
@@ -482,6 +524,14 @@ Turning in someone else's words or ideas as your own. Turning in AI writing as y
 
 ***
 
+### predictable {#glossary-predictable}
+
+Easy to guess before it happens. AI writing is very predictable, because a chatbot picks likely next words. Simple, clear human writing is predictable too.
+
+**See Also:** {{< glink prediction >}}
+
+***
+
 ### prediction {#glossary-prediction}
 
 A best guess about something you do not know yet. A prediction can be wrong.
@@ -528,6 +578,14 @@ With no pattern, so you cannot guess what comes next.
 
 ***
 
+### reverse image search {#glossary-reverse-image-search}
+
+Searching with a picture instead of words, to find where else the picture is online and where it first appeared.
+
+**See Also:** {{< glink "lateral reading" >}}
+
+***
+
 ### revise {#glossary-revise}
 
 To change your work to make it better, often after feedback.
@@ -554,6 +612,14 @@ An exact instruction that a computer follows: "If this happens, do that." In a n
 
 ***
 
+### shortcut {#glossary-shortcut}
+
+A clue that gives the right answer in the training examples, but is not the real reason. Clever Hans the horse watched people's faces instead of doing math. An AI learned to look for snow instead of wolves.
+
+**See Also:** {{< glink bias >}}
+
+***
+
 ### source {#glossary-source}
 
 Where a fact comes from: a book, a website, a news story, or a person.
@@ -562,9 +628,25 @@ Where a fact comes from: a book, a website, a news story, or a person.
 
 ***
 
+### stereotype {#glossary-stereotype}
+
+An idea that all people in a group are the same, like "all nurses are women." AI can learn stereotypes from its training data.
+
+**See Also:** {{< glink bias >}}
+
+***
+
 ### style {#glossary-style}
 
 The way a picture looks: a photo, a cartoon, a watercolor painting, pixel art.
+
+***
+
+### sycophancy {#glossary-sycophancy}
+
+Agreeing with someone just to please them, even when they are wrong. A chatbot can learn this, because people often give good ratings to answers that agree with them.
+
+**See Also:** {{< glink hallucination >}}
 
 ***
 
@@ -669,6 +751,22 @@ To know what something means, not only what it looks like. Whether AI can unders
 > In the Klingon Room, the person copies correct replies in Klingon, but they do not understand Klingon.
 
 **See Also:** {{< glink "ELIZA effect" >}}
+
+***
+
+### verify {#glossary-verify}
+
+To check that something is true, using good sources.
+
+**See Also:** {{< glink fact-check >}}
+
+***
+
+### voice clone {#glossary-voice-clone}
+
+An AI copy of a person's voice, made from a short recording. Scammers use voice clones to pretend to be someone's family member.
+
+**See Also:** {{< glink deepfake >}}
 
 ***
 

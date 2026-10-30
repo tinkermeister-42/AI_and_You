@@ -1,0 +1,126 @@
+# 4.4 - Why AI Cheat Detectors Fail {.unnumbered}
+
+Some schools use "AI detectors." A teacher puts in a student's essay. The detector says: "87% likely written by AI."
+
+In 2023, researchers at Stanford University tested 7 popular detectors. They used 91 essays written by **people learning English**, for an English test. The detectors said **61%** of them were written by AI. At least one detector blamed almost **all** of them (98%).
+
+Every one of those essays was written by a person. Today you find out why detectors blame people who write in a second language, like many students in this room.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** Human or AI? [6 min]{.time}
+- [👥]{.icon} **Learn Together** How detectors guess [10 min]{.time}
+- [🛠️]{.icon} **Try It** Test the toy detector [17 min]{.time}
+- [💬]{.icon} **Talk About It** Should schools use them? [7 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can explain how an AI detector makes its guess.
+- [ ] I can explain why detectors blame people who write in simple English.
+- [ ] I can explain why a detector score is not proof.
+- [ ] I can protect myself with evidence of my own work.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🚨]{.icon} {{< glink detector >}}: a tool that tries to tell if writing was made by AI
+- [🎯]{.icon} {{< glink predictable >}}: easy to guess before it happens
+- [⚠️]{.icon} {{< glink "false positive" >}}: when a test says "yes" but the true answer is "no"
+- [🧾]{.icon} {{< glink evidence >}}: facts or things that show something is true
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_4/4.4_Why_AI_Cheat_Detectors_Fail.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Mr. Ross reads 4 short paragraphs. Some were written by students in Lesson 3.3 (no names). Some were written by AI. After each one, hold up **H** for human or **A** for AI.
+
+How many did the class get right? Was it easy?
+
+{{< learn >}}
+
+### 4.4.1 - How Detectors Guess
+
+Remember Lesson 2.9: a chatbot picks likely next words. So AI writing is very {{< glink predictable >}}. Most words are the words you would guess.
+
+An AI {{< glink detector >}} measures how predictable the words are. Very predictable writing: it says "AI." Surprising words: it says "human."
+
+***
+
+### 4.4.2 - Who Gets Blamed
+
+What kind of **human** writing is very predictable? Writing with short sentences and common words. That is how many people write in a second language. It is also what teachers ask English learners to do!
+
+So detectors make a {{< glink "false positive" >}}: they say "AI" when a person wrote it. The Stanford study found this happens far more to people learning English. Essays by U.S. 8th graders who grew up speaking English were called human more than 90% of the time.
+
+***
+
+### 4.4.3 - Detectors Miss AI, Too
+
+:::{.real-world title="Even its makers gave up"}
+In 2023, OpenAI, the company that makes ChatGPT, made its own detector. It found only **26%** of AI writing. It called **9%** of human writing "AI." OpenAI shut it down after 6 months because it was not accurate enough.
+:::
+
+It is easy to fool a detector: ask the AI to use rare words, or change some words by hand. So detectors blame honest students who write simply, and miss people who cheat carefully.
+
+:::{.note title="Right now (fall 2026)"}
+Many schools still use AI detectors. The companies that sell them say their tools are now accurate and rarely wrong. Researchers who test them keep finding mistakes, most often for people writing in a second language.
+:::
+
+***
+
+### 4.4.4 - Protect Yourself
+
+A detector score is a **guess**. It is not proof. If someone says you used AI, you need {{< glink evidence >}} of your own work:
+
+- **Keep your drafts.** Do not delete your first tries.
+- **Use version history.** Many writing apps save every change you make, with the time.
+- **Keep your notes,** even messy ones, and your notes in your home language.
+- **Be ready to talk** about your writing: why you chose your words, what you changed.
+- **Write an AI note** (Lesson 3.3) when you use AI the allowed way.
+
+{{< tryit >}}
+
+### 4.4.5 - Test the Toy Detector
+
+Work with a partner.
+
+:::{.steps}
+1. Press each of the first 3 buttons. Write what the toy detector says on your sheet. Was it right?
+2. Press **my own writing**. Each partner writes 5 sentences about themselves, in simple English. Press **Check it**.
+3. Add your results to the class chart: how many human paragraphs did it call "AI"?
+4. Now change 3 words in your paragraph to rare, fancy words. Check it again. What happened?
+:::
+
+{{< include /assets/Unit_4/toy_detector.html >}}
+
+This is a **toy**. It only counts common words. The yellow words are the ones it did not expect. Real detectors use a language model to measure how predictable each word is. They are better than this toy, but they make the same kind of mistake.
+
+:::{.gotcha title="Class size"}
+**Small class:** everyone tests their own paragraph, then the class looks at all the results together. **Big class:** make a big chart on the board with two columns: "Human writing called AI" and "Human writing called human." Every pair adds tally marks.
+:::
+
+{{< talk >}}
+
+Should our school use AI detectors? If a teacher thinks a student used AI, what should the teacher do instead?
+
+:::{.frames}
+- The toy detector called my writing ... because ...
+- Detectors blame people learning English because ...
+- A detector score is not proof because ...
+- Instead of a detector, a teacher could ...
+:::
+
+{{< further >}}
+
+:::{.project title="Show Your Work"}
+Open a writing app with version history, like Google Docs. Write a paragraph, then change it 3 times. Open the version history. What does it show? How could it protect you?
+:::
+
+:::{.project title="A Letter to the School"}
+Write a short letter to our principal about AI detectors. Use evidence from this lesson: the Stanford study and OpenAI's detector. Say what you think the school should do. Ask a partner for feedback before you send it.
+:::

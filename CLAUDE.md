@@ -12,6 +12,11 @@ many with little math background. The six units and every lesson are in
 - **38 lessons.** Each lesson is a 40-minute core (the "Today's Plan" minutes
   add to 40) plus a **Go Further** that can fill a second day. Behind
   schedule means skipping Go Further, never squeezing the core
+- **Budget at twice the time.** Every activity takes these students about
+  twice as long as a typical estimate: they need a lot of guidance through
+  language barriers and learning gaps. Plan a core with about half of what
+  would fill 40 minutes in a typical class (one main activity, not two).
+  What does not fit goes in Go Further
 - The teacher thinks 38 is already plenty. Do not add lessons to the map
   without asking
 - Students miss days, so every lesson stands alone and the page is the

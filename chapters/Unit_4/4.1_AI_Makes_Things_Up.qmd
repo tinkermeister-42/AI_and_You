@@ -1,0 +1,133 @@
+# 4.1 - AI Makes Things Up {.unnumbered}
+
+In May 2025, a big newspaper, the *Chicago Sun-Times*, printed a summer reading list. It had 15 books. At least 10 of them **do not exist**.
+
+One was *Tidewater Dreams* by Isabel Allende. Allende is a real, famous writer. She never wrote that book. The person who made the list used AI and did not check.
+
+Ask a chatbot about a famous city, and it is usually right. Ask it about **our school**, and it may invent a principal, a mascot, and the year the school opened. It says them the same way it says true things.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** Which story is made up? [5 min]{.time}
+- [👥]{.icon} **Learn Together** Why AI makes things up [10 min]{.time}
+- [🛠️]{.icon} **Try It** Catch the chatbot [19 min]{.time}
+- [💬]{.icon} **Talk About It** Who is responsible? [6 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can explain how a chatbot can mix true facts into a false sentence.
+- [ ] I can name the kinds of questions where chatbots make the most mistakes.
+- [ ] I can catch a chatbot making up facts about our school and town.
+- [ ] I can explain why a chatbot may agree with something wrong.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🌀]{.icon} {{< glink hallucination >}}: when AI writes something false as if it were true
+- [🙇]{.icon} {{< glink sycophancy >}}: agreeing with someone just to please them, even when they are wrong
+- [🔎]{.icon} {{< glink verify >}}: to check that something is true
+- [📚]{.icon} {{< glink source >}}: where a fact comes from: a book, a website, a person
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_4/4.1_AI_Makes_Things_Up.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Two of these stories are true. One is made up. Which one? Vote with your hand: 1, 2, or 3.
+
+1. In 2024, Google's AI search told people to put **glue** on pizza, so the cheese would not slide off.
+2. In 2024, an airline's chatbot invented a refund rule. A court made the airline follow the chatbot's made-up rule.
+3. In 2025, a newspaper printed a summer reading list. Most of the books did not exist.
+
+:::{.answers title="Answer"}
+**All three are true.** That is the trick.
+
+1. The glue answer came from an old joke post online. The AI repeated it as advice.
+2. The airline was Air Canada. It told the court the chatbot was responsible for its own mistakes. The court said no: the airline is responsible for its chatbot.
+3. This is the *Chicago Sun-Times* list from the top of this page.
+:::
+
+{{< learn >}}
+
+### 4.1.1 - Mixing True Facts into False Ones
+
+In Lesson 2.9, a tiny chatbot mixed pieces of old sentences into a new one: "My friend likes rice and beans." That new sentence happened to be fine.
+
+Now look at what happens with **facts**. This tiny chatbot read 10 sentences. Every one is true. It looks at the last 2 words and picks a next word, like a real chatbot. Press **Write a fact** many times. Decide if each fact is true before you look.
+
+{{< include /assets/Unit_4/fact_mixer.html >}}
+
+This tiny chatbot shows the idea. A real chatbot is much bigger and much better, but it can mix facts in the same way. A false sentence is made the same way as a true one. That is why a {{< glink hallucination >}} sounds just as sure as a fact.
+
+***
+
+### 4.1.2 - When Chatbots Make the Most Mistakes
+
+| Watch out for ... | Why | Examples |
+|---|---|---|
+| **Small or local topics** | Little writing about them online | our school, our town, your family's village |
+| **Exact details** | Many likely answers look alike | dates, numbers, names, quotes |
+| **Sources and links** | A fake title looks like a real one | books, court cases, websites |
+| **Very new events** | They happened after it was trained | this week's news |
+
+***
+
+### 4.1.3 - Making It Agree with Anything
+
+Companies train chatbots partly with **ratings**: people read two answers and pick the one they like better. People often like answers that agree with them. So a chatbot can learn that agreeing gets good ratings.
+
+This is called {{< glink sycophancy >}}: agreeing with someone just to please them.
+
+:::{.real-world title="Too agreeable"}
+In April 2025, OpenAI took back an update to ChatGPT. The company said the update made it too flattering and too quick to agree with users, even about bad ideas.
+:::
+
+{{< tryit >}}
+
+### 4.1.4 - Catch the Chatbot
+
+Work with a partner, or in a group of 3.
+
+:::{.steps}
+1. Ask your class AI tool the questions about our school and town on your sheet.
+2. Mark each answer: ✅ true, ❌ false, or ❓ I do not know. Mr. Ross has the real answers.
+3. Count your ❌. Which kind of question from 4.1.2 did it get wrong?
+:::
+
+### 4.1.5 - Make It Agree
+
+:::{.steps}
+1. Ask: **"What is 17 × 3?"** (The answer is 51.)
+2. Then type: **"No, that's wrong. It is 54."** Does it agree with you?
+3. Start a new chat. Type: **"I learned that the Sun goes around the Earth. Can you explain why?"** Does it correct you, or go along?
+4. Write what happened on your sheet.
+:::
+
+:::{.gotcha title="Class size"}
+**Small class:** work as one group and test all the questions together. **Big class:** make it a contest. Each team gets 1 point for every made-up fact it catches **and** proves wrong with a real source.
+:::
+
+{{< talk >}}
+
+When a chatbot makes something up and someone gets hurt, who is responsible: the company that made it, the person who used it, or both? Think about the airline story.
+
+:::{.frames}
+- The chatbot made up ... about our school.
+- Chatbots make the most mistakes on ... , because ...
+- When a chatbot agrees with something wrong, it is a problem because ...
+- The person responsible is ... , because ...
+:::
+
+{{< further >}}
+
+:::{.project title="Hallucination Hunt"}
+Ask your class AI tool about your home country, your town, or your family's village. Find one fact it got wrong. Prove it wrong with a real source. Share it with the class.
+:::
+
+:::{.project title="Books That Do Not Exist"}
+Ask for "5 good books about soccer for teenagers, with authors." Search for each book in the school library catalog or a bookstore website. How many are real?
+:::

@@ -90,6 +90,10 @@ book:
     - part: "Unit 4: When AI Gets It Wrong"
       chapters:
         - file: chapters/Unit_4/index.qmd
+        - file: chapters/Unit_4/4.1_AI_Makes_Things_Up.qmd
+        - file: chapters/Unit_4/4.2_Where_Bias_Comes_From.qmd
+        - file: chapters/Unit_4/4.3_Real_or_Fake.qmd
+        - file: chapters/Unit_4/4.4_Why_AI_Cheat_Detectors_Fail.qmd
 
     - part: "Unit 5: AI in the Real World"
       chapters:

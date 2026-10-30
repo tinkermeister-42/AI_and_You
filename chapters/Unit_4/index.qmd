@@ -2,9 +2,9 @@
 
 **Unit 4: When AI Gets It Wrong**
 
-AI lies, AI is biased, and AI can be used to fake pictures, videos, and voices. We will learn how to catch it, how to check its work, and why “AI cheat detectors” do not really work.
+AI makes things up. AI can be unfair to some people. AI can be used to fake pictures, videos, and voices. We will learn how to catch it, how to check its work, and why “AI cheat detectors” do not really work.
 
-You will build your own toolkit for spotting AI-generated content.
+You will learn why looking for clues stops working, and what to check instead.
 
 ***
 
@@ -16,3 +16,19 @@ By the end of this unit, you will be able to:
 * Explain where bias in AI comes from
 * Spot fake pictures, videos, and voices
 * Explain why AI cheat detectors do not really work
+
+***
+
+## Topics in This Unit
+
+[**AI Makes Things Up**](4.1_AI_Makes_Things_Up.qmd)\
+How true facts mix into false ones, and why a chatbot may agree with anything.
+
+[**Where Bias Comes From**](4.2_Where_Bias_Comes_From.qmd)\
+Data from the past, missing people, and shortcuts like Clever Hans.
+
+[**Real or Fake?**](4.3_Real_or_Fake.qmd)\
+Why looking for clues stops working, and how to check the source instead.
+
+[**Why AI Cheat Detectors Fail**](4.4_Why_AI_Cheat_Detectors_Fail.qmd)\
+How detectors guess, who they blame, and how to protect yourself.

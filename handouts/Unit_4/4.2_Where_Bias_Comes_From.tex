@@ -1,0 +1,83 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\lessontitle{Where Bias Comes From}
+\partner
+
+\vspace{0.4em}
+{\large\textbf{1. He or she?}} ``O bir doktor. O bir hemşire.'' (Turkish: \textit{o} means he \textbf{or} she.)
+
+\vspace{0.5em}
+My prediction: \textbf{doctor:} he / she \qquad \textbf{nurse:} he / she
+
+\vspace{0.6em}
+What the AI said: \ansline{4.9in}{Answers vary. Often ``He is a doctor. She is a nurse.''}
+
+\vspace{0.6em}
+Why? \ansline{6.3in}{It copied a pattern from its training data.}
+
+\vspace{1.0em}
+{\large\textbf{2. Three ways bias gets in.}}
+
+\vspace{0.3em}
+\begin{tabular}{|R{1.8in}|R{4.7in}|}
+\hline
+\textbf{Way} & \textbf{Example} \\ \hline
+\ans{The data copies the past.} & \ans{Amazon's hiring AI learned from 10 years of mostly male hires.} \\[0.6em] \hline
+\ans{Some people are missing.} & \ans{Face programs were wrong up to 35\% of the time for darker-skinned women.} \\[0.6em] \hline
+\ans{Shortcuts.} & \ans{The wolf AI learned to look for snow.} \\[0.6em] \hline
+\end{tabular}
+
+\vspace{1.0em}
+{\large\textbf{3. The wolf detector.}}
+
+\vspace{0.3em}
+\begin{center}\resizebox{0.8\linewidth}{!}{\fig{Unit_4/4.2_snow_detector}}\end{center}
+
+Why did the AI call the husky a wolf? \ansline{3.8in}{In training, every wolf was in snow.}
+
+\vspace{0.4em}
+\ansline{6.9in}{It learned to look for snow, not the animal.}
+
+\newpage
+
+{\large\textbf{4. Act it out: Clever Hans.}}
+
+\vspace{0.3em}
+\begin{tabular}{|R{2.6in}|c|R{2.6in}|}
+\hline
+\textbf{Round} & \textbf{Was Hans right?} & \textbf{Why?} \\ \hline
+1. The crowd knows the answer. & yes \quad no & \ans{He watched the crowd lean back.} \\[0.6em] \hline
+2. Nobody knows the answer. & yes \quad no & \ans{No one gave him a signal.} \\[0.6em] \hline
+3. Hans cannot see anyone. & yes \quad no & \ans{He could not see the signal.} \\[0.6em] \hline
+\end{tabular}
+
+\vspace{0.7em}
+Clever Hans is like the wolf AI because \ansline{3.6in}{both found a shortcut, not the real reason.}
+
+\vspace{1.0em}
+{\large\textbf{5. Test he and she in my language.}} My language: \ansline{2.0in}{Answers vary.}
+
+\vspace{0.3em}
+\begin{tabular}{|R{2.4in}|R{2.3in}|c|}
+\hline
+\textbf{English} & \textbf{The AI wrote} & \textbf{Man, woman, or both?} \\ \hline
+The doctor is busy. & & \\[0.4em] \hline
+The nurse is busy. & & \\[0.4em] \hline
+The engineer is tired. & & \\[0.4em] \hline
+The teacher is kind. & & \\[0.4em] \hline
+\end{tabular}
+
+\vspace{0.6em}
+What I noticed: \ansline{5.6in}{Answers vary.}
+
+\vspace{1.0em}
+{\large\textbf{6. Talk about it.}} The people who should fix bias in AI are \ansline{2.8in}{Answers vary.}
+
+\vspace{0.6em}
+because \ansline{6.3in}{}
+
+\end{document}

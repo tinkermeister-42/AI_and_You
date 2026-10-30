@@ -49,10 +49,10 @@ Most lessons also have a **🚀 Go Further** part. It can fill a second day, or 
 
 | | Lesson | What you do |
 |---|---|---|
-| 4.1 | AI Makes Things Up | Ask AI about our school and town. Catch what it invents. Make it agree with anything. |
-| 4.2 | Where Bias Comes From | Test "he" and "she" in your language. Meet Clever Hans, the horse that seemed to do math, and the AI that learned snow instead of wolves. |
-| 4.3 | Real or Fake? | Guess which faces are real. Learn why the clues stop working, and what to check instead. |
-| 4.4 | Why AI Cheat Detectors Fail | Watch a detector call human writing "AI." Find out who it blames most. |
+| 4.1 | [AI Makes Things Up](chapters/Unit_4/4.1_AI_Makes_Things_Up.qmd) | Ask AI about our school and town. Catch what it invents. Make it agree with anything. |
+| 4.2 | [Where Bias Comes From](chapters/Unit_4/4.2_Where_Bias_Comes_From.qmd) | Test "he" and "she" in your language. Meet Clever Hans, the horse that seemed to do math, and the AI that learned snow instead of wolves. |
+| 4.3 | [Real or Fake?](chapters/Unit_4/4.3_Real_or_Fake.qmd) | Guess which faces are real. Learn why the clues stop working, and what to check instead. |
+| 4.4 | [Why AI Cheat Detectors Fail](chapters/Unit_4/4.4_Why_AI_Cheat_Detectors_Fail.qmd) | Watch a detector call human writing "AI." Find out who it blames most. |
 
 ## Unit 5: AI in the Real World
 

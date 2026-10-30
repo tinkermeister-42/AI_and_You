@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\lessontitle{AI Makes Things Up}
+\partner
+
+\vspace{0.4em}
+{\large\textbf{1. Which story is made up?}} I voted for story \ansline{0.5in}{} \quad The answer: \ansline{3.4in}{All three are true.}
+
+\vspace{1.0em}
+{\large\textbf{2. The fact mixer.}} Write 5 facts the tiny chatbot wrote. Guess first, then check.
+
+\vspace{0.3em}
+\begin{tabular}{|R{3.4in}|c|c|c|}
+\hline
+\textbf{The chatbot wrote} & \textbf{My guess} & \textbf{Really} & \textbf{New or copied?} \\ \hline
+\ans{Frederick Douglass was born in Poland.} & T \quad F & \ans{F} & \ans{new} \\[0.3em] \hline
+ & T \quad F & & \\[0.3em] \hline
+ & T \quad F & & \\[0.3em] \hline
+ & T \quad F & & \\[0.3em] \hline
+ & T \quad F & & \\[0.3em] \hline
+\end{tabular}
+
+\vspace{0.6em}
+Every training sentence was \ansline{1.0in}{true.} Most of the \textbf{new} sentences were \ansline{1.0in}{false.}
+
+\vspace{0.6em}
+Why does a false fact sound just as sure as a true one? \ansline{2.6in}{It is made the same way:}
+
+\vspace{0.4em}
+\ansline{6.9in}{by picking likely next words.}
+
+\vspace{1.0em}
+{\large\textbf{3. When do chatbots make the most mistakes?}}
+
+\vspace{0.5em}
+\ansline{3.3in}{small or local topics} \quad \ansline{3.3in}{exact details: dates, numbers, quotes}
+
+\vspace{0.6em}
+\ansline{3.3in}{sources and links} \quad \ansline{3.3in}{very new events}
+
+\newpage
+
+{\large\textbf{4. Catch the chatbot.}} Mark: \ding{51} true, \ding{55} false, ? I do not know.
+
+\vspace{0.3em}
+\begin{tabular}{|R{2.9in}|R{2.0in}|c|R{1.2in}|}
+\hline
+\textbf{Question} & \textbf{The AI said} & \textbf{\ding{51} \ding{55} ?} & \textbf{Real answer} \\ \hline
+When did Douglass High School in Columbia, Missouri open? & & & \ans{Mr. Ross} \\[0.4em] \hline
+Who is the principal of Douglass High School? & & & \\[0.4em] \hline
+What is the school's mascot? & & & \\[0.4em] \hline
+About how many students go to Douglass High School? & & & \\[0.4em] \hline
+Who is the mayor of Columbia, Missouri? & & & \\[0.4em] \hline
+\end{tabular}
+
+\vspace{0.6em}
+It got \ansline{0.5in}{} wrong. Most mistakes were about \ansline{3.6in}{small, local topics and exact details.}
+
+\vspace{1.0em}
+{\large\textbf{5. Make it agree.}}
+
+\vspace{0.5em}
+I said 17 $\times$ 3 is 54. Did it agree with me? \ansline{1.0in}{yes / no} What did it say? \ansline{2.3in}{Answers vary.}
+
+\vspace{0.7em}
+I said the Sun goes around the Earth. Did it correct me? \ansline{1.0in}{yes / no}
+
+\vspace{0.7em}
+Agreeing with someone just to please them is called \ansline{1.6in}{sycophancy.}
+
+\vspace{0.7em}
+A chatbot can learn this because \ansline{4.4in}{people give good ratings to answers that agree with them.}
+
+\vspace{1.0em}
+{\large\textbf{6. Talk about it.}} When a chatbot makes something up and someone gets hurt, the one responsible is
+
+\vspace{0.6em}
+\ansline{6.9in}{Answers vary. The court said Air Canada was responsible for its chatbot.}
+
+\vspace{0.6em}
+\blank{6.9in}
+
+\end{document}

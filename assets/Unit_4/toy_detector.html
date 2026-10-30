@@ -1,0 +1,69 @@
+```{=html}
+<!-- toy_detector.html: Lesson 4.4. A toy "AI detector": it calls writing "AI"
+     when most of its words are very common (easy to predict). Real detectors
+     measure predictability with a language model, and fail in the same way. -->
+<div class="td" id="td">
+  <div class="td-bar">
+    <span class="td-label">Try:</span>
+    <button type="button" data-s="douglass">a person: Frederick Douglass, 1845</button>
+    <button type="button" data-s="plain">AI, written for this book</button>
+    <button type="button" data-s="fancy">AI, told to use rare words</button>
+    <button type="button" data-s="mine">my own writing</button>
+  </div>
+  <textarea class="td-text" rows="5" aria-label="Text to check"></textarea>
+  <div class="td-bar"><button type="button" class="td-btn td-go">🔍 Check it</button></div>
+  <div class="td-result" aria-live="polite"></div>
+  <div class="td-marked"></div>
+</div>
+
+<style>
+.td { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.td-bar { display: flex; flex-wrap: wrap; gap: 0.35rem 0.6rem; align-items: center; margin: 0.4rem 0; }
+.td-bar button[data-s] { border: 1px solid #b8c4cf; background: #fff; border-radius: 999px; padding: 0.1rem 0.7rem; cursor: pointer; }
+.td-label { font-weight: bold; }
+.td-text { width: 100%; box-sizing: border-box; font-size: 1rem; padding: 0.45rem; border: 1px solid #b8c4cf; border-radius: 6px; }
+.td-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.3rem 0.8rem; font-weight: 600; cursor: pointer; }
+.td-result { margin: 0.4rem 0; line-height: 1.5; }
+.td-meter { height: 1.1rem; background: #eef2f5; border-radius: 6px; position: relative; overflow: hidden; margin: 0.3rem 0; max-width: 420px; }
+.td-meter i { position: absolute; left: 0; top: 0; bottom: 0; background: #7f8c8d; }
+.td-meter b { position: absolute; top: -2px; bottom: -2px; width: 2px; background: #c0392b; left: 75%; }
+.td-verdict { font-size: 1.3rem; font-weight: 700; }
+.td-verdict.ai { color: #d35400; } .td-verdict.human { color: #2c6fae; }
+.td-marked { background: #fff; border: 1px solid #e3e8ed; border-radius: 8px; padding: 0.4rem 0.6rem; line-height: 1.8; }
+.td-marked:empty { display: none; }
+.td-marked mark { background: #fde68a; border-radius: 3px; padding: 0 0.1rem; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("td");
+  if (!root) return;
+  const COMMON = new Set("a about above after again against all almost also always am an and another any are around as ask asked at away back bad be became because become been before began being best better between big bit both boy boys bring brother but buy by call called came can can't car care change child children city class come comes coming could country day days did didn't different do does doesn't doing don't done door down during each early easy eat end enough even ever every everyone everything eyes face family far fast father feel feet few find first five food for found four free friend friends from full fun game gave get gets getting girl give go goes going gone good got great group grow had happy hard has have having he head hear heard heart help her here him his home hope hot house how i i'm idea if important in into is isn't it it's its job just keep kind knew know land large last later learn learned leave left less let life like liked likes line little live lived lives long look looked looking lot love made make makes making man many may me mean men might mind money more morning most mother move much music must my name need never new next nice night no not nothing now number of off often old on once one only open or other our out over own part people place plan play played playing please point put question quick quickly read ready real really right room run said same saw say says school see seem seen she should show side since sister small so some someone something sometimes soon start started stay still stop story strong such sure take talk teacher tell than thank thanks that that's the their them then there these they thing things think this those thought three through time times to today together told too took top tried try trying turn two under understand until up us use used very want wanted was water way we week well went were what when where which while white who why will with word words work world would write year years yes yet you young your health body sleep walk minutes strong happy important animal animals answer best both car cold color dog food hand hands hour hours least map mom dad live next paper parents phone picture red reason sad several short sound table test thing tree warm win wrong".split(" "));
+  const SAMPLES = {
+    douglass: "I was born in Tuckahoe, near Hillsborough, and about twelve miles from Easton, in Talbot county, Maryland. I have no accurate knowledge of my age, never having seen any authentic record containing it. By far the larger part of the slaves know as little of their ages as horses know of theirs, and it is the wish of most masters within my knowledge to keep their slaves thus ignorant.",
+    plain: "Exercise is important for good health. It helps your heart stay strong. It can also help you sleep better. Many people like to walk or run every day. Exercise can make you feel happy and less stressed. It is a good idea to move your body for at least 30 minutes each day.",
+    fancy: "Physical exertion constitutes an indispensable pillar of holistic wellbeing, fortifying cardiovascular resilience while cultivating restorative slumber. Embracing invigorating pursuits, whether brisk perambulation or exhilarating sprints, engenders profound psychological equanimity.",
+    mine: "",
+  };
+  const txt = root.querySelector(".td-text"), res = root.querySelector(".td-result"), marked = root.querySelector(".td-marked");
+  const isCommon = (w) => COMMON.has(w) || COMMON.has(w.replace(/s$/, ""));
+  const esc = (s) => s.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+  function check() {
+    const text = txt.value.replace(/’/g, "'");
+    const words = (text.toLowerCase().match(/[a-z']+/g) || []).filter((w) => w.replace(/'/g, ""));
+    if (words.length < 10) { res.innerHTML = "Write at least 10 words."; marked.innerHTML = ""; return; }
+    const n = words.filter(isCommon).length, pct = Math.round((100 * n) / words.length), ai = pct >= 75;
+    res.innerHTML = `<div class="td-verdict ${ai ? "ai" : "human"}">This toy detector says: ${ai ? "written by AI" : "written by a person"}</div>` +
+      `<div class="td-meter"><i style="width:${pct}%"></i><b></b></div>` +
+      `<b>${pct}%</b> of the words are very common, easy-to-predict words. It says "AI" at 75% or more.`;
+    marked.innerHTML = esc(text).replace(/[A-Za-z']+/g, (w) => (isCommon(w.toLowerCase()) ? w : `<mark>${w}</mark>`));
+    root.dataset.pct = pct; root.dataset.verdict = ai ? "ai" : "human";
+  }
+  root.querySelectorAll("[data-s]").forEach((b) => b.addEventListener("click", () => {
+    txt.value = SAMPLES[b.dataset.s]; res.innerHTML = ""; marked.innerHTML = "";
+    if (b.dataset.s === "mine") { txt.placeholder = "Write 5 sentences about yourself, in simple English. Then press Check it."; txt.focus(); } else check();
+  }));
+  root.querySelector(".td-go").addEventListener("click", check);
+})();
+</script>
+```

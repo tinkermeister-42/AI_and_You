@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\lessontitle{Why AI Cheat Detectors Fail}
+\partner
+
+\vspace{0.4em}
+{\large\textbf{1. Human or AI?}} Circle your vote for each paragraph Mr. Ross reads.
+
+\vspace{0.5em}
+1. H \; A \qquad 2. H \; A \qquad 3. H \; A \qquad 4. H \; A \qquad The class got \ansline{0.5in}{} of 4 right.
+
+\vspace{1.0em}
+{\large\textbf{2. How detectors guess.}}
+
+\vspace{0.5em}
+A chatbot picks likely next words, so AI writing is very \ansline{1.4in}{predictable.}
+
+\vspace{0.7em}
+A detector says ``AI'' when the words are \ansline{2.2in}{very predictable.}
+
+\vspace{0.7em}
+Human writing that is predictable: \ansline{4.4in}{short sentences and common words,}
+
+\vspace{0.5em}
+\ansline{6.9in}{like many people writing in a second language.}
+
+\vspace{0.7em}
+When a detector says ``AI'' but a person wrote it, that is a \ansline{1.5in}{false positive.}
+
+\vspace{1.0em}
+{\large\textbf{3. The evidence.}}
+
+\vspace{0.3em}
+\begin{tabular}{|R{3.6in}|R{2.9in}|}
+\hline
+Stanford, 2023: essays by people learning English that detectors called AI & \ans{61\% on average; 98\% by at least one detector} \\[0.3em] \hline
+OpenAI's own detector: AI writing it found & \ans{26\%} \\[0.3em] \hline
+OpenAI's own detector: human writing it called AI & \ans{9\%} \\[0.3em] \hline
+\end{tabular}
+
+\newpage
+
+{\large\textbf{4. Test the toy detector.}}
+
+\vspace{0.3em}
+\begin{tabular}{|R{2.6in}|c|c|c|}
+\hline
+\textbf{Writing} & \textbf{\% common words} & \textbf{It said} & \textbf{Right?} \\ \hline
+A person: Frederick Douglass, 1845 & \ans{61\%} & \ans{person} & \ans{yes} \\ \hline
+AI, written for this book & \ans{94\%} & \ans{AI} & \ans{yes} \\ \hline
+AI, told to use rare words & \ans{14\%} & \ans{person} & \ans{no} \\ \hline
+My own writing & & & \\ \hline
+My writing with 3 rare words & & & \\ \hline
+\end{tabular}
+
+\vspace{0.7em}
+The detector blames \ansline{2.8in}{honest people who write simply,} and misses \ansline{2.0in}{careful cheaters.}
+
+\vspace{1.0em}
+{\large\textbf{5. Protect yourself.}} Three kinds of evidence of my own work:
+
+\vspace{0.5em}
+\ansline{2.1in}{my drafts} \quad \ansline{2.1in}{version history} \quad \ansline{2.1in}{my notes}
+
+\vspace{1.0em}
+{\large\textbf{6. Talk about it.}} Our school (should / should not) use AI detectors, because
+
+\vspace{0.6em}
+\ansline{6.9in}{Answers vary.}
+
+\vspace{0.7em}
+Instead of a detector, a teacher could \ansline{4.0in}{Answers vary. Talk with the student about the work.}
+
+\end{document}
