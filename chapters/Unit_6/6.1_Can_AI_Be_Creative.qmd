@@ -61,7 +61,11 @@ The AI does not copy one picture or one poem. It learned patterns from all of th
 
 :::{.note title="Right now (fall 2026)"}
 In the United States, the Copyright Office says a work made **only** by AI cannot have a {{< glink copyright >}}. A person's own creative choices can. Artists, writers, and news companies have taken AI companies to court for training on their work without asking. Some cases are still being decided.
+
+Jason Allen also went to court. He wants a copyright for his winning picture. Until a court decides who owns it, this book does not show it. You can see it on [Wikipedia](https://en.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_D%27op%C3%A9ra_Spatial){target="_blank"}.
 :::
+
+![Another picture Jason Allen made with Midjourney in 2022. It is **not** the one that won. (Wikimedia Commons, public domain: made by AI)](/images/Unit_6/6.1_allen_midjourney.jpg){width="560px" fig-align="center" fig-alt="A painting-like AI picture. Women in long white and red dresses stand at a curved glass wall in outer space. Spaceships and bright stars fly past."}
 
 {{< tryit >}}
 
