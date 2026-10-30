@@ -36,7 +36,7 @@ Today, the class is a neuron that learns. You will start it with the **wrong ide
 :::
 
 :::{.guided-notes-link}
-[Pokémon cards](/handouts/Unit_2/2.5_Pokemon_Cards.pdf){target="_blank"} - print one set for each team.
+[Pokémon cards](/handouts/Unit_2/2.5_Pokemon_Cards.pdf){target="_blank"}: print one set for each team.
 :::
 
 {{< warmup >}}
@@ -141,7 +141,7 @@ Each person has a job.
 
 This is the same neuron, the same cards, and the same fix rule. Use it to check your class's work, one card at a time.
 
-The picture shows every training card. The black line is the neuron's line: the cards on one side are called FIGHTING, and the cards on the other side are called PSYCHIC. Watch the line move when the neuron makes a mistake.
+The picture shows every training card. The black line is the neuron's line. The neuron calls the cards on one side FIGHTING. It calls the cards on the other side PSYCHIC. Watch the line move when the neuron makes a mistake.
 
 {{< include /assets/Unit_2/neuron_trainer.html >}}
 

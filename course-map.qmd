@@ -27,9 +27,9 @@ Most lessons also have a **🚀 Go Further** part. It can fill a second day, or 
 | 2.4 | [The Artificial Neuron](chapters/Unit_2/2.4_The_Artificial_Neuron.qmd) | Be a neuron: add up signals and decide to fire. Then tune a neuron on screen. |
 | 2.5 | [Train a Human Neural Network](chapters/Unit_2/2.5_Train_a_Human_Neural_Network.qmd) | The class becomes a network, with its weights written on cards. Feed it example cards and fix the weights after every mistake. |
 | 2.6 | [Watch Mr. Ross Build an AI](chapters/Unit_2/2.6_Watch_Mr_Ross_Build_an_AI.qmd) | Mr. Ross trains a neural network on hundreds of real examples while you watch. Then you test it with your own guesses. |
-| 2.7 | Train Your Own AI | Teach Teachable Machine your own hand signs. Then try to fool it. |
-| 2.8 | How AI Sees | Turn a picture into numbers on a grid. Find the edges with a filter. |
-| 2.9 | How Chatbots Work | Build a tiny chatbot that counts which word comes next. Make it write. |
+| 2.7 | [Train Your Own AI](chapters/Unit_2/2.7_Train_Your_Own_AI.qmd) | Teach Teachable Machine your own hand signs. Then try to fool it. |
+| 2.8 | [How AI Sees](chapters/Unit_2/2.8_How_AI_Sees.qmd) | Turn a picture into numbers on a grid. Find the edges with a filter. |
+| 2.9 | [How Chatbots Work](chapters/Unit_2/2.9_How_Chatbots_Work.qmd) | Build a tiny chatbot that counts which word comes next. Make it write. |
 
 ## Unit 3: Using AI Well
 

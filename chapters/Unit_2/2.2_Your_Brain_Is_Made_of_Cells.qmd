@@ -49,9 +49,14 @@ Work with a partner. You need a ruler (30 cm).
 
 Use the table to change centimeters into **milliseconds** (ms). A millisecond is $\frac{1}{1000}$ of a second.
 
-| Caught at | 5 cm | 10 cm | 15 cm | 20 cm | 25 cm | 30 cm |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Reaction time** | 101 ms | 143 ms | 175 ms | 202 ms | 226 ms | 247 ms |
+| Caught at | Reaction time |
+|:---:|:---:|
+| 5 cm | 101 ms |
+| 10 cm | 143 ms |
+| 15 cm | 175 ms |
+| 20 cm | 202 ms |
+| 25 cm | 226 ms |
+| 30 cm | 247 ms |
 
 :::{.think title="Why does a short catch mean a fast reaction?"}
 The ruler falls faster and faster. If you catch it at 5 cm, it fell for only about $\frac{1}{10}$ of a second. If you catch it at 30 cm, it fell for about $\frac{1}{4}$ of a second.
@@ -122,7 +127,7 @@ In that time, a signal went from your eyes to your brain, through many neurons, 
 
 {{< talk >}}
 
-One neuron is slow. A computer chip does billions of steps every second. But your brain can still do things that are very hard for computers: walk on rocks, understand a joke, know a friend's face from far away.
+One neuron is slow. A computer chip does billions of steps every second. But your brain can still do things that are very hard for computers. It can walk on rocks, understand a joke, and know a friend's face from far away.
 
 How can slow cells make a fast brain? (Think about the GPU race in Lesson 1.5.)
 

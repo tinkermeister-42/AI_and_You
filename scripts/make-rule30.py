@@ -4,7 +4,7 @@
     python3 scripts/make-rule30.py
 
 Writes figures/Unit_2/2.1_*.tex (then run scripts/make-figures.sh 2.1) and
-handouts/Unit_2/rule30_grid.tex, the grid on the 2.1 sheet (its answers are
+handouts/Unit_2/parts/rule30_grid.tex, the grid on the 2.1 sheet (its answers are
 drawn only on the key).  Every picture comes from the same function, so the
 web page, the sheet, and the key always agree.
 """
@@ -110,5 +110,5 @@ def sheet_grid(path, width=21, rows=10, size=0.78):
 rule_card(30, FIG / "2.1_rule30_card.tex", "Rule 30")
 big(30, FIG / "2.1_rule30_big.tex", 161, 80, 0.07)
 gallery(FIG / "2.1_rules_gallery.tex")
-sheet_grid(ROOT / "handouts" / "Unit_2" / "rule30_grid.tex")
+sheet_grid(ROOT / "handouts" / "Unit_2" / "parts" / "rule30_grid.tex")
 print("wrote 2.1 figures and the sheet grid")

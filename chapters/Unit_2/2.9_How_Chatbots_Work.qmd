@@ -1,0 +1,165 @@
+# 2.9 - How Chatbots Work {.unnumbered}
+
+In Lesson 1.6, you learned that a chatbot writes **one word at a time**. It predicts the next word, again and again.
+
+But how does it choose the next word? Today, you build the simplest chatbot possible. It does only one thing: it **counts** which word comes next. Then it writes. You will be surprised what counting can do, and what it cannot.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** Finish the sentence [4 min]{.time}
+- [👥]{.icon} **Learn Together** Count what comes next [10 min]{.time}
+- [🛠️]{.icon} **Try It** The dice chatbot, then the screen [20 min]{.time}
+- [💬]{.icon} **Talk About It** Did it understand? [6 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can make a table of which word comes next in a text.
+- [ ] I can use the table to write a sentence, like a chatbot.
+- [ ] I can explain how a real chatbot is like my tiny chatbot, and how it is different.
+- [ ] I can explain why a chatbot can write something that sounds right but is not true.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🔮]{.icon} {{< glink prediction >}}: a best guess about something you do not know yet
+- [📚]{.icon} {{< glink "large language model" >}}: a transformer trained on a huge amount of text to predict the next word
+- [🧩]{.icon} {{< glink token >}}: a word or a piece of a word that a chatbot reads and writes
+- [🎲]{.icon} {{< glink random >}}: with no pattern, so you cannot guess what comes next
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_2/2.9_How_Chatbots_Work.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Finish each sentence with **one word**. Do not think too long!
+
+1. Peanut butter and ...
+2. Once upon a ...
+3. I am going to the ...
+
+Compare with a partner. Which ones did you both answer the same?
+
+:::{.think title="Why did you agree on some and not others?"}
+You have read "peanut butter and **jelly**" and "once upon a **time**" many times. Your brain counted! When one next word is very common, everyone predicts it.
+
+"I am going to the ..." has many good answers: store, park, school, bathroom. There is no single winner.
+:::
+
+{{< learn >}}
+
+### 2.9.1 - Count What Comes Next
+
+Here is a very small training text:
+
+> I like rice. I like soccer. I like rice and beans. My friend likes soccer. My friend likes rice.
+
+The tiny chatbot reads it and makes a table. For each word, it counts the words that come right after it:
+
+| After this word ... | ... these words came next |
+|---|---|
+| I | like (3 times) |
+| like | rice (2), soccer (1) |
+| likes | soccer (1), rice (1) |
+| rice | end of sentence (2), and (1) |
+
+To write, it starts with a word and looks it up. Then it picks a next word, looks **that** word up, and so on.
+
+:::{.real-world title="A new sentence!"}
+Start with **My**: My → friend → likes → rice → and → beans → end.
+
+**"My friend likes rice and beans."** That sentence is **not** in the training text! The chatbot made something new by mixing pieces it had seen.
+:::
+
+***
+
+### 2.9.2 - From Counting to ChatGPT
+
+A real chatbot has the same goal: predict the next word. But it is much, much bigger.
+
+| | The tiny chatbot | A real chatbot |
+|---|---|---|
+| **Looks back at** | 1 word | thousands of words (with **attention**, Lesson 1.6) |
+| **Learned from** | 5 sentences | a huge amount of text: books, websites, and more |
+| **Stores what it learned as** | a table of counts | billions of **weights** in a neural network |
+| **Reads text as** | whole words | **{{< glink slug="token" text="tokens" >}}**: words and pieces of words, like "play" + "ing" |
+| **Picks the next word by** | counting | predicting, with a little chance mixed in |
+
+:::{.remember}
+Both chatbots predict the next word. **Neither one checks if a sentence is true.** A sentence can sound perfect and still be wrong. (You will catch this in Unit 4.)
+:::
+
+{{< tryit >}}
+
+### 2.9.3 - The Dice Chatbot
+
+You are the chatbot. Work in a group of 2 to 4 (or alone).
+
+:::{.steps}
+1. Finish the count table on your sheet for the training text above.
+2. Start with **I** or **My**.
+3. Look up the word. If there is only one next word, write it.
+4. If there are two or more choices, **roll a die**. Your sheet shows which numbers go with which word. (More common words get more numbers.)
+5. Keep going until you reach the end of the sentence. Write 3 sentences.
+6. Did you write a sentence that is **not** in the training text?
+:::
+
+### 2.9.4 - The Word-Counting Chatbot
+
+:::{.steps}
+1. Press **Learn from this text**. Click some words. Do the counts match your table?
+2. Choose **always pick the most common next word**. Write a sentence. Write it again. Is it always the same?
+3. Choose **pick by chance**. Write 5 sentences. Are they different?
+4. Choose **a story about school**. Write some sentences. Do any of them sound strange?
+5. Choose **my own text**. Write 5 sentences in **your home language**. Press **Learn**. Can it write in your language?
+:::
+
+{{< include /assets/Unit_2/word_chatbot.html >}}
+
+:::{.think title="Why do real chatbots mix in a little chance?"}
+If a chatbot always picks the most common word, it writes the same thing every time. It can get stuck saying ordinary, boring sentences.
+
+A little chance makes the writing more interesting. Too much chance makes it strange. Chatbot makers pick a setting in between.
+:::
+
+:::{.think title="Could the tiny chatbot write in your language?"}
+Yes! It does not know any language. It only counts. So it works for any language that puts spaces between words.
+
+But it can only write words that were in its training text. A real chatbot that read very little text in your language will write it less well. (You will test this in Unit 3.)
+:::
+
+{{< talk >}}
+
+The tiny chatbot wrote "My friend likes rice and beans." Did it **understand** that sentence? Think back to the Klingon Room in Lesson 1.3.
+
+:::{.frames}
+- The tiny chatbot **did** / **did not** understand, because ...
+- A real chatbot is like the tiny chatbot because ...
+- A real chatbot is different from the tiny chatbot because ...
+- If a chatbot learned from text with mistakes in it, it would ...
+:::
+
+{{< watch >}}
+
+:::{.watch title="Large Language Models Explained Briefly (3Blue1Brown)"}
+{{< video https://www.youtube.com/watch?v=LPZh9BOjkQs title="Large Language Models explained briefly (3Blue1Brown)" >}}
+
+This short video was made for a museum show about the history of chatbots.
+
+**While you watch:** How many words did the model read? How is that like your count table?
+
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+:::
+
+{{< further >}}
+
+:::{.project title="Two Words Back"}
+Make a new table that looks at the **last two words**, not just one. For example: after "I like," what comes next? Use it to write sentences. Are they better or worse? Why?
+:::
+
+:::{.project title="The Class Story Chatbot"}
+Everyone writes 2 sentences about our school. Put them all in the word-counting chatbot. Write 10 sentences. Pick the funniest one and the most "real" one.
+:::

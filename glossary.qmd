@@ -84,6 +84,14 @@ A list of steps that a computer follows. Apps and games are computer programs.
 
 ***
 
+### computer vision {#glossary-computer-vision}
+
+AI that finds things in pictures and video, like faces, signs, or people in the street.
+
+**See Also:** {{< glink pixel >}}, {{< glink filter >}}
+
+***
+
 ### conditioning {#glossary-conditioning}
 
 Learning to connect two things that happen together. Ivan Pavlov's dogs learned to connect a sound with food, so they drooled when they heard the sound.
@@ -132,6 +140,14 @@ One of the short branches of a neuron. Dendrites take in signals from other neur
 
 ***
 
+### edge {#glossary-edge}
+
+A place in a picture where it changes fast from dark to light. Edges show where things begin and end.
+
+**See Also:** {{< glink filter >}}
+
+***
+
 ### ELIZA effect {#glossary-eliza-effect}
 
 When people feel that a computer understands them, but it does not. It is named after ELIZA, a chatbot from 1966.
@@ -153,6 +169,14 @@ When many simple parts work together and make something bigger and more complica
 > A stadium wave: each person only watches a neighbor, but together they make a wave that moves around the stadium.
 
 **See Also:** {{< glink "cellular automaton" >}}
+
+***
+
+### filter {#glossary-filter}
+
+A small grid of numbers that slides over a picture. At each spot, it multiplies and adds. A filter can find edges or make a picture blurry.
+
+**See Also:** {{< glink edge >}}, {{< glink pixel >}}
 
 ***
 
@@ -298,6 +322,14 @@ A character that someone pretends to be. You can tell an AI to use a persona, li
 
 ***
 
+### pixel {#glossary-pixel}
+
+One tiny square of a picture. A computer stores each pixel as a number. In a black-and-white picture, 0 is black and 255 is white.
+
+**See Also:** {{< glink "computer vision" >}}
+
+***
+
 ### prediction {#glossary-prediction}
 
 A best guess about something you do not know yet. A prediction can be wrong.
@@ -362,11 +394,31 @@ The number that the total must pass for a neuron to fire.
 
 ***
 
+### token {#glossary-token}
+
+A word or a piece of a word that a chatbot reads and writes. For example, "playing" might be two tokens: "play" and "ing."
+
+**See Also:** {{< glink "large language model" >}}
+
+***
+
 ### training {#glossary-training}
 
 Showing an AI many examples so it can fix its weights. After each mistake, the weights change a little.
 
 **See Also:** {{< glink weight >}}, {{< glink "test data" >}}
+
+***
+
+### transfer learning {#glossary-transfer-learning}
+
+Starting from an AI that already learned something, then teaching it a new job with a few new examples. It is much faster than starting from nothing.
+
+> **Example:**
+>
+> Teachable Machine starts from a network that learned from millions of pictures. It only learns the last step from your pictures.
+
+**See Also:** {{< glink training >}}
 
 ***
 

@@ -1,0 +1,140 @@
+```{=html}
+<!-- pixels_filters.html: Lesson 2.8. A picture is a grid of numbers
+     (0 = black, 255 = white). A 3x3 filter slides over it: multiply, add.
+     Big answers mark edges. Click an output square to see the math. -->
+<div class="pf" id="pf">
+  <div class="pf-bar">
+    <span class="pf-label">Picture:</span>
+    <button type="button" data-pic="house">house</button>
+    <button type="button" data-pic="heart">heart</button>
+    <button type="button" data-pic="letter">letter A</button>
+    <button type="button" data-pic="blank">blank</button>
+    <span class="pf-label">Pen:</span>
+    <button type="button" data-pen="0" class="pen on">⬛ 0</button>
+    <button type="button" data-pen="128" class="pen">▩ 128</button>
+    <button type="button" data-pen="255" class="pen">⬜ 255</button>
+    <label><input type="checkbox" class="pf-nums"> show the numbers</label>
+  </div>
+  <div class="pf-bar">
+    <span class="pf-label">Filter:</span>
+    <select class="pf-filter">
+      <option value="v">find up-and-down edges</option>
+      <option value="h">find side-to-side edges</option>
+      <option value="all">find all edges</option>
+      <option value="blur">blur</option>
+    </select>
+    <span class="pf-kernel"></span>
+  </div>
+  <div class="pf-grids">
+    <div><div class="pf-h">The picture (what the computer stores)</div><canvas class="pf-in" width="384" height="384"></canvas></div>
+    <div><div class="pf-h">After the filter (bright = big answer)</div><canvas class="pf-out" width="384" height="384"></canvas></div>
+  </div>
+  <div class="pf-explain">Click a square in the picture to change it. Click a square on the right to see the math.</div>
+</div>
+
+<style>
+.pf { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.pf-bar { display: flex; flex-wrap: wrap; gap: 0.35rem 0.6rem; align-items: center; margin-bottom: 0.45rem; }
+.pf-bar button { border: 1px solid #b8c4cf; background: #fff; border-radius: 6px; padding: 0.1rem 0.55rem; cursor: pointer; }
+.pf-bar button.pen.on { background: #2c3e50; color: #fff; border-color: #2c3e50; }
+.pf-label { font-weight: bold; }
+.pf-kernel { font-family: ui-monospace, monospace; font-size: 0.85rem; background: #fff; border: 1px solid #e3e8ed; border-radius: 4px; padding: 0.1rem 0.4rem; white-space: pre; display: inline-block; line-height: 1.2; }
+.pf-grids { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.pf-grids > div { flex: 1 1 260px; max-width: 384px; }
+.pf-h { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.2rem; }
+.pf-grids canvas { width: 100%; height: auto; border: 1px solid #2c3e50; display: block; cursor: pointer; touch-action: none; image-rendering: pixelated; }
+.pf-explain { margin-top: 0.6rem; background: #fff; border-left: 4px solid #d35400; padding: 0.4rem 0.6rem; border-radius: 4px; line-height: 1.5; min-height: 3em; }
+.pf-explain table { border-collapse: collapse; display: inline-table; margin: 0.2rem 0.6rem 0.2rem 0; vertical-align: middle; }
+.pf-explain td { border: 1px solid #ccc; padding: 0 0.35rem; text-align: center; font-size: 0.85rem; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("pf");
+  if (!root) return;
+  const N = 16, C = 24;
+  const PICS = {
+    house: ["................","................",".......##.......","......####......",".....######.....","....########....","...##########...","..############..","...##########...","...##......##...","...##..##..##...","...##..##..##...","...##..##..##...","...##########...","................","................"],
+    heart: ["................","................","...###....###...","..#####..#####..",".##############.",".##############.",".##############.","..############..","...##########...","....########....",".....######.....","......####......",".......##.......","................","................","................"],
+    letter: ["................",".......##.......","......####......","......####......",".....##..##.....",".....##..##.....","....##....##....","....##....##....","...##########...","...##########...","..##........##..","..##........##..",".##..........##.",".##..........##.","................","................"],
+  };
+  const FILTERS = {
+    v: [[-1, 0, 1], [-1, 0, 1], [-1, 0, 1]],
+    h: [[-1, -1, -1], [0, 0, 0], [1, 1, 1]],
+    all: [[-1, -1, -1], [-1, 8, -1], [-1, -1, -1]],
+    blur: [[1, 1, 1], [1, 1, 1], [1, 1, 1]],
+  };
+  let img = [], pen = 0, sel = null;
+  const inC = root.querySelector(".pf-in"), ix = inC.getContext("2d");
+  const outC = root.querySelector(".pf-out"), ox = outC.getContext("2d");
+  const fSel = root.querySelector(".pf-filter"), nums = root.querySelector(".pf-nums");
+  const explain = root.querySelector(".pf-explain");
+
+  function load(name) {
+    img = name === "blank" ? Array.from({ length: N }, () => new Array(N).fill(255))
+      : PICS[name].map((row) => [...row].map((c) => (c === "#" ? 0 : 255)));
+    sel = null; draw();
+  }
+  const px = (y, x) => (y < 0 || x < 0 || y >= N || x >= N ? 255 : img[y][x]);  // outside: white
+  function apply(y, x) {
+    const K = FILTERS[fSel.value]; let s = 0;
+    for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) s += K[dy + 1][dx + 1] * px(y + dy, x + dx);
+    return fSel.value === "blur" ? Math.round(s / 9) : s;
+  }
+  function drawGrid(ctx, val, label) {
+    for (let y = 0; y < N; y++) for (let x = 0; x < N; x++) {
+      const v = val(y, x);
+      ctx.fillStyle = `rgb(${v},${v},${v})`; ctx.fillRect(x * C, y * C, C, C);
+      if (nums.checked) {
+        ctx.fillStyle = v < 128 ? "#fff" : "#000"; ctx.font = "9px sans-serif"; ctx.textAlign = "center";
+        ctx.fillText(label(y, x), x * C + C / 2, y * C + C / 2 + 3);
+      }
+    }
+    ctx.strokeStyle = "rgba(120,140,160,0.35)"; ctx.lineWidth = 1;
+    for (let k = 0; k <= N; k++) { ctx.beginPath(); ctx.moveTo(k * C + 0.5, 0); ctx.lineTo(k * C + 0.5, N * C); ctx.stroke(); ctx.beginPath(); ctx.moveTo(0, k * C + 0.5); ctx.lineTo(N * C, k * C + 0.5); ctx.stroke(); }
+  }
+  function draw() {
+    const K = FILTERS[fSel.value];
+    root.querySelector(".pf-kernel").textContent = K.map((r) => r.map((v) => String(v).padStart(3)).join(" ")).join("\n");
+    drawGrid(ix, (y, x) => img[y][x], (y, x) => img[y][x]);
+    const out = img.map((row, y) => row.map((_, x) => apply(y, x)));
+    const blur = fSel.value === "blur";
+    const max = Math.max(1, ...out.flat().map(Math.abs));
+    drawGrid(ox, (y, x) => (blur ? out[y][x] : Math.round((255 * Math.abs(out[y][x])) / max)), (y, x) => out[y][x]);
+    if (sel) {
+      [[ix, sel], [ox, sel]].forEach(([ctx, [y, x]], k) => {
+        ctx.strokeStyle = "#d35400"; ctx.lineWidth = 3;
+        if (k === 0) ctx.strokeRect((x - 1) * C, (y - 1) * C, 3 * C, 3 * C); else ctx.strokeRect(x * C, y * C, C, C);
+      });
+    }
+  }
+  function cell(e, cv) {
+    const r = cv.getBoundingClientRect();
+    return [Math.floor(((e.clientY - r.top) / r.height) * N), Math.floor(((e.clientX - r.left) / r.width) * N)];
+  }
+  let painting = false;
+  inC.addEventListener("pointerdown", (e) => { painting = true; inC.setPointerCapture(e.pointerId); const [y, x] = cell(e, inC); if (img[y]) { img[y][x] = pen; draw(); } });
+  inC.addEventListener("pointermove", (e) => { if (!painting) return; const [y, x] = cell(e, inC); if (img[y] && img[y][x] !== undefined) { img[y][x] = pen; draw(); } });
+  inC.addEventListener("pointerup", () => (painting = false));
+  outC.addEventListener("click", (e) => {
+    const [y, x] = cell(e, outC); if (!img[y]) return;
+    sel = [y, x]; draw();
+    const K = FILTERS[fSel.value];
+    const patch = [-1, 0, 1].map((dy) => [-1, 0, 1].map((dx) => px(y + dy, x + dx)));
+    const terms = []; for (let a = 0; a < 3; a++) for (let b = 0; b < 3; b++) if (K[a][b]) terms.push(`${K[a][b] < 0 ? "(" + K[a][b] + ")" : K[a][b]}×${patch[a][b]}`);
+    const tbl = (m) => `<table>${m.map((r) => `<tr>${r.map((v) => `<td>${v}</td>`).join("")}</tr>`).join("")}</table>`;
+    explain.innerHTML = `The 9 numbers around this square ${tbl(patch)} times the filter ${tbl(K)} ` +
+      `<br>${terms.join(" + ")} = <b>${fSel.value === "blur" ? apply(y, x) * 9 : apply(y, x)}</b>` +
+      (fSel.value === "blur" ? `, divided by 9 = <b>${apply(y, x)}</b>` : "") +
+      (fSel.value !== "blur" ? (Math.abs(apply(y, x)) > 0 ? " → <b>an edge!</b>" : " → no edge here") : "");
+  });
+  root.querySelectorAll("[data-pic]").forEach((b) => b.addEventListener("click", () => load(b.dataset.pic)));
+  root.querySelectorAll("[data-pen]").forEach((b) => b.addEventListener("click", () => {
+    pen = +b.dataset.pen; root.querySelectorAll(".pen").forEach((x) => x.classList.toggle("on", x === b));
+  }));
+  fSel.addEventListener("change", draw);
+  nums.addEventListener("change", draw);
+  load("house");
+})();
+</script>
+```

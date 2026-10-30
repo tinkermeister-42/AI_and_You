@@ -1,0 +1,137 @@
+# 2.8 - How AI Sees {.unnumbered}
+
+To you, a photo is a face, a dog, or a street. To a computer, a photo is a **grid of numbers**. Nothing else.
+
+So how does a self-driving car find a person in the street? How does your phone find your face? It does math on the numbers, layer by layer, like the neurons you built.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** Color by number [8 min]{.time}
+- [👥]{.icon} **Learn Together** Pixels, filters, and layers [10 min]{.time}
+- [🛠️]{.icon} **Try It** Find the edges [14 min]{.time}
+- [💬]{.icon} **Talk About It** What could a car miss? [8 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can explain how a computer stores a picture as numbers.
+- [ ] I can use a filter to find edges, by hand and on screen.
+- [ ] I can explain how layers in a network build from edges to objects.
+- [ ] I can name ways computer vision is used, and what could go wrong.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🟦]{.icon} {{< glink pixel >}}: one tiny square of a picture. It is stored as a number.
+- [🔍]{.icon} {{< glink filter >}}: a small grid of numbers that slides over a picture to find something, like edges
+- [📐]{.icon} {{< glink edge >}}: a place where a picture changes fast from dark to light
+- [👁️]{.icon} {{< glink "computer vision" >}}: AI that finds things in pictures and video
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_2/2.8_How_AI_Sees.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Your sheet has a grid of numbers. Color every square with a **1**. Leave every **0** white. What is the picture?
+
+:::{.think title="What did you just do?"}
+You turned numbers into a picture. A computer screen does the same thing millions of times a second.
+
+A camera does the opposite. It turns a picture into numbers.
+:::
+
+{{< learn >}}
+
+### 2.8.1 - Pixels Are Numbers
+
+Zoom in on any photo and you see tiny squares. Each square is a {{< glink pixel >}}.
+
+- In a black-and-white picture, each pixel is one number: **0** is black, **255** is white, and the numbers between are grays.
+- In a color picture, each pixel is **three** numbers: how much red, green, and blue.
+- A phone photo can have about **12 million** pixels. That is about 36 million numbers!
+
+***
+
+### 2.8.2 - Finding Edges with a Filter
+
+Where does a picture change fast from dark to light? That is an {{< glink edge >}}. Edges show where things begin and end.
+
+A {{< glink filter >}} is a small 3 by 3 grid of numbers. It slides over the picture, one square at a time. At each square:
+
+1. **Multiply** the 9 picture numbers by the 9 filter numbers.
+2. **Add** them up.
+
+That is the same **multiply and add** as the neuron in Lesson 2.4! If the answer is big, there is an edge here. If the answer is 0, the picture is the same on both sides: no edge.
+
+***
+
+### 2.8.3 - Layers
+
+A vision network has many layers of neurons. Each layer builds on the one before.
+
+![](/images/Unit_2/2.8_layers.svg){width="740px" fig-align="center" fig-alt="Five steps from left to right. Pixels, which are numbers. Layer 1 finds edges. Layer 2 finds shapes like circles and corners. Layer 3 finds parts like an ear, an eye, and whiskers. The last layer decides: cat."}
+
+Nobody tells the network to look for edges or ears. It learns its own filters during training, from millions of labeled pictures (like ImageNet in Lesson 1.5).
+
+:::{.real-world title="Computer vision is everywhere"}
+- **Self-driving cars** find lanes, signs, other cars, and people.
+- **Phones** find your face to unlock.
+- **Doctors** use it to look for problems in X-rays.
+- **Farms** use it to find sick plants.
+:::
+
+{{< tryit >}}
+
+### 2.8.4 - Find the Edges
+
+:::{.steps}
+1. Choose the **house**. Turn on **show the numbers**. Find a 0 and a 255.
+2. The filter is **find up-and-down edges**. Look at the right side. Where is it bright?
+3. Click a bright square on the right. Read the math. Then click a dark one.
+4. Change the filter to **find side-to-side edges**. What changes?
+5. Draw your own picture with the pen. Which filter finds its edges best?
+6. Do the edge problem on your sheet **by hand**.
+:::
+
+{{< include /assets/Unit_2/pixels_filters.html >}}
+
+:::{.think title="Why are the walls bright with one filter, and the bottom of the house bright with the other?"}
+The **up-and-down** filter compares the left side with the right side. It finds edges that go up and down, like walls.
+
+The **side-to-side** filter compares the top with the bottom. It finds edges that go across, like the bottom of the house.
+
+A real network has many filters like these, and it learns them by itself.
+:::
+
+{{< talk >}}
+
+A self-driving car sees only numbers. What if it sees something it never saw in training: a person in a costume, snow on a stop sign, or a kangaroo?
+
+:::{.frames}
+- A computer sees ... , but I see ...
+- A self-driving car could make a mistake when ... , because ...
+- Computer vision is helpful when ... , and dangerous when ...
+:::
+
+{{< watch >}}
+
+:::{.watch title="How Computer Vision Works (Code.org)"}
+{{< video https://www.youtube.com/watch?v=2hXG8v8p0KM title="How Computer Vision Works (Code.org)" >}}
+
+**While you watch:** What does a computer see when it looks at a picture?
+
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+:::
+
+{{< further >}}
+
+:::{.project title="Send a Secret Picture"}
+Draw a 10 by 10 picture on grid paper. Write it as numbers (0 and 1) on another paper. Give only the numbers to a partner. Can they draw your picture? This is how pictures travel over the internet.
+:::
+
+:::{.project title="Make a Blur"}
+Choose the **blur** filter. Click a square and read the math. Why does blur add all 9 numbers and divide by 9? (Hint: what is the mean of 9 numbers?)
+:::

@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\lessontitle{Train Your Own AI}
+\partner
+
+\vspace{0.4em}
+{\large\textbf{1. What should it learn?}} Two things I could teach a camera AI to tell apart:
+
+\vspace{0.6em}
+1. \ansline{2.8in}{Answers vary.} \qquad 2. \blank{2.8in}
+
+\vspace{1.0em}
+{\large\textbf{2. How it works.}} Match each Teachable Machine word.
+
+\vspace{0.3em}
+\begin{tabular}{|R{1.5in}|R{4.4in}|}
+\hline
+\textbf{Teachable Machine} & \textbf{What it means} \\ \hline
+Class & \ans{one kind of thing: a label, like ``rock''} \\[0.3em] \hline
+Samples & \ans{the training pictures for a class} \\[0.3em] \hline
+Train Model & \ans{the network fixes its weights} \\[0.3em] \hline
+Preview & \ans{testing it on new pictures} \\[0.3em] \hline
+\end{tabular}
+
+\vspace{0.8em}
+It learns fast because it starts from a network that already learned from \ansline{2.0in}{millions of pictures}.
+
+\vspace{0.8em}
+This is called \ansline{1.6in}{transfer learning}.
+
+\vspace{1.0em}
+{\large\textbf{3. Train it.}}
+
+\vspace{0.3em}
+\begin{tabular}{|R{2.0in}|c|R{2.2in}|}
+\hline
+\textbf{Class name} & \textbf{Number of samples} & \textbf{Did the preview get it right?} \\ \hline
+\ans{Rock} & \ans{about 50} & \\[0.3em] \hline
+\ans{Paper} & & \\[0.3em] \hline
+\ans{Scissors} & & \\[0.3em] \hline
+\end{tabular}
+
+\newpage
+
+{\large\textbf{4. Fool it.}} Change one thing at a time.
+
+\vspace{0.3em}
+\begin{tabular}{|R{2.3in}|R{1.8in}|c|}
+\hline
+\textbf{What I changed} & \textbf{What the AI said} & \textbf{Fooled? (yes / no)} \\ \hline
+my other hand & \ans{Answers vary.} & \\[0.4em] \hline
+very close, then far away & & \\[0.4em] \hline
+lights off or a bright window & & \\[0.4em] \hline
+my partner's hand & & \\[0.4em] \hline
+a new background & & \\[0.4em] \hline
+\blank{2.0in} & & \\[0.4em] \hline
+\end{tabular}
+
+\vspace{0.8em}
+Why did some tricks fool the AI? \ansline{4.5in}{It never saw anything like them in its training pictures.}
+
+\vspace{0.9em}
+An AI is only as good as its \ansline{1.8in}{training examples}.
+
+\vspace{0.9em}
+How could you make it harder to fool? \ansline{4.2in}{Add more kinds of examples and train again.}
+
+\vspace{1.1em}
+{\large\textbf{5. Talk about it.}} Would your AI work for everyone?
+
+\vspace{0.6em}
+My training pictures were missing \ansline{4.4in}{Answers vary. Other people's hands, other light, ...}
+
+\vspace{0.9em}
+\blank{6.9in}
+
+\end{document}

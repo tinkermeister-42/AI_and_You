@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\lessontitle{How AI Sees}
+\partner
+
+\vspace{0.3em}
+{\large\textbf{1. Color by number.}} Color every square with a \textbf{1}. Leave every \textbf{0} white.
+
+\vspace{0.4em}
+\begin{center}\input{parts/heart_grid}\end{center}
+
+\vspace{0.4em}
+What is the picture? \ansline{1.6in}{a heart}
+
+\vspace{0.9em}
+{\large\textbf{2. Pixels are numbers.}}
+
+\vspace{0.4em}
+In a black-and-white picture, \ansline{0.6in}{0} is black and \ansline{0.6in}{255} is white.
+
+\vspace{0.8em}
+In a color picture, each pixel is \ansline{0.6in}{3} numbers: red, green, and \ansline{0.8in}{blue}.
+
+\newpage
+
+{\large\textbf{3. Find the edge by hand.}} Here is a tiny picture (0 = dark, 9 = bright) and a filter.
+
+\vspace{0.4em}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+0 & 0 & 0 & 9 & 9 & 9 \\ \hline
+0 & 0 & 0 & 9 & 9 & 9 \\ \hline
+0 & 0 & 0 & 9 & 9 & 9 \\ \hline
+\end{tabular}
+\qquad\qquad
+\textbf{Filter:}\quad
+\begin{tabular}{|c|c|c|}
+\hline
+$-1$ & 0 & 1 \\ \hline
+$-1$ & 0 & 1 \\ \hline
+$-1$ & 0 & 1 \\ \hline
+\end{tabular}
+\end{center}
+
+\vspace{0.5em}
+Put the filter over 3 columns of the picture. Multiply each pair of numbers, then add all 9.
+
+\vspace{0.4em}
+\begin{tabular}{|R{1.9in}|R{3.2in}|c|}
+\hline
+\textbf{Filter over columns} & \textbf{Math} & \textbf{Answer} \\ \hline
+1, 2, 3 & \ans{each row: $-0 + 0 + 0 = 0$} & \ans{0} \\ \hline
+2, 3, 4 & \ans{each row: $-0 + 0 + 9 = 9$, so $9 + 9 + 9$} & \ans{27} \\ \hline
+3, 4, 5 & \ans{each row: $-0 + 0 + 9 = 9$} & \ans{27} \\ \hline
+4, 5, 6 & \ans{each row: $-9 + 0 + 9 = 0$} & \ans{0} \\ \hline
+\end{tabular}
+
+\vspace{0.7em}
+Where are the big answers? \ansline{4.6in}{Where the picture changes from 0 to 9: the edge.}
+
+\vspace{1.1em}
+{\large\textbf{4. Layers.}} Number the layers in order, 1 to 4.
+
+\vspace{0.4em}
+\begin{tabular}{@{}ll@{\qquad\qquad}ll}
+\ansline{0.4in}{3} & finds parts (an ear, an eye) & \ansline{0.4in}{1} & finds edges \\[0.6em]
+\ansline{0.4in}{4} & decides: ``cat'' & \ansline{0.4in}{2} & finds shapes \\
+\end{tabular}
+
+\vspace{1.1em}
+{\large\textbf{5. Talk about it.}} What could a self-driving car miss?
+
+\vspace{0.6em}
+A self-driving car could make a mistake when \ansline{3.6in}{Answers vary. It sees something new.}
+
+\vspace{0.9em}
+\blank{6.9in}
+
+\vspace{0.9em}
+Computer vision is helpful when \ansline{2.0in}{Answers vary.} and dangerous when \ansline{1.8in}{}
+
+\end{document}

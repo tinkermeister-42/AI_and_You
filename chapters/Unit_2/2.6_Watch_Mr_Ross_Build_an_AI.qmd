@@ -89,7 +89,7 @@ Look at the colored map. The class neuron's rule was one straight line. This net
 :::
 
 :::{.think title="Run 2 used MORE numbers. Why was it often not better?"}
-Height, weight, speed, and the other numbers do not say much about Fighting or Psychic. They add noise. The network found "patterns" in the training data that were not real, so the **training** score went up but the **test** score did not.
+Height, weight, speed, and the other numbers do not say much about Fighting or Psychic. They add noise. The network found "patterns" in the training data that were not real. So the **training** score went up, but the **test** score did not.
 
 This is called {{< glink overfitting >}}: learning the training examples by heart instead of the real pattern. Look for the gap between the blue line (training) and the orange line (test).
 :::

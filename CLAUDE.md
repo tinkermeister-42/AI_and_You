@@ -137,6 +137,9 @@ The teacher wants kids' hands on real things in every lesson.
 - **Course map and unit intro change with the lesson.** Writing a lesson
   means linking it in `course-map.qmd`, adding it under "Topics in This
   Unit" in its unit `index.qmd`, and adding it to `_quarto.yml`
+- **Sheet snippets live in `handouts/Unit_X/parts/`.** A `.tex` that a sheet
+  `\input`s (a generated grid, say) must not sit next to the sheets: the
+  build and the asset check treat every `handouts/Unit_X/*.tex` as a sheet
 - **Unit 1 builds a class timeline.** Each history lesson's sheet ends with
   timeline cards to cut out and post on the wall
 - **Lesson, handout and figures are one change.** The handout restates the

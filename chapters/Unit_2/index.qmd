@@ -39,3 +39,12 @@ The class becomes a neuron that starts with the wrong idea, then fixes its weigh
 
 [**Watch Mr. Ross Build an AI**](2.6_Watch_Mr_Ross_Build_an_AI.qmd)\
 Six steps to build an AI. Predict, then watch a real neural network learn from 1,281 Pokémon.
+
+[**Train Your Own AI**](2.7_Train_Your_Own_AI.qmd)\
+Teach Teachable Machine your own hand signs in 10 minutes. Then try to fool it.
+
+[**How AI Sees**](2.8_How_AI_Sees.qmd)\
+A picture is a grid of numbers. Color by number, then find the edges with a filter, by hand and on screen.
+
+[**How Chatbots Work**](2.9_How_Chatbots_Work.qmd)\
+Build a tiny chatbot that only counts which word comes next. Roll dice to write, then teach it your home language.

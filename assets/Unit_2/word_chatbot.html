@@ -1,0 +1,131 @@
+```{=html}
+<!-- word_chatbot.html: Lesson 2.9. A tiny chatbot that only counts which word
+     comes next in its training text, then writes by picking next words.
+     It works in any language that puts spaces between words. -->
+<div class="wc" id="wc">
+  <div class="wc-bar">
+    <span class="wc-label">Training text:</span>
+    <button type="button" data-text="sheet">the text from my sheet</button>
+    <button type="button" data-text="school">a story about school</button>
+    <button type="button" data-text="mine">my own text</button>
+  </div>
+  <textarea class="wc-text" rows="5" aria-label="Training text"></textarea>
+  <div class="wc-bar">
+    <button type="button" class="wc-btn wc-learn">📚 Learn from this text</button>
+    <span class="wc-stats"></span>
+  </div>
+  <div class="wc-words" aria-label="Words the chatbot knows. Click one to see what comes after it."></div>
+  <div class="wc-after"></div>
+  <div class="wc-bar">
+    <label>Start with: <select class="wc-start"></select></label>
+    <label><input type="radio" name="wc-mode" value="top" checked> always pick the most common next word</label>
+    <label><input type="radio" name="wc-mode" value="chance"> pick by chance (more common = more likely)</label>
+  </div>
+  <div class="wc-bar">
+    <button type="button" class="wc-btn wc-one">➡️ Next word</button>
+    <button type="button" class="wc-btn wc-plain wc-all">✍️ Write a whole sentence</button>
+    <button type="button" class="wc-btn wc-plain wc-clear">↺ Clear</button>
+  </div>
+  <div class="wc-out" aria-live="polite"></div>
+  <div class="wc-why"></div>
+</div>
+
+<style>
+.wc { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.wc-bar { display: flex; flex-wrap: wrap; gap: 0.4rem 0.8rem; align-items: center; margin: 0.45rem 0; }
+.wc-bar button[data-text] { border: 1px solid #b8c4cf; background: #fff; border-radius: 999px; padding: 0.15rem 0.7rem; cursor: pointer; }
+.wc-label { font-weight: bold; }
+.wc-text { width: 100%; box-sizing: border-box; font-size: 1rem; padding: 0.45rem; border: 1px solid #b8c4cf; border-radius: 6px; }
+.wc-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.3rem 0.8rem; font-weight: 600; cursor: pointer; }
+.wc-btn.wc-plain { background: #fff; color: #2c3e50; }
+.wc-stats { color: #555; }
+.wc-words { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.4rem 0; }
+.wc-words button { border: 1px solid #d35400; background: #fff; color: #8a3a00; border-radius: 5px; padding: 0.05rem 0.45rem; cursor: pointer; font-size: 0.9rem; }
+.wc-words button.on { background: #d35400; color: #fff; }
+.wc-after { min-height: 1.5em; }
+.wc-after .bar, .wc-why .bar { display: flex; align-items: center; gap: 0.4rem; margin: 0.12rem 0; }
+.wc-after .bar span, .wc-why .bar span { min-width: 6em; font-weight: 600; }
+.wc-after .bar i, .wc-why .bar i { display: inline-block; height: 0.85em; background: #d35400; border-radius: 2px; }
+.wc-why .bar.picked span { color: #1e8449; }
+.wc-why .bar.picked i { background: #1e8449; }
+.wc-out { font-size: 1.35rem; min-height: 2em; background: #fff; border: 1px solid #e3e8ed; border-radius: 8px; padding: 0.4rem 0.6rem; margin-top: 0.3rem; }
+.wc-why { margin-top: 0.4rem; font-size: 0.95rem; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("wc");
+  if (!root) return;
+  const TEXTS = {
+    sheet: "I like rice. I like soccer. I like rice and beans. My friend likes soccer. My friend likes rice.",
+    school: "After school I go home. After school my friend plays soccer. My friend and I play soccer in the park. I eat rice after school. My friend eats beans and rice. The park is big. The school is big too. I like the park. My friend likes the school. We go to the park after school.",
+    mine: "",
+  };
+  const txt = root.querySelector(".wc-text"), stats = root.querySelector(".wc-stats");
+  const words = root.querySelector(".wc-words"), after = root.querySelector(".wc-after");
+  const start = root.querySelector(".wc-start"), out = root.querySelector(".wc-out"), why = root.querySelector(".wc-why");
+  let next = {}, sentence = [];
+
+  const tokens = (s) => s.toLowerCase().replace(/[’]/g, "'").replace(/([.!?])/g, " . ").replace(/[,;:"()]/g, " ").split(/\s+/).filter(Boolean);
+  function learn() {
+    const t = tokens(txt.value);
+    next = {};
+    for (let i = 0; i < t.length - 1; i++) {
+      if (t[i] === ".") continue;
+      (next[t[i]] = next[t[i]] || {})[t[i + 1]] = (next[t[i]][t[i + 1]] || 0) + 1;
+    }
+    const known = Object.keys(next).sort();
+    stats.textContent = `It read ${t.length} words and learned ${known.length} words.`;
+    words.innerHTML = "";
+    known.forEach((w) => {
+      const b = document.createElement("button"); b.type = "button"; b.textContent = w;
+      b.addEventListener("click", () => { words.querySelectorAll("button").forEach((x) => x.classList.toggle("on", x === b)); showAfter(w); });
+      words.appendChild(b);
+    });
+    // sentence starts: words that come first in a sentence
+    const firsts = new Set([t[0]]); t.forEach((w, i) => { if (w === "." && t[i + 1]) firsts.add(t[i + 1]); });
+    start.innerHTML = [...firsts].filter((w) => next[w]).map((w) => `<option>${w}</option>`).join("");
+    after.innerHTML = known.length ? "Click a word to see what comes after it in the text." : "Type some text first.";
+    clear();
+  }
+  const bars = (counts, picked) => {
+    const tot = Object.values(counts).reduce((a, b) => a + b, 0);
+    return Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([w, c]) =>
+      `<div class="bar${w === picked ? " picked" : ""}"><span>${w === "." ? "(end: .)" : w}</span><i style="width:${Math.round((c / tot) * 200)}px"></i>${c} of ${tot}</div>`).join("");
+  };
+  function showAfter(w) { after.innerHTML = `After "<b>${w}</b>", the text has:` + bars(next[w]); }
+  function clear() { sentence = []; out.textContent = ""; why.innerHTML = ""; }
+  function step() {
+    if (!sentence.length) { if (!start.value) return false; sentence = [start.value]; out.textContent = cap(sentence.join(" ")); why.innerHTML = `Start: "<b>${start.value}</b>"`; return true; }
+    const last = sentence[sentence.length - 1];
+    if (last === "." || sentence.length > 25) return false;
+    const counts = next[last];
+    if (!counts) { sentence.push("."); render(); why.innerHTML = `"${last}" never had a next word in the text, so the chatbot stops.`; return false; }
+    let pick;
+    if (root.querySelector('input[name="wc-mode"]:checked').value === "top") {
+      pick = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];
+    } else {
+      const tot = Object.values(counts).reduce((a, b) => a + b, 0); let r = Math.random() * tot;
+      for (const [w, c] of Object.entries(counts)) { r -= c; if (r < 0) { pick = w; break; } }
+    }
+    sentence.push(pick); render();
+    why.innerHTML = `After "<b>${last}</b>", it could pick:` + bars(counts, pick);
+    return pick !== ".";
+  }
+  const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+  function render() { out.textContent = cap(sentence.join(" ").replace(/ \./g, ".")); }
+
+  root.querySelectorAll("[data-text]").forEach((b) => b.addEventListener("click", () => {
+    txt.value = TEXTS[b.dataset.text];
+    if (b.dataset.text === "mine") { txt.placeholder = "Write or paste your own text here. Try your home language!"; txt.focus(); clear(); return; }
+    learn();
+  }));
+  root.querySelector(".wc-learn").addEventListener("click", learn);
+  root.querySelector(".wc-one").addEventListener("click", step);
+  root.querySelector(".wc-all").addEventListener("click", () => { clear(); let k = 0; while (step() && k++ < 30) {} });
+  root.querySelector(".wc-clear").addEventListener("click", clear);
+  start.addEventListener("change", clear);
+  txt.value = TEXTS.sheet; learn();
+})();
+</script>
+```
