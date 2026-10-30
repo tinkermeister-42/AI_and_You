@@ -86,6 +86,8 @@ A game is a small world. It has clear rules. Every move is on the board. Rules c
 :::{.real-world title="Deep Blue beats the champion (1997)"}
 In May 1997, IBM's computer **{{< glink "Deep Blue" >}}** played the world chess champion, **Garry Kasparov**. Deep Blue won, $3\frac{1}{2}$ to $2\frac{1}{2}$.
 
+![Half of Deep Blue: one of its two cabinets, now in a museum. Each cabinet is about as tall as a person. (Photo: James the photographer, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/){target="_blank"}, Wikimedia Commons)](/images/Unit_1/1.4_deep_blue.jpg){width="280px" fig-align="center" fig-alt="A tall black computer cabinet marked IBM RS6000 SP, standing on a blue base in a museum."}
+
 - People wrote Deep Blue's rules for judging a chess position.
 - Then it checked about **200 million** positions every second.
 - Deep Blue did not learn like the drawing AI in Lesson 1.1. It used rules and speed.
