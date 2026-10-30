@@ -135,16 +135,6 @@ An AI picture wins an art contest. Who should own it: the person who wrote the p
 - It (does / does not) matter who made it, because ...
 :::
 
-{{< watch >}}
-
-:::{.watch title="Does AI Have Creativity and Imagination? (Code.org)"}
-{{< ytvideo X994dDnmRmY title="Does AI Have Creativity and Imagination? (Code.org)" >}}
-
-**While you watch:** Does the speaker think AI is creative, or a tool for creative people?
-
-**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
-:::
-
 {{< further >}}
 
 :::{.project title="Day 2: The Blind Art Show"}

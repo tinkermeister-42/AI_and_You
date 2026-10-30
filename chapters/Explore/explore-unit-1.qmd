@@ -37,7 +37,6 @@ AI does not *know* the answer. It makes its best guess from patterns. Most of th
 - [Quick, Draw! The Data](https://quickdraw.withgoogle.com/data){target="_blank"}: Pick one word. Look at hundreds of drawings of it. What do most people draw?
 - [AutoDraw](https://www.autodraw.com/){target="_blank"}: Draw something fast and messy. AI guesses what you wanted and gives you a clean picture.
 - [Teachable Machine](https://teachablemachine.withgoogle.com/){target="_blank"}: Teach a computer to know your own pictures or sounds. We will use it in Unit 2.
-- [How AI Works (Code.org)](https://code.org/ai/how-ai-works){target="_blank"}: More short videos about AI.
 
 ***
 
@@ -75,12 +74,6 @@ The long, perfect answers were a clue. The persona hid the clue.
 :::
 
 **Try it:** In the imitation game, ask "What is 4,567 × 89?" A person needs a long time. Does the AI answer fast? Hard math answered very fast is another clue.
-
-### More to Watch
-
-- [The Turing Test (TED-Ed lesson)](https://www.ted.com/talks/alex_gendler_the_turing_test_can_a_computer_pass_for_a_human){target="_blank"}: The same video from class, on TED, with subtitles in many languages.
-
-***
 
 ## From Lesson 1.3: The First Chatbot {#explore-1-3}
 

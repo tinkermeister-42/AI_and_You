@@ -156,18 +156,6 @@ We will come back to this question on the last day of class. You do not need to 
 - I disagree with ___ because ...
 :::
 
-{{< watch >}}
-
-Watch this at home or if we have time in class. It shows more examples of machine learning in your life.
-
-:::{.watch title="How Does Artificial Intelligence Learn? (TED-Ed)"}
-{{< ytvideo 0yCJMt9Mx9c title="How does artificial intelligence learn? (TED-Ed)" >}}
-
-**While you watch:** The video shows three ways a computer can learn from examples. Write one example of each.
-
-**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
-:::
-
 {{< further >}}
 
 :::{.project title="Day 2: Beat the Machine"}

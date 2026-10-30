@@ -164,16 +164,6 @@ The neuron said Gallade is a Fighting type. Gallade is Psychic **and** Fighting.
 - A real AI that makes decisions about **people** with only two numbers would be a problem because ...
 :::
 
-{{< watch >}}
-
-:::{.watch title="How Neural Networks Work (Code.org)"}
-{{< ytvideo JrXazCEACVo title="How Neural Networks Work (Code.org)" >}}
-
-**While you watch:** What happens to the weights when the network makes a mistake?
-
-**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
-:::
-
 {{< further >}}
 
 :::{.project title="Day 2: Check Our Math, and Find the Line"}

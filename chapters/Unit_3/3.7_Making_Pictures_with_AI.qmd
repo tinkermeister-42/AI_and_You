@@ -98,16 +98,6 @@ Is a picture made by AI **art**? Who should get the credit: the person who wrote
 - The credit should go to ... , because ...
 :::
 
-{{< watch >}}
-
-:::{.watch title="Does AI Have Creativity and Imagination? (Code.org)"}
-{{< ytvideo X994dDnmRmY title="Does AI Have Creativity and Imagination? (Code.org)" >}}
-
-**While you watch:** What does the AI learn from, before it can make a picture?
-
-**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
-:::
-
 {{< further >}}
 
 :::{.project title="Day 2: Write Picture Prompts"}

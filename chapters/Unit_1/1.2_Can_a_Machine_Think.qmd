@@ -140,16 +140,6 @@ Do you agree? If a machine fools you, does that mean it thinks?
 - I think an AI **should** / **should not** have to tell you it is an AI, because ...
 :::
 
-{{< watch >}}
-
-:::{.watch title="The Turing Test: Can a Computer Pass for a Human? (TED-Ed)"}
-{{< ytvideo 3wLqsRLvV-c title="The Turing test: Can a computer pass for a human? (TED-Ed)" >}}
-
-**While you watch:** Find one chatbot from the video that tried to pass the test. Did it pass?
-
-**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
-:::
-
 {{< further >}}
 
 :::{.project title="Day 2: The Persona Experiment"}

@@ -113,16 +113,6 @@ Who should fix bias in AI: the company that makes it, the government, or the peo
 - The people who should fix this are ... , because ...
 :::
 
-{{< watch >}}
-
-:::{.watch title="Training Data and Bias (Code.org)"}
-{{< ytvideo x2mRoFNm22g title="AI: Training Data & Bias (Code.org)" >}}
-
-**While you watch:** Where does the bias in the video come from?
-
-**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
-:::
-
 {{< further >}}
 
 :::{.project title="Day 2: He or She in Your Language"}

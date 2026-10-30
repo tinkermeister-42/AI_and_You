@@ -107,16 +107,6 @@ ChatGPT learned from text that people wrote: books, websites, news, and more. Mo
 - In 10 years, I think AI will ... , because ...
 :::
 
-{{< watch >}}
-
-:::{.watch title="How Chatbots and Large Language Models Work (Code.org)"}
-{{< ytvideo X-AWdfSFCHQ title="How Chatbots and Large Language Models Work (Code.org)" >}}
-
-**While you watch:** How does a chatbot decide which word comes next?
-
-**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
-:::
-
 {{< further >}}
 
 :::{.project title="Day 2: See the Attention, and Finish the Timeline"}

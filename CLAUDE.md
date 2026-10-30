@@ -134,7 +134,8 @@ The teacher wants kids' hands on real things in every lesson.
 4. `.guided-notes-link` to the student PDF
 5. `{{< warmup >}}`, `{{< learn >}}` with numbered `### #.#.# -` sections,
    `{{< tryit >}}`, `{{< talk >}}` (a `.frames` list of sentence starters on
-   the lesson's own topic), then `{{< watch >}}` and `{{< further >}}`
+   the lesson's own topic), then `{{< further >}}`. A `{{< watch >}}` section
+   only for a video that passes the video rule (Links, Videos and Tools)
 
 - **The Big Question is a bookend, not a theme.** "Is AI like a human
   brain?" is asked in 1.1 (students write an answer Mr. Ross keeps) and asked
@@ -228,9 +229,14 @@ Syntax: `:::{.callout-type title="Title"} … :::`. New types need an entry in
 ## Links, Videos and Tools
 - **Fetch every link before it goes in.** Tools and videos disappear. A
   dead link in front of a class costs the block
-- **Videos:** short, from a source that will keep them up (Code.org's How AI
-  Works series is the default). Embed with `{{< ytvideo VIDEO_ID title="..." >}}`
-  inside a `.watch` callout, and keep the caption/auto-translate tip
+- **Videos: skip them in most lessons.** A video that says what AI can or
+  cannot do goes out of date fast, and nobody can edit it (the TED-Ed Turing
+  test video said chatbots cannot fool people). Use one only when it cannot go
+  stale: history told by the people who were there, with its year on the page
+  (Conway in 2.1, Fei-Fei Li's 2015 talk in 1.5), or a skill that does not
+  depend on AI (lateral reading in 3.4). Embed with
+  `{{< ytvideo VIDEO_ID title="..." >}}` inside a `.watch` callout, and keep
+  the caption/auto-translate tip
 - **Tools students open:** prefer ones that need no account (Quick, Draw!,
   Teachable Machine). Anything that needs a student account must be allowed
   under the district's AI Use Plan; Claude.ai and ChatGPT have age limits.

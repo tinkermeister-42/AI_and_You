@@ -106,16 +106,6 @@ A self-driving car sees only numbers. What if it sees something it never saw in 
 - Computer vision is helpful when ... , and dangerous when ...
 :::
 
-{{< watch >}}
-
-:::{.watch title="How Computer Vision Works (Code.org)"}
-{{< ytvideo 2hXG8v8p0KM title="How Computer Vision Works (Code.org)" >}}
-
-**While you watch:** What does a computer see when it looks at a picture?
-
-**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
-:::
-
 {{< further >}}
 
 :::{.project title="Day 2: Find the Edge by Hand"}
