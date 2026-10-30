@@ -1,0 +1,21 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[x=1.45cm, y=0.13cm]
+% ImageNet contest (ILSVRC), top-5 error of the winning entry each year,
+% rounded: 2010 28%, 2011 26%, 2012 AlexNet 15%, 2014 GoogLeNet 7%,
+% 2015 ResNet 4%.  A person: about 5% (Karpathy's estimate).
+\node[anchor=west, font=\large\bfseries, text=ink] at (-0.6,38) {How often the best AI got the picture wrong};
+\fill[ink!45] (-0.55,32.6) rectangle (-0.4,34.2); \node[anchor=west, font=\small] at (-0.38,33.4) {older methods};
+\fill[machine] (1.4,32.6) rectangle (1.55,34.2); \node[anchor=west, font=\small] at (1.57,33.4) {neural networks};
+\draw[person, dashed, line width=1.3pt] (-0.6,5) -- (4.6,5);
+\foreach \i/\yr/\v/\col in {0/2010/28/ink!45, 1/2011/26/ink!45, 2/2012/15/machine, 3/2014/7/machine, 4/2015/4/machine} {
+  \fill[\col] (\i-0.32,0) rectangle (\i+0.32,\v);
+  \node[above, font=\bfseries, fill=white, inner sep=1.5pt] at (\i,\v) {\v\%};
+  \node[below, font=\small] at (\i,0) {\yr};
+}
+\draw[ink, line width=0.8pt] (-0.6,0) -- (4.6,0);
+\node[anchor=west, font=\small\bfseries, text=person] at (4.65,5) {a person: about 5\%};
+\draw[flow, draw=machine] (2.9,24) node[anchor=west, font=\small, text=machine, align=left] {2012: the first big win\\for neural networks} -- (2.35,16.5);
+\end{tikzpicture}
+\end{document}

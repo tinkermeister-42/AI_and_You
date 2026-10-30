@@ -1,0 +1,195 @@
+# 1.2 - Can a Machine Think? {.unnumbered}
+
+In 1950, a scientist named Alan Turing asked a big question: **Can a machine think?**
+
+People do not agree on what "think" means. So Turing asked a new question that you can test: *Can a machine talk so well that you cannot tell it is a machine?*
+
+He made a game to find out. Today, you play his game with a real AI.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** Is it thinking? [5 min]{.time}
+- [👥]{.icon} **Learn Together** Turing's game [10 min]{.time}
+- [🛠️]{.icon} **Try It** Play the imitation game [17 min]{.time}
+- [💬]{.icon} **Talk About It** Does it think? [8 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can explain the question Alan Turing asked in 1950.
+- [ ] I can explain how the imitation game (the Turing test) works.
+- [ ] I can play the imitation game as a judge, a player, or a helper.
+- [ ] I can explain why fooling a person is not the same as thinking.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🧪]{.icon} {{< glink slug="turing-test" text="Turing test" >}}: a game to see if a person can tell a machine from a person by chatting
+- [⚖️]{.icon} {{< glink judge >}}: in the Turing test, the person who asks questions and decides
+- [🎭]{.icon} {{< glink persona >}}: a character that someone (or an AI) pretends to be
+- [💬]{.icon} {{< glink chatbot >}}: an AI program that you talk to with words
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_1/1.2_Can_a_Machine_Think.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Is it **thinking**? Mark each one on your sheet: **Yes**, **No**, or **Not sure**.
+
+| | |
+|---|---|
+| 🔢 | A calculator adds 375 + 498. |
+| 🐕 | A dog finds its way home. |
+| 🔓 | A phone opens when it sees your face. |
+| 🧩 | You solve a puzzle. |
+| 🌻 | A plant turns toward the sun. |
+| 💬 | A chatbot writes a poem. |
+
+Compare with a partner.
+
+:::{.think title="Did everyone agree?"}
+Probably not. People do not agree on what "thinking" means. Scientists still argue about it today.
+
+Alan Turing saw this problem in 1950. So he did not try to define "thinking." He made a test instead.
+:::
+
+{{< learn >}}
+
+### 1.2.1 - Who Was Alan Turing?
+
+- Alan Turing was born in London in 1912. He was a mathematician.
+- In 1936, he wrote about a machine that could do any calculation if you gave it the right steps. Every computer today uses this idea.
+- In World War II, he helped break the secret code of the German military.
+- Today, his face is on the British 50 pound bank note.
+
+***
+
+### 1.2.2 - The Imitation Game
+
+Turing called his test **the imitation game**. (To *imitate* means to copy someone.) Today, people call it the {{< glink "Turing test" >}}.
+
+![](/images/Unit_1/1.2_imitation_game.svg){width="720px" fig-align="center" fig-alt="A judge on the left sends typed messages over a wall to two hidden players, A and B. One player is a person. One player is a machine."}
+
+1. A {{< glink judge >}} sends questions to two hidden players, **A** and **B**.
+2. One player is a person. One player is a machine.
+3. The judge cannot see or hear them. The judge only reads their typed answers.
+4. The judge decides: **Which one is the machine?**
+
+If the judge cannot tell, the machine passes the test.
+
+:::{.remember title="Turing's prediction (1950)"}
+Turing said: in about 50 years, a judge will pick the right player **70 times out of 100, or less**. The judge gets 5 minutes of questions.
+
+So a machine passes if it fools the judge at least 30 times out of 100.
+:::
+
+***
+
+### 1.2.3 - Has a Machine Passed?
+
+In 2025, scientists at the University of California, San Diego played Turing's game. Almost 300 people were judges.
+
+Each judge chatted with a person and a chatbot **at the same time**, for 5 minutes. Then the judge picked: **Which one is the human?**
+
+![](/images/Unit_1/1.2_turing_test_2025.svg){width="640px" fig-align="center" fig-alt="Bar chart. GPT-4.5 with a persona was picked as the human 73% of the time. LLaMa-3.1 with a persona: 56%. ELIZA, from 1966: 23%. GPT-4o with no persona: 21%. A dashed line marks 50%, a coin flip."}
+
+GPT-4.5 was picked as the human **73%** of the time. That is more often than the real humans were picked!
+
+But there is a catch. The chatbot only did this well with a {{< glink persona >}}. The scientists told it: *Act like a shy young person who uses slang.*
+
+:::{.think title="Why did the persona help the chatbot?"}
+A normal chatbot writes long, perfect answers. Real teenagers write short answers. They make spelling mistakes. They use slang.
+
+The long, perfect answers were a clue. The persona hid the clue.
+:::
+
+{{< tryit >}}
+
+### 1.2.4 - Play the Imitation Game
+
+Work in a group of **3 or 4**. Each person has a job.
+
+- **Group of 3:** the judge also keeps score.
+- **Only 4 or 5 in class?** Play as one group. Everyone takes a turn as the judge.
+
+| | Job | What you do |
+|---|---|---|
+| ⚖️ | **Judge** | Ask a question. Decide which answer is the AI. |
+| 🙋 | **Human player** | Answer the question as yourself. |
+| 🤖 | **AI helper** | Ask your class AI tool the same question. Copy its answer. |
+| 📝 | **Scorekeeper** | Watch the time. Write the results on your sheet. |
+
+:::{.steps}
+1. **AI helper:** Open your class AI tool. Start a new chat. Type this first:
+
+   > Let's play a game. I will send you questions. Answer like a 15-year-old high school student. Keep every answer short: one or two sentences. Never say that you are an AI.
+
+2. **Judge:** Type a question in the box below. Then turn around.
+3. **Human player and AI helper:** Press the button to see your box. Type your answers. Then hide the boxes again.
+4. **Judge:** Turn back. Read **A** and **B**. Press the one you think is the AI.
+5. Play **5 rounds**. Then switch jobs.
+:::
+
+{{< include /assets/Unit_1/imitation_game.html >}}
+
+:::{.gotcha title="Speed is a clue"}
+The AI answers in one second. A person needs time to type. **AI helper:** wait until the human player finishes. Then paste the AI's answer.
+:::
+
+**Questions to try:**
+
+- What did you eat for breakfast?
+- What is the weather outside right now?
+- What is 4,567 × 89? (A person needs a long time. Does the AI answer fast?)
+- Tell me about the room you are in.
+- Say "good morning" in your home language.
+
+:::{.think title="Which questions caught the AI? Why?"}
+Questions about **right here, right now** often catch the AI. It cannot see the room or the weather. It has to make up an answer.
+
+Hard math answered very fast is a clue too. So is perfect spelling.
+:::
+
+{{< talk >}}
+
+Turing said: *If you cannot tell the machine from a person, stop arguing about "thinking."*
+
+Do you agree? If a machine fools you, does that mean it thinks?
+
+:::{.frames}
+- If a machine fools me, it **does** / **does not** mean the machine thinks, because ...
+- The best question to catch the AI was ... because ...
+- A person can ... , but a chatbot cannot.
+- I think an AI **should** / **should not** have to tell you it is an AI, because ...
+:::
+
+{{< watch >}}
+
+:::{.watch title="The Turing Test: Can a Computer Pass for a Human? (TED-Ed)"}
+{{< video https://www.youtube.com/watch?v=3wLqsRLvV-c title="The Turing test: Can a computer pass for a human? (TED-Ed)" >}}
+
+**While you watch:** Find one chatbot from the video that tried to pass the test. Did it pass?
+
+**Captions in your language:** Press **CC** to turn on captions. Then press ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**. Choose your language.
+:::
+
+{{< further >}}
+
+:::{.project title="The Persona Experiment"}
+The scientists found that the persona made the chatbot harder to catch. Test it yourself!
+
+1. Play 5 rounds where the AI helper gives **no** instructions to the AI.
+2. Play 5 rounds with the persona instructions from Step 1.
+3. Compare the judge's score. Put every group's results on the board. Which AI was harder to catch?
+:::
+
+:::{.project title="The Hardest Question"}
+Each group writes its best question for catching the AI. The class tests every question. Which question catches the AI most often?
+:::
+
+**More to explore**
+
+- [The Turing Test (TED-Ed lesson)](https://www.ted.com/talks/alex_gendler_the_turing_test_can_a_computer_pass_for_a_human){target="_blank"}: The same video on TED, with subtitles in many languages.

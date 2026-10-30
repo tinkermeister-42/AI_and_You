@@ -1,0 +1,204 @@
+```{=html}
+<!-- imitation_game.html: Lesson 1.2. A shared screen for Turing's imitation game.
+     The judge asks; a human and an AI helper answer in boxes A and B; the
+     widget hides which box is which until the judge guesses. -->
+<div class="imit" id="imit">
+  <div class="imit-row">
+    <label class="imit-label" for="imit-q">⚖️ Judge: type your question</label>
+    <input id="imit-q" class="imit-q" type="text" autocomplete="off" placeholder="What did you eat for breakfast?">
+  </div>
+
+  <div class="imit-secret">
+    <button type="button" class="imit-btn imit-show">🙈 Judge, turn around. Then press here.</button>
+    <div class="imit-who" hidden></div>
+  </div>
+
+  <div class="imit-boxes">
+    <div class="imit-box">
+      <div class="imit-box-name">A</div>
+      <textarea rows="4" data-box="A" placeholder="Answer A"></textarea>
+    </div>
+    <div class="imit-box">
+      <div class="imit-box-name">B</div>
+      <textarea rows="4" data-box="B" placeholder="Answer B"></textarea>
+    </div>
+  </div>
+
+  <div class="imit-guess">
+    <span class="imit-label">⚖️ Judge: which one is the AI?</span>
+    <button type="button" class="imit-btn imit-pick" data-pick="A">A is the AI</button>
+    <button type="button" class="imit-btn imit-pick" data-pick="B">B is the AI</button>
+  </div>
+
+  <div class="imit-result" hidden></div>
+
+  <div class="imit-score">
+    <div><span class="imit-num imit-rounds">0</span> rounds</div>
+    <div><span class="imit-num imit-right">0</span> times the judge was right</div>
+    <div><span class="imit-num imit-pct">-</span> judge's score</div>
+  </div>
+  <div class="imit-bar">
+    <button type="button" class="imit-btn imit-next">➡️ Next round</button>
+    <button type="button" class="imit-btn imit-reset">↺ New game</button>
+  </div>
+</div>
+
+<style>
+.imit {
+  border: 1px solid #d9e1e8;
+  border-radius: 10px;
+  padding: 0.8rem;
+  margin: 0.75rem 0 1.25rem;
+  background: #fbfcfd;
+}
+.imit-row { display: flex; flex-direction: column; gap: 0.3rem; margin-bottom: 0.6rem; }
+.imit-label { font-weight: 600; }
+.imit-q {
+  font-size: 1.05rem;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid #b8c4cf;
+  border-radius: 6px;
+}
+.imit-secret { margin-bottom: 0.6rem; }
+.imit-who {
+  margin-top: 0.4rem;
+  padding: 0.5rem 0.7rem;
+  background: #fff4e5;
+  border: 1px dashed #d35400;
+  border-radius: 6px;
+  line-height: 1.5;
+}
+.imit-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.6rem;
+}
+.imit-box { display: flex; flex-direction: column; gap: 0.25rem; }
+.imit-box-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+.imit-box textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.45rem;
+  border: 1px solid #b8c4cf;
+  border-radius: 6px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+.imit-guess {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.7rem 0 0.4rem;
+}
+.imit-btn {
+  border: 1px solid #2c3e50;
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.35rem 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.imit-btn.imit-pick { background: #d35400; border-color: #d35400; }
+.imit-btn.imit-reset { background: #fff; color: #2c3e50; }
+.imit-btn:disabled { opacity: 0.45; cursor: default; }
+.imit-result {
+  margin: 0.4rem 0 0.6rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.imit-result.right { background: #e8f5ec; color: #1e6b3c; }
+.imit-result.wrong { background: #fdecea; color: #a5281b; }
+.imit-score {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  border-top: 1px solid #e3e8ed;
+  padding-top: 0.5rem;
+  margin-top: 0.3rem;
+}
+.imit-num { font-weight: bold; font-size: 1.15rem; }
+.imit-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.6rem; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("imit");
+  if (!root) return;
+
+  const q = root.querySelector(".imit-q");
+  const showBtn = root.querySelector(".imit-show");
+  const who = root.querySelector(".imit-who");
+  const boxes = root.querySelectorAll("textarea");
+  const picks = root.querySelectorAll(".imit-pick");
+  const result = root.querySelector(".imit-result");
+  const nRounds = root.querySelector(".imit-rounds");
+  const nRight = root.querySelector(".imit-right");
+  const pct = root.querySelector(".imit-pct");
+
+  let aiBox = "A";
+  let rounds = 0, right = 0, guessed = false;
+
+  function newRound() {
+    aiBox = Math.random() < 0.5 ? "A" : "B";
+    guessed = false;
+    q.value = "";
+    boxes.forEach((b) => (b.value = ""));
+    who.hidden = true;
+    showBtn.textContent = "🙈 Judge, turn around. Then press here.";
+    result.hidden = true;
+    picks.forEach((p) => (p.disabled = false));
+  }
+
+  showBtn.addEventListener("click", () => {
+    if (who.hidden) {
+      const human = aiBox === "A" ? "B" : "A";
+      who.innerHTML =
+        `🙋 <b>Human player:</b> type your answer in box <b>${human}</b>.<br>` +
+        `🤖 <b>AI helper:</b> paste the AI's answer in box <b>${aiBox}</b>.<br>` +
+        `When you finish, press this button again to hide this.`;
+      who.hidden = false;
+      showBtn.textContent = "✅ Hide it. Judge, you can turn back.";
+    } else {
+      who.hidden = true;
+      showBtn.textContent = "🙈 Judge, turn around. Then press here.";
+    }
+  });
+
+  picks.forEach((p) =>
+    p.addEventListener("click", () => {
+      if (guessed) return;
+      guessed = true;
+      who.hidden = true;
+      rounds += 1;
+      const ok = p.dataset.pick === aiBox;
+      if (ok) right += 1;
+      result.className = "imit-result " + (ok ? "right" : "wrong");
+      result.textContent = ok
+        ? `Correct! ${aiBox} was the AI. The judge caught it.`
+        : `Fooled! ${aiBox} was the AI. The judge picked the human.`;
+      result.hidden = false;
+      picks.forEach((x) => (x.disabled = true));
+      nRounds.textContent = rounds;
+      nRight.textContent = right;
+      pct.textContent = Math.round((100 * right) / rounds) + "%";
+    })
+  );
+
+  root.querySelector(".imit-next").addEventListener("click", newRound);
+  root.querySelector(".imit-reset").addEventListener("click", () => {
+    rounds = 0; right = 0;
+    nRounds.textContent = "0"; nRight.textContent = "0"; pct.textContent = "-";
+    newRound();
+  });
+
+  newRound();
+})();
+</script>
+```

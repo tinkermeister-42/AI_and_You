@@ -39,6 +39,9 @@ book:
   navbar:
     search: true
 
+  page-footer:
+    center: "Written by Mr. Ross in collaboration with Claude, an AI assistant made by Anthropic."
+
   sidebar:
     search: true
     logo: images/logo.png
@@ -52,6 +55,11 @@ book:
       chapters:
         - file: chapters/Unit_1/index.qmd
         - file: chapters/Unit_1/1.1_What_Is_AI.qmd
+        - file: chapters/Unit_1/1.2_Can_a_Machine_Think.qmd
+        - file: chapters/Unit_1/1.3_The_First_Chatbot.qmd
+        - file: chapters/Unit_1/1.4_Rules_Win_at_Games.qmd
+        - file: chapters/Unit_1/1.5_Data_Changes_Everything.qmd
+        - file: chapters/Unit_1/1.6_Transformers_and_ChatGPT.qmd
 
     - part: "Unit 2: Brains and Neural Networks"
       chapters:

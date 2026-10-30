@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\renewcommand{\arraystretch}{1.45}
+
+\begin{document}
+
+\lessontitle{Rules Win at Games}
+\partner
+
+\vspace{0.5em}
+{\large\textbf{1. Did it come true?}} Did each promise come true by the time they said?
+
+\vspace{0.3em}
+\begin{tabular}{|c|c|R{3.3in}|R{0.85in}|R{1.1in}|}
+\hline
+ & \textbf{Year} & \textbf{The promise} & \textbf{Came true by then?} & \textbf{If it came true later: when?} \\ \hline
+A & 1958 & A computer will soon walk, talk, see, write, make copies of itself, and know that it exists. & \ans{no} & \ans{not yet} \\ \hline
+B & 1958 & Within 10 years, a computer will be the world chess champion. & \ans{no} & \ans{1997} \\ \hline
+C & 1965 & Within 20 years, machines will do any work a person can do. & \ans{no} & \ans{people disagree} \\ \hline
+D & 1970 & In 3 to 8 years, a machine will be as smart as an average person. & \ans{no} & \ans{people disagree} \\ \hline
+\end{tabular}
+
+\vspace{1.0em}
+{\large\textbf{2. Dreams and winters.}}
+
+\begin{center}\resizebox{0.8\linewidth}{!}{\fig{Unit_1/1.4_ai_winters}}\end{center}
+
+In 1956, AI got its \ansline{1.2in}{name}. When the money for AI stopped, people called it an \ansline{1.3in}{AI winter}.
+
+\vspace{0.9em}
+Big promises, more than the facts show, are called \ansline{1.2in}{hype}.
+
+\vspace{0.9em}
+When I hear a big promise about AI, I ask: Who says this? \ansline{2.8in}{What do they get if I believe it?}
+
+\vspace{1.2em}
+{\large\textbf{3. Deep Blue.}}
+
+\vspace{0.4em}
+In \ansline{0.8in}{1997}, IBM's Deep Blue beat the world chess champion, \ansline{1.8in}{Garry Kasparov}.
+
+\vspace{0.9em}
+Deep Blue checked about \ansline{1.4in}{200 million} chess positions every second.
+
+\vspace{0.9em}
+Did Deep Blue learn from examples? \ansline{3.4in}{No. It used rules that people wrote, and speed.}
+
+\newpage
+
+{\large\textbf{4. Beat the rule bot.}} The bot checks its rules in order. It uses the first rule it can.
+
+\vspace{0.3em}
+\begin{tabular}{|c|R{1.5in}|R{4.6in}|}
+\hline
+1 & \textbf{Win} & If I have two in a row, I finish the line. \\ \hline
+2 & \textbf{Block} & If you have two in a row, I stop you. \\ \hline
+3 & \textbf{Fork} & I make two ways to win at the same time. \\ \hline
+4 & \textbf{Block a fork} & I stop you from making two ways to win. \\ \hline
+5 & \textbf{Center} & I take the middle square. \\ \hline
+6 & \textbf{Opposite corner} & If you are in a corner, I take the corner across from you. \\ \hline
+7 & \textbf{Corner} & I take an empty corner. \\ \hline
+8 & \textbf{Side} & I take an empty side square. \\ \hline
+\end{tabular}
+
+\vspace{0.7em}
+With all the rules on, I won \blank{0.5in} times, the bot won \blank{0.5in} times, and we tied \blank{0.5in} times.
+
+\vspace{0.7em}
+\begin{tabular}{|R{1.6in}|R{1.2in}|R{3.3in}|}
+\hline
+\textbf{The rule I turned off} & \textbf{Did I beat the bot?} & \textbf{How did I win?} \\ \hline
+\ans{Block} & \ans{yes} & \ans{I made two in a row. The bot did not stop me.} \\[0.5em] \hline
+ & & \\[0.5em] \hline
+ & & \\[0.5em] \hline
+\end{tabular}
+
+\vspace{0.7em}
+The rules the bot needs most: \ansline{4.5in}{Win, Block, Block a fork, Center, Corner}
+
+\vspace{1.1em}
+{\large\textbf{5. Talk about it.}} Is Deep Blue smart?
+
+\vspace{0.6em}
+I think Deep Blue \textbf{is} / \textbf{is not} smart, because \ansline{3.6in}{Answers vary.}
+
+\vspace{0.9em}
+\blank{6.9in}
+
+\vfill
+\cuthere
+\noindent\timelinecard{1956}{Scientists meet at Dartmouth College. They name a new field: \textbf{artificial intelligence}.}\hfill
+\timelinecard{1997}{IBM's computer \textbf{Deep Blue} beats the world chess champion, Garry Kasparov.}
+
+\end{document}

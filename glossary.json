@@ -1,10 +1,26 @@
 {
+  "ai-winter": "A time when people stopped giving money to AI research, because AI did not do what people promised. There were AI winters in the 1970s and around 1990.",
   "artificial-intelligence": "A computer program that does things that usually need human thinking, like seeing, talking, translating, or making choices. Most AI today learns from examples.",
+  "attention": "In a transformer, the way the AI looks at all the other words to decide which ones matter most for each word.",
   "chatbot": "An AI program that you talk to with words. You type or say something, and it answers.",
   "computer-program": "A list of steps that a computer follows. Apps and games are computer programs.",
   "data": "Information, like pictures, words, numbers, or sounds. An AI learns from data.",
+  "dataset": "A big collection of examples that an AI learns from, like pictures with labels.",
+  "deep-blue": "A chess computer made by IBM. In 1997, it beat the world chess champion, Garry Kasparov. It used rules that people wrote, and it checked about 200 million chess positions every second.",
+  "eliza-effect": "When people feel that a computer understands them, but it does not. It is named after ELIZA, a chatbot from 1966.",
+  "gpu": "A computer chip first made for video games. It can do thousands of small math problems at the same time, so it is very good for training neural networks. GPU means “graphics processing unit.”",
+  "hype": "Big promises and excitement, more than the facts show.",
+  "judge": "In the Turing test, the person who asks the questions and decides which player is the machine.",
+  "key-word": "A word that a program looks for to decide what to do.",
+  "label": "The right answer that a person attaches to an example, like “cat” on a picture of a cat. An AI learns from examples and their labels.",
+  "large-language-model": "A transformer trained on a huge amount of text to predict the next word. Chatbots like ChatGPT are built on large language models. People often call them LLMs.",
   "machine-learning": "A way to make AI. People do not write the rules. They give the computer many examples, and the computer finds the patterns by itself.",
+  "neural-network": "A kind of AI made of many small parts that work a little like brain cells. Each part does a tiny bit of math. A neural network learns from examples.",
   "pattern": "Something that is the same, or repeats, in many examples.",
+  "persona": "A character that someone pretends to be. You can tell an AI to use a persona, like “Act like a 15-year-old student.”",
   "prediction": "A best guess about something you do not know yet. A prediction can be wrong.",
-  "rule": "An exact instruction that a computer follows: “If this happens, do that.” In a normal computer program, a person writes the rules."
+  "rule": "An exact instruction that a computer follows: “If this happens, do that.” In a normal computer program, a person writes the rules.",
+  "transformer": "A kind of neural network, first shared by Google scientists in 2017. It uses attention to connect the words in a sentence. It is the T in GPT.",
+  "turing-test": "A game Alan Turing described in 1950. He called it the imitation game. A judge chats in writing with a person and a machine. If the judge cannot tell which one is the machine, the machine passes.",
+  "understand": "To know what something means, not only what it looks like. Whether AI can understand is a question people still argue about."
 }

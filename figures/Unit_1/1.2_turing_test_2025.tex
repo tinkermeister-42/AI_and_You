@@ -1,0 +1,18 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[x=0.085cm, y=1cm]
+% Jones & Bergen (2025), three-party Turing test: how often each system was
+% picked as the human.  Data from the paper's abstract (arXiv 2503.23674).
+\node[anchor=west, font=\large\bfseries, text=ink] at (-38,5.15) {How often the judges picked it as the human};
+\foreach \v/\name/\sub/\y in {73/GPT-4.5/with a persona/3.6, 56/LLaMa-3.1/with a persona/2.5, 23/ELIZA/from 1966/1.4, 21/GPT-4o/no persona/0.3} {
+  \fill[machine!80] (0,\y-0.33) rectangle (\v,\y+0.33);
+  \node[anchor=west, font=\bfseries] at (\v+1.2,\y) {\v\%};
+  \node[anchor=east, align=right, font=\small] at (-1.5,\y) {\textbf{\name}\\[-1pt]{\footnotesize\sub}};
+}
+\draw[ink, line width=0.8pt] (0,-0.25) -- (0,4.15);
+\draw[ink!60, dashed, line width=1.2pt] (50,-0.25) -- (50,4.25);
+\node[anchor=south, font=\small, text=ink!80, align=center] at (50,4.15) {50\%: a coin flip};
+\foreach \t in {0,25,50,75,100} \node[font=\footnotesize, text=ink!70] at (\t,-0.55) {\t\%};
+\end{tikzpicture}
+\end{document}

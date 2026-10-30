@@ -1,0 +1,35 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}
+% Turing's imitation game: a judge sends text questions over a wall to two
+% hidden players, A and B.  One is a person, one is a machine.
+
+% judge
+\personicon{0}{0.1}{1.1}
+\draw[ink, line width=1.2pt, fill=white, rounded corners=2pt] (0.55,-0.55) rectangle (1.35,-0.05);
+\node[font=\large\bfseries, text=person] at (0,-1.25) {Judge};
+
+% wall
+\fill[ink!25] (4.3,-1.9) rectangle (4.75,2.6);
+\node[font=\small, text=ink!80, align=center] at (4.52,-2.45) {Wall: the judge cannot\\see or hear A or B};
+
+% hidden players
+\draw[ink!45, line width=1pt, dashed, rounded corners=6pt] (6.6,0.95) rectangle (9.0,2.45);
+\node[font=\Large\bfseries] at (7.0,2.1) {A};
+\node[font=\fontsize{30}{30}\selectfont\bfseries, text=ink!50] at (8.0,1.62) {?};
+\draw[ink!45, line width=1pt, dashed, rounded corners=6pt] (6.6,-1.7) rectangle (9.0,-0.2);
+\node[font=\Large\bfseries] at (7.0,-0.55) {B};
+\node[font=\fontsize{30}{30}\selectfont\bfseries, text=ink!50] at (8.0,-1.03) {?};
+
+% messages: typed text only, both ways
+\draw[{Stealth[length=8pt]}-{Stealth[length=8pt]}, line width=1.4pt, draw=ink] (1.65,0.45) -- node[above, sloped, font=\small] {typed messages} (6.5,1.65);
+\draw[{Stealth[length=8pt]}-{Stealth[length=8pt]}, line width=1.4pt, draw=ink] (1.65,-0.15) -- node[below, sloped, font=\small] {typed messages} (6.5,-0.95);
+
+% key
+\node[anchor=west, align=left, font=\small] at (9.4,1.7) {One player\\is a \textbf{\textcolor{person}{person}}.};
+\personicon{12.4}{1.55}{0.55}
+\node[anchor=west, align=left, font=\small] at (9.4,-0.95) {One player\\is a \textbf{\textcolor{machine}{machine}}.};
+\roboticon{12.4}{-1.0}{0.6}
+\end{tikzpicture}
+\end{document}

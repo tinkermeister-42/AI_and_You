@@ -1,0 +1,208 @@
+```{=html}
+<!-- rule_bot.html: Lesson 1.4. Tic-tac-toe against a bot that follows the
+     Newell and Simon rules in order. Students turn rules off to find which
+     ones matter. With every rule on, the bot never loses (checked by
+     scripts/test-rule-bot.js, which plays every possible game). -->
+<div class="rbot" id="rbot">
+  <div class="rbot-top">
+    <div class="rbot-board" role="grid" aria-label="Tic-tac-toe board"></div>
+    <div class="rbot-side">
+      <div class="rbot-status">You are <b>X</b>. You go first.</div>
+      <div class="rbot-why"></div>
+      <div class="rbot-score">
+        <span>🙂 You won: <b class="rs-w">0</b></span>
+        <span>🤖 Bot won: <b class="rs-l">0</b></span>
+        <span>🤝 Tie: <b class="rs-d">0</b></span>
+      </div>
+      <div class="rbot-bar">
+        <button type="button" class="rbot-btn rbot-new">↺ New game</button>
+        <label class="rbot-first"><input type="checkbox" class="rbot-botfirst"> Bot goes first</label>
+      </div>
+    </div>
+  </div>
+  <div class="rbot-rules">
+    <div class="rbot-rules-head">🤖 The bot's rules. It uses the <b>first</b> rule that it can use. Uncheck a rule to turn it off.</div>
+    <ol class="rbot-list"></ol>
+    <div class="rbot-last">If no rule works: pick any empty square.</div>
+  </div>
+</div>
+
+<style>
+.rbot { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.rbot-top { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start; }
+.rbot-board { display: grid; grid-template-columns: repeat(3, 72px); grid-template-rows: repeat(3, 72px); gap: 6px; background: #2c3e50; padding: 6px; border-radius: 8px; }
+.rbot-cell { border: none; background: #fff; font-size: 2.4rem; font-weight: bold; line-height: 1; cursor: pointer; border-radius: 4px; padding: 0; }
+.rbot-cell.x { color: #2c6fae; }
+.rbot-cell.o { color: #d35400; }
+.rbot-cell.last { background: #fff1e3; }
+.rbot-cell.win { background: #e1f3e7; }
+.rbot-cell:disabled { cursor: default; }
+.rbot-side { flex: 1 1 220px; display: flex; flex-direction: column; gap: 0.45rem; }
+.rbot-status { font-size: 1.1rem; font-weight: 600; }
+.rbot-why { min-height: 2.6em; background: #fff4e5; border-left: 4px solid #d35400; padding: 0.35rem 0.55rem; border-radius: 4px; font-size: 0.95rem; }
+.rbot-why:empty { visibility: hidden; }
+.rbot-score { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; }
+.rbot-bar { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
+.rbot-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.35rem 0.8rem; font-weight: 600; cursor: pointer; }
+.rbot-first { cursor: pointer; }
+.rbot-rules { margin-top: 0.8rem; border-top: 1px solid #e3e8ed; padding-top: 0.5rem; }
+.rbot-rules-head { font-weight: 600; margin-bottom: 0.3rem; }
+.rbot-list { padding-left: 1.6rem; margin: 0; }
+.rbot-list li { margin-bottom: 0.3rem; }
+.rbot-list label { cursor: pointer; display: inline; }
+.rbot-list li.off { color: #999; text-decoration: line-through; }
+.rbot-list li.used { font-weight: bold; }
+.rbot-last { color: #555; font-size: 0.9rem; margin-top: 0.3rem; padding-left: 1.6rem; }
+</style>
+
+<script>
+(() => {
+// BEGIN LOGIC (also run by scripts/test-rule-bot.js)
+const LINES = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+const CORNERS = [0, 2, 6, 8], SIDES = [1, 3, 5, 7];
+const OPP = { 0: 8, 2: 6, 6: 2, 8: 0 };
+
+function winner(b) {
+  for (const L of LINES) if (b[L[0]] && b[L[0]] === b[L[1]] && b[L[1]] === b[L[2]]) return { who: b[L[0]], line: L };
+  return null;
+}
+function empty(b) { return b.map((v, i) => (v ? -1 : i)).filter((i) => i >= 0); }
+// squares where `p` would complete a line
+function winningSquares(b, p) {
+  const out = new Set();
+  for (const L of LINES) {
+    const mine = L.filter((i) => b[i] === p).length, free = L.filter((i) => !b[i]);
+    if (mine === 2 && free.length === 1) out.add(free[0]);
+  }
+  return [...out];
+}
+// squares where `p` would make two ways to win at once
+function forkSquares(b, p) {
+  return empty(b).filter((i) => { const c = b.slice(); c[i] = p; return winningSquares(c, p).length >= 2; });
+}
+function blockForkSquares(b, me, you) {
+  const forks = forkSquares(b, you);
+  if (forks.length === 0) return [];
+  if (forks.length === 1) return forks;
+  // Make two in a row, so the other player must block, as long as that block
+  // does not give them a fork.
+  const forcing = empty(b).filter((i) => {
+    const c = b.slice(); c[i] = me;
+    const threats = winningSquares(c, me);
+    if (threats.length !== 1) return threats.length >= 2;
+    const d = c.slice(); d[threats[0]] = you;
+    return winningSquares(d, you).length < 2;
+  });
+  return forcing.length ? forcing : forks;
+}
+const RULES = [
+  { name: "Win", icon: "🏆", text: "If I have two in a row, I finish the line.",
+    pick: (b, me, you) => winningSquares(b, me) },
+  { name: "Block", icon: "🛡️", text: "If you have two in a row, I stop you.",
+    pick: (b, me, you) => winningSquares(b, you) },
+  { name: "Fork", icon: "🍴", text: "I make two ways to win at the same time.",
+    pick: (b, me, you) => forkSquares(b, me) },
+  { name: "Block a fork", icon: "🚧", text: "I stop you from making two ways to win.",
+    pick: (b, me, you) => blockForkSquares(b, me, you) },
+  { name: "Center", icon: "🎯", text: "I take the middle square.",
+    pick: (b) => (b[4] ? [] : [4]) },
+  { name: "Opposite corner", icon: "↘️", text: "If you are in a corner, I take the corner across from you.",
+    pick: (b, me, you) => CORNERS.filter((c) => b[c] === you && !b[OPP[c]]).map((c) => OPP[c]) },
+  { name: "Corner", icon: "📐", text: "I take an empty corner.",
+    pick: (b) => CORNERS.filter((c) => !b[c]) },
+  { name: "Side", icon: "➖", text: "I take an empty side square.",
+    pick: (b) => SIDES.filter((c) => !b[c]) },
+];
+// Returns { squares, rule } where squares are every square the bot might pick.
+function botChoices(b, me, you, on) {
+  for (let r = 0; r < RULES.length; r++) {
+    if (!on[r]) continue;
+    const s = RULES[r].pick(b, me, you);
+    if (s.length) return { squares: s, rule: r };
+  }
+  return { squares: empty(b), rule: -1 };
+}
+// END LOGIC
+
+  const root = document.getElementById("rbot");
+  if (!root) return;
+  const boardEl = root.querySelector(".rbot-board");
+  const statusEl = root.querySelector(".rbot-status");
+  const whyEl = root.querySelector(".rbot-why");
+  const listEl = root.querySelector(".rbot-list");
+  const botFirst = root.querySelector(".rbot-botfirst");
+  const score = { w: 0, l: 0, d: 0 };
+  const on = RULES.map(() => true);
+  let b, over, human = "X", bot = "O";
+
+  const cells = [];
+  for (let i = 0; i < 9; i++) {
+    const c = document.createElement("button");
+    c.type = "button"; c.className = "rbot-cell"; c.setAttribute("aria-label", "square " + (i + 1));
+    c.addEventListener("click", () => play(i));
+    boardEl.appendChild(c); cells.push(c);
+  }
+  RULES.forEach((r, i) => {
+    const li = document.createElement("li");
+    li.innerHTML = `<label><input type="checkbox" checked> ${r.icon} <b>${r.name}:</b> ${r.text}</label>`;
+    li.querySelector("input").addEventListener("change", (e) => { on[i] = e.target.checked; li.classList.toggle("off", !on[i]); });
+    listEl.appendChild(li);
+  });
+
+  function draw(last) {
+    b.forEach((v, i) => {
+      cells[i].textContent = v || "";
+      cells[i].className = "rbot-cell" + (v === "X" ? " x" : v === "O" ? " o" : "") + (i === last ? " last" : "");
+      cells[i].disabled = over || !!v;
+    });
+  }
+  function finish() {
+    const w = winner(b);
+    if (w) {
+      over = true;
+      w.line.forEach((i) => cells[i].classList.add("win"));
+      if (w.who === human) { score.w++; statusEl.textContent = "🎉 You beat the bot!"; }
+      else { score.l++; statusEl.textContent = "🤖 The bot won."; }
+    } else if (empty(b).length === 0) {
+      over = true; score.d++; statusEl.textContent = "🤝 It's a tie.";
+    }
+    if (over) {
+      cells.forEach((c) => (c.disabled = true));
+      root.querySelector(".rs-w").textContent = score.w;
+      root.querySelector(".rs-l").textContent = score.l;
+      root.querySelector(".rs-d").textContent = score.d;
+    }
+    return over;
+  }
+  function botMove() {
+    const { squares, rule } = botChoices(b, bot, human, on);
+    const i = squares[Math.floor(Math.random() * squares.length)];
+    b[i] = bot;
+    listEl.querySelectorAll("li").forEach((li, k) => li.classList.toggle("used", k === rule));
+    whyEl.textContent = rule >= 0
+      ? `The bot used rule ${rule + 1}: ${RULES[rule].icon} ${RULES[rule].name}.`
+      : "No rule worked, so the bot picked any empty square.";
+    draw(i);
+    if (!finish()) statusEl.textContent = "Your turn.";
+  }
+  function play(i) {
+    if (over || b[i]) return;
+    b[i] = human; draw();
+    if (finish()) return;
+    statusEl.textContent = "The bot is thinking ...";
+    cells.forEach((c) => (c.disabled = true));
+    setTimeout(botMove, 350);
+  }
+  function newGame() {
+    b = Array(9).fill(null); over = false; whyEl.textContent = "";
+    listEl.querySelectorAll("li").forEach((li) => li.classList.remove("used"));
+    draw();
+    statusEl.innerHTML = "You are <b>X</b>. " + (botFirst.checked ? "The bot goes first." : "You go first.");
+    if (botFirst.checked) setTimeout(botMove, 350);
+  }
+  root.querySelector(".rbot-new").addEventListener("click", newGame);
+  botFirst.addEventListener("change", newGame);
+  newGame();
+})();
+</script>
+```

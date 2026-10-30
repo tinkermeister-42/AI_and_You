@@ -1,0 +1,100 @@
+```{=html}
+<!-- labelers.html: Lesson 1.5. Do the ImageNet workers' job: a word, a grid
+     of pictures, click every picture that shows the word. Then compare with
+     a partner. The pictures are emoji, so they look a little different on
+     different computers (that is part of the lesson). -->
+<div class="lab" id="lab">
+  <div class="lab-tabs" role="tablist"></div>
+  <div class="lab-ask"></div>
+  <div class="lab-grid"></div>
+  <div class="lab-bar">
+    <button type="button" class="lab-btn lab-done">✅ I'm done. Show my labels.</button>
+    <button type="button" class="lab-btn lab-plain lab-clear">↺ Clear</button>
+  </div>
+  <div class="lab-sum" hidden></div>
+</div>
+
+<style>
+.lab { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.lab-tabs { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
+.lab-tab { border: 1px solid #b8c4cf; background: #fff; border-radius: 999px; padding: 0.25rem 0.8rem; cursor: pointer; font-weight: 600; }
+.lab-tab[aria-selected="true"] { background: #2c3e50; color: #fff; border-color: #2c3e50; }
+.lab-ask { font-size: 1.15rem; margin-bottom: 0.6rem; }
+.lab-ask b { color: #d35400; }
+.lab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 0.5rem; }
+.lab-pic { border: 3px solid #e3e8ed; background: #fff; border-radius: 10px; padding: 0.4rem 0.2rem 0.3rem; cursor: pointer; text-align: center; }
+.lab-pic .e { font-size: 2.6rem; line-height: 1.15; display: block; }
+.lab-pic .n { font-size: 0.8rem; color: #555; display: block; }
+.lab-pic .k { font-size: 0.8rem; font-weight: bold; color: #888; display: block; }
+.lab-pic[aria-pressed="true"] { border-color: #1e8449; background: #e8f5ec; }
+.lab-pic[aria-pressed="true"] .k { color: #1e8449; }
+.lab-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.7rem; }
+.lab-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.35rem 0.8rem; font-weight: 600; cursor: pointer; }
+.lab-btn.lab-plain { background: #fff; color: #2c3e50; }
+.lab-sum { margin-top: 0.6rem; background: #fff; border: 1px dashed #1e8449; border-radius: 8px; padding: 0.5rem 0.7rem; line-height: 1.5; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("lab");
+  if (!root) return;
+  // e = emoji, n = a name that does NOT give the answer away
+  const ROUNDS = {
+    chair: { word: "chair", pics: [
+      ["🪑", "1"], ["🛋️", "2"], ["💺", "3"], ["🚽", "4"], ["🛏️", "5"], ["🦽", "6"],
+      ["🪵", "7"], ["🛞", "8"], ["🧺", "9"], ["🎠", "10"], ["🪜", "11"], ["🚲", "12"] ] },
+    sandwich: { word: "sandwich", pics: [
+      ["🥪", "1"], ["🌭", "2"], ["🍔", "3"], ["🌮", "4"], ["🌯", "5"], ["🥙", "6"],
+      ["🍕", "7"], ["🫓", "8"], ["🥐", "9"], ["🍞", "10"], ["🧇", "11"], ["🥟", "12"] ] },
+    car: { word: "car", pics: [
+      ["🚗", "1"], ["🚙", "2"], ["🚕", "3"], ["🛻", "4"], ["🚐", "5"], ["🚌", "6"],
+      ["🏎️", "7"], ["🚓", "8"], ["🚜", "9"], ["🚚", "10"], ["🛺", "11"], ["🚂", "12"] ] },
+  };
+  const tabs = root.querySelector(".lab-tabs");
+  const ask = root.querySelector(".lab-ask");
+  const grid = root.querySelector(".lab-grid");
+  const sum = root.querySelector(".lab-sum");
+  const picked = { chair: new Set(), sandwich: new Set(), car: new Set() };
+  let cur = "chair";
+
+  Object.keys(ROUNDS).forEach((k) => {
+    const t = document.createElement("button");
+    t.type = "button"; t.className = "lab-tab"; t.setAttribute("role", "tab");
+    t.textContent = "Round: " + ROUNDS[k].word;
+    t.addEventListener("click", () => { cur = k; draw(); });
+    tabs.appendChild(t);
+  });
+
+  function draw() {
+    tabs.querySelectorAll(".lab-tab").forEach((t, i) => t.setAttribute("aria-selected", Object.keys(ROUNDS)[i] === cur));
+    const R = ROUNDS[cur];
+    ask.innerHTML = `Click <b>every</b> picture that shows a <b>${R.word}</b>.`;
+    grid.innerHTML = "";
+    R.pics.forEach(([e, n]) => {
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "lab-pic";
+      const on = picked[cur].has(n);
+      b.setAttribute("aria-pressed", on);
+      b.innerHTML = `<span class="e" aria-hidden="true">${e}</span><span class="n">picture ${n}</span><span class="k">${on ? "✔ " + R.word : "&nbsp;"}</span>`;
+      b.addEventListener("click", () => {
+        if (picked[cur].has(n)) picked[cur].delete(n); else picked[cur].add(n);
+        draw();
+      });
+      grid.appendChild(b);
+    });
+    sum.hidden = true;
+  }
+  root.querySelector(".lab-done").addEventListener("click", () => {
+    const R = ROUNDS[cur];
+    const yes = R.pics.filter(([, n]) => picked[cur].has(n)).map(([, n]) => n);
+    sum.innerHTML =
+      `<b>My labels for "${R.word}":</b> I said <b>${yes.length}</b> of 12 pictures show a ${R.word}.<br>` +
+      (yes.length ? `Pictures: <b>${yes.join(", ")}</b><br>` : "") +
+      `Now compare with your partner. Which pictures did you <b>disagree</b> on? Write them on your sheet.`;
+    sum.hidden = false;
+  });
+  root.querySelector(".lab-clear").addEventListener("click", () => { picked[cur].clear(); draw(); });
+  draw();
+})();
+</script>
+```

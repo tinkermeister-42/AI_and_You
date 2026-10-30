@@ -1,0 +1,13 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}
+% ImageNet in three numbers (Wikipedia, ImageNet): 14 million images,
+% more than 20,000 categories, 49,000 workers from 167 countries (2008-2010).
+\foreach \x/\big/\small/\col in {0/14 million/pictures/machine, 5.2/20{,}000+/kinds of things/person, 10.4/49{,}000/people in 167 countries\\labeled them/result} {
+  \draw[\col, line width=1.4pt, fill=\col!8, rounded corners=8pt] (\x,0) rectangle (\x+4.6,2.6);
+  \node[font=\fontsize{24}{24}\selectfont\bfseries, text=\col] at (\x+2.3,1.7) {\big};
+  \node[font=\normalsize, align=center, text=ink] at (\x+2.3,0.7) {\small};
+}
+\end{tikzpicture}
+\end{document}

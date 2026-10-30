@@ -1,0 +1,192 @@
+# 1.3 - The First Chatbot {.unnumbered}
+
+In 1966, people at a university in Massachusetts talked to a computer program named **ELIZA**. ELIZA acted like a counselor. Some people told it their secrets. Some people believed it understood them.
+
+ELIZA understood nothing. It followed a list of {{< glink slug="rule" text="rules" >}} that one person wrote.
+
+Today, you chat with ELIZA, read its rules, and write your own. Then you act out a famous puzzle: a person who answers notes in Chinese without knowing any Chinese.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** Be ELIZA [5 min]{.time}
+- [👥]{.icon} **Learn Together** How ELIZA works [8 min]{.time}
+- [🛠️]{.icon} **Try It** Change ELIZA's rules [10 min]{.time}
+- [🧪]{.icon} **Famous Experiment** The Chinese Room [10 min]{.time}
+- [💬]{.icon} **Talk About It** Does it understand? [7 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can explain how ELIZA used key words and rules to answer.
+- [ ] I can explain the ELIZA effect.
+- [ ] I can add a rule to a chatbot and test it.
+- [ ] I can act out the Chinese Room and explain the question it asks.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🔑]{.icon} {{< glink "key word" >}}: a word that a program looks for to decide what to do
+- [📏]{.icon} {{< glink rule >}}: an exact instruction, like "If this happens, do that."
+- [🪞]{.icon} {{< glink "ELIZA effect" >}}: when people feel that a computer understands them, but it does not
+- [🀄]{.icon} {{< glink "understand" >}}: to know what something means, not only what it looks like
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_1/1.3_The_First_Chatbot.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+:::{.guided-notes-link}
+[Chinese Room rule book and note cards](/handouts/Unit_1/1.3_Chinese_Room_Rule_Book.pdf){target="_blank"} - print one set for each group.
+:::
+
+{{< warmup >}}
+
+Work with a partner (or a group of 3, taking turns). One of you is **ELIZA**. ELIZA can only answer with the rule card. ELIZA cannot think of anything new!
+
+| If your partner says ... | ELIZA says ... |
+|---|---|
+| I feel ___ | Why do you feel ___? |
+| I am ___ | How long have you been ___? |
+| I want ___ | Why do you want ___? |
+| a word about family | Tell me more about your family. |
+| anything else | Please go on. |
+
+1. Your partner tells ELIZA about their day. Talk for 3 turns.
+2. Switch jobs.
+
+:::{.think title="Was it hard to be ELIZA? Did your partner's answers make sense?"}
+Being ELIZA is easy. You do not need to understand anything. You only look for the key words and follow the card.
+
+Sometimes ELIZA's answer sounds caring. Sometimes it sounds strange. ELIZA cannot tell the difference.
+:::
+
+{{< learn >}}
+
+### 1.3.1 - The Man Who Made ELIZA
+
+- **Joseph Weizenbaum** was born in Berlin, Germany, in 1923. His family was Jewish.
+- In 1936, his family escaped from the Nazis. They came to the United States.
+- He became a professor at **MIT**, a university near Boston.
+- In 1966, he shared ELIZA with the world. It was one of the first chatbots ever made.
+
+***
+
+### 1.3.2 - How ELIZA Works
+
+ELIZA does not learn. Weizenbaum wrote every rule by hand. Here is how ELIZA answers one sentence:
+
+![](/images/Unit_1/1.3_eliza_steps.svg){width="620px" fig-align="center" fig-alt="You type: I feel sad about my brother. Step 1: find the key words, I feel. Step 2: copy the rest, sad about my brother. Step 3: swap words, my becomes your. Step 4: fill in the reply. ELIZA says: Why do you feel sad about your brother?"}
+
+:::{.remember}
+- ELIZA looks for {{< glink slug="key-word" text="key words" >}}. It does not know what the words mean.
+- If no rule matches, ELIZA says something that fits anything, like "Please go on."
+- ELIZA is a **normal program**: a person wrote the rules (like the calculator in Lesson 1.1).
+:::
+
+***
+
+### 1.3.3 - People Believed It
+
+Weizenbaum's secretary knew that ELIZA was only a program. She watched him build it. But one day, she was chatting with ELIZA. She asked Weizenbaum to leave the room so she could talk to it alone.
+
+Many people felt that ELIZA understood them. Today, we call this the **{{< glink "ELIZA effect" >}}**.
+
+Weizenbaum was shocked. He became worried about computers. Later he wrote that some jobs should not be given to computers, **even if a computer can do them**.
+
+:::{.think title="Remember the Turing test from Lesson 1.2. How did ELIZA do in 2025?"}
+Judges picked ELIZA as the human **23%** of the time. A program from 1966 with no learning still fooled some people!
+:::
+
+{{< tryit >}}
+
+### 1.3.4 - Chat with ELIZA, Then Change Its Rules
+
+:::{.steps}
+1. Chat with ELIZA for 2 minutes.
+2. Check the box **Show which rule ELIZA used**. Chat some more. Which rules does ELIZA use most?
+3. **Break ELIZA.** Write something that makes ELIZA give a strange answer.
+4. Open **ELIZA's rules**. Add a new rule. Test it! (Example: when someone says `i like *`, ELIZA says `Why do you like *?`)
+5. Add a rule in your **home language**. Does ELIZA answer you now?
+:::
+
+{{< include /assets/Unit_1/eliza.html >}}
+
+:::{.gotcha title="ELIZA does not understand you"}
+Do not tell ELIZA anything private. It is a game. (Nothing you type here leaves your computer.)
+
+If you need to talk about something real, talk to a person: a teacher, the school counselor, or your family.
+:::
+
+:::{.think title="Your rule in your home language worked. Why did ELIZA not understand your language before?"}
+Nobody wrote rules in your language. ELIZA can only do what its rules say. A rule-based program knows **nothing** that a person did not write down.
+:::
+
+### 1.3.5 - The Chinese Room
+
+:::{.experiment title="The Chinese Room (John Searle, 1980)"}
+A philosopher named **John Searle** asked people to imagine this:
+
+![](/images/Unit_1/1.3_chinese_room.svg){width="560px" fig-align="center" fig-alt="A person who knows Chinese passes a note in Chinese into a closed room. Inside, a person who does not know Chinese looks in a rule book and passes a reply in Chinese back out."}
+
+- A person sits in a closed room. They do **not** know any Chinese.
+- Notes in Chinese come in through a slot.
+- The person has a **rule book**. It says: *"If you see these shapes, send back those shapes."*
+- The person finds the shapes and copies the reply. They pass it out.
+- Outside, people who know Chinese read the replies. The replies make sense! They think someone in the room knows Chinese.
+
+**Does anyone in the room understand Chinese?**
+:::
+
+**Act it out.** Work in a group of **2 to 4**: one person in the room, the rest outside. Each group needs one rule book and one set of note cards. (Only 4 in class? Be one group, and take turns going in the room.)
+
+:::{.steps}
+1. One person is **in the room**. Sit behind a folder or a book so the others cannot see you. Take the rule book.
+2. Everyone else is **outside**. Share the note cards. Fold back the English part.
+3. Pass one note into the room. The person in the room finds the same shapes in the rule book and copies the reply on the back. Pass it out.
+4. Outside: check the reply with the English on your card. Does it make sense?
+5. Do all 6 notes. Then switch: a new person goes in the room.
+:::
+
+:::{.gotcha title="If you read Chinese"}
+You cannot be in the room, because you already know what the notes say! Be the person outside who checks the replies.
+:::
+
+:::{.think title="Look at note 6. What did the room say?"}
+Note 6 asks: *"Can you speak Chinese?"* The room answered: *"Yes, I can speak Chinese."*
+
+But the person in the room does not know any Chinese. The answer is perfect, and it is **not true**.
+:::
+
+{{< talk >}}
+
+Searle said: the person in the room does not understand Chinese. They only follow rules. **A computer is the same.** It follows rules, so it does not understand anything.
+
+Other people disagree. They say: maybe the person does not understand, but the **whole room** (the person plus the book) does.
+
+What do you think?
+
+:::{.frames}
+- The person in the room **does** / **does not** understand Chinese, because ...
+- The whole room **does** / **does not** understand Chinese, because ...
+- ELIZA is like the Chinese Room because ...
+- Today's chatbots are **like** / **not like** the Chinese Room, because ...
+:::
+
+{{< further >}}
+
+:::{.project title="Build a Better ELIZA"}
+With your group, write 10 new rules for a different job: a **school helper**, a **soccer fan**, or a **food expert**. Add them to ELIZA.
+
+Then let another group chat with your ELIZA. How many turns until it says something strange?
+:::
+
+:::{.project title="ELIZA vs. Today's Chatbot"}
+Type the same sentence to ELIZA and to your class AI tool. Try: *I feel nervous about my test.*
+
+Compare the two answers. Which one sounds like it understands? Does either one really understand? Write your reasons on your sheet.
+:::
+
+**More to explore**
+
+- [ELIZA Terminal](https://www.masswerk.at/elizabot/eliza.html){target="_blank"}: Chat with a version of ELIZA that works like the 1966 program. It looks like an old computer screen.

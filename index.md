@@ -2,6 +2,12 @@
 
 *A mini-block class with Mr. Ross at Frederick Douglass High School*
 
+:::{.note title="Written with AI"}
+Mr. Ross wrote this book in collaboration with **Claude**, an AI assistant made by Anthropic. Mr. Ross planned the class, chose what goes in every lesson, and makes the final decisions. Claude helped write the pages, find and check facts, draw the pictures, and build the demos.
+
+In Unit 3, you will learn how to use AI this way: as a helper, while you stay in charge.
+:::
+
 ![](images/Unit_1/1.1_big_question.svg){width="420px" fig-align="center" fig-alt="A drawing of a human brain, a question mark, and a robot head labeled AI."}
 
 ## 🧭 About the Class
@@ -34,7 +40,7 @@ Before teaching, Mr. Ross spent over 15 years working in AI and data science, in
 | Unit | Lessons | What we do |
 |---|:---:|---|
 | [**1: Where AI Came From**](chapters/Unit_1/index.qmd) | 6 | What is AI? The story of AI from the 1950s to ChatGPT. |
-| [**2: Brains and Neural Networks**](chapters/Unit_2/index.qmd) | 8 | How brain cells work, and how computers copy the idea. |
+| [**2: Brains and Neural Networks**](chapters/Unit_2/index.qmd) | 9 | How brain cells work, and how computers copy the idea. |
 | [**3: Using AI Well**](chapters/Unit_3/index.qmd) | 9 | Use AI for writing, research, translation, math, and art. Finish a real project. |
 | [**4: When AI Gets It Wrong**](chapters/Unit_4/index.qmd) | 4 | Catch AI when it is wrong, biased, or fake. |
 | [**5: AI in the Real World**](chapters/Unit_5/index.qmd) | 4 | Privacy, scams, jobs, and the news. |
@@ -61,6 +67,3 @@ Each lesson has a **printable sheet** to write on in class.
 
 The demos on these pages work in any web browser. You do not need an account, and what you type stays on your computer.
 
-***
-
-*This book was written by Mr. Ross in collaboration with Claude, an AI assistant made by Anthropic.*

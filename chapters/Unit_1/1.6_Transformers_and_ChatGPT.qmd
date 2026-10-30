@@ -1,0 +1,164 @@
+# 1.6 - Transformers and ChatGPT {.unnumbered}
+
+On November 30, 2022, a company called OpenAI shared a chatbot named **ChatGPT**. In about two months, around **100 million** people used it. At that time, no app had ever grown that fast.
+
+ChatGPT came from an idea that Google scientists shared in 2017. The idea is called **attention**. You use it every time you read.
+
+Today, you see how attention works. You build a sentence the way a chatbot does: one word at a time. Then you finish the class timeline, from 1950 to today.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** What does "it" mean? [4 min]{.time}
+- [👥]{.icon} **Learn Together** Attention, GPT, and today [10 min]{.time}
+- [🛠️]{.icon} **Try It** Attention and the next word [14 min]{.time}
+- [🗓️]{.icon} **Finish the Timeline** 1950 to today [7 min]{.time}
+- [💬]{.icon} **Talk About It** Whose words? [5 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can explain what attention means for a transformer.
+- [ ] I can explain what the letters in GPT mean.
+- [ ] I can build a sentence one word at a time, like a chatbot.
+- [ ] I can put the big moments in AI history in order.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🔦]{.icon} {{< glink attention >}}: when an AI looks at all the other words to decide which ones matter
+- [🔀]{.icon} {{< glink transformer >}}: a kind of neural network that uses attention. The T in GPT
+- [📚]{.icon} {{< glink "large language model" >}}: a transformer trained on a huge amount of text to predict the next word
+- [🔮]{.icon} {{< glink prediction >}}: a best guess about something you do not know yet
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_1/1.6_Transformers_and_ChatGPT.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Read these two sentences. What does **"it"** mean in each one? Write your answers on your sheet.
+
+> 1. The animal didn't cross the street because **it** was too **tired**.
+> 2. The animal didn't cross the street because **it** was too **wide**.
+
+:::{.think title="How did you know?"}
+In sentence 1, "it" means **the animal**. Animals get tired. Streets do not.
+
+In sentence 2, "it" means **the street**. Streets can be wide. Animals are not "too wide" to cross.
+
+Only one word changed. To decide, you looked back at other words in the sentence. You **paid attention** to the right words.
+:::
+
+{{< learn >}}
+
+### 1.6.1 - Attention (2017)
+
+For a long time, AI read one word at a time. It had trouble remembering the start of a long sentence. In 2017, scientists at Google shared a new kind of neural network. They called it the {{< glink transformer >}}.
+
+A transformer looks at **every word at the same time**. For each word, it decides which other words matter most. This is called {{< glink attention >}}. The scientists' paper had a famous title: *Attention Is All You Need.*
+
+![](/images/Unit_1/1.6_attention.svg){width="720px" fig-align="center" fig-alt="Two sentences. In 'The animal didn't cross the street because it was too tired,' an arrow goes from 'it' to 'animal.' In the same sentence ending with 'wide,' the arrow goes from 'it' to 'street.' In both, the last word is highlighted."}
+
+***
+
+### 1.6.2 - GPT and ChatGPT
+
+![](/images/Unit_1/1.6_gpt.svg){width="600px" fig-align="center" fig-alt="G is Generative: it makes new text. P is Pre-trained: it learned first from a huge amount of text. T is Transformer: it uses attention to connect the words."}
+
+A GPT is a {{< glink "large language model" >}}. It learned by playing one game, billions of times: **predict the next word** (like the phone keyboard in Lesson 1.1). When it answers you, it predicts one word, then the next, then the next.
+
+:::{.note title="Right now (fall 2026)"}
+There are many chatbots built this way: ChatGPT, Gemini, Claude, Copilot, Llama, and more. Most AI tools made for schools are built on top of models like these.
+:::
+
+***
+
+### 1.6.3 - AI Wins Nobel Prizes (2024)
+
+The Nobel Prize is one of the biggest prizes in science. In 2024, two Nobel Prizes went to AI.
+
+- **Physics:** John Hopfield and Geoffrey Hinton, for early discoveries that made neural networks possible.
+- **Chemistry:** Demis Hassabis and John Jumper, for **AlphaFold**. It is an AI that predicts the shape of proteins (the tiny machines inside your body). They shared the prize with David Baker, who designs new proteins.
+
+{{< tryit >}}
+
+### 1.6.4 - See the Attention
+
+Click the word that **"it"** means. Then change the last word. Watch which words light up.
+
+{{< include /assets/Unit_1/attention.html >}}
+
+***
+
+### 1.6.5 - Be the Chatbot: Next Word, by Vote
+
+A chatbot writes one word at a time. It picks a word that is likely to come next. Now the class does the same thing.
+
+:::{.steps}
+1. Mr. Ross writes the start of a sentence on the board: **After school, my friends and I ...**
+2. Everyone writes **one** next word on a small paper. Do not talk!
+3. Mr. Ross counts the words. The word with the most votes goes on the board.
+4. Do it again for the next word. Keep going until the sentence ends (about 8 words).
+5. Now give the same start to your class AI tool: *"Finish this sentence: After school, my friends and I"*. Compare its sentence with the class sentence.
+:::
+
+:::{.gotcha title="Small class?"}
+With only 4 or 5 people, many words get 1 vote. Break a tie by rolling a die, or ask everyone to write **two** words each.
+:::
+
+:::{.think title="Was the class sentence surprising or ordinary?"}
+Usually it is **ordinary**. The most common word wins every time, so the sentence uses common words.
+
+Chatbots have the same problem. So they do not always pick the top word. Sometimes they pick the second or third word, on purpose, to make the writing more interesting.
+:::
+
+### 1.6.6 - Finish the Class Timeline
+
+Put every card from Unit 1 on the wall, in order. Is anything missing? With a partner, pick one card and explain it to the class in 2 sentences.
+
+| Year | What happened |
+|---|---|
+| 1950 | Alan Turing asks: Can a machine think? |
+| 1956 | AI gets its name at Dartmouth College. |
+| 1966 | ELIZA, one of the first chatbots. |
+| 1980 | The Chinese Room. |
+| 1997 | Deep Blue beats the world chess champion. |
+| 2009 | ImageNet: 14 million labeled pictures. |
+| 2012 | A neural network wins the ImageNet contest. |
+| 2016 | AlphaGo beats Lee Sedol at Go. |
+| 2017 | Transformers and attention. |
+| 2022 | ChatGPT. |
+| 2024 | Nobel Prizes for AI. |
+| 2025 | A chatbot passes the Turing test. |
+
+{{< talk >}}
+
+ChatGPT learned from text that people wrote: books, websites, news, and more. Most of those writers were never asked.
+
+:::{.frames}
+- Writers **should** / **should not** be asked before AI learns from their words, because ...
+- The most important moment on our timeline is ... because ...
+- In 10 years, I think AI will ... , because ...
+:::
+
+{{< watch >}}
+
+:::{.watch title="How Chatbots and Large Language Models Work (Code.org)"}
+{{< video https://www.youtube.com/watch?v=X-AWdfSFCHQ title="How Chatbots and Large Language Models Work (Code.org)" >}}
+
+**While you watch:** How does a chatbot decide which word comes next?
+
+**Captions in your language:** Press **CC** to turn on captions. Then press ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**. Choose your language.
+:::
+
+{{< further >}}
+
+:::{.project title="Trick the Attention"}
+Write your own tricky "it" sentence, where one word changes what "it" means. Ask your class AI tool: *"In this sentence, what does 'it' mean?"* Does it get it right? Try your sentence in your home language too.
+:::
+
+:::{.project title="People of AI"}
+With a partner, make a poster about one person from Unit 1: Alan Turing, Joseph Weizenbaum, John Searle, Fei-Fei Li, Geoffrey Hinton, or Demis Hassabis. Where were they from? What did they do? Hang it next to their card on the timeline.
+:::

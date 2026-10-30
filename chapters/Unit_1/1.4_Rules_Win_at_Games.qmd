@@ -1,0 +1,151 @@
+# 1.4 - Rules Win at Games {.unnumbered}
+
+In 1958, a newspaper wrote about a new computer. It said the computer would soon "walk, talk, see, write, reproduce itself and be conscious of its existence."
+
+Did that happen? Not in 1958. Not for a long time.
+
+For about 40 years, scientists tried to build AI out of rules. Rules did not work for seeing or talking. But rules did work for one thing: **games**. Today, you play a game against a bot made only of rules. Then you break it.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** Did it come true? [7 min]{.time}
+- [👥]{.icon} **Learn Together** Dreams, winters, and chess [10 min]{.time}
+- [🛠️]{.icon} **Try It** Beat the rule bot [15 min]{.time}
+- [💬]{.icon} **Talk About It** Is it smart? [8 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can explain what an AI winter was and why it happened.
+- [ ] I can explain how Deep Blue beat the world chess champion.
+- [ ] I can test which rules a game bot needs.
+- [ ] I can explain why rules work for games but not for seeing pictures.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [❄️]{.icon} {{< glink "AI winter" >}}: a time when people stopped giving money to AI research
+- [📣]{.icon} {{< glink hype >}}: big promises and excitement, more than the facts show
+- [♟️]{.icon} {{< glink "Deep Blue" >}}: the IBM computer that beat the world chess champion in 1997
+- [📏]{.icon} {{< glink rule >}}: an exact instruction, like "If this happens, do that."
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_1/1.4_Rules_Win_at_Games.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Long ago, people made big promises about AI. Read each one. Did it come true by the time they said? Mark your sheet.
+
+| | Year | Who said it | The promise |
+|---|---|---|---|
+| **A** | 1958 | A newspaper | A new computer will soon walk, talk, see, write, make copies of itself, and know that it exists. |
+| **B** | 1958 | Two scientists | Within 10 years, a computer will be the world chess champion. |
+| **C** | 1965 | Herbert Simon | Within 20 years, machines will be able to do any work a person can do. |
+| **D** | 1970 | Marvin Minsky | In 3 to 8 years, we will have a machine as smart as an average person. |
+
+:::{.think title="Which promises came true?"}
+**None of them came true by the time they said.**
+
+Promise **B** came true later. A computer beat the world chess champion in **1997**. That is 39 years later, not 10.
+
+Promises **C** and **D** did not come true by the 1980s. Today, some people say AI is getting close to them. Other people strongly disagree. You will think about this in Unit 6.
+:::
+
+{{< learn >}}
+
+### 1.4.1 - A New Name, Big Dreams
+
+In 1955, four scientists wrote a plan for a summer meeting at Dartmouth College. In the plan, they used a new name: **artificial intelligence**. The meeting was in 1956. AI had a name.
+
+The scientists had big dreams. They thought smart machines were only a few years away. Governments and companies gave them a lot of money.
+
+***
+
+### 1.4.2 - AI Winters
+
+Progress was much slower than the promises. So the money stopped. This happened two times.
+
+People call these times **{{< glink slug="ai-winter" text="AI winters" >}}**. (In winter, plants stop growing. In an AI winter, AI research stopped growing.)
+
+![](/images/Unit_1/1.4_ai_winters.svg){width="700px" fig-align="center" fig-alt="A timeline from 1950 to 2000. 1956: AI gets its name. Big dreams until the early 1970s. Then an AI winter in the late 1970s. Rules for business in the 1980s. Then another AI winter around 1990. 1997: Deep Blue wins at chess."}
+
+In the 1980s, companies paid for AI built from rules. Experts wrote thousands of rules for jobs like checking orders or finding problems in machines. These programs were expensive. They broke when something new happened. Then came the second winter.
+
+:::{.gotcha title="Watch out for hype"}
+The promises in the Warm Up were **{{< glink hype >}}**: big promises, more than the facts showed. Hype brings money and attention. When the promises fail, people stop trusting the field.
+
+People make big promises about AI today too. When you hear one, ask: **Who says this? What do they get if I believe it?**
+:::
+
+***
+
+### 1.4.3 - Rules Can Win at Games
+
+A game is a small world. It has clear rules. Every move is on the board. Rules can work well in a small world.
+
+:::{.real-world title="Deep Blue beats the champion (1997)"}
+In May 1997, IBM's computer **{{< glink "Deep Blue" >}}** played the world chess champion, **Garry Kasparov**. Deep Blue won, $3\frac{1}{2}$ to $2\frac{1}{2}$.
+
+- People wrote Deep Blue's rules for judging a chess position.
+- Then it checked about **200 million** positions every second.
+- Deep Blue did not learn like the drawing AI in Lesson 1.1. It used rules and speed.
+:::
+
+:::{.remember}
+Deep Blue could beat the best chess player in the world. But its rules could not tell a cat from a dog. Rules that work in a small world do not work in the big, messy real world.
+:::
+
+{{< tryit >}}
+
+### 1.4.4 - Beat the Rule Bot
+
+This bot plays tic-tac-toe. It has 8 rules. It checks them **in order** and uses the first one it can.
+
+:::{.steps}
+1. Play 3 games with **all the rules on**. Can you beat the bot?
+2. **Turn off one rule.** Play again. Can you beat it now?
+3. Try different rules. Find the rules the bot needs most. Write them on your sheet.
+4. Look at the orange box after each move. Which rule did the bot use?
+:::
+
+{{< include /assets/Unit_1/rule_bot.html >}}
+
+:::{.think title="With all the rules on, could anyone beat the bot?"}
+No. With all 8 rules, the bot never loses. The best you can do is a tie. A computer played **every possible game** against it to check.
+
+Some rules matter more than others. Turn off **Block** and the bot does not stop you from winning. But turn off **Side** and nothing changes, because the bot almost never needs it.
+:::
+
+:::{.think title="Tic-tac-toe needs 8 rules. How many rules would a cat finder need?"}
+No one knows. People tried for years and could not write them. A cat can be any color, any size, in any position, in any light. There are too many cases.
+
+That is why AI changed. In the next lesson, you will see what happened when scientists stopped writing rules and started collecting **examples**.
+:::
+
+{{< talk >}}
+
+Deep Blue beat the best chess player in the world. Is Deep Blue **smart**?
+
+:::{.frames}
+- I think Deep Blue **is** / **is not** smart, because ...
+- The most important rule for the bot was ... because ...
+- Rules work for games, but not for ... , because ...
+- People make big promises about AI because ...
+:::
+
+{{< further >}}
+
+:::{.project title="Rule Book Battle"}
+Play tic-tac-toe on paper with a partner. One of you is the **bot**. The bot must follow the 8 rules on your sheet, in order. The bot cannot think! Can the human win? Switch jobs.
+:::
+
+:::{.project title="My AI Promise for 2036"}
+Write one promise about AI for 10 years from now. Use the form: *"By 2036, AI will ..."* Mr. Ross keeps the promises. Will you be right, or will it be hype?
+:::
+
+:::{.project title="Write Rules for Rock, Paper, Scissors"}
+Write rules for a rock, paper, scissors bot. Then play against a partner who knows your rules. Can a bot that follows rules ever win at this game? Why or why not?
+:::

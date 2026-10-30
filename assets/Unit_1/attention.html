@@ -1,0 +1,98 @@
+```{=html}
+<!-- attention.html: Lesson 1.6. Click a word to see which other words help
+     decide what "it" means. The strengths are set by hand to show the idea;
+     a real transformer computes numbers like these for every pair of words. -->
+<div class="attn" id="attn">
+  <div class="attn-pick"></div>
+  <p class="attn-q">What does <b>"it"</b> mean? Click the word you think. Then change the last word and try again.</p>
+  <div class="attn-sent" aria-live="polite"></div>
+  <div class="attn-ends"></div>
+  <div class="attn-out" hidden></div>
+  <p class="attn-note">This shows the idea. A real transformer gives a number to <b>every</b> pair of words, and it does this many times at once.</p>
+</div>
+
+<style>
+.attn { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.attn-pick { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+.attn-pick button { border: 1px solid #b8c4cf; background: #fff; border-radius: 999px; padding: 0.2rem 0.75rem; cursor: pointer; font-weight: 600; }
+.attn-pick button[aria-pressed="true"] { background: #2c3e50; color: #fff; border-color: #2c3e50; }
+.attn-q { margin: 0.3rem 0 0.5rem; }
+.attn-sent { font-size: 1.35rem; line-height: 2.3; }
+.attn-w { display: inline-block; padding: 0 0.3rem; margin: 0 0.05rem; border-radius: 6px; cursor: pointer; border: 2px solid transparent; }
+.attn-w.it { border-color: #d35400; font-weight: bold; color: #d35400; cursor: default; }
+.attn-w.guess { border-color: #2c6fae; }
+.attn-w.end { text-decoration: underline wavy #d35400; text-underline-offset: 5px; }
+.attn-ends { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin: 0.3rem 0 0.4rem; }
+.attn-ends span { font-weight: 600; }
+.attn-ends button { border: 1px solid #d35400; background: #fff; color: #d35400; border-radius: 6px; padding: 0.2rem 0.7rem; font-weight: 600; cursor: pointer; }
+.attn-ends button[aria-pressed="true"] { background: #d35400; color: #fff; }
+.attn-out { background: #fff4e5; border-left: 4px solid #d35400; padding: 0.4rem 0.6rem; border-radius: 4px; margin-top: 0.4rem; }
+.attn-note { font-size: 0.85rem; color: #555; margin: 0.6rem 0 0; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("attn");
+  if (!root) return;
+  // words; index of "it"; endings with the word "it" means and hand-set strengths
+  const S = [
+    { name: "The animal", words: "The animal didn't cross the street because it was too".split(" "), it: 7,
+      ends: { tired: { means: 1, w: { 1: 0.9, 5: 0.15, 10: 0.7 } }, wide: { means: 5, w: { 1: 0.15, 5: 0.9, 10: 0.7 } } } },
+    { name: "The trophy", words: "The trophy didn't fit in the suitcase because it was too".split(" "), it: 8,
+      ends: { big: { means: 1, w: { 1: 0.9, 6: 0.15, 11: 0.7 } }, small: { means: 6, w: { 1: 0.15, 6: 0.9, 11: 0.7 } } } },
+    { name: "The cup", words: "I put the cup on the table, and it".split(" "), it: 8,
+      ends: { broke: { means: 3, w: { 3: 0.9, 6: 0.25, 9: 0.7 } }, shook: { means: 6, w: { 3: 0.2, 6: 0.85, 9: 0.7 } } } },
+  ];
+  let si = 0, end = null, guess = null;
+  const pick = root.querySelector(".attn-pick");
+  const sent = root.querySelector(".attn-sent");
+  const ends = root.querySelector(".attn-ends");
+  const out = root.querySelector(".attn-out");
+
+  S.forEach((s, i) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = s.name + " ...";
+    b.addEventListener("click", () => { si = i; end = Object.keys(S[si].ends)[0]; guess = null; draw(); });
+    pick.appendChild(b);
+  });
+  end = Object.keys(S[0].ends)[0];
+
+  // indexes count words from 0; the last word is the ending
+  function clean(w) { return w.replace(/[,.]/g, ""); }
+  function draw() {
+    const s = S[si];
+    pick.querySelectorAll("button").forEach((b, i) => b.setAttribute("aria-pressed", i === si));
+    const words = s.words.concat([end + "."]);
+    const E = s.ends[end];
+    sent.innerHTML = "";
+    words.forEach((w, i) => {
+      const span = document.createElement("span");
+      span.className = "attn-w" + (i === s.it ? " it" : "") + (i === words.length - 1 ? " end" : "") + (i === guess ? " guess" : "");
+      span.textContent = w;
+      if (guess !== null && i !== s.it) {
+        const a = E.w[i] || 0;
+        if (a) span.style.background = `rgba(211, 84, 0, ${a * 0.55})`;
+      }
+      if (i !== s.it) span.addEventListener("click", () => { guess = i; draw(); });
+      sent.appendChild(span);
+      sent.appendChild(document.createTextNode(" "));
+    });
+    ends.innerHTML = "<span>Change the last word:</span>";
+    Object.keys(s.ends).forEach((k) => {
+      const b = document.createElement("button");
+      b.type = "button"; b.textContent = k; b.setAttribute("aria-pressed", k === end);
+      b.addEventListener("click", () => { end = k; guess = null; draw(); });
+      ends.appendChild(b);
+    });
+    if (guess === null) { out.hidden = true; return; }
+    const right = clean(words[E.means]);
+    const ok = guess === E.means;
+    out.innerHTML = (ok ? "✅ Yes! " : "🤔 Not quite. ") +
+      `Here, <b>"it"</b> means <b>"the ${right}"</b>. The orange words are the ones that matter most for "it". ` +
+      `The last word, <b>"${end}"</b>, changes everything.`;
+    out.hidden = false;
+  }
+  draw();
+})();
+</script>
+```

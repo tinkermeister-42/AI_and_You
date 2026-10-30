@@ -1,0 +1,28 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[
+  w/.style={inner sep=2pt, font=\large, anchor=base},
+  hot/.style={w, fill=machine!35, rounded corners=3pt},
+  it/.style={w, text=machine, font=\large\bfseries, draw=machine, rounded corners=3pt, line width=1pt},
+]
+% "it" looks back at the other words; the last word decides which noun.
+\newcommand{\sentence}[5]{% #1 row name, #2 y, #3 style of animal, #4 style of street, #5 last word
+  \node[w] (a#1) at (0,#2) {The};
+  \node[#3, right=2pt of a#1.base east, anchor=base west] (b#1) {animal};
+  \node[w, right=2pt of b#1.base east, anchor=base west] (c#1) {didn't cross the};
+  \node[#4, right=2pt of c#1.base east, anchor=base west] (d#1) {street};
+  \node[w, right=2pt of d#1.base east, anchor=base west] (e#1) {because};
+  \node[it, right=4pt of e#1.base east, anchor=base west] (f#1) {it};
+  \node[w, right=4pt of f#1.base east, anchor=base west] (g#1) {was too};
+  \node[hot, right=2pt of g#1.base east, anchor=base west] (h#1) {#5.};}
+\sentence{1}{0}{hot}{w}{tired}
+\sentence{2}{-2.2}{w}{hot}{wide}
+\draw[flow, draw=machine, line width=1.6pt] (f1.north) to[bend right=28] (b1.north);
+\draw[flow, draw=machine, line width=1.6pt] (f2.north) to[bend right=28] (d2.north);
+\draw[flow, draw=machine!60, line width=1.1pt, dashed] (f1.south) to[bend right=35] (h1.south);
+\draw[flow, draw=machine!60, line width=1.1pt, dashed] (f2.south) to[bend right=35] (h2.south);
+\node[anchor=west, font=\small\bfseries, text=result] at (11.7,0.1) {``it'' = the animal};
+\node[anchor=west, font=\small\bfseries, text=result] at (11.7,-2.1) {``it'' = the street};
+\end{tikzpicture}
+\end{document}

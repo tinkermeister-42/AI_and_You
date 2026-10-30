@@ -38,3 +38,25 @@
     {\Large\bfseries #1\ifkey\ \textcolor{keyred}{KEY}\fi}\hfill Name \underline{\hspace{2in}}\par\vspace{0.6em}
   \fi}
 \newcommand{\partner}{\par\vspace{0.4em}Work with a partner. Compare answers when you finish each problem.\par}
+
+% ---------- shared pieces added for AI and You ----------
+% no hyphenated words anywhere: students read in a second language
+\hyphenpenalty=10000 \exhyphenpenalty=10000
+\usepackage{pifont}   % \ding{34} scissors
+\newcommand{\blank}[1]{\underline{\hspace{#1}}}
+% ragged table columns: no hyphenated words for students reading in a second language
+\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
+% An answer written on a blank line: \ansline{width}{answer}
+\newcommand{\ansline}[2]{\ifkey\underline{\makebox[#1][l]{\,\textcolor{keyred}{#2}}}\else\blank{#1}\fi}
+% Unit 1 class timeline: a card to cut out and post on the wall.
+%   \timelinecard{1950}{Alan Turing asks ...}
+\newcommand{\timelinecard}[3][8.3]{%
+  \begin{tikzpicture}
+    \pgfmathsetmacro{\tw}{#1-0.8}
+    \draw[dashed, line width=0.8pt, rounded corners=3pt] (0,0) rectangle (#1,4.7);
+    \node[anchor=north west, font=\huge\bfseries] at (0.3,4.45) {#2};
+    \node[anchor=north west, text width=\tw cm, align=left, font=\normalsize] at (0.3,3.45) {#3};
+    \node[anchor=south east, font=\footnotesize, text=black!55] at (#1-0.2,0.15) {Draw a picture here.};
+  \end{tikzpicture}}
+% three cards across: \timelinecard[5.6]{...}{...}
+\newcommand{\cuthere}{\noindent{\Large\ding{34}}\,{\small\itshape Cut out the cards. Add them to the class timeline.}\par\vspace{0.3em}}

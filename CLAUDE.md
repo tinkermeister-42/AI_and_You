@@ -9,10 +9,10 @@ many with little math background. The six units and every lesson are in
 - The block is 45 minutes and meets daily, but the school uses it for
   college visits, field trips and assemblies, so the class meets about 3/4
   of the days (about 64 meetings)
-- **37 lessons.** Each lesson is a 40-minute core (the "Today's Plan" minutes
+- **38 lessons.** Each lesson is a 40-minute core (the "Today's Plan" minutes
   add to 40) plus a **Go Further** that can fill a second day. Behind
   schedule means skipping Go Further, never squeezing the core
-- The teacher thinks 37 is already plenty. Do not add lessons to the map
+- The teacher thinks 38 is already plenty. Do not add lessons to the map
   without asking
 - Students miss days, so every lesson stands alone and the page is the
   catch-up path: a student who was out reads it and does the Try It
@@ -39,6 +39,12 @@ plain words, true statement.
 - **Deploy:** `./deploy.sh` renders, runs `scripts/check-site-assets.py`
   (fails on a missing or stale PDF or SVG), and force-pushes `_book` to
   `gh-pages` (personal site: `tinkermeister-42.github.io/AI_and_You`)
+- **Deploy in batches:** once per finished unit or at the end of a working
+  session, not after every lesson. Each push to `gh-pages` runs a Pages
+  build, and the teacher's GitHub Actions allotment is limited
+- **The teacher can only view the work site** (school network). A deploy is
+  not visible to him until he runs the mirror, which this session is not
+  allowed to trigger. Tell him when a batch is ready to mirror
 - **Mirror to the work site is manual.** The teacher reviews the personal
   site, then runs "Mirror site to Work Account" from the Actions tab
   (`.github/workflows/sync-to-work.yml`, workflow_dispatch from `main`). It
@@ -79,6 +85,13 @@ The teacher wants kids' hands on real things in every lesson.
   MagicSchool. When a lesson needs a chatbot, the page says "your class AI
   tool" and the activity works with any chatbot. Never write steps for one
   product's menus
+- **Students see AI built, but do not build it.** The teacher builds AI
+  professionally. In Unit 2 he trains a real model live (his Pokémon stats
+  demo: the CSV from his old Algebra site, a neural network instead of the
+  regression he used then), and the class first trains a **physical**
+  neural network on the same kind of data, so they can see how a simple
+  network makes decisions. Students watch, test, and change things; they do
+  not write code
 - A widget that shows an idea with made-up numbers says so on the page
   ("This shows the idea. A real ... uses ...")
 
@@ -105,6 +118,18 @@ The teacher wants kids' hands on real things in every lesson.
   the rules, and possible futures. Present real disagreement among experts
   evenhandedly, without doom and without hype, and end on what a student
   can do
+- **Labs scale from 4 to 18 students.** Class size swings day to day. Give
+  every group activity a size range ("groups of 3 or 4"), say how roles
+  double up when the class is tiny (4 students may be one group), and how a
+  big class splits (several groups, or two teams that race). A physical
+  activity that needs N people must work with 4 and say what extra people do
+- **Famous experiments, acted out.** The teacher wants classic experiments
+  and thought experiments folded in where they fit, in a `.experiment`
+  callout, with the class physically acting them out when possible: the
+  Turing test (1.2), the Chinese Room (1.3), Pavlov (2.3), Rule 30 and the Game of Life (2.1, the teacher worked at Wolfram
+  Research), Clever Hans and the husky that was really a snow detector (4.2), the trolley problem and
+  the Moral Machine (6.4), the paperclip maximizer (6.5), replacing a brain
+  one neuron at a time (6.6)
 - **Dated facts go in a box.** Anything that will go out of date (a model
   name, a law, a number of users) goes in a `.note` titled "Right now (fall
   2026)" so it is easy to find and update. History before 2026 does not need
@@ -135,6 +160,7 @@ The Algebra 1 set (`.objectives`, `.vocab`, `.remember`, `.real-world`,
 | `.frames` | Sentence starters for talking and writing (orange) |
 | `.big-question` | The bookend question, 1.1 and 6.6 only; `[text]{.bq}` is the large line (pink) |
 | `.project` | A Go Further project idea (indigo) |
+| `.experiment` | A famous experiment or thought experiment, acted out when possible (brown) |
 
 Syntax: `:::{.callout-type title="Title"} … :::`. New types need an entry in
 `scripts/custom-callouts.js` and styles in `styles/ai-and-you.css`.
@@ -207,6 +233,6 @@ is a sentence that costs them the idea.
 
 **Scope decisions are the teacher's.** He spent fifteen years in AI and data
 science before teaching. He removed the original first and last units (the
-brain question as whole units) and cut the plan from 60 lessons to 37. Do
+brain question as whole units) and cut the plan from 60 lessons to 37, then added 2.1 (simple rules, complex behavior). Do
 not propose cutting or adding lessons; report what you find and let him
 decide.
