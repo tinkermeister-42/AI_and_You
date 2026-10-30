@@ -27,6 +27,8 @@ Try them yourself with the rules tool in Lesson 2.1.
 
 ![A textile cone snail (*Conus textile*) on the Great Barrier Reef. Look at the triangles on its shell. (Photo: Richard Ling, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/){target="_blank"}, Wikimedia Commons)](/images/Unit_2/explore_conus_textile.jpg){width="420px" fig-align="center" fig-alt="A cone snail on sand. Its shell is covered with small brown and white triangles of many sizes."}
 
+![Cambridge North station in England, in 2017. The pattern on its walls is based on Rule 30. (Photo: Hugh Venables, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/){target="_blank"}, Geograph, via Wikimedia Commons)](/images/Unit_2/explore_cambridge_north.jpg){width="560px" fig-align="center" fig-alt="The sign Cambridge North on top of a station wall made of metal panels. The panels are full of small square holes in a pattern of triangles and lines."}
+
 ### A Big Book About Simple Rules
 
 In 2002, Stephen Wolfram wrote a very big book about simple rules, called *A New Kind of Science*. It has more than 1,000 pages of pictures like Rule 30. He argues that simple rules can explain many things in nature: shells, plants, snowflakes, and maybe even physics. Many scientists liked the pictures but did not agree with all of his ideas. You can decide for yourself.
