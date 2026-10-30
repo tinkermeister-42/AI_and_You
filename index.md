@@ -61,7 +61,8 @@ Every lesson is 40 minutes, and every lesson includes a hands-on activity.
 | 🛠️ | **Try It** | Use a demo on the page, a real AI tool, or do an activity. |
 | 💬 | **Talk About It** | Talk with a partner about a hard question. |
 | 📺 | **Watch** | A short video. Turn on captions in your language. |
-| 🚀 | **Go Further** | More to try on a second day, or on your own. |
+| 🚀 | **Go Further** | More to do in class on a second day. |
+| 🔭 | **Explore More** | Extra pages for students who want to learn more on their own. |
 
 Each lesson has a **printable sheet** to write on in class.
 
