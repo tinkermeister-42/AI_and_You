@@ -75,10 +75,6 @@ Here is Kofi's prompt again, in color:
 **Task, context, format.** You do not need all three every time. But when an answer is not useful, one of them is usually missing.
 :::
 
-:::{.real-world title="You can ask in your language"}
-Most chatbots can read and write many languages. You can write your prompt in your home language. You can also ask for the answer in English **and** your language, side by side.
-:::
-
 ***
 
 ### 3.1.3 - Keep Your Private Information Private
@@ -140,6 +136,6 @@ Write the same good prompt in English and in your home language. Ask both in new
 As a class, choose the 5 best prompts you wrote today. Make a poster with each one in color: task, context, format. Hang it by the computers.
 :::
 
-:::{.project title="Ask for an Example"}
-A fourth trick: **show the AI an example** of what you want. Try: "Write 3 quiz questions about volcanoes. Here is one example: *What comes out of a volcano? (a) lava (b) water (c) sand.*" Does an example make the answer better?
+:::{.explore-link}
+🔭 **Explore More:** [prompts in your language, and a fourth trick](/chapters/Explore/explore-unit-3.qmd#explore-3-1). For students who want to learn more on their own.
 :::

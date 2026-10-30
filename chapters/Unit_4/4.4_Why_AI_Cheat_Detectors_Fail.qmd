@@ -61,10 +61,6 @@ So detectors make a {{< glink "false positive" >}}: they say "AI" when a person 
 
 ### 4.4.3 - Detectors Miss AI, Too
 
-:::{.real-world title="Even its makers gave up"}
-In 2023, OpenAI, the company that makes ChatGPT, made its own detector. It found only **26%** of AI writing. It called **9%** of human writing "AI." OpenAI shut it down after 6 months because it was not accurate enough.
-:::
-
 It is easy to fool a detector: ask the AI to use rare words, or change some words by hand. So detectors blame honest students who write simply, and miss people who cheat carefully.
 
 :::{.note title="Right now (fall 2026)"}
@@ -122,5 +118,9 @@ Open a writing app with version history, like Google Docs. Write a paragraph, th
 :::
 
 :::{.project title="A Letter to the School"}
-Write a short letter to our principal about AI detectors. Use evidence from this lesson: the Stanford study and OpenAI's detector. Say what you think the school should do. Ask a partner for feedback before you send it.
+Write a short letter to our principal about AI detectors. Use evidence from this lesson and its Explore More page. Say what you think the school should do. Ask a partner for feedback before you send it.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [the detector its own makers shut down, and how real detectors measure words](/chapters/Explore/explore-unit-4.qmd#explore-4-4). For students who want to learn more on their own.
 :::

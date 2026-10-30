@@ -103,4 +103,12 @@ book:
       chapters:
         - file: chapters/Unit_6/index.qmd
 
+    - part: "Explore More"
+      chapters:
+        - file: chapters/Explore/index.qmd
+        - file: chapters/Explore/explore-unit-1.qmd
+        - file: chapters/Explore/explore-unit-2.qmd
+        - file: chapters/Explore/explore-unit-3.qmd
+        - file: chapters/Explore/explore-unit-4.qmd
+
     - file: glossary.qmd

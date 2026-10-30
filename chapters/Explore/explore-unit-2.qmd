@@ -1,0 +1,199 @@
+# Explore More: Brains and Neural Networks {.unnumbered}
+
+This page goes with Unit 2. It is for students who want to learn more on their own. Nothing here is homework. Each section goes with one lesson.
+
+## From Lesson 2.1: Simple Rules, Complex Behavior {#explore-2-1}
+
+### Different Cards, Different Pictures
+
+A rule card has 8 answers, and each answer is black or white. So there are $2^8 = 256$ different rule cards. Wolfram gave each one a number from 0 to 255.
+
+Different cards make very different pictures. All four of these start with **one black square**:
+
+![](/images/Unit_2/2.1_rules_gallery.svg){width="760px" fig-align="center" fig-alt="Four pictures. Rule 4: a single straight line that never changes. Rule 90: a neat triangle pattern. Rule 30: a triangle full of messy chaos. Rule 110: a complex pattern that grows on one side."}
+
+- **Rule 4** never changes.
+- **Rule 90** makes a neat pattern of triangles inside triangles.
+- **Rule 30** makes chaos.
+- **Rule 110** makes shapes that move and crash into each other. Scientists proved that Rule 110 can do **any** calculation a computer can do. It only needs the right starting row.
+
+Try them yourself with the rules tool in Lesson 2.1.
+
+### Rule 30 in the Real World
+
+- **Random numbers.** *Mathematica* used Rule 30 to make random numbers.
+- **A sea snail.** A cone snail called *Conus textile* has a pattern on its shell that looks like Rule 30. See photos: [Conus textile (Wikipedia)](https://en.wikipedia.org/wiki/Conus_textile){target="_blank"}. Does it look like Rule 30?
+- **A train station.** Cambridge North station in England has Rule 30 patterns on its walls.
+
+### A Big Book About Simple Rules
+
+In 2002, Stephen Wolfram wrote a very big book about simple rules, called *A New Kind of Science*. It has more than 1,000 pages of pictures like Rule 30. He argues that simple rules can explain many things in nature: shells, plants, snowflakes, and maybe even physics. Many scientists liked the pictures but did not agree with all of his ideas. You can decide for yourself.
+
+## From Lesson 2.2: Your Brain Is Made of Cells {#explore-2-2}
+
+### Brain Numbers
+
+- About **86 billion** neurons.
+- Hundreds of **trillions** of synapses (connections). One neuron can connect to thousands of others.
+- Signals move from about **0.5** to **120 meters per second**. The fastest signals are as fast as a race car. The slowest are slower than walking.
+- Your whole brain runs on about **20 watts** of power. That is less than an old light bulb.
+
+### Slow Parts, Fast Brain
+
+A computer chip does billions of steps every second. One neuron can fire only a few hundred times a second. So how can a brain recognize a friend's face in less than half a second?
+
+The answer is **at the same time**. Billions of neurons work together, all at once. A computer chip does one step after another, very fast. A brain does many small steps side by side. Remember the GPU race in Lesson 1.5: many slow workers together can beat one fast worker.
+
+### Try It: Measure the Speed of a Signal
+
+Use the squeeze chain from Lesson 2.2. Measure how far a signal travels: from one hand, up the arm, to the brain, and down the other arm. That is about 1.5 meters. Divide that distance by the time for one person. Is your answer close to 120 meters per second? Why not? (Hint: the brain has to decide to squeeze. That takes time too.)
+
+## From Lesson 2.3: How Brains Learn {#explore-2-3}
+
+### The Taxi Drivers Whose Brains Grew
+
+To drive a taxi in London, a driver must learn about 25,000 streets by heart. It takes 3 or 4 years. The test is called "The Knowledge."
+
+In 2000, scientists in London used brain scans on taxi drivers. One part of the brain helps with places and maps. It is called the **hippocampus**. In taxi drivers, the back of it was bigger than in other people. Drivers with more years on the job had bigger ones.
+
+The brain is not fixed. Practice changes it, even its size, at any age.
+
+### Learning Without Trying
+
+Pavlov's dogs did not try to learn. Their brains connected the sound and the food by themselves, because the two happened together again and again.
+
+Think about your phone. Does a sound make you reach for it before you think? Apps and games are built to make sounds and pictures that you learn to react to. Now you know how that works, and you can notice it.
+
+## From Lesson 2.4: The Artificial Neuron {#explore-2-4}
+
+### The First Neuron Machine
+
+In 1943, Warren McCulloch and Walter Pitts showed that a neuron could be written as math: multiply, add, compare. In 1958, Frank Rosenblatt built the **Mark I Perceptron**, a machine as big as a room. It had a camera made of 400 light sensors, in a 20 by 20 grid. Its weights were real knobs, turned by small motors when it learned.
+
+The newspapers were very excited. One story said the Navy expected it to walk, talk, see, and even be conscious one day. (You read about this in Lesson 1.4.)
+
+### The Problem One Neuron Cannot Solve
+
+Try to make one neuron that answers this question with two inputs, A and B:
+
+> Is **exactly one** of them on?
+
+| A | B | The answer should be |
+|:---:|:---:|:---:|
+| 0 | 0 | NO |
+| 1 | 0 | YES |
+| 0 | 1 | YES |
+| 1 | 1 | NO |
+
+Choose weights for A and B and a threshold. Test all 4 rows. You will not find any that work! Here is why. To say YES when only A is on, A needs a big enough weight. The same for B. But then when **both** are on, the total is even bigger, and the neuron says YES again.
+
+In 1969, Marvin Minsky and Seymour Papert wrote a famous book that proved one neuron cannot solve problems like this. Many people stopped working on neural networks for years. This was part of an AI winter (Lesson 1.4).
+
+### The Fix: More Neurons
+
+The answer is a **network**. Two neurons can look at the inputs first. A third neuron looks at their answers. Try it with the class: one neuron fires if A or B is on. Another fires only if A and B are both on. The last neuron fires if the first one fires and the second one does **not**. Together, they solve it.
+
+Today's neural networks have many layers of neurons, one after another. Each layer looks at the answers of the layer before.
+
+## From Lesson 2.5: Train a Human Neural Network {#explore-2-5}
+
+### Why the Fix Rule Works
+
+Say the neuron said PSYCHIC, but the card is FIGHTING. The total was too small. The fix rule says **ADD**: Attack weight + A, Special weight + S, bias + 1.
+
+What happens to the total for that same card? Each part of the total gets bigger:
+
+- The Attack part grows by $A \times A$.
+- The Special part grows by $S \times S$.
+- The bias grows by 1.
+
+So the new total is bigger by $A \times A + S \times S + 1$. That number is always more than 0. The fix always pushes the total **toward the right answer** for that card. SUBTRACT works the same way, in the other direction.
+
+**Try it with Machop** ($A = 3$, $S = 1$): the total was $-2$. After the fix, it should be bigger by $3 \times 3 + 1 \times 1 + 1 = 11$. Check: $(3 \times 2) + (1 \times 2) + 1 = 9$. And $-2 + 11 = 9$. It works!
+
+### Will It Always Finish?
+
+Frank Rosenblatt used this fix rule for his perceptron in 1958. Mathematicians later proved something surprising. If **any** straight line can split the training cards into two groups, the fix rule will always find one. It makes a limited number of mistakes, and then it stops making them.
+
+But if no straight line can split the cards, the neuron never stops making mistakes. (See the problem one neuron cannot solve, in the section for Lesson 2.4.)
+
+### Shuffle the Cards
+
+Train again, but shuffle the training cards first. Use the **Check Our Math** tool in Lesson 2.5, or do it on paper. Do you end with the same weights? Does the neuron still get the training cards right? Do different weights give different answers on the test cards?
+
+## From Lesson 2.6: Watch Mr. Ross Build an AI {#explore-2-6}
+
+### How a Network Draws a Curved Border
+
+The class neuron in Lesson 2.5 had one rule: one straight line. Everything on one side was FIGHTING. Everything on the other side was PSYCHIC.
+
+A network has **hidden neurons** between the inputs and the answer. Each hidden neuron draws its own line. The last neuron looks at all of their answers together. Many short lines, put together, can make a curved border.
+
+Try it with the AI tool in Lesson 2.6. Choose *Fighting or Psychic?* with 2 numbers. Train with **0** hidden neurons and look at the colored map. Then train with **16**. How is the border different?
+
+### Three Piles, Not Two
+
+In class, the data was split into two piles: training and test. Real data scientists often use **three** piles:
+
+1. **Training data:** the network learns its weights from it.
+2. **Checking data** (scientists call it *validation data*): people use it to make choices, like how many hidden neurons to use.
+3. **Test data:** used only once, at the very end.
+
+Why three? Say you try 10 network sizes, and you keep the one with the best test score. Then you used the test data to make a choice. The test score is not a fair check anymore. A third pile stays a fair check.
+
+### The Data Behind the AI
+
+The Pokédex has 1,281 Pokémon. That is small for AI. A big image AI learns from millions or billions of pictures. A chatbot learns from a huge amount of text. The steps are the same six steps you saw in class. Only the size is different.
+
+## From Lesson 2.7: Train Your Own AI {#explore-2-7}
+
+### Why Teachable Machine Learns So Fast
+
+Mr. Ross's Pokémon AI in Lesson 2.6 started from nothing. Teachable Machine does not. It starts with a network that **already learned** from millions of pictures, like the ImageNet pictures in Lesson 1.5. That network already knows about edges, shapes, and colors (you will see how in Lesson 2.8).
+
+So Teachable Machine only learns the **last step** from your pictures: which shapes go with "rock." That is why it needs only about 50 pictures and a few seconds.
+
+This is called {{< glink "transfer learning" >}}: starting from an AI that already learned something, then teaching it a new job. It is like learning a new sport when you already know how to run and catch.
+
+### Transfer Learning Everywhere
+
+Most AI today uses transfer learning. A company trains one very big network, for a very long time, at a high cost. Then many people teach it new jobs with a small number of examples. A chatbot is one big network that learned from a huge amount of text. Then it is taught to follow instructions and have conversations.
+
+**Think about it:** what if the first big network learned something unfair? Then every AI built on top of it can have the same problem. (You will study this in Unit 4.)
+
+## From Lesson 2.8: How AI Sees {#explore-2-8}
+
+### Layers: From Edges to a Cat
+
+In Lesson 2.8, a filter found edges. But an edge is not a cat. How does a network get from edges to "cat"?
+
+A vision network has many layers of neurons. Each layer builds on the one before.
+
+![](/images/Unit_2/2.8_layers.svg){width="740px" fig-align="center" fig-alt="Five steps from left to right. Pixels, which are numbers. Layer 1 finds edges. Layer 2 finds shapes like circles and corners. Layer 3 finds parts like an ear, an eye, and whiskers. The last layer decides: cat."}
+
+Nobody tells the network to look for edges or ears. It learns its own filters during training, from millions of labeled pictures (like ImageNet in Lesson 1.5).
+
+### Filters on Top of Filters
+
+Layer 1 uses filters on the **picture**, like the filters in Lesson 2.8. Layer 2 uses filters on the **answers of layer 1**. Where layer 1 found a curved edge next to another curved edge, layer 2 finds a circle. Layer 3 uses filters on layer 2's answers. A circle with a dark spot in the middle could be an eye.
+
+Each layer is only multiply and add, like one neuron. But many layers, one after another, can find very complicated things.
+
+### See It for Yourself
+
+Scientists have made pictures of what each layer in a real network looks for. In early layers, the pictures look like stripes and edges. In later layers, they look like eyes, wheels, and faces. Search the web for "feature visualization" to see some.
+
+## From Lesson 2.9: How Chatbots Work {#explore-2-9}
+
+### Why Not Just a Bigger Table?
+
+The tiny chatbot in Lesson 2.9 keeps a **table of counts**. It looks back only 1 word. Could a real chatbot just use a much bigger table?
+
+Try it. To look back 2 words, the table needs a row for every **pair** of words. A language has tens of thousands of words, so there are hundreds of millions of pairs. To look back 1,000 words, there are more rows than atoms in the universe. And most long sentences have **never** been written before, so the table would have no count for them.
+
+So a real chatbot does not store a table. It stores what it learned as **weights** in a neural network: billions of numbers, like the weights in Lesson 2.4. The network learns patterns, not exact sentences. It can make a good guess about a sentence it has never seen.
+
+| | The tiny chatbot | A real chatbot |
+|---|---|---|
+| **Stores what it learned as** | a table of counts | billions of **weights** in a neural network |
+| **When it sees something new** | it has no count, so it stops | it still makes a guess |

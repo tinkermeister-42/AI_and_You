@@ -17,6 +17,16 @@ many with little math background. The six units and every lesson are in
   language barriers and learning gaps. Plan a core with about half of what
   would fill 40 minutes in a typical class (one main activity, not two).
   What does not fit goes in Go Further
+- **Core, Go Further, Explore More.** A lesson's core is the warm-up, the
+  essential idea, one main activity, and Talk About It. A second class
+  activity goes first in Go Further as a "Day 2" project; its sheet section
+  moves to the end of the sheet under "Go Further". Extra explanation,
+  history, and extra widgets go to the unit's Explore More page
+  (`chapters/Explore/explore-unit-N.qmd`, section id `#explore-N-M`), which
+  is for students working on their own. Each lesson that has one ends with an
+  `.explore-link` div pointing there. Never cut an acted-out experiment or a
+  teacher favorite (Klingon Room, human network, live build, Rule 30) from a
+  core to make room
 - The teacher thinks 38 is already plenty. Do not add lessons to the map
   without asking
 - Students miss days, so every lesson stands alone and the page is the
@@ -209,12 +219,16 @@ Keep the repository clean. Dead branches are clutter.
   asking.** The teacher reads the lessons on the site anyway. Deleting
   branches is still his
 
-Two things that bite:
+Things that bite:
 
 - **Deploying is not merging.** `deploy.sh` force-pushes the built `_book` to
   `gh-pages` and touches nothing else, so a change can be live on the site
   while its source exists only on a feature branch. Check
   `git rev-list --count origin/main..HEAD` before assuming work is safe
+- **A squash or checkout makes built files look stale.** Git rewrites the
+  files with new timestamps, so `check-site-assets.py` may call a PDF or SVG
+  stale when it is not. If the sources did not change since the build,
+  `touch handouts/Unit_*/*.pdf images/Unit_*/*.svg`; otherwise rebuild
 - **Session credentials may not delete branches.** A 403 on
   `git push origin --delete` is a permission limit; branch removal is the
   teacher's to do

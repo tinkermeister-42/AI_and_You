@@ -10,7 +10,7 @@ For about 40 years, scientists tried to build AI out of rules. Rules did not wor
 **Today's Plan** (40 minutes)
 
 - [🔥]{.icon} **Warm Up** Did it come true? [7 min]{.time}
-- [👥]{.icon} **Learn Together** Dreams, winters, and chess [10 min]{.time}
+- [👥]{.icon} **Learn Together** Winters and chess [10 min]{.time}
 - [🛠️]{.icon} **Try It** Beat the rule bot [15 min]{.time}
 - [💬]{.icon} **Talk About It** Is it smart? [8 min]{.time}
 :::
@@ -43,36 +43,27 @@ Long ago, people made big promises about AI. Read each one. Did it come true by 
 |---|---|---|---|
 | **A** | 1958 | A newspaper | A new computer will soon walk, talk, see, write, make copies of itself, and know that it exists. |
 | **B** | 1958 | Two scientists | Within 10 years, a computer will be the world chess champion. |
-| **C** | 1965 | Herbert Simon | Within 20 years, machines will be able to do any work a person can do. |
-| **D** | 1970 | Marvin Minsky | In 3 to 8 years, we will have a machine as smart as an average person. |
+| **C** | 1970 | Marvin Minsky | In 3 to 8 years, we will have a machine as smart as an average person. |
 
 :::{.think title="Which promises came true?"}
 **None of them came true by the time they said.**
 
 Promise **B** came true later. A computer beat the world chess champion in **1997**. That is 39 years later, not 10.
 
-Promises **C** and **D** did not come true by the 1980s. Today, some people say AI is getting close to them. Other people strongly disagree. You will think about this in Unit 6.
+Promise **C** did not come true by the 1970s. Today, some people say AI is getting close. Other people strongly disagree. You will think about this in Unit 6.
 :::
 
 {{< learn >}}
 
-### 1.4.1 - A New Name, Big Dreams
+### 1.4.1 - AI Winters
 
-In 1955, four scientists wrote a plan for a summer meeting at Dartmouth College. In the plan, they used a new name: **artificial intelligence**. The meeting was in 1956. AI had a name.
-
-The scientists had big dreams. They thought smart machines were only a few years away. Governments and companies gave them a lot of money.
-
-***
-
-### 1.4.2 - AI Winters
+In 1956, scientists met at Dartmouth College. They gave the new field a name: **artificial intelligence**. They thought smart machines were only a few years away. Governments and companies gave them a lot of money.
 
 Progress was much slower than the promises. So the money stopped. This happened two times.
 
 People call these times **{{< glink slug="ai-winter" text="AI winters" >}}**. (In winter, plants stop growing. In an AI winter, AI research stopped growing.)
 
 ![](/images/Unit_1/1.4_ai_winters.svg){width="700px" fig-align="center" fig-alt="A timeline from 1950 to 2000. 1956: AI gets its name. Big dreams until the early 1970s. Then an AI winter in the late 1970s. Rules for business in the 1980s. Then another AI winter around 1990. 1997: Deep Blue wins at chess."}
-
-In the 1980s, companies paid for AI built from rules. Experts wrote thousands of rules for jobs like checking orders or finding problems in machines. These programs were expensive. They broke when something new happened. Then came the second winter.
 
 :::{.gotcha title="Watch out for hype"}
 The promises in the Warm Up were **{{< glink hype >}}**: big promises, more than the facts showed. Hype brings money and attention. When the promises fail, people stop trusting the field.
@@ -82,7 +73,7 @@ People make big promises about AI today too. When you hear one, ask: **Who says 
 
 ***
 
-### 1.4.3 - Rules Can Win at Games
+### 1.4.2 - Rules Can Win at Games
 
 A game is a small world. It has clear rules. Every move is on the board. Rules can work well in a small world.
 
@@ -100,7 +91,7 @@ Deep Blue could beat the best chess player in the world. But its rules could not
 
 {{< tryit >}}
 
-### 1.4.4 - Beat the Rule Bot
+### 1.4.3 - Beat the Rule Bot
 
 This bot plays tic-tac-toe. It has 8 rules. It checks them **in order** and uses the first one it can.
 
@@ -114,9 +105,9 @@ This bot plays tic-tac-toe. It has 8 rules. It checks them **in order** and uses
 {{< include /assets/Unit_1/rule_bot.html >}}
 
 :::{.think title="With all the rules on, could anyone beat the bot?"}
-No. With all 8 rules, the bot never loses. The best you can do is a tie. A computer played **every possible game** against it to check.
+No. With all 8 rules, the bot never loses. The best you can do is a tie.
 
-Some rules matter more than others. Turn off **Block** and the bot does not stop you from winning. But turn off **Side** and nothing changes, because the bot almost never needs it.
+Some rules matter more than others. Turn off **Block** and the bot does not stop you from winning. Turn off **Side** and nothing changes.
 :::
 
 :::{.think title="Tic-tac-toe needs 8 rules. How many rules would a cat finder need?"}
@@ -146,6 +137,6 @@ Play tic-tac-toe on paper with a partner. One of you is the **bot**. The bot mus
 Write one promise about AI for 10 years from now. Use the form: *"By 2036, AI will ..."* Mr. Ross keeps the promises. Will you be right, or will it be hype?
 :::
 
-:::{.project title="Write Rules for Rock, Paper, Scissors"}
-Write rules for a rock, paper, scissors bot. Then play against a partner who knows your rules. Can a bot that follows rules ever win at this game? Why or why not?
+:::{.explore-link}
+🔭 **Explore More:** [how AI got its name, rules for business, and a rock, paper, scissors challenge](/chapters/Explore/explore-unit-1.qmd#explore-1-4). For students who want to learn more on their own.
 :::

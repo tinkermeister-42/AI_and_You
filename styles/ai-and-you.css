@@ -139,3 +139,8 @@ a.btn.tool-link {
 @media (max-width: 600px) {
   main table.table, main table { display: block !important; overflow-x: auto; max-width: 100%; }
 }
+
+/* Explore More link at the bottom of a lesson */
+.explore-link { border: 1px solid #c5cae9; border-left: 5px solid rgba(63, 81, 181, 1); background: rgba(63, 81, 181, 0.05);
+  border-radius: 6px; padding: 0.55rem 0.8rem; margin: 1.5rem 0 0.5rem; }
+.explore-link p { margin: 0; }

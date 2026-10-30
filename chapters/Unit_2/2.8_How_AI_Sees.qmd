@@ -2,21 +2,20 @@
 
 To you, a photo is a face, a dog, or a street. To a computer, a photo is a **grid of numbers**. Nothing else.
 
-So how does a self-driving car find a person in the street? How does your phone find your face? It does math on the numbers, layer by layer, like the neurons you built.
+So how does a self-driving car find a person in the street? How does your phone find your face? It does math on the numbers: multiply and add, like the neurons you built.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
 
 - [🔥]{.icon} **Warm Up** Color by number [8 min]{.time}
-- [👥]{.icon} **Learn Together** Pixels, filters, and layers [10 min]{.time}
+- [👥]{.icon} **Learn Together** Pixels and filters [10 min]{.time}
 - [🛠️]{.icon} **Try It** Find the edges [14 min]{.time}
 - [💬]{.icon} **Talk About It** What could a car miss? [8 min]{.time}
 :::
 
 :::{.objectives}
 - [ ] I can explain how a computer stores a picture as numbers.
-- [ ] I can use a filter to find edges, by hand and on screen.
-- [ ] I can explain how layers in a network build from edges to objects.
+- [ ] I can use a filter to find edges in a picture.
 - [ ] I can name ways computer vision is used, and what could go wrong.
 :::
 
@@ -68,14 +67,6 @@ That is the same **multiply and add** as the neuron in Lesson 2.4! If the answer
 
 ***
 
-### 2.8.3 - Layers
-
-A vision network has many layers of neurons. Each layer builds on the one before.
-
-![](/images/Unit_2/2.8_layers.svg){width="740px" fig-align="center" fig-alt="Five steps from left to right. Pixels, which are numbers. Layer 1 finds edges. Layer 2 finds shapes like circles and corners. Layer 3 finds parts like an ear, an eye, and whiskers. The last layer decides: cat."}
-
-Nobody tells the network to look for edges or ears. It learns its own filters during training, from millions of labeled pictures (like ImageNet in Lesson 1.5).
-
 :::{.real-world title="Computer vision is everywhere"}
 - **Self-driving cars** find lanes, signs, other cars, and people.
 - **Phones** find your face to unlock.
@@ -85,7 +76,7 @@ Nobody tells the network to look for edges or ears. It learns its own filters du
 
 {{< tryit >}}
 
-### 2.8.4 - Find the Edges
+### 2.8.3 - Find the Edges
 
 :::{.steps}
 1. Choose the **house**. Turn on **show the numbers**. Find a 0 and a 255.
@@ -93,7 +84,6 @@ Nobody tells the network to look for edges or ears. It learns its own filters du
 3. Click a bright square on the right. Read the math. Then click a dark one.
 4. Change the filter to **find side-to-side edges**. What changes?
 5. Draw your own picture with the pen. Which filter finds its edges best?
-6. Do the edge problem on your sheet **by hand**.
 :::
 
 {{< include /assets/Unit_2/pixels_filters.html >}}
@@ -103,7 +93,7 @@ The **up-and-down** filter compares the left side with the right side. It finds 
 
 The **side-to-side** filter compares the top with the bottom. It finds edges that go across, like the bottom of the house.
 
-A real network has many filters like these, and it learns them by itself.
+A real network has many filters like these, and it learns them by itself. (See Explore More to find out how.)
 :::
 
 {{< talk >}}
@@ -128,10 +118,23 @@ A self-driving car sees only numbers. What if it sees something it never saw in 
 
 {{< further >}}
 
+:::{.project title="Day 2: Find the Edge by Hand"}
+Do the edge problem on your sheet, with a partner. A tiny picture has dark squares (0) on the left and bright squares (9) on the right.
+
+1. Put the up-and-down filter over the first 3 columns. Multiply each pair of numbers. Add all 9.
+2. Move the filter one column to the right. Do it again. Do all 4 places.
+3. Where are the big answers? Why there?
+4. Check one answer with the tool in 2.8.3: turn on **show the numbers** and click a square.
+:::
+
 :::{.project title="Send a Secret Picture"}
 Draw a 10 by 10 picture on grid paper. Write it as numbers (0 and 1) on another paper. Give only the numbers to a partner. Can they draw your picture? This is how pictures travel over the internet.
 :::
 
 :::{.project title="Make a Blur"}
 Choose the **blur** filter. Click a square and read the math. Why does blur add all 9 numbers and divide by 9? (Hint: what is the mean of 9 numbers?)
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [layers: from edges to a cat](/chapters/Explore/explore-unit-2.qmd#explore-2-8). For students who want to learn more on their own.
 :::

@@ -2,27 +2,25 @@
 
 A calculator from 1975 can do $3847 \times 29$ and get it right every time. Some of the most powerful AI in the world can solve very hard math contest problems. And yet a chatbot can still get a long multiplication problem **wrong**, and sound completely sure.
 
-How can that be? And how should you use AI in math class? You want it to help you learn, not do the learning for you.
+How can that be? Today you find out, and you test it yourself.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
 
-- [🔥]{.icon} **Warm Up** Catch the mistake [5 min]{.time}
+- [🔥]{.icon} **Warm Up** Catch the mistake [7 min]{.time}
 - [👥]{.icon} **Learn Together** Rules and predictions [9 min]{.time}
-- [🛠️]{.icon} **Try It** Test the chatbot, then get a hint [20 min]{.time}
+- [🛠️]{.icon} **Try It** Test the chatbot [18 min]{.time}
 - [💬]{.icon} **Talk About It** Help or shortcut? [6 min]{.time}
 :::
 
 :::{.objectives}
 - [ ] I can explain why a calculator is always right on arithmetic, but a chatbot is not.
 - [ ] I can check an AI answer with a calculator, an estimate, or by plugging it in.
-- [ ] I can ask AI for a hint instead of the answer.
 - [ ] I can find a wrong step in a solution.
 :::
 
 ::::{.vocab}
 :::{.word-cards}
-- [💡]{.icon} {{< glink hint >}}: a small help that shows you the next step, but not the answer
 - [📏]{.icon} {{< glink estimate >}}: a quick answer that is close, but not exact. Use it to check.
 - [🧩]{.icon} {{< glink token >}}: a word or a piece of a word that a chatbot reads and writes
 - [📜]{.icon} {{< glink rule >}}: an exact step that a computer follows every time
@@ -78,23 +76,9 @@ Many AI tools now use a calculator or computer code behind the scenes for arithm
 | **Calculator** | Do it again with a tool that follows rules. | $111563$ ✅ |
 | **Plug it in** | Put the answer back in the problem. Does it work? | $111563 \div 29 = 3847$ ✅ |
 
-***
-
-### 3.6.3 - Hints, Not Answers
-
-If AI does your homework, you did not learn it. Then the test comes, and the AI is not there.
-
-Ask for a {{< glink hint >}} instead:
-
-:::{.prompt-example}
-[I am learning to solve equations.]{.p-context} [Do not give me the answer.]{.p-format} [Give me one hint for the first step of $2x - 7 = 11$.]{.p-task} [Then wait for me to try.]{.p-format}
-:::
-
-You can also ask AI to check your work: "Here are my steps. Tell me which step is wrong, but do not fix it."
-
 {{< tryit >}}
 
-### 3.6.4 - Test the Chatbot
+### 3.6.3 - Test the Chatbot
 
 Work with a partner.
 
@@ -116,14 +100,6 @@ Work with a partner.
 That is a good result too! Write it down. Your class AI tool may use a calculator behind the scenes. Try asking: "Did you use a calculator for that?" Then check its answer to **that** question.
 :::
 
-### 3.6.5 - The Hint Challenge
-
-:::{.steps}
-1. Use the hint prompt from 3.6.3 to solve $2x - 7 = 11$. Do not let the AI give you the answer.
-2. Write each hint and each of your steps on your sheet.
-3. Check your answer by plugging it in.
-:::
-
 :::{.gotcha title="Class size"}
 **Small class:** everyone tests the chatbot, then the class makes one chart together. **Big class:** each pair tests only 2 of the 4 problems, but asks each one 3 times in new chats. Does the AI give the same answer every time?
 :::
@@ -141,8 +117,16 @@ Should students be allowed to use AI on math homework? When does it help you lea
 
 {{< further >}}
 
-:::{.project title="Explain It in My Language"}
-Choose a math idea from your math class. Ask the AI to explain it in your home language, with one example. Is the math right? Is the language right? Teach it to a partner.
+:::{.project title="Day 2: The Hint Challenge"}
+If AI does your homework, you did not learn it. Then the test comes, and the AI is not there. So ask for a {{< glink hint >}} instead:
+
+> I am learning to solve equations. Do not give me the answer. Give me one hint for the first step of $2x - 7 = 11$. Then wait for me to try.
+
+1. Use this prompt. Do not let the AI give you the answer.
+2. Write each hint and each of your steps on your sheet.
+3. Check your answer by plugging it in.
+
+You can also ask AI to check your work: "Here are my steps. Tell me which step is wrong, but do not fix it."
 :::
 
 :::{.project title="Same Problem, Three Times"}
@@ -151,4 +135,8 @@ Ask the very big problem in 3 new chats. Did you get the same answer each time? 
 
 :::{.project title="Word Problem Trap"}
 Ask: "A farmer has 15 cows. All but 8 run away. How many are left?" Is the AI right? (The answer is 8.) Write your own trick word problem and test it.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [why numbers are hard for chatbots, and math in your language](/chapters/Explore/explore-unit-3.qmd#explore-3-6). For students who want to learn more on their own.
 :::

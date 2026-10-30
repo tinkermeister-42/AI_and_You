@@ -9,8 +9,8 @@ The lawyer said he did not know a chatbot could make things up. Today you learn 
 :::{.agenda}
 **Today's Plan** (40 minutes)
 
-- [🔥]{.icon} **Warm Up** Real or made up? [5 min]{.time}
-- [👥]{.icon} **Learn Together** How fact-checkers check [10 min]{.time}
+- [🔥]{.icon} **Warm Up** Real or made up? [6 min]{.time}
+- [👥]{.icon} **Learn Together** How fact-checkers check [9 min]{.time}
 - [🛠️]{.icon} **Try It** Check the chatbot [19 min]{.time}
 - [💬]{.icon} **Talk About It** Should we use it at all? [6 min]{.time}
 :::
@@ -18,8 +18,7 @@ The lawyer said he did not know a chatbot could make things up. Today you learn 
 :::{.objectives}
 - [ ] I can explain why a chatbot can write a fact that is not true.
 - [ ] I can check a fact with lateral reading.
-- [ ] I can tell a trusted source from a weak one.
-- [ ] I can check whether a source the AI gives me is real.
+- [ ] I can choose trusted sources to check a fact.
 :::
 
 ::::{.vocab}
@@ -57,10 +56,6 @@ A chatbot predicts likely words. It does not look up each fact in a book. A fake
 
 When AI writes something false as if it were true, it is called a {{< glink hallucination >}}. The chatbot does not know it is wrong. It sounds just as sure as when it is right. (You will study this more in Lesson 4.1.)
 
-:::{.note title="Right now (fall 2026)"}
-Many chatbots can now search the web and show links. That helps, but it does not fix the problem. The link may not say what the chatbot says. Some school AI tools cannot search the web at all. Ask Mr. Ross what yours can do.
-:::
-
 ***
 
 ### 3.4.2 - Lateral Reading
@@ -74,10 +69,6 @@ Professional fact-checkers do not read one page carefully from top to bottom. Th
 4. Mark it: ✅ found in 2 sources, ❌ wrong, or ❓ cannot find.
 :::
 
-***
-
-### 3.4.3 - Trusted Sources
-
 | Usually trusted | Use with care | Be careful |
 |---|---|---|
 | government websites (.gov) | Wikipedia: a good start, then check the links at the bottom | social media posts |
@@ -87,24 +78,18 @@ Professional fact-checkers do not read one page carefully from top to bottom. Th
 
 {{< tryit >}}
 
-### 3.4.4 - Check the Chatbot
+### 3.4.3 - Check the Chatbot
 
 Our school is named after **Frederick Douglass**. Let's check what a chatbot says about him. Work with a partner, or in a group of 3.
 
 :::{.steps}
-1. Ask your class AI tool: **"Tell me 5 facts about Frederick Douglass. Give a source for each fact."**
+1. Ask your class AI tool: **"Tell me 5 facts about Frederick Douglass."**
 2. Write the 5 facts on your sheet.
-3. Choose 3 facts. Check each one with lateral reading. Mark ✅, ❌, or ❓.
-4. Check the sources the AI gave. Is each one real? Does the page say the fact?
-5. Write one fact you learned that the chatbot did **not** tell you.
+3. Choose 3 facts. Check each one with lateral reading. Use the "Usually trusted" sources. Mark ✅, ❌, or ❓.
 :::
 
 :::{.gotcha title="Class size"}
 **Small class (4 or 5):** work as one group. Each person checks a different fact. **Big class:** make it a race between teams. A team gets 1 point for each fact checked in 2 sources. A team **loses** 2 points for a check that is wrong. Speed is good. Being right is better.
-:::
-
-:::{.think title="Other topics to check"}
-Did the chatbot get everything right? Try a harder topic: the history of your home country, your favorite athlete, or our town. A chatbot makes more mistakes on topics with less writing about them online.
 :::
 
 {{< talk >}}
@@ -130,10 +115,17 @@ AI can make things up, and it sounds sure when it does. Should students use AI f
 
 {{< further >}}
 
+:::{.project title="Day 2: Check the AI's Sources"}
+1. Ask your class AI tool: **"Give me 3 sources about Frederick Douglass."** (If it will not give links, ask for book titles and authors.)
+2. Check each one. Is it real? Search for it, or look in the school library catalog.
+3. Does the source really say what the AI said?
+4. Sort the sources on your sheet: usually trusted, use with care, or be careful.
+:::
+
 :::{.project title="Check a Viral Post"}
 Find a surprising claim that many people are sharing online. Use lateral reading to check it. Is it true, false, or missing important facts? Present what you found in 1 minute.
 :::
 
-:::{.project title="Real Sources or Fake?"}
-Ask your class AI tool for 5 sources about a topic, with links. Check every link. How many are real? How many say what the AI said? Make a chart for the class.
+:::{.explore-link}
+🔭 **Explore More:** [chatbots that search the web, and harder topics to check](/chapters/Explore/explore-unit-3.qmd#explore-3-4). For students who want to learn more on their own.
 :::

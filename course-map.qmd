@@ -12,19 +12,19 @@ Most lessons also have a **🚀 Go Further** part. It can fill a second day, or 
 |---|---|---|
 | 1.1 | [What Is AI?](chapters/Unit_1/1.1_What_Is_AI.qmd) | Sort things into AI and not AI. Write a rule for "cat." Play Quick, Draw! |
 | 1.2 | [Can a Machine Think? (1950)](chapters/Unit_1/1.2_Can_a_Machine_Think.qmd) | Play Turing's imitation game. Catch the AI hiding among your classmates. |
-| 1.3 | [The First Chatbot (1966)](chapters/Unit_1/1.3_The_First_Chatbot.qmd) | Chat with ELIZA. Read its rules, then add your own. Act out the Chinese Room, in Klingon. |
+| 1.3 | [The First Chatbot (1966)](chapters/Unit_1/1.3_The_First_Chatbot.qmd) | Be ELIZA with a rule card. Act out the Chinese Room, in Klingon. |
 | 1.4 | [Rules Win at Games (1956 to 1997)](chapters/Unit_1/1.4_Rules_Win_at_Games.qmd) | Play a tic-tac-toe bot. Turn its rules off one at a time until you can beat it. |
 | 1.5 | [Data Changes Everything (2009 to 2016)](chapters/Unit_1/1.5_Data_Changes_Everything.qmd) | Label pictures like the ImageNet workers did. Find where people disagree. |
-| 1.6 | [Transformers and ChatGPT (2017 to today)](chapters/Unit_1/1.6_Transformers_and_ChatGPT.qmd) | Find what "it" means in a sentence. Build a sentence one vote at a time. Finish the class timeline. |
+| 1.6 | [Transformers and ChatGPT (2017 to today)](chapters/Unit_1/1.6_Transformers_and_ChatGPT.qmd) | Find what "it" means in a sentence. Build a sentence one vote at a time, like a chatbot. |
 
 ## Unit 2: Brains and Neural Networks
 
 | | Lesson | What you do |
 |---|---|---|
-| 2.1 | [Simple Rules, Complex Behavior](chapters/Unit_2/2.1_Simple_Rules_Complex_Behavior.qmd) | Be a cell in a human Rule 30. Then watch one tiny rule grow into chaos on screen. |
+| 2.1 | [Simple Rules, Complex Behavior](chapters/Unit_2/2.1_Simple_Rules_Complex_Behavior.qmd) | Be a cell in a human Rule 30. Then watch the Game of Life on the projector. |
 | 2.2 | [Your Brain Is Made of Cells](chapters/Unit_2/2.2_Your_Brain_Is_Made_of_Cells.qmd) | Measure your reaction time with a falling ruler. Send a signal around the room. |
 | 2.3 | [How Brains Learn](chapters/Unit_2/2.3_How_Brains_Learn.qmd) | Practice a hard task (writing with your other hand). Graph how you get better. Meet Pavlov's dogs. |
-| 2.4 | [The Artificial Neuron](chapters/Unit_2/2.4_The_Artificial_Neuron.qmd) | Be a neuron: add up signals and decide to fire. Then tune a neuron on screen. |
+| 2.4 | [The Artificial Neuron](chapters/Unit_2/2.4_The_Artificial_Neuron.qmd) | Be a neuron: add up signals and decide to fire. |
 | 2.5 | [Train a Human Neural Network](chapters/Unit_2/2.5_Train_a_Human_Neural_Network.qmd) | The class becomes a network, with its weights written on cards. Feed it example cards and fix the weights after every mistake. |
 | 2.6 | [Watch Mr. Ross Build an AI](chapters/Unit_2/2.6_Watch_Mr_Ross_Build_an_AI.qmd) | Mr. Ross trains a neural network on hundreds of real examples while you watch. Then you test it with your own guesses. |
 | 2.7 | [Train Your Own AI](chapters/Unit_2/2.7_Train_Your_Own_AI.qmd) | Teach Teachable Machine your own hand signs. Then try to fool it. |
@@ -40,17 +40,17 @@ Most lessons also have a **🚀 Go Further** part. It can fill a second day, or 
 | 3.3 | [Writing with AI, Not by AI](chapters/Unit_3/3.3_Writing_with_AI.qmd) | Get feedback on your own paragraph. Decide which advice to keep. |
 | 3.4 | [Research and Checking](chapters/Unit_3/3.4_Research_and_Checking.qmd) | Ask AI a research question. Check every fact against a real source. |
 | 3.5 | [AI and Your Language](chapters/Unit_3/3.5_AI_and_Your_Language.qmd) | Translate there and back again. You are the expert who grades the AI. |
-| 3.6 | [AI and Math](chapters/Unit_3/3.6_AI_and_Math.qmd) | Ask for hints, not answers. Catch an AI math mistake with a calculator. |
-| 3.7 | [Making Pictures with AI](chapters/Unit_3/3.7_Making_Pictures_with_AI.qmd) | Watch noise turn into a picture. Write picture prompts and compare. |
+| 3.6 | [AI and Math](chapters/Unit_3/3.6_AI_and_Math.qmd) | Catch a wrong step. Test a chatbot's math with a calculator. |
+| 3.7 | [Making Pictures with AI](chapters/Unit_3/3.7_Making_Pictures_with_AI.qmd) | Watch noise turn into a picture, step by step. Who gets credit for AI art? |
 | 3.8 | [Project: Solve a Real Problem](chapters/Unit_3/3.8_Project_Solve_a_Real_Problem.qmd) | Pick a problem in your life. Plan how AI could help. |
-| 3.9 | [Project: Feedback and Share](chapters/Unit_3/3.9_Project_Feedback_and_Share.qmd) | Give and get feedback. Make it better. Show your project. |
+| 3.9 | [Project: Feedback and Share](chapters/Unit_3/3.9_Project_Feedback_and_Share.qmd) | Gallery walk: give and get feedback. Choose what to change. |
 
 ## Unit 4: When AI Gets It Wrong
 
 | | Lesson | What you do |
 |---|---|---|
-| 4.1 | [AI Makes Things Up](chapters/Unit_4/4.1_AI_Makes_Things_Up.qmd) | Ask AI about our school and town. Catch what it invents. Make it agree with anything. |
-| 4.2 | [Where Bias Comes From](chapters/Unit_4/4.2_Where_Bias_Comes_From.qmd) | Test "he" and "she" in your language. Meet Clever Hans, the horse that seemed to do math, and the AI that learned snow instead of wolves. |
+| 4.1 | [AI Makes Things Up](chapters/Unit_4/4.1_AI_Makes_Things_Up.qmd) | Watch a tiny chatbot mix true facts into false ones. Ask AI about our school and town, and catch what it invents. |
+| 4.2 | [Where Bias Comes From](chapters/Unit_4/4.2_Where_Bias_Comes_From.qmd) | Act out Clever Hans, the horse that seemed to do math. Meet the AI that learned snow instead of wolves. |
 | 4.3 | [Real or Fake?](chapters/Unit_4/4.3_Real_or_Fake.qmd) | Guess which faces are real. Learn why the clues stop working, and what to check instead. |
 | 4.4 | [Why AI Cheat Detectors Fail](chapters/Unit_4/4.4_Why_AI_Cheat_Detectors_Fail.qmd) | Watch a detector call human writing "AI." Find out who it blames most. |
 

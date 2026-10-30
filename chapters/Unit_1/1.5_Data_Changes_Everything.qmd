@@ -52,30 +52,19 @@ Fei-Fei Li thought: computers have rules, but they do not have enough examples.
 
 {{< learn >}}
 
-### 1.5.1 - Fei-Fei Li
+### 1.5.1 - ImageNet
 
-- Fei-Fei Li was born in Beijing, China, in 1976.
-- At 16, she moved to New Jersey with her mother to join her father.
-- Her family ran a dry-cleaning shop. She worked there on weekends in high school and in college.
-- She studied physics at Princeton University. Then she became an AI scientist.
-
-***
-
-### 1.5.2 - ImageNet
-
-In 2006, Fei-Fei Li started a project called **ImageNet**. She wanted a giant {{< glink dataset >}}: pictures of everything in the world, each with a {{< glink label >}}.
+In 2006, Fei-Fei Li, a scientist at Princeton University, started a project called **ImageNet**. She wanted a giant {{< glink dataset >}}: pictures of everything in the world, each with a {{< glink label >}}.
 
 ![](/images/Unit_1/1.5_imagenet_numbers.svg){width="660px" fig-align="center" fig-alt="ImageNet in three numbers: 14 million pictures, more than 20,000 kinds of things, labeled by 49,000 people in 167 countries."}
 
-The pictures came from the internet. But the internet does not say what is in each picture. **People** had to look and decide.
+The pictures came from the internet. But the internet does not say what is in each picture. **People** had to look and decide. Each person saw a word, like *chair*, and a group of pictures. They clicked every picture that showed a chair.
 
-From 2008 to 2010, 49,000 people did this work online. Each person saw a word, like *chair*, and a group of pictures. They clicked every picture that showed a chair.
-
-ImageNet was first shown to the world in 2009. It was the biggest set of labeled pictures anyone had made.
+ImageNet was shared with the world in 2009. It was the biggest set of labeled pictures anyone had made.
 
 ***
 
-### 1.5.3 - The Big Win in 2012
+### 1.5.2 - The Big Win in 2012
 
 Every year, scientists entered a contest. Their programs looked at ImageNet pictures and named what was in them.
 
@@ -84,8 +73,6 @@ Every year, scientists entered a contest. Their programs looked at ImageNet pict
 In 2012, a team from Toronto used a {{< glink "neural network" >}}. (You will learn how neural networks work in Unit 2.) Their mistakes dropped from about 26% to **15%**. Nobody had seen a jump that big.
 
 They trained their network on two {{< glink slug="gpu" text="GPUs" >}}, chips made for **video games**. A GPU can do thousands of small math problems at the same time.
-
-By 2015, the best AI made fewer mistakes than a person on this test!
 
 :::{.remember title="The new recipe for AI"}
 1. **Lots of data** (like ImageNet)
@@ -96,23 +83,20 @@ AI did not get better because people wrote better rules. It got better because o
 :::
 
 :::{.real-world title="AlphaGo (2016)"}
-Go is a board game from China. It is much harder for computers than chess. In 2016, **AlphaGo** beat Lee Sedol, one of the best Go players in the world, 4 games to 1.
-
-AlphaGo first learned from 160,000 games played by people. Then it played millions of games against itself. In game 2, it made a move that surprised the experts. People still talk about **move 37**.
+Go is a board game from China. It is much harder for computers than chess. In 2016, a neural network called **AlphaGo** played Lee Sedol, one of the best Go players in the world. AlphaGo won, 4 games to 1.
 :::
 
 {{< tryit >}}
 
-### 1.5.4 - Be the Labelers
+### 1.5.3 - Be the Labelers
 
 Do the job of the ImageNet workers.
 
 :::{.steps}
-1. Pick a round: **chair**, **sandwich**, or **car**.
-2. Work **alone** first. Click every picture that shows the word. Do not talk!
+1. Choose the **sandwich** round.
+2. Work **alone** first. Click every picture that shows a sandwich. Do not talk!
 3. Press **I'm done**. Write your picture numbers on your sheet.
 4. Compare with a partner (or a group of 3). Which pictures did you **disagree** on?
-5. Do all 3 rounds.
 :::
 
 {{< include /assets/Unit_1/labelers.html >}}
@@ -156,6 +140,12 @@ The talk is 18 minutes. In class, we watch the first part.
 
 {{< further >}}
 
+:::{.project title="Day 2: More Rounds and a Labeling Rule"}
+1. Do the **chair** and **car** rounds. Label alone first, then compare with a partner.
+2. Which round had the most disagreement? Why?
+3. Write a rule for **sandwich** that ends the argument. Test it on all 12 sandwich pictures. Does your rule work for every picture? Does everyone in your group agree with it?
+:::
+
 :::{.project title="The GPU Race"}
 Why do GPUs help? Try it with your class.
 
@@ -167,16 +157,6 @@ Why do GPUs help? Try it with your class.
 (Only 4 in class? One student against a team of 3 still works.)
 :::
 
-:::{.project title="Make a Labeling Rule"}
-Write a rule for **sandwich** that ends the argument. Test it on all 12 pictures. Does your rule work for every picture? Does everyone in your group agree with it?
+:::{.explore-link}
+🔭 **Explore More:** [Fei-Fei Li's story, AlphaGo's famous move, and the film](/chapters/Explore/explore-unit-1.qmd#explore-1-5). For students who want to learn more on their own.
 :::
-
-:::{.project title="AlphaGo: The Movie"}
-Google DeepMind made a film about the AlphaGo match. Watch the part about move 37 and how Lee Sedol felt.
-
-[AlphaGo, the full film (YouTube)](https://www.youtube.com/watch?v=WXuK6gekU1Y){target="_blank"}
-:::
-
-**More to explore**
-
-- [Quick, Draw! The Data](https://quickdraw.withgoogle.com/data){target="_blank"}: Pick a word. Look at how thousands of people drew it. Would you label every drawing the same way?

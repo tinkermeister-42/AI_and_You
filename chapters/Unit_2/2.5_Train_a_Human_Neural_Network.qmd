@@ -137,14 +137,6 @@ Each person has a job.
 6. Now use the **test cards**, X1 to X6. **Do not fix the weights on a test!** Just record what the neuron says.
 :::
 
-### 2.5.4 - Check Our Math
-
-This is the same neuron, the same cards, and the same fix rule. Use it to check your class's work, one card at a time.
-
-The picture shows every training card. The black line is the neuron's line. The neuron calls the cards on one side FIGHTING. It calls the cards on the other side PSYCHIC. Watch the line move when the neuron makes a mistake.
-
-{{< include /assets/Unit_2/neuron_trainer.html >}}
-
 :::{.think title="What happened on the test cards?"}
 The neuron got **Primeape**, **Mewtwo**, and **Hypno** right.
 
@@ -155,12 +147,6 @@ Then look at the last three:
 - **Medicham** is Fighting **and** Psychic. The neuron said Psychic.
 
 The neuron only knows two numbers. It never saw a Pokémon with two types. It did its best with what it learned.
-:::
-
-:::{.think title="The neuron's whole rule is one line. Can you find it?"}
-At the end, the weights are **3**, **−4**, and **0**. So the total is $3A - 4S$. The neuron says FIGHTING when $3A - 4S > 0$, which means $3A > 4S$.
-
-That is a line on the graph! The neuron learned: *if Attack is a lot bigger than Special Attack, it is a fighter.* Nobody told it that rule.
 :::
 
 {{< talk >}}
@@ -186,14 +172,31 @@ The neuron said Gallade is a Fighting type. Gallade is Psychic **and** Fighting.
 
 {{< further >}}
 
+:::{.project title="Day 2: Check Our Math, and Find the Line"}
+This tool has the same neuron, the same cards, and the same fix rule. Work with a partner.
+
+1. Step through the training cards, one at a time. Do the weights match your class's work?
+2. The picture shows every training card. The black line is the neuron's line. The neuron calls the cards on one side FIGHTING. It calls the cards on the other side PSYCHIC. Watch the line move when the neuron makes a mistake.
+3. Press **Test on all 140 Fighting and Psychic Pokémon**. How many does the neuron get right?
+4. On your sheet, draw the neuron's line on the graph.
+:::
+
+{{< include /assets/Unit_2/neuron_trainer.html >}}
+
+:::{.think title="The neuron's whole rule is one line. Can you find it?"}
+At the end, the weights are **3**, **−4**, and **0**. So the total is $3A - 4S$. The neuron says FIGHTING when $3A - 4S > 0$, which means $3A > 4S$.
+
+That is a line on the graph! The neuron learned: *if Attack is a lot bigger than Special Attack, it is a fighter.* Nobody told it that rule.
+:::
+
 :::{.project title="The Team Race"}
 Two teams train the neuron at the same time with the same cards. Team 1 starts with the backwards weights. Team 2 starts with all weights at 0. Who needs fewer mistakes? Do they end with the same weights? Do both get the test cards right?
 :::
 
-:::{.project title="Shuffle the Cards"}
-Train again, but shuffle the training cards first. Do you end with the same weights? (Use **Check Our Math** to test your answer.)
-:::
-
 :::{.project title="Make Your Own Deck"}
 Pick two groups that two numbers can tell apart. For example: basketball players and soccer players (height and weight), or fruits and vegetables (sweet and crunchy, from 1 to 5). Make 10 cards. Train the class neuron on your deck.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [why the fix rule works, and shuffling the cards](/chapters/Explore/explore-unit-2.qmd#explore-2-5). For students who want to learn more on their own.
 :::

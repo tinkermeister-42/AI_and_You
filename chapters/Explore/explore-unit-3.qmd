@@ -1,0 +1,176 @@
+# Explore More: Using AI Well {.unnumbered}
+
+This page goes with Unit 3. It is for students who want to learn more on their own. Nothing here is homework. Each section goes with one lesson.
+
+## From Lesson 3.1: Asking Good Questions {#explore-3-1}
+
+### Ask in Your Language
+
+Most chatbots can read and write many languages. You can write your prompt in your home language. You can also ask for the answer in English **and** your language, side by side:
+
+:::{.prompt-example}
+[Explain what a volcano is.]{.p-task} [I am learning English.]{.p-context} [Write 3 short sentences in English, and then the same 3 sentences in Spanish.]{.p-format}
+:::
+
+Try it with your own language. Is the answer just as good? (Lesson 3.5 tests this more.)
+
+### A Fourth Trick: Show an Example
+
+Task, context, and format are three ways to tell the AI what you want. A fourth way is to **show** it. Give one example of the kind of answer you want:
+
+> Write 3 quiz questions about volcanoes. Here is one example: *What comes out of a volcano? (a) lava (b) water (c) sand.*
+
+The chatbot predicts the next words from everything you typed. An example is strong context: now the most likely answer looks like your example.
+
+:::{.project title="Try It: With and Without an Example"}
+Ask for 3 quiz questions about any topic, with no example. Then open a new chat and ask again, with one example. Which answer is closer to what you wanted?
+:::
+
+***
+
+## From Lesson 3.2: Keep Talking {#explore-3-2}
+
+### Careful When You Push Back
+
+Try telling a chatbot, **"Are you sure? I think that is wrong."** Many chatbots will say sorry and change the answer. They sometimes do this even when the first answer was **right**.
+
+Why? A chatbot predicts what comes next in the chat. After "I think that is wrong," an answer that agrees with you is a likely next answer. So when you need to know if something is true, do not ask the chatbot if it is sure. Check a real source. (Lesson 3.4 shows you how, and Lesson 4.1 tests this more.)
+
+:::{.project title="Try It: The Push-Back Test"}
+1. Ask your class AI tool: "What is 17 × 3?" (The answer is 51.)
+2. Type: "Are you sure? I think it is 54."
+3. Did it keep the right answer, or did it agree with you?
+:::
+
+### When a Chat Gets Too Long
+
+The words a chatbot can read at one time are its context window. A very long chat can be too big for it. Then the chatbot may lose the oldest part of the chat, and forget what you said at the start. If a long chat starts to go wrong, start a new chat and type the important context again.
+
+:::{.note title="Right now (fall 2026)"}
+Some AI tools now have a **memory** feature. They save facts about you from one chat to the next. If your class AI tool has one, Mr. Ross will show you where it is. Do not let it save private information.
+:::
+
+### Follow-Up Moves in Your Language
+
+Make a set of cards with the follow-up moves from Lesson 3.2, in your home language. Test each one with your class AI tool. Do they work as well as in English?
+
+***
+
+## From Lesson 3.3: Writing with AI, Not by AI {#explore-3-3}
+
+### Your Voice
+
+Your **voice** is the way you say things: the words you like, how long your sentences are, what you notice. A paragraph about your grandmother's kitchen should sound like you, not like a chatbot.
+
+A chatbot predicts likely words. So its advice often pushes your writing toward the most common way to say something. Sometimes that makes your meaning clearer. Sometimes it makes your writing sound like everyone else's. When AI advice would erase what makes your writing yours, you can skip it.
+
+:::{.project title="Try It: Find Your Voice"}
+Ask your class AI tool to rewrite one of your sentences "in better English." Compare the two sentences. Which words did it change? Which version sounds more like you? Which one would you keep?
+:::
+
+### Ladders Like This at Other Schools
+
+Many schools use a scale like the AI use ladder. Teachers and researchers made a well-known one, called the AI Assessment Scale. Every version has the same goal. Each assignment says clearly how much AI is allowed. Then students do not have to guess.
+
+### Feedback in Your Language
+
+Write 5 sentences in your home language. Ask for feedback in that language. Is the feedback as good as in English? How do you know?
+
+***
+
+## From Lesson 3.4: Research and Checking {#explore-3-4}
+
+### Chatbots That Search the Web
+
+Some chatbots do not only predict words. They also search the web, read some pages, and show you links. That helps, but it does not fix the problem:
+
+- The chatbot can still mix up what the page says.
+- The link can be to a weak source.
+- The page may not say what the chatbot says it says.
+
+So a link is a place to **start** checking, not proof. Open it and read it yourself.
+
+:::{.note title="Right now (fall 2026)"}
+Many chatbots can now search the web and show links. Some school AI tools cannot search the web at all, and some will not give links. Ask Mr. Ross what yours can do.
+:::
+
+### Harder Topics to Check
+
+Did the chatbot get Frederick Douglass right? He is famous, and there is a lot of writing about him. A chatbot makes more mistakes on topics with less writing about them online.
+
+:::{.project title="Try It: A Harder Topic"}
+Ask your class AI tool for 5 facts about one of these: the history of your home country, your favorite athlete, or our town. Check 3 facts with lateral reading. Did it make more mistakes than with Frederick Douglass?
+:::
+
+***
+
+## From Lesson 3.5: AI and Your Language {#explore-3-5}
+
+### The Transformer Started with Translation
+
+The transformer (Lesson 1.6) was invented in 2017 to translate. Its first tests were English to German and English to French. Later, people used the same idea to build chatbots. So the chatbots you use today grew out of translation.
+
+From the examples, the AI learned which words and sentences match. This is the same idea you saw in Unit 2: learn from examples, not rules.
+
+### More Things That Are Hard to Translate
+
+- **Polite and friendly forms:** many languages have two ways to say "you." AI may pick the wrong one.
+- **Names:** AI may translate a name that should stay the same. "Rose" is a name, and it is also a flower.
+- **Men and women:** in some languages, a sentence must show if a person is a man or a woman. English often does not say. The AI has to guess. (Lesson 4.2 tests this.)
+
+### Different Alphabets
+
+Many languages use a different alphabet: Arabic, Nepali, Russian, Burmese, Tigrinya. Test the AI with a sentence written in that alphabet. Then test it with the same sentence written in English letters. Which works better?
+
+***
+
+## From Lesson 3.6: AI and Math {#explore-3-6}
+
+### Why Numbers Are Hard for Chatbots
+
+A chatbot reads and writes in pieces called tokens. A common word, like "the," is one token. A number can be cut into pieces in strange places. For example, a chatbot might read 3847 as "384" and "7."
+
+To multiply, you line up the ones, the tens, and the hundreds. A chatbot that sees "384" and "7" does not see the digits lined up that way. It has to predict the answer piece by piece. That is why long multiplication is harder for a chatbot than for a calculator. This is true even though the chatbot can explain hard ideas well.
+
+### Explain It in My Language
+
+Choose a math idea from your math class. Ask the AI to explain it in your home language, with one example. Is the math right? Is the language right? Teach it to a partner.
+
+***
+
+## From Lesson 3.7: Making Pictures with AI {#explore-3-7}
+
+### What Image Generators Get Wrong
+
+- **Counting:** "exactly 7 apples" may give 6 or 9.
+- **Words in the picture:** letters on signs and shirts can be wrong.
+- **What is most common:** ask for "a doctor" or "a teacher." The AI shows what it saw most in its training pictures. Who does it leave out? (You will study this in Lesson 4.2.)
+
+:::{.note title="Right now (fall 2026)"}
+Image generators improved fast. The tools from 2022 often drew hands with six fingers and could not write words. The newest tools are much better at both. Exact counting and small details are still hard.
+
+Some of the newest image tools work in a different way, but many still use diffusion.
+:::
+
+### The Counting Test
+
+Write prompts for "exactly 3 red balls," then 5, then 7, then 12. Give them to Mr. Ross, or try them at home with a tool you are allowed to use. Count the balls in each picture. When does the AI start to get it wrong? Why do you think counting is hard for an AI that removes noise a little at a time?
+
+***
+
+## From Lesson 3.9: Project: Feedback and Share {#explore-3-9}
+
+### People and AI Give Different Feedback
+
+| Feedback from AI | Feedback from people |
+|---|---|
+| fast, any time | takes more time |
+| does not know you, your family, or our school | knows you and the people who will use it |
+| may say "Great job!" too easily | can tell you if it is really useful |
+| good at spelling and grammar | good at "Would I really use this?" |
+
+The best projects use both. AI feedback is a good first check before you show your work to people. People tell you if it works in real life.
+
+:::{.project title="Try It: Feedback on Feedback"}
+Take one piece of your own writing. Get feedback from the AI and from one person. Make two lists. Which list helped more? Was anything on both lists?
+:::

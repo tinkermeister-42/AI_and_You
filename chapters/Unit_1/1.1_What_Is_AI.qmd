@@ -9,9 +9,9 @@ Today you sort things into AI and not AI. You try to teach a computer what a cat
 :::{.agenda}
 **Today's Plan** (40 minutes)
 
-- [🔥]{.icon} **Warm Up** AI or not? [6 min]{.time}
-- [👥]{.icon} **Learn Together** Rules or examples? [10 min]{.time}
-- [🛠️]{.icon} **Try It** Quick, Draw! [14 min]{.time}
+- [🔥]{.icon} **Warm Up** AI or not? [7 min]{.time}
+- [👥]{.icon} **Learn Together** A rule for "cat" [13 min]{.time}
+- [🛠️]{.icon} **Try It** Quick, Draw! [10 min]{.time}
 - [🧠]{.icon} **The Big Question** Is AI like a brain? [10 min]{.time}
 :::
 
@@ -25,12 +25,9 @@ Today you sort things into AI and not AI. You try to teach a computer what a cat
 ::::{.vocab}
 :::{.word-cards}
 - [🤖]{.icon} {{< glink slug="artificial-intelligence" text="artificial intelligence (AI)" >}}: a computer program that does things that usually need human thinking
-- [💻]{.icon} {{< glink "computer program" >}}: a list of steps that a computer follows
 - [📏]{.icon} {{< glink rule >}}: an exact instruction, like "If this happens, do that."
 - [🗂️]{.icon} {{< glink data >}}: information, like pictures, words, or numbers
-- [🧩]{.icon} {{< glink pattern >}}: something that is the same in many examples
 - [📚]{.icon} {{< glink "machine learning" >}}: a computer finds patterns in many examples
-- [🔮]{.icon} {{< glink prediction >}}: a best guess about something you do not know yet
 :::
 ::::
 
@@ -56,16 +53,9 @@ The calculator and the alarm clock do not learn. They only follow rules that a p
 
 ### 1.1.1 - What Does "AI" Mean?
 
-AI means {{< glink "artificial intelligence" >}}.
+AI means {{< glink "artificial intelligence" >}}. **Artificial** means made by people. **Intelligence** means the ability to learn, understand, and solve problems.
 
-| Word | Meaning | Example |
-|---|---|---|
-| **Artificial** | made by people | Artificial flowers are made of plastic or paper. |
-| **Intelligence** | the ability to learn, understand, and solve problems | You use intelligence to learn a new language. |
-
-So AI is a computer program that does things that usually need human thinking. AI can see faces, understand speech, translate languages, and write.
-
-Most AI today does these things in a new way. It **learns from examples**. Let's see why.
+So AI is a computer program that does things that usually need human thinking. AI can see faces, understand speech, translate languages, and write. Most AI today does these things in a new way. It **learns from examples**. Let's see why.
 
 ***
 
@@ -99,8 +89,6 @@ Probably not. Many students write: *"It is a cat if it has pointy ears, whiskers
 You can fix the rule. But then a new picture breaks it again.
 :::
 
-For many years, scientists tried to build AI with rules. Rules worked for some jobs, like playing chess. Rules did not work well for seeing, hearing, or language. (You will learn this story in the next lessons.)
-
 So scientists tried a different idea:
 
 1. Do not write the rules.
@@ -116,31 +104,9 @@ This idea is called {{< glink "machine learning" >}}. The examples are called {{
 - **Machine learning:** a person gives examples. The computer makes its own rules.
 :::
 
-***
-
-### 1.1.3 - AI Makes Predictions
-
-Finish this sentence:
-
-> *After school, I like to eat ...*
-
-You did not know the answer from the sentence. You made a **{{< glink prediction >}}**. You used patterns from your own life.
-
-AI makes predictions too.
-
-![](/images/Unit_1/1.1_keyboard_prediction.svg){width="600px" fig-align="center" fig-alt="A phone keyboard. The message says 'After school, I like to eat'. Above the keys, the phone suggests three words: pizza, rice, something."}
-
-- A phone keyboard predicts your next word.
-- A video app predicts the next video you will like.
-- A chatbot predicts the next word of its answer. Then it predicts the next one. It does this again and again, very fast.
-
-:::{.gotcha title="A prediction can be wrong"}
-AI does not *know* the answer. It makes its best guess from patterns. Most of the time, the guess is good. Sometimes it is very wrong. In Unit 4, you will learn how to catch it.
-:::
-
 {{< tryit >}}
 
-### 1.1.4 - Quick, Draw!
+### 1.1.3 - Quick, Draw!
 
 Quick, Draw! is a game made by Google. You draw. An AI tries to guess what you are drawing.
 
@@ -153,8 +119,6 @@ The AI learned from about **50 million** drawings. People from all over the worl
 2. The game shows a word. Draw it. You have **20 seconds**. (If you do not know the word, ask a partner.)
 3. Play all **6 rounds**.
 4. Write your results on your sheet. Did the AI guess? About how many seconds did it take?
-5. At the end, click a drawing that the AI did not guess. Look at what the AI guessed.
-6. Look at how other people drew the same thing.
 :::
 
 :::{.gotcha title="The game saves your drawings"}
@@ -162,13 +126,7 @@ The game saves your drawings and your country. Google shares the drawings with s
 :::
 
 :::{.think title="Sometimes the AI guessed before you finished. How did it do that?"}
-The AI learned from millions of drawings. Your first lines looked like the start of drawings it saw before. So it made a prediction. It did not wait for the whole picture.
-:::
-
-:::{.think title="When did the AI get it wrong? Why?"}
-Maybe your drawing was different from most people's drawings. AI learns what is **common** in its data. When something is rare or different, AI often guesses wrong.
-
-You will see this problem again in Unit 4, when we study **bias**.
+The AI learned from millions of drawings. Your first lines looked like the start of drawings it saw before. So it made a {{< glink prediction >}}: a best guess. It did not wait for the whole picture.
 :::
 
 {{< bigq >}}
@@ -208,17 +166,17 @@ Watch this at home or if we have time in class. It shows more examples of machin
 
 {{< further >}}
 
+:::{.project title="Day 2: Beat the Machine"}
+1. Play Quick, Draw! again. Find a word that the AI never guesses from your drawings.
+2. At the end of the game, click that drawing. What did the AI guess?
+3. Look at how other people drew the same word. How is your drawing different?
+4. Talk with a partner: AI learns what is **common** in its data. When a drawing is rare or different, AI often guesses wrong. (You will see this problem again in Unit 4, when we study **bias**.)
+:::
+
 :::{.project title="AI Detective"}
 For one day, write down every time you see or use AI. Look at your phone, your apps, games, stores, and cars. Bring your list to class. Who found the most?
 :::
 
-:::{.project title="Beat the Machine"}
-Play Quick, Draw! again. Find a word that the AI never guesses from your drawings. Then look at how other people drew that word. Why did the AI miss yours?
+:::{.explore-link}
+🔭 **Explore More:** [how AI makes predictions, and more drawing tools](/chapters/Explore/explore-unit-1.qmd#explore-1-1). For students who want to learn more on their own.
 :::
-
-**More to explore**
-
-- [Quick, Draw! The Data](https://quickdraw.withgoogle.com/data){target="_blank"}: Pick one word. Look at hundreds of drawings of it. What do most people draw?
-- [AutoDraw](https://www.autodraw.com/){target="_blank"}: Draw something fast and messy. AI guesses what you wanted and gives you a clean picture.
-- [Teachable Machine](https://teachablemachine.withgoogle.com/){target="_blank"}: Teach a computer to know your own pictures or sounds. We will use it in Unit 2.
-- [How AI Works (Code.org)](https://code.org/ai/how-ai-works){target="_blank"}: More short videos about AI. We will watch some of them in this class.

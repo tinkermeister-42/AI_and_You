@@ -9,14 +9,13 @@ Today, you are the expert. You grade the AI.
 :::{.agenda}
 **Today's Plan** (40 minutes)
 
-- [🔥]{.icon} **Warm Up** How many languages are in this room? [5 min]{.time}
-- [👥]{.icon} **Learn Together** How AI learned to translate [9 min]{.time}
+- [🔥]{.icon} **Warm Up** How many languages are in this room? [6 min]{.time}
+- [👥]{.icon} **Learn Together** Why some languages are harder [8 min]{.time}
 - [🛠️]{.icon} **Try It** Grade the AI [20 min]{.time}
 - [💬]{.icon} **Talk About It** When do you need a person? [6 min]{.time}
 :::
 
 :::{.objectives}
-- [ ] I can explain how AI learned to translate.
 - [ ] I can explain why AI translates some languages better than others.
 - [ ] I can test a translation with back translation.
 - [ ] I can grade an AI translation in a language I know.
@@ -27,7 +26,6 @@ Today, you are the expert. You grade the AI.
 - [🌍]{.icon} {{< glink translate >}}: to change words from one language to another, with the same meaning
 - [🔄]{.icon} {{< glink "back translation" >}}: translating a translation back to the first language, to check it
 - [📉]{.icon} {{< glink "low-resource language" >}}: a language with not much writing online for AI to learn from
-- [🗂️]{.icon} {{< glink dataset >}}: a big collection of examples that an AI learns from
 :::
 ::::
 
@@ -51,16 +49,6 @@ If you speak only English, you are still the expert on English. Today, pair up w
 
 People did not write rules for every language. The AI learned from **examples**: millions of texts that exist in two languages. A website in English and Spanish. A report from the United Nations in six languages. A book and its translation.
 
-From the examples, the AI learned which words and sentences match. This is the same idea you saw in Unit 2: learn from examples, not rules.
-
-:::{.real-world title="The transformer started with translation"}
-The transformer (Lesson 1.6) was invented in 2017 to translate. Its first test was English to German and English to French. Later, people used the same idea to build chatbots.
-:::
-
-***
-
-### 3.5.2 - Why Some Languages Are Harder
-
 An AI is only as good as its training examples. Some languages have a lot of writing online. Some have very little. A language with little writing for AI to learn from is called a {{< glink "low-resource language" >}}. AI makes more mistakes in these languages.
 
 :::{.note title="Right now (fall 2026)"}
@@ -69,31 +57,23 @@ About **half** of all websites are in English. Spanish, German, Japanese, and Fr
 Google Translate works with almost **250** languages. Your class AI tool may work with fewer.
 :::
 
-Some things are hard in **every** language:
+***
+
+### 3.5.2 - Hard in Every Language
 
 - **Idioms:** "It's raining cats and dogs" means it is raining very hard. A word-by-word translation makes no sense.
 - **Words with two meanings:** "a break" can be a rest, or a time when someone is less strict with you.
-- **Polite and friendly forms:** many languages have two ways to say "you." AI may pick the wrong one.
-- **Names:** AI may translate a name that should stay the same.
 
-***
-
-### 3.5.3 - Back Translation
-
-To check a translation, translate it **back**:
-
-> English → your language → English again
-
-If the meaning changed, something went wrong. This is {{< glink "back translation" >}}. It is a good test, but it is not perfect. The best test is a person who speaks the language. That is you.
+To check a translation, translate it **back**: English → your language → English again. If the meaning changed, something went wrong. This is {{< glink "back translation" >}}. It is a good test, but the best test is a person who speaks the language. That is you.
 
 {{< tryit >}}
 
-### 3.5.4 - Grade the AI
+### 3.5.3 - Grade the AI
 
 Work with a partner who speaks the same language, if you can. If you speak only English, work with a partner who speaks another language. You write; they grade.
 
 :::{.steps}
-1. Translate each sentence on your sheet into your language. Use [Google Translate](https://translate.google.com){target="_blank"} **and** your class AI tool.
+1. Translate each sentence below into your language with [Google Translate](https://translate.google.com){target="_blank"}.
 2. Grade each translation: **3** = right and sounds natural, **2** = I understand it, but it sounds strange, **1** = wrong.
 3. Choose one translation. Back-translate it into English. Did the meaning change?
 4. Add your scores to the class chart on the board.
@@ -130,14 +110,20 @@ Should a hospital or a court use AI to translate? When do you need a human trans
 
 {{< further >}}
 
+:::{.project title="Day 2: Compare Two Tools"}
+1. Translate the same 5 sentences with your **class AI tool**.
+2. Grade each one: 3, 2, or 1.
+3. Compare with your Google Translate grades. Which tool is better for your language? Is it better for every sentence?
+:::
+
 :::{.project title="The Class Dictionary of AI Mistakes"}
 Collect words and sentences the AI got wrong in each language. Write the wrong translation, the right one, and why the AI made the mistake. Share it with the ELL teachers.
 :::
 
-:::{.project title="Different Alphabets"}
-Many languages use a different alphabet: Arabic, Nepali, Russian, Burmese, Tigrinya. Test the AI with a sentence written in that alphabet. Then test it with the same sentence written in English letters. Which works better?
-:::
-
 :::{.project title="Speak It"}
 Google Translate can listen and speak. Say a sentence in your language. Does it understand you? Does it understand your partner? Does it work better for some voices?
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [how translation led to chatbots, and more hard cases](/chapters/Explore/explore-unit-3.qmd#explore-3-5). For students who want to learn more on their own.
 :::

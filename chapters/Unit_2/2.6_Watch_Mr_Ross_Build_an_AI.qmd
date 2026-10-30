@@ -75,9 +75,8 @@ Mr. Ross runs the AI on the projector. Before each run, **predict** the test sco
 :::{.steps}
 1. **Run 1:** *Fighting or Psychic?* with 2 numbers (Attack and Special Attack). This is the class neuron's question, with 140 Pokémon. Watch the colored map: it shows what the network says for every Attack and Special Attack.
 2. **Run 2:** *Fighting or Psychic?* with **all 8 numbers**. More information. Will it do better?
-3. **Run 3:** *Fighting, Psychic, Rock, or Bug?*
-4. **Run 4:** *Which of all 18 types?*
-5. After each run, write the training score and the test score on your sheet.
+3. **Run 3:** *Which of all 18 types?*
+4. After each run, write the training score and the test score on your sheet.
 :::
 
 {{< include /assets/Unit_2/build_ai.html >}}
@@ -94,13 +93,11 @@ Height, weight, speed, and the other numbers do not say much about Fighting or P
 This is called {{< glink overfitting >}}: learning the training examples by heart instead of the real pattern. Look for the gap between the blue line (training) and the orange line (test).
 :::
 
-:::{.think title="Run 4: why was it so bad at all 18 types?"}
+:::{.think title="Run 3: why was it so bad at all 18 types?"}
 The network beat guessing, but not by much. The numbers alone do not decide a Pokémon's type. A Water type and a Normal type can have almost the same stats.
 
 **An AI can only learn what is in its data.** If the answer is not in the data, no network can find it.
 :::
-
-**Your turn.** Type the name of a Pokémon you know. Ask the network. Was it right? Was it a training Pokémon or a test Pokémon?
 
 {{< talk >}}
 
@@ -114,10 +111,19 @@ Mr. Ross built this AI in a few minutes, with data he downloaded. Now imagine so
 
 {{< further >}}
 
-:::{.project title="Be the Data Scientist"}
-Try a run yourself. Change the number of hidden neurons: 0, 4, 16, 64. Train each one on the same question. Which gets the best **test** score? Is the biggest network always the best?
+:::{.project title="Day 2: Ask the Network, and Be the Data Scientist"}
+Use the AI tool in 2.6.2 yourself, with a partner.
+
+1. Train the network on *Fighting or Psychic?* with 2 numbers.
+2. **Ask the network.** Type the name of a Pokémon you know. Was it right? Was it a training Pokémon or a test Pokémon? Try 3 Pokémon.
+3. Try the question *Fighting, Psychic, Rock, or Bug?* Write the training and test scores.
+4. Change the number of hidden neurons: 0, 4, 16, 64. Train each one on the same question. Which gets the best **test** score? Is the biggest network always the best?
 :::
 
 :::{.project title="An AI for Our School?"}
 Think of something at school that an AI could predict. What data would you need? Who owns that data? Who should say yes before anyone uses it? Write your plan in 5 sentences.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [how a network draws a curved border, and how data scientists split data](/chapters/Explore/explore-unit-2.qmd#explore-2-6). For students who want to learn more on their own.
 :::

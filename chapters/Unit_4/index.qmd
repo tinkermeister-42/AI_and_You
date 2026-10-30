@@ -22,7 +22,7 @@ By the end of this unit, you will be able to:
 ## Topics in This Unit
 
 [**AI Makes Things Up**](4.1_AI_Makes_Things_Up.qmd)\
-How true facts mix into false ones, and why a chatbot may agree with anything.
+How true facts mix into false ones, and where chatbots make the most mistakes.
 
 [**Where Bias Comes From**](4.2_Where_Bias_Comes_From.qmd)\
 Data from the past, missing people, and shortcuts like Clever Hans.

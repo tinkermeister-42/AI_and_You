@@ -9,7 +9,7 @@ But how does it choose the next word? Today, you build the simplest chatbot poss
 
 - [🔥]{.icon} **Warm Up** Finish the sentence [4 min]{.time}
 - [👥]{.icon} **Learn Together** Count what comes next [10 min]{.time}
-- [🛠️]{.icon} **Try It** The dice chatbot, then the screen [20 min]{.time}
+- [🛠️]{.icon} **Try It** The dice chatbot [20 min]{.time}
 - [💬]{.icon} **Talk About It** Did it understand? [6 min]{.time}
 :::
 
@@ -84,7 +84,6 @@ A real chatbot has the same goal: predict the next word. But it is much, much bi
 |---|---|---|
 | **Looks back at** | 1 word | thousands of words (with **attention**, Lesson 1.6) |
 | **Learned from** | 5 sentences | a huge amount of text: books, websites, and more |
-| **Stores what it learned as** | a table of counts | billions of **weights** in a neural network |
 | **Reads text as** | whole words | **{{< glink slug="token" text="tokens" >}}**: words and pieces of words, like "play" + "ing" |
 | **Picks the next word by** | counting | predicting, with a little chance mixed in |
 
@@ -105,30 +104,6 @@ You are the chatbot. Work in a group of 2 to 4 (or alone).
 4. If there are two or more choices, **roll a die**. Your sheet shows which numbers go with which word. (More common words get more numbers.)
 5. Keep going until you reach the end of the sentence. Write 3 sentences.
 6. Did you write a sentence that is **not** in the training text?
-:::
-
-### 2.9.4 - The Word-Counting Chatbot
-
-:::{.steps}
-1. Press **Learn from this text**. Click some words. Do the counts match your table?
-2. Choose **always pick the most common next word**. Write a sentence. Write it again. Is it always the same?
-3. Choose **pick by chance**. Write 5 sentences. Are they different?
-4. Choose **a story about school**. Write some sentences. Do any of them sound strange?
-5. Choose **my own text**. Write 5 sentences in **your home language**. Press **Learn**. Can it write in your language?
-:::
-
-{{< include /assets/Unit_2/word_chatbot.html >}}
-
-:::{.think title="Why do real chatbots mix in a little chance?"}
-If a chatbot always picks the most common word, it writes the same thing every time. It can get stuck saying ordinary, boring sentences.
-
-A little chance makes the writing more interesting. Too much chance makes it strange. Chatbot makers pick a setting in between.
-:::
-
-:::{.think title="Could the tiny chatbot write in your language?"}
-Yes! It does not know any language. It only counts. So it works for any language that puts spaces between words.
-
-But it can only write words that were in its training text. A real chatbot that read very little text in your language will write it less well. (You will test this in Unit 3.)
 :::
 
 {{< talk >}}
@@ -156,10 +131,38 @@ This short video was made for a museum show about the history of chatbots.
 
 {{< further >}}
 
+:::{.project title="Day 2: The Word-Counting Chatbot"}
+This chatbot does what you did with the dice, on screen. Work with a partner.
+
+1. Press **Learn from this text**. Click some words. Do the counts match your table?
+2. Choose **always pick the most common next word**. Write a sentence. Write it again. Is it always the same?
+3. Choose **pick by chance**. Write 5 sentences. Are they different?
+4. Choose **a story about school**. Write some sentences. Do any of them sound strange?
+5. Choose **my own text**. Write 5 sentences in **your home language**. Press **Learn**. Can it write in your language?
+:::
+
+{{< include /assets/Unit_2/word_chatbot.html >}}
+
+:::{.think title="Why do real chatbots mix in a little chance?"}
+If a chatbot always picks the most common word, it writes the same thing every time. It can get stuck saying ordinary, boring sentences.
+
+A little chance makes the writing more interesting. Too much chance makes it strange. Chatbot makers pick a setting in between.
+:::
+
+:::{.think title="Could the tiny chatbot write in your language?"}
+Yes! It does not know any language. It only counts. So it works for any language that puts spaces between words.
+
+But it can only write words that were in its training text. A real chatbot that read very little text in your language will write it less well. (You will test this in Unit 3.)
+:::
+
 :::{.project title="Two Words Back"}
 Make a new table that looks at the **last two words**, not just one. For example: after "I like," what comes next? Use it to write sentences. Are they better or worse? Why?
 :::
 
 :::{.project title="The Class Story Chatbot"}
 Everyone writes 2 sentences about our school. Put them all in the word-counting chatbot. Write 10 sentences. Pick the funniest one and the most "real" one.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [why a real chatbot uses weights, not a table](/chapters/Explore/explore-unit-2.qmd#explore-2-9). For students who want to learn more on their own.
 :::
