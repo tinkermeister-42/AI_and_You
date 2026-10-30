@@ -40,10 +40,10 @@ Most lessons also have a **🚀 Go Further** part. It can fill a second day, or 
 | 3.3 | [Writing with AI, Not by AI](chapters/Unit_3/3.3_Writing_with_AI.qmd) | Get feedback on your own paragraph. Decide which advice to keep. |
 | 3.4 | [Research and Checking](chapters/Unit_3/3.4_Research_and_Checking.qmd) | Ask AI a research question. Check every fact against a real source. |
 | 3.5 | [AI and Your Language](chapters/Unit_3/3.5_AI_and_Your_Language.qmd) | Translate there and back again. You are the expert who grades the AI. |
-| 3.6 | [AI and Math](chapters/Unit_3/3.6_AI_and_Math.qmd) | Ask for hints, not answers. Catch an AI math mistake with a calculator. |
-| 3.7 | [Making Pictures with AI](chapters/Unit_3/3.7_Making_Pictures_with_AI.qmd) | Watch noise turn into a picture. Write picture prompts and compare. |
+| 3.6 | [AI and Math](chapters/Unit_3/3.6_AI_and_Math.qmd) | Catch a wrong step. Test a chatbot's math with a calculator. |
+| 3.7 | [Making Pictures with AI](chapters/Unit_3/3.7_Making_Pictures_with_AI.qmd) | Watch noise turn into a picture, step by step. Who gets credit for AI art? |
 | 3.8 | [Project: Solve a Real Problem](chapters/Unit_3/3.8_Project_Solve_a_Real_Problem.qmd) | Pick a problem in your life. Plan how AI could help. |
-| 3.9 | [Project: Feedback and Share](chapters/Unit_3/3.9_Project_Feedback_and_Share.qmd) | Give and get feedback. Make it better. Show your project. |
+| 3.9 | [Project: Feedback and Share](chapters/Unit_3/3.9_Project_Feedback_and_Share.qmd) | Gallery walk: give and get feedback. Choose what to change. |
 
 ## Unit 4: When AI Gets It Wrong
 
