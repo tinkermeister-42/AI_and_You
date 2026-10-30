@@ -18,7 +18,7 @@ Before teaching, Mr. Ross spent more than 15 years working in AI and data scienc
 ## What You Will Learn
 
 - How AI was built, from the first ideas in the 1950s to the chatbots of today
-- How neural networks learn, and how they are like the brain and different from it
+- How neural networks learn, and the idea they copied from brain cells
 - How to use AI well for writing, research, translation, math, and pictures
 - How to catch AI when it makes things up, is unfair, or is used to fake things
 - How AI is changing privacy, jobs, the news, creativity, and friendship

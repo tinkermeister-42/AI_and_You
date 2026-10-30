@@ -66,7 +66,7 @@
   "low-resource-language": "A language with not much writing online for AI to learn from. AI usually makes more mistakes in these languages.",
   "machine-learning": "A way to make AI. People do not write the rules. They give the computer many examples, and the computer finds the patterns by itself.",
   "metadata": "Hidden information about a file. A photo’s metadata can include the kind of phone, the date and time, and the exact place it was taken.",
-  "neural-network": "A kind of AI made of many small parts that work a little like brain cells. Each part does a tiny bit of math. A neural network learns from examples.",
+  "neural-network": "A kind of AI made of many small parts, based on an idea from brain cells. Each part does a tiny bit of math. A neural network learns from examples.",
   "neuron": "A cell that sends signals. Your brain has about 86 billion neurons. A neuron fires (sends a signal) only when the signals coming in add up to enough.",
   "noise": "Random dots with no picture in them, like the static on an old TV.",
   "overfitting": "When an AI memorizes its training examples instead of learning the real pattern. It does very well on the training data but worse on new data.",

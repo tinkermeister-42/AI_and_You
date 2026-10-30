@@ -12,9 +12,9 @@ In Unit 3, you will learn how to use AI this way: as a helper, while you stay in
 
 ## 🧭 About the Class
 
-AI is everywhere now. It writes, draws, talks, answers questions, and even pretends to be a friend. Some people say it thinks like a human brain. Is that true? In this class we will find out.
+AI is everywhere now. It writes, draws, talks, answers questions, and even pretends to be a friend. Some people say it thinks like a human brain. Others say it only looks that way. In this class, you decide.
 
-We will see what AI can do, learn the story of how it was built, look at how it works (and how it is a little like the brain in your head), and try it out for real tasks. By the end, you will know how to use AI well, spot it when it is wrong, and decide for yourself what you think about it and the world it is building.
+We will see what AI can do, learn the story of how it was built, look at how it works (including the idea it copied from brain cells), and try it out for real tasks. By the end, you will know how to use AI well, spot it when it is wrong, and decide for yourself what you think about it and the world it is building.
 
 ***
 
@@ -28,7 +28,7 @@ Before teaching, Mr. Ross spent over 15 years working in AI and data science, in
 
 - How to use AI tools for writing, school, art, and real-life problems.
 - The basic story of how AI was built and how it works.
-- How AI is and is not like the human brain.
+- How neural networks copied an idea from brain cells.
 - How to catch AI when it makes things up or gets things wrong.
 - How AI is changing creativity, friendship, jobs, and the news.
 - What AI might mean for your future, and what you think about that.

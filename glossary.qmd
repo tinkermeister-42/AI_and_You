@@ -584,7 +584,7 @@ Hidden information about a file. A photo's metadata can include the kind of phon
 
 ### neural network {#glossary-neural-network}
 
-A kind of AI made of many small parts that work a little like brain cells. Each part does a tiny bit of math. A neural network learns from examples.
+A kind of AI made of many small parts, based on an idea from brain cells. Each part does a tiny bit of math. A neural network learns from examples.
 
 **See Also:** {{< glink "machine learning" >}}, {{< glink GPU >}}
 

@@ -26,7 +26,7 @@ Today, you do the job that thousands of people did for her project: you label pi
 :::{.word-cards}
 - [🏷️]{.icon} {{< glink label >}}: the right answer that a person attaches to an example, like "cat"
 - [🖼️]{.icon} {{< glink dataset >}}: a big collection of examples, like pictures with labels
-- [🕸️]{.icon} {{< glink "neural network" >}}: a kind of AI made of many small parts that work a little like brain cells
+- [🕸️]{.icon} {{< glink "neural network" >}}: a kind of AI made of many small parts, based on an idea from brain cells
 - [🎮]{.icon} {{< glink GPU >}}: a computer chip made for video games that can do many small math problems at once
 :::
 ::::
