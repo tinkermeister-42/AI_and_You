@@ -186,6 +186,11 @@ The teacher wants kids' hands on real things in every lesson.
   the site search. `scripts/make-teacher-guide.py` (post-render) builds the
   unlisted guide at `/teacher/`: every lesson's teacher notes, sheets and
   keys, the dated boxes, and the outside websites. Nothing links to it
+- **Blocked for students on the school network** (checked October 2026):
+  youtube.com, ytimg.com, lens.google.com, tineye.com. Mr. Ross can show
+  YouTube on the projector, and students can watch at home, so Watch sections
+  keep their videos with an "In class / At home" line. No student step may
+  need a blocked site: make it a projector demo instead
 - **Outside websites:** `scripts/list-external-urls.py` lists every one. When
   links change, republish the firewall checklist artifact
   (https://claude.ai/artifact/6zYejQfNhQbDTe8d6tQovi) from that list

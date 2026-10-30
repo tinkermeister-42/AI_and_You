@@ -171,7 +171,7 @@ The neuron said Gallade is a Fighting type. Gallade is Psychic **and** Fighting.
 
 **While you watch:** What happens to the weights when the network makes a mistake?
 
-**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}

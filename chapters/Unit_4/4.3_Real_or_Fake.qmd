@@ -35,7 +35,7 @@ Today you test your eyes against AI faces. Then you learn something surprising: 
 :::
 
 :::{.teacher title="Before class"}
-Choose 2 pictures that spread online recently for Trace It Back. Check that the sites you need are not blocked.
+Choose 2 pictures that spread online recently for Trace It Back. Reverse image search (TinEye, Google Lens) is blocked for students: run it from your account on the projector, or have a fact-check article ready for each picture.
 :::
 
 {{< warmup >}}
@@ -94,8 +94,8 @@ Work with a partner. Mr. Ross shows 2 pictures that went around online. For each
 
 :::{.steps}
 1. **Stop.** Write how the picture makes you feel.
-2. **Find better coverage.** Search for a few words that describe it, plus "fact check."
-3. **Trace to the original.** Right-click the picture and choose **Search image with Google**, or upload it to [TinEye](https://tineye.com/){target="_blank"}.
+2. **Find better coverage.** Search for a few words that describe it, plus "fact check." Or describe the picture to your class AI tool and ask: **"Have fact-checkers written about this picture? Give me sources."** Then open the sources yourself.
+3. **Trace to the original.** Mr. Ross does a reverse image search on the projector. Where did the picture first appear? Who posted it?
 4. Decide: real, fake, or real but used in a misleading way. Write your proof.
 :::
 

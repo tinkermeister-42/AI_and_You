@@ -147,7 +147,7 @@ Do you agree? If a machine fools you, does that mean it thinks?
 
 **While you watch:** Find one chatbot from the video that tried to pass the test. Did it pass?
 
-**Captions in your language:** Press **CC** to turn on captions. Then press ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**. Choose your language.
+**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}

@@ -126,7 +126,7 @@ This short video was made for a museum show about the history of chatbots.
 
 **While you watch:** How many words did the model read? How is that like your count table?
 
-**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}
