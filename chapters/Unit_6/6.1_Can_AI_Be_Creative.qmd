@@ -138,11 +138,11 @@ An AI picture wins an art contest. Who should own it: the person who wrote the p
 {{< watch >}}
 
 :::{.watch title="Does AI Have Creativity and Imagination? (Code.org)"}
-{{< video https://www.youtube.com/watch?v=X994dDnmRmY title="Does AI Have Creativity and Imagination? (Code.org)" >}}
+{{< ytvideo X994dDnmRmY title="Does AI Have Creativity and Imagination? (Code.org)" >}}
 
 **While you watch:** Does the speaker think AI is creative, or a tool for creative people?
 
-**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}

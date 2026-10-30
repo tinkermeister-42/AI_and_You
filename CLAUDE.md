@@ -187,10 +187,13 @@ The teacher wants kids' hands on real things in every lesson.
   unlisted guide at `/teacher/`: every lesson's teacher notes, sheets and
   keys, the dated boxes, and the outside websites. Nothing links to it
 - **Blocked for students on the school network** (checked October 2026):
-  youtube.com, ytimg.com, lens.google.com, tineye.com. Mr. Ross can show
-  YouTube on the projector, and students can watch at home, so Watch sections
-  keep their videos with an "In class / At home" line. No student step may
-  need a blocked site: make it a projector demo instead
+  youtube.com, ytimg.com, lens.google.com, tineye.com. youtube-nocookie.com
+  is not blocked, so every video is embedded from it with
+  `{{< ytvideo VIDEO_ID title="..." >}}` (`_extensions/ytvideo`). Quarto's
+  own `{{< video >}}` rewrites YouTube addresses to youtube.com: never use it
+  for YouTube. Never send students to third-party YouTube mirrors (they log
+  student data). No student step may need a blocked site: make it a
+  projector demo instead
 - **Outside websites:** `scripts/list-external-urls.py` lists every one. When
   links change, republish the firewall checklist artifact
   (https://claude.ai/artifact/6zYejQfNhQbDTe8d6tQovi) from that list
@@ -223,7 +226,7 @@ Syntax: `:::{.callout-type title="Title"} … :::`. New types need an entry in
 - **Fetch every link before it goes in.** Tools and videos disappear. A
   dead link in front of a class costs the block
 - **Videos:** short, from a source that will keep them up (Code.org's How AI
-  Works series is the default). Embed with `{{< video URL title="..." >}}`
+  Works series is the default). Embed with `{{< ytvideo VIDEO_ID title="..." >}}`
   inside a `.watch` callout, and keep the caption/auto-translate tip
 - **Tools students open:** prefer ones that need no account (Quick, Draw!,
   Teachable Machine). Anything that needs a student account must be allowed

@@ -120,13 +120,13 @@ The tiny chatbot wrote "My friend likes rice and beans." Did it **understand** t
 {{< watch >}}
 
 :::{.watch title="Large Language Models Explained Briefly (3Blue1Brown)"}
-{{< video https://www.youtube.com/watch?v=LPZh9BOjkQs title="Large Language Models explained briefly (3Blue1Brown)" >}}
+{{< ytvideo LPZh9BOjkQs title="Large Language Models explained briefly (3Blue1Brown)" >}}
 
 This short video was made for a museum show about the history of chatbots.
 
 **While you watch:** How many words did the model read? How is that like your count table?
 
-**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}

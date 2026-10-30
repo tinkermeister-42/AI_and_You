@@ -129,13 +129,13 @@ What if all the labelers came from one country? You will think about this in Uni
 {{< watch >}}
 
 :::{.watch title="How we teach computers to understand pictures (Fei-Fei Li, TED)"}
-{{< video https://www.youtube.com/watch?v=40riCqvRoMs title="How we teach computers to understand pictures (Fei-Fei Li, TED)" >}}
+{{< ytvideo 40riCqvRoMs title="How we teach computers to understand pictures (Fei-Fei Li, TED)" >}}
 
 The talk is 18 minutes. In class, we watch the first part.
 
 **While you watch:** Fei-Fei Li compares computers to children. What do children do that computers could not?
 
-**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}

@@ -143,11 +143,11 @@ Do you agree? If a machine fools you, does that mean it thinks?
 {{< watch >}}
 
 :::{.watch title="The Turing Test: Can a Computer Pass for a Human? (TED-Ed)"}
-{{< video https://www.youtube.com/watch?v=3wLqsRLvV-c title="The Turing test: Can a computer pass for a human? (TED-Ed)" >}}
+{{< ytvideo 3wLqsRLvV-c title="The Turing test: Can a computer pass for a human? (TED-Ed)" >}}
 
 **While you watch:** Find one chatbot from the video that tried to pass the test. Did it pass?
 
-**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}

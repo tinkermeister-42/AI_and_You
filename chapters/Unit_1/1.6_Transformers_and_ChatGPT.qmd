@@ -110,11 +110,11 @@ ChatGPT learned from text that people wrote: books, websites, news, and more. Mo
 {{< watch >}}
 
 :::{.watch title="How Chatbots and Large Language Models Work (Code.org)"}
-{{< video https://www.youtube.com/watch?v=X-AWdfSFCHQ title="How Chatbots and Large Language Models Work (Code.org)" >}}
+{{< ytvideo X-AWdfSFCHQ title="How Chatbots and Large Language Models Work (Code.org)" >}}
 
 **While you watch:** How does a chatbot decide which word comes next?
 
-**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}

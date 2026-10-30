@@ -101,11 +101,11 @@ Is a picture made by AI **art**? Who should get the credit: the person who wrote
 {{< watch >}}
 
 :::{.watch title="Does AI Have Creativity and Imagination? (Code.org)"}
-{{< video https://www.youtube.com/watch?v=X994dDnmRmY title="Does AI Have Creativity and Imagination? (Code.org)" >}}
+{{< ytvideo X994dDnmRmY title="Does AI Have Creativity and Imagination? (Code.org)" >}}
 
 **While you watch:** What does the AI learn from, before it can make a picture?
 
-**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}

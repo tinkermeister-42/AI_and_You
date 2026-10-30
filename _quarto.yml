@@ -15,6 +15,7 @@ resources:
 extensions:
   - glossary
   - headings
+  - ytvideo
 
 filters:
   - scripts/strip-teacher.lua

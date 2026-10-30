@@ -116,11 +116,11 @@ Who should fix bias in AI: the company that makes it, the government, or the peo
 {{< watch >}}
 
 :::{.watch title="Training Data and Bias (Code.org)"}
-{{< video https://www.youtube.com/watch?v=x2mRoFNm22g title="AI: Training Data & Bias (Code.org)" >}}
+{{< ytvideo x2mRoFNm22g title="AI: Training Data & Bias (Code.org)" >}}
 
 **While you watch:** Where does the bias in the video come from?
 
-**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}

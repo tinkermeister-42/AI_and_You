@@ -167,11 +167,11 @@ The neuron said Gallade is a Fighting type. Gallade is Psychic **and** Fighting.
 {{< watch >}}
 
 :::{.watch title="How Neural Networks Work (Code.org)"}
-{{< video https://www.youtube.com/watch?v=JrXazCEACVo title="How Neural Networks Work (Code.org)" >}}
+{{< ytvideo JrXazCEACVo title="How Neural Networks Work (Code.org)" >}}
 
 **While you watch:** What happens to the weights when the network makes a mistake?
 
-**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}
