@@ -2,6 +2,8 @@
 
 In 1950, a scientist named Alan Turing asked a big question: **Can a machine think?**
 
+![Alan Turing in 1951. (Photo: Elliott & Fry, public domain)](/images/Unit_1/1.2_alan_turing.jpg){width="240px" fig-align="center" fig-alt="A black and white photo of Alan Turing, a young man with short dark hair, wearing a tweed jacket and a dark tie."}
+
 People do not agree on what "think" means. So Turing asked a new question that you can test: *Can a machine talk so well that you cannot tell it is a machine?*
 
 He made a game to find out. Today, you play his game with a real AI.
