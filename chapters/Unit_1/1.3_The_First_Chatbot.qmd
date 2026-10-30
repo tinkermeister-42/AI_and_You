@@ -39,7 +39,7 @@ Today, you play ELIZA yourself and see how it works. Then you act out a famous p
 :::
 
 :::{.teacher title="Before class"}
-Print the Klingon Room rule book: one copy for each group.
+Print the Klingon Room rule book: one copy for each group. It's 4 pages: 2 pages of rules (14 notes) and 2 pages of note cards to cut out.
 :::
 
 {{< warmup >}}
@@ -116,7 +116,7 @@ Work in a group of **2 to 4**: one person in the room, the rest outside. Each gr
 2. Everyone else is **outside**. Share the note cards. Fold back the English part.
 3. Pass one note into the room. The person in the room finds the note that looks **exactly** the same in the rule book. They copy the reply on the back. Pass it out.
 4. Outside: check the reply with the English on your card. Does it make sense?
-5. Do all 6 notes. Then switch: a new person goes in the room.
+5. Pass in at least 6 notes. Then switch: a new person goes in the room.
 :::
 
 :::{.think title="Look at the note that asks, &quot;Do you speak Klingon?&quot; What did the room say?"}
@@ -125,6 +125,14 @@ The room answered: *"Yes. I am learning Klingon."*
 But the person in the room doesn't know any Klingon. The answer sounds right, and it is **not true**.
 
 Now look at the note about the bathroom. The room said: *"I don't understand."* That one is true! But the room only said it because a rule told it to.
+:::
+
+:::{.think title="Did you start to guess the replies?"}
+Look at three notes: `bIpIv'a'?`, `bIghung'a'?` and `bIQuch'a'?`. Each reply sends the same word back, but **bI** becomes **jI**: `jIpIv`, `jIghung`, `jIQuch`.
+
+In Klingon, *bI* means "you" and *jI* means "I." It's the same swap ELIZA makes, when "my" becomes "your."
+
+If you were in the room, maybe you started to guess replies without the book. You found a pattern. Did you understand any more Klingon?
 :::
 
 {{< talk >}}
@@ -139,6 +147,7 @@ What do you think?
 - The person in the room **does** / **does not** understand Klingon, because ...
 - The whole room **does** / **does not** understand Klingon, because ...
 - ELIZA is like the Klingon Room because ...
+- When I was in the room, I could guess some replies because ...
 - Today's chatbots are **like** / **not like** the Klingon Room, because ...
 :::
 

@@ -2,9 +2,10 @@
 \input{../preamble}
 \usepackage{textcomp}
 % Klingon in a typewriter font, so the apostrophes stay straight.
-% Phrases: Omniglot, "Useful phrases in Klingon".
+% Phrases: Omniglot, "Useful phrases in Klingon", and Marc Okrand,
+% The Klingon Dictionary. Case matters in Klingon: q and Q are different sounds.
 \newcommand{\kl}[1]{{\ttfamily\bfseries #1}}
-\renewcommand{\arraystretch}{2.0}
+\renewcommand{\arraystretch}{1.85}
 
 \begin{document}
 
@@ -13,9 +14,9 @@
 \textbf{For the person in the room.} A note comes in. Find the note that looks \textbf{exactly} the same in the left column. Big and small letters matter! Copy the reply from the right column onto the back of the note. Pass it out.
 
 \vspace{0.3em}
-You do not need to know what the notes say. Just match the shapes.
+You don't need to know what the notes say. Just match the shapes.
 
-\vspace{0.8em}
+\vspace{0.6em}
 \begin{center}
 \begin{tabular}{|c|m{2.9in}|m{3.0in}|}
 \hline
@@ -26,6 +27,25 @@ You do not need to know what the notes say. Just match the shapes.
 4 & \Large\kl{nuqDaq \textquotesingle{}oH puchpa\textquotesingle{}\textquotesingle{}e\textquotesingle{}?}\ifkey\par{\normalsize\textcolor{keyred}{Where is the bathroom?}}\fi & \Large\kl{jIyajbe\textquotesingle{}.}\ifkey\par{\normalsize\textcolor{keyred}{I don't understand.}}\fi \\ \hline
 5 & \Large\kl{nuqneH}\ifkey\par{\normalsize\textcolor{keyred}{Hello!}}\fi & \Large\kl{bIpIv\textquotesingle{}a\textquotesingle{}?}\ifkey\par{\normalsize\textcolor{keyred}{Are you well?}}\fi \\ \hline
 6 & \Large\kl{nuq \textquotesingle{}oH ponglIj\textquotesingle{}e\textquotesingle{}?}\ifkey\par{\normalsize\textcolor{keyred}{What is your name?}}\fi & \Large\kl{Mara jIH.}\ifkey\par{\normalsize\textcolor{keyred}{I am Mara.}}\fi \\ \hline
+7 & \Large\kl{tlhIngan SoH\textquotesingle{}a\textquotesingle{}?}\ifkey\par{\normalsize\textcolor{keyred}{Are you a Klingon?}}\fi & \Large\kl{ghobe\textquotesingle{}. Human jIH.}\ifkey\par{\normalsize\textcolor{keyred}{No. I am a human.}}\fi \\ \hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+{\Large\bfseries Rule Book, continued}\par\vspace{0.6em}
+
+\begin{center}
+\begin{tabular}{|c|m{2.9in}|m{3.0in}|}
+\hline
+ & \textbf{If the note looks like this \dots} & \textbf{\dots copy this reply.} \\ \hline
+8 & \Large\kl{SuvwI\textquotesingle{} SoH\textquotesingle{}a\textquotesingle{}?}\ifkey\par{\normalsize\textcolor{keyred}{Are you a warrior?}}\fi & \Large\kl{HIja\textquotesingle{}. SuvwI\textquotesingle{} jIH.}\ifkey\par{\normalsize\textcolor{keyred}{Yes. I am a warrior.}}\fi \\ \hline
+9 & \Large\kl{nuq Daneh?}\ifkey\par{\normalsize\textcolor{keyred}{What do you want?}}\fi & \Large\kl{qagh vIneH.}\ifkey\par{\normalsize\textcolor{keyred}{I want gagh.}}\fi \\ \hline
+10 & \Large\kl{bIghung\textquotesingle{}a\textquotesingle{}?}\ifkey\par{\normalsize\textcolor{keyred}{Are you hungry?}}\fi & \Large\kl{HIja\textquotesingle{}. jIghung.}\ifkey\par{\normalsize\textcolor{keyred}{Yes. I am hungry.}}\fi \\ \hline
+11 & \Large\kl{bIQuch\textquotesingle{}a\textquotesingle{}?}\ifkey\par{\normalsize\textcolor{keyred}{Are you happy?}}\fi & \Large\kl{HIja\textquotesingle{}. jIQuch.}\ifkey\par{\normalsize\textcolor{keyred}{Yes. I am happy.}}\fi \\ \hline
+12 & \Large\kl{jIyajbe\textquotesingle{}.}\ifkey\par{\normalsize\textcolor{keyred}{I don't understand.}}\fi & \Large\kl{yIDoghQo\textquotesingle{}!}\ifkey\par{\normalsize\textcolor{keyred}{Don't be silly!}}\fi \\ \hline
+13 & \Large\kl{nuqDaq \textquotesingle{}oH Qe\textquotesingle{} QaQ\textquotesingle{}e\textquotesingle{}?}\ifkey\par{\normalsize\textcolor{keyred}{Where is a good restaurant?}}\fi & \Large\kl{jISovbe\textquotesingle{}.}\ifkey\par{\normalsize\textcolor{keyred}{I don't know.}}\fi \\ \hline
+14 & \Large\kl{wa\textquotesingle{}, cha\textquotesingle{}, wej?}\ifkey\par{\normalsize\textcolor{keyred}{One, two, three?}}\fi & \Large\kl{loS, vagh, jav!}\ifkey\par{\normalsize\textcolor{keyred}{Four, five, six!}}\fi \\ \hline
 \end{tabular}
 \end{center}
 
@@ -33,24 +53,36 @@ You do not need to know what the notes say. Just match the shapes.
 
 \textbf{Note cards, for the people outside the room.} Cut out the cards. Pass one note into the room. When the reply comes back, check it with the meaning on your card. Does the reply make sense?
 
-\vspace{0.6em}
+\vspace{0.4em}
 \newcommand{\notecard}[3]{%
   \begin{tikzpicture}
-    \draw[dashed, line width=0.8pt, rounded corners=3pt] (0,0) rectangle (8.3,4.9);
-    \node[anchor=north west, font=\Large, text width=7.6cm, align=left] at (0.35,4.5) {\kl{#1}};
-    \draw[black!40, line width=0.6pt, dash pattern=on 4pt off 2pt] (0.2,3.3) -- (8.1,3.3);
-    \node[anchor=south east, font=\scriptsize, text=black!55] at (8.1,3.32) {fold here};
-    \node[anchor=north west, font=\small, text width=7.6cm, align=left] at (0.35,3.05)
-      {\textbf{The note means:} #2\\[0.35em]\textbf{A good reply means:} #3};
-    \node[anchor=south west, font=\footnotesize\itshape, text=black!55] at (0.35,0.2)
+    \draw[dashed, line width=0.8pt, rounded corners=3pt] (0,0) rectangle (8.3,4.55);
+    \node[anchor=north west, font=\Large, text width=7.6cm, align=left] at (0.35,4.2) {\kl{#1}};
+    \draw[black!40, line width=0.6pt, dash pattern=on 4pt off 2pt] (0.2,3.05) -- (8.1,3.05);
+    \node[anchor=south east, font=\scriptsize, text=black!55] at (8.1,3.07) {fold here};
+    \node[anchor=north west, font=\small, text width=7.6cm, align=left] at (0.35,2.8)
+      {\textbf{The note means:} #2\\[0.3em]\textbf{A good reply means:} #3};
+    \node[anchor=south west, font=\footnotesize\itshape, text=black!55] at (0.35,0.15)
       {Fold this part back before the note goes in.};
   \end{tikzpicture}}
-\noindent\notecard{nuqneH}{Hello!}{Are you well?}\hfill\notecard{bIpIv\textquotesingle{}a\textquotesingle{}?}{Are you well?}{I am fine.}
+\noindent\notecard{qatlho\textquotesingle{}!}{Thank you!}{Success! (Klingons say this to wish you well.)}\hfill\notecard{tlhIngan Hol Dajatlh\textquotesingle{}a\textquotesingle{}?}{Do you speak Klingon?}{Yes. I am learning Klingon. (Is that true?)}
 
-\vspace{0.4em}
-\noindent\notecard{nuq \textquotesingle{}oH ponglIj\textquotesingle{}e\textquotesingle{}?}{What is your name?}{I am \dots}\hfill\notecard{qatlho\textquotesingle{}!}{Thank you!}{Success! (Klingons say this to wish you well.)}
+\vspace{0.25em}
+\noindent\notecard{bIpIv\textquotesingle{}a\textquotesingle{}?}{Are you well?}{I am fine.}\hfill\notecard{nuqDaq \textquotesingle{}oH puchpa\textquotesingle{}\textquotesingle{}e\textquotesingle{}?}{Where is the bathroom?}{It is over there. (Or: I don't understand.)}
 
-\vspace{0.4em}
-\noindent\notecard{nuqDaq \textquotesingle{}oH puchpa\textquotesingle{}\textquotesingle{}e\textquotesingle{}?}{Where is the bathroom?}{It is over there. (Or: I don't understand.)}\hfill\notecard{tlhIngan Hol Dajatlh\textquotesingle{}a\textquotesingle{}?}{Do you speak Klingon?}{Yes. I am learning Klingon. (Is that true?)}
+\vspace{0.25em}
+\noindent\notecard{nuqneH}{Hello!}{Are you well?}\hfill\notecard{nuq \textquotesingle{}oH ponglIj\textquotesingle{}e\textquotesingle{}?}{What is your name?}{I am \dots}
+
+\vspace{0.25em}
+\noindent\notecard{tlhIngan SoH\textquotesingle{}a\textquotesingle{}?}{Are you a Klingon?}{No. I am a human. (Is that true?)}\hfill\notecard{SuvwI\textquotesingle{} SoH\textquotesingle{}a\textquotesingle{}?}{Are you a warrior?}{Yes. I am a warrior. (Is that true?)}
+
+\newpage
+\noindent\notecard{nuq Daneh?}{What do you want?}{I want gagh. (Gagh is a Klingon food: live worms!)}\hfill\notecard{bIghung\textquotesingle{}a\textquotesingle{}?}{Are you hungry?}{Yes. I am hungry.}
+
+\vspace{0.25em}
+\noindent\notecard{bIQuch\textquotesingle{}a\textquotesingle{}?}{Are you happy?}{Yes. I am happy.}\hfill\notecard{jIyajbe\textquotesingle{}.}{I don't understand.}{Don't be silly!}
+
+\vspace{0.25em}
+\noindent\notecard{nuqDaq \textquotesingle{}oH Qe\textquotesingle{} QaQ\textquotesingle{}e\textquotesingle{}?}{Where is a good restaurant?}{It is over there. (Or: I don't know.)}\hfill\notecard{wa\textquotesingle{}, cha\textquotesingle{}, wej?}{One, two, three?}{Four, five, six!}
 
 \end{document}
