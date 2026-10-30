@@ -1,0 +1,95 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\lessontitle{AI and Math}
+\partner
+
+\vspace{0.4em}
+{\large\textbf{1. Catch the mistake.}} A chatbot solved $3x + 5 = 20$. Circle the wrong step.
+
+\vspace{0.4em}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Step} & \textbf{Work} \\ \hline
+1 & $3x + 5 = 20$ \\ \hline
+2 & \ifkey\textcolor{keyred}{\fbox{$3x = 25$}}\else$3x = 25$\fi \\ \hline
+3 & $x = \dfrac{25}{3}$ \\[0.5em] \hline
+\end{tabular}
+\qquad
+\begin{minipage}[c]{3.8in}
+The right answer: $x = $ \ansline{0.8in}{5}
+
+\vspace{0.6em}
+Check by plugging in: \ansline{2.2in}{$3(5)+5 = 20$ \ding{51}}
+\end{minipage}
+
+\vspace{1.0em}
+{\large\textbf{2. Rules and predictions.}}
+
+\vspace{0.4em}
+\begin{center}\resizebox{0.8\linewidth}{!}{\fig{Unit_3/3.6_rules_vs_prediction}}\end{center}
+
+A calculator follows \ansline{1.2in}{rules.} A chatbot \ansline{3.6in}{predicts the answer, one token at a time.}
+
+\vspace{0.7em}
+Why can a chatbot get a long problem wrong? \ansline{3.0in}{One bad guess makes the whole}
+
+\vspace{0.5em}
+\ansline{6.9in}{answer wrong.}
+
+\vspace{1.0em}
+{\large\textbf{3. Three ways to check.}} Is $3847 \times 29 = 111563$?
+
+\vspace{0.3em}
+\begin{tabular}{|R{1.2in}|R{5.3in}|}
+\hline
+Estimate & \ans{$4000 \times 30 = 120000$. Close!} \\[0.4em] \hline
+Calculator & \ans{$111563$} \\[0.4em] \hline
+Plug it in & \ans{$111563 \div 29 = 3847$} \\[0.4em] \hline
+\end{tabular}
+
+\newpage
+
+{\large\textbf{4. Test the chatbot.}} Ask for only the answer. Check it with a calculator.
+
+\vspace{0.3em}
+\begin{tabular}{|R{1.8in}|R{2.0in}|R{2.0in}|c|}
+\hline
+\textbf{Problem} & \textbf{The AI said} & \textbf{The calculator said} & \textbf{\ding{51} or \ding{55}} \\ \hline
+$23 \times 47$ & & \ans{1081} & \\[0.4em] \hline
+$3847 \times 29$ & & \ans{111563} & \\[0.4em] \hline
+$48213 \times 7956$ & & \ans{383582628} & \\[0.4em] \hline
+$8374615 \times 293847$ & & \ans{2460855493905} & \\[0.4em] \hline
+\end{tabular}
+
+\vspace{0.7em}
+Which problems did the AI get wrong most often in our class? \ansline{2.4in}{Answers vary. The biggest ones.}
+
+\vspace{1.0em}
+{\large\textbf{5. The hint challenge.}} Solve $2x - 7 = 11$. Do not let the AI give you the answer.
+
+\vspace{0.3em}
+\begin{tabular}{|R{3.2in}|R{3.2in}|}
+\hline
+\textbf{The AI's hint} & \textbf{My step} \\ \hline
+\ans{Undo the $-7$ first.} & \ans{$2x = 18$} \\[1.0em] \hline
+\ans{Now undo the $\times 2$.} & \ans{$x = 9$} \\[1.0em] \hline
+ & \\[1.0em] \hline
+\end{tabular}
+
+\vspace{0.6em}
+Check by plugging in: \ansline{3.0in}{$2(9) - 7 = 11$ \ding{51}}
+
+\vspace{1.0em}
+{\large\textbf{6. Talk about it.}}
+
+\vspace{0.5em}
+AI helps me learn math when \ansline{4.6in}{Answers vary. It gives hints and checks my steps.}
+
+\vspace{0.7em}
+AI stops me from learning when \ansline{4.4in}{Answers vary. It does the problem for me.}
+
+\end{document}

@@ -1,0 +1,145 @@
+# 3.1 - Asking Good Questions {.unnumbered}
+
+Two students ask a chatbot for help with the same speech.
+
+Maria types: **"Tell me about dogs."** She gets a long page about the history of dogs, dog breeds, and dog food. She cannot use most of it.
+
+Kofi types: **"I am in 10th grade. I am writing a 1-minute speech about why dogs make good pets. Give me 3 reasons, with one short example each. Use simple words."** He gets exactly what he needs. Same chatbot. Different question.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** What did they want? [5 min]{.time}
+- [👥]{.icon} **Learn Together** The three parts of a prompt [10 min]{.time}
+- [🛠️]{.icon} **Try It** Fix a weak prompt [18 min]{.time}
+- [💬]{.icon} **Talk About It** Is it fair? [7 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can name the three parts of a good prompt: task, context, and format.
+- [ ] I can make a weak prompt better.
+- [ ] I can explain why more context gives a better answer.
+- [ ] I can keep my private information out of an AI tool.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [⌨️]{.icon} {{< glink prompt >}}: what you type to tell an AI what you want
+- [🎯]{.icon} {{< glink task >}}: the job you want the AI to do
+- [🧭]{.icon} {{< glink context >}}: the facts around your question: who you are, what it is for
+- [📋]{.icon} {{< glink format >}}: what the answer should look like: a list, a table, 3 sentences
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_3/3.1_Asking_Good_Questions.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Each person below typed a short question. Guess what they **really** wanted. Write it on your sheet.
+
+1. "Help with my essay." (Tomás has an essay about his home country due tomorrow. He needs a good first sentence.)
+2. "Explain volcanoes." (Amina is in 6th grade. She has a test on Friday. She reads English slowly.)
+3. "Give me a recipe." (Lin has rice, eggs, and onions. She has 20 minutes.)
+
+:::{.think title="Why can a chatbot not guess?"}
+You know Tomás, Amina, and Lin. The chatbot does not. It only has the words they typed. Everything else, it has to guess.
+:::
+
+{{< learn >}}
+
+### 3.1.1 - What Is a Prompt?
+
+A {{< glink prompt >}} is what you type to tell an AI what you want. It can be a question, a job, or both.
+
+Remember Lesson 1.6: a chatbot predicts the next word, again and again. It uses **every word you typed** to make its prediction. Short prompt: it predicts an answer for an average person. Clear prompt: it predicts an answer for **you**.
+
+***
+
+### 3.1.2 - The Three Parts of a Good Prompt
+
+Here is Kofi's prompt again, in color:
+
+:::{.prompt-example}
+[I am in 10th grade.]{.p-context} [Give me 3 reasons why dogs make good pets, with one short example each.]{.p-task} [This is for a 1-minute speech.]{.p-context} [Use simple words.]{.p-format}
+:::
+
+| Part | The question it answers | Kofi's prompt |
+|---|---|---|
+| [**Task**]{.p-task} | What do you want the AI to do? | Give 3 reasons dogs make good pets |
+| [**Context**]{.p-context} | Who are you? What is it for? | 10th grade, a 1-minute speech |
+| [**Format**]{.p-format} | What should the answer look like? | 3 reasons, one example each, simple words |
+
+:::{.remember}
+**Task, context, format.** You do not need all three every time. But when an answer is not useful, one of them is usually missing.
+:::
+
+:::{.real-world title="You can ask in your language"}
+Most chatbots can read and write many languages. You can write your prompt in your home language. You can also ask for the answer in English **and** your language, side by side.
+:::
+
+***
+
+### 3.1.3 - Keep Your Private Information Private
+
+:::{.gotcha title="What not to type"}
+An AI tool may save what you type. A person at the company may read it. So **never** type:
+
+- your full name, address, or phone number
+- passwords
+- private facts about another person
+
+For context, "I am in high school" is enough. The AI does not need to know **which** high school.
+:::
+
+:::{.note title="Right now (fall 2026)"}
+Our school uses an AI tool for students. Mr. Ross will show you which one. In this book, it is called **your class AI tool**.
+
+Many popular chatbots have age rules. ChatGPT says users must be at least 13, and users under 18 need a parent's permission. Claude.ai says users must be 18. Use the tool your school gives you.
+:::
+
+{{< tryit >}}
+
+### 3.1.4 - Fix a Weak Prompt
+
+Work with a partner, or in a group of 3. (In a class of 4, make two pairs.)
+
+:::{.steps}
+1. Choose a weak prompt in the prompt builder below.
+2. Copy it into your class AI tool. Save the answer.
+3. Now make it better. Add a **task**, **context**, and **format**. Click the round buttons for ideas.
+4. Press **Copy my prompt**. Paste it into your class AI tool in a **new chat**.
+5. Compare the two answers on your sheet. Which one could you really use?
+:::
+
+{{< include /assets/Unit_3/prompt_builder.html >}}
+
+:::{.gotcha title="Big class? Make it a race"}
+Split into two teams. Mr. Ross puts one weak prompt on the projector. Each team writes a better prompt in 3 minutes. Mr. Ross tries both on the projector. The class votes: which answer is more useful? Then switch to a new weak prompt.
+:::
+
+{{< talk >}}
+
+Some people get much better help from AI, just because they know how to ask. Is that fair? Who could be left behind?
+
+:::{.frames}
+- A good prompt is like ... because ...
+- The second answer was better because I added ...
+- It is (fair / not fair) that some people get better answers, because ...
+- People who could be left behind are ... , because ...
+:::
+
+{{< further >}}
+
+:::{.project title="Same Prompt, Two Languages"}
+Write the same good prompt in English and in your home language. Ask both in new chats. Are the answers the same? Is one better? Show the class.
+:::
+
+:::{.project title="The Class Prompt Poster"}
+As a class, choose the 5 best prompts you wrote today. Make a poster with each one in color: task, context, format. Hang it by the computers.
+:::
+
+:::{.project title="Ask for an Example"}
+A fourth trick: **show the AI an example** of what you want. Try: "Write 3 quiz questions about volcanoes. Here is one example: *What comes out of a volcano? (a) lava (b) water (c) sand.*" Does an example make the answer better?
+:::

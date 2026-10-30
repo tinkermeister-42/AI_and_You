@@ -1,0 +1,162 @@
+# 3.7 - Making Pictures with AI {.unnumbered}
+
+Type "an orange cat reading a book in a library, watercolor." Wait a few seconds. A picture appears. Nobody drew it. It did not exist before.
+
+How? The AI starts with **static**, like an old TV with no signal. Then it removes a little static at a time, again and again, until a picture is left.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** Find the picture in the static [4 min]{.time}
+- [👥]{.icon} **Learn Together** From noise to picture [10 min]{.time}
+- [🛠️]{.icon} **Try It** Remove the noise, then write picture prompts [20 min]{.time}
+- [💬]{.icon} **Talk About It** Is it art? [6 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can explain how an image generator turns noise into a picture.
+- [ ] I can explain why the same prompt makes a different picture each time.
+- [ ] I can write a picture prompt with a subject, a place, and a style.
+- [ ] I can name things image generators often get wrong.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🖼️]{.icon} {{< glink "image generator" >}}: an AI that makes a new picture from words
+- [📺]{.icon} {{< glink noise >}}: random dots with no picture in them, like TV static
+- [🌫️]{.icon} {{< glink diffusion >}}: making a picture by removing noise a little at a time
+- [🎨]{.icon} {{< glink style >}}: the way a picture looks: a photo, a cartoon, a painting
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_3/3.7_Making_Pictures_with_AI.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Look at the first three squares on your sheet. Cover the last one. At which step can you guess the picture? Write your guess.
+
+:::{.think title="When could you see it?"}
+At step 0, there is no picture at all. It is only {{< glink noise >}}. At step 3, maybe you see a dark shape. At step 6, most people can see it. The details come last.
+
+An image generator works the same way, but it does not know the picture ahead of time. It has to guess it.
+:::
+
+{{< learn >}}
+
+### 3.7.1 - From Noise to Picture
+
+![](/images/Unit_3/3.7_noise_steps.svg){width="620px" fig-align="center" fig-alt="Four 16 by 16 grids. Words: a heart. Step 0 is random gray squares. Step 3 is still mostly noise. At step 6 a dark heart shape shows through the noise. Step 10 is a clean black heart."}
+
+An {{< glink "image generator" >}} learns in two parts.
+
+**Training.** People collect millions of pictures, each with words that describe it. The computer adds noise to each picture, a little at a time, until only noise is left. A neural network practices guessing: *which part of this is noise?* It practices millions of times.
+
+**Making a picture.** Now you type words. The AI starts with pure noise. The network guesses which part is noise, and removes a little of it. It does this again and again, often 20 to 50 times. Your words guide every guess. This is called {{< glink diffusion >}}.
+
+:::{.remember}
+The AI does not copy a picture or glue pieces together. It starts from noise and removes it, step by step, guided by what it learned from millions of pictures.
+:::
+
+***
+
+### 3.7.2 - Why Every Picture Is Different
+
+Every time you press the button, the AI starts from **new** random noise. So the same prompt makes a different picture each time. (Like the chatbot that picks by chance, in Lesson 2.9.)
+
+***
+
+### 3.7.3 - Picture Prompts
+
+A good picture prompt says what you want to **see**:
+
+| Part | Question | Example |
+|---|---|---|
+| **Subject** | What is in the picture? | a small orange cat |
+| **Action** | What is it doing? | reading a book |
+| **Place** | Where is it? When? | in a library at night |
+| **Style** | What should it look like? | watercolor painting |
+| **Details** | Colors? Light? | warm yellow light |
+
+***
+
+### 3.7.4 - What Image Generators Get Wrong
+
+- **Counting:** "exactly 7 apples" may give 6 or 9.
+- **Words in the picture:** letters on signs and shirts can be wrong.
+- **What is most common:** ask for "a doctor" or "a teacher." The AI shows what it saw most in its training pictures. Who does it leave out? (You will study this in Lesson 4.2.)
+
+:::{.note title="Right now (fall 2026)"}
+Image generators improved fast. The tools from 2022 often drew hands with six fingers and could not write words. The newest tools are much better at both. Exact counting and small details are still hard.
+
+Some of the newest image tools work in a different way, but many still use diffusion.
+:::
+
+{{< tryit >}}
+
+### 3.7.5 - Watch Noise Become a Picture
+
+:::{.steps}
+1. Choose words. Press **Remove some noise** one step at a time. At which step can you guess the picture?
+2. Press **New noise** with the **same** words. Play it. What changed? What stayed the same?
+3. Keep the noise. Choose **new words**. Play it. What changed?
+:::
+
+{{< include /assets/Unit_3/noise_to_picture.html >}}
+
+This shows the idea, but it cheats. This demo already has the finished picture (an emoji), and it mixes the noise away. A real image generator does not have the picture. Its neural network has to **guess** what to remove, using what it learned from millions of pictures.
+
+### 3.7.6 - Write Picture Prompts
+
+Work with a partner, or in a group of 3.
+
+:::{.steps}
+1. Write a picture prompt on your sheet. Use all 5 parts from 3.7.3.
+2. Make the picture with your class AI tool. Make it a **second** time with the same prompt. How are the two pictures different?
+3. Change only the **style**. Make it again. What changed?
+4. Find one mistake in a picture. Write it down.
+:::
+
+:::{.gotcha title="No picture tool?"}
+If your class AI tool cannot make pictures, Mr. Ross makes them on the projector. Each pair gives him one prompt. **Big class:** play "Describe It." One student from each team sees a secret picture. The team writes a prompt from the description. Whose AI picture is closest?
+:::
+
+:::{.gotcha title="Never make pictures of real people"}
+Do not make AI pictures of classmates, teachers, or anyone real. A fake picture of a real person can hurt them, even as a joke. (More in Lesson 4.3.)
+:::
+
+{{< talk >}}
+
+Is a picture made by AI **art**? Who should get the credit: the person who wrote the prompt, the company that made the AI, or the artists whose pictures trained it?
+
+:::{.frames}
+- The noise turned into a picture when ...
+- The same prompt made different pictures because ...
+- An AI picture (is / is not) art, because ...
+- The credit should go to ... , because ...
+:::
+
+{{< watch >}}
+
+:::{.watch title="Does AI Have Creativity and Imagination? (Code.org)"}
+{{< video https://www.youtube.com/watch?v=X994dDnmRmY title="Does AI Have Creativity and Imagination? (Code.org)" >}}
+
+**While you watch:** What does the AI learn from, before it can make a picture?
+
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+:::
+
+{{< further >}}
+
+:::{.project title="One Subject, Five Styles"}
+Choose one subject, like "a bus at our school." Make it in 5 styles: photo, cartoon, pixel art, oil painting, and a style from your home country. Make a poster of the 5 pictures.
+:::
+
+:::{.project title="The Counting Test"}
+Ask for "exactly 3 red balls," then 5, then 7, then 12. Count each picture. When does the AI start to get it wrong?
+:::
+
+:::{.project title="Who Does It Show?"}
+Ask for "a doctor," "a nurse," "a scientist," and "a basketball player." Make each one 4 times. Count who the AI shows: men or women, young or old, skin colors. What do you notice? Bring your results to Lesson 4.2.
+:::

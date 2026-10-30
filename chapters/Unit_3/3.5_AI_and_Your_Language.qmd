@@ -1,0 +1,143 @@
+# 3.5 - AI and Your Language {.unnumbered}
+
+About 14 languages are spoken at our school. AI can translate many of them. It is very good at some languages and weak at others.
+
+How good is it at **your** language? The people who made the AI cannot tell you. They do not speak it. You do.
+
+Today, you are the expert. You grade the AI.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** How many languages are in this room? [5 min]{.time}
+- [👥]{.icon} **Learn Together** How AI learned to translate [9 min]{.time}
+- [🛠️]{.icon} **Try It** Grade the AI [20 min]{.time}
+- [💬]{.icon} **Talk About It** When do you need a person? [6 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can explain how AI learned to translate.
+- [ ] I can explain why AI translates some languages better than others.
+- [ ] I can test a translation with back translation.
+- [ ] I can grade an AI translation in a language I know.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🌍]{.icon} {{< glink translate >}}: to change words from one language to another, with the same meaning
+- [🔄]{.icon} {{< glink "back translation" >}}: translating a translation back to the first language, to check it
+- [📉]{.icon} {{< glink "low-resource language" >}}: a language with not much writing online for AI to learn from
+- [🗂️]{.icon} {{< glink dataset >}}: a big collection of examples that an AI learns from
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_3/3.5_AI_and_Your_Language.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+On your sheet, write **"Good morning! How are you?"** in every language you know.
+
+Then share. Mr. Ross makes a list on the board of every language in the room. How many are there?
+
+:::{.think title="Everyone is an expert"}
+If you speak only English, you are still the expert on English. Today, pair up with someone who speaks another language. You will learn some of it.
+:::
+
+{{< learn >}}
+
+### 3.5.1 - How AI Learned to Translate
+
+People did not write rules for every language. The AI learned from **examples**: millions of texts that exist in two languages. A website in English and Spanish. A report from the United Nations in six languages. A book and its translation.
+
+From the examples, the AI learned which words and sentences match. This is the same idea you saw in Unit 2: learn from examples, not rules.
+
+:::{.real-world title="The transformer started with translation"}
+The transformer (Lesson 1.6) was invented in 2017 to translate. Its first test was English to German and English to French. Later, people used the same idea to build chatbots.
+:::
+
+***
+
+### 3.5.2 - Why Some Languages Are Harder
+
+An AI is only as good as its training examples. Some languages have a lot of writing online. Some have very little. A language with little writing for AI to learn from is called a {{< glink "low-resource language" >}}. AI makes more mistakes in these languages.
+
+:::{.note title="Right now (fall 2026)"}
+About **half** of all websites are in English. Spanish, German, Japanese, and French are next, with about 5% each. Many languages are on less than 1 in 1,000 websites. (Source: W3Techs, October 2026.)
+
+Google Translate works with almost **250** languages. Your class AI tool may work with fewer.
+:::
+
+Some things are hard in **every** language:
+
+- **Idioms:** "It's raining cats and dogs" means it is raining very hard. A word-by-word translation makes no sense.
+- **Words with two meanings:** "a break" can be a rest, or a time when someone is less strict with you.
+- **Polite and friendly forms:** many languages have two ways to say "you." AI may pick the wrong one.
+- **Names:** AI may translate a name that should stay the same.
+
+***
+
+### 3.5.3 - Back Translation
+
+To check a translation, translate it **back**:
+
+> English → your language → English again
+
+If the meaning changed, something went wrong. This is {{< glink "back translation" >}}. It is a good test, but it is not perfect. The best test is a person who speaks the language. That is you.
+
+{{< tryit >}}
+
+### 3.5.4 - Grade the AI
+
+Work with a partner who speaks the same language, if you can. If you speak only English, work with a partner who speaks another language. You write; they grade.
+
+:::{.steps}
+1. Translate each sentence on your sheet into your language. Use [Google Translate](https://translate.google.com){target="_blank"} **and** your class AI tool.
+2. Grade each translation: **3** = right and sounds natural, **2** = I understand it, but it sounds strange, **1** = wrong.
+3. Choose one translation. Back-translate it into English. Did the meaning change?
+4. Add your scores to the class chart on the board.
+:::
+
+The sentences:
+
+A. The library opens at 8 o'clock.
+B. Please bring your permission slip by Friday.
+C. It's raining cats and dogs.
+D. My teacher gave me a break.
+E. A sentence **you** would really need to say. (At the doctor? At a store?)
+
+:::{.gotcha title="What you type goes to the company"}
+Google Translate and your class AI tool send your words to a company's computers. Do not type private information, like a letter from a doctor or your address.
+:::
+
+:::{.gotcha title="Class size"}
+**Small class:** each student tests their own language. Then everyone looks at the class chart together. **Big class:** students who share a language make a team. Each team makes a poster: the AI's best and worst translation.
+:::
+
+{{< talk >}}
+
+Look at the class chart. Which language did AI do best? Worst? Why?
+
+Should a hospital or a court use AI to translate? When do you need a human translator?
+
+:::{.frames}
+- AI did best in ... , maybe because ...
+- AI made a mistake in my language when ...
+- A hospital (should / should not) use AI translation, because ...
+- A human translator is needed when ...
+:::
+
+{{< further >}}
+
+:::{.project title="The Class Dictionary of AI Mistakes"}
+Collect words and sentences the AI got wrong in each language. Write the wrong translation, the right one, and why the AI made the mistake. Share it with the ELL teachers.
+:::
+
+:::{.project title="Different Alphabets"}
+Many languages use a different alphabet: Arabic, Nepali, Russian, Burmese, Tigrinya. Test the AI with a sentence written in that alphabet. Then test it with the same sentence written in English letters. Which works better?
+:::
+
+:::{.project title="Speak It"}
+Google Translate can listen and speak. Say a sentence in your language. Does it understand you? Does it understand your partner? Does it work better for some voices?
+:::

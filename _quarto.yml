@@ -77,6 +77,15 @@ book:
     - part: "Unit 3: Using AI Well"
       chapters:
         - file: chapters/Unit_3/index.qmd
+        - file: chapters/Unit_3/3.1_Asking_Good_Questions.qmd
+        - file: chapters/Unit_3/3.2_Keep_Talking.qmd
+        - file: chapters/Unit_3/3.3_Writing_with_AI.qmd
+        - file: chapters/Unit_3/3.4_Research_and_Checking.qmd
+        - file: chapters/Unit_3/3.5_AI_and_Your_Language.qmd
+        - file: chapters/Unit_3/3.6_AI_and_Math.qmd
+        - file: chapters/Unit_3/3.7_Making_Pictures_with_AI.qmd
+        - file: chapters/Unit_3/3.8_Project_Solve_a_Real_Problem.qmd
+        - file: chapters/Unit_3/3.9_Project_Feedback_and_Share.qmd
 
     - part: "Unit 4: When AI Gets It Wrong"
       chapters:

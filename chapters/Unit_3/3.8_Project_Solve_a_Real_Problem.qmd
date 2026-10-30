@@ -1,0 +1,135 @@
+# 3.8 - Project: Solve a Real Problem {.unnumbered}
+
+Your mom gets a letter from the school, in English, with a deadline. You want a job at a grocery store, and you need a résumé. You have a biology test next week. You want to sell the bracelets you make.
+
+These are real problems. In this unit, you learned to ask good questions, keep talking, get feedback, check facts, test translations, check math, and make pictures. Now put it all together. Use AI to help solve a problem in **your** life.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** What is a problem in your life? [5 min]{.time}
+- [👥]{.icon} **Learn Together** What makes a good project [8 min]{.time}
+- [🛠️]{.icon} **Try It** Plan it and start it [22 min]{.time}
+- [💬]{.icon} **Talk About It** What could go wrong? [5 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can choose a real problem that I can work on in two class days.
+- [ ] I can plan how AI will help, and what I will check.
+- [ ] I can keep a prompt log.
+- [ ] I can explain what I will do myself, and what the AI will do.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [📦]{.icon} {{< glink product >}}: the thing you make in a project: a flyer, a guide, a plan
+- [📒]{.icon} {{< glink "prompt log" >}}: a list of every prompt you used, and what you did with the answer
+- [📊]{.icon} {{< glink rubric >}}: a chart that shows how your work will be graded
+- [✔️]{.icon} {{< glink fact-check >}}: to find out if something is true, using good sources
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_3/3.8_Project_Solve_a_Real_Problem.pdf){target="_blank"} - your project plan.
+:::
+
+{{< warmup >}}
+
+Write 3 problems in your life or your family's life. Big or small. Then circle the one you care about most.
+
+:::{.think title="Some ideas"}
+Reading letters in English. Finding a job. Studying for a test. Planning a meal with what is in the kitchen. Saving money for something. Learning to drive. Planning a birthday party. Helping a younger brother or sister with homework.
+:::
+
+{{< learn >}}
+
+### 3.8.1 - Choose a Good Problem
+
+A good project problem is:
+
+- **Real:** you or your family really have this problem.
+- **Small:** you can finish it in about 2 class days.
+- **Useful:** you make something you will really use.
+
+| Problem | Your product | Unit 3 skills |
+|---|---|---|
+| My family gets school letters in English. | A guide to school letters, in your language | prompts, translation check |
+| I want a job. | A résumé and 5 practice interview answers | feedback, follow-up questions |
+| I have a test next week. | A study guide and a practice quiz | prompts, fact-checking |
+| I want to sell what I make. | A flyer and a price plan | pictures, math check |
+| I want to cook for my family. | A week of meals and a shopping list | prompts, math check |
+
+***
+
+### 3.8.2 - The Plan
+
+Your plan answers 6 questions. You write it on your sheet.
+
+1. What is the **problem**?
+2. Who has the problem?
+3. What will you **make**? (your {{< glink product >}})
+4. How will AI help?
+5. What will you **check**, and how?
+6. What will you do **yourself**?
+
+***
+
+### 3.8.3 - The Rules
+
+:::{.remember title="Project rules"}
+1. Use at least **3 skills** from Unit 3.
+2. Keep a {{< glink "prompt log" >}}: every prompt you use, and what you did with the answer.
+3. Check what the AI tells you. Write how you checked.
+4. Write an **AI note** at the end (Lesson 3.3).
+5. No private information in the AI tool: no addresses, phone numbers, or full names.
+:::
+
+| | Got it | Almost | Not yet |
+|---|---|---|---|
+| **Real problem** | The product will really help someone. | It could help, but it is not finished. | It is not a real problem. |
+| **Prompts** | The log shows good prompts and follow-ups. | The log has some prompts. | No log. |
+| **Checking** | I checked the facts, math, or translation, and fixed mistakes. | I checked some things. | I did not check. |
+| **Honesty** | My AI note says what the AI did and what I did. | My AI note is short. | No AI note. |
+
+This chart is the {{< glink rubric >}}. It shows how your project is graded.
+
+{{< tryit >}}
+
+### 3.8.4 - Plan It and Start It
+
+Work with a partner, or in a group of 3. (In a class of 4, make two pairs.) Choose a problem you both care about.
+
+:::{.steps}
+1. Fill in the plan on your sheet.
+2. Show your plan to Mr. Ross. He signs it.
+3. Write your first prompt. Use task, context, and format (Lesson 3.1).
+4. Write the prompt in your prompt log. Write what you did with the answer.
+5. Keep going: follow-up questions, checks, and changes. Log each one.
+:::
+
+:::{.gotcha title="Keep it private"}
+For a résumé, use a fake name and address in the AI tool, like "Student Name, 123 Main Street." Put your real information in only at the very end, on your own computer.
+:::
+
+{{< talk >}}
+
+What could go wrong if the AI makes a mistake in your project? Who could it hurt? How will you catch it?
+
+:::{.frames}
+- Our problem is ... , and our product is ...
+- If the AI makes a mistake, ... could happen.
+- We will check ... by ...
+- We will do ... ourselves, because ...
+:::
+
+{{< further >}}
+
+:::{.project title="Day 2: Build It"}
+Use the second day to finish your product.
+
+1. Read your prompt log. What is left to do?
+2. Finish the product. Keep logging every prompt.
+3. Check everything once more: facts, math, translation.
+4. Write your AI note.
+5. Bring your product, plan, and prompt log to Lesson 3.9.
+:::

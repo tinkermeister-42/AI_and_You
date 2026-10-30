@@ -1,0 +1,33 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[
+  lbl/.style={font=\small\bfseries, text=ink, anchor=west},
+  sub/.style={font=\footnotesize, text=ink!85, anchor=west, text width=5.5cm},
+]
+% The AI use ladder: each step up, the AI does more of the work.
+% Bar: blue = the student's work, orange = the AI's work.
+\foreach \k/\you/\name/\what in {
+  0/1.0/No AI/You do all of the work.,
+  1/0.85/Ideas/AI helps you think of ideas. You write.,
+  2/0.7/Feedback/You write. AI says what to fix. You decide.,
+  3/0.55/Editing/AI fixes spelling and grammar. You check.,
+  4/0.25/AI writes/AI writes a draft. You change it.} {
+  \pgfmathsetmacro{\y}{\k*1.25}
+  \pgfmathsetmacro{\x}{\k*0.9}
+  % step
+  \fill[ink!6] (\x,\y-0.5) rectangle (\x+10.6,\y+0.6);
+  \draw[ink!40, line width=0.8pt] (\x,\y-0.5) -- (\x,\y+0.6) -- (\x+10.6,\y+0.6);
+  \node[circle, fill=ink, text=white, font=\small\bfseries, inner sep=2pt, minimum size=0.55cm] at (\x+0.4,\y+0.03) {\k};
+  \node[lbl] at (\x+0.8,\y+0.3) {\name};
+  \node[sub] at (\x+0.8,\y-0.15) {\what};
+  % work bar
+  \fill[person] (\x+6.5,\y-0.2) rectangle (\x+6.5+3.7*\you,\y+0.25);
+  \fill[machine] (\x+6.5+3.7*\you,\y-0.2) rectangle (\x+10.2,\y+0.25);
+  \draw[ink!60, line width=0.6pt] (\x+6.5,\y-0.2) rectangle (\x+10.2,\y+0.25);
+}
+\fill[person] (0.2,-1.15) rectangle (0.55,-0.85); \node[font=\footnotesize, anchor=west] at (0.6,-1.0) {your work};
+\fill[machine] (2.3,-1.15) rectangle (2.65,-0.85); \node[font=\footnotesize, anchor=west] at (2.7,-1.0) {the AI's work};
+\draw[flow, draw=ink!60] (-0.5,-0.4) -- (3.3,5.6) node[pos=0.5, sloped, above, font=\footnotesize\itshape, text=ink!80] {the AI does more};
+\end{tikzpicture}
+\end{document}
