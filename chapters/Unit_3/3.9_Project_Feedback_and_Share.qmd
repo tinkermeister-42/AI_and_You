@@ -72,7 +72,7 @@ Use these starters on your notes:
 5. Choose the **2 most useful** notes. Write them on your sheet. These are the changes you will make.
 :::
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class (4 or 5):** sit in a circle. Pass your project to the right. Write a note. Keep passing until everyone has read every project. **Big class:** 3 rounds of 4 minutes. Mr. Ross says when to move.
 :::
 
@@ -111,5 +111,5 @@ Make a class poster: one box for each project. In each box: the problem, one gre
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [how feedback from people and from AI are different](/chapters/Explore/explore-unit-3.qmd#explore-3-9). For students who want to learn more on their own.
+🔭 **Explore More:** [how feedback from people and from AI are different](/chapters/Explore/explore-unit-3.qmd#explore-3-9). Read it on your own, if you want to learn more.
 :::

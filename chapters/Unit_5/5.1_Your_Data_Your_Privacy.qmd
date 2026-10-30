@@ -117,5 +117,5 @@ Show someone in your family how to turn off location for the camera on their pho
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [data brokers, face search, and what happens to your chats](/chapters/Explore/explore-unit-5.qmd#explore-5-1). For students who want to learn more on their own.
+🔭 **Explore More:** [data brokers, face search, and what happens to your chats](/chapters/Explore/explore-unit-5.qmd#explore-5-1). Read it on your own, if you want to learn more.
 :::

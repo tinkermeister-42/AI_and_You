@@ -34,6 +34,10 @@ Today you test your eyes against AI faces. Then you learn something surprising: 
 [Printable lesson sheet](/handouts/Unit_4/4.3_Real_or_Fake.pdf){target="_blank"} - the sheet you write on today.
 :::
 
+:::{.teacher title="Before class"}
+Choose 2 pictures that spread online recently for Trace It Back. Check that the sites you need are not blocked.
+:::
+
 {{< warmup >}}
 
 Work with a partner. Open [Which Face Is Real?](https://www.whichfaceisreal.com/){target="_blank"} Each round shows two faces. One is a real photo. One was made by AI. Click the one you think is **real**.
@@ -95,7 +99,7 @@ Work with a partner. Mr. Ross shows 2 pictures that went around online. For each
 4. Decide: real, fake, or real but used in a misleading way. Write your proof.
 :::
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class:** work together on both pictures, then try the Pope picture from the top of the page. **Big class:** each pair gets one picture. Pairs with the same picture compare their proof. Then each group teaches the class.
 :::
 
@@ -125,5 +129,5 @@ Explain voice clones to your family, in your home language. Help them choose a s
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [how AI learns to make faces, and the labels that show where a picture came from](/chapters/Explore/explore-unit-4.qmd#explore-4-3). For students who want to learn more on their own.
+🔭 **Explore More:** [how AI learns to make faces, and the labels that show where a picture came from](/chapters/Explore/explore-unit-4.qmd#explore-4-3). Read it on your own, if you want to learn more.
 :::

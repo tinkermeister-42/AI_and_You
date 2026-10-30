@@ -34,6 +34,10 @@ Today you get your first answer back. Then you answer again, with everything you
 [Printable lesson sheet](/handouts/Unit_6/6.6_The_Big_Question_Again.pdf){target="_blank"} - the sheet you write on today.
 :::
 
+:::{.teacher title="Before class"}
+Bring back the Big Question answers from Lesson 1.1. Make orange cards and rule cards for the chips.
+:::
+
 {{< warmup >}}
 
 Mr. Ross gives you your answer from the first day. Read it. On your sheet, copy what you circled: **Yes**, **A little**, or **No**, and your reason. Do you still agree with yourself?
@@ -76,7 +80,7 @@ Now act it out with the squeeze chain from Lesson 2.2.
 4. Is the line still a "brain"? When did it stop, or did it?
 :::
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **4 students:** make a line of 4 with Mr. Ross. Replace one student each round. **Big class:** make two lines. One line stays all neurons. Compare the squeeze times.
 :::
 
@@ -117,5 +121,5 @@ Write a letter to a student who will take this class next year. What surprised y
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [consciousness, the ship of Theseus, and brains versus AI by the numbers](/chapters/Explore/explore-unit-6.qmd#explore-6-6). For students who want to learn more on their own.
+🔭 **Explore More:** [consciousness, the ship of Theseus, and brains versus AI by the numbers](/chapters/Explore/explore-unit-6.qmd#explore-6-6). Read it on your own, if you want to learn more.
 :::

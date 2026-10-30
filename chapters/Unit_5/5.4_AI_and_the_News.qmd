@@ -34,6 +34,10 @@ In 2018, YouTube said that **more than 70%** of the time people spent watching c
 [Printable lesson sheet](/handouts/Unit_5/5.4_AI_and_the_News.pdf){target="_blank"} - the sheet you write on today.
 :::
 
+:::{.teacher title="Before class"}
+For Day 2, choose one news story or picture that spread online this month.
+:::
+
 {{< warmup >}}
 
 Think about the first video or post you saw today. Write it on your sheet (no names). Why do you think the app showed it to you?
@@ -77,7 +81,7 @@ Work with a partner. Each partner uses their own computer. This demo uses made-u
 
 This shows the idea. Real apps use neural networks and watch much more: how long you look, what you share, and what people like you click.
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class:** one student trains the feed on the projector while the class tells them what to click. Then a second student tries. **Big class:** every pair compares, then the class counts: how many pairs had feeds that were almost the same?
 :::
 
@@ -109,5 +113,5 @@ For one week, follow or search for one topic you never see in your feed: science
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [how recommendations learn, AI news websites, and fake voices in elections](/chapters/Explore/explore-unit-5.qmd#explore-5-4). For students who want to learn more on their own.
+🔭 **Explore More:** [how recommendations learn, AI news websites, and fake voices in elections](/chapters/Explore/explore-unit-5.qmd#explore-5-4). Read it on your own, if you want to learn more.
 :::

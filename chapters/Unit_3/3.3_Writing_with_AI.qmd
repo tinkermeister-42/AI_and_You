@@ -127,5 +127,5 @@ Ask the AI to write 5 sentences about a place that matters to it. Give your para
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [your writing voice, and feedback in your language](/chapters/Explore/explore-unit-3.qmd#explore-3-3). For students who want to learn more on their own.
+🔭 **Explore More:** [your writing voice, and feedback in your language](/chapters/Explore/explore-unit-3.qmd#explore-3-3). Read it on your own, if you want to learn more.
 :::

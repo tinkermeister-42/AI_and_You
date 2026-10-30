@@ -164,5 +164,5 @@ Everyone writes 2 sentences about our school. Put them all in the word-counting 
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [why a real chatbot uses weights, not a table](/chapters/Explore/explore-unit-2.qmd#explore-2-9). For students who want to learn more on their own.
+🔭 **Explore More:** [why a real chatbot uses weights, not a table](/chapters/Explore/explore-unit-2.qmd#explore-2-9). Read it on your own, if you want to learn more.
 :::

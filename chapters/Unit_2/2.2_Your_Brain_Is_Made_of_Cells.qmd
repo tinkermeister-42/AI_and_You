@@ -100,7 +100,7 @@ How fast does a signal move through the whole class?
 5. Do it 3 times. Do you get faster?
 :::
 
-:::{.gotcha title="Small class?"}
+:::{.teacher title="Small class?"}
 With only 4 or 5 people, the squeeze goes around too fast to time. Go around the circle **5 times** without stopping. Then divide the time by 5.
 :::
 
@@ -145,5 +145,5 @@ Build a neuron from string, paper, or pipe cleaners. Label the dendrites, cell b
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [brain numbers: how many, how fast, how much power](/chapters/Explore/explore-unit-2.qmd#explore-2-2). For students who want to learn more on their own.
+🔭 **Explore More:** [brain numbers: how many, how fast, how much power](/chapters/Explore/explore-unit-2.qmd#explore-2-2). Read it on your own, if you want to learn more.
 :::

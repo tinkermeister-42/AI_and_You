@@ -34,6 +34,10 @@ Today you find out where unfair AI comes from. Then you act out the story of a h
 [Printable lesson sheet](/handouts/Unit_4/4.2_Where_Bias_Comes_From.pdf){target="_blank"} - the sheet you write on today.
 :::
 
+:::{.teacher title="Before class"}
+For Clever Hans, Round 2: seal a math problem in an envelope. Nobody in the room should know the answer.
+:::
+
 {{< warmup >}}
 
 In Turkish, there is one word for "he" and "she": **o**. So "O bir doktor" can mean "He is a doctor" **or** "She is a doctor."
@@ -94,7 +98,7 @@ The AI learned to look at the **snow**, not the animal. Many people who tested i
 4. **Round 3:** Hans turns around and faces the wall. The crowd knows the answer again. What happens?
 :::
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **4 students:** Hans, a questioner, and a crowd of 2. **Big class:** make two Hans teams. Each team tries to fool the other team's crowd in Round 1.
 :::
 
@@ -139,5 +143,5 @@ Think of an app you use: a face filter, a voice assistant, a translator. Who mig
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [the face study that changed big companies, and more AI shortcuts](/chapters/Explore/explore-unit-4.qmd#explore-4-2). For students who want to learn more on their own.
+🔭 **Explore More:** [the face study that changed big companies, and more AI shortcuts](/chapters/Explore/explore-unit-4.qmd#explore-4-2). Read it on your own, if you want to learn more.
 :::

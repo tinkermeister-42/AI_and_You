@@ -150,7 +150,7 @@ The teacher wants kids' hands on real things in every lesson.
   every group activity a size range ("groups of 3 or 4"), say how roles
   double up when the class is tiny (4 students may be one group), and how a
   big class splits (several groups, or two teams that race). A physical
-  activity that needs N people must work with 4 and say what extra people do
+  activity that needs N people must work with 4 and say what extra people do. Class-size notes go in a `.teacher` block (see Reader first)
 - **Famous experiments, acted out.** The teacher wants classic experiments
   and thought experiments folded in where they fit, in a `.experiment`
   callout, with the class physically acting them out when possible: the
@@ -179,6 +179,19 @@ The teacher wants kids' hands on real things in every lesson.
   page's activities. Handouts pull shared figures with `\fig{Unit_X/<name>}`
 - **Keys are unlisted.** `<name>_KEY.pdf` is served beside the student PDF
   but nothing links to it. The URL is predictable on purpose
+- **Reader first: teacher material stays off student pages.** Anything for
+  the teacher (class-size logistics, prep, answers) goes in a
+  `:::{.teacher title="..."}` block in the lesson source, with no nested
+  divs inside. `scripts/strip-teacher.lua` removes it from student pages and
+  the site search. `scripts/make-teacher-guide.py` (post-render) builds the
+  unlisted guide at `/teacher/`: every lesson's teacher notes, sheets and
+  keys, the dated boxes, and the outside websites. Nothing links to it
+- **Outside websites:** `scripts/list-external-urls.py` lists every one. When
+  links change, republish the firewall checklist artifact
+  (https://claude.ai/artifact/6zYejQfNhQbDTe8d6tQovi) from that list
+- **Home-language parts of a sheet carry `\ELL`**, plus what a student whose
+  first language is English does instead (skip it, or use a partner's
+  language)
 - Worksheet directions say "Work with a partner", never "work by yourself"
 - Handout tables use ragged-right columns: no hyphenated words for second
   language readers
@@ -273,6 +286,10 @@ is a sentence that costs them the idea.
   different sentence. Split it in two, use a comma, or put a short aside in
   parentheses. Labels in a list take a colon. Section headings keep the
   spaced hyphen they already use
+- **Talk to the reader.** The book is written to the student, as "you".
+  Never "for students who ..." or "students should ..." when the reader is
+  meant ("Read it on your own, if you want to learn more"). Third person is
+  fine for roles in a group activity ("one student is the robot")
 - **Lead with the concrete.** A picture, a game, or a story first; the idea
   after. The cat rule in 1.1.2 is the pattern to copy
 - **Say what is true.** No "AI thinks" or "AI knows" as plain fact. Whether

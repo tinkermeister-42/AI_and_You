@@ -91,7 +91,7 @@ E. A sentence **you** would really need to say. (At the doctor? At a store?)
 Google Translate and your class AI tool send your words to a company's computers. Do not type names or private information, like a letter from a doctor or your address.
 :::
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class:** each student tests their own language. Then everyone looks at the class chart together. **Big class:** students who share a language make a team. Each team makes a poster: the AI's best and worst translation.
 :::
 
@@ -125,5 +125,5 @@ Google Translate can listen and speak. Say a sentence in your language. Does it 
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [how translation led to chatbots, and more hard cases](/chapters/Explore/explore-unit-3.qmd#explore-3-5). For students who want to learn more on their own.
+🔭 **Explore More:** [how translation led to chatbots, and more hard cases](/chapters/Explore/explore-unit-3.qmd#explore-3-5). Read it on your own, if you want to learn more.
 :::

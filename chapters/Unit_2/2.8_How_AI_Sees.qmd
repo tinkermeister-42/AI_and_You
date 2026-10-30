@@ -136,5 +136,5 @@ Choose the **blur** filter. Click a square and read the math. Why does blur add 
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [layers: from edges to a cat](/chapters/Explore/explore-unit-2.qmd#explore-2-8). For students who want to learn more on their own.
+🔭 **Explore More:** [layers: from edges to a cat](/chapters/Explore/explore-unit-2.qmd#explore-2-8). Read it on your own, if you want to learn more.
 :::

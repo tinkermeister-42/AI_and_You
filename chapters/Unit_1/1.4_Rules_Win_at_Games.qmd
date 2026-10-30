@@ -138,5 +138,5 @@ Write one promise about AI for 10 years from now. Use the form: *"By 2036, AI wi
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [how AI got its name, rules for business, and a rock, paper, scissors challenge](/chapters/Explore/explore-unit-1.qmd#explore-1-4). For students who want to learn more on their own.
+🔭 **Explore More:** [how AI got its name, rules for business, and a rock, paper, scissors challenge](/chapters/Explore/explore-unit-1.qmd#explore-1-4). Read it on your own, if you want to learn more.
 :::

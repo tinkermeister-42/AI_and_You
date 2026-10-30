@@ -158,5 +158,5 @@ Why do GPUs help? Try it with your class.
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [Fei-Fei Li's story, AlphaGo's famous move, and the film](/chapters/Explore/explore-unit-1.qmd#explore-1-5). For students who want to learn more on their own.
+🔭 **Explore More:** [Fei-Fei Li's story, AlphaGo's famous move, and the film](/chapters/Explore/explore-unit-1.qmd#explore-1-5). Read it on your own, if you want to learn more.
 :::

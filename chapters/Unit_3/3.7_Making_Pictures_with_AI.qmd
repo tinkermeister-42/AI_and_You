@@ -31,6 +31,10 @@ How? The AI starts with **static**, like an old TV with no signal. Then it remov
 [Printable lesson sheet](/handouts/Unit_3/3.7_Making_Pictures_with_AI.pdf){target="_blank"} - the sheet you write on today.
 :::
 
+:::{.teacher title="Before class"}
+Picture tools share one usage limit with graphs. Plan turns for pairs, and be ready to make the pictures on the projector.
+:::
+
 {{< warmup >}}
 
 Look at the first three squares on your sheet. Cover the last one. At which step can you guess the picture? Write your guess.
@@ -136,5 +140,5 @@ Write prompts for "a doctor," "a nurse," "a scientist," and "a basketball player
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [what image generators get wrong, and the counting test](/chapters/Explore/explore-unit-3.qmd#explore-3-7). For students who want to learn more on their own.
+🔭 **Explore More:** [what image generators get wrong, and the counting test](/chapters/Explore/explore-unit-3.qmd#explore-3-7). Read it on your own, if you want to learn more.
 :::

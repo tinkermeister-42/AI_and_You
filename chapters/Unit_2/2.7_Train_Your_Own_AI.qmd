@@ -72,7 +72,7 @@ Work in a group of **2 or 3**, with one computer that has a camera.
 5. In **Preview**, make each sign. Watch the bars. Is your AI right?
 :::
 
-:::{.gotcha title="Class size and cameras"}
+:::{.teacher title="Class size and cameras"}
 **Small class:** each pair trains its own model, then you swap computers and test each other's. **Large class, or no cameras?** Mr. Ross trains one model on the projector. Everyone comes up and adds pictures of **their** hands. A class model has more kinds of hands in it. Is it better?
 :::
 
@@ -122,5 +122,5 @@ Train an image model with three classes: **paper**, **plastic**, and **metal**. 
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [why Teachable Machine learns so fast](/chapters/Explore/explore-unit-2.qmd#explore-2-7). For students who want to learn more on their own.
+🔭 **Explore More:** [why Teachable Machine learns so fast](/chapters/Explore/explore-unit-2.qmd#explore-2-7). Read it on your own, if you want to learn more.
 :::

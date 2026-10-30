@@ -39,6 +39,10 @@ Today, the class is a neuron that learns. You will start it with the **wrong ide
 [Pokémon cards](/handouts/Unit_2/2.5_Pokemon_Cards.pdf){target="_blank"}: print one set for each team.
 :::
 
+:::{.teacher title="Before class"}
+Print and cut one set of Pokémon cards for each team.
+:::
+
 {{< warmup >}}
 
 **Pokémon** are creatures from a video game. Every Pokémon has a **type**.
@@ -124,7 +128,7 @@ Each person has a job.
 | ✅ | **Checker** | Flip the card. Say "right" or "wrong." If wrong, say ADD or SUBTRACT. |
 | 📊 | **Scorekeeper** | Count the mistakes in each pass. Write them on the board. |
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **4 students:** the dealer is also the checker, and one weight keeper holds all 3 numbers. **10 or more:** make **two teams** with two sets of cards. Both teams start with the same weights. Which team finishes first? Do they end with the same weights?
 :::
 
@@ -198,5 +202,5 @@ Pick two groups that two numbers can tell apart. For example: basketball players
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [why the fix rule works, and shuffling the cards](/chapters/Explore/explore-unit-2.qmd#explore-2-5). For students who want to learn more on their own.
+🔭 **Explore More:** [why the fix rule works, and shuffling the cards](/chapters/Explore/explore-unit-2.qmd#explore-2-5). Read it on your own, if you want to learn more.
 :::

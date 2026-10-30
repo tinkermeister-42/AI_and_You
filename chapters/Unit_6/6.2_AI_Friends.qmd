@@ -74,7 +74,7 @@ Work with a partner. Your sheet has 12 cards.
 | 5 | Agrees with almost everything | 11 | Helps you meet other people |
 | 6 | Wants you to stay longer | 12 | Can come to your house when you are sick |
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class:** do the sort together on the board. **Big class:** pairs sort first. Then two pairs join and compare. Talk about every card you put in different circles.
 :::
 
@@ -113,5 +113,5 @@ If you could make the rules for AI companion apps, what would they be? Write 5 r
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [what research says about AI companions and loneliness](/chapters/Explore/explore-unit-6.qmd#explore-6-2). For students who want to learn more on their own.
+🔭 **Explore More:** [what research says about AI companions and loneliness](/chapters/Explore/explore-unit-6.qmd#explore-6-2). Read it on your own, if you want to learn more.
 :::

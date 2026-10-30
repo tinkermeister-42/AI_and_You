@@ -93,7 +93,7 @@ Work with a partner. These practice messages were made up for this book.
 
 {{< include /assets/Unit_5/scam_sorter.html >}}
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class:** go through the messages together on the projector. Everyone votes before each answer. **Big class:** two teams. Each team gets a point for each right answer **and** a point for naming a warning sign the other team missed.
 :::
 
@@ -126,5 +126,5 @@ With your family, look at the text messages and emails you got this week. Did an
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [the biggest scams, voice-clone calls, and how to report a scam](/chapters/Explore/explore-unit-5.qmd#explore-5-2). For students who want to learn more on their own.
+🔭 **Explore More:** [the biggest scams, voice-clone calls, and how to report a scam](/chapters/Explore/explore-unit-5.qmd#explore-5-2). Read it on your own, if you want to learn more.
 :::

@@ -91,7 +91,7 @@ Work with a partner, or in a group of 3.
 5. Do it 2 more times, with different moves. Which move helped the most?
 :::
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class (4 or 5):** work as one group. Each person chooses the next follow-up move. **Big class:** two teams get the same topic and 3 follow-ups each. Read both final answers aloud. Which team got the more useful answer?
 :::
 
@@ -125,5 +125,5 @@ Type: **"Quiz me on the water cycle. Ask one question at a time. Tell me if I am
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [why "Are you sure?" can change a right answer, and chatbot memory](/chapters/Explore/explore-unit-3.qmd#explore-3-2). For students who want to learn more on their own.
+🔭 **Explore More:** [why "Are you sure?" can change a right answer, and chatbot memory](/chapters/Explore/explore-unit-3.qmd#explore-3-2). Read it on your own, if you want to learn more.
 :::

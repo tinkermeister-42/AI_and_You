@@ -33,6 +33,10 @@ Ask a chatbot about a famous city, and it is usually right. Ask it about **our s
 [Printable lesson sheet](/handouts/Unit_4/4.1_AI_Makes_Things_Up.pdf){target="_blank"} - the sheet you write on today.
 :::
 
+:::{.teacher title="Before class"}
+Have the real answers ready for the questions about our school and Columbia: the year the school opened, the principal, the mascot, about how many students, and the mayor.
+:::
+
 {{< warmup >}}
 
 Two of these stories are true. One is made up. Which one? Vote with your hand: 1, 2, or 3.
@@ -84,7 +88,7 @@ Work with a partner, or in a group of 3.
 3. Count your ❌. Which kind of question from 4.1.2 did it get wrong?
 :::
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class:** work as one group and test all the questions together. **Big class:** make it a contest. Each team gets 1 point for every made-up fact it catches **and** proves wrong with a real source.
 :::
 
@@ -120,5 +124,5 @@ Ask for "5 good books about soccer for teenagers, with authors." Search for each
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [why chatbots agree with you, and how sure they really are](/chapters/Explore/explore-unit-4.qmd#explore-4-1). For students who want to learn more on their own.
+🔭 **Explore More:** [why chatbots agree with you, and how sure they really are](/chapters/Explore/explore-unit-4.qmd#explore-4-1). Read it on your own, if you want to learn more.
 :::

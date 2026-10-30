@@ -34,6 +34,10 @@ Two experts. Same science. Very different futures. Today you think about the fut
 [Printable lesson sheet](/handouts/Unit_6/6.5_Possible_Futures.pdf){target="_blank"} - the sheet you write on today.
 :::
 
+:::{.teacher title="Before class"}
+Bring paper strips and tape for the paper chains, and write the robot's goal card.
+:::
+
 {{< warmup >}}
 
 When you think about AI in 20 years, do you feel **hopeful**, **worried**, or **both**? Stand on one side of the room, the other side, or the middle. Two people from each place say why.
@@ -72,7 +76,7 @@ Now act it out. Use paper chains instead of paper clips.
 5. Keep adding rules for 3 rounds. Can the class write a goal with no loopholes?
 :::
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **4 students:** one robot, one loophole finder, and two rule writers. **Big class:** two teams. Each team writes rules for the other team's robot. The team whose rules have the fewest loopholes wins.
 :::
 
@@ -115,5 +119,5 @@ Ask an older person in your family: "When you were my age, what did you think th
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [the experts' debate, more alignment stories, and what AI might do for medicine](/chapters/Explore/explore-unit-6.qmd#explore-6-5). For students who want to learn more on their own.
+🔭 **Explore More:** [the experts' debate, more alignment stories, and what AI might do for medicine](/chapters/Explore/explore-unit-6.qmd#explore-6-5). Read it on your own, if you want to learn more.
 :::

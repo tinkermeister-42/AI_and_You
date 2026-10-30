@@ -35,6 +35,10 @@ Today you sort things into AI and not AI. You try to teach a computer what a cat
 [Printable lesson sheet](/handouts/Unit_1/1.1_What_Is_AI.pdf){target="_blank"} - the sheet you write on today.
 :::
 
+:::{.teacher title="Before class"}
+Keep every student's Big Question answer. You hand them back in Lesson 6.6.
+:::
+
 {{< warmup >}}
 
 Look at these 10 things. Which ones use AI?
@@ -178,5 +182,5 @@ For one day, write down every time you see or use AI. Look at your phone, your a
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [how AI makes predictions, and more drawing tools](/chapters/Explore/explore-unit-1.qmd#explore-1-1). For students who want to learn more on their own.
+🔭 **Explore More:** [how AI makes predictions, and more drawing tools](/chapters/Explore/explore-unit-1.qmd#explore-1-1). Read it on your own, if you want to learn more.
 :::

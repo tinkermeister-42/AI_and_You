@@ -34,6 +34,10 @@ Was he right? Today you test your own eyes and ears: can you tell what a person 
 [Printable lesson sheet](/handouts/Unit_6/6.1_Can_AI_Be_Creative.pdf){target="_blank"} - the sheet you write on today.
 :::
 
+:::{.teacher title="Before class"}
+For Day 2, make AI pictures of the same things students draw, or plan turns if pairs make them.
+:::
+
 {{< warmup >}}
 
 Is each one **creative**? Vote with your hand: yes or no.
@@ -116,7 +120,7 @@ Some of these poems were written by people. Some were written by an AI. Work wit
 Poem D is about a grandmother who misses her country. The AI has no grandmother and no country. Does that change how you feel about the poem?
 :::
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class:** read the poems aloud together, one at a time, and vote after each. **Big class:** two teams. Each team must agree on one vote per poem, and explain its best clue.
 :::
 
@@ -157,5 +161,5 @@ Write a short poem about a place you love. Then ask your class AI tool for one i
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [the art contest story, the court cases, and AI music](/chapters/Explore/explore-unit-6.qmd#explore-6-1). For students who want to learn more on their own.
+🔭 **Explore More:** [the art contest story, the court cases, and AI music](/chapters/Explore/explore-unit-6.qmd#explore-6-1). Read it on your own, if you want to learn more.
 :::

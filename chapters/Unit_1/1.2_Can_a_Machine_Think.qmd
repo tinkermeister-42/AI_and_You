@@ -165,5 +165,5 @@ Each group writes its best question for catching the AI. The class tests every q
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [who Alan Turing was, and the full 2025 study](/chapters/Explore/explore-unit-1.qmd#explore-1-2). For students who want to learn more on their own.
+🔭 **Explore More:** [who Alan Turing was, and the full 2025 study](/chapters/Explore/explore-unit-1.qmd#explore-1-2). Read it on your own, if you want to learn more.
 :::

@@ -96,7 +96,7 @@ Work with a partner.
 
 This is a **toy**. It only counts common words. The yellow words are the ones it did not expect. Real detectors use a language model to measure how predictable each word is. They are better than this toy, but they make the same kind of mistake.
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class:** everyone tests their own paragraph, then the class looks at all the results together. **Big class:** make a big chart on the board with two columns: "Human writing called AI" and "Human writing called human." Every pair adds tally marks.
 :::
 
@@ -122,5 +122,5 @@ Write a short letter to our principal about AI detectors. Use evidence from this
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [the detector its own makers shut down, and how real detectors measure words](/chapters/Explore/explore-unit-4.qmd#explore-4-4). For students who want to learn more on their own.
+🔭 **Explore More:** [the detector its own makers shut down, and how real detectors measure words](/chapters/Explore/explore-unit-4.qmd#explore-4-4). Read it on your own, if you want to learn more.
 :::

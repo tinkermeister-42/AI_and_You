@@ -1,6 +1,6 @@
 # Explore More: Brains and Neural Networks {.unnumbered}
 
-This page goes with Unit 2. It is for students who want to learn more on their own. Nothing here is homework. Each section goes with one lesson.
+This page goes with Unit 2. Read it on your own, if you want to learn more. Nothing here is homework. Each section goes with one lesson.
 
 ## From Lesson 2.1: Simple Rules, Complex Behavior {#explore-2-1}
 

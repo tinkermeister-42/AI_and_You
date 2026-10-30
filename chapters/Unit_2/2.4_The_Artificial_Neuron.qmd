@@ -93,7 +93,7 @@ An artificial neuron is only **multiply, add, compare**. That is all. A neural n
 5. Do 5 rounds. Then switch jobs.
 :::
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **4 students:** one neuron and three inputs. **More students:** make two or three neurons. Then connect them: the neurons' answers become the inputs for one more neuron. That is a **network**!
 :::
 
@@ -133,5 +133,5 @@ Make the picture bigger in your head: 5 by 5 squares. On grid paper, choose weig
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [the first neuron machine, and the problem one neuron cannot solve](/chapters/Explore/explore-unit-2.qmd#explore-2-4). For students who want to learn more on their own.
+🔭 **Explore More:** [the first neuron machine, and the problem one neuron cannot solve](/chapters/Explore/explore-unit-2.qmd#explore-2-4). Read it on your own, if you want to learn more.
 :::

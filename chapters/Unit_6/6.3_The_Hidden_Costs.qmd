@@ -78,7 +78,7 @@ Work with a partner. First, {{< glink estimate >}} with your sheet. Then check w
 
 These are estimates for text answers only, from numbers the companies shared in 2025. Real numbers change with the model, the question, and the data center.
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class:** do the math together on the board, one step at a time. **Big class:** each pair guesses a different number of questions per day (5, 10, 20, 50). Compare the results: how much does the guess change the answer?
 :::
 
@@ -104,5 +104,5 @@ Make a class list: when is AI worth the energy, and when is it not? (Asking a ch
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [training costs, the brain's 20 watts, and the data labelers' story](/chapters/Explore/explore-unit-6.qmd#explore-6-3). For students who want to learn more on their own.
+🔭 **Explore More:** [training costs, the brain's 20 watts, and the data labelers' story](/chapters/Explore/explore-unit-6.qmd#explore-6-3). Read it on your own, if you want to learn more.
 :::

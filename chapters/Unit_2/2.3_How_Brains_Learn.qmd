@@ -128,5 +128,5 @@ Find three times that a sound or a picture makes you or someone in your family d
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [the taxi drivers whose brains grew](/chapters/Explore/explore-unit-2.qmd#explore-2-3). For students who want to learn more on their own.
+🔭 **Explore More:** [the taxi drivers whose brains grew](/chapters/Explore/explore-unit-2.qmd#explore-2-3). Read it on your own, if you want to learn more.
 :::

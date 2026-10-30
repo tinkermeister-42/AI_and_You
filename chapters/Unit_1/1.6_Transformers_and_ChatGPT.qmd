@@ -87,7 +87,7 @@ A chatbot writes one word at a time. It picks a word that is likely to come next
 5. Now give the same start to your class AI tool: *"Finish this sentence: After school, my friends and I"*. Compare its sentence with the class sentence.
 :::
 
-:::{.gotcha title="Small class?"}
+:::{.teacher title="Small class?"}
 With only 4 or 5 people, many words get 1 vote. Break a tie by rolling a die, or ask everyone to write **two** words each.
 :::
 
@@ -151,5 +151,5 @@ With a partner, make a poster about one person from Unit 1: Alan Turing, Joseph 
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [the 2024 Nobel Prizes for AI, and who won them](/chapters/Explore/explore-unit-1.qmd#explore-1-6). For students who want to learn more on their own.
+🔭 **Explore More:** [the 2024 Nobel Prizes for AI, and who won them](/chapters/Explore/explore-unit-1.qmd#explore-1-6). Read it on your own, if you want to learn more.
 :::

@@ -1,6 +1,6 @@
 # Explore More: Where AI Came From {.unnumbered}
 
-This page goes with Unit 1. It is for students who want to learn more on their own. Nothing here is homework. Each section goes with one lesson.
+This page goes with Unit 1. Read it on your own, if you want to learn more. Nothing here is homework. Each section goes with one lesson.
 
 ## From Lesson 1.1: What Is AI? {#explore-1-1}
 

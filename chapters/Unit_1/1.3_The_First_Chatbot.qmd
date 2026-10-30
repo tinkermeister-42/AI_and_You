@@ -38,6 +38,10 @@ Today, you play ELIZA yourself and see how it works. Then you act out a famous p
 [Klingon Room rule book and note cards](/handouts/Unit_1/1.3_Klingon_Room_Rule_Book.pdf){target="_blank"} - print one set for each group.
 :::
 
+:::{.teacher title="Before class"}
+Print the Klingon Room rule book: one copy for each group.
+:::
+
 {{< warmup >}}
 
 Work with a partner (or a group of 3, taking turns). One of you is **ELIZA**. ELIZA can only answer with the rule card. ELIZA cannot think of anything new!
@@ -165,5 +169,5 @@ Compare the two answers. Which one sounds like it understands? Does either one r
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [the man who made ELIZA, and why he worried](/chapters/Explore/explore-unit-1.qmd#explore-1-3). For students who want to learn more on their own.
+🔭 **Explore More:** [the man who made ELIZA, and why he worried](/chapters/Explore/explore-unit-1.qmd#explore-1-3). Read it on your own, if you want to learn more.
 :::

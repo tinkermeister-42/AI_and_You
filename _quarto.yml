@@ -2,6 +2,7 @@ project:
   type: book
   post-render:
     - bash ./scripts/build-glossary.sh
+    - python3 ./scripts/make-teacher-guide.py
 
 resources:
   - glossary.json
@@ -14,6 +15,9 @@ resources:
 extensions:
   - glossary
   - headings
+
+filters:
+  - scripts/strip-teacher.lua
 
 format:
   html:

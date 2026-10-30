@@ -35,6 +35,10 @@ Mr. Ross built AI for his job for many years. Today, he builds one in front of y
 [Printable lesson sheet](/handouts/Unit_2/2.6_Watch_Mr_Ross_Build_an_AI.pdf){target="_blank"} - the sheet you write on today.
 :::
 
+:::{.teacher title="Before class"}
+Open the page on the projector and run the 2-number build once before class. Each run takes a few seconds on a Chromebook.
+:::
+
 {{< warmup >}}
 
 The class neuron needed **2 passes** through **10 cards**. Each card took about **1 minute**.
@@ -125,5 +129,5 @@ Think of something at school that an AI could predict. What data would you need?
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [how a network draws a curved border, and how data scientists split data](/chapters/Explore/explore-unit-2.qmd#explore-2-6). For students who want to learn more on their own.
+🔭 **Explore More:** [how a network draws a curved border, and how data scientists split data](/chapters/Explore/explore-unit-2.qmd#explore-2-6). Read it on your own, if you want to learn more.
 :::

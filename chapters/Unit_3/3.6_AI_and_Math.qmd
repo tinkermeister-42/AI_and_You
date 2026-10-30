@@ -100,7 +100,7 @@ Work with a partner.
 That is a good result too! Write it down. Your class AI tool may use a calculator behind the scenes. Try asking: "Did you use a calculator for that?" Then check its answer to **that** question.
 :::
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class:** everyone tests the chatbot, then the class makes one chart together. **Big class:** each pair tests only 2 of the 4 problems, but asks each one 3 times in new chats. Does the AI give the same answer every time?
 :::
 
@@ -138,5 +138,5 @@ Ask: "A farmer has 15 cows. All but 8 run away. How many are left?" Is the AI ri
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [why numbers are hard for chatbots, and math in your language](/chapters/Explore/explore-unit-3.qmd#explore-3-6). For students who want to learn more on their own.
+🔭 **Explore More:** [why numbers are hard for chatbots, and math in your language](/chapters/Explore/explore-unit-3.qmd#explore-3-6). Read it on your own, if you want to learn more.
 :::

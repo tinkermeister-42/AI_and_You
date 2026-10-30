@@ -1,6 +1,6 @@
 # Explore More: When AI Gets It Wrong {.unnumbered}
 
-This page goes with Unit 4. It is for students who want to learn more on their own. Nothing here is homework. Each section goes with one lesson.
+This page goes with Unit 4. Read it on your own, if you want to learn more. Nothing here is homework. Each section goes with one lesson.
 
 ## From Lesson 4.1: AI Makes Things Up {#explore-4-1}
 

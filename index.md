@@ -62,7 +62,7 @@ Every lesson is 40 minutes, and every lesson includes a hands-on activity.
 | 💬 | **Talk About It** | Talk with a partner about a hard question. |
 | 📺 | **Watch** | A short video. Turn on captions in your language. |
 | 🚀 | **Go Further** | More to do in class on a second day. |
-| 🔭 | **Explore More** | Extra pages for students who want to learn more on their own. |
+| 🔭 | **Explore More** | Extra pages to read on your own, if you want to learn more. |
 
 Each lesson has a **printable sheet** to write on in class.
 

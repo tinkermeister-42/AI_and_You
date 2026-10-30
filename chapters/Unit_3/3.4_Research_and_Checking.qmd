@@ -88,7 +88,7 @@ Our school is named after **Frederick Douglass**. Let's check what a chatbot say
 3. Choose 3 facts. Check each one with lateral reading. Use the "Usually trusted" sources. Mark ✅, ❌, or ❓.
 :::
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class (4 or 5):** work as one group. Each person checks a different fact. **Big class:** make it a race between teams. A team gets 1 point for each fact checked in 2 sources. A team **loses** 2 points for a check that is wrong. Speed is good. Being right is better.
 :::
 
@@ -127,5 +127,5 @@ Find a surprising claim that many people are sharing online. Use lateral reading
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [chatbots that search the web, and harder topics to check](/chapters/Explore/explore-unit-3.qmd#explore-3-4). For students who want to learn more on their own.
+🔭 **Explore More:** [chatbots that search the web, and harder topics to check](/chapters/Explore/explore-unit-3.qmd#explore-3-4). Read it on your own, if you want to learn more.
 :::

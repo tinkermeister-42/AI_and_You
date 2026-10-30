@@ -34,6 +34,10 @@ Today you act out one of the most famous thought experiments in the world, and t
 [Printable lesson sheet](/handouts/Unit_6/6.4_Who_Makes_the_Rules.pdf){target="_blank"} - the sheet you write on today.
 :::
 
+:::{.teacher title="Before class"}
+Bring tape to make two tracks on the floor, and paper people for a small class.
+:::
+
 {{< warmup >}}
 
 Name 3 rules at our school. Who made each one: the teacher, the principal, the district, or the state? Did students get a say?
@@ -67,7 +71,7 @@ Most people say they would pull the lever: 1 is fewer than 5. But change the sto
 
 The rounds on your sheet change one thing at a time. You push a person. An AI car must choose between its passenger and people on the street. Then young and old. Then people crossing on a red light.
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **4 students:** one at the lever, and paper people on the tracks. Everyone votes. **Big class:** take turns at the lever. Students on the tracks vote too.
 :::
 
@@ -108,5 +112,5 @@ Work in groups of 3 or 4 (in a class of 4, one group).
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [more trolley problems, the Moral Machine results, and how AI laws are made](/chapters/Explore/explore-unit-6.qmd#explore-6-4). For students who want to learn more on their own.
+🔭 **Explore More:** [more trolley problems, the Moral Machine results, and how AI laws are made](/chapters/Explore/explore-unit-6.qmd#explore-6-4). Read it on your own, if you want to learn more.
 :::

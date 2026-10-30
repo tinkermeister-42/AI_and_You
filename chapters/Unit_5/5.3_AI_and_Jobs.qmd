@@ -85,7 +85,7 @@ Work with a partner. Choose one dream job: yours or your partner's.
 Use the job cards on your sheet: nurse, electrician, store manager, or interpreter. Each card already lists 8 tasks.
 :::
 
-:::{.gotcha title="Class size"}
+:::{.teacher title="Class size"}
 **Small class:** everyone sorts one job together first (the nurse), then pairs choose their own. **Big class:** pairs with the same kind of job (health, building, business, computers) join into a group and compare their sorts.
 :::
 
@@ -118,5 +118,5 @@ Many jobs need people who speak two languages: interpreters, nurses, teachers, p
 :::
 
 :::{.explore-link}
-🔭 **Explore More:** [the full ATM story, past machines that changed work, and the jobs studies](/chapters/Explore/explore-unit-5.qmd#explore-5-3). For students who want to learn more on their own.
+🔭 **Explore More:** [the full ATM story, past machines that changed work, and the jobs studies](/chapters/Explore/explore-unit-5.qmd#explore-5-3). Read it on your own, if you want to learn more.
 :::
