@@ -101,11 +101,12 @@ So scientists tried a different idea:
 
 This idea is called {{< glink "machine learning" >}}. The examples are called {{< glink data >}}.
 
-![](/images/Unit_1/1.1_rules_vs_examples.svg){width="760px" fig-align="center" fig-alt="Two diagrams. Normal program: rules written by a person and a picture go into a computer, which gives an answer. Machine learning: many examples go into a computer, which finds the pattern and makes its own rules. Then a new picture and its own rules give a prediction."}
+![](/images/Unit_1/1.1_rules_vs_examples.svg){width="760px" fig-align="center" fig-alt="Two diagrams. Normal program: rules written by a person and a picture go into a computer, which follows the rules and gives an answer. Machine learning, step 1: many examples go into a computer, which finds the pattern and makes its own rules. Step 2: those same rules and a new picture go into a computer, which follows the rules and gives a prediction."}
 
 :::{.remember}
 - **Normal program:** a person writes the rules. The computer follows them.
 - **Machine learning:** a person gives examples. The computer makes its own rules.
+- After it learns, it works like a normal program. The difference is who made the rules.
 :::
 
 {{< tryit >}}

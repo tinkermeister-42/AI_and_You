@@ -2,35 +2,46 @@
 \input{../preamble}
 \begin{document}
 \begin{tikzpicture}
-% Top: a person writes the rules.  Bottom: the computer makes its own rules
-% from examples, then uses them on a new picture.
+% Top: a person writes the rules.  Bottom: step 1, the computer learns its own
+% rules from examples; step 2, it uses those rules on a new picture, exactly
+% like the normal program.  A new picture never goes into the learning step.
 
 % ---------- Normal program ----------
-\node[anchor=west, font=\Large\bfseries, text=ink] at (-0.4,5.75) {Normal program};
-\node[personbox, minimum width=3.4cm] (r1) at (1.6,4.75) {Rules\\{\footnotesize written by a person}};
-\node[plainbox, minimum width=3.4cm] (i1) at (1.6,3.35) {A picture};
-\node[machinebox, minimum width=3.2cm] (c1) at (6.6,4.05) {Computer\\{\footnotesize follows the rules}};
-\node[resultbox, minimum width=3.0cm] (a1) at (11.2,4.05) {Answer\\{\footnotesize ``cat''}};
+\node[anchor=west, font=\Large\bfseries, text=ink] at (-0.4,7.55) {Normal program};
+\node[personbox, minimum width=3.4cm] (r1) at (1.6,6.6) {Rules\\{\footnotesize written by a person}};
+\node[plainbox, minimum width=3.4cm] (i1) at (1.6,5.2) {A picture};
+\node[machinebox, minimum width=3.2cm] (c1) at (6.6,5.9) {Computer\\{\footnotesize follows the rules}};
+\node[resultbox, minimum width=3.0cm] (a1) at (11.2,5.9) {Answer\\{\footnotesize ``cat''}};
 \draw[flow] (r1.east) -- ($(c1.west)+(0,0.22)$);
 \draw[flow] (i1.east) -- ($(c1.west)+(0,-0.22)$);
 \draw[flow] (c1) -- (a1);
 
-\draw[dashed, ink!40, line width=0.8pt] (-0.4,2.45) -- (13.0,2.45);
+\draw[dashed, ink!40, line width=0.8pt] (-0.4,4.3) -- (13.0,4.3);
 
 % ---------- Machine learning ----------
-\node[anchor=west, font=\Large\bfseries, text=ink] at (-0.4,1.75) {Machine learning};
-% a small stack of example cards behind the box
-\draw[ink!50, fill=white, rounded corners=4pt, line width=0.8pt] (0.05,0.0) rectangle (3.45,1.3);
-\draw[ink!50, fill=white, rounded corners=4pt, line width=0.8pt] (-0.05,-0.1) rectangle (3.35,1.2);
-\node[plainbox, minimum width=3.4cm] (e2) at (1.5,0.45) {Many examples\\{\footnotesize cat, cat, not a cat, cat, \dots}};
-\node[machinebox, minimum width=3.2cm] (c2) at (6.6,0.45) {Computer\\{\footnotesize finds the pattern}};
-\node[machinebox, fill=machine!22, minimum width=3.0cm] (r2) at (11.2,0.45) {Its own rules};
+\node[anchor=west, font=\Large\bfseries, text=ink] at (-0.4,3.7) {Machine learning};
+
+% Step 1: learn
+\node[anchor=west, font=\bfseries, text=ink!75] at (-0.4,3.0) {Step 1: learn from examples};
+\draw[ink!50, fill=white, rounded corners=4pt, line width=0.8pt] (0.05,1.75) rectangle (3.45,3.05-0.4);
+\draw[ink!50, fill=white, rounded corners=4pt, line width=0.8pt] (-0.05,1.65) rectangle (3.35,2.55);
+\node[plainbox, minimum width=3.4cm] (e2) at (1.5,1.95) {Many examples\\{\footnotesize cat, cat, not a cat, \dots}};
+\node[machinebox, minimum width=3.2cm] (c2) at (6.6,1.95) {Computer\\{\footnotesize finds the pattern}};
+\node[machinebox, fill=machine!22, minimum width=3.0cm] (r2) at (11.2,1.95) {Its own rules\\{\footnotesize made by the computer}};
 \draw[flow] (e2.east) -- (c2);
 \draw[flow] (c2) -- (r2);
 
-\node[plainbox, minimum width=3.2cm] (n2) at (6.6,-1.6) {A new picture};
-\node[resultbox, minimum width=3.0cm] (p2) at (11.2,-1.6) {Prediction\\{\footnotesize ``cat''}};
-\draw[flow] (r2) -- (p2);
-\draw[flow] (n2) -- (p2);
+% Step 2: use (the same shape as the normal program)
+\node[anchor=west, font=\bfseries, text=ink!75] at (-0.4,0.85) {Step 2: use the rules};
+\node[machinebox, fill=machine!22, minimum width=3.4cm] (r3) at (1.6,-0.6) {Its own rules\\{\footnotesize from step 1}};
+\node[plainbox, minimum width=3.4cm] (n3) at (1.6,-2.0) {A new picture};
+\node[machinebox, minimum width=3.2cm] (c3) at (6.6,-1.3) {Computer\\{\footnotesize follows its rules}};
+\node[resultbox, minimum width=3.0cm] (p3) at (11.2,-1.3) {Prediction\\{\footnotesize ``cat''}};
+\draw[flow] (r3.east) -- ($(c3.west)+(0,0.22)$);
+\draw[flow] (n3.east) -- ($(c3.west)+(0,-0.22)$);
+\draw[flow] (c3) -- (p3);
+
+% the learned rules carry down from step 1 to step 2
+\draw[flow, dashed] (r2.south) -- ++(0,-1.05) -| node[pos=0.25, above, font=\footnotesize, text=ink!70] {the same rules} (r3.north);
 \end{tikzpicture}
 \end{document}
