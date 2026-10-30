@@ -204,6 +204,11 @@ The teacher wants kids' hands on real things in every lesson.
 - **Home-language parts of a sheet carry `\ELL`**, plus what a student whose
   first language is English does instead (skip it, or use a partner's
   language)
+- **Fill-in-the-blank gets a word bank.** `\wordbank{\wb{one}\wb{two}}` at the
+  top of each page with two or more blanks whose answer is a key word, name,
+  number or short phrase (alphabetical, no extra wrong words; add
+  `[You can use a word more than once.]` when needed). Blanks for a sentence,
+  a calculation, or the student's own idea stay out of the bank
 - Worksheet directions say "Work with a partner", never "work by yourself"
 - Handout tables use ragged-right columns: no hyphenated words for second
   language readers

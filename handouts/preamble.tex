@@ -64,3 +64,13 @@
 % A small tag for parts meant for English learners: students whose first
 % language is English skip them, or use a partner's language where the sheet says so.
 \newcommand{\ELL}{\colorbox{ink!12}{\footnotesize\textbf{ELL}}}
+
+% Word bank for fill-in-the-blank sentences: \wordbank{\wb{one}\wb{two}...}
+% or \wordbank[You can use a word more than once.]{...}. Alphabetical, no extra
+% wrong words. Put it at the top of each page that has two or more bank words.
+\newcommand{\wb}[1]{\mbox{#1}\hspace{1.4em plus 0.6em}}
+\newcommand{\wordbank}[2][]{%
+  \par\noindent\fcolorbox{ink!45}{ink!6}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+    \raggedright\textbf{Word bank:}\hspace{1em}#2%
+    \if\relax\detokenize{#1}\relax\else\par\vspace{0.15em}{\small\textit{#1}}\fi}}%
+  \par\vspace{0.7em}}
