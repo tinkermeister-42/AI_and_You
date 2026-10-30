@@ -52,7 +52,7 @@ When many simple parts make something bigger that nobody planned, we call it **{
 
 ### 2.1.1 - One Row, One Rule
 
-Before he was a teacher, Mr. Ross worked at **Wolfram Research**. Its founder, **Stephen Wolfram**, spent years on one question: *how can very simple rules make very complicated things?* He studied rows of squares like this one.
+Before he was a teacher, Mr. Ross worked at **Wolfram Research**. Its founder is **Stephen Wolfram**. He spent years on one question: *how can very simple rules make very complicated things?* He studied rows of squares like this one.
 
 Picture a row of squares. Each square is black or white. Every square looks at **itself** and its **two neighbors**. Then the rule card says what color it will be in the next row.
 
@@ -129,7 +129,7 @@ Use the rules tool in 2.1.4, with a partner.
 1. Press **Draw it** for Rule 30. Does it match your sheet?
 2. Try the other rules: 90, 110, 4, 184, 150. Which one makes chaos? Which one makes a neat pattern?
 3. **Make your own rule.** Click the answer squares on the rule card. What is your rule's number?
-4. Switch to **The Game of Life**. Try to build a pattern that **never changes**, one that **blinks** back and forth, and one that **moves** like the glider.
+4. Switch to **The Game of Life**. Try to build 3 patterns: one that **never changes**, one that **blinks**, and one that **moves** like the glider.
 :::
 
 :::{.project title="Rule 30 with Cups"}

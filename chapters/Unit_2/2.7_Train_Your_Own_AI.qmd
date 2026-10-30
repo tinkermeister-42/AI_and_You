@@ -107,7 +107,7 @@ Your AI worked well for **you**. Would it work for everyone? Who was **missing**
 Open Teachable Machine again with your partner. Train Rock and Paper like yesterday.
 
 1. Press **Add a class** and name it "Scissors." Record about 50 pictures.
-2. Try two new tricks: change the **background** (hold up a book or a poster), and make the sign with a **glove** or a sock on your hand.
+2. Try two new tricks. Change the **background**: hold up a book or a poster. Then make the sign with a **glove** or a sock on your hand.
 3. Now make your AI harder to fool. Add more **kinds** of examples: both hands, different people, near and far, different light. Train again.
 4. Test all the tricks again. Did your AI get better? Write what changed on your sheet.
 5. **Class model:** train one model with pictures from **everyone**. Test it on a teacher who was not in the pictures. Is it better than a one-person model?

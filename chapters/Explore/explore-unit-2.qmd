@@ -15,7 +15,7 @@ Different cards make very different pictures. All four of these start with **one
 - **Rule 4** never changes.
 - **Rule 90** makes a neat pattern of triangles inside triangles.
 - **Rule 30** makes chaos.
-- **Rule 110** makes shapes that move and crash into each other. Scientists proved that Rule 110 can do **any** calculation a computer can do, if you give it the right starting row.
+- **Rule 110** makes shapes that move and crash into each other. Scientists proved that Rule 110 can do **any** calculation a computer can do. It only needs the right starting row.
 
 Try them yourself with the rules tool in Lesson 2.1.
 
@@ -46,7 +46,7 @@ The answer is **at the same time**. Billions of neurons work together, all at on
 
 ### Try It: Measure the Speed of a Signal
 
-Use the squeeze chain from Lesson 2.2. Measure the distance from one person's hand, up the arm, to the brain, and down the other arm (about 1.5 meters). Divide that distance by the time for one person. Is your answer close to 120 meters per second? Why not? (Hint: the brain has to decide to squeeze. That takes time too.)
+Use the squeeze chain from Lesson 2.2. Measure how far a signal travels: from one hand, up the arm, to the brain, and down the other arm. That is about 1.5 meters. Divide that distance by the time for one person. Is your answer close to 120 meters per second? Why not? (Hint: the brain has to decide to squeeze. That takes time too.)
 
 ## From Lesson 2.3: How Brains Learn {#explore-2-3}
 
@@ -54,7 +54,7 @@ Use the squeeze chain from Lesson 2.2. Measure the distance from one person's ha
 
 To drive a taxi in London, a driver must learn about 25,000 streets by heart. It takes 3 or 4 years. The test is called "The Knowledge."
 
-In 2000, scientists in London used brain scans on taxi drivers. A part of the brain that helps with places and maps, called the **hippocampus**, was bigger at the back in taxi drivers than in other people. Drivers with more years on the job had bigger ones.
+In 2000, scientists in London used brain scans on taxi drivers. One part of the brain helps with places and maps. It is called the **hippocampus**. In taxi drivers, the back of it was bigger than in other people. Drivers with more years on the job had bigger ones.
 
 The brain is not fixed. Practice changes it, even its size, at any age.
 
@@ -139,7 +139,7 @@ In class, the data was split into two piles: training and test. Real data scient
 2. **Checking data** (scientists call it *validation data*): people use it to make choices, like how many hidden neurons to use.
 3. **Test data:** used only once, at the very end.
 
-Why three? If you try 10 network sizes and keep the one with the best test score, you used the test data to make a choice. The test score is not a fair check anymore. A third pile stays a fair check.
+Why three? Say you try 10 network sizes, and you keep the one with the best test score. Then you used the test data to make a choice. The test score is not a fair check anymore. A third pile stays a fair check.
 
 ### The Data Behind the AI
 
@@ -159,7 +159,7 @@ This is called {{< glink "transfer learning" >}}: starting from an AI that alrea
 
 Most AI today uses transfer learning. A company trains one very big network, for a very long time, at a high cost. Then many people teach it new jobs with a small number of examples. A chatbot is one big network that learned from a huge amount of text. Then it is taught to follow instructions and have conversations.
 
-**Think about it:** if the first big network learned something unfair, every AI built on top of it can carry the same problem. (You will study this in Unit 4.)
+**Think about it:** what if the first big network learned something unfair? Then every AI built on top of it can have the same problem. (You will study this in Unit 4.)
 
 ## From Lesson 2.8: How AI Sees {#explore-2-8}
 
@@ -197,8 +197,3 @@ So a real chatbot does not store a table. It stores what it learned as **weights
 |---|---|---|
 | **Stores what it learned as** | a table of counts | billions of **weights** in a neural network |
 | **When it sees something new** | it has no count, so it stops | it still makes a guess |
-
-### Try It: Two Words Back
-
-Make a count table that looks at the **last two words**. For example: after "I like," what comes next? After "My friend," what comes next? Use it to write sentences. Are they better or worse than one word back? How many rows does your table need?
-

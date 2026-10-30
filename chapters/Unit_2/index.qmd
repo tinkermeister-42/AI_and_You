@@ -23,7 +23,7 @@ By the end of this unit, you will be able to:
 ## Topics in This Unit
 
 [**Simple Rules, Complex Behavior**](2.1_Simple_Rules_Complex_Behavior.qmd)\
-Make a human wave and a human Rule 30. See how tiny rules make chaos, and meet the Game of Life.
+Make a human wave and a human Rule 30. See how tiny rules make chaos, and watch the Game of Life.
 
 [**Your Brain Is Made of Cells**](2.2_Your_Brain_Is_Made_of_Cells.qmd)\
 Catch a falling ruler, pass a squeeze around the room, and learn how a neuron sends a signal.
@@ -32,7 +32,7 @@ Catch a falling ruler, pass a squeeze around the room, and learn how a neuron se
 Write with your other hand, meet Pavlov's dogs, and graph your own learning with mirror drawing.
 
 [**The Artificial Neuron**](2.4_The_Artificial_Neuron.qmd)\
-Multiply, add, compare. Be a neuron, then set the weights of a neuron that tells an X from an O.
+Multiply, add, compare. The class acts out a neuron that adds up signals and decides to fire.
 
 [**Train a Human Neural Network**](2.5_Train_a_Human_Neural_Network.qmd)\
 The class becomes a neuron that starts with the wrong idea, then fixes its weights after every mistake.
@@ -41,10 +41,10 @@ The class becomes a neuron that starts with the wrong idea, then fixes its weigh
 Six steps to build an AI. Predict, then watch a real neural network learn from 1,281 Pokémon.
 
 [**Train Your Own AI**](2.7_Train_Your_Own_AI.qmd)\
-Teach Teachable Machine your own hand signs in 10 minutes. Then try to fool it.
+Teach Teachable Machine your own hand signs. Then try to fool it.
 
 [**How AI Sees**](2.8_How_AI_Sees.qmd)\
-A picture is a grid of numbers. Color by number, then find the edges with a filter, by hand and on screen.
+A picture is a grid of numbers. Color by number, then find the edges with a filter.
 
 [**How Chatbots Work**](2.9_How_Chatbots_Work.qmd)\
-Build a tiny chatbot that only counts which word comes next. Roll dice to write, then teach it your home language.
+Build a tiny chatbot that only counts which word comes next. Roll dice to make it write.
