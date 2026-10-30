@@ -233,8 +233,10 @@ Syntax: `:::{.callout-type title="Title"} … :::`. New types need an entry in
   cannot do goes out of date fast, and nobody can edit it (the TED-Ed Turing
   test video said chatbots cannot fool people). Use one only when it cannot go
   stale: history told by the people who were there, with its year on the page
-  (Conway in 2.1, Fei-Fei Li's 2015 talk in 1.5), or a skill that does not
-  depend on AI (lateral reading in 3.4). Embed with
+  (Conway in 2.1, Fei-Fei Li's 2015 talk in 1.5); how AI worked at a date,
+  with that year in the title and a line that details may have changed
+  (3Blue1Brown's 2024 chatbot video in 2.9); or a skill that does not depend
+  on AI (lateral reading in 3.4). Embed with
   `{{< ytvideo VIDEO_ID title="..." >}}` inside a `.watch` callout, and keep
   the caption/auto-translate tip
 - **Tools students open:** prefer ones that need no account (Quick, Draw!,

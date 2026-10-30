@@ -117,6 +117,18 @@ The tiny chatbot wrote "My friend likes rice and beans." Did it **understand** t
 - If a chatbot learned from text with mistakes in it, it would ...
 :::
 
+{{< watch >}}
+
+:::{.watch title="Large Language Models Explained Briefly (3Blue1Brown, 2024)"}
+{{< ytvideo LPZh9BOjkQs title="Large Language Models explained briefly (3Blue1Brown, 2024)" >}}
+
+3Blue1Brown made this video in 2024, for a museum show about the history of chatbots. It shows how chatbots worked in 2024. Chatbots change fast, so some details may be different today.
+
+**While you watch:** How many words did the model read? How is that like your count table?
+
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+:::
+
 {{< further >}}
 
 :::{.project title="Day 2: The Word-Counting Chatbot"}
