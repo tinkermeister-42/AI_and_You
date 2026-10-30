@@ -22,7 +22,7 @@ def add(url, kind, src):
 for f in sorted(glob.glob("chapters/**/*.qmd", recursive=True)) + ["index.md", "syllabus.qmd", "course-map.qmd", "glossary.qmd"]:
     s = open(f).read()
     for u in re.findall(r"\{\{<\s*video\s+(https?://\S+)", s): add(u, "video", where(f))
-    for v in re.findall(r"\{\{<\s*ytvideo\s+([\w-]+)", s): add("https://www.youtube-nocookie.com/embed/" + v, "video", where(f))
+    for v in re.findall(r"\{\{<\s*ytvideo\s+([\w-]+)", s): add("https://www.youtube-nocookie.com/embed/" + v, "video", where(f)); add("https://yout-ube.com/watch?v=" + v, "link", where(f))
     for u in re.findall(r"\]\((https?://[^)\s]+)\)", s): add(u, "link", where(f))
     for u in re.findall(r'href="(https?://[^"]+)"', s): add(u, "link", where(f))
 for f in sorted(glob.glob("assets/**/*.html", recursive=True)):

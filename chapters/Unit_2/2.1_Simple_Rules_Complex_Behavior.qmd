@@ -141,7 +141,7 @@ Make Rule 30 on a table with paper cups: cup up is white, cup down is black. Mak
 
 John Conway, the mathematician who made the Game of Life in 1970, tells how he invented it.
 
-**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 :::{.explore-link}

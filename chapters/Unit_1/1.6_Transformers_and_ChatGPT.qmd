@@ -114,7 +114,7 @@ ChatGPT learned from text that people wrote: books, websites, news, and more. Mo
 
 **While you watch:** How does a chatbot decide which word comes next?
 
-**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}

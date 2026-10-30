@@ -110,7 +110,7 @@ AI can make things up, and it sounds sure when it does. Should students use AI f
 
 **While you watch:** What do fact-checkers do that most people do not?
 
-**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}

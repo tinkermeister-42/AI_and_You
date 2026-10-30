@@ -113,7 +113,7 @@ A self-driving car sees only numbers. What if it sees something it never saw in 
 
 **While you watch:** What does a computer see when it looks at a picture?
 
-**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}

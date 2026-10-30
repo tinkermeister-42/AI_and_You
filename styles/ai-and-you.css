@@ -144,3 +144,6 @@ a.btn.tool-link {
 .explore-link { border: 1px solid #c5cae9; border-left: 5px solid rgba(63, 81, 181, 1); background: rgba(63, 81, 181, 0.05);
   border-radius: 6px; padding: 0.55rem 0.8rem; margin: 1.5rem 0 0.5rem; }
 .explore-link p { margin: 0; }
+
+/* The at-school link under each video (ytvideo shortcode) */
+.yt-school { margin: 0.4rem 0 0.6rem; font-size: 0.95rem; }

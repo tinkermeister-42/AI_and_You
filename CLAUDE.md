@@ -111,7 +111,8 @@ The teacher wants kids' hands on real things in every lesson.
   it on the projector, or an unplugged version. Raina is the only AI tool
   students may use with an account. District rule for any other site: it is
   allowed if it needs no login, is not blocked on the school network, and
-  collects no student data (so students enter no personal information). The
+  collects no student data (its concern is personal information tied to a
+  login, so students never log in or type personal information). The
   teacher checks the network block; list any new outside tool for him
 - **Students see AI built, but do not build it.** The teacher builds AI
   professionally. In Unit 2 he trains a real model live (his Pokémon stats
@@ -188,13 +189,14 @@ The teacher wants kids' hands on real things in every lesson.
   keys, the dated boxes, and the outside websites. Nothing links to it
 - **Blocked for students on the school network** (checked October 2026):
   youtube.com, youtube-nocookie.com, ytimg.com, lens.google.com, tineye.com.
-  Mr. Ross can show YouTube on the projector, and students can watch at
-  home, so every Watch section keeps its video with an "In class / At home"
-  line. Embed with `{{< ytvideo VIDEO_ID title="..." >}}` (`_extensions/
-  ytvideo`, privacy mode for home viewing); Quarto's own `{{< video >}}`
-  rewrites YouTube addresses to youtube.com. Never send students to
-  third-party YouTube mirrors (they log student data). No student step may
-  need a blocked site: make it a projector demo instead
+  yout-ube.com is not blocked and needs no login, so students watch videos
+  there at school. Embed every video with `{{< ytvideo VIDEO_ID title="..." >}}`
+  (`_extensions/ytvideo`): it shows the privacy-mode player for home and an
+  "At school" link to yout-ube.com. Quarto's own `{{< video >}}` rewrites
+  YouTube addresses to youtube.com: never use it. Link single videos only,
+  never a YouTube home or channel page (the district does not want students
+  browsing YouTube). If yout-ube.com is ever blocked, videos become a
+  projector demo. No student step may need a blocked site
 - **Outside websites:** `scripts/list-external-urls.py` lists every one. When
   links change, republish the firewall checklist artifact
   (https://claude.ai/artifact/6zYejQfNhQbDTe8d6tQovi) from that list
