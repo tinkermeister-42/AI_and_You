@@ -4,6 +4,8 @@ A real neuron takes in signals, adds them up, and fires if the total is big enou
 
 In 1943, two scientists, Warren McCulloch and Walter Pitts, wrote this idea as **math**. In 1958, Frank Rosenblatt built a machine from it. It was called the **perceptron**. (The 1958 newspaper story in Lesson 1.4 was about this machine.)
 
+![The Mark I Perceptron, around 1960. Its camera has 400 light sensors. Here it looks at a letter C. The panels behind it hold its connections and their weights. (U.S. Navy photo, public domain)](/images/Unit_2/2.4_mark1_perceptron.jpg){width="560px" fig-align="center" fig-alt="An old photo. A man in a white shirt and tie adjusts a camera on a stand. Two lamps light a large white letter C on a black board in front of the camera. Tall panels full of wires and dials stand behind him."}
+
 That simple idea is the building block of every neural network today. Today, the class becomes one.
 
 :::{.agenda}
