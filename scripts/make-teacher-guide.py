@@ -70,7 +70,7 @@ It is rebuilt every time the book is rendered, so it always matches the lessons.
 - **Explore More** pages are for students working on their own. They are never needed for a core.
 - **Raina** (MagicSchool) is the only AI tool students use with an account. Every Raina activity has a fallback: you run it on the projector, or an unplugged version. Images share a usage limit, so plan pairs or turns.
 - **No personal information** goes into any AI tool: no names, pictures of people, addresses, phone numbers, birthdays, or student numbers.
-- **Blocked for students** (October 2026): youtube.com, ytimg.com, lens.google.com, tineye.com. Videos are embedded from youtube-nocookie.com, which is not blocked; if one will not play, show it from your account. Run reverse image searches (Lesson 4.3) on the projector.
+- **Blocked for students** (October 2026): youtube.com, youtube-nocookie.com, ytimg.com, lens.google.com, tineye.com. Show every video from your account on the projector; students can rewatch at home. Run reverse image searches (Lesson 4.3) on the projector.
 - **Answer keys** sit beside each student sheet: `handouts/Unit_X/<name>_KEY.pdf`. Nothing links to them.
 
 ## Lessons

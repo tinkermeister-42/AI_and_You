@@ -187,13 +187,14 @@ The teacher wants kids' hands on real things in every lesson.
   unlisted guide at `/teacher/`: every lesson's teacher notes, sheets and
   keys, the dated boxes, and the outside websites. Nothing links to it
 - **Blocked for students on the school network** (checked October 2026):
-  youtube.com, ytimg.com, lens.google.com, tineye.com. youtube-nocookie.com
-  is not blocked, so every video is embedded from it with
-  `{{< ytvideo VIDEO_ID title="..." >}}` (`_extensions/ytvideo`). Quarto's
-  own `{{< video >}}` rewrites YouTube addresses to youtube.com: never use it
-  for YouTube. Never send students to third-party YouTube mirrors (they log
-  student data). No student step may need a blocked site: make it a
-  projector demo instead
+  youtube.com, youtube-nocookie.com, ytimg.com, lens.google.com, tineye.com.
+  Mr. Ross can show YouTube on the projector, and students can watch at
+  home, so every Watch section keeps its video with an "In class / At home"
+  line. Embed with `{{< ytvideo VIDEO_ID title="..." >}}` (`_extensions/
+  ytvideo`, privacy mode for home viewing); Quarto's own `{{< video >}}`
+  rewrites YouTube addresses to youtube.com. Never send students to
+  third-party YouTube mirrors (they log student data). No student step may
+  need a blocked site: make it a projector demo instead
 - **Outside websites:** `scripts/list-external-urls.py` lists every one. When
   links change, republish the firewall checklist artifact
   (https://claude.ai/artifact/6zYejQfNhQbDTe8d6tQovi) from that list

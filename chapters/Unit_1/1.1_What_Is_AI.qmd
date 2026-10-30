@@ -165,7 +165,7 @@ Watch this at home or if we have time in class. It shows more examples of machin
 
 **While you watch:** The video shows three ways a computer can learn from examples. Write one example of each.
 
-**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+**In class:** Mr. Ross plays this video on the projector. **At home:** watch it again here. For captions in your language, press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
 {{< further >}}
