@@ -118,6 +118,37 @@ The scientists had big dreams. They thought smart machines were only a few years
 
 In 1965, the scientist **Herbert Simon** made a promise too. He said: *"Within 20 years, machines will be able to do any work a person can do."* It did not come true by 1985. Today, some people say AI is getting close. Other people strongly disagree.
 
+### Toy or Electricity?
+
+Some new inventions change the world. Others are forgotten in a few years. At the start, it is very hard to tell which is which. Smart people get it wrong in **both** directions.
+
+**People who laughed, and were wrong:**
+
+- **1998:** A famous economist wrote that by 2005, the internet would matter to the economy no more than the fax machine. Ten years later, he won the Nobel Prize in economics.
+- **2007:** The leader of Microsoft laughed at the new iPhone. He said it cost too much, and business people would not want a phone with no keyboard. Today, most people in the world use a phone like it.
+
+**People who were excited, and were wrong:**
+
+- **2001:** The Segway was a two-wheeled scooter that balanced by itself. People said it would change how everyone moves around cities. In 2020, the company stopped making it.
+- **2021:** Someone paid $2.9 million for an NFT of the first tweet ever. (An NFT is a digital record that says you own something online.) In 2022, the owner tried to sell it. The best offer was about $280.
+
+How can you tell which kind of invention you are looking at? Ask two questions:
+
+1. Do many people use it every day, for real work?
+2. Does it get better every year?
+
+The internet and the iPhone passed both tests. The Segway and NFTs did not.
+
+:::{.think title="Try it on AI"}
+Ask the two questions about AI. Then ask them about something you think is only a toy. What do you notice?
+
+In 50 years, students will read what people said about AI in 2026. Which people will look wrong?
+:::
+
+:::{.project title="Ask your family"}
+Ask someone in your family: *"When you were young, what new invention did people say was a toy, or a waste of time? Did it catch on?"* Many families saw the first cell phones, the internet, or TV arrive. Then ask: *"Do you think AI is a toy, or something bigger? Why?"* Bring one answer to class.
+:::
+
 ### Rules for Business, and the Second Winter
 
 In the 1980s, companies paid for AI built from rules. Experts wrote thousands of rules for jobs like checking orders or finding problems in machines. These programs were expensive. They broke when something new happened. Then came the second {{< glink "AI winter" >}}.
