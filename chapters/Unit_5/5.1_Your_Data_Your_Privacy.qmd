@@ -1,0 +1,121 @@
+# 5.1 - Your Data, Your Privacy {.unnumbered}
+
+In 2018, reporters at *The New York Times* looked at location data that phone apps collected and sold. The data had no names in it. But the dots on the map showed one person going from the same house every morning to the same school every day.
+
+The reporters found her. She was a math teacher. The apps knew where she lived, where she worked, and where she went after work.
+
+Your phone collects information about you all day. Some of it is even hidden inside your photos. Today you find it.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** What does your phone know? [6 min]{.time}
+- [👥]{.icon} **Learn Together** Data you give and data you leak [10 min]{.time}
+- [🛠️]{.icon} **Try It** Find the hidden location in a photo [17 min]{.time}
+- [💬]{.icon} **Talk About It** Is a free app really free? [7 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can explain the difference between data I give and data I leak.
+- [ ] I can find the hidden information inside a photo.
+- [ ] I can make a copy of a photo without its hidden location.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🔒]{.icon} {{< glink privacy >}}: your right to keep information about yourself to yourself
+- [🏷️]{.icon} {{< glink metadata >}}: hidden information about a file, like when and where a photo was taken
+- [📍]{.icon} {{< glink "location data" >}}: information that shows where your phone has been
+- [🗂️]{.icon} {{< glink data >}}: information a computer can store and use
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_5/5.1_Your_Data_Your_Privacy.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Work with a partner. List everything you think your phone knows about you. Then share with the class.
+
+:::{.think title="Some answers"}
+Where you go. Who you call and text. Your photos. What you search for. What videos you watch, and how long. When you sleep. Your voice, if you talk to it. Your face, if it unlocks with your face.
+:::
+
+{{< learn >}}
+
+### 5.1.1 - Data You Give and Data You Leak
+
+| Data you **give** | Data you **leak** |
+|---|---|
+| You know you are sharing it. | You may not know you are sharing it. |
+| What you type, post, and upload | Where your phone is |
+| Your name when you sign up | What you click, and how long you look |
+| A photo you post | Hidden information inside the photo |
+
+Companies use this {{< glink data >}} to sell ads and to choose what to show you next. AI makes this easier. It can look at millions of small pieces of data and make guesses about you. Where do you live? What do you like? What might you buy?
+
+***
+
+### 5.1.2 - Photos Have Hidden Information
+
+When a phone takes a photo, it often saves hidden information inside the file. This is called {{< glink metadata >}}. It can include:
+
+- the kind of phone or camera
+- the date and time
+- the **exact place** where the photo was taken
+
+If you send someone the photo file, they may get the place too. A photo of your dog in your backyard can show your home address.
+
+:::{.note title="Right now (fall 2026)"}
+Many social media apps remove the location from a photo when you post it. Sending the photo file in a text or an email may keep it. Most phones let you turn off location for the camera, in the phone's privacy settings.
+:::
+
+{{< tryit >}}
+
+### 5.1.3 - Find the Hidden Location
+
+Work with a partner. This demo runs on your computer. The photo never leaves it.
+
+:::{.steps}
+1. Press **Use the sample photo**. What hidden information is inside it? Write it on your sheet.
+2. Press **Open this place on a map**. Where was the photo taken?
+3. Press **Make a clean copy**. Is the location still there?
+4. Talk with your partner: who could find you from a photo you sent?
+:::
+
+{{< include /assets/Unit_5/photo_secrets.html >}}
+
+:::{.gotcha title="Keep it private"}
+Do not put photos of yourself or anyone else into your class AI tool or any website. If you try the demo with your own photo, it stays on this computer. Do not show a classmate's location to anyone.
+:::
+
+{{< talk >}}
+
+Many apps are free. The company makes money from your data. Is that a fair trade? Should apps be allowed to sell where you go?
+
+:::{.frames}
+- My phone knows ... about me.
+- The sample photo showed ...
+- A free app is (fair / not fair) because ...
+- Apps (should / should not) be allowed to sell location data, because ...
+:::
+
+{{< further >}}
+
+:::{.project title="Day 2: What Can Your Apps See?"}
+Apps ask for **permission** to use your location, camera, microphone, and contacts. Work with a partner.
+
+1. On your sheet, look at the 6 apps and the permissions they ask for.
+2. For each one, decide: does the app **need** it to work? Write yes or no.
+3. If you have a phone and your teacher allows it, open your phone's settings. Find **Privacy** or **Permissions**. Which apps can see your location?
+4. Choose one permission you will turn off. Why?
+:::
+
+:::{.project title="Teach Your Family"}
+Show someone in your family how to turn off location for the camera on their phone. Explain why, in your home language.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [data brokers, face search, and what happens to your chats](/chapters/Explore/explore-unit-5.qmd#explore-5-1). For students who want to learn more on their own.
+:::

@@ -37,7 +37,7 @@ Then you try to fool it. That is the most important part.
 
 You can train an AI to tell apart any pictures your camera can see. What would you teach it? Write two ideas on your sheet.
 
-Examples: rock and paper. Thumbs up and thumbs down. A pen and a pencil. Your face and your partner's face.
+Examples: rock and paper. Thumbs up and thumbs down. A pen and a pencil. A cup and a book.
 
 {{< learn >}}
 
@@ -55,7 +55,7 @@ Examples: rock and paper. Thumbs up and thumbs down. A pen and a pencil. Your fa
 :::{.gotcha title="Your pictures stay on your computer"}
 Teachable Machine trains in your browser. Your pictures stay on your computer unless you choose to save your project to Google Drive. **Do not save it.**
 
-Ask before you take pictures of anyone else.
+Keep faces out of the camera. Only hands and objects should be in the pictures.
 :::
 
 {{< tryit >}}

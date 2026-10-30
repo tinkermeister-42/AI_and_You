@@ -98,6 +98,10 @@ book:
     - part: "Unit 5: AI in the Real World"
       chapters:
         - file: chapters/Unit_5/index.qmd
+        - file: chapters/Unit_5/5.1_Your_Data_Your_Privacy.qmd
+        - file: chapters/Unit_5/5.2_AI_Scams.qmd
+        - file: chapters/Unit_5/5.3_AI_and_Jobs.qmd
+        - file: chapters/Unit_5/5.4_AI_and_the_News.qmd
 
     - part: "Unit 6: AI and Our Future"
       chapters:
@@ -110,5 +114,6 @@ book:
         - file: chapters/Explore/explore-unit-2.qmd
         - file: chapters/Explore/explore-unit-3.qmd
         - file: chapters/Explore/explore-unit-4.qmd
+        - file: chapters/Explore/explore-unit-5.qmd
 
     - file: glossary.qmd

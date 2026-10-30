@@ -1,0 +1,78 @@
+```{=html}
+<!-- scam_sorter.html: Lesson 5.2. Practice messages (made up for this book).
+     Decide scam or real, then see the warning signs. -->
+<div class="ss" id="ss">
+  <div class="ss-top"><span class="ss-count"></span><span class="ss-score"></span></div>
+  <div class="ss-phone"><div class="ss-from"></div><div class="ss-msg"></div></div>
+  <div class="ss-bar ss-ask">
+    <button type="button" class="ss-btn ss-scam" data-a="scam">🚨 Scam</button>
+    <button type="button" class="ss-btn ss-real" data-a="real">✅ Real</button>
+  </div>
+  <div class="ss-why" aria-live="polite"></div>
+  <div class="ss-bar"><button type="button" class="ss-btn ss-plain ss-next" hidden>Next message ➡️</button></div>
+</div>
+
+<style>
+.ss { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; max-width: 560px; }
+.ss-top { display: flex; justify-content: space-between; color: #555; margin-bottom: 0.4rem; }
+.ss-phone { background: #eef2f5; border-radius: 14px; padding: 0.8rem; }
+.ss-from { font-size: 0.85rem; color: #555; margin-bottom: 0.3rem; font-weight: 600; }
+.ss-msg { background: #fff; border-radius: 14px 14px 14px 4px; padding: 0.55rem 0.75rem; font-size: 1.05rem; line-height: 1.45; box-shadow: 0 1px 2px rgba(0,0,0,0.08); }
+.ss-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.6rem; }
+.ss-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.35rem 0.9rem; font-weight: 600; cursor: pointer; font-size: 1rem; }
+.ss-btn.ss-scam { background: #c0392b; border-color: #c0392b; } .ss-btn.ss-real { background: #1e8449; border-color: #1e8449; }
+.ss-btn.ss-plain { background: #fff; color: #2c3e50; }
+.ss-why { margin-top: 0.6rem; line-height: 1.55; }
+.ss-why ul { margin: 0.3rem 0 0; padding-left: 1.2rem; }
+.ss-why .ok { color: #1e8449; font-weight: 700; } .ss-why .no { color: #c0392b; font-weight: 700; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("ss");
+  if (!root) return;
+  const M = [
+    { from: "Delivery Service", text: "Your package could not be delivered. Update your address in 12 hours or it will be sent back: deliv-update-help.co", scam: true,
+      why: ["⏰ <b>Hurry:</b> 12 hours.", "🔗 <b>A strange link:</b> not the real company's website.", "📦 Were you waiting for a package? Check the company's real app instead."] },
+    { from: "Douglass High School", text: "Reminder: no school on Monday. It is a teacher work day.", scam: false,
+      why: ["No link, no money, no hurry, no secret.", "It is news you can check with the school."] },
+    { from: "+1 (555) 019-2231", text: "Hi! I sent my login code to your number by mistake. Can you send it to me? 🙏", scam: true,
+      why: ["🔑 <b>Asks for a code:</b> a code lets someone get into <b>your</b> account.", "Nobody sends a code to the wrong number by mistake. Never share a code."] },
+    { from: "Prize Center", text: "Congratulations! You won a $500 gift card! Claim it today before it expires: prize-now.win", scam: true,
+      why: ["🎁 <b>A prize</b> you never tried to win.", "⏰ <b>Hurry:</b> today.", "🔗 <b>A strange link.</b>"] },
+    { from: "Unknown number", text: "Mom, my phone broke, this is my new number. I need $200 right now. Send it with the payment app. Don't tell Dad.", scam: true,
+      why: ["🆕 <b>A new number</b> you cannot check.", "⏰ <b>Hurry</b> and 💸 <b>money</b>.", "🤫 <b>A secret:</b> \"Don't tell Dad.\"", "Call the person on their <b>old</b> number. Ask for the family safe word."] },
+    { from: "Pharmacy", text: "Your order is ready for pickup.", scam: false,
+      why: ["No link, no money, no hurry.", "If you did not order anything, call the pharmacy on a number you already know."] },
+    { from: "Tax Office", text: "You owe $1,200 in taxes. Pay today with gift cards, or the police will come to your house.", scam: true,
+      why: ["😨 <b>Fear:</b> the police.", "🎴 <b>A strange way to pay:</b> real government offices never ask for gift cards.", "⏰ <b>Hurry:</b> today."] },
+    { from: "Jobs Now", text: "Job offer! Work from home and earn $900 a week. No experience needed. Just buy your starter kit first.", scam: true,
+      why: ["🤩 <b>Too good to be true:</b> lots of money, no experience.", "💸 <b>You pay first.</b> A real job pays you. You do not pay it."] },
+    { from: "Your Bank", text: "We saw a sign-in from a new device. If this was not you, open your bank app or call the number on the back of your card.", scam: false,
+      why: ["No link to click.", "It tells you to use <b>your own</b> app or the number on <b>your</b> card. You check it yourself."] },
+  ];
+  let i = 0, right = 0, done = false;
+  const q = (s) => root.querySelector(s);
+  function show() {
+    const m = M[i]; done = false;
+    q(".ss-count").textContent = `Message ${i + 1} of ${M.length}`;
+    q(".ss-from").textContent = m.from; q(".ss-msg").textContent = m.text;
+    q(".ss-why").innerHTML = ""; q(".ss-ask").hidden = false; q(".ss-next").hidden = true;
+    root.dataset.i = i;
+  }
+  function answer(a) {
+    if (done) return; done = true;
+    const m = M[i], ok = (a === "scam") === m.scam; if (ok) right++;
+    q(".ss-why").innerHTML = `<span class="${ok ? "ok" : "no"}">${ok ? "You are right." : "Not quite."}</span> This message is <b>${m.scam ? "a scam" : "real"}</b>.` +
+      `<ul>${m.why.map((w) => `<li>${w}</li>`).join("")}</ul>`;
+    q(".ss-score").textContent = `${right} of ${i + 1} right`;
+    q(".ss-ask").hidden = true; q(".ss-next").hidden = false;
+    q(".ss-next").textContent = i + 1 < M.length ? "Next message ➡️" : "Start over ↺";
+    root.dataset.right = right;
+  }
+  root.querySelectorAll("[data-a]").forEach((b) => b.addEventListener("click", () => answer(b.dataset.a)));
+  q(".ss-next").addEventListener("click", () => { if (i + 1 < M.length) i++; else { i = 0; right = 0; q(".ss-score").textContent = ""; } show(); });
+  show();
+})();
+</script>
+```

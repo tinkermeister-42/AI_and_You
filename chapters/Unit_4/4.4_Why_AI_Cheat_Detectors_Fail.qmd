@@ -87,7 +87,7 @@ Work with a partner.
 
 :::{.steps}
 1. Press each of the first 3 buttons. Write what the toy detector says on your sheet. Was it right?
-2. Press **my own writing**. Each partner writes 5 sentences about themselves, in simple English. Press **Check it**.
+2. Press **my own writing**. Each partner writes 5 sentences about a favorite food or sport, in simple English. Press **Check it**.
 3. Add your results to the class chart: how many human paragraphs did it call "AI"?
 4. Now change 3 words in your paragraph to rare, fancy words. Check it again. What happened?
 :::

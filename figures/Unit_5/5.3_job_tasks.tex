@@ -1,0 +1,23 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[
+  task/.style={box, font=\footnotesize, minimum height=0.75cm, text width=3.0cm, inner sep=4pt},
+  col/.style={font=\small\bfseries, align=center, text width=3.3cm},
+]
+% A job is a bundle of tasks. Sort each task: AI can do it, AI can help, a person does it.
+\personicon{5.0}{3.05}{0.55}
+\node[personbox, font=\bfseries] (job) at (5.0,2.0) {Job: nurse};
+\node[col, text=machine] at (0,0.9) {AI can do it};
+\node[col, text=ink] at (5.0,0.9) {AI can help a person};
+\node[col, text=person] at (10,0.9) {A person does it};
+\node[task, draw=machine, fill=machine!10] at (0,0) {make the work schedule};
+\node[task, draw=ink!70, fill=ink!5] at (5.0,0) {write notes about patients};
+\node[task, draw=ink!70, fill=ink!5] at (5.0,-1.0) {check medicine amounts};
+\node[task, draw=person, fill=person!10] at (10,0) {take blood pressure};
+\node[task, draw=person, fill=person!10] at (10,-1.0) {calm a scared patient};
+\draw[flow, draw=ink!50] (job.south west) -- (0.6,1.25);
+\draw[flow, draw=ink!50] (job.south) -- (5.0,1.25);
+\draw[flow, draw=ink!50] (job.south east) -- (9.4,1.25);
+\end{tikzpicture}
+\end{document}

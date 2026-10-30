@@ -1,0 +1,83 @@
+# Explore More: AI in the Real World {.unnumbered}
+
+This page goes with Unit 5. It is for students who want to learn more on their own. Nothing here is homework. Each section goes with one lesson.
+
+## From Lesson 5.1: Your Data, Your Privacy {#explore-5-1}
+
+### Data Brokers
+
+A **data broker** is a company that collects information about people and sells it. It buys data from apps, stores, and websites. It puts the pieces together into a file about one person: where they live, what they buy, where they go.
+
+You never signed up with a data broker. Most people do not even know their names. Some states now have laws that let you ask a data broker to delete your file.
+
+### Searching by Face
+
+Some companies collected billions of photos from the internet: from news sites, school pages, and social media. They used AI to make a face search. You give it one photo of a person, and it finds other photos of the same person online, with their name.
+
+Some police departments have used these tools. People disagree about them. Supporters say they help catch criminals. Critics say people never agreed to have their faces used, and that face programs make more mistakes on some faces (Lesson 4.2).
+
+### What Happens to Your Chats?
+
+When you type into a chatbot, your words go to the company's computers. Some companies use chats to train their next AI, unless you turn that off. School AI tools have their own rules.
+
+:::{.note title="Right now (fall 2026)"}
+AI companies keep changing their rules about chats. Ask Mr. Ross what our class AI tool does with what you type. The safest rule does not change: never type anything personal.
+:::
+
+## From Lesson 5.2: AI Scams {#explore-5-2}
+
+### The Scams That Cost the Most
+
+The biggest losses often start with a friendly message from a stranger: "Sorry, wrong number!" The stranger becomes a friend over weeks. Then they share a "great investment," often in crypto. The website shows your money growing. It is fake. When you try to take the money out, it is gone.
+
+Warning signs: a stranger who becomes a close friend fast, never meets you in person or on video, and talks about money.
+
+### A Voice-Clone Call
+
+In 2023, a mother in Arizona got a phone call. She heard her 15-year-old daughter crying for help. A man said he had kidnapped her and wanted money. The voice sounded exactly like her daughter.
+
+Her daughter was safe the whole time, at a sports practice. The voice was made with AI. The mother later told her story to the U.S. Senate. This is why a family safe word (Lesson 4.3) matters.
+
+### How to Report a Scam
+
+- Tell a trusted adult first.
+- In the United States, you can report scams to the Federal Trade Commission at ReportFraud.ftc.gov. It works in English and Spanish.
+- Do not feel ashamed. Scams fool smart people every day. Reporting helps stop the scammer.
+
+## From Lesson 5.3: AI and Jobs {#explore-5-3}
+
+### The ATM Story
+
+ATMs made each bank branch cheaper to run. So banks opened **more** branches, and each one needed fewer tellers. For about 30 years, the total number of tellers in the United States stayed about the same, or grew a little. Tellers did less counting and more helping customers.
+
+Later, people started banking on their phones. Then teller jobs did go down. The same machine can help jobs at first and cut them later.
+
+### Machines That Changed Work Before
+
+- **Tractors.** In 1900, about 4 in 10 workers in the United States worked on farms. Today it is fewer than 2 in 100. Farms grow more food than ever.
+- **Spreadsheets.** Programs like Excel do in seconds the math that clerks did by hand. Jobs that only added up numbers went away. Jobs that used the numbers to make decisions grew.
+
+Some people say AI is the same story again: some jobs shrink, new jobs grow. Others say AI is different, because it can do thinking work, not just hand work. Nobody knows for sure yet.
+
+### The Jobs Studies
+
+- **Stanford (August 2025):** Erik Brynjolfsson and other researchers looked at millions of paychecks. In the jobs most exposed to AI, like software and customer service, workers aged 22 to 25 had about 13% fewer jobs than expected. Older workers in the same jobs did fine. One idea: AI does many of the tasks that beginners used to learn on.
+- **Yale (October 2025):** Researchers looked at the whole job market since ChatGPT came out. They did not find a big change yet.
+
+## From Lesson 5.4: AI and the News {#explore-5-4}
+
+### "People Like You"
+
+A feed does not learn only from you. It also learns from people **like** you. If many people who watched the same 5 videos as you then watched a sixth video, the app guesses you will like it too. This is called a **recommendation system**. It is a kind of machine learning.
+
+### News Websites Written by AI
+
+Some websites look like local newspapers. They have a name, a logo, and new stories every hour. But no reporters work there. AI writes the stories, often by rewriting other news. Some of it is wrong. The sites make money from ads.
+
+How to check: Is there a list of real reporters with real names? Does the site have a phone number and an address? Do other news sites ever mention it?
+
+### A Fake Voice in an Election
+
+In January 2024, many voters in New Hampshire got a phone call. It sounded like President Joe Biden. The voice told them not to vote in the state's primary election. The voice was made with AI.
+
+The man who made the calls was fined 6 million dollars by the Federal Communications Commission. Since then, many states have passed laws about AI in election ads.

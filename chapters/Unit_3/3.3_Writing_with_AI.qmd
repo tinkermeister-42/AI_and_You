@@ -93,7 +93,7 @@ Work with a partner. (If there is an odd number, make one group of 3.)
 :::
 
 :::{.gotcha title="Keep it private"}
-Write about a place, not an address. Use first names only, or words like "my grandmother."
+Write about a place, not an address. Do not use any names: write "my grandmother" or "my friend" instead.
 :::
 
 {{< talk >}}

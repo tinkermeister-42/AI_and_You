@@ -100,10 +100,19 @@ The teacher wants kids' hands on real things in every lesson.
   MagicSchool. When a lesson needs a chatbot, the page says "your class AI
   tool" and the activity works with any chatbot. Never write steps for one
   product's menus
-- **MagicSchool is locked down and likely makes no images.** Image
-  generation runs on the projector: students write the prompts, Mr. Ross
-  makes the pictures. Do not plan student steps around web search, links,
-  or memory features either; give a path that works without them
+- **The class AI tool is Raina, in MagicSchool.** Raina's own list of what it
+  can do (October 2026; the teacher still has to confirm in class): text
+  chat (write, rewrite, summarize, translate, explain, math help), image
+  generation and graphs (one shared usage limit, so plan pairs or staggered
+  turns), web search with cited sources, documents and slides. It cannot
+  make audio, video, or voice clones; students cannot switch models or
+  settings; no memory between chats. Photo upload is unconfirmed: never make
+  it required. Every activity that uses Raina needs a fallback: Mr. Ross runs
+  it on the projector, or an unplugged version. Raina is the only AI tool
+  students may use with an account. District rule for any other site: it is
+  allowed if it needs no login, is not blocked on the school network, and
+  collects no student data (so students enter no personal information). The
+  teacher checks the network block; list any new outside tool for him
 - **Students see AI built, but do not build it.** The teacher builds AI
   professionally. In Unit 2 he trains a real model live (his Pokémon stats
   demo: the CSV from his old Algebra site, a neural network instead of the
@@ -199,6 +208,13 @@ Syntax: `:::{.callout-type title="Title"} … :::`. New types need an entry in
   "Your class AI tool" covers whatever students have (likely MagicSchool)
 - **Privacy:** when a tool saves what students make, say so in a `.gotcha`
   next to the activity (see Quick, Draw! in 1.1)
+- **No personal information in any AI tool, ever.** Never ask or let a
+  student type or upload names (their own, classmates', family's,
+  teachers'), pictures or recordings of themselves or other people,
+  addresses, phone numbers, birthdays, student numbers, or private family or
+  health details. Prompts use stand-ins ("my grandmother", "Student Name").
+  Camera activities show hands and objects, never faces. Writing that goes
+  into a tool is about a topic, not about the student
 - **Home languages are an asset.** About 14 languages are spoken in the
   school. Activities that test AI in a student's own language make that
   student the expert

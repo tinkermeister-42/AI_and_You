@@ -1,0 +1,94 @@
+```{=html}
+<!-- feed_sim.html: Lesson 5.4. A toy recommendation feed. Every click makes
+     that topic more likely. Angry stories get clicked more, so the feed
+     learns to show more of them. Made-up stories. -->
+<div class="fs" id="fs">
+  <div class="fs-top">
+    <span class="fs-clicks"></span>
+    <button type="button" class="fs-btn fs-plain fs-reset">↺ Start over</button>
+  </div>
+  <div class="fs-grid">
+    <div>
+      <div class="fs-h">Your feed: click a story you want to read</div>
+      <div class="fs-feed"></div>
+    </div>
+    <div>
+      <div class="fs-h">What the app thinks you like</div>
+      <div class="fs-bars"></div>
+      <div class="fs-msg"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+.fs { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.fs-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; color: #555; }
+.fs-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.25rem 0.8rem; font-weight: 600; cursor: pointer; }
+.fs-btn.fs-plain { background: #fff; color: #2c3e50; }
+.fs-grid { display: flex; flex-wrap: wrap; gap: 1rem; }
+.fs-grid > div { flex: 1 1 260px; }
+.fs-h { font-weight: 700; margin-bottom: 0.35rem; }
+.fs-feed button { display: flex; gap: 0.5rem; align-items: center; width: 100%; text-align: left; border: 1px solid #d0d8e0; background: #fff; border-radius: 8px; padding: 0.45rem 0.6rem; margin: 0 0 0.35rem; cursor: pointer; font-size: 0.98rem; line-height: 1.3; }
+.fs-feed button:hover { border-color: #2c3e50; }
+.fs-feed .ic { font-size: 1.4rem; }
+.fs-bars .bar { display: flex; align-items: center; gap: 0.4rem; margin: 0.18rem 0; font-size: 0.92rem; }
+.fs-bars .bar span { min-width: 7.5em; }
+.fs-bars .bar i { display: inline-block; height: 0.8em; background: #d35400; border-radius: 2px; }
+.fs-msg { margin-top: 0.6rem; line-height: 1.5; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("fs");
+  if (!root) return;
+  const T = {
+    sports: ["⚽", "sports", ["Last-minute goal wins the city final", "Five tricks to kick the ball harder", "The fastest runner in our state is 16", "Why goalkeepers wear gloves"]],
+    music: ["🎵", "music", ["The song everyone is singing this week", "How to learn guitar in 30 days", "A singer who sings in 4 languages", "Why some songs get stuck in your head"]],
+    animals: ["🐶", "animals", ["This dog learned to open the fridge", "Baby goats at the farm show", "The cat that rides the bus every day", "How bees talk by dancing"]],
+    cooking: ["🍳", "cooking", ["A 10-minute rice dish from Nepal", "The best way to cook an egg", "Five snacks you can make with no oven", "Bread from your grandmother's recipe"]],
+    science: ["🔬", "science", ["A new planet with water clouds", "Why the sky is blue, in one minute", "Scientists find a new kind of frog", "How a rocket lands standing up"]],
+    games: ["🎮", "games", ["The hardest level in the new game", "A game made by a 14-year-old", "Five secrets in an old racing game", "How game music is made"]],
+    angry: ["😡", "angry arguments", ["People are FURIOUS about the new school lunch rule", "This referee made the WORST call ever", "Watch before it is deleted: a store worker yells at a customer", "Everyone is fighting about this pineapple pizza video", "You will be ANGRY when you see what this company did"]],
+  };
+  const KEYS = Object.keys(T);
+  let w, clicks, seed, feed;
+  const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+  function pickTopic() {
+    // Angry stories get a head start: people click them more, so apps learn to show them.
+    const score = KEYS.map((k) => w[k] * w[k] * (k === "angry" ? 1.4 : 1));
+    let r = rnd() * score.reduce((a, b) => a + b, 0);
+    for (let i = 0; i < KEYS.length; i++) { r -= score[i]; if (r < 0) return KEYS[i]; }
+    return KEYS[KEYS.length - 1];
+  }
+  function build() {
+    feed = []; const used = new Set();
+    let guard = 0;
+    while (feed.length < 6 && guard++ < 200) {
+      const k = pickTopic(), list = T[k][2], h = list[Math.floor(rnd() * list.length)];
+      if (!used.has(h)) { used.add(h); feed.push([k, h]); }
+    }
+    const box = root.querySelector(".fs-feed"); box.innerHTML = "";
+    feed.forEach(([k, h]) => {
+      const b = document.createElement("button"); b.type = "button";
+      b.innerHTML = `<span class="ic">${T[k][0]}</span><span>${h}</span>`;
+      b.addEventListener("click", () => { w[k] += k === "angry" ? 1.5 : 1; clicks++; build(); });
+      box.appendChild(b);
+    });
+    const tot = KEYS.reduce((a, k) => a + w[k] * w[k] * (k === "angry" ? 1.4 : 1), 0);
+    root.querySelector(".fs-bars").innerHTML = KEYS.map((k) => {
+      const pct = Math.round((100 * w[k] * w[k] * (k === "angry" ? 1.4 : 1)) / tot);
+      return `<div class="bar"><span>${T[k][0]} ${T[k][1]}</span><i style="width:${pct * 2}px"></i>${pct}%</div>`;
+    }).join("");
+    const topics = new Set(feed.map(([k]) => k)).size;
+    root.querySelector(".fs-clicks").textContent = `Clicks: ${clicks}`;
+    root.querySelector(".fs-msg").innerHTML = clicks === 0 ? "Every story you click teaches the app. Click 10 stories you really want to read."
+      : clicks < 10 ? `Your feed now has <b>${topics}</b> different topics.`
+      : `After ${clicks} clicks, your feed has <b>${topics}</b> different topics. Compare it with your partner's feed. Are they the same?`;
+    root.dataset.topics = topics; root.dataset.clicks = clicks;
+  }
+  function reset() { w = Object.fromEntries(KEYS.map((k) => [k, 1])); clicks = 0; seed = 1 + Math.floor(Math.random() * 100000); build(); }
+  root.querySelector(".fs-reset").addEventListener("click", reset);
+  reset();
+})();
+</script>
+```

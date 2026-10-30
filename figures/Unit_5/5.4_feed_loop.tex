@@ -1,0 +1,15 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[
+]
+% The feed loop: every click teaches the app what to show next.
+\node[personbox] (a) at (0,1.6) {You click a story.};
+\node[machinebox] (b) at (5.2,1.6) {The app learns: \\ ``more of this.''};
+\node[machinebox] (c) at (5.2,-0.6) {It shows you more \\ of the same kind.};
+\node[personbox] (d) at (0,-0.6) {You see less of \\ everything else.};
+\draw[flow] (a) -- (b); \draw[flow] (b) -- (c); \draw[flow] (c) -- (d); \draw[flow] (d) -- (a);
+\roboticon{7.55}{1.6}{0.5}
+\personicon{-2.25}{1.6}{0.5}
+\end{tikzpicture}
+\end{document}

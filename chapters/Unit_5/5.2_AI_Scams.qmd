@@ -1,0 +1,130 @@
+# 5.2 - AI Scams {.unnumbered}
+
+Scam messages used to be easy to spot. They had bad spelling and strange grammar. "Dear costumer, you account are block."
+
+Not anymore. AI writes perfect messages, in any language, in seconds. It can even copy a person's voice (Lesson 4.3). In 2025, people in the United States reported losing almost **16 billion dollars** to scams.
+
+The spelling is no longer the clue. Today you learn the clues that still work.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** Would you click? [5 min]{.time}
+- [👥]{.icon} **Learn Together** The warning signs [10 min]{.time}
+- [🛠️]{.icon} **Try It** Scam or real? [18 min]{.time}
+- [💬]{.icon} **Talk About It** Who do scammers target? [7 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can name the warning signs of a scam.
+- [ ] I can explain why AI makes scams harder to spot.
+- [ ] I can sort real messages from scams, and explain how I know.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🎣]{.icon} {{< glink scam >}}: a trick to steal your money or your information
+- [🚩]{.icon} {{< glink "warning sign" >}}: a clue that something is wrong
+- [🎭]{.icon} {{< glink imposter >}}: someone who pretends to be another person or a real company
+- [🔑]{.icon} {{< glink "verification code" >}}: a short number a website sends you to prove it is really you
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_5/5.2_AI_Scams.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+This text message comes to your phone. Would you click the link? Why or why not? Vote with your hand.
+
+> **Delivery Service:** Your package could not be delivered. Update your address in 12 hours or it will be sent back: deliv-update-help.co
+
+:::{.think title="What did you notice?"}
+The spelling is perfect. But it wants you to **hurry** (12 hours), and it has a **strange link**. Were you even waiting for a package? These are warning signs.
+:::
+
+{{< learn >}}
+
+### 5.2.1 - The Warning Signs
+
+Almost every {{< glink scam >}} uses some of these tricks:
+
+| Warning sign | What it sounds like |
+|---|---|
+| ⏰ **Hurry** | "Today!" "In 12 hours!" "Right now!" |
+| 😨 **Fear** | "The police will come." "Your account is closed." |
+| 🎁 **A prize** | "You won!" for something you never entered |
+| 🤫 **A secret** | "Don't tell anyone." "Don't tell Dad." |
+| 🎴 **A strange way to pay** | gift cards, crypto, wire transfers, payment apps |
+| 🔗 **A link or a code** | "Click here." "Send me the code we sent you." |
+
+:::{.remember}
+A real company or government office will never ask you to pay with **gift cards**. It will never ask for a **verification code** you got by text. When you are not sure, stop. Do not click. Call the person or the company on a number **you already know**.
+:::
+
+***
+
+### 5.2.2 - Why AI Makes Scams Harder
+
+- **Perfect language:** no more spelling mistakes, in English or in your home language.
+- **Fast and cheap:** one scammer can send thousands of different messages.
+- **Personal:** AI can use things you posted online to make a message about **you**.
+- **Fake voices:** a call can sound like someone you love (Lesson 4.3).
+
+So do not look for bad spelling. Look for the warning signs.
+
+:::{.note title="Right now (fall 2026)"}
+In 2025, people in the United States reported losing **$15.9 billion** to scams, more than ever before (Federal Trade Commission, March 2026). Text messages were the most common way scammers first reached people. The biggest losses were paid by bank transfer and crypto.
+:::
+
+{{< tryit >}}
+
+### 5.2.3 - Scam or Real?
+
+Work with a partner. These practice messages were made up for this book.
+
+:::{.steps}
+1. Read each message. Decide together: **Scam** or **Real**?
+2. Press your answer. Read the warning signs.
+3. On your sheet, write the warning signs you found in each scam.
+4. Which scam would be most likely to fool someone in your family? Why?
+:::
+
+{{< include /assets/Unit_5/scam_sorter.html >}}
+
+:::{.gotcha title="Class size"}
+**Small class:** go through the messages together on the projector. Everyone votes before each answer. **Big class:** two teams. Each team gets a point for each right answer **and** a point for naming a warning sign the other team missed.
+:::
+
+{{< talk >}}
+
+Scammers often go after people who are new to a country, people who are learning English, and older people. Why? What can we do to protect them?
+
+:::{.frames}
+- The warning sign I see most is ...
+- AI makes scams harder to spot because ...
+- Scammers go after ... because ...
+- If I get a message like this, I will ...
+:::
+
+{{< further >}}
+
+:::{.project title="Day 2: A Family Safety Plan"}
+Make a safety card for your family, in your home language. Work with a partner.
+
+1. On your sheet, write the plan in English: the warning signs, "Never pay with gift cards," "Never share a code," "Call back on a number you know," and who to ask for help.
+2. Ask your class AI tool to translate it into your home language. Do **not** type any names, phone numbers, or your family's safe word.
+3. Check the translation. You are the expert (Lesson 3.5). Fix any mistakes.
+4. Add your family's phone numbers by hand, at home, on the paper card.
+
+**No class AI tool today?** Translate it yourself, or with a family member.
+:::
+
+:::{.project title="Scam Hunt"}
+With your family, look at the text messages and emails you got this week. Did any have warning signs? Do not click any links. Tell the class what you found, without names or numbers.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [the biggest scams, voice-clone calls, and how to report a scam](/chapters/Explore/explore-unit-5.qmd#explore-5-2). For students who want to learn more on their own.
+:::

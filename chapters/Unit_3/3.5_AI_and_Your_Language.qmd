@@ -88,7 +88,7 @@ D. My teacher gave me a break.
 E. A sentence **you** would really need to say. (At the doctor? At a store?)
 
 :::{.gotcha title="What you type goes to the company"}
-Google Translate and your class AI tool send your words to a company's computers. Do not type private information, like a letter from a doctor or your address.
+Google Translate and your class AI tool send your words to a company's computers. Do not type names or private information, like a letter from a doctor or your address.
 :::
 
 :::{.gotcha title="Class size"}
