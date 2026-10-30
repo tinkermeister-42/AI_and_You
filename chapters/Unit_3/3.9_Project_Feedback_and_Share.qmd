@@ -2,30 +2,28 @@
 
 No real project is good the first time. People who write books, build bridges, and make apps all show their work early. They ask, "What is not working?" Then they make it better.
 
-Today you get feedback from your classmates and from AI. You make your project better. Then you show it.
+Today you look at each other's projects and leave feedback. Then you choose what to change.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
 
-- [🔥]{.icon} **Warm Up** Kind, specific, helpful [4 min]{.time}
-- [👥]{.icon} **Learn Together** How to give feedback [6 min]{.time}
-- [🛠️]{.icon} **Try It** Gallery walk, then make it better [18 min]{.time}
-- [💬]{.icon} **Talk About It** Share your project [12 min]{.time}
+- [🔥]{.icon} **Warm Up** Kind, specific, helpful [5 min]{.time}
+- [👥]{.icon} **Learn Together** How to give feedback [7 min]{.time}
+- [🛠️]{.icon} **Try It** Gallery walk [20 min]{.time}
+- [💬]{.icon} **Talk About It** What will you change? [8 min]{.time}
 :::
 
 :::{.objectives}
 - [ ] I can give feedback that is kind, specific, and helpful.
-- [ ] I can use feedback to make my project better.
-- [ ] I can compare feedback from people and feedback from AI.
-- [ ] I can explain my project in one minute.
+- [ ] I can choose the feedback that will make my project better.
+- [ ] I can explain what AI did and what a person did in my project.
 :::
 
 ::::{.vocab}
 :::{.word-cards}
 - [🗣️]{.icon} {{< glink feedback >}}: comments that tell you what is good and what to make better
-- [🔁]{.icon} {{< glink revise >}}: to change your work to make it better
 - [🖼️]{.icon} {{< glink "gallery walk" >}}: walking around the room to look at everyone's work and leave notes
-- [👥]{.icon} {{< glink audience >}}: the people who will read, see, or use your work
+- [🔁]{.icon} {{< glink revise >}}: to change your work to make it better
 :::
 ::::
 
@@ -62,65 +60,47 @@ Use these starters on your notes:
 - **What if** you ... ?
 :::
 
-***
-
-### 3.9.2 - People and AI Give Different Feedback
-
-| Feedback from AI | Feedback from people |
-|---|---|
-| fast, any time | takes more time |
-| does not know you, your family, or our school | knows you and the people who will use it |
-| may say "Great job!" too easily | can tell you if it is really useful |
-| good at spelling and grammar | good at "Would I really use this?" |
-
-The best projects use both.
-
 {{< tryit >}}
 
-### 3.9.3 - Gallery Walk
+### 3.9.2 - Gallery Walk
 
 :::{.steps}
 1. Put your product, plan, and prompt log on your desk.
 2. Walk to another project. Read it. Leave a sticky note: **I like**, **I wonder**, or **What if**.
 3. Visit **3 projects**. Every project should get at least 3 notes.
-4. Go back to your project. Read your notes.
+4. Go back to your project. Read your notes with your partner.
+5. Choose the **2 most useful** notes. Write them on your sheet. These are the changes you will make.
 :::
 
 :::{.gotcha title="Class size"}
 **Small class (4 or 5):** sit in a circle. Pass your project to the right. Write a note. Keep passing until everyone has read every project. **Big class:** 3 rounds of 4 minutes. Mr. Ross says when to move.
 :::
 
-### 3.9.4 - Make It Better
-
-Work with your project partner.
-
-:::{.steps}
-1. Ask your class AI tool for feedback too. Use the feedback prompt from Lesson 3.3.
-2. On your sheet, compare: what did people say? What did AI say?
-3. Choose the **2 most useful** pieces of feedback. Change your project.
-4. Write what you changed in your prompt log.
-:::
-
 {{< talk >}}
 
-### 3.9.5 - Share Your Project
-
-Each pair shares for **one minute**. Use your sheet to plan.
+Which note was the most useful? In your project, what did AI do well, and what did a person have to do?
 
 :::{.frames}
-- Our problem was ...
-- We made ...
+- The most useful note said ... , because ...
+- We will {{< glink revise >}} our project by ...
 - AI helped us by ...
-- We checked ... and we found ...
-- We did ... ourselves.
-- After feedback, we changed ...
-:::
-
-:::{.gotcha title="Class size"}
-**Small class:** everyone shares to the whole class. **Big class:** share in groups of 3 pairs at the same time. Each group picks one project to share with the whole class.
+- A person had to ... , because AI could not ...
 :::
 
 {{< further >}}
+
+:::{.project title="Day 2: Make It Better and Share"}
+1. Ask your class AI tool for feedback too. Use the feedback prompt from Lesson 3.3. Compare: what did people say? What did AI say?
+2. Make your 2 changes. Write what you changed in your prompt log.
+3. Plan your **one-minute share** on your sheet:
+   - Our problem was ...
+   - We made ...
+   - AI helped us by ...
+   - We checked ... and we found ...
+   - We did ... ourselves.
+   - After feedback, we changed ...
+4. Share. **Small class:** everyone shares to the whole class. **Big class:** share in groups of 3 pairs at the same time. Each group picks one project to share with the whole class.
+:::
 
 :::{.project title="A Real Audience"}
 Share your product with the people it is for: your family, another class, a coach, or the ELL teachers. Ask them: "Is this useful?" What did they say?
@@ -128,4 +108,8 @@ Share your product with the people it is for: your family, another class, a coac
 
 :::{.project title="How We Used AI"}
 Make a class poster: one box for each project. In each box: the problem, one great prompt, and one mistake the AI made that you caught.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [how feedback from people and from AI are different](/chapters/Explore/explore-unit-3.qmd#explore-3-9). For students who want to learn more on their own.
 :::
