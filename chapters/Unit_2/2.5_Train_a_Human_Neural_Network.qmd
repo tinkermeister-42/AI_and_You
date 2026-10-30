@@ -1,0 +1,199 @@
+# 2.5 - Train a Human Neural Network {.unnumbered}
+
+In Lesson 2.4, **you** chose the weights. Real AI does not work that way.
+
+A real neural network starts with bad weights. It looks at an example and makes a guess. If the guess is wrong, it **fixes its weights a little**. Then it looks at the next example. After many examples, the weights are good. Nobody chose them. The network learned them.
+
+Today, the class is a neuron that learns. You will start it with the **wrong idea** on purpose, and watch it fix itself.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** Fighter or psychic? [5 min]{.time}
+- [👥]{.icon} **Learn Together** The fix rule [8 min]{.time}
+- [🛠️]{.icon} **Try It** Train the class neuron [20 min]{.time}
+- [💬]{.icon} **Talk About It** Was it wrong? [7 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can calculate what the class neuron says for a card.
+- [ ] I can use the fix rule to change the weights after a mistake.
+- [ ] I can explain how a neuron learns from its mistakes.
+- [ ] I can explain why a neuron trained on a few examples still makes mistakes.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🏋️]{.icon} {{< glink training >}}: showing an AI many examples so it can fix its weights
+- [🧪]{.icon} {{< glink "test data" >}}: new examples the AI never trained on, used to check what it learned
+- [➕]{.icon} {{< glink slug="bias-number" text="bias" >}}: in a neuron, an extra number that is always added to the total
+- [⚖️]{.icon} {{< glink weight >}}: a number that says how much an input matters
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_2/2.5_Train_a_Human_Neural_Network.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+:::{.guided-notes-link}
+[Pokémon cards](/handouts/Unit_2/2.5_Pokemon_Cards.pdf){target="_blank"} - print one set for each team.
+:::
+
+{{< warmup >}}
+
+**Pokémon** are creatures from a video game. Every Pokémon has a **type**.
+
+- **Fighting** Pokémon punch and kick. They have high **Attack**.
+- **Psychic** Pokémon use the power of their minds. They have high **Special Attack**.
+
+Look at these two cards. What type is each one? Tell a partner why.
+
+| | Attack | Special Attack |
+|---|:---:|:---:|
+| **Hitmonchan** | ★★★★☆ (4) | ★☆☆☆☆ (1) |
+| **Gardevoir** | ★★☆☆☆ (2) | ★★★★☆ (4) |
+
+:::{.think title="Answers"}
+Hitmonchan is **Fighting**: lots of Attack. Gardevoir is **Psychic**: lots of Special Attack.
+
+You used a rule in your head: *compare the two numbers.* Can a neuron learn that rule from examples, without being told?
+:::
+
+{{< learn >}}
+
+### 2.5.1 - The Class Neuron
+
+The neuron has two inputs and three numbers it can change:
+
+| Inputs (from the card) | The neuron's numbers |
+|---|---|
+| **A** = Attack stars (1 to 5) | **Attack weight** |
+| **S** = Special Attack stars (1 to 5) | **Special weight** |
+| | **{{< glink slug="bias-number" text="bias" >}}** (always added) |
+
+$$\text{total} = (A \times \text{Attack weight}) + (S \times \text{Special weight}) + \text{bias}$$
+
+- If the total is **more than 0**, the neuron says **FIGHTING**.
+- If the total is **0 or less**, the neuron says **PSYCHIC**.
+
+(The bias does the same job as the threshold in Lesson 2.4.)
+
+We start the neuron **backwards**:
+
+:::{.remember title="Starting weights"}
+Attack weight $= -1$ $\qquad$ Special weight $= +1$ $\qquad$ Bias $= 0$
+
+This neuron thinks that strong punchers are psychic! It is wrong on purpose. Watch it learn.
+:::
+
+***
+
+### 2.5.2 - The Fix Rule
+
+After each card, check the answer. Then follow the fix rule.
+
+| What happened | What to do |
+|---|---|
+| ✅ The neuron was **right** | Change nothing. |
+| ❌ It said **PSYCHIC**, but the card is **FIGHTING** | **ADD**: Attack weight + A, Special weight + S, bias + 1 |
+| ❌ It said **FIGHTING**, but the card is **PSYCHIC** | **SUBTRACT**: Attack weight − A, Special weight − S, bias − 1 |
+
+:::{.real-world title="Example: card T1, Machop"}
+Machop has **A = 3** and **S = 1**.
+
+1. Total $= (3 \times -1) + (1 \times 1) + 0 = -3 + 1 + 0 = -2$
+2. $-2$ is not more than 0, so the neuron says **PSYCHIC**.
+3. Flip the card: Machop is **FIGHTING**. Wrong!
+4. It said PSYCHIC but the card is FIGHTING, so **ADD**:
+   - Attack weight: $-1 + 3 = 2$
+   - Special weight: $1 + 1 = 2$
+   - Bias: $0 + 1 = 1$
+:::
+
+{{< tryit >}}
+
+### 2.5.3 - Train the Class Neuron
+
+Each person has a job.
+
+| | Job | What you do |
+|---|---|---|
+| 🃏 | **Card dealer** | Read the card's name and stars out loud. Keep the type hidden. |
+| ⚖️ | **Weight keepers** | Each one holds one number (Attack weight, Special weight, or bias) on a whiteboard or paper. Change it after a mistake. |
+| 🧠 | **The neuron** | Calculate the total out loud. Say FIGHTING or PSYCHIC. |
+| ✅ | **Checker** | Flip the card. Say "right" or "wrong." If wrong, say ADD or SUBTRACT. |
+| 📊 | **Scorekeeper** | Count the mistakes in each pass. Write them on the board. |
+
+:::{.gotcha title="Class size"}
+**4 students:** the dealer is also the checker, and one weight keeper holds all 3 numbers. **10 or more:** make **two teams** with two sets of cards. Both teams start with the same weights. Which team finishes first? Do they end with the same weights?
+:::
+
+:::{.steps}
+1. Write the starting weights on the board: $-1$, $+1$, $0$.
+2. Go through the training cards **in order**: T1, T2, ... T10. For each card: neuron, checker, fix rule.
+3. Everyone writes each step on the sheet.
+4. After T10, the scorekeeper writes the number of mistakes. That was **pass 1**.
+5. Do **pass 2** with the same cards. Keep going until a whole pass has **0 mistakes**.
+6. Now use the **test cards**, X1 to X6. **Do not fix the weights on a test!** Just record what the neuron says.
+:::
+
+### 2.5.4 - Check Our Math
+
+This is the same neuron, the same cards, and the same fix rule. Use it to check your class's work, one card at a time.
+
+The picture shows every training card. The black line is the neuron's line: the cards on one side are called FIGHTING, and the cards on the other side are called PSYCHIC. Watch the line move when the neuron makes a mistake.
+
+{{< include /assets/Unit_2/neuron_trainer.html >}}
+
+:::{.think title="What happened on the test cards?"}
+The neuron got **Primeape**, **Mewtwo**, and **Hypno** right.
+
+Then look at the last three:
+
+- **Gallade** is Psychic **and** Fighting. The neuron said Fighting.
+- **Lucario** is a Fighting type with very high Special Attack. The neuron said Psychic.
+- **Medicham** is Fighting **and** Psychic. The neuron said Psychic.
+
+The neuron only knows two numbers. It never saw a Pokémon with two types. It did its best with what it learned.
+:::
+
+:::{.think title="The neuron's whole rule is one line. Can you find it?"}
+At the end, the weights are **3**, **−4**, and **0**. So the total is $3A - 4S$. The neuron says FIGHTING when $3A - 4S > 0$, which means $3A > 4S$.
+
+That is a line on the graph! The neuron learned: *if Attack is a lot bigger than Special Attack, it is a fighter.* Nobody told it that rule.
+:::
+
+{{< talk >}}
+
+The neuron said Gallade is a Fighting type. Gallade is Psychic **and** Fighting. Was the neuron wrong, or was the question wrong?
+
+:::{.frames}
+- The neuron **was** / **was not** wrong about Gallade, because ...
+- The neuron learned the rule ... without anyone telling it.
+- To do better, the neuron needs to know ...
+- A real AI that makes decisions about **people** with only two numbers would be a problem because ...
+:::
+
+{{< watch >}}
+
+:::{.watch title="How Neural Networks Work (Code.org)"}
+{{< video https://www.youtube.com/watch?v=JrXazCEACVo title="How Neural Networks Work (Code.org)" >}}
+
+**While you watch:** What happens to the weights when the network makes a mistake?
+
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+:::
+
+{{< further >}}
+
+:::{.project title="The Team Race"}
+Two teams train the neuron at the same time with the same cards. Team 1 starts with the backwards weights. Team 2 starts with all weights at 0. Who needs fewer mistakes? Do they end with the same weights? Do both get the test cards right?
+:::
+
+:::{.project title="Shuffle the Cards"}
+Train again, but shuffle the training cards first. Do you end with the same weights? (Use **Check Our Math** to test your answer.)
+:::
+
+:::{.project title="Make Your Own Deck"}
+Pick two groups that two numbers can tell apart. For example: basketball players and soccer players (height and weight), or fruits and vegetables (sweet and crunchy, from 1 to 5). Make 10 cards. Train the class neuron on your deck.
+:::

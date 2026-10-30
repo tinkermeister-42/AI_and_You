@@ -1,0 +1,135 @@
+```{=html}
+<!-- xo_neuron.html: Lesson 2.4. One artificial neuron looks at a 3x3 picture.
+     Each square has a weight. Score = add the weights of the black squares.
+     Score above the threshold means X, otherwise O. Students set the weights. -->
+<div class="xo" id="xo">
+  <div class="xo-top">
+    <div class="xo-col">
+      <div class="xo-h">1. Draw a picture</div>
+      <div class="xo-draw" aria-label="Picture to test. Click squares."></div>
+      <div class="xo-mini">
+        <button type="button" data-pic="X">X</button>
+        <button type="button" data-pic="O">O</button>
+        <button type="button" data-pic="clear">clear</button>
+      </div>
+    </div>
+    <div class="xo-col">
+      <div class="xo-h">2. The weights</div>
+      <div class="xo-weights" aria-label="Weights. Use plus and minus."></div>
+      <label class="xo-th">Threshold <button type="button" class="xo-tm">−</button> <b class="xo-tv">0</b> <button type="button" class="xo-tp">+</button></label>
+    </div>
+    <div class="xo-col xo-outcol">
+      <div class="xo-h">3. The neuron decides</div>
+      <div class="xo-sum"></div>
+      <div class="xo-out"></div>
+    </div>
+  </div>
+  <div class="xo-test">
+    <div class="xo-h">4. Test your weights on 6 pictures</div>
+    <div class="xo-cases"></div>
+    <div class="xo-bar">
+      <button type="button" class="xo-btn xo-plain xo-zero">↺ All weights 0</button>
+      <button type="button" class="xo-btn xo-plain xo-show">💡 Show one good answer</button>
+    </div>
+  </div>
+</div>
+
+<style>
+.xo { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.xo-top { display: flex; flex-wrap: wrap; gap: 1.2rem; align-items: flex-start; }
+.xo-col { display: flex; flex-direction: column; gap: 0.4rem; }
+.xo-outcol { flex: 1 1 180px; }
+.xo-h { font-weight: bold; }
+.xo-draw, .xo-weights { display: grid; grid-template-columns: repeat(3, 58px); grid-template-rows: repeat(3, 58px); gap: 4px; }
+.xo-draw button { border: 2px solid #2c3e50; background: #fff; border-radius: 4px; cursor: pointer; }
+.xo-draw button.on { background: #2c3e50; }
+.xo-w { border: 2px solid #d35400; border-radius: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: bold; font-size: 1.15rem; }
+.xo-w .pm { display: flex; gap: 2px; }
+.xo-w button { border: 1px solid #b8c4cf; background: #fff; border-radius: 3px; width: 22px; height: 20px; line-height: 1; padding: 0; cursor: pointer; font-size: 0.9rem; }
+.xo-mini { display: flex; gap: 0.3rem; }
+.xo-mini button, .xo-th button { border: 1px solid #b8c4cf; background: #fff; border-radius: 5px; padding: 0.05rem 0.5rem; cursor: pointer; }
+.xo-th { font-weight: 600; }
+.xo-sum { font-size: 1.05rem; line-height: 1.5; }
+.xo-out { font-size: 2rem; font-weight: bold; color: #1e8449; }
+.xo-test { margin-top: 0.9rem; border-top: 1px solid #e3e8ed; padding-top: 0.6rem; }
+.xo-cases { display: flex; flex-wrap: wrap; gap: 0.8rem; margin: 0.4rem 0; }
+.xo-case { text-align: center; font-size: 0.9rem; }
+.xo-case .g { display: grid; grid-template-columns: repeat(3, 14px); grid-template-rows: repeat(3, 14px); gap: 2px; margin: 0 auto 0.2rem; }
+.xo-case .g span { border: 1px solid #2c3e50; }
+.xo-case .g span.on { background: #2c3e50; }
+.xo-case .r { font-weight: bold; }
+.xo-case .r.ok { color: #1e8449; }
+.xo-case .r.no { color: #c0392b; }
+.xo-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.3rem; }
+.xo-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.3rem 0.8rem; font-weight: 600; cursor: pointer; }
+.xo-btn.xo-plain { background: #fff; color: #2c3e50; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("xo");
+  if (!root) return;
+  const X = [1,0,1, 0,1,0, 1,0,1], O = [1,1,1, 1,0,1, 1,1,1];
+  const CASES = [
+    { name: "X", pic: X, want: "X" },
+    { name: "O", pic: O, want: "O" },
+    { name: "messy X", pic: [1,0,0, 0,1,0, 1,0,1], want: "X" },
+    { name: "messy O", pic: [1,1,0, 1,0,1, 1,1,1], want: "O" },
+    { name: "plus (+)", pic: [0,1,0, 1,1,1, 0,1,0], want: "O" },
+    { name: "small o", pic: [0,1,0, 1,0,1, 0,1,0], want: "O" },
+  ];
+  const GOOD = [0,-1,0, -1,3,-1, 0,-1,0];
+  let pic = X.slice(), w = new Array(9).fill(0), th = 0;
+
+  const drawEl = root.querySelector(".xo-draw"), wEl = root.querySelector(".xo-weights");
+  for (let i = 0; i < 9; i++) {
+    const b = document.createElement("button"); b.type = "button"; b.setAttribute("aria-label", "square " + (i + 1));
+    b.addEventListener("click", () => { pic[i] ^= 1; draw(); });
+    drawEl.appendChild(b);
+    const c = document.createElement("div"); c.className = "xo-w";
+    c.innerHTML = `<span class="v">0</span><span class="pm"><button type="button" aria-label="minus">−</button><button type="button" aria-label="plus">+</button></span>`;
+    const [m, p] = c.querySelectorAll("button");
+    m.addEventListener("click", () => { w[i] = Math.max(-5, w[i] - 1); draw(); });
+    p.addEventListener("click", () => { w[i] = Math.min(5, w[i] + 1); draw(); });
+    wEl.appendChild(c);
+  }
+  const score = (P) => P.reduce((s, v, i) => s + v * w[i], 0);
+  const decide = (P) => (score(P) > th ? "X" : "O");
+
+  function draw() {
+    drawEl.querySelectorAll("button").forEach((b, i) => b.classList.toggle("on", !!pic[i]));
+    wEl.querySelectorAll(".xo-w").forEach((c, i) => {
+      c.querySelector(".v").textContent = (w[i] > 0 ? "+" : "") + w[i];
+      const a = Math.min(1, Math.abs(w[i]) / 5);
+      c.style.background = w[i] > 0 ? `rgba(30,132,73,${a * 0.45})` : w[i] < 0 ? `rgba(192,57,43,${a * 0.45})` : "#fff";
+    });
+    root.querySelector(".xo-tv").textContent = th;
+    const parts = pic.map((v, i) => (v ? (w[i] < 0 ? `(${w[i]})` : `${w[i]}`) : null)).filter((x) => x !== null);
+    root.querySelector(".xo-sum").innerHTML =
+      `Add the weights of the <b>black</b> squares:<br>${parts.length ? parts.join(" + ") : "0"} = <b>${score(pic)}</b><br>` +
+      `Is ${score(pic)} more than ${th}? <b>${score(pic) > th ? "Yes" : "No"}</b>`;
+    root.querySelector(".xo-out").textContent = "It's an " + decide(pic) + "!";
+    const cases = root.querySelector(".xo-cases");
+    cases.innerHTML = "";
+    let right = 0;
+    CASES.forEach((k) => {
+      const got = decide(k.pic), ok = got === k.want; if (ok) right++;
+      const d = document.createElement("div"); d.className = "xo-case";
+      d.innerHTML = `<div class="g">${k.pic.map((v) => `<span class="${v ? "on" : ""}"></span>`).join("")}</div>${k.name}<br>should be <b>${k.want}</b><br><span class="r ${ok ? "ok" : "no"}">says ${got} ${ok ? "✔" : "✖"}</span>`;
+      cases.appendChild(d);
+    });
+    const t = document.createElement("div"); t.className = "xo-case";
+    t.innerHTML = `<div style="font-size:1.6rem;font-weight:bold;margin-top:0.6rem">${right} / 6</div>right`;
+    cases.appendChild(t);
+  }
+  root.querySelectorAll("[data-pic]").forEach((b) => b.addEventListener("click", () => {
+    pic = b.dataset.pic === "X" ? X.slice() : b.dataset.pic === "O" ? O.slice() : new Array(9).fill(0); draw();
+  }));
+  root.querySelector(".xo-tm").addEventListener("click", () => { th = Math.max(-9, th - 1); draw(); });
+  root.querySelector(".xo-tp").addEventListener("click", () => { th = Math.min(9, th + 1); draw(); });
+  root.querySelector(".xo-zero").addEventListener("click", () => { w = new Array(9).fill(0); th = 0; draw(); });
+  root.querySelector(".xo-show").addEventListener("click", () => { w = GOOD.slice(); th = 0; draw(); });
+  draw();
+})();
+</script>
+```

@@ -1,0 +1,18 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[
+  st/.style={plainbox, minimum width=3.0cm, minimum height=1.45cm, text width=2.8cm, font=\small},
+  num/.style={circle, fill=machine, text=white, font=\bfseries\small, inner sep=1.5pt, minimum size=0.55cm},
+]
+% How to build an AI, in the order Mr. Ross does it on the projector.
+\foreach \i/\x/\y/\t in {1/0/0/{\textbf{Get data}\\the Pokédex: 1,281 Pokémon}, 2/3.6/0/{\textbf{Ask a question}\\What type is it?}, 3/7.2/0/{\textbf{Split the data}\\80\% train, 20\% test},
+                        4/0/-2.3/{\textbf{Build the network}\\how many neurons?}, 5/3.6/-2.3/{\textbf{Train}\\many passes, fix the weights}, 6/7.2/-2.3/{\textbf{Test, then use it}\\on Pokémon it never saw}} {
+  \node[st] (s\i) at (\x,\y) {\t};
+  \node[num] at ($(s\i.north west)+(0.12,-0.12)$) {\i};
+}
+\draw[flow] (s1) -- (s2); \draw[flow] (s2) -- (s3);
+\draw[flow, rounded corners=6pt] (s3.south) -- ($(s3.south)+(0,-0.42)$) -| (s4.north);
+\draw[flow] (s4) -- (s5); \draw[flow] (s5) -- (s6);
+\end{tikzpicture}
+\end{document}

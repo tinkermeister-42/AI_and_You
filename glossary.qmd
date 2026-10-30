@@ -32,6 +32,38 @@ In a transformer, the way the AI looks at all the other words to decide which on
 
 ***
 
+### axon {#glossary-axon}
+
+The long part of a neuron that carries the signal away from the cell body, toward other neurons.
+
+**See Also:** {{< glink neuron >}}, {{< glink synapse >}}
+
+***
+
+### bias (a number in a neuron) {#glossary-bias-number}
+
+In a neuron, an extra number that is always added to the total. It does the same job as a threshold. (The word "bias" has another meaning too: being unfair. See Unit 4.)
+
+> **Example:**
+>
+> total = (A × Attack weight) + (S × Special weight) + bias
+
+**See Also:** {{< glink weight >}}, {{< glink threshold >}}
+
+***
+
+### cellular automaton {#glossary-cellular-automaton}
+
+A row or grid of cells. Each cell is a color, like black or white. At each step, every cell changes by following the same rule, which looks only at its neighbors. More than one is called cellular automata.
+
+> **Example:**
+>
+> Rule 30 and the Game of Life are cellular automata.
+
+**See Also:** {{< glink emergence >}}, {{< glink rule >}}
+
+***
+
 ### chatbot {#glossary-chatbot}
 
 An AI program that you talk to with words. You type or say something, and it answers.
@@ -49,6 +81,14 @@ An AI program that you talk to with words. You type or say something, and it ans
 A list of steps that a computer follows. Apps and games are computer programs.
 
 **See Also:** {{< glink rule >}}
+
+***
+
+### conditioning {#glossary-conditioning}
+
+Learning to connect two things that happen together. Ivan Pavlov's dogs learned to connect a sound with food, so they drooled when they heard the sound.
+
+**See Also:** {{< glink synapse >}}
 
 ***
 
@@ -84,6 +124,14 @@ A chess computer made by IBM. In 1997, it beat the world chess champion, Garry K
 
 ***
 
+### dendrite {#glossary-dendrite}
+
+One of the short branches of a neuron. Dendrites take in signals from other neurons.
+
+**See Also:** {{< glink neuron >}}
+
+***
+
 ### ELIZA effect {#glossary-eliza-effect}
 
 When people feel that a computer understands them, but it does not. It is named after ELIZA, a chatbot from 1966.
@@ -93,6 +141,18 @@ When people feel that a computer understands them, but it does not. It is named 
 > ELIZA only followed rules, but some people told it their secrets.
 
 **See Also:** {{< glink chatbot >}}
+
+***
+
+### emergence {#glossary-emergence}
+
+When many simple parts work together and make something bigger and more complicated, which no one planned.
+
+> **Example:**
+>
+> A stadium wave: each person only watches a neighbor, but together they make a wave that moves around the stadium.
+
+**See Also:** {{< glink "cellular automaton" >}}
 
 ***
 
@@ -113,6 +173,14 @@ Big promises and excitement, more than the facts show.
 > In 1970, a scientist said that a machine as smart as a person was 3 to 8 years away. That was hype.
 
 **See Also:** {{< glink "AI winter" >}}
+
+***
+
+### input {#glossary-input}
+
+A number that goes into a neuron or a program. In a picture, each square can be an input: 1 for black, 0 for white.
+
+**See Also:** {{< glink weight >}}, {{< glink neuron >}}
 
 ***
 
@@ -156,6 +224,14 @@ A transformer trained on a huge amount of text to predict the next word. Chatbot
 
 ***
 
+### learning curve {#glossary-learning-curve}
+
+A graph that shows how you get better with practice. The time or the number of mistakes usually drops fast at first, then more slowly.
+
+**See Also:** {{< glink synapse >}}
+
+***
+
 ### machine learning {#glossary-machine-learning}
 
 A way to make AI. People do not write the rules. They give the computer many examples, and the computer finds the patterns by itself.
@@ -172,6 +248,26 @@ A kind of AI made of many small parts that work a little like brain cells. Each 
 
 ***
 
+### neuron {#glossary-neuron}
+
+A cell that sends signals. Your brain has about 86 billion neurons. A neuron fires (sends a signal) only when the signals coming in add up to enough.
+
+**See Also:** {{< glink dendrite >}}, {{< glink axon >}}, {{< glink synapse >}}, {{< glink "neural network" >}}
+
+***
+
+### overfitting {#glossary-overfitting}
+
+When an AI memorizes its training examples instead of learning the real pattern. It does very well on the training data but worse on new data.
+
+> **Example:**
+>
+> A student who memorizes the answers to one practice test, but cannot solve new problems.
+
+**See Also:** {{< glink training >}}, {{< glink "test data" >}}
+
+***
+
 ### pattern {#glossary-pattern}
 
 Something that is the same, or repeats, in many examples.
@@ -179,6 +275,14 @@ Something that is the same, or repeats, in many examples.
 > **Example:**
 >
 > In most drawings of a cat, the ears are two triangles on top of the head. That is a pattern.
+
+***
+
+### perceptron {#glossary-perceptron}
+
+The first artificial neuron that could learn. Frank Rosenblatt built it in 1958. It multiplies inputs by weights, adds them, and fires if the total passes a threshold.
+
+**See Also:** {{< glink weight >}}, {{< glink threshold >}}, {{< glink "neural network" >}}
 
 ***
 
@@ -204,6 +308,16 @@ A best guess about something you do not know yet. A prediction can be wrong.
 
 ***
 
+### random {#glossary-random}
+
+With no pattern, so you cannot guess what comes next.
+
+> **Example:**
+>
+> The middle of Rule 30 looks random.
+
+***
+
 ### rule {#glossary-rule}
 
 An exact instruction that a computer follows: "If this happens, do that." In a normal computer program, a person writes the rules.
@@ -213,6 +327,46 @@ An exact instruction that a computer follows: "If this happens, do that." In a n
 > An alarm clock follows one rule: "If the time is 7:00, ring."
 
 **See Also:** {{< glink "computer program" >}}, {{< glink "machine learning" >}}
+
+***
+
+### synapse {#glossary-synapse}
+
+The tiny gap between two neurons. Chemicals carry the signal across it. When you practice, the synapses you use get stronger.
+
+**See Also:** {{< glink neuron >}}
+
+***
+
+### test data {#glossary-test-data}
+
+New examples that an AI never saw during training. We use them to check what the AI really learned.
+
+> **Example:**
+>
+> After training on cards T1 to T10, the class neuron was tested on cards X1 to X6, with no fixing.
+
+**See Also:** {{< glink training >}}
+
+***
+
+### threshold {#glossary-threshold}
+
+The number that the total must pass for a neuron to fire.
+
+> **Example:**
+>
+> If the threshold is 4 and the total is 5, the neuron fires.
+
+**See Also:** {{< glink weight >}}
+
+***
+
+### training {#glossary-training}
+
+Showing an AI many examples so it can fix its weights. After each mistake, the weights change a little.
+
+**See Also:** {{< glink weight >}}, {{< glink "test data" >}}
 
 ***
 
@@ -241,3 +395,11 @@ To know what something means, not only what it looks like. Whether AI can unders
 > In the Klingon Room, the person copies correct replies in Klingon, but they do not understand Klingon.
 
 **See Also:** {{< glink "ELIZA effect" >}}
+
+***
+
+### weight {#glossary-weight}
+
+A number that says how much an input matters to a neuron. A big weight means the input matters a lot. A negative weight means the input makes the neuron less likely to fire. When a neural network learns, it changes its weights.
+
+**See Also:** {{< glink input >}}, {{< glink threshold >}}, {{< glink "neural network" >}}

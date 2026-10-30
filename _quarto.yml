@@ -64,6 +64,12 @@ book:
     - part: "Unit 2: Brains and Neural Networks"
       chapters:
         - file: chapters/Unit_2/index.qmd
+        - file: chapters/Unit_2/2.1_Simple_Rules_Complex_Behavior.qmd
+        - file: chapters/Unit_2/2.2_Your_Brain_Is_Made_of_Cells.qmd
+        - file: chapters/Unit_2/2.3_How_Brains_Learn.qmd
+        - file: chapters/Unit_2/2.4_The_Artificial_Neuron.qmd
+        - file: chapters/Unit_2/2.5_Train_a_Human_Neural_Network.qmd
+        - file: chapters/Unit_2/2.6_Watch_Mr_Ross_Build_an_AI.qmd
 
     - part: "Unit 3: Using AI Well"
       chapters:

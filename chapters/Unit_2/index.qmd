@@ -17,3 +17,25 @@ By the end of this unit, you will be able to:
 * Explain how an artificial neuron copies that idea
 * Train a neural network and watch it learn
 * Explain how AI sees pictures and how a chatbot picks its next word
+
+***
+
+## Topics in This Unit
+
+[**Simple Rules, Complex Behavior**](2.1_Simple_Rules_Complex_Behavior.qmd)\
+Make a human wave and a human Rule 30. See how tiny rules make chaos, and meet the Game of Life.
+
+[**Your Brain Is Made of Cells**](2.2_Your_Brain_Is_Made_of_Cells.qmd)\
+Catch a falling ruler, pass a squeeze around the room, and learn how a neuron sends a signal.
+
+[**How Brains Learn**](2.3_How_Brains_Learn.qmd)\
+Write with your other hand, meet Pavlov's dogs, and graph your own learning with mirror drawing.
+
+[**The Artificial Neuron**](2.4_The_Artificial_Neuron.qmd)\
+Multiply, add, compare. Be a neuron, then set the weights of a neuron that tells an X from an O.
+
+[**Train a Human Neural Network**](2.5_Train_a_Human_Neural_Network.qmd)\
+The class becomes a neuron that starts with the wrong idea, then fixes its weights after every mistake.
+
+[**Watch Mr. Ross Build an AI**](2.6_Watch_Mr_Ross_Build_an_AI.qmd)\
+Six steps to build an AI. Predict, then watch a real neural network learn from 1,281 Pokémon.

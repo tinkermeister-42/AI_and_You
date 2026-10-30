@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\lessontitle{How Brains Learn}
+\partner
+
+\vspace{0.4em}
+{\large\textbf{1. Your other hand.}} Write your name with your other hand. Your partner times you.
+
+\vspace{0.3em}
+\begin{tabular}{|R{1.3in}|c|c|c|}
+\hline
+ & \textbf{Try 1} & \textbf{Try 2} & \textbf{Try 3} \\ \hline
+\textbf{Time (seconds)} & \ans{Answers vary.}\hspace{0.2in} & \hspace{1.1in} & \hspace{1.1in} \\ \hline
+\end{tabular}
+
+\vspace{1.0em}
+{\large\textbf{2. Stronger connections.}}
+
+\vspace{0.4em}
+When you practice, the synapses between your neurons get \ansline{1.3in}{stronger}.
+
+\vspace{0.8em}
+``Neurons that fire together, \ansline{0.9in}{wire} together.''
+
+\vspace{1.0em}
+{\large\textbf{3. Pavlov's dogs.}}
+
+\vspace{0.4em}
+Pavlov's team played a \ansline{1.6in}{sound (a metronome)} right before they gave the dogs \ansline{0.8in}{food}.
+
+\vspace{0.8em}
+Soon the dogs drooled when they heard the sound, even with no \ansline{0.8in}{food}.
+
+\vspace{0.8em}
+Learning to connect two things that happen together is called \ansline{1.4in}{conditioning}.
+
+\vspace{0.8em}
+In AI, the strength of a connection is a number called a \ansline{1.1in}{weight}.
+
+\vspace{1.1em}
+{\large\textbf{4. Mirror drawing.}} Use the same pen for all 5 tries.
+
+\vspace{0.3em}
+\begin{tabular}{|R{1.3in}|c|c|c|c|c|}
+\hline
+ & \textbf{Try 1} & \textbf{Try 2} & \textbf{Try 3} & \textbf{Try 4} & \textbf{Try 5} \\ \hline
+\textbf{Time (seconds)} & \ans{Answers vary.} & \hspace{0.75in} & \hspace{0.75in} & \hspace{0.75in} & \hspace{0.75in} \\ \hline
+\textbf{Mistakes} & & & & & \\ \hline
+\end{tabular}
+
+\newpage
+
+{\large\textbf{5. My learning curve.}} Put a dot for each try. Connect the dots.
+
+\vspace{0.4em}
+\begin{center}
+\begin{tikzpicture}[x=2.4cm, y=0.068cm]
+  \draw[black!25, line width=0.4pt] (1,0) grid[xstep=1, ystep=10] (5,120);
+  \draw[black, line width=1pt, ->] (0.7,0) -- (5.35,0) node[right, font=\small] {Try};
+  \draw[black, line width=1pt, ->] (0.7,0) -- (0.7,125) node[above, font=\small] {Time (seconds)};
+  \foreach \x in {1,...,5} \node[below, font=\small] at (\x,0) {\x};
+  \foreach \y in {0,20,...,120} \node[left, font=\small] at (0.7,\y) {\y};
+  \ifkey
+    \draw[keyred, line width=1.4pt] (1,95) -- (2,62) -- (3,48) -- (4,40) -- (5,36);
+    \foreach \x/\y in {1/95, 2/62, 3/48, 4/40, 5/36} \fill[keyred] (\x,\y) circle (2.5pt);
+    \node[keyred, anchor=west, font=\small] at (3.2,90) {an example: answers vary};
+  \fi
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.6em}
+What happened to your time? \ansline{4.7in}{It dropped fast at first, then more slowly.}
+
+\vspace{0.9em}
+With the new mirror (left and right), my time was \ansline{0.8in}{} seconds. Was it hard again? \ansline{0.8in}{yes}
+
+\vspace{1.1em}
+{\large\textbf{6. Talk about it.}} Your brain changes synapses. AI changes weights. Is it the same kind of learning?
+
+\vspace{0.6em}
+Brain learning and AI learning are \textbf{the same} / \textbf{different} because \ansline{2.4in}{Answers vary.}
+
+\vspace{0.9em}
+\blank{6.9in}
+
+\vspace{0.9em}
+A sound that makes me reach for my phone: \ansline{2.2in}{Answers vary.} That is like Pavlov's dogs.
+
+\end{document}
