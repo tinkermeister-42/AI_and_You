@@ -1,0 +1,27 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[
+  lbl/.style={font=\small\bfseries, text=ink, anchor=east},
+  sub/.style={font=\footnotesize, text=ink!85, align=center},
+]
+% Replace a brain one neuron at a time. Pink: a brain cell. Orange: a chip that does the same job.
+\newcommand{\cell}[3]{% x, y, kind (0 = neuron, 1 = chip)
+  \ifnum#3=0 \fill[brainpink!25, draw=brainpink, line width=1pt] (#1,#2) circle (0.28);
+  \else \draw[machine, fill=machine!20, line width=1pt, rounded corners=2pt] (#1-0.27,#2-0.27) rectangle (#1+0.27,#2+0.27);
+    \foreach \d in {-0.14,0,0.14} {\draw[machine, line width=0.7pt] (#1+\d,#2+0.27) -- (#1+\d,#2+0.37); \draw[machine, line width=0.7pt] (#1+\d,#2-0.27) -- (#1+\d,#2-0.37);}
+  \fi}
+\foreach \row/\n/\name in {0/0/Day 1, 1/2/Day 100, 2/5/Day 200, 3/8/Day 300} {
+  \pgfmathsetmacro{\y}{-\row*1.15}
+  \node[lbl] at (-0.6,\y) {\name};
+  \foreach \i in {1,...,8} {
+    \pgfmathtruncatemacro{\k}{\i <= \n ? 1 : 0}
+    \pgfmathsetmacro{\x}{(\i-1)*0.95}
+    \ifnum\i<8 \draw[ink!45, line width=1pt] (\x+0.3,\y) -- (\x+0.65,\y); \fi
+    \cell{\x}{\y}{\k}
+  }
+}
+\node[sub] at (3.3,-4.25) {Every chip does exactly what the cell it replaced did.};
+\node[sub, font=\small\bfseries, text=ink] at (3.3,-4.75) {Is it still you?};
+\end{tikzpicture}
+\end{document}

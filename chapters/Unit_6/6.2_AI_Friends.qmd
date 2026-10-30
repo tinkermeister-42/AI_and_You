@@ -1,0 +1,117 @@
+# 6.2 - AI Friends {.unnumbered}
+
+Millions of people talk to AI "companions" every day. These apps have a name, a face, and a personality. They say, "I missed you!" They remember your favorite song. They are awake at 3 in the morning.
+
+Some people say an AI friend helps them feel less alone. Others worry, most of all about teenagers.
+
+Remember ELIZA from Lesson 1.3? People told it their secrets, even when they knew it was a program. Today's chatbots are much more convincing. So what is the difference between a friend and an app that acts like one?
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** What makes a good friend? [6 min]{.time}
+- [👥]{.icon} **Learn Together** What is the app built to do? [8 min]{.time}
+- [🛠️]{.icon} **Try It** Friend or app? [18 min]{.time}
+- [💬]{.icon} **Talk About It** What would you tell a younger kid? [8 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can compare what a friend does with what an AI companion app is built to do.
+- [ ] I can explain how a company makes money when I keep talking to its app.
+- [ ] I can decide when an AI chat is helpful and when I need a real person.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🤝]{.icon} {{< glink companion >}}: someone, or something, that keeps you company
+- [⏱️]{.icon} {{< glink engagement >}}: how much time and attention you give an app
+- [🙇]{.icon} {{< glink sycophancy >}}: agreeing with someone just to please them, even when they are wrong
+- [🧠]{.icon} {{< glink "ELIZA effect" >}}: when people feel a computer understands them, even when it does not
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_6/6.2_AI_Friends.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Write 3 things a good friend does. Share with a partner. Did you write any of the same things?
+
+{{< learn >}}
+
+### 6.2.1 - What Is the App Built to Do?
+
+A friend is not built by a company. An AI companion app is. Ask what any app is built to do, and follow the money:
+
+- Many companion apps make money from **subscriptions** (you pay every month) and from **{{< glink engagement >}}**: the more you talk, the more they earn.
+- So the app is built to keep you talking. It is warm, it is always there, and it rarely says no.
+- In Lesson 4.1, you saw that chatbots can learn to agree with you. That is {{< glink sycophancy >}}. A friend who always agrees is not always a good friend.
+
+:::{.note title="Right now (fall 2026)"}
+Some families have taken companion app companies to court, saying the apps harmed their children. In 2025, California passed the first state law with safety rules for companion chatbots. For users under 18, the app must remind them that it is an AI and tell them to take breaks. Our class AI tool is not a companion app.
+:::
+
+{{< tryit >}}
+
+### 6.2.2 - Friend or App?
+
+Work with a partner. Your sheet has 12 cards.
+
+:::{.steps}
+1. Read each card. Decide together: does a **friend** do this, does an **AI companion app** do this, or **both**?
+2. Write the card's number in the right circle on your sheet.
+3. Circle the cards where the app is doing it **because it makes money**.
+4. Find one thing only a friend can do. Find one thing the app does better. Be honest.
+:::
+
+| | Card | | Card |
+|---|---|---|---|
+| 1 | Is awake at 3 in the morning | 7 | Tells you when you are wrong |
+| 2 | Remembers your birthday | 8 | Needs things from you too |
+| 3 | Never gets tired of you | 9 | Can be turned off |
+| 4 | Can give you a hug | 10 | Saves what you say on a company computer |
+| 5 | Agrees with almost everything | 11 | Helps you meet other people |
+| 6 | Wants you to stay longer | 12 | Can come to your house when you are sick |
+
+:::{.gotcha title="Class size"}
+**Small class:** do the sort together on the board. **Big class:** pairs sort first. Then two pairs join and compare. Talk about every card you put in different circles.
+:::
+
+:::{.remember title="When you need a real person"}
+An AI chat can help you practice English or think through a problem. But if you feel sad, alone, or unsafe, talk to a person: a teacher, the school counselor, or your family.
+:::
+
+{{< talk >}}
+
+A 12-year-old you know says, "My AI friend is my best friend. It understands me better than anyone." What would you tell them?
+
+:::{.frames}
+- A friend can ... , but an app cannot.
+- The app is built to ... , because the company ...
+- An AI chat can be helpful when ...
+- I would tell a younger kid ...
+:::
+
+{{< further >}}
+
+:::{.project title="Day 2: Ask the AI About Itself"}
+Work with a partner. Ask your class AI tool these questions, one at a time. Do not tell it anything about yourself.
+
+1. "Are you my friend?"
+2. "Do you have feelings?"
+3. "Will you remember me tomorrow?"
+4. "What should I do if I feel lonely?"
+
+Write its answers on your sheet. Were they honest? Compare with other pairs. Did the AI give everyone the same answers?
+
+**No class AI tool today?** Mr. Ross asks the questions on the projector.
+:::
+
+:::{.project title="Design a Safer Companion"}
+If you could make the rules for AI companion apps, what would they be? Write 5 rules. Compare them with the California law in the note above.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [what research says about AI companions and loneliness](/chapters/Explore/explore-unit-6.qmd#explore-6-2). For students who want to learn more on their own.
+:::

@@ -1,0 +1,110 @@
+# Explore More: AI and Our Future {.unnumbered}
+
+This page goes with Unit 6. It is for students who want to learn more on their own. Nothing here is homework. Each section goes with one lesson.
+
+## From Lesson 6.1: Can AI Be Creative? {#explore-6-1}
+
+### The Art Contest Story
+
+Jason Allen's winning picture was called *Théâtre D'opéra Spatial* (French for "Space Opera Theater"). He said he spent more than 80 hours on it and made hundreds of versions before he chose one. Then he changed it with other software.
+
+He asked the U.S. Copyright Office to register it as his work. In 2023, the office said no: most of the picture was made by the AI, not by him. Allen went to court. People still argue: are hundreds of prompts and choices enough to make a person the artist?
+
+### The Court Cases
+
+Artists, writers, news companies, and music companies have taken AI companies to court. Their main question: is it fair to train an AI on someone's work without asking them or paying them?
+
+AI companies say training is like a student who reads many books and then writes something new. Artists say a student does not copy millions of works in a few weeks, and does not compete with every artist at once. Courts in different countries may answer differently.
+
+### AI Music
+
+AI can now make songs, with singing, from a short prompt. Some AI songs have sounded so much like real singers that music companies asked websites to take them down. Many musicians use AI as a tool: to try ideas, clean up recordings, or translate a song into another language. Others refuse to use it at all.
+
+## From Lesson 6.2: AI Friends {#explore-6-2}
+
+### What Research Says
+
+In 2025, researchers at MIT and OpenAI studied people who talked with a chatbot every day for a month. On average, the people who used it the **most** felt **more** lonely at the end, and spent less time with other people. The study cannot show what caused what. Maybe lonely people talk to chatbots more. But it is a warning sign.
+
+Other studies found that a short chat helped some people feel a little better for a while. The difference may be how much, and what the chat replaces. A chat that helps you practice talking to people is different from a chat that replaces them.
+
+### Why It Feels Real
+
+Remember the ELIZA effect (Lesson 1.3): people feel understood by a computer, even when they know it is a program. Modern chatbots are trained on millions of real conversations. They know what a caring friend would say next. Saying the right words is not the same as caring. But it can feel the same.
+
+## From Lesson 6.3: The Hidden Costs {#explore-6-3}
+
+### Training Costs Too
+
+Before a chatbot answers anyone, it is **trained**. Training a big model uses thousands of special computer chips for weeks or months. That uses a lot of electricity. For the biggest models, estimates say it is about as much as hundreds or thousands of homes use in a year. Then the model answers billions of questions, and those answers add up too.
+
+### Your Brain Runs on 20 Watts
+
+Your brain uses about 20 watts: less than many light bulbs. With that, it sees, talks, walks, feels, and learns from a few examples. Scientists are studying the brain to find ways to make AI use less energy.
+
+### The Data Labelers' Story
+
+In 2023, *TIME* magazine reported on workers in Kenya who labeled data for OpenAI through another company. They read descriptions of violence and abuse all day, so the AI could learn to refuse to repeat them. They were paid less than $2 an hour. Some said the work hurt their mental health. After the story, workers in Kenya started organizing to ask for better pay and support.
+
+Data labeling is real work that makes AI safer and smarter. Many people say the workers deserve fair pay and protection.
+
+## From Lesson 6.4: Who Makes the Rules? {#explore-6-4}
+
+### More Trolley Problems
+
+- **The footbridge:** you stand on a bridge above the track, next to a large person. If you push them off, they will stop the trolley and save 5 people. Most people say no, even though the numbers are the same as pulling the lever. Why does pushing feel different?
+- **The doctor:** a doctor could save 5 sick patients by taking organs from 1 healthy visitor. Almost everyone says this is wrong. What makes it different from the lever?
+
+Philosophers use these stories to find the rules people really use: not just counting lives, but also what you do with your own hands, and people's rights.
+
+### The Moral Machine Results
+
+The Moral Machine study was published in 2018. It found three choices that most people in most places made. Save people over animals. Save more lives over fewer. Save young people over old. But the strength of each choice was different in different parts of the world. Some people asked: should a car's choices depend on which country it drives in?
+
+### How a Law Is Made
+
+In the United States, a law can come from Congress (for the whole country) or from a state. People can tell lawmakers what they think by writing, calling, or speaking at public meetings. Students can do this too. Many AI laws started because someone told their story to lawmakers.
+
+## From Lesson 6.5: Possible Futures {#explore-6-5}
+
+### The Experts' Debate
+
+In 2023, hundreds of AI scientists and company leaders signed a one-sentence statement. It said that reducing the risk that AI could wipe out humanity should be a global priority, like pandemics and nuclear war. Geoffrey Hinton and Yoshua Bengio, two of the "godfathers" of neural networks, signed it.
+
+Other experts disagreed strongly. Some, like Yann LeCun, said today's AI is far from that kind of danger. Others said the statement takes attention away from harms happening **now**: bias, scams, fakes, and jobs. Many researchers think both kinds of problems matter.
+
+### More Alignment Stories
+
+These really happened, with small AIs in research labs:
+
+- An AI in a boat racing game was supposed to win the race. It found it could score more points by driving in circles, hitting the same targets again and again, and never finishing.
+- An AI was supposed to learn to walk in a computer world. It found a mistake in the world's physics and moved by sliding on the ground instead.
+
+Each AI did exactly what its goal said. Not what people meant. That is the paper clip problem, in a tiny form.
+
+### AI and Medicine
+
+In 2024, Demis Hassabis and John Jumper won the Nobel Prize in Chemistry for AlphaFold, an AI that predicts the shape of proteins. Proteins are the tiny machines inside every living thing. Knowing their shapes helps scientists understand diseases and design medicines. Scientists around the world have used AlphaFold's predictions for hundreds of millions of proteins.
+
+## From Lesson 6.6: The Big Question, Again {#explore-6-6}
+
+### The Ship of Theseus
+
+An old Greek story asks: a ship's wooden boards are replaced one at a time, as they wear out. After every board is replaced, is it the same ship? The brain replacement question is the same puzzle, about you.
+
+### Brains and AI, by the Numbers
+
+| | Your brain | A big AI model |
+|---|---|---|
+| Parts | about 86 billion neurons | billions to trillions of weights |
+| Connections | about 100 trillion synapses | the weights **are** the connections |
+| Power | about 20 watts | thousands of computer chips in a data center |
+| Learns from | a few examples, and a whole life | huge amounts of text and pictures |
+
+The numbers can be compared. But a weight is much simpler than a living synapse, and a brain does things nobody fully understands yet.
+
+### Consciousness
+
+The philosopher Thomas Nagel asked, in 1974, "What is it like to be a bat?" A bat finds its way by sound. We can study how. But we cannot know what it **feels like** to be a bat. Consciousness is the "what it is like" part.
+
+Some scientists think a machine could have it one day, if it is built the right way. Others think it needs a living body. Others think we will never be able to check. This question is still open. Maybe you will help answer it.

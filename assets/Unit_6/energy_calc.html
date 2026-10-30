@@ -1,0 +1,58 @@
+```{=html}
+<!-- energy_calc.html: Lesson 6.3. Estimate the electricity and water behind
+     chatbot answers. Numbers per prompt are company estimates for text (2025). -->
+<div class="ec" id="ec">
+  <div class="ec-row"><label>People: <input type="number" class="ec-people" min="1" value="18"></label>
+    <label>Questions each, per day: <input type="number" class="ec-each" min="0" value="20"></label>
+    <label>Days: <input type="number" class="ec-days" min="1" value="1"></label></div>
+  <div class="ec-row">
+    <button type="button" class="ec-btn ec-plain" data-p="class">👩‍🏫 Our class, one day</button>
+    <button type="button" class="ec-btn ec-plain" data-p="school">🏫 Our school, one school year</button>
+    <button type="button" class="ec-btn ec-plain" data-p="world">🌍 The world, one day</button>
+  </div>
+  <div class="ec-out" aria-live="polite"></div>
+</div>
+
+<style>
+.ec { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.ec-row { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; margin: 0.4rem 0; }
+.ec-row input { width: 8.5em; font-size: 1rem; padding: 0.15rem 0.3rem; border: 1px solid #b8c4cf; border-radius: 5px; }
+.ec-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.25rem 0.8rem; font-weight: 600; cursor: pointer; }
+.ec-btn.ec-plain { background: #fff; color: #2c3e50; }
+.ec-out { margin-top: 0.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 0.5rem; }
+.ec-card { background: #fff; border: 1px solid #e3e8ed; border-radius: 8px; padding: 0.5rem 0.6rem; }
+.ec-card b { display: block; font-size: 1.25rem; color: #d35400; }
+.ec-card span { font-size: 0.9rem; color: #444; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("ec");
+  if (!root) return;
+  const WH = 0.3, ML = 0.26;            // per text answer: about 0.24 to 0.34 Wh (Google, OpenAI, 2025); 0.26 mL water (Google)
+  const PHONE = 15, BULB = 10, HOME = 30000, DROP = 0.05;  // Wh per phone charge, W of an LED bulb, Wh per US home per day, mL per drop
+  const P = { class: [18, 20, 1], school: [150, 20, 170], world: [2500000000, 1, 1] };
+  const q = (s) => root.querySelector(s);
+  const fmt = (x) => x >= 1e6 ? Math.round(x).toLocaleString() : x >= 100 ? Math.round(x).toLocaleString() : (Math.round(x * 10) / 10).toLocaleString();
+  function calc() {
+    const n = Math.max(0, +q(".ec-people").value) * Math.max(0, +q(".ec-each").value) * Math.max(0, +q(".ec-days").value);
+    const wh = n * WH, ml = n * ML;
+    const cards = [
+      [fmt(n), "questions"],
+      [wh >= 1e6 ? fmt(wh / 1e6) + " MWh" : wh >= 1000 ? fmt(wh / 1000) + " kWh" : fmt(wh) + " Wh", "of electricity"],
+      [fmt(wh / PHONE), "phone charges"],
+      [fmt(wh / BULB), "hours of an LED light bulb"],
+      [wh / HOME < 1 ? "less than 1" : fmt(wh / HOME), "U.S. homes for one day"],
+      [ml >= 150000 ? fmt(ml / 150000) + " bathtubs" : ml >= 1000 ? fmt(ml / 1000) + " liters" : fmt(ml / DROP) + " drops", "of water"],
+    ];
+    q(".ec-out").innerHTML = cards.map(([a, b]) => `<div class="ec-card"><b>${a}</b><span>${b}</span></div>`).join("");
+    root.dataset.wh = Math.round(wh);
+  }
+  root.querySelectorAll("input").forEach((i) => i.addEventListener("input", calc));
+  root.querySelectorAll("[data-p]").forEach((b) => b.addEventListener("click", () => {
+    const [a, e, d] = P[b.dataset.p]; q(".ec-people").value = a; q(".ec-each").value = e; q(".ec-days").value = d; calc();
+  }));
+  calc();
+})();
+</script>
+```

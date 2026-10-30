@@ -16,6 +16,14 @@ A set of steps a computer follows to solve a problem or make a choice. People of
 
 ***
 
+### alignment {#glossary-alignment}
+
+Making sure an AI's goals match what people really want. The paper clip machine is a story about alignment going wrong.
+
+**See Also:** {{< glink goal >}}
+
+***
+
 ### artificial intelligence (AI) {#glossary-artificial-intelligence}
 
 A computer program that does things that usually need human thinking, like seeing, talking, translating, or making choices. Most AI today learns from examples.
@@ -128,6 +136,14 @@ An AI program that you talk to with words. You type or say something, and it ans
 
 ***
 
+### companion {#glossary-companion}
+
+Someone, or something, that keeps you company. An AI companion app is built to act like a friend.
+
+**See Also:** {{< glink engagement >}}, {{< glink "ELIZA effect" >}}
+
+***
+
 ### computer program {#glossary-computer-program}
 
 A list of steps that a computer follows. Apps and games are computer programs.
@@ -152,6 +168,14 @@ Learning to connect two things that happen together. Ivan Pavlov's dogs learned 
 
 ***
 
+### consciousness {#glossary-consciousness}
+
+Being aware: having thoughts and feelings that you experience from the inside. Nobody knows for sure how the brain makes it, or whether a machine could have it.
+
+**See Also:** {{< glink understand >}}
+
+***
+
 ### context {#glossary-context}
 
 The facts around your question: who you are, what the answer is for, and what you already know. A chatbot cannot guess these, so you tell it.
@@ -168,6 +192,18 @@ All the words a chatbot can read at one time. In a chat, it holds your old messa
 
 ***
 
+### copyright {#glossary-copyright}
+
+The law that says who owns a creative work, like a song, a book, or a picture, and who is allowed to copy it. In the United States, a work made only by AI cannot have a copyright.
+
+***
+
+### creative {#glossary-creative}
+
+Able to make something new that has value or meaning. People disagree about whether an AI can be creative, or only helps people be creative.
+
+***
+
 ### data {#glossary-data}
 
 Information, like pictures, words, numbers, or sounds. An AI learns from data.
@@ -177,6 +213,12 @@ Information, like pictures, words, numbers, or sounds. An AI learns from data.
 > The Quick, Draw! AI learned from data: about 50 million drawings.
 
 **See Also:** {{< glink "machine learning" >}}
+
+***
+
+### data center {#glossary-data-center}
+
+A big building full of computers that run AI and websites. Data centers use a lot of electricity, and many use water for cooling.
 
 ***
 
@@ -272,6 +314,14 @@ When many simple parts work together and make something bigger and more complica
 
 ***
 
+### engagement {#glossary-engagement}
+
+How much time and attention you give an app. Many apps earn more money when your engagement is higher, so they are built to keep you there.
+
+**See Also:** {{< glink feed >}}
+
+***
+
 ### estimate {#glossary-estimate}
 
 A quick answer that is close, but not exact. You can use it to check if an answer makes sense.
@@ -279,6 +329,12 @@ A quick answer that is close, but not exact. You can use it to check if an answe
 > **Example:**
 >
 > $3847 \times 29$ is about $4000 \times 30 = 120000$.
+
+***
+
+### ethics {#glossary-ethics}
+
+Ideas about what is right and wrong, and how people should act.
 
 ***
 
@@ -357,6 +413,14 @@ What an answer should look like: a list, a table, 3 sentences, simple words, or 
 Walking around the room to look at everyone's work and leave feedback notes, like visitors in an art gallery.
 
 **See Also:** {{< glink feedback >}}
+
+***
+
+### goal {#glossary-goal}
+
+What an AI is trying to do, like "win the game" or "get more clicks." An AI follows its goal exactly, even when that is not what people really wanted.
+
+**See Also:** {{< glink alignment >}}
 
 ***
 
@@ -656,6 +720,18 @@ Something an app chooses for you, because it predicts you will click it or like 
 
 ***
 
+### regulation {#glossary-regulation}
+
+A rule made by a government, like a law about how AI can be used.
+
+***
+
+### responsible {#glossary-responsible}
+
+Being the one who must answer for what happened, and fix it. When an AI makes a mistake, people argue about who is responsible.
+
+***
+
 ### reverse image search {#glossary-reverse-image-search}
 
 Searching with a picture instead of words, to find where else the picture is online and where it first appeared.
@@ -798,6 +874,14 @@ Showing an AI many examples so it can fix its weights. After each mistake, the w
 
 ***
 
+### training data {#glossary-training-data}
+
+All the examples an AI learned from: pictures, text, sounds, or numbers. An AI is only as good as its training data.
+
+**See Also:** {{< glink dataset >}}, {{< glink training >}}
+
+***
+
 ### transfer learning {#glossary-transfer-learning}
 
 Starting from an AI that already learned something, then teaching it a new job with a few new examples. It is much faster than starting from nothing.
@@ -823,6 +907,14 @@ A kind of neural network, first shared by Google scientists in 2017. It uses att
 To change words from one language to another, with the same meaning.
 
 **See Also:** {{< glink "back translation" >}}
+
+***
+
+### trolley problem {#glossary-trolley-problem}
+
+A famous thought experiment: a runaway trolley will hit 5 people. Would you pull a lever to send it toward 1 person instead? People still disagree about the answer.
+
+**See Also:** {{< glink ethics >}}
 
 ***
 
@@ -875,6 +967,12 @@ An AI copy of a person's voice, made from a short recording. Scammers use voice 
 A clue that something is wrong. Scam warning signs: hurry, fear, a prize, a secret, a strange way to pay, and a link or a code.
 
 **See Also:** {{< glink scam >}}
+
+***
+
+### watt-hour {#glossary-watt-hour}
+
+An amount of electricity. A 10-watt light bulb that is on for one hour uses 10 watt-hours. Charging a phone uses about 15 watt-hours.
 
 ***
 

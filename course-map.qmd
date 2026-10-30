@@ -67,11 +67,11 @@ Most lessons also have a **🚀 Go Further** part. It can fill a second day, or 
 
 | | Lesson | What you do |
 |---|---|---|
-| 6.1 | Can AI Be Creative? | Vote in a blind art show: human or AI? Then decide who owns AI art. |
-| 6.2 | AI Friends | Sort what a friend does and what an app is built to do. |
-| 6.3 | The Hidden Costs | Estimate the energy and water behind AI. Meet the people who label data. |
-| 6.4 | Who Makes the Rules? | Decide what a self-driving car should do (the trolley problem). Write the class rules for AI. Compare them with real laws. |
-| 6.5 | Possible Futures | Map the best case, the worst case, and the most likely future. Meet the paperclip machine. Decide what you can do. |
-| 6.6 | The Big Question, Again | Replace a brain one cell at a time: is it still you? Read your answer from the first day. Answer again with what you know now. |
+| 6.1 | [Can AI Be Creative?](chapters/Unit_6/6.1_Can_AI_Be_Creative.qmd) | Vote in a blind poem show: person or AI? Then decide who owns AI art. |
+| 6.2 | [AI Friends](chapters/Unit_6/6.2_AI_Friends.qmd) | Sort what a friend does and what an app is built to do. |
+| 6.3 | [The Hidden Costs](chapters/Unit_6/6.3_The_Hidden_Costs.qmd) | Estimate the energy and water behind AI. Meet the people who label data. |
+| 6.4 | [Who Makes the Rules?](chapters/Unit_6/6.4_Who_Makes_the_Rules.qmd) | Act out the trolley problem, then decide what an AI car should do. Who should make the rules? |
+| 6.5 | [Possible Futures](chapters/Unit_6/6.5_Possible_Futures.qmd) | Act out the paper clip machine. Find out what experts hope and fear. Decide what you can do. |
+| 6.6 | [The Big Question, Again](chapters/Unit_6/6.6_The_Big_Question_Again.qmd) | Replace a brain one cell at a time: is it still you? Read your answer from the first day. Answer again with what you know now. |
 
 :::

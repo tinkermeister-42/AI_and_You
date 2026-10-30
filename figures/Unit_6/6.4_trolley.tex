@@ -1,0 +1,27 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[
+  lbl/.style={font=\small, text=ink, align=center},
+]
+% The trolley problem: pull the lever or do nothing.
+\draw[ink, line width=2.2pt] (0,0) -- (4,0);
+\draw[ink, line width=2.2pt] (4,0) -- (10,0);
+\draw[ink, line width=2.2pt] (4,0) .. controls (5.2,0) and (5.8,1.4) .. (10,1.4);
+\foreach \x in {0.3,0.8,...,9.8} \draw[ink!50, line width=1pt] (\x,-0.12) -- (\x,0.12);
+% trolley (orange: the machine)
+\draw[machine, fill=machine!15, line width=1.3pt, rounded corners=3pt] (0.6,0.15) rectangle (2.4,1.0);
+\fill[ink] (1.0,0.12) circle (0.13); \fill[ink] (2.0,0.12) circle (0.13);
+\draw[flow, draw=machine] (2.6,0.55) -- (3.4,0.55);
+% people (blue)
+\foreach \x in {7.3,7.85,8.4,8.95,9.5} \personicon{\x}{0.3}{0.38};
+\personicon{9.3}{1.72}{0.38}
+\node[lbl] at (8.4,-0.75) {5 people};
+\node[lbl] at (9.3,2.55) {1 person};
+% lever and the person who decides
+\draw[ink, line width=1.6pt] (4.3,-0.9) -- (4.0,-0.25);
+\fill[ink] (4.3,-0.9) circle (0.09);
+\personicon{5.1}{-1.05}{0.42}
+\node[lbl] at (5.1,-1.85) {you, at the lever};
+\end{tikzpicture}
+\end{document}

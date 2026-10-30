@@ -1,0 +1,119 @@
+# 6.5 - Possible Futures {.unnumbered}
+
+Geoffrey Hinton helped invent the neural networks you learned about in Unit 2. In 2024, he won a Nobel Prize for that work. In 2023, he left his job at Google so he could speak freely. He said AI might one day become dangerous to people.
+
+Yann LeCun also helped invent neural networks. He won the biggest prize in computer science with Hinton. He says those fears are much too big, and that AI will stay a tool that people control.
+
+Two experts. Same science. Very different futures. Today you think about the future yourself, starting with a famous story about paper clips.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** Hopeful or worried? [5 min]{.time}
+- [👥]{.icon} **Learn Together** What experts hope and fear [9 min]{.time}
+- [🧪]{.icon} **Try It** The paper clip machine [18 min]{.time}
+- [💬]{.icon} **Talk About It** What can you do? [8 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can describe hopes and worries that experts have about AI.
+- [ ] I can explain why it is hard to give an AI a goal that says everything we want.
+- [ ] I can name things I can do to help shape the future of AI.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🎯]{.icon} {{< glink goal >}}: what an AI is trying to do, like "win the game" or "get more clicks"
+- [🧭]{.icon} {{< glink alignment >}}: making sure an AI's goals match what people really want
+- [🔮]{.icon} {{< glink prediction >}}: a best guess about something you do not know yet
+- [⚖️]{.icon} {{< glink ethics >}}: ideas about what is right and wrong
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_6/6.5_Possible_Futures.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+When you think about AI in 20 years, do you feel **hopeful**, **worried**, or **both**? Stand on one side of the room, the other side, or the middle. Two people from each place say why.
+
+{{< learn >}}
+
+### 6.5.1 - What Experts Hope and Fear
+
+| Hopes | Worries |
+|---|---|
+| New medicines. In 2024, AI that predicts the shape of proteins won a Nobel Prize. | Today's harms: bias, scams, fakes, and jobs (Units 4 and 5) |
+| A tutor and a translator for every person, in every language | People using AI to hurt others: weapons, lies, spying |
+| Help with hard problems, like climate and disease | Losing control: an AI that is very powerful, with a goal that is a little bit wrong |
+
+Experts disagree about which worries are most important, and how soon any of this could happen. Some say AI as smart as people could come within a few years. Others say decades, or never. Nobody knows. Be careful with anyone who says they are sure.
+
+{{< tryit >}}
+
+### 6.5.2 - The Paper Clip Machine
+
+:::{.experiment title="The paper clip maximizer (2003)"}
+The philosopher Nick Bostrom told this story. A company builds a very powerful AI. They give it one simple goal: **make as many paper clips as possible.**
+
+The AI is very good at its goal. It builds factories. It uses all the metal it can find. Then it starts using metal from cars, buildings, and everything else. It never hated people. It just had one goal, and nobody told it what else mattered.
+
+This is not a prediction. It is a story to show a real problem. A goal that is a little bit wrong can go very wrong when a machine is very powerful. Making an AI's goals match what people really want is called {{< glink alignment >}}.
+:::
+
+Now act it out. Use paper chains instead of paper clips.
+
+:::{.steps}
+1. One student is the **robot**. The robot's goal card says: *Make the longest paper chain you can.* The robot follows the exact words, and nothing else.
+2. The robot points to every piece of paper in the room it could use: your homework, the posters, this book. (Point only. Do not tear anything!)
+3. The class writes one new rule on the board to stop it, like "Only use paper from the blue box."
+4. The **loophole finder** (another student) looks for a trick around the new rule. The robot follows the trick.
+5. Keep adding rules for 3 rounds. Can the class write a goal with no loopholes?
+:::
+
+:::{.gotcha title="Class size"}
+**4 students:** one robot, one loophole finder, and two rule writers. **Big class:** two teams. Each team writes rules for the other team's robot. The team whose rules have the fewest loopholes wins.
+:::
+
+:::{.think title="Have you seen this before?"}
+Yes! In Lesson 5.4, the feed had one goal: more clicks. Nobody told it "and do not make people angry." So it showed more angry stories. That is a small, real paper clip problem.
+:::
+
+{{< talk >}}
+
+You will live most of your life with AI. What can **you** do to help it go well?
+
+:::{.frames}
+- When I think about AI in the future, I feel ... because ...
+- The paper clip machine shows that ...
+- One worry I share with experts is ...
+- Something I can do is ...
+:::
+
+:::{.remember title="Things you can do"}
+- **Understand it.** You now know more about how AI works than most adults.
+- **Check it.** Do not believe it just because it sounds sure (Unit 4).
+- **Protect yourself and your family** from scams and fakes (Units 4 and 5).
+- **Speak up.** Tell school leaders and lawmakers what you think. One day, vote.
+- **Choose your path.** People who understand AI and people are needed in every job, from nurses to lawmakers.
+:::
+
+{{< further >}}
+
+:::{.project title="Day 2: Map the Futures"}
+Work in groups of 3 or 4 (in a class of 4, one group). Choose one topic: school, jobs, health, or the news.
+
+1. On your sheet, write the **best case** for AI in 20 years. Then the **worst case**. Then the **most likely** case.
+2. For each one, write one thing that could make it happen.
+3. Under your map, write 3 things you can do this year.
+4. Groups share. Did any groups agree on the most likely future?
+:::
+
+:::{.project title="Interview About the Future"}
+Ask an older person in your family: "When you were my age, what did you think the future would look like? What came true?" Then tell them what you learned about AI.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [the experts' debate, more alignment stories, and what AI might do for medicine](/chapters/Explore/explore-unit-6.qmd#explore-6-5). For students who want to learn more on their own.
+:::

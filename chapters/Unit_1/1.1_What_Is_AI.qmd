@@ -133,7 +133,7 @@ The AI learned from millions of drawings. Your first lines looked like the start
 
 ![](/images/Unit_1/1.1_big_question.svg){width="460px" fig-align="center" fig-alt="A drawing of a human brain, a question mark, and a robot head labeled AI."}
 
-This question goes through the whole class. You do not need to know the answer today. Use what you saw: the cards, the cat rule, and the drawing game.
+We will come back to this question on the last day of class. You do not need to know the answer today. Use what you saw: the cards, the cat rule, and the drawing game.
 
 :::{.big-question}
 [Is AI like a human brain?]{.bq}

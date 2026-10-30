@@ -1,0 +1,161 @@
+# 6.1 - Can AI Be Creative? {.unnumbered}
+
+In 2022, a man named Jason Allen won first prize for digital art at the Colorado State Fair. His picture showed people in a huge, glowing hall.
+
+He did not paint it. He wrote prompts for an image generator, made hundreds of pictures, chose one, and changed it. Many artists were angry. Allen told a newspaper, "It's over. A.I. won. Humans lost."
+
+Was he right? Today you test your own eyes and ears: can you tell what a person made from what an AI made?
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** What is creative? [5 min]{.time}
+- [👥]{.icon} **Learn Together** Where AI art comes from [8 min]{.time}
+- [🛠️]{.icon} **Try It** The blind poem show [19 min]{.time}
+- [💬]{.icon} **Talk About It** Who owns it? [8 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can explain where an AI's art and writing come from.
+- [ ] I can test whether people can tell human poems from AI poems.
+- [ ] I can give my opinion about who should own AI art, with a reason.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🎨]{.icon} {{< glink creative >}}: able to make something new that has value or meaning
+- [©️]{.icon} {{< glink copyright >}}: the law that says who owns a creative work, and who can copy it
+- [🖼️]{.icon} {{< glink "image generator" >}}: an AI that makes a new picture from words
+- [🗂️]{.icon} {{< glink "training data" >}}: the examples an AI learned from
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_6/6.1_Can_AI_Be_Creative.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Is each one **creative**? Vote with your hand: yes or no.
+
+1. A bird builds a nest.
+2. A 5-year-old draws her family.
+3. A phone takes a photo by itself.
+4. A chatbot writes a poem.
+
+:::{.think title="No easy answer"}
+People do not agree on what "creative" means. Does it need something new? Something with feelings behind it? A choice someone made? Keep your answer in mind for the end of class.
+:::
+
+{{< learn >}}
+
+### 6.1.1 - Where AI Art Comes From
+
+An image generator learned from millions of pictures. A chatbot learned from millions of books, poems, and songs. Most of that {{< glink "training data" >}} was made by people. Most of those people were never asked, and never paid.
+
+The AI does not copy one picture or one poem. It learned patterns from all of them (Lessons 2.9 and 3.7). So is the new work the AI's? The prompt writer's? Or does it belong a little to all the artists it learned from?
+
+:::{.note title="Right now (fall 2026)"}
+In the United States, the Copyright Office says a work made **only** by AI cannot have a {{< glink copyright >}}. A person's own creative choices can. Artists, writers, and news companies have taken AI companies to court for training on their work without asking. Some cases are still being decided.
+:::
+
+{{< tryit >}}
+
+### 6.1.2 - The Blind Poem Show
+
+Some of these poems were written by people. Some were written by an AI. Work with a partner.
+
+:::{.steps}
+1. Read each poem out loud with your partner.
+2. On your sheet, vote: **person** or **AI**? Write one clue for each vote.
+3. Mr. Ross counts the class votes. Then he shows the answers.
+4. How many did the class get right? Was it more than guessing?
+:::
+
+::::{.columns}
+:::{.column width="48%"}
+**Poem A**
+
+> | Who has seen the wind?
+> | Neither I nor you:
+> | But when the leaves hang trembling,
+> | The wind is passing through.
+
+**Poem B**
+
+> | The bus is late, the morning cold,
+> | my breath turns into clouds of gray.
+> | I count the cars, I count the birds,
+> | and save a little of today.
+:::
+:::{.column width="4%"}
+:::
+:::{.column width="48%"}
+**Poem C**
+
+> | The rain is raining all around,
+> | It falls on field and tree,
+> | It rains on the umbrellas here,
+> | And on the ships at sea.
+
+**Poem D**
+
+> | My grandmother's hands make bread at dawn,
+> | the kitchen warm, the window wide.
+> | She hums a song from far away
+> | and keeps her country deep inside.
+:::
+::::
+
+:::{.answers title="The answers (only after the class votes!)"}
+- **Poem A:** a person. Christina Rossetti, England, 1872.
+- **Poem B:** an AI. It was written by Claude, the AI that helped write this book, in 2026.
+- **Poem C:** a person. Robert Louis Stevenson, Scotland, 1885.
+- **Poem D:** an AI. Also written by Claude, in 2026.
+
+Poem D is about a grandmother who misses her country. The AI has no grandmother and no country. Does that change how you feel about the poem?
+:::
+
+:::{.gotcha title="Class size"}
+**Small class:** read the poems aloud together, one at a time, and vote after each. **Big class:** two teams. Each team must agree on one vote per poem, and explain its best clue.
+:::
+
+{{< talk >}}
+
+An AI picture wins an art contest. Who should own it: the person who wrote the prompt, the company that made the AI, or the artists whose work trained it? Does it matter who made a poem, if the poem makes you feel something?
+
+:::{.frames}
+- I thought Poem ... was by a person because ...
+- Something is creative when ...
+- An AI picture should belong to ... because ...
+- It (does / does not) matter who made it, because ...
+:::
+
+{{< watch >}}
+
+:::{.watch title="Does AI Have Creativity and Imagination? (Code.org)"}
+{{< video https://www.youtube.com/watch?v=X994dDnmRmY title="Does AI Have Creativity and Imagination? (Code.org)" >}}
+
+**While you watch:** Does the speaker think AI is creative, or a tool for creative people?
+
+**Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
+:::
+
+{{< further >}}
+
+:::{.project title="Day 2: The Blind Art Show"}
+Now try pictures. Work with a partner.
+
+1. Each student draws a small picture on paper: a place, an animal, or a food. No names on it.
+2. Mr. Ross makes AI pictures of the same things (or pairs make one each with the class AI tool, taking turns).
+3. Hang all the pictures on the wall, mixed together, with numbers.
+4. Walk around. For each number, vote: person or AI? Count the votes.
+:::
+
+:::{.project title="Write With It, Not By It"}
+Write a short poem about a place you love. Then ask your class AI tool for one idea to make it stronger (Lesson 3.3). Keep it or skip it. Which version sounds more like you?
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [the art contest story, the court cases, and AI music](/chapters/Explore/explore-unit-6.qmd#explore-6-1). For students who want to learn more on their own.
+:::

@@ -1,0 +1,108 @@
+# 6.3 - The Hidden Costs {.unnumbered}
+
+When you ask a chatbot a question, the answer seems to come from nowhere. It does not. A computer in a giant building far away does the work. That building uses electricity, and water to keep the computers cool.
+
+And before the chatbot ever answered anyone, people trained it. In 2023, reporters found workers in Kenya who were paid less than **$2 an hour** for this. They read terrible things from the internet and labeled them, so that ChatGPT would learn not to say them.
+
+Today you estimate the costs you cannot see.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** Where does the answer come from? [5 min]{.time}
+- [👥]{.icon} **Learn Together** Electricity, water, and people [10 min]{.time}
+- [🛠️]{.icon} **Try It** Estimate the cost of our class [18 min]{.time}
+- [💬]{.icon} **Talk About It** Is it worth it? [7 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can name three hidden costs of AI: electricity, water, and human work.
+- [ ] I can estimate the electricity and water our class uses with AI.
+- [ ] I can compare a big number to something I know, like charging a phone.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🏭]{.icon} {{< glink "data center" >}}: a big building full of computers that run AI and websites
+- [⚡]{.icon} {{< glink "watt-hour" >}}: an amount of electricity. A phone charge is about 15 watt-hours.
+- [📏]{.icon} {{< glink estimate >}}: a quick answer that is close, but not exact
+- [🏷️]{.icon} {{< glink label >}}: the right answer for an example, added by a person
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_6/6.3_The_Hidden_Costs.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Draw the path of a chatbot answer on your sheet: from your Chromebook to the AI and back. What does it pass through? What does it need?
+
+{{< learn >}}
+
+### 6.3.1 - Electricity and Water
+
+AI runs in {{< glink "data center" >}}s: buildings with thousands of computers. The computers use electricity and get hot. Many data centers use water to cool them.
+
+One text answer does not use much. In 2025, Google and OpenAI each said one average text answer uses about **0.3 {{< glink "watt-hour" >}}s** of electricity. That is about one second of a microwave oven. Google said it also uses about **5 drops** of water.
+
+But there are billions of questions every day. And pictures and videos use much more than text.
+
+:::{.note title="Right now (fall 2026)"}
+- In 2025, OpenAI said people send ChatGPT about **2.5 billion** questions every day.
+- In 2023, data centers used about **4%** of all electricity in the United States. A U.S. government report says this could grow to between 7% and 12% by 2028, mostly because of AI.
+- These numbers come from the companies and from government reports. Some researchers say companies do not share enough information to check them.
+:::
+
+***
+
+### 6.3.2 - People
+
+AI learns from {{< glink label >}}s, and people make the labels (Lesson 1.5). Many of these workers live in poorer countries and earn very little. Some read violent and hateful posts all day, so the AI can learn to block them. Some of these workers said the job hurt their mental health.
+
+{{< tryit >}}
+
+### 6.3.3 - Estimate the Cost of Our Class
+
+Work with a partner. First, {{< glink estimate >}} with your sheet. Then check with the calculator.
+
+:::{.steps}
+1. Guess: how many questions does each student send to an AI in one day? Write it.
+2. Multiply by the number of students in our class. That is our class's questions in one day.
+3. Multiply by **0.3** to get watt-hours. How many phone charges is that? (A phone charge is about 15 watt-hours.)
+4. Put your numbers in the calculator. Did your estimate match?
+5. Press **The world, one day**. How many U.S. homes could that power for a day?
+:::
+
+{{< include /assets/Unit_6/energy_calc.html >}}
+
+These are estimates for text answers only, from numbers the companies shared in 2025. Real numbers change with the model, the question, and the data center.
+
+:::{.gotcha title="Class size"}
+**Small class:** do the math together on the board, one step at a time. **Big class:** each pair guesses a different number of questions per day (5, 10, 20, 50). Compare the results: how much does the guess change the answer?
+:::
+
+{{< talk >}}
+
+Is AI worth these costs? Who should pay for them: the companies, the users, or the people who live near the data centers? What would make it more fair to the workers who label data?
+
+:::{.frames}
+- One AI answer uses ... , but billions of answers use ...
+- The cost I did not know about was ...
+- AI is (worth / not worth) the cost when ...
+- The workers who label data should ...
+:::
+
+{{< further >}}
+
+:::{.project title="Day 2: A Receipt for AI"}
+A receipt shows what you paid for. Make a "receipt" for one AI picture or one chatbot answer. List everything it needed: electricity, water, computer chips, people who labeled data, people who wrote the training text. Which costs are paid by you? Which are paid by someone else?
+:::
+
+:::{.project title="Use It Well"}
+Make a class list: when is AI worth the energy, and when is it not? (Asking a chatbot to do 2 + 2? Asking it to translate a letter for your family?)
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [training costs, the brain's 20 watts, and the data labelers' story](/chapters/Explore/explore-unit-6.qmd#explore-6-3). For students who want to learn more on their own.
+:::

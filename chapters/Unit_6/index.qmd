@@ -17,3 +17,25 @@ By the end of this unit, you will be able to:
 * Explain who makes the rules for AI, and write your own
 * Describe possible futures for AI, and what you can do about them
 * Answer the first day's question again: Is AI like a human brain?
+
+***
+
+## Topics in This Unit
+
+[**Can AI Be Creative?**](6.1_Can_AI_Be_Creative.qmd)\
+A blind poem show: can you tell a person from an AI? Who owns AI art?
+
+[**AI Friends**](6.2_AI_Friends.qmd)\
+What a friend does, and what a companion app is built to do.
+
+[**The Hidden Costs**](6.3_The_Hidden_Costs.qmd)\
+The electricity, water, and human work behind every AI answer.
+
+[**Who Makes the Rules?**](6.4_Who_Makes_the_Rules.qmd)\
+The trolley problem acted out, the AI car, and the rules for AI.
+
+[**Possible Futures**](6.5_Possible_Futures.qmd)\
+Hopes and worries, the paper clip machine, and what you can do.
+
+[**The Big Question, Again**](6.6_The_Big_Question_Again.qmd)\
+Replace a brain one cell at a time, then answer the first day's question again.

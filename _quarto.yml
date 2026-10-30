@@ -106,6 +106,12 @@ book:
     - part: "Unit 6: AI and Our Future"
       chapters:
         - file: chapters/Unit_6/index.qmd
+        - file: chapters/Unit_6/6.1_Can_AI_Be_Creative.qmd
+        - file: chapters/Unit_6/6.2_AI_Friends.qmd
+        - file: chapters/Unit_6/6.3_The_Hidden_Costs.qmd
+        - file: chapters/Unit_6/6.4_Who_Makes_the_Rules.qmd
+        - file: chapters/Unit_6/6.5_Possible_Futures.qmd
+        - file: chapters/Unit_6/6.6_The_Big_Question_Again.qmd
 
     - part: "Explore More"
       chapters:
@@ -115,5 +121,6 @@ book:
         - file: chapters/Explore/explore-unit-3.qmd
         - file: chapters/Explore/explore-unit-4.qmd
         - file: chapters/Explore/explore-unit-5.qmd
+        - file: chapters/Explore/explore-unit-6.qmd
 
     - file: glossary.qmd
