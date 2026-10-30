@@ -31,8 +31,12 @@ plain words, true statement.
 - **Mirror to the work site is manual.** The teacher reviews the personal
   site, then runs "Mirror site to Work Account" from the Actions tab
   (`.github/workflows/sync-to-work.yml`, workflow_dispatch from `main`). It
-  force-pushes `gh-pages` to the repo named by the `WORK_OWNER` and
-  `WORK_REPO` secrets with `WORK_TOKEN`. Keep workflow files off `gh-pages`
+  force-pushes `gh-pages` to `andyrosscps/DHS-AI` branch `gh-pages` (its
+  Pages source, live at `andyrosscps.github.io/DHS-AI`), named by the
+  `WORK_OWNER` and `WORK_REPO` secrets, with `WORK_TOKEN`. The workflow only
+  appears in the Actions tab once it is on `main`. Keep workflow files off
+  `gh-pages`: a workflow file there would also need the Workflows
+  permission on the token
 - A shallow clone fetches only `main`, so `deploy.sh` dies with "invalid
   reference: origin/gh-pages". Fix with
   `git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*' && git fetch --depth 1 origin gh-pages`
