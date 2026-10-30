@@ -1,0 +1,40 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[x=0.32cm, y=1cm]
+% Big dreams and AI winters, 1950 to 2000.  Winter dates are the usual
+% rough ones: 1974-1980 and 1987-1993.
+\definecolor{sunny}{HTML}{F5B041}
+\definecolor{icy}{HTML}{85C1E9}
+\newcommand{\sun}[2]{\begin{scope}[shift={(#1,#2)}]
+  \fill[sunny] (0,0) circle (0.2cm);
+  \foreach \a in {0,45,...,315} \draw[sunny, line width=1.4pt, line cap=round] (\a:0.3cm) -- (\a:0.45cm);
+\end{scope}}
+\newcommand{\snow}[2]{\begin{scope}[shift={(#1,#2)}]
+  \foreach \a in {0,60,...,300} {
+    \draw[icy!70!blue, line width=1.5pt, line cap=round] (0,0) -- (\a:0.38cm);
+    \draw[icy!70!blue, line width=1.1pt, line cap=round] (\a:0.24cm) -- ++({\a+45}:0.12cm) (\a:0.24cm) -- ++({\a-45}:0.12cm);
+  }
+\end{scope}}
+% bands (x is the year minus 1950)
+\fill[sunny!35, rounded corners=3pt] (6,0.25) rectangle (24,1.55);
+\fill[icy!45, rounded corners=3pt] (24,0.25) rectangle (30,1.55);
+\fill[sunny!35, rounded corners=3pt] (30,0.25) rectangle (37,1.55);
+\fill[icy!45, rounded corners=3pt] (37,0.25) rectangle (43,1.55);
+\sun{15}{2.2} \node[font=\bfseries] at (15,0.9) {Big dreams};
+\snow{27}{2.2} \node[font=\bfseries, align=center] at (27,0.9) {AI\\winter};
+\sun{33.5}{2.2} \node[font=\bfseries, align=center] at (33.5,0.9) {Rules for\\business};
+\snow{40}{2.2} \node[font=\bfseries, align=center] at (40,0.9) {AI\\winter};
+% axis
+\draw[ink, line width=1.2pt, -{Stealth[length=7pt]}] (0,0) -- (51,0);
+\foreach \y in {1950,1960,1970,1980,1990,2000} {
+  \pgfmathtruncatemacro{\x}{\y-1950}
+  \draw[ink, line width=1pt] (\x,0.12) -- (\x,-0.12) node[below, font=\small] {\y};
+}
+% events
+\draw[ink, line width=1pt] (6,0) -- (6,-0.95);
+\node[anchor=north, align=center, font=\small] at (6,-0.95) {\textbf{1956}\\AI gets\\its name};
+\draw[ink, line width=1pt] (47,0) -- (47,-0.95);
+\node[anchor=north, align=center, font=\small] at (47,-0.95) {\textbf{1997}\\Deep Blue\\wins at chess};
+\end{tikzpicture}
+\end{document}

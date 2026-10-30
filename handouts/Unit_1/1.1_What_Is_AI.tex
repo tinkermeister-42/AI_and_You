@@ -1,15 +1,11 @@
 \documentclass[11pt]{article}
 \input{../preamble}
 \usepackage{amssymb}
-\usepackage{pifont}
 
 % one cell of the AI-or-not table: \yes is the right column, \no is not
 \newcommand{\yes}{\ifkey\textcolor{keyred}{\Large$\checkmark$}\else\Large$\square$\fi}
 \newcommand{\no}{\Large$\square$}
-\newcommand{\blank}[1]{\underline{\hspace{#1}}}
 \renewcommand{\arraystretch}{1.55}
-% ragged columns: no hyphenated words for students reading in a second language
-\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 \begin{document}
 

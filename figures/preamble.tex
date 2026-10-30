@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\ttdefault}{pcr}  % Courier: a real Type 1 typewriter font
 \usepackage{amsmath}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning,calc,shapes.symbols,shapes.geometric}
@@ -27,3 +28,20 @@
   plainbox/.style={box, draw=ink!70, fill=ink!4},
   flow/.style={-{Stealth[length=8pt]}, line width=1.4pt, draw=ink},
 }
+
+% A person (blue) and a robot head (orange) as small icons.
+% \personicon{x}{y}{scale}   \roboticon{x}{y}{scale}
+\newcommand{\personicon}[3]{%
+  \begin{scope}[shift={(#1,#2)}, scale=#3]
+    \fill[person] (0,0.62) circle (0.28);
+    \fill[person, rounded corners=6pt] (-0.42,-0.55) rectangle (0.42,0.28);
+  \end{scope}}
+\newcommand{\roboticon}[3]{%
+  \begin{scope}[shift={(#1,#2)}, scale=#3]
+    \draw[machine, line width=1.2pt] (0,0.5) -- (0,0.72);
+    \fill[machine] (0,0.78) circle (0.08);
+    \draw[machine, line width=1.4pt, fill=machine!12, rounded corners=4pt] (-0.5,-0.45) rectangle (0.5,0.5);
+    \fill[ink] (-0.2,0.12) circle (0.08);
+    \fill[ink] (0.2,0.12) circle (0.08);
+    \draw[ink, line width=1pt] (-0.22,-0.22) -- (0.22,-0.22);
+  \end{scope}}

@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "frames",
     "big-question",
     "project",
+    "experiment",
   ];
 
   const iconMap = {
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     frames: "💬 Sentence Starters",
     "big-question": "🧠 The Big Question",
     project: "🚀 Project Idea",
+    experiment: "🧪 Famous Experiment",
   };
 
   // Outer-collapsible callouts (answer intentionally NOT collapsible)

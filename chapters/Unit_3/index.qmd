@@ -1,8 +1,10 @@
 # Introduction {.unnumbered}
 
-**Unit 3: Brains and Neural Networks** (Weeks 4-6)
+**Unit 3: Using AI Well**
 
-A real look at how brain cells work, and how computer scientists copied the idea to build AI. We will act out a neural network as a class, watch one learn in real time on screen, and see how the same basic idea powers everything from chatbots to image generators and self-driving cars.
+The heart of the class. You will learn how to ask AI good questions. You will use it to help with writing, research, translation, math, and art.
+
+Then you will finish a real project that uses AI to do something useful in your life. We will have time to get feedback, make it better, and do the work right.
 
 ***
 
@@ -10,7 +12,8 @@ A real look at how brain cells work, and how computer scientists copied the idea
 
 By the end of this unit, you will be able to:
 
-* Explain how a brain cell (neuron) sends a signal
-* Explain how an artificial neural network copies that idea
-* Act out a neural network as a class
-* Watch a neural network learn, and train one yourself
+* Write clear prompts and make them better
+* Use AI to help with writing, research, translation, math, and art
+* Check AI's work before you use it
+* Use AI honestly in school
+* Finish a real project that uses AI to solve a problem in your life

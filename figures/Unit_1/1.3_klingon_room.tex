@@ -1,0 +1,35 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}
+% Searle's Chinese Room (1980), played in Klingon.  A note goes in; the
+% person inside follows the rule book and sends back a reply.  They do not
+% know Klingon.
+\newcommand{\kl}[1]{{\ttfamily\large\bfseries #1}}
+
+% the room
+\draw[ink, line width=2pt, fill=ink!4] (3.2,-1.6) rectangle (9.0,2.4);
+\node[font=\large\bfseries, text=ink] at (6.1,2.75) {The room};
+\fill[white] (3.05,0.75) rectangle (3.35,1.25);  % slot in
+\fill[white] (3.05,-0.55) rectangle (3.35,-0.05); % slot out
+
+% person inside with a rule book
+\personicon{6.9}{0.1}{1.1}
+\draw[machine, line width=1.2pt, fill=machine!20] (4.4,-0.9) -- (5.3,-0.75) -- (6.2,-0.9) -- (6.2,0.05) -- (5.3,0.2) -- (4.4,0.05) -- cycle;
+\draw[machine, line width=1.2pt] (5.3,-0.75) -- (5.3,0.2);
+\node[font=\small\bfseries, text=machine, align=center] at (5.3,0.65) {rule book};
+\node[font=\small, align=center, text=ink] at (6.9,-1.15) {does not know Klingon};
+
+% outside: someone who knows the language
+\personicon{-1.9}{0.3}{1.1}
+\node[font=\small, align=center, text=person] at (-1.9,-0.85) {knows Klingon};
+
+% note in, reply out
+\node[draw=ink!50, fill=white, rounded corners=2pt, inner sep=5pt] at (1.1,1.45) {\kl{bIpIv\textquotesingle{}a\textquotesingle{}?}};
+\draw[flow] (-1.0,1.0) -- (3.0,1.0);
+\node[font=\footnotesize, text=ink!80] at (1.1,0.72) {a note goes in};
+\node[draw=result, fill=white, rounded corners=2pt, inner sep=5pt, line width=1pt] at (1.1,-1.15) {\kl{jIpIv.}};
+\draw[flow, draw=result] (3.0,-0.3) -- (-1.0,-0.3);
+\node[font=\footnotesize, text=result] at (1.1,-0.58) {a reply comes out};
+\end{tikzpicture}
+\end{document}

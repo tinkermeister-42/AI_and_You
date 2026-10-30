@@ -1,8 +1,10 @@
 # Introduction {.unnumbered}
 
-**Unit 6: AI in the Real World** (Weeks 14-15)
+**Unit 6: AI and Our Future**
 
-What AI means for your privacy, your future job, your school, and the news you see. We will look at real scams, real changes happening in the workplace right now, and have honest conversations about what is coming.
+AI can write poems, make art, and act like a friend. It also uses energy and water, and it depends on people's work. Who decides how it is used? Where is all of this going?
+
+We will talk about AI art, AI friends, the hidden costs of AI, the rules for AI, and possible futures. At the end, we come back to the question from the first day.
 
 ***
 
@@ -10,7 +12,8 @@ What AI means for your privacy, your future job, your school, and the news you s
 
 By the end of this unit, you will be able to:
 
-* Protect your privacy when you use AI
-* Recognize real AI scams
-* Describe how AI is changing jobs right now
-* Think about how AI changes the news you see
+* Decide what you think about AI art and AI friends
+* Describe the hidden costs of AI
+* Explain who makes the rules for AI, and write your own
+* Describe possible futures for AI, and what you can do about them
+* Answer the first day's question again: Is AI like a human brain?

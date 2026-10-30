@@ -99,7 +99,7 @@ Probably not. Many students write: *"It is a cat if it has pointy ears, whiskers
 You can fix the rule. But then a new picture breaks it again.
 :::
 
-For many years, scientists tried to build AI with rules. Rules worked for some jobs, like playing chess. Rules did not work well for seeing, hearing, or language. (You will learn this story in Unit 2.)
+For many years, scientists tried to build AI with rules. Rules worked for some jobs, like playing chess. Rules did not work well for seeing, hearing, or language. (You will learn this story in the next lessons.)
 
 So scientists tried a different idea:
 
@@ -135,7 +135,7 @@ AI makes predictions too.
 - A chatbot predicts the next word of its answer. Then it predicts the next one. It does this again and again, very fast.
 
 :::{.gotcha title="A prediction can be wrong"}
-AI does not *know* the answer. It makes its best guess from patterns. Most of the time, the guess is good. Sometimes it is very wrong. In Unit 5, you will learn how to catch it.
+AI does not *know* the answer. It makes its best guess from patterns. Most of the time, the guess is good. Sometimes it is very wrong. In Unit 4, you will learn how to catch it.
 :::
 
 {{< tryit >}}
@@ -168,7 +168,7 @@ The AI learned from millions of drawings. Your first lines looked like the start
 :::{.think title="When did the AI get it wrong? Why?"}
 Maybe your drawing was different from most people's drawings. AI learns what is **common** in its data. When something is rare or different, AI often guesses wrong.
 
-You will see this problem again in Unit 5, when we study **bias**.
+You will see this problem again in Unit 4, when we study **bias**.
 :::
 
 {{< bigq >}}
@@ -183,7 +183,7 @@ This question goes through the whole class. You do not need to know the answer t
 1. On your sheet, circle one: **Yes**, **A little**, or **No**.
 2. Write one reason.
 3. Tell a partner your answer and your reason.
-4. Mr. Ross keeps your answer. You will read it again in Week 17.
+4. Mr. Ross keeps your answer. You will read it again in the last lesson of the class.
 :::
 
 :::{.frames}
@@ -220,5 +220,5 @@ Play Quick, Draw! again. Find a word that the AI never guesses from your drawing
 
 - [Quick, Draw! The Data](https://quickdraw.withgoogle.com/data){target="_blank"}: Pick one word. Look at hundreds of drawings of it. What do most people draw?
 - [AutoDraw](https://www.autodraw.com/){target="_blank"}: Draw something fast and messy. AI guesses what you wanted and gives you a clean picture.
-- [Teachable Machine](https://teachablemachine.withgoogle.com/){target="_blank"}: Teach a computer to know your own pictures or sounds. We will use it in Unit 3.
+- [Teachable Machine](https://teachablemachine.withgoogle.com/){target="_blank"}: Teach a computer to know your own pictures or sounds. We will use it in Unit 2.
 - [How AI Works (Code.org)](https://code.org/ai/how-ai-works){target="_blank"}: More short videos about AI. We will watch some of them in this class.

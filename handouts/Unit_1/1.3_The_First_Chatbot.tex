@@ -1,0 +1,102 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\renewcommand{\arraystretch}{1.45}
+
+\begin{document}
+
+\lessontitle{The First Chatbot}
+\partner
+
+\vspace{0.5em}
+{\large\textbf{1. Be ELIZA.}} One partner is ELIZA. ELIZA can only answer with this card.
+
+\vspace{0.3em}
+\begin{tabular}{|R{2.6in}|R{3.6in}|}
+\hline
+\textbf{If your partner says \dots} & \textbf{ELIZA says \dots} \\ \hline
+I feel \blank{0.7in} & Why do you feel \blank{0.7in}? \\ \hline
+I am \blank{0.7in} & How long have you been \blank{0.7in}? \\ \hline
+I want \blank{0.7in} & Why do you want \blank{0.7in}? \\ \hline
+a word about family & Tell me more about your family. \\ \hline
+anything else & Please go on. \\ \hline
+\end{tabular}
+
+\vspace{0.6em}
+Write one thing ELIZA said that sounded \textbf{caring}: \ansline{3.4in}{Answers vary.}
+
+\vspace{0.8em}
+Write one thing ELIZA said that sounded \textbf{strange}: \ansline{3.4in}{Answers vary.}
+
+\vspace{1.1em}
+{\large\textbf{2. How ELIZA works.}}
+
+\begin{center}\resizebox{0.7\linewidth}{!}{\fig{Unit_1/1.3_eliza_steps}}\end{center}
+
+Now you are ELIZA. Your partner types: \textbf{``I am worried about my test.''}
+
+\vspace{0.6em}
+\begin{tabular}{@{}R{1.9in}l}
+1. Find the key words: & \ansline{4.0in}{I am} \\[0.8em]
+2. Copy the rest: & \ansline{4.0in}{worried about my test} \\[0.8em]
+3. Swap words: & \ansline{4.0in}{worried about your test \ (my $\to$ your)} \\[0.8em]
+4. Fill in the reply: & \ansline{4.0in}{How long have you been worried about your test?} \\
+\end{tabular}
+
+\newpage
+
+{\large\textbf{3. People believed it.}}
+
+\vspace{0.4em}
+When people feel that a computer understands them, but it does not, we call it the \ansline{1.6in}{ELIZA effect}.
+
+\vspace{0.9em}
+Weizenbaum said some jobs should not be given to computers, even if a computer \ansline{1.6in}{can do them}.
+
+\vspace{1.3em}
+{\large\textbf{4. Change ELIZA's rules.}}
+
+\vspace{0.5em}
+A sentence that \textbf{broke} ELIZA: \ansline{4.3in}{Answers vary.}
+
+\vspace{0.9em}
+What ELIZA said: \ansline{5.2in}{Answers vary. Example: Please go on.}
+
+\vspace{0.9em}
+\textbf{My new rule.} When someone says: \ansline{2.0in}{i like *} \ \ ELIZA says: \ansline{2.0in}{Why do you like *?}
+
+\vspace{0.9em}
+Did your rule work? \ansline{1.0in}{} \quad My rule in my home language: \ansline{2.7in}{Answers vary.}
+
+\vspace{1.3em}
+{\large\textbf{5. The Klingon Room.}} Work in a group of 2 to 4.
+
+\vspace{0.5em}
+Did the person in the room understand Klingon? \ansline{1.2in}{no}
+
+\vspace{0.9em}
+How do you know? \ansline{5.4in}{They only matched shapes in the rule book.}
+
+\vspace{0.9em}
+One note asked: ``Do you speak Klingon?'' The room said: \ansline{2.6in}{Yes. I am learning Klingon.}
+
+\vspace{0.9em}
+Was that true? \ansline{0.8in}{no} \quad Did the replies make sense to the people outside? \ansline{1.4in}{yes}
+
+\vspace{1.1em}
+{\large\textbf{6. Talk about it.}}
+
+\vspace{0.5em}
+The whole room \textbf{does} / \textbf{does not} understand Klingon, because \ansline{3.0in}{Answers vary.}
+
+\vspace{0.9em}
+\blank{6.9in}
+
+\vspace{0.9em}
+ELIZA is like the Klingon Room because \ansline{4.2in}{both follow rules and do not know what the words mean.}
+
+\vfill
+\cuthere
+\noindent\timelinecard{1966}{Joseph Weizenbaum makes \textbf{ELIZA}, one of the first chatbots. It follows rules. People believe it understands them.}\hfill
+\timelinecard{1980}{John Searle asks: if a room answers by following rules, does it \textbf{understand}? (The Chinese Room)}
+
+\end{document}

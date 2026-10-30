@@ -1,0 +1,244 @@
+```{=html}
+<!-- eliza.html: Lesson 1.3. A small ELIZA whose rules students can read,
+     add to, and delete. Rules are checked top to bottom; the first match wins.
+     Nothing typed here leaves the page. -->
+<div class="eliza" id="eliza">
+  <div class="eliza-chat" aria-live="polite"></div>
+  <form class="eliza-form" autocomplete="off">
+    <input class="eliza-in" type="text" placeholder="Type to ELIZA, then press Enter" aria-label="Your message to ELIZA">
+    <button type="submit" class="eliza-btn">Send</button>
+  </form>
+  <label class="eliza-show"><input type="checkbox" class="eliza-why"> Show which rule ELIZA used</label>
+
+  <details class="eliza-rules">
+    <summary>📜 ELIZA's rules (open to read them and add your own)</summary>
+    <p class="eliza-help">ELIZA checks the rules from the top. It uses the <b>first</b> rule that matches.
+      A <b>*</b> means "the rest of the sentence." Put <b>|</b> between replies to give ELIZA a choice.
+      Put <b>/</b> between words that mean the same thing, like <b>mom/mother</b>.</p>
+    <div class="eliza-add">
+      <label>When someone says: <input class="eliza-new-key" type="text" placeholder="i like *"></label>
+      <label>ELIZA says: <input class="eliza-new-reply" type="text" placeholder="Why do you like *?"></label>
+      <button type="button" class="eliza-btn eliza-add-btn">➕ Add my rule to the top</button>
+    </div>
+    <ol class="eliza-list"></ol>
+    <button type="button" class="eliza-btn eliza-plain eliza-reset">↺ Put back ELIZA's first rules</button>
+  </details>
+</div>
+
+<style>
+.eliza {
+  border: 1px solid #d9e1e8;
+  border-radius: 10px;
+  padding: 0.75rem;
+  margin: 0.75rem 0 1.25rem;
+  background: #fbfcfd;
+}
+.eliza-chat {
+  height: 260px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #e3e8ed;
+  border-radius: 8px;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.eliza-msg { max-width: 85%; padding: 0.4rem 0.65rem; border-radius: 12px; line-height: 1.4; }
+.eliza-msg.you { align-self: flex-end; background: #2c6fae; color: #fff; border-bottom-right-radius: 3px; }
+.eliza-msg.bot { align-self: flex-start; background: #fdebd9; color: #3b2412; border-bottom-left-radius: 3px; }
+.eliza-msg .who { display: block; font-size: 0.75rem; font-weight: bold; opacity: 0.8; }
+.eliza-rule-used { display: none; font-size: 0.78rem; color: #6b4b2f; margin-top: 0.2rem; font-family: ui-monospace, monospace; }
+.eliza.show-why .eliza-rule-used { display: block; }
+.eliza-form { display: flex; gap: 0.4rem; margin-top: 0.5rem; }
+.eliza-in {
+  flex: 1;
+  font-size: 1rem;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid #b8c4cf;
+  border-radius: 6px;
+  min-width: 0;
+}
+.eliza-btn {
+  border: 1px solid #2c3e50;
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.35rem 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.eliza-btn.eliza-plain { background: #fff; color: #2c3e50; }
+.eliza-show { display: block; margin: 0.5rem 0 0.2rem; font-weight: 600; cursor: pointer; }
+.eliza-rules { margin-top: 0.5rem; }
+.eliza-rules summary { font-weight: bold; cursor: pointer; padding: 0.3rem 0; }
+.eliza-help { font-size: 0.9rem; margin: 0.3rem 0 0.5rem; }
+.eliza-add {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.8rem;
+  align-items: flex-end;
+  background: #eef6f1;
+  border: 1px solid #cfe5d6;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.eliza-add label { display: flex; flex-direction: column; font-size: 0.85rem; font-weight: 600; flex: 1 1 200px; }
+.eliza-add input { font-size: 0.95rem; padding: 0.3rem 0.45rem; border: 1px solid #b8c4cf; border-radius: 5px; margin-top: 0.15rem; }
+.eliza-list { padding-left: 1.8rem; margin: 0 0 0.6rem; font-size: 0.9rem; }
+.eliza-list li { margin-bottom: 0.25rem; }
+.eliza-list code { background: #f1f3f5; padding: 0 0.25rem; border-radius: 3px; white-space: normal; overflow-wrap: anywhere; }
+.eliza-list li.new code { background: #d9f0e1; }
+.eliza-list .arrow { color: #888; margin: 0 0.3rem; }
+.eliza-del {
+  border: none;
+  background: none;
+  color: #a5281b;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+}
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("eliza");
+  if (!root) return;
+
+  // [when someone says, ELIZA says]. First match wins.
+  const FIRST_RULES = [
+    ["hello/hi/hey", "Hello. How are you feeling today? | Hi. What would you like to talk about?"],
+    ["i need *", "Why do you need *? | Would it really help you to get *?"],
+    ["i feel *", "Why do you feel *? | Do you often feel *? | When did you start to feel *?"],
+    ["i am *", "How long have you been *? | Why do you say you are *?"],
+    ["i'm *", "How long have you been *? | Why do you say you are *?"],
+    ["i want *", "What would you do if you got *? | Why do you want *?"],
+    ["i can't *", "What makes you think you can't *? | Have you tried to *?"],
+    ["i think *", "Do you really think *? | Why do you think *?"],
+    ["because *", "Is that the real reason? | What other reasons can you think of?"],
+    ["mom/mother/dad/father/brother/sister/family", "Tell me more about your family. | How do you get along with your family?"],
+    ["friend/friends", "Tell me about your friends. | Why do you mention your friends?"],
+    ["school/class/teacher", "How do you feel about school? | Tell me more about school."],
+    ["you are *", "What makes you think I am *? | We were talking about you, not me."],
+    ["you *", "We were talking about you, not me. | Why do you say that about me?"],
+    ["sorry", "Please don't say sorry. | There is no need to say sorry."],
+    ["always", "Can you think of one example? | Always? Really?"],
+    ["yes", "You seem very sure. | I see. Please go on."],
+    ["no", "Why not? | Are you sure?"],
+  ];
+  const FALLBACK = ["Please go on.", "Tell me more.", "What does that suggest to you?", "I see. Go on.", "How does that make you feel?"];
+
+  // Swap I and you in the part of the sentence ELIZA copies.
+  const SWAP = {
+    "i": "you", "me": "you", "my": "your", "mine": "yours", "myself": "yourself",
+    "am": "are", "i'm": "you're", "i've": "you've", "i'll": "you'll",
+    "you": "I", "your": "my", "yours": "mine", "yourself": "myself", "you're": "I'm",
+  };
+
+  const chat = root.querySelector(".eliza-chat");
+  const input = root.querySelector(".eliza-in");
+  const list = root.querySelector(".eliza-list");
+  let rules = [];
+
+  function clean(s) {
+    return s.toLowerCase().replace(/[’]/g, "'").replace(/[^\p{L}\p{N}'*/\s]/gu, " ").replace(/\s+/g, " ").trim();
+  }
+  function compile(key) {
+    const words = clean(key).split(" ").filter(Boolean);
+    let re = "", star = false;
+    words.forEach((w, i) => {
+      if (w === "*") { re += "(?:\\s+(.*))?"; star = true; return; }
+      const alts = w.split("/").filter(Boolean).map((a) => a.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+      re += (i === 0 ? "" : "\\s+") + "(?:" + alts.join("|") + ")";
+    });
+    if (!re) return null;
+    return { re: new RegExp("(?:^|\\s)" + re + (star ? "" : "(?=\\s|$)"), "u"), star };
+  }
+  function reflect(s) {
+    return s.split(" ").map((w) => (SWAP[w] !== undefined ? SWAP[w] : w)).join(" ");
+  }
+  function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+  function reply(text) {
+    const said = clean(text);
+    for (const r of rules) {
+      if (!r.c) continue;
+      const m = said.match(r.c.re);
+      if (m) {
+        const rest = (m[1] || "").trim();
+        let out = pick(r.reply.split("|").map((x) => x.trim()).filter(Boolean)) || "Please go on.";
+        out = out.replace(/\s*\*\s*/g, rest ? " " + reflect(rest) + " " : " ").replace(/\s+([?.!,])/g, "$1").replace(/\s+/g, " ").trim();
+        out = out.charAt(0).toUpperCase() + out.slice(1);
+        return { text: out, why: `Rule: "${r.key}"` };
+      }
+    }
+    return { text: pick(FALLBACK), why: "No rule matched. ELIZA picked a reply that fits anything." };
+  }
+
+  function add(who, text, why) {
+    const d = document.createElement("div");
+    d.className = "eliza-msg " + who;
+    const w = document.createElement("span");
+    w.className = "who";
+    w.textContent = who === "you" ? "You" : "ELIZA";
+    d.appendChild(w);
+    d.appendChild(document.createTextNode(text));
+    if (why) {
+      const r = document.createElement("span");
+      r.className = "eliza-rule-used";
+      r.textContent = why;
+      d.appendChild(r);
+    }
+    chat.appendChild(d);
+    chat.scrollTop = chat.scrollHeight;
+  }
+
+  function draw() {
+    list.innerHTML = "";
+    rules.forEach((r, i) => {
+      const li = document.createElement("li");
+      if (r.isNew) li.className = "new";
+      const k = document.createElement("code"); k.textContent = r.key;
+      const a = document.createElement("span"); a.className = "arrow"; a.textContent = "➜";
+      const v = document.createElement("code"); v.textContent = r.reply;
+      const del = document.createElement("button");
+      del.type = "button"; del.className = "eliza-del"; del.textContent = "✖ delete";
+      del.addEventListener("click", () => { rules.splice(i, 1); draw(); });
+      li.append(k, a, v, del);
+      list.appendChild(li);
+    });
+  }
+  function load(src) {
+    rules = src.map(([key, rep]) => ({ key, reply: rep, c: compile(key) }));
+    draw();
+  }
+
+  root.querySelector(".eliza-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const t = input.value.trim();
+    if (!t) return;
+    add("you", t);
+    input.value = "";
+    const r = reply(t);
+    setTimeout(() => add("bot", r.text, r.why), 350);
+  });
+  root.querySelector(".eliza-why").addEventListener("change", (e) => {
+    root.classList.toggle("show-why", e.target.checked);
+  });
+  root.querySelector(".eliza-add-btn").addEventListener("click", () => {
+    const k = root.querySelector(".eliza-new-key");
+    const v = root.querySelector(".eliza-new-reply");
+    const key = k.value.trim(), rep = v.value.trim();
+    if (!key || !rep || !compile(key)) return;
+    rules.unshift({ key, reply: rep, c: compile(key), isNew: true });
+    k.value = ""; v.value = "";
+    draw();
+  });
+  root.querySelector(".eliza-reset").addEventListener("click", () => load(FIRST_RULES));
+
+  load(FIRST_RULES);
+  add("bot", "Hello. I am ELIZA. How are you feeling today?", "ELIZA always starts this way.");
+})();
+</script>
+```

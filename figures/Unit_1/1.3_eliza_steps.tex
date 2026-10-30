@@ -1,0 +1,28 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[
+  stepdot/.style={circle, fill=machine, text=white, font=\bfseries, minimum size=0.75cm, inner sep=0pt},
+  what/.style={anchor=west, font=\bfseries, text=ink, text width=3.6cm},
+  card/.style={anchor=west, draw=ink!45, fill=white, rounded corners=4pt, line width=0.9pt,
+               inner sep=6pt, minimum height=0.9cm, font=\large, text width=8.4cm},
+]
+% How ELIZA answers one sentence, using only rules a person wrote.
+\node[personbox, anchor=west, font=\large, text width=8.4cm, align=left] (in) at (4.75,1.5) {``I feel sad about my brother.''};
+\node[anchor=east, font=\bfseries, text=person] at (4.5,1.5) {You type:};
+
+\foreach \n/\w/\t/\y in {
+  1/{Find the key words}/{\textbf{I feel} sad about my brother},
+  2/{Copy the rest}/{sad about my brother},
+  3/{Swap words}/{sad about \textcolor{machine}{\textbf{your}} brother \ \ {\small(my \(\to\) your)}},
+  4/{Fill in the reply}/{Why do you feel \textcolor{machine}{\textbf{sad about your brother}}?}} {
+  \pgfmathsetmacro{\yy}{-0.05-1.25*(\n-1)}
+  \node[stepdot] at (0,\yy) {\n};
+  \node[what] at (0.55,\yy) {\w};
+  \node[card] at (4.75,\yy) {\t};
+}
+\node[resultbox, anchor=west, font=\large, text width=8.4cm, align=left] (out) at (4.75,-5.3) {``Why do you feel sad about your brother?''};
+\node[anchor=east, font=\bfseries, text=result] at (4.5,-5.3) {ELIZA says:};
+\draw[flow, draw=ink!50] (4.4,1.0) -- (4.4,-4.75);
+\end{tikzpicture}
+\end{document}

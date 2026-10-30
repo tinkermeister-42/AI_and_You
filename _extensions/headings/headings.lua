@@ -8,7 +8,9 @@ local function h2(title, id, classes)
 end
 
 -- Lesson section headings.  The order in a lesson is:
---   warmup, learn, tryit, bigq, watch, further
+--   warmup, learn, tryit, talk, watch, further
+-- bigq is used only by the first lesson (1.1) and the last lesson of the
+-- class, where the bookend question is asked and answered again.
 return {
   warmup = function(args, kwargs, meta)
     return h2("🔥 Warm Up", "warmup", {"unnumbered"})
@@ -20,6 +22,10 @@ return {
 
   tryit = function(args, kwargs, meta)
     return h2("🛠️ Try It", "try-it", {"unnumbered"})
+  end,
+
+  talk = function(args, kwargs, meta)
+    return h2("💬 Talk About It", "talk", {"unnumbered"})
   end,
 
   bigq = function(args, kwargs, meta)

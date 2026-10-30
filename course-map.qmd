@@ -1,0 +1,77 @@
+# Course Map {.unnumbered}
+
+Every lesson is one class (40 minutes). Every lesson has something to try with your hands.
+
+Most lessons also have a **🚀 Go Further** part. It can fill a second day, or you can do it on your own.
+
+::: {.course-map}
+
+## Unit 1: Where AI Came From
+
+| | Lesson | What you do |
+|---|---|---|
+| 1.1 | [What Is AI?](chapters/Unit_1/1.1_What_Is_AI.qmd) | Sort things into AI and not AI. Write a rule for "cat." Play Quick, Draw! |
+| 1.2 | [Can a Machine Think? (1950)](chapters/Unit_1/1.2_Can_a_Machine_Think.qmd) | Play Turing's imitation game. Catch the AI hiding among your classmates. |
+| 1.3 | [The First Chatbot (1966)](chapters/Unit_1/1.3_The_First_Chatbot.qmd) | Chat with ELIZA. Read its rules, then add your own. Act out the Chinese Room, in Klingon. |
+| 1.4 | [Rules Win at Games (1956 to 1997)](chapters/Unit_1/1.4_Rules_Win_at_Games.qmd) | Play a tic-tac-toe bot. Turn its rules off one at a time until you can beat it. |
+| 1.5 | [Data Changes Everything (2009 to 2016)](chapters/Unit_1/1.5_Data_Changes_Everything.qmd) | Label pictures like the ImageNet workers did. Find where people disagree. |
+| 1.6 | [Transformers and ChatGPT (2017 to today)](chapters/Unit_1/1.6_Transformers_and_ChatGPT.qmd) | Find what "it" means in a sentence. Build a sentence one vote at a time. Finish the class timeline. |
+
+## Unit 2: Brains and Neural Networks
+
+| | Lesson | What you do |
+|---|---|---|
+| 2.1 | Simple Rules, Complex Behavior | Be a cell in a human Rule 30. Then watch one tiny rule grow into chaos on screen. |
+| 2.2 | Your Brain Is Made of Cells | Measure your reaction time with a falling ruler. Send a signal around the room. |
+| 2.3 | How Brains Learn | Practice a hard task (writing with your other hand). Graph how you get better. Meet Pavlov's dogs. |
+| 2.4 | The Artificial Neuron | Be a neuron: add up signals and decide to fire. Then tune a neuron on screen. |
+| 2.5 | Train a Human Neural Network | The class becomes a network, with its weights written on cards. Feed it example cards and fix the weights after every mistake. |
+| 2.6 | Watch Mr. Ross Build an AI | Mr. Ross trains a neural network on hundreds of real examples while you watch. Then you test it with your own guesses. |
+| 2.7 | Train Your Own AI | Teach Teachable Machine your own hand signs. Then try to fool it. |
+| 2.8 | How AI Sees | Turn a picture into numbers on a grid. Find the edges with a filter. |
+| 2.9 | How Chatbots Work | Build a tiny chatbot that counts which word comes next. Make it write. |
+
+## Unit 3: Using AI Well
+
+| | Lesson | What you do |
+|---|---|---|
+| 3.1 | Asking Good Questions | Make weak prompts better. Compare the answers side by side. |
+| 3.2 | Keep Talking | Fix a bad answer with follow-up questions. |
+| 3.3 | Writing with AI, Not by AI | Get feedback on your own paragraph. Decide which advice to keep. |
+| 3.4 | Research and Checking | Ask AI a research question. Check every fact against a real source. |
+| 3.5 | AI and Your Language | Translate there and back again. You are the expert who grades the AI. |
+| 3.6 | AI and Math | Ask for hints, not answers. Catch an AI math mistake with a calculator. |
+| 3.7 | Making Pictures with AI | Watch noise turn into a picture. Write picture prompts and compare. |
+| 3.8 | Project: Solve a Real Problem | Pick a problem in your life. Plan how AI could help. |
+| 3.9 | Project: Feedback and Share | Give and get feedback. Make it better. Show your project. |
+
+## Unit 4: When AI Gets It Wrong
+
+| | Lesson | What you do |
+|---|---|---|
+| 4.1 | AI Makes Things Up | Ask AI about our school and town. Catch what it invents. Make it agree with anything. |
+| 4.2 | Where Bias Comes From | Test "he" and "she" in your language. Meet Clever Hans, the horse that seemed to do math, and the AI that learned snow instead of wolves. |
+| 4.3 | Real or Fake? | Guess which faces are real. Learn why the clues stop working, and what to check instead. |
+| 4.4 | Why AI Cheat Detectors Fail | Watch a detector call human writing "AI." Find out who it blames most. |
+
+## Unit 5: AI in the Real World
+
+| | Lesson | What you do |
+|---|---|---|
+| 5.1 | Your Data, Your Privacy | Check what your apps can see. Find the hidden location in a photo. |
+| 5.2 | AI Scams | Sort real messages from scams. Make a family safety plan in your home language. |
+| 5.3 | AI and Jobs | Break your dream job into tasks. Sort what AI can do, can help with, and cannot do. |
+| 5.4 | AI and the News | Compare two news feeds. Trace a fake picture back to where it started. |
+
+## Unit 6: AI and Our Future
+
+| | Lesson | What you do |
+|---|---|---|
+| 6.1 | Can AI Be Creative? | Vote in a blind art show: human or AI? Then decide who owns AI art. |
+| 6.2 | AI Friends | Sort what a friend does and what an app is built to do. |
+| 6.3 | The Hidden Costs | Estimate the energy and water behind AI. Meet the people who label data. |
+| 6.4 | Who Makes the Rules? | Decide what a self-driving car should do (the trolley problem). Write the class rules for AI. Compare them with real laws. |
+| 6.5 | Possible Futures | Map the best case, the worst case, and the most likely future. Meet the paperclip machine. Decide what you can do. |
+| 6.6 | The Big Question, Again | Replace a brain one cell at a time: is it still you? Read your answer from the first day. Answer again with what you know now. |
+
+:::
