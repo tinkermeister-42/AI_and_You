@@ -46,38 +46,31 @@ book:
 
   chapters:
     - file: index.md
+    - file: course-map.qmd
 
-    - part: "Unit 1: The Big Question"
+    - part: "Unit 1: Where AI Came From"
       chapters:
         - file: chapters/Unit_1/index.qmd
         - file: chapters/Unit_1/1.1_What_Is_AI.qmd
 
-    - part: "Unit 2: Where AI Came From"
+    - part: "Unit 2: Brains and Neural Networks"
       chapters:
         - file: chapters/Unit_2/index.qmd
 
-    - part: "Unit 3: Brains and Neural Networks"
+    - part: "Unit 3: Using AI Well"
       chapters:
         - file: chapters/Unit_3/index.qmd
 
-    - part: "Unit 4: Using AI Well"
+    - part: "Unit 4: When AI Gets It Wrong"
       chapters:
         - file: chapters/Unit_4/index.qmd
 
-    - part: "Unit 5: When AI Gets It Wrong"
+    - part: "Unit 5: AI in the Real World"
       chapters:
         - file: chapters/Unit_5/index.qmd
 
-    - part: "Unit 6: AI in the Real World"
+    - part: "Unit 6: AI and Our Future"
       chapters:
         - file: chapters/Unit_6/index.qmd
-
-    - part: "Unit 7: AI and Being Human"
-      chapters:
-        - file: chapters/Unit_7/index.qmd
-
-    - part: "Unit 8: The Big Question, Again"
-      chapters:
-        - file: chapters/Unit_8/index.qmd
 
     - file: glossary.qmd

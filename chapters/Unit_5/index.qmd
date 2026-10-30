@@ -1,8 +1,10 @@
 # Introduction {.unnumbered}
 
-**Unit 5: When AI Gets It Wrong** (Weeks 12-13)
+**Unit 5: AI in the Real World**
 
-AI lies, AI is biased, and AI can be used to fake videos and voices. We will learn how to catch it, how to check its work, and why “AI cheat detectors” do not really work. You will build your own toolkit for spotting AI-generated content.
+What AI means for your privacy, your future job, and the news you see.
+
+We will look at real scams, real changes happening at work right now, and have honest conversations about what is coming.
 
 ***
 
@@ -10,8 +12,7 @@ AI lies, AI is biased, and AI can be used to fake videos and voices. We will lea
 
 By the end of this unit, you will be able to:
 
-* Catch AI when it makes things up
-* Explain where bias in AI comes from
-* Spot fake pictures, videos, and voices
-* Explain why AI cheat detectors do not really work
-* Build your own toolkit for spotting AI-generated content
+* Protect your privacy when you use apps and AI
+* Recognize AI scams and help your family stay safe
+* Describe how AI is changing jobs right now
+* Think about how AI changes the news you see

@@ -1,8 +1,10 @@
 # Introduction {.unnumbered}
 
-**Unit 2: Where AI Came From** (Weeks 2-3)
+**Unit 2: Brains and Neural Networks**
 
-The story of AI from the 1950s to ChatGPT. The big dreams, the big failures, and the moments that changed everything. We will build a class timeline, watch some great short films, and meet the people who built the tools we use today.
+A real look at how brain cells work, and how computer scientists copied the idea to build AI.
+
+We will act out a neural network as a class, watch one learn on screen, and train our own. Then we will see how the same idea works inside AI that sees pictures and AI that writes.
 
 ***
 
@@ -10,7 +12,8 @@ The story of AI from the 1950s to ChatGPT. The big dreams, the big failures, and
 
 By the end of this unit, you will be able to:
 
-* Tell the story of AI from the 1950s to today
-* Explain why early AI built on rules did not work for seeing and language
-* Name the people and moments that changed AI
-* Build a class timeline
+* Explain how a brain cell (neuron) sends a signal
+* Explain how practice changes the brain
+* Explain how an artificial neuron copies that idea
+* Train a neural network and watch it learn
+* Explain how AI sees pictures and how a chatbot picks its next word
