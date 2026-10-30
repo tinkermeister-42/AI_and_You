@@ -107,7 +107,7 @@ Is a picture made by AI **art**? Who should get the credit: the person who wrote
 {{< further >}}
 
 :::{.project title="Day 2: Write Picture Prompts"}
-Most school AI tools do not make pictures. So you write the prompts, and Mr. Ross makes the pictures on the projector. Work with a partner, or in a group of 3.
+Work with a partner, or in a group of 3. Picture tools have a limit on how many pictures a class can make, so each pair shares turns. If your class AI tool cannot make pictures today, give your prompts to Mr. Ross. He makes them on the projector.
 
 A good picture prompt says what you want to **see**:
 
@@ -120,15 +120,15 @@ A good picture prompt says what you want to **see**:
 | **Details** | Colors? Light? | warm yellow light |
 
 1. Write a picture prompt on your sheet. Use all 5 parts.
-2. Give it to Mr. Ross. He makes the picture **two times** with the same prompt. How are the two pictures different?
-3. Change only the {{< glink style >}}. He makes it again. What changed?
+2. Make the picture **two times** with the same prompt. How are the two pictures different?
+3. Change only the {{< glink style >}}. Make it again. What changed?
 4. Find one mistake in a picture. Write it down.
 
-**Small class:** every pair gets 3 pictures. **Big class:** play "Describe It." One student from each team sees a secret picture. The team writes a prompt from the description. Mr. Ross makes each team's picture. Whose is closest?
+**Small class:** every pair gets 3 pictures. **Big class:** play "Describe It." One student from each team sees a secret picture. The team writes a prompt from the description and makes one picture. Whose is closest?
 :::
 
 :::{.project title="One Subject, Five Styles"}
-Choose one subject, like "a bus at our school." Write 5 prompts for it in 5 styles: photo, cartoon, pixel art, oil painting, and a style from your home country. Give them to Mr. Ross. Make a poster of the 5 pictures.
+Choose one subject, like "a bus at our school." Write 5 prompts for it in 5 styles: photo, cartoon, pixel art, oil painting, and a style from your home country. Make the 5 pictures, or give the prompts to Mr. Ross. Make a poster of the 5 pictures.
 :::
 
 :::{.project title="Who Does It Show?"}

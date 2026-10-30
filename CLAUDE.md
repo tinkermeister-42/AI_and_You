@@ -100,10 +100,18 @@ The teacher wants kids' hands on real things in every lesson.
   MagicSchool. When a lesson needs a chatbot, the page says "your class AI
   tool" and the activity works with any chatbot. Never write steps for one
   product's menus
-- **MagicSchool is locked down and likely makes no images.** Image
-  generation runs on the projector: students write the prompts, Mr. Ross
-  makes the pictures. Do not plan student steps around web search, links,
-  or memory features either; give a path that works without them
+- **The class AI tool is Raina, in MagicSchool.** Raina's own list of what it
+  can do (October 2026; the teacher still has to confirm in class): text
+  chat (write, rewrite, summarize, translate, explain, math help), image
+  generation and graphs (one shared usage limit, so plan pairs or staggered
+  turns), web search with cited sources, documents and slides. It cannot
+  make audio, video, or voice clones; students cannot switch models or
+  settings; no memory between chats. Photo upload is unconfirmed: never make
+  it required. Every activity that uses Raina needs a fallback: Mr. Ross runs
+  it on the projector, or an unplugged version. Raina is the only AI tool
+  students may use with an account; a no-login outside tool (Teachable
+  Machine, Quick, Draw!, Google Translate) is flagged for the teacher to
+  check against district rules
 - **Students see AI built, but do not build it.** The teacher builds AI
   professionally. In Unit 2 he trains a real model live (his Pokémon stats
   demo: the CSV from his old Algebra site, a neural network instead of the
