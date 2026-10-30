@@ -16,7 +16,6 @@ Today you test your eyes against AI faces. Then you learn something surprising: 
 :::
 
 :::{.objectives}
-- [ ] I can explain how AI learns to make fake faces.
 - [ ] I can explain why looking for clues in a picture stops working.
 - [ ] I can check a picture by finding where it came from.
 - [ ] I can protect myself and my family from fake voices.
@@ -42,32 +41,14 @@ Work with a partner. Open [Which Face Is Real?](https://www.whichfaceisreal.com/
 Play 10 rounds. Write your score on your sheet. Then the class adds up all the scores. Did we do better than guessing?
 
 :::{.think title="How did we do?"}
-If you guessed with a coin, you would get about 5 of 10 right. Many people do only a little better. Some do worse. These faces were made in 2019. Newer AI faces are harder.
+If you guessed with a coin, you would get about 5 of 10 right. In a 2022 study, people picked the real face only **48%** of the time: the same as guessing. These faces were made in 2019. Newer AI faces are harder.
 :::
 
 {{< learn >}}
 
-### 4.3.1 - How AI Learns to Make Faces
+### 4.3.1 - Why the Clues Stop Working
 
-One way is a game between two neural networks:
-
-![](/images/Unit_4/4.3_fake_face_game.svg){width="600px" fig-align="center" fig-alt="The maker network makes a fake face. The checker network sees fake faces and real photos and says real or fake. If the checker catches it, the maker changes and tries again. They play for millions of rounds."}
-
-The **maker** makes fake faces. The **checker** tries to tell them from real photos. Each time the checker catches a fake, the maker changes its weights. After millions of rounds, the checker cannot tell anymore. Often, neither can we. (Today many tools use diffusion instead, from Lesson 3.7. The result is the same: pictures that look real.)
-
-:::{.real-world title="Can people tell? (2022)"}
-Scientists Sophie Nightingale and Hany Farid showed people real faces and AI faces.
-
-- People were right **48%** of the time. That is the same as guessing.
-- After a short lesson on clues, people were right **59%** of the time.
-- People rated the AI faces as a little **more trustworthy** than the real ones.
-:::
-
-***
-
-### 4.3.2 - Why the Clues Stop Working
-
-People used to look for clues like these:
+An AI fake of a real person, like the Pope picture, is called a {{< glink deepfake >}}. People used to look for clues like these:
 
 | Old clue | What happened |
 |---|---|
@@ -76,11 +57,11 @@ People used to look for clues like these:
 | Earrings that do not match | Newer tools fix this. |
 | Strange, blurry backgrounds | Newer tools fix this too. |
 
-Every time people find a clue, the companies fix it. Hunting for clues in the picture is a race you will lose.
+Every time people find a clue, the companies fix it. So looking for clues in the picture does not work for long.
 
 ***
 
-### 4.3.3 - Check the Source, Not the Picture
+### 4.3.2 - Check the Source, Not the Picture
 
 Fact-checkers do not stare at a picture. They ask **where it came from**. Use the four steps called **SIFT**:
 
@@ -91,13 +72,9 @@ Fact-checkers do not stare at a picture. They ask **where it came from**. Use th
 | **F**ind better coverage | Search for it. Are trusted news sources reporting it? |
 | **T**race to the original | Use a {{< glink "reverse image search" >}} to find the first place it appeared. |
 
-:::{.note title="Right now (fall 2026)"}
-Some cameras and AI tools now add **Content Credentials**: hidden information that says how a picture was made. Some websites show a small "CR" label you can click. Most pictures online still do not have this information, and it can be removed.
-:::
-
 ***
 
-### 4.3.4 - Fake Voices
+### 4.3.3 - Fake Voices
 
 AI can copy a voice from a short recording, maybe a video someone posted online. Scammers use {{< glink "voice clone" >}} calls that sound like a family member in trouble: "Mom, I need money right now!"
 
@@ -107,9 +84,9 @@ Choose a **family safe word**: a secret word that only your family knows. If som
 
 {{< tryit >}}
 
-### 4.3.5 - Trace It Back
+### 4.3.4 - Trace It Back
 
-Work with a partner. Mr. Ross shows 3 pictures that went around online. For each one:
+Work with a partner. Mr. Ross shows 2 pictures that went around online. For each one:
 
 :::{.steps}
 1. **Stop.** Write how the picture makes you feel.
@@ -119,7 +96,7 @@ Work with a partner. Mr. Ross shows 3 pictures that went around online. For each
 :::
 
 :::{.gotcha title="Class size"}
-**Small class:** work together on all 3 pictures, then try the Pope picture from the top of the page. **Big class:** each pair gets one picture. Pairs with the same picture compare their proof. Then each group teaches the class.
+**Small class:** work together on both pictures, then try the Pope picture from the top of the page. **Big class:** each pair gets one picture. Pairs with the same picture compare their proof. Then each group teaches the class.
 :::
 
 :::{.gotcha title="Fake pictures of real people hurt real people"}
@@ -145,4 +122,8 @@ Make a poster of the SIFT steps in your home language. Add one real example of a
 
 :::{.project title="Our Family Safe Word"}
 Explain voice clones to your family, in your home language. Help them choose a safe word. (Do not tell anyone at school what it is!)
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [how AI learns to make faces, and the labels that show where a picture came from](/chapters/Explore/explore-unit-4.qmd#explore-4-3). For students who want to learn more on their own.
 :::

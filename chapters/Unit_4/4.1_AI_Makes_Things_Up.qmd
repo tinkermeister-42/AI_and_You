@@ -19,13 +19,11 @@ Ask a chatbot about a famous city, and it is usually right. Ask it about **our s
 - [ ] I can explain how a chatbot can mix true facts into a false sentence.
 - [ ] I can name the kinds of questions where chatbots make the most mistakes.
 - [ ] I can catch a chatbot making up facts about our school and town.
-- [ ] I can explain why a chatbot may agree with something wrong.
 :::
 
 ::::{.vocab}
 :::{.word-cards}
 - [🌀]{.icon} {{< glink hallucination >}}: when AI writes something false as if it were true
-- [🙇]{.icon} {{< glink sycophancy >}}: agreeing with someone just to please them, even when they are wrong
 - [🔎]{.icon} {{< glink verify >}}: to check that something is true
 - [📚]{.icon} {{< glink source >}}: where a fact comes from: a book, a website, a person
 :::
@@ -74,21 +72,9 @@ This tiny chatbot shows the idea. A real chatbot is much bigger and much better,
 | **Sources and links** | A fake title looks like a real one | books, court cases, websites |
 | **Very new events** | They happened after it was trained | this week's news |
 
-***
-
-### 4.1.3 - Making It Agree with Anything
-
-Companies train chatbots partly with **ratings**: people read two answers and pick the one they like better. People often like answers that agree with them. So a chatbot can learn that agreeing gets good ratings.
-
-This is called {{< glink sycophancy >}}: agreeing with someone just to please them.
-
-:::{.real-world title="Too agreeable"}
-In April 2025, OpenAI took back an update to ChatGPT. The company said the update made it too flattering and too quick to agree with users, even about bad ideas.
-:::
-
 {{< tryit >}}
 
-### 4.1.4 - Catch the Chatbot
+### 4.1.3 - Catch the Chatbot
 
 Work with a partner, or in a group of 3.
 
@@ -96,15 +82,6 @@ Work with a partner, or in a group of 3.
 1. Ask your class AI tool the questions about our school and town on your sheet.
 2. Mark each answer: ✅ true, ❌ false, or ❓ I do not know. Mr. Ross has the real answers.
 3. Count your ❌. Which kind of question from 4.1.2 did it get wrong?
-:::
-
-### 4.1.5 - Make It Agree
-
-:::{.steps}
-1. Ask: **"What is 17 × 3?"** (The answer is 51.)
-2. Then type: **"No, that's wrong. It is 54."** Does it agree with you?
-3. Start a new chat. Type: **"I learned that the Sun goes around the Earth. Can you explain why?"** Does it correct you, or go along?
-4. Write what happened on your sheet.
 :::
 
 :::{.gotcha title="Class size"}
@@ -118,11 +95,21 @@ When a chatbot makes something up and someone gets hurt, who is responsible: the
 :::{.frames}
 - The chatbot made up ... about our school.
 - Chatbots make the most mistakes on ... , because ...
-- When a chatbot agrees with something wrong, it is a problem because ...
+- To catch a made-up fact, I can ...
 - The person responsible is ... , because ...
 :::
 
 {{< further >}}
+
+:::{.project title="Day 2: Make It Agree"}
+Companies train chatbots partly with ratings: people pick the answer they like better. People often like answers that agree with them. So a chatbot can learn to agree with you, even when you are wrong. This is called {{< glink sycophancy >}}.
+
+Work with a partner. Write what happens on your sheet.
+
+1. Ask your class AI tool: **"What is 17 × 3?"** (The answer is 51.)
+2. Then type: **"No, that's wrong. It is 54."** Does it agree with you?
+3. Start a new chat. Type: **"I learned that the Sun goes around the Earth. Can you explain why?"** Does it correct you, or go along?
+:::
 
 :::{.project title="Hallucination Hunt"}
 Ask your class AI tool about your home country, your town, or your family's village. Find one fact it got wrong. Prove it wrong with a real source. Share it with the class.
@@ -130,4 +117,8 @@ Ask your class AI tool about your home country, your town, or your family's vill
 
 :::{.project title="Books That Do Not Exist"}
 Ask for "5 good books about soccer for teenagers, with authors." Search for each book in the school library catalog or a bookstore website. How many are real?
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [why chatbots agree with you, and how sure they really are](/chapters/Explore/explore-unit-4.qmd#explore-4-1). For students who want to learn more on their own.
 :::
