@@ -80,7 +80,7 @@ Your plan answers 6 questions. You write it on your sheet.
 1. Use at least **3 skills** from Unit 3.
 2. Keep a {{< glink "prompt log" >}}: every prompt you use, and what you did with the answer.
 3. Check what the AI tells you. Write how you checked.
-4. Write an **AI note** at the end (Lesson 3.3).
+4. Write an **AI note** at the end. It is short and honest. It says what you did and what the AI did (Lesson 3.3).
 5. No private information in the AI tool: no names, pictures of people, addresses, phone numbers, birthdays, or student numbers.
 :::
 

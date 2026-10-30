@@ -42,7 +42,7 @@ Draw the path of a chatbot answer on your sheet: from your Chromebook to the AI 
 
 ### 6.3.1 - Electricity and Water
 
-AI runs in {{< glink "data center" >}}s: buildings with thousands of computers. The computers use electricity and get hot. Many data centers use water to cool them.
+AI runs in {{< glink "data center" >}}s: buildings with thousands of computers. The computers use electricity and get hot. Many data centers use water to cool them. Some towns worry that a big data center will use water and electricity that the people who live there need.
 
 One text answer does not use much. In 2025, Google and OpenAI each said one average text answer uses about **0.3 {{< glink "watt-hour" >}}s** of electricity. That is about one second of a microwave oven. Google said it also uses about **5 drops** of water.
 
@@ -70,7 +70,7 @@ Work with a partner. First, {{< glink estimate >}} with your sheet. Then check w
 1. Guess: how many questions does each student send to an AI in one day? Write it.
 2. Multiply by the number of students in our class. That is our class's questions in one day.
 3. Multiply by **0.3** to get watt-hours. How many phone charges is that? (A phone charge is about 15 watt-hours.)
-4. Put your numbers in the calculator. Did your estimate match?
+4. Put your numbers in the calculator. Did your estimate match? How much water did it show?
 5. Press **The world, one day**. How many U.S. homes could that power for a day?
 :::
 

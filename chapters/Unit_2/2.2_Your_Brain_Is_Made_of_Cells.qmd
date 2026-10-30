@@ -110,12 +110,16 @@ With only 4 or 5 people, the squeeze goes around too fast to time. Go around the
 
 One neuron is slow. A computer chip does billions of steps every second. But your brain can still do things that are very hard for computers. It can walk on rocks, understand a joke, and know a friend's face from far away.
 
-How can slow cells make a fast brain? (Think about the GPU race in Lesson 1.5.)
+How can slow cells make a fast brain? (Think about the GPU in Lesson 1.5. It does thousands of small math problems at the same time.)
 
 :::{.frames}
 - A brain can be fast because ...
 - My reaction time was ... milliseconds. My fastest try was ...
-- A brain is like the class in the GPU race because ...
+- A brain is like a GPU because ...
+:::
+
+:::{.answers title="One answer"}
+The squeeze went one person at a time. Each person added time. Your brain does not wait for one neuron at a time. Billions of neurons can work at the same time.
 :::
 
 {{< further >}}

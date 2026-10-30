@@ -49,7 +49,7 @@ Your teacher gives you your answer from the first day. Read it. On your sheet, c
 | How AI is **like** a brain | How AI is **different** |
 |---|---|
 | It is made of many small parts (neurons) that pass signals (Lessons 2.2 and 2.4). | A brain has about 86 billion neurons, in a living body. |
-| Connections get stronger with practice, like weights (Lessons 2.3 and 2.5). | A brain runs on about **20 watts**. Big AI runs in data centers (Lesson 6.3). |
+| Connections get stronger with practice, like weights (Lessons 2.3 and 2.5). | A brain runs on about **20 watts**, about as much power as a dim light bulb. Big AI runs on thousands of computers in data centers (Lesson 6.3). |
 | It learns from examples, not rules (Lesson 1.1). | A child learns "dog" from a few dogs. AI needs thousands of pictures. |
 | It finds patterns and makes predictions (Lesson 1.6). | A brain has feelings, a body, and a life. Does AI {{< glink understand >}}? (Lesson 1.3) |
 
@@ -79,6 +79,8 @@ Now act it out with the squeeze chain from Lesson 2.2.
 3. Replace one more student at a time, until everyone is a chip. Pass the squeeze each time.
 4. Is the line still a "brain"? When did it stop, or did it?
 :::
+
+Look at your squeeze times. Did they change? If they did not, nobody could tell from the outside which hands were chips. Scientists can measure the squeeze. Nobody knows how to measure what it feels like inside.
 
 :::{.teacher title="Class size"}
 **4 students:** make a line of 4 with the teacher. Replace one student each round. **Big class:** make two lines. One line stays all neurons. Compare the squeeze times.

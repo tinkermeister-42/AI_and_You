@@ -65,13 +65,12 @@ A transformer looks at **every word at the same time**. For each word, it decide
 
 ![](/images/Unit_1/1.6_gpt.svg){width="600px" fig-align="center" fig-alt="G is Generative: it makes new text. P is Pre-trained: it learned first from a huge amount of text. T is Transformer: it uses attention to connect the words."}
 
-A GPT is a {{< glink "large language model" >}}. It learned by playing one game, billions of times: **predict the next word** (like the phone keyboard in Lesson 1.1). When it answers you, it predicts one word, then the next, then the next.
+A GPT is a {{< glink "large language model" >}}. It learned by playing one game, billions of times: **predict the next word** (like a phone keyboard, when it suggests your next word). When it answers you, it predicts one word, then the next, then the next.
 
 :::{.note title="Right now (fall 2026)"}
 There are many chatbots built this way: ChatGPT, Gemini, Claude, Copilot, Llama, and more. Most AI tools made for schools are built on top of models like these.
 :::
 
-In 2024, two Nobel Prizes, among the biggest prizes in science, went to scientists who worked on AI.
 
 {{< tryit >}}
 
@@ -129,7 +128,6 @@ ChatGPT learned from text that people wrote: books, websites, news, and more. Mo
 | 2016 | AlphaGo beats Lee Sedol at Go. |
 | 2017 | Transformers and attention. |
 | 2022 | ChatGPT. |
-| 2024 | Nobel Prizes for AI. |
 | 2025 | A chatbot passes the Turing test. |
 
 :::{.project title="Trick the Attention"}
@@ -137,7 +135,7 @@ Write your own tricky "it" sentence, where one word changes what "it" means. Ask
 :::
 
 :::{.project title="People of AI"}
-With a partner, make a poster about one person from Unit 1: Alan Turing, Joseph Weizenbaum, John Searle, Fei-Fei Li, Geoffrey Hinton, or Demis Hassabis. Where were they from? What did they do? Hang it next to their card on the timeline.
+With a partner, make a poster about one person from Unit 1 or its Explore More page: Alan Turing, Joseph Weizenbaum, John Searle, Fei-Fei Li, Geoffrey Hinton, or Demis Hassabis. Where were they from? What did they do? Hang it next to their card on the timeline.
 :::
 
 :::{.explore-link}

@@ -46,7 +46,7 @@ AI almost never does a whole job. It does some of the {{< glink task >}}s inside
 
 ![](/images/Unit_5/5.3_job_tasks.svg){width="640px" fig-align="center" fig-alt="A job, nurse, splits into tasks in three groups. AI can do it: make the work schedule. AI can help a person: write notes about patients, and check medicine amounts. A person does it: take blood pressure, and calm a scared patient."}
 
-When AI takes over some tasks, a person has more time for the others. Or a company may hire fewer people. Both happen.
+When a machine does tasks that people used to do, that is {{< glink automation >}}. A person may have more time for other tasks, like the bank tellers. Or a company may hire fewer people. Both happen.
 
 ***
 
@@ -116,7 +116,9 @@ In 2026, he said:
 
 > "Kids need to not worry about college and become plumbers and electricians."
 
-Is he right this time? Will robots do the work of plumbers and electricians someday? When? What should **you** learn now?
+(He meant: skip college, and learn a trade that uses your hands. He thinks those jobs are safe from AI.)
+
+Is he right this time? Will robots do the work of plumbers and electricians someday? When? What should **you** learn now, for your {{< glink career >}}?
 
 :::{.frames}
 - I think he (is / is not) right, because ...

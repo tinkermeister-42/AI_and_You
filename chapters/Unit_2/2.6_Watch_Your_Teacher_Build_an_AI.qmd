@@ -32,7 +32,7 @@ Mr. Ross, who wrote this book, built AI for his job for many years. He made this
 ::::
 
 :::{.guided-notes-link}
-[Printable lesson sheet](/handouts/Unit_2/2.6_Watch_Mr_Ross_Build_an_AI.pdf){target="_blank"} - the sheet you write on today.
+[Printable lesson sheet](/handouts/Unit_2/2.6_Watch_Your_Teacher_Build_an_AI.pdf){target="_blank"} - the sheet you write on today.
 :::
 
 :::{.teacher title="Before class"}

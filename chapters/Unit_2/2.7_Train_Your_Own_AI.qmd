@@ -111,6 +111,7 @@ Open Teachable Machine again with your partner. Train Rock and Paper like yester
 3. Now make your AI harder to fool. Add more **kinds** of examples: both hands, different people, near and far, different light. Train again.
 4. Test all the tricks again. Did your AI get better? Write what changed on your sheet.
 5. **Class model:** train one model with pictures from **everyone**. Test it on a teacher who was not in the pictures. Is it better than a one-person model?
+6. Train a new model on one of your Warm Up ideas. Then try to fool it.
 :::
 
 :::{.project title="Hello in Three Languages"}

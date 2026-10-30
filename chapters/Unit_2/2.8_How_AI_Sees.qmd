@@ -94,6 +94,8 @@ The **up-and-down** filter compares the left side with the right side. It finds 
 The **side-to-side** filter compares the top with the bottom. It finds edges that go across, like the bottom of the house.
 
 A real network has many filters like these, and it learns them by itself. (See Explore More to find out how.)
+
+Edges are only the first step. A real network puts edges together into shapes. Then it puts shapes together into parts, like an eye or a wheel. That is how a network can find a person in a picture.
 :::
 
 {{< talk >}}

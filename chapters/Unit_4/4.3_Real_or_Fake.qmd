@@ -80,10 +80,10 @@ Fact-checkers do not stare at a picture. They ask **where it came from**. Use th
 
 ### 4.3.3 - Fake Voices
 
-AI can copy a voice from a short recording, maybe a video someone posted online. Scammers use {{< glink "voice clone" >}} calls that sound like a family member in trouble: "Mom, I need money right now!"
+Fakes are not only pictures. AI can make fake voices, too. It can copy a voice from a short recording, maybe a video someone posted online. Scammers use {{< glink "voice clone" >}} calls that sound like a family member in trouble: "Mom, I need money right now!"
 
 :::{.remember title="What you can do"}
-Choose a **family safe word**: a secret word that only your family knows. If someone calls in a panic asking for money, ask for the safe word. Then hang up and call the person back on their real number.
+Choose a **family safe word**: a secret word that only your family knows. If someone calls in a panic asking for money, ask for the safe word. Then hang up and call the person back on their real number. Calling back is the same idea as SIFT: you check the source, not the voice.
 :::
 
 {{< tryit >}}

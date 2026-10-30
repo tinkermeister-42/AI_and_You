@@ -37,7 +37,7 @@ Multiply, add, compare. The class acts out a neuron that adds up signals and dec
 [**Train a Human Neural Network**](2.5_Train_a_Human_Neural_Network.qmd)\
 The class becomes a neuron that starts with the wrong idea, then fixes its weights after every mistake.
 
-[**Watch Your Teacher Build an AI**](2.6_Watch_Mr_Ross_Build_an_AI.qmd)\
+[**Watch Your Teacher Build an AI**](2.6_Watch_Your_Teacher_Build_an_AI.qmd)\
 Six steps to build an AI. Predict, then watch a real neural network learn from 1,281 Pokémon.
 
 [**Train Your Own AI**](2.7_Train_Your_Own_AI.qmd)\

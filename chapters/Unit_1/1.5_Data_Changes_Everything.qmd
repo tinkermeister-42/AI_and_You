@@ -84,6 +84,8 @@ AI did not get better because people wrote better rules. It got better because o
 
 :::{.real-world title="AlphaGo (2016)"}
 Go is a board game from China. It is much harder for computers than chess. In 2016, a neural network called **AlphaGo** played Lee Sedol, one of the best Go players in the world. AlphaGo won, 4 games to 1.
+
+Deep Blue used rules that people wrote (Lesson 1.4). AlphaGo learned from examples. First it learned from games that people played. Then it played millions of games against itself.
 :::
 
 {{< tryit >}}
@@ -112,7 +114,7 @@ ImageNet had this problem too. So the workers got instructions, and several peop
 :::{.gotcha title="An AI learns what the labelers decided"}
 If the labelers said a hot dog is a sandwich, the AI will say it too. The AI does not know what a sandwich *really* is. It only knows what people labeled.
 
-What if all the labelers came from one country? You will think about this in Unit 4.
+What if all the labelers came from one country? The AI would learn their idea of a sandwich. In Unit 4, you will see more ways that AI learns unfair patterns.
 :::
 
 :::{.real-world title="You have done this job before"}
@@ -143,7 +145,7 @@ Every time you solved one, you were a labeler too. Nobody paid you.
 :::{.watch title="How we teach computers to understand pictures (Fei-Fei Li, TED, 2015)"}
 {{< ytvideo 40riCqvRoMs title="How we teach computers to understand pictures (Fei-Fei Li, TED, 2015)" >}}
 
-Fei-Fei Li gave this talk in 2015, three years after AlexNet won. It is history now: computers can do much more today. The talk is 18 minutes. In class, we watch the first part.
+Fei-Fei Li gave this talk in 2015, three years after the Toronto team's neural network won. It is history now: computers can do much more today. The talk is 18 minutes. In class, we watch the first part.
 
 **While you watch:** Fei-Fei Li compares computers to children. In 2015, what could children do that computers could not?
 

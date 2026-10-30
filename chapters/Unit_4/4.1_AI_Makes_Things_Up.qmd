@@ -48,7 +48,7 @@ Two of these stories are true. One is made up. Which one? Vote with your hand: 1
 :::{.answers title="Answer"}
 **All three are true.** That is the trick.
 
-1. The glue answer came from an old joke post online. The AI repeated it as advice.
+1. The glue answer came from an old joke post online. The AI repeated it as advice. This is a different mistake from the one you study today. The AI did not mix facts. It repeated a joke as if it were true. So always check where a fact comes from.
 2. The airline was Air Canada. It told the court the chatbot was responsible for its own mistakes. The court said no: the airline is responsible for its chatbot.
 3. This is the *Chicago Sun-Times* list from the top of this page.
 :::
@@ -75,6 +75,8 @@ This tiny chatbot shows the idea. A real chatbot is much bigger and much better,
 | **Exact details** | Many likely answers look alike | dates, numbers, names, quotes |
 | **Sources and links** | A fake title looks like a real one | books, court cases, websites |
 | **Very new events** | They happened after it was trained | this week's news |
+
+For these kinds of questions, always {{< glink verify >}} the answer. Check that it is true with a real {{< glink source >}}.
 
 {{< tryit >}}
 

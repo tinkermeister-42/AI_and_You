@@ -2,7 +2,7 @@
 
 A real neuron takes in signals, adds them up, and fires if the total is big enough.
 
-In 1943, two scientists, Warren McCulloch and Walter Pitts, wrote this idea as **math**. In 1958, Frank Rosenblatt built a machine from it. It was called the **perceptron**. (Remember the newspaper story from Lesson 1.4?)
+In 1943, two scientists, Warren McCulloch and Walter Pitts, wrote this idea as **math**. In 1958, Frank Rosenblatt built a machine from it. It was called the **perceptron**. (The 1958 newspaper story in Lesson 1.4 was about this machine.)
 
 That simple idea is the building block of every neural network today. Today, the class becomes one.
 

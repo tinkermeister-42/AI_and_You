@@ -53,7 +53,7 @@ A trolley (a train on a city street) is rolling down the track. It cannot stop. 
 
 Do you pull the lever?
 
-The philosopher Philippa Foot asked a question like this in 1967. People have argued about it ever since. There is no answer everyone agrees on.
+The philosopher Philippa Foot asked a question like this in 1967. People have argued about it ever since. There is no answer everyone agrees on. Questions about what is right and wrong are called {{< glink ethics >}}.
 :::
 
 Most people say they would pull the lever: 1 is fewer than 5. But change the story a little, and many people change their answer. What if you had to **push** a person onto the track to stop the trolley? The numbers are the same. Most people say no.
@@ -85,7 +85,7 @@ Engineers say these exact choices almost never happen on real roads. Their job i
 
 {{< talk >}}
 
-Who should make the rules for AI cars, and for AI in general: the companies that build it, the government, or the people it affects? Should the rules be the same in every country?
+Who should make the rules for AI cars, and for AI in general: the companies that build it, the government, or the people it affects? Should the rules be the same in every country? (A rule made by a government is a {{< glink regulation >}}.)
 
 :::{.frames}
 - In the first round, I chose ... because ...
