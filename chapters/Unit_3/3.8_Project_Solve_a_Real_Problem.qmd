@@ -81,7 +81,7 @@ Your plan answers 6 questions. You write it on your sheet.
 2. Keep a {{< glink "prompt log" >}}: every prompt you use, and what you did with the answer.
 3. Check what the AI tells you. Write how you checked.
 4. Write an **AI note** at the end (Lesson 3.3).
-5. No private information in the AI tool: no addresses, phone numbers, or full names.
+5. No private information in the AI tool: no names, pictures of people, addresses, phone numbers, birthdays, or student numbers.
 :::
 
 | | Got it | Almost | Not yet |
@@ -107,7 +107,7 @@ Work with a partner, or in a group of 3. (In a class of 4, make two pairs.) Choo
 :::
 
 :::{.gotcha title="Keep it private"}
-For a résumé, use a fake name and address in the AI tool, like "Student Name, 123 Main Street." Put your real information in only at the very end, on your own computer.
+For a résumé, use a fake name and address in the AI tool, like "Student Name, 123 Main Street." Put your real information in only at the very end, on your own computer, never in the AI tool. Before you type a school letter into the AI tool, take out every name and number.
 :::
 
 {{< talk >}}

@@ -61,7 +61,7 @@
   }
   root.querySelectorAll("[data-s]").forEach((b) => b.addEventListener("click", () => {
     txt.value = SAMPLES[b.dataset.s]; res.innerHTML = ""; marked.innerHTML = "";
-    if (b.dataset.s === "mine") { txt.placeholder = "Write 5 sentences about yourself, in simple English. Then press Check it."; txt.focus(); } else check();
+    if (b.dataset.s === "mine") { txt.placeholder = "Write 5 sentences about a favorite food or sport, in simple English. Then press Check it."; txt.focus(); } else check();
   }));
   root.querySelector(".td-go").addEventListener("click", check);
 })();

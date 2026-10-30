@@ -117,7 +117,7 @@ Test the picture in 3.2.1 for yourself.
 :::
 
 :::{.project title="Practice a Job Interview"}
-Type: **"You are a job interviewer at a grocery store. Ask me one question at a time. Wait for my answer. After each answer, give me one tip."** Keep talking for 5 questions. What was the best tip? (Do not use your real name or address.)
+Type: **"You are a job interviewer at a grocery store. Ask me one question at a time. Wait for my answer. After each answer, give me one tip."** Keep talking for 5 questions. What was the best tip? (Do not type your name or anything else about who you are.)
 :::
 
 :::{.project title="Quiz Me"}

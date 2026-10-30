@@ -82,7 +82,9 @@ Here is Kofi's prompt again, in color:
 :::{.gotcha title="What not to type"}
 An AI tool may save what you type. A person at the company may read it. So **never** type:
 
-- your full name, address, or phone number
+- your name, or anyone else's name
+- pictures of yourself or other people
+- your address, phone number, birthday, or student number
 - passwords
 - private facts about another person
 
