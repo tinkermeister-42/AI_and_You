@@ -11,8 +11,8 @@ Today, you watch your own brain learn something new, and you measure it.
 
 - [🔥]{.icon} **Warm Up** Your other hand [6 min]{.time}
 - [👥]{.icon} **Learn Together** Stronger connections, and Pavlov's dogs [10 min]{.time}
-- [🛠️]{.icon} **Try It** Mirror drawing [16 min]{.time}
-- [💬]{.icon} **Talk About It** Is it the same kind of learning? [8 min]{.time}
+- [🛠️]{.icon} **Try It** Mirror drawing [17 min]{.time}
+- [💬]{.icon} **Talk About It** Is it the same kind of learning? [7 min]{.time}
 :::
 
 :::{.objectives}
@@ -79,7 +79,6 @@ Trace the star with a "mirror" pen. When your hand moves **down**, the pen moves
 2. Trace the star all the way around. Stay inside the blue path. Come back to the green circle to finish.
 3. Do **5 tries** with the same pen. Write your time and mistakes on your sheet after each try.
 4. Make a graph of your times. This is your **{{< glink "learning curve" >}}**.
-5. Then switch the pen to **left and right flipped**. Is it hard again?
 :::
 
 {{< include /assets/Unit_2/mirror_draw.html >}}
@@ -90,8 +89,6 @@ On a touch screen, use your finger. On a laptop, a mouse is easier than a touch 
 
 :::{.think title="What does your learning curve look like?"}
 For most people, the time drops a lot after the first tries. Then it drops more slowly. Your brain was building new connections between what your eyes see and how your hand moves.
-
-When you switched to a new mirror, it got hard again. Your brain learned **one** skill, not every skill.
 :::
 
 {{< talk >}}
@@ -108,10 +105,28 @@ And think about Pavlov: is there a **sound** that makes you reach for your phone
 
 {{< further >}}
 
+:::{.project title="Day 2: A New Mirror"}
+Use the mirror drawing tool in 2.3.2 again, with a partner.
+
+1. Do 2 more tries with the **same** pen as yesterday. Are you still fast? Did your brain keep the skill?
+2. Switch the pen to **left and right flipped**. Do 3 tries. Write your times on your sheet.
+3. Is it hard again? Why?
+:::
+
+:::{.think title="Why was the new mirror hard?"}
+Your brain learned **one** skill: up and down flipped. It did not learn every mirror skill. A new mirror needs new connections.
+
+AI is like this too. An AI trained for one job is often bad at a job that looks almost the same.
+:::
+
 :::{.project title="Real Mirror Drawing"}
 Put a mirror up on a desk. Put paper with a star in front of it. Put a book over your hand so you can only see your hand **in the mirror**. Trace the star. Is it the same as the computer?
 :::
 
 :::{.project title="Pavlov at Home"}
 Find three times that a sound or a picture makes you or someone in your family do something automatically. (Phone sounds, a song from an ad, a school bell.) Who taught you to react to it? Was it on purpose?
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [the taxi drivers whose brains grew](/chapters/Explore/explore-unit-2.qmd#explore-2-3). For students who want to learn more on their own.
 :::

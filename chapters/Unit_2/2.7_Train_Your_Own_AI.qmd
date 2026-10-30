@@ -19,7 +19,6 @@ Then you try to fool it. That is the most important part.
 - [ ] I can train an image AI with my own examples.
 - [ ] I can test my AI and find where it fails.
 - [ ] I can explain why an AI fails on examples that are different from its training data.
-- [ ] I can make my AI better by changing its training data.
 :::
 
 ::::{.vocab}
@@ -27,7 +26,6 @@ Then you try to fool it. That is the most important part.
 - [🏷️]{.icon} {{< glink label >}}: the right answer for an example, like "rock"
 - [🏋️]{.icon} {{< glink training >}}: showing an AI many examples so it can fix its weights
 - [🧪]{.icon} {{< glink "test data" >}}: new examples the AI never trained on
-- [♻️]{.icon} {{< glink "transfer learning" >}}: starting from an AI that already learned something, then teaching it a new job
 :::
 ::::
 
@@ -39,7 +37,7 @@ Then you try to fool it. That is the most important part.
 
 You can train an AI to tell apart any pictures your camera can see. What would you teach it? Write two ideas on your sheet.
 
-Examples: rock, paper, scissors. Thumbs up and thumbs down. A pen and a pencil. Your face and your partner's face.
+Examples: rock and paper. Thumbs up and thumbs down. A pen and a pencil. Your face and your partner's face.
 
 {{< learn >}}
 
@@ -53,12 +51,6 @@ Examples: rock, paper, scissors. Thumbs up and thumbs down. A pen and a pencil. 
 | **Samples** | the pictures you take for a class | training examples |
 | **Train Model** | the network fixes its weights | {{< glink training >}} |
 | **Preview** | try it on new pictures | {{< glink "test data" >}} |
-
-:::{.remember title="Why is it so fast?"}
-Teachable Machine does not start from nothing. It starts with a network that **already learned** from millions of pictures. It already knows about edges, shapes, and colors. It only learns the **last step** from your pictures: which shapes go with "rock."
-
-This is called {{< glink "transfer learning" >}}. It is like learning a new sport when you already know how to run and catch.
-:::
 
 :::{.gotcha title="Your pictures stay on your computer"}
 Teachable Machine trains in your browser. Your pictures stay on your computer unless you choose to save your project to Google Drive. **Do not save it.**
@@ -74,7 +66,7 @@ Work in a group of **2 or 3**, with one computer that has a camera.
 
 :::{.steps}
 1. Open [Teachable Machine](https://teachablemachine.withgoogle.com/train/image){target="_blank"}. Choose **Standard image model**.
-2. Rename **Class 1** to "Rock" and **Class 2** to "Paper." Press **Add a class** and name it "Scissors."
+2. Rename **Class 1** to "Rock" and **Class 2** to "Paper."
 3. For each class, press **Webcam**. Make the hand sign. **Hold to Record** about **50 pictures**. Move your hand a little while you record.
 4. Press **Train Model**. Wait. Do not switch to another tab while it trains.
 5. In **Preview**, make each sign. Watch the bars. Is your AI right?
@@ -92,17 +84,11 @@ Now try to make your AI wrong. Change **one thing** at a time. Write what happen
 - Move your hand **very close** to the camera, then far away.
 - Turn the **lights off**, or stand in front of a bright window.
 - Let your **partner** make the signs.
-- Change the **background**: hold up a book or a poster behind your hand.
-- Make the sign with a **glove** or a sock on your hand.
 
 :::{.think title="Why did some tricks fool your AI?"}
 Your AI learned from **your** hand, in **this** room, in **this** light. When something new came in, it had never seen anything like it. So it guessed.
 
 This is true for every AI, even very big ones. **An AI is only as good as its training examples.**
-:::
-
-:::{.think title="How can you make it harder to fool?"}
-Add more **kinds** of examples. Record pictures with both hands, different people, near and far, in different light. Then train again. Did your AI get better?
 :::
 
 {{< talk >}}
@@ -117,6 +103,16 @@ Your AI worked well for **you**. Would it work for everyone? Who was **missing**
 
 {{< further >}}
 
+:::{.project title="Day 2: Make It Harder to Fool"}
+Open Teachable Machine again with your partner. Train Rock and Paper like yesterday.
+
+1. Press **Add a class** and name it "Scissors." Record about 50 pictures.
+2. Try two new tricks: change the **background** (hold up a book or a poster), and make the sign with a **glove** or a sock on your hand.
+3. Now make your AI harder to fool. Add more **kinds** of examples: both hands, different people, near and far, different light. Train again.
+4. Test all the tricks again. Did your AI get better? Write what changed on your sheet.
+5. **Class model:** train one model with pictures from **everyone**. Test it on a teacher who was not in the pictures. Is it better than a one-person model?
+:::
+
 :::{.project title="Hello in Three Languages"}
 Make an **Audio project** in Teachable Machine. Teach it to recognize "hello" in three languages that people in your class speak. Record each word from several people. Does it work for someone new?
 :::
@@ -125,6 +121,6 @@ Make an **Audio project** in Teachable Machine. Teach it to recognize "hello" in
 Train an image model with three classes: **paper**, **plastic**, and **metal**. Use real objects from the classroom. Test it on objects it has never seen. Where does it make mistakes?
 :::
 
-:::{.project title="The Class Model"}
-Train one model with pictures from **everyone** in the class. Then test it on a teacher or a visitor who was not in the training pictures. Is the class model better than a one-person model?
+:::{.explore-link}
+🔭 **Explore More:** [why Teachable Machine learns so fast](/chapters/Explore/explore-unit-2.qmd#explore-2-7). For students who want to learn more on their own.
 :::

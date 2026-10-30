@@ -9,10 +9,10 @@ All of it was done by **cells**. Today, you measure how fast your brain cells wo
 :::{.agenda}
 **Today's Plan** (40 minutes)
 
-- [🔥]{.icon} **Warm Up** Catch the ruler [7 min]{.time}
-- [👥]{.icon} **Learn Together** Neurons and signals [10 min]{.time}
-- [🛠️]{.icon} **Try It** The squeeze chain and the click test [15 min]{.time}
-- [💬]{.icon} **Talk About It** Slow cells, fast brain? [8 min]{.time}
+- [🔥]{.icon} **Warm Up** Catch the ruler [8 min]{.time}
+- [👥]{.icon} **Learn Together** Neurons and signals [12 min]{.time}
+- [🛠️]{.icon} **Try It** The squeeze chain [13 min]{.time}
+- [💬]{.icon} **Talk About It** Slow cells, fast brain? [7 min]{.time}
 :::
 
 :::{.objectives}
@@ -86,13 +86,6 @@ Your brain has about **86 billion** cells called {{< glink slug="neuron" text="n
 3. When it fires, an electric signal runs down the axon.
 4. At the synapse, the neuron lets out tiny chemicals. They carry the signal across the gap to the next neuron.
 
-:::{.remember title="Brain numbers"}
-- About **86 billion** neurons.
-- Hundreds of **trillions** of synapses (connections).
-- Signals move from about **0.5** to **120 meters per second**. The fastest signals are as fast as a race car. The slowest are slower than walking.
-- Your whole brain runs on about **20 watts** of power. That is less than an old light bulb.
-:::
-
 {{< tryit >}}
 
 ### 2.2.3 - The Squeeze Chain
@@ -113,18 +106,6 @@ With only 4 or 5 people, the squeeze goes around too fast to time. Go around the
 
 **Time for one person** $= \dfrac{\text{total time}}{\text{number of people}}$
 
-### 2.2.4 - The Click Test
-
-Click the box as soon as it turns **green**. Do it 5 times.
-
-{{< include /assets/Unit_2/reaction.html >}}
-
-:::{.think title="Is your click time the same as your ruler time?"}
-They are close. Most people react in about 200 to 300 milliseconds.
-
-In that time, a signal went from your eyes to your brain, through many neurons, and back down to your hand.
-:::
-
 {{< talk >}}
 
 One neuron is slow. A computer chip does billions of steps every second. But your brain can still do things that are very hard for computers. It can walk on rocks, understand a joke, and know a friend's face from far away.
@@ -139,10 +120,30 @@ How can slow cells make a fast brain? (Think about the GPU race in Lesson 1.5.)
 
 {{< further >}}
 
+:::{.project title="Day 2: The Click Test"}
+Measure your reaction time on screen, with a partner.
+
+1. Click the box below as soon as it turns **green**. Do it 5 times.
+2. Write your 5 times on your sheet. Find your average.
+3. Is your click time close to your ruler time?
+:::
+
+{{< include /assets/Unit_2/reaction.html >}}
+
+:::{.think title="Is your click time the same as your ruler time?"}
+They are close. Most people react in about 200 to 300 milliseconds.
+
+In that time, a signal went from your eyes to your brain, through many neurons, and back down to your hand.
+:::
+
 :::{.project title="A Science Experiment"}
 Does talking slow down your reaction time? Do the ruler test 5 times while it is quiet. Then do it 5 times while your partner asks you math questions. Compare the averages. Make a bar graph.
 :::
 
 :::{.project title="Build a Neuron"}
 Build a neuron from string, paper, or pipe cleaners. Label the dendrites, cell body, axon, and synapse. Connect your neuron to a partner's neuron at a synapse.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [brain numbers: how many, how fast, how much power](/chapters/Explore/explore-unit-2.qmd#explore-2-2). For students who want to learn more on their own.
 :::

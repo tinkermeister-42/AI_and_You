@@ -10,8 +10,8 @@ Your brain works a little like this. Each brain cell follows simple rules. About
 **Today's Plan** (40 minutes)
 
 - [🔥]{.icon} **Warm Up** Make a wave [5 min]{.time}
-- [👥]{.icon} **Learn Together** One row, one rule [9 min]{.time}
-- [🛠️]{.icon} **Try It** Be Rule 30, then explore [19 min]{.time}
+- [👥]{.icon} **Learn Together** One row, one rule [8 min]{.time}
+- [🛠️]{.icon} **Try It** Be Rule 30, then watch Life [20 min]{.time}
 - [💬]{.icon} **Talk About It** Can simple make smart? [7 min]{.time}
 :::
 
@@ -19,7 +19,6 @@ Your brain works a little like this. Each brain cell follows simple rules. About
 - [ ] I can follow a rule card to make the next row of cells.
 - [ ] I can explain how simple rules can make complicated patterns.
 - [ ] I can explain what emergence means.
-- [ ] I can connect simple rules to brain cells.
 :::
 
 ::::{.vocab}
@@ -51,15 +50,9 @@ When many simple parts make something bigger that nobody planned, we call it **{
 
 {{< learn >}}
 
-### 2.1.1 - A Question from Mr. Ross's Old Job
+### 2.1.1 - One Row, One Rule
 
-Before he was a teacher, Mr. Ross worked at **Wolfram Research**, the company that makes the math program *Mathematica*. The company's founder, **Stephen Wolfram**, spent years on one question:
-
-> How can very simple rules make very complicated things?
-
-***
-
-### 2.1.2 - One Row, One Rule
+Before he was a teacher, Mr. Ross worked at **Wolfram Research**. Its founder, **Stephen Wolfram**, spent years on one question: *how can very simple rules make very complicated things?* He studied rows of squares like this one.
 
 Picture a row of squares. Each square is black or white. Every square looks at **itself** and its **two neighbors**. Then the rule card says what color it will be in the next row.
 
@@ -67,25 +60,15 @@ Picture a row of squares. Each square is black or white. Every square looks at *
 
 There are only 8 possible patterns of 3 squares. So a rule card has 8 answers. This card is called **Rule 30**. A world like this is called a {{< glink "cellular automaton" >}}.
 
-Different cards make very different pictures. All four of these start with **one black square**:
-
-![](/images/Unit_2/2.1_rules_gallery.svg){width="760px" fig-align="center" fig-alt="Four pictures. Rule 4: a single straight line that never changes. Rule 90: a neat triangle pattern. Rule 30: a triangle full of messy chaos. Rule 110: a complex pattern that grows on one side."}
-
 ***
 
-### 2.1.3 - Rule 30
+### 2.1.2 - Rule 30
 
-Stephen Wolfram studied Rule 30 in 1983. Here it is after 80 rows:
+Wolfram studied Rule 30 in 1983. Here it is after 80 rows, starting from **one black square**:
 
 ![](/images/Unit_2/2.1_rule30_big.svg){width="640px" fig-align="center" fig-alt="Rule 30 after 80 rows: a large triangle. The left side has stripes. The middle and right look random, with small white triangles of many sizes."}
 
 The rule is tiny. But the middle of the picture looks **{{< glink random >}}**. Even Wolfram cannot say what row 1,000 will look like. The only way to know is to make all 999 rows before it.
-
-:::{.real-world title="Rule 30 in the real world"}
-- **Random numbers.** *Mathematica* used Rule 30 to make random numbers.
-- **A sea snail.** A cone snail called *Conus textile* has a pattern on its shell that looks like Rule 30.
-- **A train station.** Cambridge North station in England has Rule 30 patterns on its walls.
-:::
 
 :::{.remember title="The big idea"}
 Simple rules can make behavior that is **just as complicated** as anything else. Wolfram calls this the **Principle of Computational Equivalence**. He thinks a row of cells, the weather, and a brain can all be equally complicated. Not every scientist agrees.
@@ -95,7 +78,7 @@ This matters for AI. A neural network is made of tiny parts that follow simple r
 
 {{< tryit >}}
 
-### 2.1.4 - Be Rule 30
+### 2.1.3 - Be Rule 30
 
 The class becomes a row of cells.
 
@@ -112,13 +95,14 @@ The class becomes a row of cells.
 Decide your new color, but wait for "Go!" If you change early, your neighbors will see the wrong color.
 :::
 
-### 2.1.5 - Explore the Rules on Screen
+### 2.1.4 - Watch the Game of Life
+
+The **Game of Life** is a grid, not a row. Each square follows simple rules about its 8 neighbors. Mr. Ross shows it on the projector.
 
 :::{.steps}
-1. Press **Draw it** for Rule 30. Does it match your sheet?
-2. Try the other rules: 90, 110, 4, 184, 150. Which one makes chaos? Which one makes a neat pattern?
-3. **Make your own rule.** Click the answer squares on the rule card. What is your rule's number?
-4. Switch to **The Game of Life**. Add a **glider** and press **Run**. What does the glider do?
+1. Mr. Ross chooses **The Game of Life**, adds a **glider**, and presses **Run**.
+2. Watch the glider. What does it do?
+3. Look closely at one square. Does it move?
 :::
 
 {{< include /assets/Unit_2/simple_rules.html >}}
@@ -139,14 +123,13 @@ A brain cell follows simple rules. A part of a neural network follows simple rul
 
 {{< further >}}
 
-:::{.project title="Life Challenge"}
-In the Game of Life, try to build:
+:::{.project title="Day 2: Explore the Rules on Screen"}
+Use the rules tool in 2.1.4, with a partner.
 
-1. A pattern that **never changes**.
-2. A pattern that **blinks** back and forth forever.
-3. A pattern that **moves**, like the glider.
-
-Draw your best pattern on grid paper. Can a partner guess what it will do?
+1. Press **Draw it** for Rule 30. Does it match your sheet?
+2. Try the other rules: 90, 110, 4, 184, 150. Which one makes chaos? Which one makes a neat pattern?
+3. **Make your own rule.** Click the answer squares on the rule card. What is your rule's number?
+4. Switch to **The Game of Life**. Try to build a pattern that **never changes**, one that **blinks** back and forth, and one that **moves** like the glider.
 :::
 
 :::{.project title="Rule 30 with Cups"}
@@ -161,6 +144,6 @@ John Conway, the mathematician who made the Game of Life in 1970, tells how he i
 **Captions in your language:** Press **CC**, then ⚙️ **Settings**, then **Subtitles/CC**, then **Auto-translate**.
 :::
 
-**More to explore**
-
-- [Conus textile (Wikipedia)](https://en.wikipedia.org/wiki/Conus_textile){target="_blank"}: See photos of the snail shell. Does it look like Rule 30?
+:::{.explore-link}
+🔭 **Explore More:** [different rule cards, and Rule 30 in the real world](/chapters/Explore/explore-unit-2.qmd#explore-2-1). For students who want to learn more on their own.
+:::

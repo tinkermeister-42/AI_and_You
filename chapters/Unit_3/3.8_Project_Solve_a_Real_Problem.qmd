@@ -104,7 +104,6 @@ Work with a partner, or in a group of 3. (In a class of 4, make two pairs.) Choo
 2. Show your plan to Mr. Ross. He signs it.
 3. Write your first prompt. Use task, context, and format (Lesson 3.1).
 4. Write the prompt in your prompt log. Write what you did with the answer.
-5. Keep going: follow-up questions, checks, and changes. Log each one.
 :::
 
 :::{.gotcha title="Keep it private"}
@@ -128,8 +127,9 @@ What could go wrong if the AI makes a mistake in your project? Who could it hurt
 Use the second day to finish your product.
 
 1. Read your prompt log. What is left to do?
-2. Finish the product. Keep logging every prompt.
-3. Check everything once more: facts, math, translation.
-4. Write your AI note.
-5. Bring your product, plan, and prompt log to Lesson 3.9.
+2. Keep going: follow-up questions, checks, and changes. Log each prompt.
+3. Finish the product.
+4. Check everything once more: facts, math, translation.
+5. Write your AI note.
+6. Bring your product, plan, and prompt log to Lesson 3.9.
 :::

@@ -4,21 +4,20 @@ A real neuron takes in signals, adds them up, and fires if the total is big enou
 
 In 1943, two scientists, Warren McCulloch and Walter Pitts, wrote this idea as **math**. In 1958, Frank Rosenblatt built a machine from it. It was called the **perceptron**. (Remember the newspaper story from Lesson 1.4?)
 
-That simple idea is the building block of every neural network today. Today, you become one, and then you build one that can tell an X from an O.
+That simple idea is the building block of every neural network today. Today, the class becomes one.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
 
-- [🔥]{.icon} **Warm Up** Should I go? [6 min]{.time}
+- [🔥]{.icon} **Warm Up** Should I go? [7 min]{.time}
 - [👥]{.icon} **Learn Together** Multiply, add, compare [10 min]{.time}
-- [🛠️]{.icon} **Try It** Be a neuron, then build one [18 min]{.time}
-- [💬]{.icon} **Talk About It** Who picks the weights? [6 min]{.time}
+- [🛠️]{.icon} **Try It** Be a neuron [16 min]{.time}
+- [💬]{.icon} **Talk About It** Who picks the weights? [7 min]{.time}
 :::
 
 :::{.objectives}
 - [ ] I can explain inputs, weights, and a threshold.
 - [ ] I can calculate what an artificial neuron decides.
-- [ ] I can choose weights that make a neuron tell an X from an O.
 - [ ] I can compare an artificial neuron with a real neuron.
 :::
 
@@ -98,23 +97,6 @@ An artificial neuron is only **multiply, add, compare**. That is all. A neural n
 **4 students:** one neuron and three inputs. **More students:** make two or three neurons. Then connect them: the neurons' answers become the inputs for one more neuron. That is a **network**!
 :::
 
-### 2.4.3 - Build a Neuron That Sees
-
-This neuron looks at a 3 by 3 picture. Each square is an input: **1** if it is black, **0** if it is white. Each square has its own **weight**. The neuron says **X** if the total is more than the threshold. Otherwise it says **O**.
-
-:::{.steps}
-1. Draw an X. All the weights are 0. What does the neuron say? Why?
-2. Change the weights with **+** and **−**. Try to get **6 out of 6** right on the test pictures.
-3. Write your weights on your sheet.
-4. Stuck? Ask: which squares are black in an X but white in an O?
-:::
-
-{{< include /assets/Unit_2/xo_neuron.html >}}
-
-:::{.think title="Look at your weights. Do they make a picture?"}
-They often do! Squares that are **only black in an X** (like the center) get **positive** weights. Squares that are **only black in an O** (like the sides) get **negative** weights. The weights are a picture of what the neuron is looking for.
-:::
-
 {{< talk >}}
 
 Today, **you** chose every weight. But ChatGPT has billions of weights. Nobody can choose them by hand.
@@ -127,10 +109,29 @@ Today, **you** chose every weight. But ChatGPT has billions of weights. Nobody c
 
 {{< further >}}
 
+:::{.project title="Day 2: Build a Neuron That Sees"}
+This neuron looks at a 3 by 3 picture. Each square is an input: **1** if it is black, **0** if it is white. Each square has its own **weight**. The neuron says **X** if the total is more than the threshold. Otherwise it says **O**. Work with a partner.
+
+1. Draw an X. All the weights are 0. What does the neuron say? Why?
+2. Change the weights with **+** and **−**. Try to get **6 out of 6** right on the test pictures.
+3. Write your weights on your sheet.
+4. Stuck? Ask: which squares are black in an X but white in an O?
+:::
+
+{{< include /assets/Unit_2/xo_neuron.html >}}
+
+:::{.think title="Look at your weights. Do they make a picture?"}
+They often do! Squares that are **only black in an X** (like the center) get **positive** weights. Squares that are **only black in an O** (like the sides) get **negative** weights. The weights are a picture of what the neuron is looking for.
+:::
+
 :::{.project title="My Decision Neuron"}
 Make a neuron for a decision in your life: what to eat, what to watch, whether to go out. Pick 4 inputs and give each a weight. Test it on 5 days from last week. Does it decide what you really did?
 :::
 
 :::{.project title="A Neuron for a Letter"}
 Make the picture bigger in your head: 5 by 5 squares. On grid paper, choose weights that tell a **T** from an **L**. Test your weights on a partner's T and L.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [the first neuron machine, and the problem one neuron cannot solve](/chapters/Explore/explore-unit-2.qmd#explore-2-4). For students who want to learn more on their own.
 :::

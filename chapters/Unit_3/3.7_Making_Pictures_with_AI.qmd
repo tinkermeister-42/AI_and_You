@@ -7,17 +7,16 @@ How? The AI starts with **static**, like an old TV with no signal. Then it remov
 :::{.agenda}
 **Today's Plan** (40 minutes)
 
-- [🔥]{.icon} **Warm Up** Find the picture in the static [4 min]{.time}
+- [🔥]{.icon} **Warm Up** Find the picture in the static [6 min]{.time}
 - [👥]{.icon} **Learn Together** From noise to picture [10 min]{.time}
-- [🛠️]{.icon} **Try It** Remove the noise, then write picture prompts [20 min]{.time}
+- [🛠️]{.icon} **Try It** Watch noise become a picture [18 min]{.time}
 - [💬]{.icon} **Talk About It** Is it art? [6 min]{.time}
 :::
 
 :::{.objectives}
 - [ ] I can explain how an image generator turns noise into a picture.
 - [ ] I can explain why the same prompt makes a different picture each time.
-- [ ] I can write a picture prompt with a subject, a place, and a style.
-- [ ] I can name things image generators often get wrong.
+- [ ] I can say who should get credit for an AI picture, and why.
 :::
 
 ::::{.vocab}
@@ -25,7 +24,6 @@ How? The AI starts with **static**, like an old TV with no signal. Then it remov
 - [🖼️]{.icon} {{< glink "image generator" >}}: an AI that makes a new picture from words
 - [📺]{.icon} {{< glink noise >}}: random dots with no picture in them, like TV static
 - [🌫️]{.icon} {{< glink diffusion >}}: making a picture by removing noise a little at a time
-- [🎨]{.icon} {{< glink style >}}: the way a picture looks: a photo, a cartoon, a painting
 :::
 ::::
 
@@ -65,37 +63,11 @@ The AI does not copy a picture or glue pieces together. It starts from noise and
 
 Every time you press the button, the AI starts from **new** random noise. So the same prompt makes a different picture each time. (Like the chatbot that picks by chance, in Lesson 2.9.)
 
-***
-
-### 3.7.3 - Picture Prompts
-
-A good picture prompt says what you want to **see**:
-
-| Part | Question | Example |
-|---|---|---|
-| **Subject** | What is in the picture? | a small orange cat |
-| **Action** | What is it doing? | reading a book |
-| **Place** | Where is it? When? | in a library at night |
-| **Style** | What should it look like? | watercolor painting |
-| **Details** | Colors? Light? | warm yellow light |
-
-***
-
-### 3.7.4 - What Image Generators Get Wrong
-
-- **Counting:** "exactly 7 apples" may give 6 or 9.
-- **Words in the picture:** letters on signs and shirts can be wrong.
-- **What is most common:** ask for "a doctor" or "a teacher." The AI shows what it saw most in its training pictures. Who does it leave out? (You will study this in Lesson 4.2.)
-
-:::{.note title="Right now (fall 2026)"}
-Image generators improved fast. The tools from 2022 often drew hands with six fingers and could not write words. The newest tools are much better at both. Exact counting and small details are still hard.
-
-Some of the newest image tools work in a different way, but many still use diffusion.
-:::
-
 {{< tryit >}}
 
-### 3.7.5 - Watch Noise Become a Picture
+### 3.7.3 - Watch Noise Become a Picture
+
+Work with a partner. (In a big class, groups of 3 share one computer.)
 
 :::{.steps}
 1. Choose words. Press **Remove some noise** one step at a time. At which step can you guess the picture?
@@ -106,21 +78,6 @@ Some of the newest image tools work in a different way, but many still use diffu
 {{< include /assets/Unit_3/noise_to_picture.html >}}
 
 This shows the idea, but it cheats. This demo already has the finished picture (an emoji), and it mixes the noise away. A real image generator does not have the picture. Its neural network has to **guess** what to remove, using what it learned from millions of pictures.
-
-### 3.7.6 - Write Picture Prompts
-
-Most school AI tools do not make pictures. So you write the prompts, and Mr. Ross makes the pictures on the projector. Work with a partner, or in a group of 3.
-
-:::{.steps}
-1. Write a picture prompt on your sheet. Use all 5 parts from 3.7.3.
-2. Give it to Mr. Ross. He makes the picture **two times** with the same prompt. How are the two pictures different?
-3. Change only the **style**. He makes it again. What changed?
-4. Find one mistake in a picture. Write it down.
-:::
-
-:::{.gotcha title="Class size"}
-**Small class:** every pair gets 3 pictures: the prompt twice, then a new style. **Big class:** play "Describe It." One student from each team sees a secret picture. The team writes a prompt from the description. Mr. Ross makes each team's picture. Whose is closest to the secret picture?
-:::
 
 :::{.gotcha title="Never make pictures of real people"}
 Do not make AI pictures of classmates, teachers, or anyone real. A fake picture of a real person can hurt them, even as a joke. (More in Lesson 4.3.)
@@ -149,16 +106,35 @@ Is a picture made by AI **art**? Who should get the credit: the person who wrote
 
 {{< further >}}
 
-These projects need a tool that makes pictures. Give your prompts to Mr. Ross, or try them at home with a tool you are allowed to use.
+:::{.project title="Day 2: Write Picture Prompts"}
+Most school AI tools do not make pictures. So you write the prompts, and Mr. Ross makes the pictures on the projector. Work with a partner, or in a group of 3.
 
-:::{.project title="One Subject, Five Styles"}
-Choose one subject, like "a bus at our school." Write 5 prompts for it in 5 styles: photo, cartoon, pixel art, oil painting, and a style from your home country. Make a poster of the 5 pictures.
+A good picture prompt says what you want to **see**:
+
+| Part | Question | Example |
+|---|---|---|
+| **Subject** | What is in the picture? | a small orange cat |
+| **Action** | What is it doing? | reading a book |
+| **Place** | Where is it? When? | in a library at night |
+| **Style** | What should it look like? | watercolor painting |
+| **Details** | Colors? Light? | warm yellow light |
+
+1. Write a picture prompt on your sheet. Use all 5 parts.
+2. Give it to Mr. Ross. He makes the picture **two times** with the same prompt. How are the two pictures different?
+3. Change only the {{< glink style >}}. He makes it again. What changed?
+4. Find one mistake in a picture. Write it down.
+
+**Small class:** every pair gets 3 pictures. **Big class:** play "Describe It." One student from each team sees a secret picture. The team writes a prompt from the description. Mr. Ross makes each team's picture. Whose is closest?
 :::
 
-:::{.project title="The Counting Test"}
-Write prompts for "exactly 3 red balls," then 5, then 7, then 12. Count each picture. When does the AI start to get it wrong?
+:::{.project title="One Subject, Five Styles"}
+Choose one subject, like "a bus at our school." Write 5 prompts for it in 5 styles: photo, cartoon, pixel art, oil painting, and a style from your home country. Give them to Mr. Ross. Make a poster of the 5 pictures.
 :::
 
 :::{.project title="Who Does It Show?"}
-Write prompts for "a doctor," "a nurse," "a scientist," and "a basketball player." Make each one 4 times. Count who the AI shows: men or women, young or old, skin colors. What do you notice? Bring your results to Lesson 4.2.
+Write prompts for "a doctor," "a nurse," "a scientist," and "a basketball player." Mr. Ross makes each one 4 times. Count who the AI shows: men or women, young or old, skin colors. What do you notice? Bring your results to Lesson 4.2.
+:::
+
+:::{.explore-link}
+🔭 **Explore More:** [what image generators get wrong, and the counting test](/chapters/Explore/explore-unit-3.qmd#explore-3-7). For students who want to learn more on their own.
 :::
