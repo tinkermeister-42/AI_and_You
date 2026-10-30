@@ -1,0 +1,17 @@
+# Introduction {.unnumbered}
+
+**Unit 5: When AI Gets It Wrong** (Weeks 12-13)
+
+AI lies, AI is biased, and AI can be used to fake videos and voices. We will learn how to catch it, how to check its work, and why “AI cheat detectors” do not really work. You will build your own toolkit for spotting AI-generated content.
+
+***
+
+## What You'll Learn
+
+By the end of this unit, you will be able to:
+
+* Catch AI when it makes things up
+* Explain where bias in AI comes from
+* Spot fake pictures, videos, and voices
+* Explain why AI cheat detectors do not really work
+* Build your own toolkit for spotting AI-generated content

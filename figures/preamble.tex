@@ -1,0 +1,29 @@
+% Shared preamble for web figures.  Each figure is a standalone .tex that
+% \input's this file; scripts/make-figures.sh turns it into an SVG.
+% Handouts pull the same file with \fig{Unit_X/<name>}.
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.symbols,shapes.geometric}
+
+% Who makes the rules is the point of most diagrams in this book, so the
+% colors mean the same thing everywhere: blue is a person, orange is the
+% computer, green is an answer, pink is the human brain.
+\definecolor{person}{HTML}{2C6FAE}
+\definecolor{machine}{HTML}{D35400}
+\definecolor{result}{HTML}{1E8449}
+\definecolor{brainpink}{HTML}{C2185B}
+\definecolor{ink}{HTML}{2C3E50}
+
+\tikzset{
+  doodle/.style={line width=1.5pt, line cap=round, line join=round, draw=ink},
+  box/.style={draw, rounded corners=5pt, line width=1.1pt, align=center,
+              inner sep=7pt, minimum height=1.0cm, font=\small},
+  personbox/.style={box, draw=person, fill=person!10},
+  machinebox/.style={box, draw=machine, fill=machine!10},
+  resultbox/.style={box, draw=result, fill=result!10},
+  plainbox/.style={box, draw=ink!70, fill=ink!4},
+  flow/.style={-{Stealth[length=8pt]}, line width=1.4pt, draw=ink},
+}

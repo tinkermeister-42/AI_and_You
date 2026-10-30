@@ -1,0 +1,16 @@
+# Introduction {.unnumbered}
+
+**Unit 4: Using AI Well** (Weeks 7-11)
+
+The heart of the class. You will learn how to ask AI good questions, use it to help with writing, research, translation, math, and art, and finish a real project that uses AI to do something useful in your life. We will have time to revise, get feedback, and do the work right.
+
+***
+
+## What You'll Learn
+
+By the end of this unit, you will be able to:
+
+* Write clear prompts and improve them
+* Use AI to help with writing, research, translation, math, and art
+* Check AI's work before you use it
+* Finish a real project that uses AI to do something useful in your life

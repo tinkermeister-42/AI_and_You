@@ -1,0 +1,23 @@
+# Introduction {.unnumbered}
+
+**Unit 1: The Big Question** (Week 1)
+
+We start by playing with AI and asking the question that will run through the whole class: is this thing really like a human brain? You will write down your first answer. We will come back to it at the end of the semester.
+
+***
+
+## What You'll Learn
+
+By the end of this unit, you will be able to:
+
+* Find AI in your everyday life
+* Explain how AI is different from a normal computer program
+* Explain how AI learns from examples and makes predictions
+* Write your first answer to the big question
+
+***
+
+## Topics in This Unit
+
+[**What Is AI?**](1.1_What_Is_AI.qmd)\
+Sort things into AI and not AI, try to write a rule for “cat,” and play a drawing game against an AI.

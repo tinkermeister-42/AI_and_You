@@ -1,0 +1,10 @@
+{
+  "artificial-intelligence": "A computer program that does things that usually need human thinking, like seeing, talking, translating, or making choices. Most AI today learns from examples.",
+  "chatbot": "An AI program that you talk to with words. You type or say something, and it answers.",
+  "computer-program": "A list of steps that a computer follows. Apps and games are computer programs.",
+  "data": "Information, like pictures, words, numbers, or sounds. An AI learns from data.",
+  "machine-learning": "A way to make AI. People do not write the rules. They give the computer many examples, and the computer finds the patterns by itself.",
+  "pattern": "Something that is the same, or repeats, in many examples.",
+  "prediction": "A best guess about something you do not know yet. A prediction can be wrong.",
+  "rule": "An exact instruction that a computer follows: “If this happens, do that.” In a normal computer program, a person writes the rules."
+}
