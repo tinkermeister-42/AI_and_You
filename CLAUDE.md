@@ -31,8 +31,8 @@ plain words, true statement.
 - **Mirror to the work site is manual.** The teacher reviews the personal
   site, then runs "Mirror site to Work Account" from the Actions tab
   (`.github/workflows/sync-to-work.yml`, workflow_dispatch from `main`). It
-  force-pushes `gh-pages` to `andyrosscps/DHS-AI` branch `gh-pages` (its
-  Pages source, live at `andyrosscps.github.io/DHS-AI`), named by the
+  force-pushes `gh-pages` to `andyrosscps/DHS-AI_and_You` branch `gh-pages` (its
+  Pages source, live at `andyrosscps.github.io/DHS-AI_and_You`), named by the
   `WORK_OWNER` and `WORK_REPO` secrets, with `WORK_TOKEN`. The workflow only
   appears in the Actions tab once it is on `main`. Keep workflow files off
   `gh-pages`: a workflow file there would also need the Workflows
