@@ -25,7 +25,7 @@ Try them yourself with the rules tool in Lesson 2.1.
 - **A sea snail.** A cone snail called *Conus textile* has a pattern on its shell that looks like Rule 30. See photos: [Conus textile (Wikipedia)](https://en.wikipedia.org/wiki/Conus_textile){target="_blank"}. Does it look like Rule 30?
 - **A train station.** Cambridge North station in England has Rule 30 patterns on its walls.
 
-![A textile cone snail (*Conus textile*) on the Great Barrier Reef. Look at the triangles on its shell. (Photo: Richard Ling, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/){target="_blank"}, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Textile_cone.JPG){target="_blank"})](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Textile_cone.JPG/500px-Textile_cone.JPG){width="420px" fig-align="center" fig-alt="A cone snail on sand. Its shell is covered with small brown and white triangles of many sizes."}
+![A textile cone snail (*Conus textile*) on the Great Barrier Reef. Look at the triangles on its shell. (Photo: Richard Ling, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/){target="_blank"}, Wikimedia Commons)](/images/Unit_2/explore_conus_textile.jpg){width="420px" fig-align="center" fig-alt="A cone snail on sand. Its shell is covered with small brown and white triangles of many sizes."}
 
 ### A Big Book About Simple Rules
 
