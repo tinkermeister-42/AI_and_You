@@ -1,0 +1,128 @@
+```{=html}
+<!-- mirror_draw.html: Lesson 2.3. Trace a star with a "mirror" pen: the pen
+     moves up when your hand moves down. Each try records time and mistakes,
+     so students can graph how practice changes their brain. -->
+<div class="md" id="md">
+  <div class="md-bar">
+    <label>Pen: <select class="md-mode">
+      <option value="ud">mirror: up and down flipped</option>
+      <option value="lr">mirror: left and right flipped</option>
+      <option value="none">normal (no mirror)</option>
+    </select></label>
+    <button type="button" class="md-btn md-plain md-reset">↺ Clear my tries</button>
+  </div>
+  <div class="md-msg">Put the orange pen dot on the green circle. Then press and hold, and trace the star all the way around.</div>
+  <canvas class="md-canvas" width="480" height="480" aria-label="Mirror drawing area"></canvas>
+  <table class="md-table"><thead><tr><th>Try</th><th>Pen</th><th>Time (seconds)</th><th>Mistakes</th></tr></thead><tbody></tbody></table>
+</div>
+
+<style>
+.md { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.md-bar { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; margin-bottom: 0.5rem; }
+.md-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.3rem 0.8rem; font-weight: 600; cursor: pointer; }
+.md-btn.md-plain { background: #fff; color: #2c3e50; }
+.md-msg { min-height: 2.6em; font-weight: 600; margin-bottom: 0.4rem; }
+.md-canvas { display: block; width: 100%; max-width: 480px; height: auto; margin: 0 auto; border: 2px solid #2c3e50; border-radius: 8px; background: #fff; cursor: none; touch-action: none; }
+.md-table { margin: 0.6rem auto 0; border-collapse: collapse; }
+.md-table th, .md-table td { border: 1px solid #d9e1e8; padding: 0.2rem 0.7rem; text-align: center; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("md");
+  if (!root) return;
+  const cv = root.querySelector(".md-canvas");
+  const cx = cv.getContext("2d");
+  const msg = root.querySelector(".md-msg");
+  const mode = root.querySelector(".md-mode");
+  const tbody = root.querySelector(".md-table tbody");
+  const W = cv.width, H = cv.height, BAND = 30, START_R = 16;
+
+  // a 5-point star, starting at the top point
+  const P = [];
+  for (let k = 0; k < 10; k++) {
+    const r = k % 2 ? 78 : 195, a = -Math.PI / 2 + (k * Math.PI) / 5;
+    P.push([W / 2 + r * Math.cos(a), H / 2 + 12 + r * Math.sin(a)]);
+  }
+  const SEG = P.map((p, i) => [p, P[(i + 1) % 10]]);
+
+  let pen = null, drawing = false, started = false, inside = true;
+  let t0 = 0, mistakes = 0, trail = [], visited = new Set(), tries = [];
+
+  function segDist([a, b], [x, y]) {
+    const dx = b[0] - a[0], dy = b[1] - a[1];
+    let t = ((x - a[0]) * dx + (y - a[1]) * dy) / (dx * dx + dy * dy);
+    t = Math.max(0, Math.min(1, t));
+    return Math.hypot(x - (a[0] + t * dx), y - (a[1] + t * dy));
+  }
+  function nearest(p) {
+    let best = 0, d = Infinity;
+    SEG.forEach((s, i) => { const e = segDist(s, p); if (e < d) { d = e; best = i; } });
+    return { i: best, d };
+  }
+  function map(e) {
+    const r = cv.getBoundingClientRect();
+    let x = ((e.clientX - r.left) / r.width) * W, y = ((e.clientY - r.top) / r.height) * H;
+    if (mode.value === "ud") y = H - y;
+    if (mode.value === "lr") x = W - x;
+    return [x, y];
+  }
+  function draw() {
+    cx.clearRect(0, 0, W, H);
+    cx.lineJoin = "round"; cx.lineCap = "round";
+    cx.strokeStyle = "#d6eaf8"; cx.lineWidth = BAND;
+    cx.beginPath(); P.forEach((p, i) => (i ? cx.lineTo(...p) : cx.moveTo(...p))); cx.closePath(); cx.stroke();
+    cx.strokeStyle = "#85c1e9"; cx.lineWidth = 1.5;
+    cx.beginPath(); P.forEach((p, i) => (i ? cx.lineTo(...p) : cx.moveTo(...p))); cx.closePath(); cx.stroke();
+    cx.fillStyle = "#1e8449"; cx.beginPath(); cx.arc(P[0][0], P[0][1], START_R, 0, 2 * Math.PI); cx.fill();
+    cx.strokeStyle = "#2c3e50"; cx.lineWidth = 3; cx.beginPath();
+    trail.forEach((p, i) => (i && !p.lift ? cx.lineTo(p[0], p[1]) : cx.moveTo(p[0], p[1]))); cx.stroke();
+    if (pen) { cx.fillStyle = "#d35400"; cx.beginPath(); cx.arc(pen[0], pen[1], 7, 0, 2 * Math.PI); cx.fill(); }
+  }
+  function finish() {
+    drawing = false; started = false;
+    const secs = ((performance.now() - t0) / 1000).toFixed(1);
+    tries.push([mode.options[mode.selectedIndex].text.replace("mirror: ", ""), secs, mistakes]);
+    tbody.innerHTML = tries.map((t, i) => `<tr><td>${i + 1}</td><td>${t[0]}</td><td>${t[1]}</td><td>${t[2]}</td></tr>`).join("");
+    msg.textContent = `Done! ${secs} seconds, ${mistakes} mistakes. Go back to the green circle to try again.`;
+  }
+  cv.addEventListener("pointermove", (e) => {
+    pen = map(e);
+    if (drawing) {
+      const n = nearest(pen);
+      const now = n.d <= BAND / 2;
+      if (!now && inside) { mistakes++; msg.textContent = `Mistakes: ${mistakes}. Get back on the path!`; }
+      inside = now;
+      if (now) visited.add(n.i);
+      trail.push(pen);
+      const atStart = Math.hypot(pen[0] - P[0][0], pen[1] - P[0][1]) < START_R;
+      if (!started && !atStart) { started = true; t0 = performance.now(); }
+      if (started && atStart && visited.size === 10) finish();
+    }
+    draw();
+  });
+  cv.addEventListener("pointerdown", (e) => {
+    e.preventDefault();
+    cv.setPointerCapture(e.pointerId);
+    pen = map(e);
+    if (Math.hypot(pen[0] - P[0][0], pen[1] - P[0][1]) < START_R * 1.4) {
+      drawing = true; started = false; mistakes = 0; inside = true; visited = new Set(); trail = [pen];
+      msg.textContent = "Go! Trace the star. Stay inside the blue path.";
+    } else if (!drawing) {
+      msg.textContent = "Start on the green circle. Move the orange dot there first.";
+    }
+    draw();
+  });
+  cv.addEventListener("pointerup", () => {
+    if (drawing) {
+      if (started) msg.textContent = "You let go! Go back to the green circle and start again.";
+      drawing = false; started = false;
+    }
+  });
+  cv.addEventListener("pointerleave", () => { pen = null; draw(); });
+  mode.addEventListener("change", () => { drawing = false; trail = []; draw(); msg.textContent = "New pen! Start on the green circle."; });
+  root.querySelector(".md-reset").addEventListener("click", () => { tries = []; tbody.innerHTML = ""; trail = []; draw(); });
+  draw();
+})();
+</script>
+```

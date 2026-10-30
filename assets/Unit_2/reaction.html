@@ -1,0 +1,59 @@
+```{=html}
+<!-- reaction.html: Lesson 2.2. Click (or tap) when the box turns green. -->
+<div class="rx" id="rx">
+  <button type="button" class="rx-box" aria-live="polite">Click here to start</button>
+  <div class="rx-row">
+    <div class="rx-tries"></div>
+    <div class="rx-avg"></div>
+  </div>
+  <button type="button" class="rx-btn rx-reset">↺ Start over</button>
+</div>
+
+<style>
+.rx { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.rx-box { width: 100%; min-height: 160px; border: none; border-radius: 10px; font-size: 1.5rem; font-weight: bold; color: #fff; background: #2c3e50; cursor: pointer; touch-action: manipulation; }
+.rx-box.wait { background: #c0392b; }
+.rx-box.go { background: #1e8449; }
+.rx-row { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 0.6rem 0; align-items: baseline; }
+.rx-tries span { display: inline-block; background: #fff; border: 1px solid #d9e1e8; border-radius: 6px; padding: 0.1rem 0.5rem; margin: 0.15rem; }
+.rx-avg { font-weight: bold; font-size: 1.1rem; }
+.rx-btn { border: 1px solid #2c3e50; background: #fff; color: #2c3e50; border-radius: 6px; padding: 0.3rem 0.8rem; font-weight: 600; cursor: pointer; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("rx");
+  if (!root) return;
+  const box = root.querySelector(".rx-box");
+  const triesEl = root.querySelector(".rx-tries");
+  const avgEl = root.querySelector(".rx-avg");
+  let state = "idle", t0 = 0, timer = null, tries = [];
+
+  function show() {
+    triesEl.innerHTML = tries.length ? "Your times: " + tries.map((t, i) => `<span>${i + 1}: ${t} ms</span>`).join("") : "";
+    avgEl.textContent = tries.length ? `Average: ${Math.round(tries.reduce((a, b) => a + b, 0) / tries.length)} ms` : "";
+  }
+  function arm() {
+    state = "wait"; box.className = "rx-box wait"; box.textContent = "Wait for green ...";
+    timer = setTimeout(() => { state = "go"; box.className = "rx-box go"; box.textContent = "CLICK!"; t0 = performance.now(); }, 1200 + Math.random() * 2500);
+  }
+  box.addEventListener("pointerdown", (e) => {
+    e.preventDefault();
+    if (state === "idle" || state === "done") { arm(); return; }
+    if (state === "wait") {
+      clearTimeout(timer); state = "done"; box.className = "rx-box"; box.textContent = "Too early! Click to try again.";
+      return;
+    }
+    if (state === "go") {
+      const ms = Math.round(performance.now() - t0);
+      tries.push(ms); show();
+      state = "done"; box.className = "rx-box";
+      box.textContent = `${ms} ms. ` + (tries.length < 5 ? "Click to go again." : "That's 5! Click to keep going.");
+    }
+  });
+  root.querySelector(".rx-reset").addEventListener("click", () => {
+    clearTimeout(timer); tries = []; state = "idle"; box.className = "rx-box"; box.textContent = "Click here to start"; show();
+  });
+})();
+</script>
+```

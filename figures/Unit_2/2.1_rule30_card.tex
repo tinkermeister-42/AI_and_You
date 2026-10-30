@@ -1,0 +1,50 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}
+
+% The Rule 30 card: for each 3-cell pattern, the color of the middle cell next.
+
+\draw[ink, line width=0.8pt, fill=ink] (0.000,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=ink] (0.550,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=ink] (1.100,1.1) rectangle ++(0.55,0.55);
+\draw[flow, line width=1pt] (0.825,1.02) -- (0.825,0.66);
+\draw[ink, line width=0.8pt, fill=white] (0.550,0) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=ink] (2.150,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=ink] (2.700,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=white] (3.250,1.1) rectangle ++(0.55,0.55);
+\draw[flow, line width=1pt] (2.975,1.02) -- (2.975,0.66);
+\draw[ink, line width=0.8pt, fill=white] (2.700,0) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=ink] (4.300,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=white] (4.850,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=ink] (5.400,1.1) rectangle ++(0.55,0.55);
+\draw[flow, line width=1pt] (5.125,1.02) -- (5.125,0.66);
+\draw[ink, line width=0.8pt, fill=white] (4.850,0) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=ink] (6.450,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=white] (7.000,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=white] (7.550,1.1) rectangle ++(0.55,0.55);
+\draw[flow, line width=1pt] (7.275,1.02) -- (7.275,0.66);
+\draw[ink, line width=0.8pt, fill=ink] (7.000,0) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=white] (8.600,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=ink] (9.150,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=ink] (9.700,1.1) rectangle ++(0.55,0.55);
+\draw[flow, line width=1pt] (9.425,1.02) -- (9.425,0.66);
+\draw[ink, line width=0.8pt, fill=ink] (9.150,0) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=white] (10.750,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=ink] (11.300,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=white] (11.850,1.1) rectangle ++(0.55,0.55);
+\draw[flow, line width=1pt] (11.575,1.02) -- (11.575,0.66);
+\draw[ink, line width=0.8pt, fill=ink] (11.300,0) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=white] (12.900,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=white] (13.450,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=ink] (14.000,1.1) rectangle ++(0.55,0.55);
+\draw[flow, line width=1pt] (13.725,1.02) -- (13.725,0.66);
+\draw[ink, line width=0.8pt, fill=ink] (13.450,0) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=white] (15.050,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=white] (15.600,1.1) rectangle ++(0.55,0.55);
+\draw[ink, line width=0.8pt, fill=white] (16.150,1.1) rectangle ++(0.55,0.55);
+\draw[flow, line width=1pt] (15.875,1.02) -- (15.875,0.66);
+\draw[ink, line width=0.8pt, fill=white] (15.600,0) rectangle ++(0.55,0.55);
+\node[anchor=west, font=\large\bfseries, text=ink] at (0,2.2) {Rule 30: what the middle cell becomes next};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,117 @@
+# 2.3 - How Brains Learn {.unnumbered}
+
+Think of something that was very hard the first time: riding a bike, writing in a new alphabet, a move in a sport. Now it is easy. You do not even think about it.
+
+What changed? Not your hands. **Your brain** changed. Practice made some connections between your neurons stronger.
+
+Today, you watch your own brain learn something new, and you measure it.
+
+:::{.agenda}
+**Today's Plan** (40 minutes)
+
+- [🔥]{.icon} **Warm Up** Your other hand [6 min]{.time}
+- [👥]{.icon} **Learn Together** Stronger connections, and Pavlov's dogs [10 min]{.time}
+- [🛠️]{.icon} **Try It** Mirror drawing [16 min]{.time}
+- [💬]{.icon} **Talk About It** Is it the same kind of learning? [8 min]{.time}
+:::
+
+:::{.objectives}
+- [ ] I can explain how practice changes the connections in my brain.
+- [ ] I can explain Pavlov's experiment with dogs.
+- [ ] I can measure my own learning and draw a learning curve.
+- [ ] I can compare how a brain learns with how AI learns.
+:::
+
+::::{.vocab}
+:::{.word-cards}
+- [🤝]{.icon} {{< glink synapse >}}: the tiny gap where one neuron passes a signal to the next
+- [🔔]{.icon} {{< glink conditioning >}}: learning to connect two things that happen together, like a sound and food
+- [📉]{.icon} {{< glink "learning curve" >}}: a graph that shows how you get better with practice
+:::
+::::
+
+:::{.guided-notes-link}
+[Printable lesson sheet](/handouts/Unit_2/2.3_How_Brains_Learn.pdf){target="_blank"} - the sheet you write on today.
+:::
+
+{{< warmup >}}
+
+Write your full name with your **other hand** (the one you do not usually write with). Your partner times you.
+
+Do it **3 times**. Write the times on your sheet. Did you get faster?
+
+{{< learn >}}
+
+### 2.3.1 - Practice Makes Connections Stronger
+
+When you do something new, a group of neurons fires together. When you do it again and again, the synapses between those neurons get **stronger**. The signal passes more easily. The skill gets faster and smoother.
+
+Scientists say it with a short rhyme:
+
+> **Neurons that fire together, wire together.**
+
+When you stop practicing, unused connections can get weaker. That is why you forget things you never use.
+
+:::{.experiment title="Pavlov's Dogs (1890s)"}
+**Ivan Pavlov** was a scientist in Russia. He studied dogs.
+
+1. Dogs drool (make saliva in their mouths) when they see food. Nobody teaches them this.
+2. Pavlov's team played a sound, a clicking **metronome**, right before they gave the dogs food. They did this many times.
+3. Soon, the dogs drooled when they heard the clicking, **with no food at all**.
+
+The dogs' brains connected the sound with food. This kind of learning is called {{< glink conditioning >}}. Pavlov won a Nobel Prize in 1904 for his work on how the body digests food.
+:::
+
+:::{.remember title="Learning changes connections"}
+In a brain, learning means changing **how strong the connections are** between neurons.
+
+AI copies this idea. In a neural network, the strength of each connection is a number called a **weight**. Learning means changing the weights. You will see this in the next lesson.
+:::
+
+{{< tryit >}}
+
+### 2.3.2 - Mirror Drawing
+
+Trace the star with a "mirror" pen. When your hand moves **down**, the pen moves **up**. Your brain has never done this before!
+
+:::{.steps}
+1. Move the orange dot onto the green circle. Press and hold.
+2. Trace the star all the way around. Stay inside the blue path. Come back to the green circle to finish.
+3. Do **5 tries** with the same pen. Write your time and mistakes on your sheet after each try.
+4. Make a graph of your times. This is your **{{< glink "learning curve" >}}**.
+5. Then switch the pen to **left and right flipped**. Is it hard again?
+:::
+
+{{< include /assets/Unit_2/mirror_draw.html >}}
+
+:::{.gotcha title="No mouse?"}
+On a touch screen, use your finger. On a laptop, a mouse is easier than a touch pad, but a touch pad works too.
+:::
+
+:::{.think title="What does your learning curve look like?"}
+For most people, the time drops a lot after the first tries. Then it drops more slowly. Your brain was building new connections between what your eyes see and how your hand moves.
+
+When you switched to a new mirror, it got hard again. Your brain learned **one** skill, not every skill.
+:::
+
+{{< talk >}}
+
+Your brain learns by changing synapses. AI learns by changing numbers (weights). Is that the same kind of learning?
+
+And think about Pavlov: is there a **sound** that makes you reach for your phone?
+
+:::{.frames}
+- My brain learned the mirror drawing because ...
+- Brain learning and AI learning are **the same** / **different** because ...
+- The sound ... makes me want to ... . That is like Pavlov's dogs because ...
+:::
+
+{{< further >}}
+
+:::{.project title="Real Mirror Drawing"}
+Put a mirror up on a desk. Put paper with a star in front of it. Put a book over your hand so you can only see your hand **in the mirror**. Trace the star. Is it the same as the computer?
+:::
+
+:::{.project title="Pavlov at Home"}
+Find three times that a sound or a picture makes you or someone in your family do something automatically. (Phone sounds, a song from an ad, a school bell.) Who taught you to react to it? Was it on purpose?
+:::

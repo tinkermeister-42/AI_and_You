@@ -1,0 +1,110 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\lessontitle{The Artificial Neuron}
+\partner
+
+\vspace{0.4em}
+{\large\textbf{1. Should I go?}} Answer 1 (yes) or 0 (no). Then choose how much each one matters to you (0 to 3).
+
+\vspace{0.3em}
+\begin{tabular}{|R{2.1in}|c|c|c|}
+\hline
+ & \textbf{Answer (1 or 0)} & \textbf{How much it matters} & \textbf{Answer $\times$ how much} \\ \hline
+Is it sunny? & \ans{Answers vary.} & & \\ \hline
+Are my friends going? & & & \\ \hline
+Is my homework done? & & & \\ \hline
+\multicolumn{3}{|r|}{\textbf{Total}} & \\ \hline
+\end{tabular}
+
+\vspace{0.6em}
+Is the total 4 or more? \ansline{0.7in}{} \quad Do I go? \ansline{0.7in}{} \quad Did my partner decide the same? \ansline{0.7in}{}
+
+\vspace{1.0em}
+{\large\textbf{2. Multiply, add, compare.}}
+
+\vspace{0.4em}
+An artificial neuron \ansline{1.1in}{multiplies} each input by its weight, \ansline{0.8in}{adds} them up, and \ansline{1.1in}{compares} the total with the threshold.
+
+\vspace{0.9em}
+Inputs: 1, 0, 1. \quad Weights: 3, 2, $-1$. \quad Threshold: 2.
+
+\vspace{0.5em}
+Total $= (1 \times 3) + (0 \times 2) + (1 \times -1) =$ \ansline{0.9in}{$2$} \quad Does it fire (2 or more)? \ansline{0.8in}{yes}
+
+\vspace{0.9em}
+Inputs: 1, 1, 1. \quad Weights: 1, $-2$, $-1$. \quad Threshold: 2.
+
+\vspace{0.5em}
+Total $=$ \ansline{2.4in}{$1 - 2 - 1 = -2$} \quad Does it fire? \ansline{0.8in}{no}
+
+\vspace{1.0em}
+{\large\textbf{3. Be a neuron.}} Weights: \textbf{A: $+2$}, \textbf{B: $+2$}, \textbf{C: $-1$}. Threshold: \textbf{3 or more}.
+
+\vspace{0.3em}
+\begin{tabular}{|c|R{1.6in}|c|c|}
+\hline
+\textbf{Round} & \textbf{Inputs that are on} & \textbf{Total} & \textbf{Fire?} \\ \hline
+1 & A and B & \ans{4} & \ans{yes} \\ \hline
+2 & A and C & \ans{1} & \ans{no} \\ \hline
+3 & A, B, and C & \ans{3} & \ans{yes} \\ \hline
+4 & B and C & \ans{1} & \ans{no} \\ \hline
+5 & A only & \ans{2} & \ans{no} \\ \hline
+\end{tabular}
+
+\newpage
+
+{\large\textbf{4. A neuron that sees.}} Write the weights that got the most test pictures right.
+
+\vspace{0.5em}
+\begin{center}
+\begin{tikzpicture}[x=1.5cm, y=1.5cm]
+  \foreach \i in {0,...,3} { \draw[line width=1.2pt] (\i,0) -- (\i,3); \draw[line width=1.2pt] (0,\i) -- (3,\i); }
+  \ifkey
+    \foreach \x/\y/\w in {0/2/0, 1/2/{$-1$}, 2/2/0, 0/1/{$-1$}, 1/1/{$+3$}, 2/1/{$-1$}, 0/0/0, 1/0/{$-1$}, 2/0/0}
+      \node[keyred, font=\Large\bfseries] at (\x+0.5,\y+0.5) {\w};
+  \fi
+\end{tikzpicture}
+\qquad
+\begin{minipage}[b]{3in}
+Threshold: \ansline{0.8in}{0}
+
+\vspace{0.8em}
+Test pictures right: \ansline{0.6in}{6} out of 6
+
+\vspace{0.8em}
+\ifkey\textcolor{keyred}{One good answer. Others work too.}\fi
+\end{minipage}
+\end{center}
+
+\vspace{0.8em}
+Which squares got \textbf{positive} weights? Why? \ansline{3.4in}{The center: it is black in an X, not in an O.}
+
+\vspace{0.9em}
+Which squares got \textbf{negative} weights? Why? \ansline{3.3in}{The sides: they are black in an O, not in an X.}
+
+\vspace{1.1em}
+{\large\textbf{5. Real neuron, artificial neuron.}} Match each part.
+
+\vspace{0.3em}
+\begin{tabular}{|R{2.6in}|R{2.6in}|}
+\hline
+\textbf{Real neuron} & \textbf{Artificial neuron} \\ \hline
+Dendrites take signals in & \ans{inputs} \\ \hline
+Strong or weak synapses & \ans{weights} \\ \hline
+Fires only if the total is big enough & \ans{the threshold} \\ \hline
+\end{tabular}
+
+\vspace{1.1em}
+{\large\textbf{6. Talk about it.}} ChatGPT has billions of weights. Nobody can choose them by hand.
+
+\vspace{0.6em}
+I think an AI with billions of weights gets them by \ansline{3.4in}{Answers vary. (Next lesson: it learns them.)}
+
+\vspace{0.9em}
+\blank{6.9in}
+
+\end{document}

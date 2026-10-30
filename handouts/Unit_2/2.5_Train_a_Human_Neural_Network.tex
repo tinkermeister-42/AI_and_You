@@ -1,0 +1,114 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\usepackage{amssymb}
+\renewcommand{\arraystretch}{1.45}
+\newcommand{\cc}[1]{\multicolumn{1}{|c|}{#1}}
+
+\begin{document}
+
+\lessontitle{Train a Human Neural Network}
+\partner
+
+\vspace{0.3em}
+\textbf{The rule.} total $= (A \times \text{Attack weight}) + (S \times \text{Special weight}) + \text{bias}$. \quad More than 0: \textbf{FIGHTING}. \quad 0 or less: \textbf{PSYCHIC}.
+
+\vspace{0.3em}
+\textbf{The fix rule.} Right: no change. \quad Said P, really F: \textbf{ADD} A, S, 1. \quad Said F, really P: \textbf{SUBTRACT} A, S, 1.
+
+\vspace{0.7em}
+{\large\textbf{Pass 1.}} Starting weights: Attack $-1$, Special $+1$, bias $0$.
+
+\vspace{0.3em}
+{\small
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{Card} & \textbf{A} & \textbf{S} & \textbf{Total} & \textbf{Says} & \textbf{Really} & \textbf{Right?} & \textbf{Attack w} & \textbf{Special w} & \textbf{Bias} \\ \hline
+T1 Machop & 3 & 1 & \ans{$-2$} & \ans{P} & F & \ans{no} & \ans{2} & \ans{2} & \ans{1} \\ \hline
+T2 Abra & 1 & 4 & \ans{11} & \ans{F} & P & \ans{no} & \ans{1} & \ans{$-2$} & \ans{0} \\ \hline
+T3 Machamp & 4 & 2 & \ans{0} & \ans{P} & F & \ans{no} & \ans{5} & \ans{0} & \ans{1} \\ \hline
+T4 Espeon & 2 & 4 & \ans{11} & \ans{F} & P & \ans{no} & \ans{3} & \ans{$-4$} & \ans{0} \\ \hline
+T5 Hitmonlee & 4 & 1 & \ans{8} & \ans{F} & F & \ans{yes} & \ans{3} & \ans{$-4$} & \ans{0} \\ \hline
+T6 Kirlia & 1 & 2 & \ans{$-5$} & \ans{P} & P & \ans{yes} & \ans{3} & \ans{$-4$} & \ans{0} \\ \hline
+T7 Conkeldurr & 5 & 2 & \ans{7} & \ans{F} & F & \ans{yes} & \ans{3} & \ans{$-4$} & \ans{0} \\ \hline
+T8 Alakazam & 2 & 5 & \ans{$-14$} & \ans{P} & P & \ans{yes} & \ans{3} & \ans{$-4$} & \ans{0} \\ \hline
+T9 Makuhita & 2 & 1 & \ans{2} & \ans{F} & F & \ans{yes} & \ans{3} & \ans{$-4$} & \ans{0} \\ \hline
+T10 Mr.\ Mime & 2 & 3 & \ans{$-6$} & \ans{P} & P & \ans{yes} & \ans{3} & \ans{$-4$} & \ans{0} \\ \hline
+\end{tabular}}
+
+\vspace{0.5em}
+Mistakes in pass 1: \ansline{0.6in}{4}
+
+\vspace{0.8em}
+{\large\textbf{Pass 2.}} Same cards, same order. Start with your weights from the end of pass 1.
+
+\vspace{0.3em}
+{\small
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Card} & \textbf{Total} & \textbf{Says} & \textbf{Right?} \\ \hline
+T1 Machop & \ans{5} & \ans{F} & \ans{yes} \\ \hline
+T2 Abra & \ans{$-13$} & \ans{P} & \ans{yes} \\ \hline
+T3 Machamp & \ans{4} & \ans{F} & \ans{yes} \\ \hline
+T4 Espeon & \ans{$-10$} & \ans{P} & \ans{yes} \\ \hline
+T5 Hitmonlee & \ans{8} & \ans{F} & \ans{yes} \\ \hline
+\end{tabular}
+\qquad
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Card} & \textbf{Total} & \textbf{Says} & \textbf{Right?} \\ \hline
+T6 Kirlia & \ans{$-5$} & \ans{P} & \ans{yes} \\ \hline
+T7 Conkeldurr & \ans{7} & \ans{F} & \ans{yes} \\ \hline
+T8 Alakazam & \ans{$-14$} & \ans{P} & \ans{yes} \\ \hline
+T9 Makuhita & \ans{2} & \ans{F} & \ans{yes} \\ \hline
+T10 Mr.\ Mime & \ans{$-6$} & \ans{P} & \ans{yes} \\ \hline
+\end{tabular}}
+
+\vspace{0.5em}
+Mistakes in pass 2: \ansline{0.6in}{0} \quad (If you made mistakes, do a pass 3 on the back.)
+
+\newpage
+
+{\large\textbf{Test cards.}} Do \textbf{not} fix the weights on a test! Final weights: Attack \ansline{0.5in}{3} Special \ansline{0.5in}{$-4$} bias \ansline{0.5in}{0}
+
+\vspace{0.3em}
+\begin{tabular}{|l|c|c|c|c|R{1.9in}|}
+\hline
+\textbf{Card} & \textbf{A} & \textbf{S} & \textbf{Total} & \textbf{Says} & \textbf{Really (flip the card)} \\ \hline
+X1 Primeape & 4 & 2 & \ans{4} & \ans{F} & \ans{Fighting} \\ \hline
+X2 Mewtwo & 4 & 5 & \ans{$-8$} & \ans{P} & \ans{Psychic} \\ \hline
+X3 Hypno & 2 & 2 & \ans{$-2$} & \ans{P} & \ans{Psychic} \\ \hline
+X4 Gallade & 4 & 2 & \ans{4} & \ans{F} & \ans{Psychic and Fighting} \\ \hline
+X5 Lucario & 4 & 4 & \ans{$-4$} & \ans{P} & \ans{Fighting and Steel} \\ \hline
+X6 Medicham & 2 & 2 & \ans{$-2$} & \ans{P} & \ans{Fighting and Psychic} \\ \hline
+\end{tabular}
+
+\vspace{0.8em}
+{\large\textbf{The neuron's line.}} The training cards are on the graph. Draw the line where the total is 0.
+
+\vspace{0.3em}
+\begin{center}
+\begin{tikzpicture}[x=1.15cm, y=1.15cm]
+  \foreach \i in {1,...,5} { \draw[black!25] (\i,0.5) -- (\i,5.5); \draw[black!25] (0.5,\i) -- (5.5,\i); }
+  \draw[thick, ->] (0.5,0.5) -- (5.7,0.5) node[right, font=\small] {A};
+  \draw[thick, ->] (0.5,0.5) -- (0.5,5.7) node[above, font=\small] {S};
+  \foreach \i in {1,...,5} { \node[below, font=\small] at (\i,0.5) {\i}; \node[left, font=\small] at (0.5,\i) {\i}; }
+  \ifkey \draw[keyred, line width=1.6pt] (0.667,0.5) -- (5.5,4.125); \node[keyred, font=\small, anchor=west] at (3.6,4.6) {$3A = 4S$}; \fi
+  \foreach \a/\s/\n in {3/1/T1, 4/2/T3, 4/1/T5, 5/2/T7, 2/1/T9}
+    { \fill (\a-0.11,\s-0.11) rectangle (\a+0.11,\s+0.11); \node[font=\footnotesize\bfseries, anchor=south west] at (\a+0.05,\s+0.08) {\n}; }
+  \foreach \a/\s/\n in {1/4/T2, 2/4/T4, 1/2/T6, 2/5/T8, 2/3/T10}
+    { \draw[line width=1pt, fill=white] (\a,\s) circle (0.12); \node[font=\footnotesize\bfseries, anchor=south west] at (\a+0.05,\s+0.08) {\n}; }
+  \node[anchor=west, font=\small] at (5.9,3.0) {$\blacksquare$ Fighting};
+  \node[anchor=west, font=\small] at (5.9,2.5) {$\bigcirc$ Psychic};
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.4em}
+{\large\textbf{Talk about it.}} The neuron said Gallade is Fighting. Gallade is Psychic \textbf{and} Fighting. Was the neuron wrong?
+
+\vspace{0.6em}
+The neuron \textbf{was} / \textbf{was not} wrong about Gallade, because \ansline{2.8in}{Answers vary.}
+
+\vspace{0.9em}
+\blank{6.9in}
+
+\end{document}

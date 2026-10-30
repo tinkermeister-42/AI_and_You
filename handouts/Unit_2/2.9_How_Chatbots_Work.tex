@@ -1,0 +1,89 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\lessontitle{How Chatbots Work}
+\partner
+
+\vspace{0.4em}
+{\large\textbf{1. Finish the sentence.}} One word each.
+
+\vspace{0.5em}
+Peanut butter and \ansline{1.0in}{jelly} \qquad Once upon a \ansline{1.0in}{time} \qquad I am going to the \ansline{1.0in}{Answers vary.}
+
+\vspace{1.0em}
+{\large\textbf{2. Count what comes next.}} The training text:
+
+\vspace{0.3em}
+\begin{center}\fbox{\parbox{6.2in}{\large I like rice. I like soccer. I like rice and beans. My friend likes soccer. My friend likes rice.}}\end{center}
+
+\vspace{0.4em}
+Finish the table. Count how many times each word comes next. (``end'' means the end of a sentence.)
+
+\vspace{0.3em}
+\begin{tabular}{|R{1.2in}|R{3.3in}|R{1.7in}|}
+\hline
+\textbf{After this word} & \textbf{These words came next (how many times)} & \textbf{Dice} \\ \hline
+I & like (3) & always ``like'' \\ \hline
+like & \ans{rice (2), soccer (1)} & 1 to 4: rice, 5 or 6: soccer \\ \hline
+likes & \ans{soccer (1), rice (1)} & 1 to 3: soccer, 4 to 6: rice \\ \hline
+rice & \ans{end (2), and (1)} & 1 to 4: end, 5 or 6: and \\ \hline
+soccer & \ans{end (2)} & always end \\ \hline
+and & \ans{beans (1)} & always ``beans'' \\ \hline
+beans & \ans{end (1)} & always end \\ \hline
+My & \ans{friend (2)} & always ``friend'' \\ \hline
+friend & \ans{likes (2)} & always ``likes'' \\ \hline
+\end{tabular}
+
+\vspace{0.4em}
+{\small The dice column gives more common words more numbers.}
+
+\newpage
+
+{\large\textbf{3. The dice chatbot.}} Start with \textbf{I} or \textbf{My}. Roll a die when there is a choice.
+
+\vspace{0.6em}
+Sentence 1: \ansline{5.6in}{Answers vary. Example: I like rice and beans.}
+
+\vspace{0.9em}
+Sentence 2: \blank{5.6in}
+
+\vspace{0.9em}
+Sentence 3: \blank{5.6in}
+
+\vspace{0.9em}
+Did you write a sentence that is \textbf{not} in the training text? Which one? \ansline{2.3in}{My friend likes rice and beans.}
+
+\vspace{1.1em}
+{\large\textbf{4. The word-counting chatbot on screen.}}
+
+\vspace{0.5em}
+With ``always pick the most common,'' is the sentence the same every time? \ansline{1.2in}{yes}
+
+\vspace{0.9em}
+A strange sentence it wrote: \ansline{4.6in}{Answers vary.}
+
+\vspace{0.9em}
+A sentence it wrote in my home language: \ansline{3.8in}{Answers vary.}
+
+\vspace{1.1em}
+{\large\textbf{5. Tiny chatbot, real chatbot.}}
+
+\vspace{0.5em}
+Both chatbots predict the \ansline{1.2in}{next word}. Neither one checks if a sentence is \ansline{0.8in}{true}.
+
+\vspace{0.9em}
+A real chatbot reads \ansline{1.0in}{tokens}: words and pieces of words.
+
+\vspace{1.1em}
+{\large\textbf{6. Talk about it.}} Did the tiny chatbot understand ``My friend likes rice and beans''?
+
+\vspace{0.6em}
+The tiny chatbot \textbf{did} / \textbf{did not} understand, because \ansline{3.0in}{Answers vary. It only counted.}
+
+\vspace{0.9em}
+\blank{6.9in}
+
+\end{document}

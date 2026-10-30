@@ -1,0 +1,27 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[
+  inp/.style={personbox, minimum width=2.6cm, font=\normalsize},
+  wt/.style={fill=white, draw=machine, rounded corners=3pt, font=\bfseries, text=machine, inner sep=3pt},
+]
+% An artificial neuron: inputs times weights, add, compare, fire or not.
+\node[inp] (i1) at (0,2.2) {Sunny? \textbf{1}};
+\node[inp] (i2) at (0,0.6) {Friends going? \textbf{1}};
+\node[inp] (i3) at (0,-1.0) {Homework done? \textbf{0}};
+\node[draw=brainpink, fill=brainpink!12, circle, line width=1.6pt, minimum size=2.5cm, align=center, font=\normalsize] (n) at (6.0,0.6)
+  {add up\\$2 + 3 + 0$\\$= 5$};
+\foreach \i/\w in {i1/2, i2/3, i3/1} {
+  \draw[flow] (\i.east) -- node[wt, pos=0.45] {$\times$ \w} (n);
+}
+\node[draw=ink!60, fill=white, rounded corners=4pt, font=\normalsize, align=center] (th) at (9.4,0.6) {Is it \textbf{4}\\or more?};
+\draw[flow] (n) -- (th);
+\node[resultbox, font=\large\bfseries] (out) at (12.2,0.6) {YES: go!};
+\draw[flow] (th) -- (out);
+\node[font=\small\bfseries, text=person] at (0,3.3) {inputs};
+\node[font=\small\bfseries, text=machine] at (3.0,3.0) {weights};
+\node[font=\small\bfseries, text=brainpink] at (6.0,2.4) {neuron};
+\node[font=\small\bfseries, text=ink] at (9.4,1.75) {threshold};
+\node[font=\small\bfseries, text=result] at (12.2,1.6) {output};
+\end{tikzpicture}
+\end{document}
