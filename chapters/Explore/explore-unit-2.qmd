@@ -10,10 +10,10 @@ A rule card has 8 answers, and each answer is black or white. So there are $2^8 
 
 Different cards make very different pictures. All four of these start with **one black square**:
 
-![](/images/Unit_2/2.1_rules_gallery.svg){width="760px" fig-align="center" fig-alt="Four pictures. Rule 4: a single straight line that never changes. Rule 90: a neat triangle pattern. Rule 30: a triangle full of messy chaos. Rule 110: a complex pattern that grows on one side."}
+![](/images/Unit_2/2.1_rules_gallery.svg){width="760px" fig-align="center" fig-alt="Four pictures. Rule 4: a single straight line that never changes. Rule 90: a triangle pattern that repeats. Rule 30: a triangle full of messy chaos. Rule 110: a complex pattern that grows on one side."}
 
 - **Rule 4** never changes.
-- **Rule 90** makes a neat pattern of triangles inside triangles.
+- **Rule 90** makes a pattern that repeats: triangles inside triangles.
 - **Rule 30** makes chaos.
 - **Rule 110** makes shapes that move and crash into each other. Scientists proved that Rule 110 can do **any** calculation a computer can do. It only needs the right starting row.
 
