@@ -79,9 +79,9 @@ There are many chatbots built this way: ChatGPT, Gemini, Claude, Copilot, Llama,
 A chatbot writes one word at a time. It picks a word that's likely to come next. Now the class does the same thing.
 
 :::{.steps}
-1. Your teacher writes the start of a sentence on the board: **After school, my friends and I ...**
+1. Here's the start of a sentence: **After school, my friends and I ...**
 2. Everyone writes **one** next word on a small paper. Don't talk!
-3. Your teacher counts the words. The word with the most votes goes on the board.
+3. Your teacher counts the votes. The word with the most votes is added to the sentence. Everyone writes it on the sheet.
 4. Do it again for the next word. Keep going until the sentence ends (about 8 words).
 5. Now give the same start to your class AI tool: *"Finish this sentence: After school, my friends and I"*. Compare its sentence with the class sentence.
 :::

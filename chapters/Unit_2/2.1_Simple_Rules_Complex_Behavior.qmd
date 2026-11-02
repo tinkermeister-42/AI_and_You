@@ -97,9 +97,11 @@ The class becomes a row of cells.
 2. Start with **only the middle cell black**. Everyone else shows white.
 3. **Each cell:** look at your left neighbor, yourself, and your right neighbor. Find the same 3 colors on the Rule 30 card. (The ends of the row have a white neighbor outside.)
 4. The **caller** says "Ready ... Go!" Everyone shows their new color **at the same time**.
-5. The **recorder** colors the new row on the board. Everyone colors it on their sheet too.
+5. The **recorder** presses **Show the next row** in the tool below. Does the class match? Everyone colors the row on their sheet too.
 6. Do at least 6 rows. Then finish 10 rows on your sheet with a partner.
 :::
+
+{{< include /assets/Unit_2/rule30_board.html >}}
 
 :::{.gotcha title="Everyone changes at the same time"}
 Decide your new color, but wait for "Go!" If you change early, your neighbors will see the wrong color.

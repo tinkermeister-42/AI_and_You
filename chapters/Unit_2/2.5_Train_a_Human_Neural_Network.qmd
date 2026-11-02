@@ -42,7 +42,7 @@ One neuron can't learn this rule. Today, the class becomes a real network, with 
 :::{.teacher title="Before class"}
 Print and cut one set of creature cards for each network. Fold each card so the answer is hidden.
 
-Draw the class network on the board, big, with its starting numbers (the picture in 2.5.1). Leave room to erase and rewrite each number. The key on the sheet follows the cards in order: the network makes 5 mistakes in pass 1, and 0 in pass 2.
+Put this page on the screen. The tool in 2.5.3 is the class board: it draws the network with every number, and its highlighted numbers show each fix. Press **Next step** only after the class has worked out each step by hand. The key on the sheet follows the cards in order: the network makes 5 mistakes in pass 1, and 0 in pass 2.
 :::
 
 {{< warmup >}}
@@ -72,7 +72,7 @@ The answer is a **network**, with a hidden layer.
 
 ![](/images/Unit_2/2.5_class_network.svg){width="720px" fig-align="center" fig-alt="The class network. Two inputs: Strong Strength, 1 or 0, and Strong Magic, 1 or 0. Two hidden neurons, Hidden 1 and Hidden 2, each with threshold 1. One output neuron, Can it join, with threshold 1. Weights: Strong Strength to Hidden 1 is minus 1. Strong Strength to Hidden 2 is 0. Strong Magic to Hidden 1 is plus 1. Strong Magic to Hidden 2 is minus 1. Hidden 1 to Output is plus 1. Hidden 2 to Output is plus 1. A neuron fires (stands up) if its total is more than its threshold."}
 
-Each neuron is a **team** of students. Each team keeps its numbers on a whiteboard. The starting numbers are wrong on purpose.
+Each neuron is a **team** of students. Each team writes its numbers on the sheet. The tool in 2.5.3 shows every number on the screen. The starting numbers are wrong on purpose.
 
 To run one card:
 
@@ -129,24 +129,24 @@ Each person has a job.
 | 🟠 | **Hidden 2 team** | The same, with your own numbers. |
 | 🟢 | **Output team** | Add the weights of the hidden teams that are standing. Say "Can join!" or "Can't join." |
 | ✅ | **Checker** | Unfold the card. Say "right" or "wrong." If it's wrong, lead Who's to Blame. |
-| 📊 | **Scorekeeper** | Count the mistakes in each pass. Write them on the board. |
+| 📊 | **Scorekeeper** | Count the mistakes in each pass. Check your count with the tool. |
 
 :::{.teacher title="Class size"}
-**4 students:** one student for each neuron, and one dealer who is also the checker and scorekeeper. **5 to 9:** two or three students on each neuron team. **10 or more:** make **two networks** with two sets of cards. Both start with the same numbers. Which network learns first? Do they end with the same numbers?
+**4 students:** one student for each neuron, and one dealer who is also the checker and scorekeeper. **5 to 9:** two or three students on each neuron team. **10 or more:** make **two networks** with two sets of cards. Both start with the same numbers. Which network learns first? Do they end with the same numbers? (The tool on the screen follows one network. The other network checks against it.)
 
 **Timing:** a card takes about a minute, a fix about two. The key path makes 5 fixes in pass 1 (T1, T2, T3, T5, T6) and none in pass 2.
 :::
 
 :::{.steps}
-1. Write the starting numbers on the board.
-2. Use the training cards **in order**: T1, T2, ... T8. For each card: hidden teams, output team, check. If it's wrong, play Who's to Blame and fix.
-3. Everyone writes each step on the sheet.
+1. Your teacher opens the tool below on the screen and presses **Start A**. It shows the starting numbers.
+2. Use the training cards **in order**: T1, T2, ... T8. For each card: hidden teams, output team, check. Then your teacher presses **Next step**. Did the class get the same totals?
+3. If the network was wrong, play Who's to Blame and fix the numbers. Then your teacher presses **Next step** again. Did the class fix the same numbers? Everyone writes each step on the sheet.
 4. After T8, the scorekeeper writes the number of mistakes. That was **pass 1**.
 5. Do **pass 2** with the same cards. Keep going until a whole pass has **0 mistakes**.
 6. Now use the **test cards**, X1 to X6. They're the {{< glink "test data" >}}: the network never trained on them. **Don't fix anything on a test!** Just record what the network says.
 :::
 
-Check your class's work here. Step through the same cards, or flip the inputs and watch which neurons fire.
+This tool is the class board. Press **Next step** after the class does each step by hand. At the end, flip the inputs and watch which neurons fire.
 
 {{< include /assets/Unit_2/network_trainer.html >}}
 
@@ -198,7 +198,7 @@ Use the tool in 2.5.3 with a partner. It has three starts.
 :::
 
 :::{.project title="The Team Race"}
-Two networks train at the same time with the same cards. Network 1 uses Start A, the numbers on the board. Network 2 uses Start B: Hidden 1 weights 1 and 1, threshold 0. Hidden 2 weights 1 and 1, threshold 1. Output weights 1 and 0, threshold 0. Who needs fewer fixes? Do they end with the same numbers?
+Two networks train at the same time with the same cards. Network 1 uses Start A, the class's starting numbers. Network 2 uses Start B: Hidden 1 weights 1 and 1, threshold 0. Hidden 2 weights 1 and 1, threshold 1. Output weights 1 and 0, threshold 0. Who needs fewer fixes? Do they end with the same numbers?
 :::
 
 :::{.explore-link}

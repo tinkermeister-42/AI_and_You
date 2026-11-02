@@ -2,7 +2,9 @@
 <!-- neuron_weights.html: Lesson 2.4. One neuron, three numbers you change by
      hand: Strength weight, Magic weight, threshold. It reads the class's six
      creature cards and draws its rule as a line. Then test it on all 140
-     Fighters and Wizards in the made-up data (scripts/make-creatures.py). -->
+     Fighters and Wizards in the made-up data (scripts/make-creatures.py):
+     they appear as small unlabeled dots at their exact numbers (stat / 20 +
+     0.5 in star units), and the score updates as the numbers change. -->
 <div class="nw" id="nw">
   <div class="nw-top">
     <div class="nw-left">
@@ -23,6 +25,7 @@
   </div>
   <div class="nw-bottom">
     <button type="button" class="nw-btn nw-all">📊 Test on all 140 Fighters and Wizards</button>
+    <span class="nw-allnote">They show up on the graph as small dots, with no names. The score changes as you change the numbers.</span>
     <div class="nw-res"></div>
   </div>
 </div>
@@ -51,6 +54,7 @@
 .nw-key .f { color: #c0392b; font-weight: bold; } .nw-key .w { color: #7d3c98; font-weight: bold; }
 .nw-bottom { margin-top: 0.7rem; border-top: 1px solid #e3e8ed; padding-top: 0.6rem; }
 .nw-res { margin-top: 0.4rem; line-height: 1.6; min-height: 1.6em; }
+.nw-allnote { font-size: 0.85rem; color: #555; margin-left: 0.4rem; }
 </style>
 
 <script>
@@ -62,7 +66,9 @@
   const CARDS = [["Krellis", 4, 2, "F"], ["Lullom", 2, 4, "W"], ["Rezivil", 5, 2, "F"], ["Pona", 1, 5, "W"], ["Sandam", 3, 2, "F"], ["Skabil", 3, 4, "W"]];
   const START = [1, 1, 5], NAME = { F: "Fighter", W: "Wizard" }, COL = { F: "#c0392b", W: "#7d3c98" };
   const stars = (v) => Math.max(1, Math.min(5, Math.ceil(v / 20)));
-  let w = START.slice();
+  let w = START.slice(), showAll = false;
+  // the 140 Fighters and Wizards, at their exact Strength and Magic in star units
+  const FW = CREATURES.filter((r) => r[1] === "fighter" || r[1] === "wizard").map((r) => [r[2] / 20 + 0.5, r[3] / 20 + 0.5, r[1] === "fighter" ? "F" : "W"]);
   const tbody = root.querySelector(".nw-cards tbody"), score = root.querySelector(".nw-score");
   const rule = root.querySelector(".nw-rule"), res = root.querySelector(".nw-res");
   const cv = root.querySelector(".nw-plot"), cx = cv.getContext("2d");
@@ -93,6 +99,14 @@
     cx.font = "bold 13px sans-serif"; cx.fillText("Strength (stars) →", (L + W - R) / 2, H - 8);
     cx.save(); cx.translate(14, (T + H - B) / 2); cx.rotate(-Math.PI / 2); cx.fillText("Magic (stars) →", 0, 0); cx.restore();
     // the cards
+    // all 140: small dots at each creature's exact Strength and Magic (stat / 20 + 0.5,
+    // so a dot sits inside the square for its star count)
+    if (showAll) FW.forEach(([ps, pm, t]) => {
+      cx.globalAlpha = 0.8; cx.fillStyle = COL[t]; cx.strokeStyle = "#fff"; cx.lineWidth = 1;
+      cx.beginPath();
+      if (t === "F") cx.rect(X(ps) - 3.5, Y(pm) - 3.5, 7, 7); else cx.arc(X(ps), Y(pm), 3.8, 0, 2 * Math.PI);
+      cx.fill(); cx.stroke(); cx.globalAlpha = 1;
+    });
     CARDS.forEach(([n, s, m, t]) => {
       cx.fillStyle = COL[t]; cx.strokeStyle = "#fff"; cx.lineWidth = 2;
       cx.beginPath();
@@ -113,21 +127,25 @@
     }).join("");
     score.innerHTML = right === 6 ? `6 of 6 right! You found weights that work.` : `${right} of 6 right. Change one number and look again.`;
     root.dataset.right = right;
-    res.innerHTML = "";
+    if (showAll) {
+      let all = 0, f = 0, wz = 0;
+      FW.forEach(([ps, pm, t]) => { if (says(ps, pm) === t) { all++; t === "F" ? f++ : wz++; } });
+      const nf = FW.filter((r) => r[2] === "F").length;
+      res.innerHTML = `On all ${FW.length}, your neuron gets <b>${all} right: ${Math.round((100 * all) / FW.length)}%</b>. ` +
+        `(Fighters: ${f} of ${nf}. Wizards: ${wz} of ${FW.length - nf}.) Guessing gets about 50%.`;
+      root.dataset.all = all;
+    } else res.innerHTML = "";
     draw();
   }
   root.querySelectorAll(".nw-num button").forEach((b) => b.addEventListener("click", () => {
     const k = +b.dataset.k; w[k] = Math.max(-9, Math.min(20, w[k] + +b.dataset.d)); show();
   }));
   root.querySelector(".nw-reset").addEventListener("click", () => { w = START.slice(); show(); });
-  root.querySelector(".nw-all").addEventListener("click", () => {
-    const fw = CREATURES.filter((r) => r[1] === "fighter" || r[1] === "wizard");
-    let right = 0, f = 0, wz = 0;
-    fw.forEach((r) => { const t = r[1] === "fighter" ? "F" : "W", y = says(stars(r[2]), stars(r[3])); if (y === t) { right++; t === "F" ? f++ : wz++; } });
-    const nf = fw.filter((r) => r[1] === "fighter").length, nw = fw.length - nf;
-    res.innerHTML = `Your neuron got <b>${right} of ${fw.length}</b> right: <b>${Math.round((100 * right) / fw.length)}%</b>. ` +
-      `(Fighters: ${f} of ${nf}. Wizards: ${wz} of ${nw}.) Guessing gets about 50%.`;
-    root.dataset.all = right;
+  const allBtn = root.querySelector(".nw-all");
+  allBtn.addEventListener("click", () => {
+    showAll = !showAll;
+    allBtn.textContent = showAll ? "🙈 Hide the 140" : "📊 Test on all 140 Fighters and Wizards";
+    show();
   });
   show();
 })();

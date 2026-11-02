@@ -98,7 +98,7 @@ Work with a partner. Before each run, **predict** the test score on your sheet. 
 {{< include /assets/Unit_2/build_ai.html >}}
 
 :::{.think title="Run 1 vs. the class neuron"}
-The class neuron from Lesson 2.4 got about **88%** of all 140 Fighters and Wizards right. This network gets about the same on the test creatures. Look at the big map: the border is almost a straight line. Fighter or Wizard really is a one-line question, so more neurons don't help much.
+The class neuron from Lesson 2.4 got about **91%** of all 140 Fighters and Wizards right. This network gets about the same on the test creatures. Look at the big map: the border is almost a straight line. Fighter or Wizard really is a one-line question, so more neurons don't help much.
 :::
 
 :::{.think title="Run 2: why did 0 hidden neurons fail?"}

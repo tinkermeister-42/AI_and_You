@@ -163,12 +163,29 @@ Fei-Fei Li gave this talk in 2015, three years after the Toronto team's neural n
 :::{.project title="The GPU Race"}
 Why do GPUs help? Try it with your class.
 
-1. Your teacher writes 24 easy addition problems.
-2. **One student** solves all 24 alone. Time it.
-3. **Everyone else** shares the next 24 problems. Each person does a few, all at the same time. Time it.
-4. Which was faster? A normal computer chip is like the one fast student. A GPU is like the whole class.
+1. **One student** solves all 24 problems in Set A alone, on paper. Time it.
+2. **Everyone else** shares the 24 problems in Set B. Each person does a few, all at the same time. Time it.
+3. Which was faster? A normal computer chip is like the one fast student. A GPU is like the whole class.
 
 (Only 4 in class? One student against a team of 3 still works.)
+
+**Set A: for one student**
+
+|   |   |   |   |   |   |
+|---|---|---|---|---|---|
+| 23 + 4 | 45 + 7 | 28 + 6 | 30 + 3 | 30 + 9 | 13 + 5 |
+| 49 + 4 | 16 + 4 | 20 + 4 | 31 + 7 | 23 + 3 | 47 + 9 |
+| 17 + 5 | 44 + 4 | 24 + 4 | 35 + 4 | 16 + 6 | 42 + 9 |
+| 42 + 6 | 15 + 6 | 18 + 2 | 29 + 2 | 39 + 9 | 21 + 7 |
+
+**Set B: for everyone else, shared**
+
+|   |   |   |   |   |   |
+|---|---|---|---|---|---|
+| 23 + 4 | 31 + 8 | 34 + 7 | 27 + 4 | 27 + 7 | 41 + 6 |
+| 16 + 4 | 15 + 2 | 20 + 7 | 34 + 6 | 14 + 9 | 30 + 8 |
+| 43 + 5 | 32 + 5 | 29 + 6 | 31 + 9 | 34 + 2 | 45 + 5 |
+| 36 + 5 | 47 + 8 | 13 + 3 | 35 + 9 | 15 + 9 | 39 + 3 |
 :::
 
 :::{.explore-link}

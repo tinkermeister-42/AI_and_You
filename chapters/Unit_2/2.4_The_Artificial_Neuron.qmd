@@ -112,24 +112,24 @@ You see the numbers that go in and the answer that comes out. You don't see what
 
 ### 2.4.3 - Find the Weights
 
-Your teacher writes a neuron on the board. Its numbers are **wrong**. Your job is to fix them.
+The tool below is the class's neuron. Its numbers are **wrong**. Your job is to fix them. Your teacher puts it on the screen.
 
 :::{.steps}
 1. The neuron starts with **Strength weight 1**, **Magic weight 1**, and **threshold 5**.
 2. Each group gets one or two creature cards. Keep the type folded under.
 3. Calculate the total for your card. Is it more than the threshold? Say "Fighter" or "Wizard" out loud. Then unfold the card. Right or wrong?
-4. Count the right answers on the board.
-5. As a class, change **one** number. Look at the wrong cards first. Should a weight go up or down? Then test every card again.
+4. Check the tool. It shows all 6 cards, and how many are right.
+5. As a class, change **one** number in the tool. Look at the wrong cards first. Should a weight go up or down? Then every group tests its card again.
 6. Keep going until all 6 cards are right. Write your weights on your sheet.
 :::
 
 :::{.teacher title="Class size and hints"}
-**4 students:** each student takes one or two cards. **More students:** groups of 2 or 3, one card each. Extra students keep score and write the numbers on the board. **Big class:** two teams fix their own neuron. Who gets 6 of 6 first?
+**4 students:** each student takes one or two cards. **More students:** groups of 2 or 3, one card each. One student changes the numbers in the tool on the screen. Extra students check each group's math. **Big class:** two teams fix their own neuron. Who gets 6 of 6 first?
 
 **If the class is stuck:** "Lullom has more Magic. Which weight should push its total down?" One answer that works: Strength weight 1, Magic weight $-1$, threshold 0. Many others work too. The starting numbers get 2 of 6 right.
 :::
 
-Check your class's weights here. Change the numbers and watch the line move.
+Change a number and watch the line move.
 
 {{< include /assets/Unit_2/neuron_weights.html >}}
 
@@ -154,13 +154,15 @@ Your class picked **3 numbers**, and it took a while. The network in 2.4.2 has 1
 The data has 140 Fighters and Wizards. Your class's neuron only saw 6 of them. Work with a partner.
 
 1. Put your class's weights into the tool in 2.4.3.
-2. Press **Test on all 140 Fighters and Wizards**. Write the score on your sheet.
-3. Try to beat it. Change the numbers. What's your best score?
+2. Press **Test on all 140 Fighters and Wizards**. They show up on the graph as small dots, with no names. Write the score on your sheet.
+3. Try to beat it. Change the numbers and watch the dots and the score. What's your best score?
 4. Look at the graph. Can **any** line get all 140 right? Why not?
 :::
 
 :::{.think title="Why can't one line get 100%?"}
-A few Fighters have as much Magic as a Wizard. A few Wizards are strong. They land on the wrong side of every line. The best line gets about **88%** right.
+Look at the dots. A few Fighters have as much Magic as a Wizard. A few Wizards are strong. They land on the wrong side of every line. Your class's line probably gets about **91%** right, and the best line gets about **93%**.
+
+(The dots use each creature's exact Strength and Magic, so a dot can sit between two star numbers.)
 :::
 
 :::{.project title="My Decision Neuron"}

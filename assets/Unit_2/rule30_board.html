@@ -1,0 +1,46 @@
+```{=html}
+<!-- rule30_board.html: Lesson 2.1, "Be Rule 30". The class board on the
+     screen: 21 cells (like the sheet), one black cell in the middle, one new
+     row at a time.
+     The recorder shows a row only after the class has shown its colors. -->
+<div class="rb" id="rb">
+  <div class="rb-bar">
+    <button type="button" class="rb-btn rb-next">▶ Show the next row</button>
+    <button type="button" class="rb-btn rb-plain rb-reset">↺ Start over</button>
+    <span class="rb-msg" aria-live="polite"></span>
+  </div>
+  <div class="rb-rows" aria-label="Rule 30 rows, 21 cells wide, like the sheet"></div>
+</div>
+
+<style>
+.rb { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.rb-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem; }
+.rb-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.3rem 0.8rem; font-weight: 600; cursor: pointer; }
+.rb-btn.rb-plain { background: #fff; color: #2c3e50; }
+.rb-msg { font-weight: 600; }
+.rb-row { display: grid; grid-template-columns: 2.2em repeat(21, 1fr); gap: 2px; margin-bottom: 2px; max-width: 720px; }
+.rb-row span { aspect-ratio: 1; border: 1px solid #2c3e50; border-radius: 3px; background: #fff; }
+.rb-row span.on { background: #2c3e50; }
+.rb-row b { align-self: center; font-size: 0.85rem; color: #555; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("rb");
+  if (!root) return;
+  const N = 21, MAX = 10, RULE = 30;  // 21 wide, like the sheet: the pattern never reaches the ends in 10 rows
+  const box = root.querySelector(".rb-rows"), msg = root.querySelector(".rb-msg");
+  let rows;
+  const next = (r) => r.map((_, i) => (RULE >> (4 * (r[i - 1] || 0) + 2 * r[i] + (r[i + 1] || 0))) & 1);  // ends: white outside
+  function draw() {
+    box.innerHTML = rows.map((r, k) => `<div class="rb-row"><b>${k + 1}</b>${r.map((v) => `<span class="${v ? "on" : ""}"></span>`).join("")}</div>`).join("");
+    msg.textContent = rows.length >= MAX ? `${MAX} rows. Now finish your sheet with a partner.` : `Row ${rows.length} of ${MAX}. Show the next row after the class shows its colors.`;
+    root.dataset.rows = rows.length;
+  }
+  function reset() { const r = new Array(N).fill(0); r[Math.floor(N / 2)] = 1; rows = [r]; draw(); }
+  root.querySelector(".rb-next").addEventListener("click", () => { if (rows.length < MAX) { rows.push(next(rows[rows.length - 1])); draw(); } });
+  root.querySelector(".rb-reset").addEventListener("click", reset);
+  reset();
+})();
+</script>
+```

@@ -79,7 +79,7 @@ Work with a partner. First, {{< glink estimate >}} with your sheet. Then check w
 These are estimates for text answers only, from numbers the companies shared in 2025. Real numbers change with the model, the question, and the data center.
 
 :::{.teacher title="Class size"}
-**Small class:** do the math together on the board, one step at a time. **Big class:** each pair guesses a different number of questions per day (5, 10, 20, 50). Compare the results: how much does the guess change the answer?
+**Small class:** do the math together, one step at a time, with the calculator on the screen. **Big class:** each pair guesses a different number of questions per day (5, 10, 20, 50). Compare the results: how much does the guess change the answer?
 :::
 
 {{< talk >}}
