@@ -1,0 +1,129 @@
+```{=html}
+<!-- stadium_wave.html: Lesson 2.1 warm-up. A row of people who all follow one
+     rule: "When the person on your left raises their hands, raise yours. Put
+     them down after one second." The wave moves down the row, but each person
+     only moves up and down: emergence. For classes too small to make a
+     convincing wave themselves. -->
+<div class="sw" id="sw">
+  <div class="sw-bar">
+    <button type="button" class="sw-btn sw-go">▶ Start the wave</button>
+    <label>Speed <select class="sw-speed">
+      <option value="260">slow</option>
+      <option value="160" selected>normal</option>
+      <option value="90">fast</option>
+    </select></label>
+    <label><input type="checkbox" class="sw-watch"> Watch one person</label>
+    <label><input type="checkbox" class="sw-break"> One person ignores the rule</label>
+  </div>
+  <svg class="sw-svg" viewBox="0 0 600 150" role="img" aria-label="A row of 20 people sitting in a stadium. A wave of raised hands moves from left to right."></svg>
+  <div class="sw-msg" aria-live="polite">Everyone follows the same rule. Press Start.</div>
+</div>
+
+<style>
+.sw { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.sw-bar { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; margin-bottom: 0.4rem; }
+.sw-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.3rem 0.8rem; font-weight: 600; cursor: pointer; }
+.sw-svg { display: block; width: 100%; height: auto; background: #fff; border: 1px solid #d9e1e8; border-radius: 8px; }
+.sw-msg { min-height: 3em; line-height: 1.5; font-weight: 600; margin-top: 0.4rem; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("sw");
+  if (!root) return;
+  const svg = root.querySelector(".sw-svg"), msg = root.querySelector(".sw-msg");
+  const speed = root.querySelector(".sw-speed"), watch = root.querySelector(".sw-watch"), brk = root.querySelector(".sw-break");
+  const NS = "http://www.w3.org/2000/svg", N = 20, GAP = 28, X0 = 34, SEAT = 118;
+  const WATCH = 9, BROKEN = 12, HOLD = 1000;   // one second up
+  const PERSON = "#2e86c1", IGNORE = "#aab7b8", INK = "#2c3e50";
+  const el = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); (parent || svg).appendChild(e); return e; };
+
+  // the stands: one long bench
+  el("rect", { x: 10, y: SEAT, width: 580, height: 8, rx: 3, fill: "#d5dbdb" });
+  const marker = el("g", { visibility: "hidden" });
+  el("text", { x: X0 + WATCH * GAP, y: 16, "text-anchor": "middle", "font-size": 12, "font-weight": 700, fill: INK }, marker).textContent = "watch me";
+  el("path", { d: `M ${X0 + WATCH * GAP - 5} 22 l 5 7 l 5 -7 z`, fill: INK }, marker);
+
+  const people = [];
+  for (let i = 0; i < N; i++) {
+    const g = el("g", {});
+    const parts = {
+      head: el("circle", { r: 6.5 }, g),
+      body: el("line", { "stroke-width": 4, "stroke-linecap": "round" }, g),
+      armL: el("line", { "stroke-width": 3, "stroke-linecap": "round" }, g),
+      armR: el("line", { "stroke-width": 3, "stroke-linecap": "round" }, g),
+      leg: el("polyline", { "stroke-width": 3.5, "stroke-linecap": "round", "stroke-linejoin": "round", fill: "none" }, g),
+    };
+    people.push(parts);
+  }
+
+  // u = 0 sitting, hands down; u = 1 standing, hands up
+  function pose(i, u) {
+    const p = people[i], x = X0 + i * GAP, color = brk.checked && i === BROKEN ? IGNORE : PERSON;
+    const hip = SEAT - 4 - 10 * u, neck = hip - 26, head = neck - 9;
+    p.head.setAttribute("cx", x); p.head.setAttribute("cy", head); p.head.setAttribute("fill", color);
+    for (const k of ["body", "armL", "armR", "leg"]) p[k].setAttribute("stroke", color);
+    p.body.setAttribute("x1", x); p.body.setAttribute("y1", neck); p.body.setAttribute("x2", x); p.body.setAttribute("y2", hip);
+    // hands go from the lap (u = 0) to straight up in the air (u = 1)
+    const sy = neck + 3, dx = 9 - 2 * u, dy = 15 - 34 * u;
+    p.armL.setAttribute("x1", x); p.armL.setAttribute("y1", sy);
+    p.armL.setAttribute("x2", x - dx); p.armL.setAttribute("y2", sy + dy);
+    p.armR.setAttribute("x1", x); p.armR.setAttribute("y1", sy);
+    p.armR.setAttribute("x2", x + dx); p.armR.setAttribute("y2", sy + dy);
+    const knee = [x + 8 - 6 * u, hip + 2 + 6 * u];
+    p.leg.setAttribute("points", `${x},${hip} ${knee[0]},${knee[1]} ${knee[0]},${SEAT + 26}`);
+    p.head.setAttribute("stroke", watch.checked && i === WATCH ? INK : "none");
+    p.head.setAttribute("stroke-width", 2.5);
+  }
+
+  let raisedAt = new Array(N).fill(null), t0 = 0, running = false, lastSeen = -1;
+  function lift(t) {
+    if (t === null || t < 0) return 0;
+    if (t < 150) return t / 150;
+    if (t < HOLD) return 1;
+    if (t < HOLD + 220) return 1 - (t - HOLD) / 220;
+    return 0;
+  }
+  function plan() {
+    // each person watches only the person on their left
+    const react = +speed.value;
+    raisedAt = new Array(N).fill(null);
+    for (let i = 0; i < N; i++) {
+      if (brk.checked && i === BROKEN) break;           // this person never raises, so nobody after them does
+      raisedAt[i] = i === 0 ? 0 : raisedAt[i - 1] + react;
+    }
+  }
+  function frame(now) {
+    const t = now - t0;
+    let busy = false, front = -1;
+    for (let i = 0; i < N; i++) {
+      const r = raisedAt[i];
+      pose(i, lift(r === null ? null : t - r));
+      if (r !== null && t - r < HOLD + 220) busy = true;
+      if (r !== null && t >= r) front = i;
+    }
+    if (front !== lastSeen) {
+      lastSeen = front;
+      if (brk.checked && front === BROKEN - 1) msg.textContent = "The gray person doesn't follow the rule. Watch what happens to the wave.";
+    }
+    if (busy) requestAnimationFrame(frame);
+    else {
+      running = false;
+      msg.textContent = brk.checked
+        ? "The wave stopped at the person who ignored the rule. Everyone after them waited for a signal that never came."
+        : watch.checked
+          ? "The wave crossed the whole row. The person you watched only went up and down. So what moved?"
+          : "The wave crossed the whole row. Nobody walked anywhere. Now turn on \"Watch one person\" and start again.";
+    }
+  }
+  root.querySelector(".sw-go").addEventListener("click", () => {
+    plan(); t0 = performance.now(); lastSeen = -1;
+    msg.textContent = "Each person watches only the person on their left.";
+    if (!running) { running = true; requestAnimationFrame(frame); }
+  });
+  watch.addEventListener("change", () => { marker.setAttribute("visibility", watch.checked ? "visible" : "hidden"); if (!running) for (let i = 0; i < N; i++) pose(i, 0); });
+  brk.addEventListener("change", () => { if (!running) for (let i = 0; i < N; i++) pose(i, 0); });
+  for (let i = 0; i < N; i++) pose(i, 0);
+})();
+</script>
+```

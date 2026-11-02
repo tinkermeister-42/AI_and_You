@@ -36,14 +36,24 @@ Your brain works a little like this. Each brain cell follows simple rules. About
 
 {{< warmup >}}
 
-Everyone stands in a line (or sits in a row). Everyone follows **one rule**:
+Watch a crowd make a wave. Every person follows **one rule**:
 
 > When the person on your left raises their hands, raise your hands. Put them down after one second.
 
-Your teacher starts it at one end. Watch what happens. Then try it again, faster.
+{{< include /assets/Unit_2/stadium_wave.html >}}
+
+1. Press **Start the wave**.
+2. Turn on **Watch one person** and start it again. Does that person move down the row? Then what moves?
+3. Turn on **One person ignores the rule**. What happens to the wave?
+
+If there's time, try it yourselves. Sit in a row and follow the same rule. Even 4 people can pass a small wave.
+
+:::{.teacher title="Class size"}
+The animation is the wave everyone sees, so the warm-up works with any class size. With 10 or more students, also make a real wave down a row. With 4 or 5, pass a small one around a table.
+:::
 
 :::{.think title="Who was in charge of the wave?"}
-Nobody! Each person only watched one neighbor. But together, you made a wave that moved down the line.
+Nobody! Each person only watched one neighbor. The person you watched only went up and down. The wave moved across the row, but no person did.
 
 When many simple parts make something bigger that nobody planned, we call it **{{< glink emergence >}}**.
 :::
