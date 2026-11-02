@@ -33,6 +33,10 @@ But how does it choose the next word? Today, you build the simplest chatbot poss
 [Printable lesson sheet](/handouts/Unit_2/2.9_How_Chatbots_Work.pdf){target="_blank"} - the sheet you write on today.
 :::
 
+::: {.teacher title="Show the chances"}
+During 2.9.1, open the word-counting chatbot (in Go Further) on the projector. Click "like" to show its chances as bars, then press **Next word** a few times.
+:::
+
 {{< warmup >}}
 
 Finish each sentence with **one word**. Don't think too long!
@@ -59,14 +63,16 @@ Here is a very small training text:
 
 The tiny chatbot reads it and makes a table. For each word, it counts the words that come right after it:
 
-| After this word ... | ... these words came next |
-|---|---|
-| I | like (3 times) |
-| like | rice (2), soccer (1) |
-| likes | soccer (1), rice (1) |
-| rice | end of sentence (2), and (1) |
+| After this word ... | ... these words came next | As a chance |
+|---|---|---|
+| I | like (3 times) | like: 100% |
+| like | rice (2), soccer (1) | rice: 67%, soccer: 33% |
+| likes | soccer (1), rice (1) | soccer: 50%, rice: 50% |
+| rice | end of sentence (2), and (1) | end: 67%, and: 33% |
 
-To write, it starts with a word and looks it up. Then it picks a next word, looks **that** word up, and so on.
+The chatbot turns counts into **chances**. After "like", the next word was "rice" 2 times out of 3: that's 67%. This list of chances is the chatbot's answer, like the answers of the network in Lesson 2.6.
+
+To write, it starts with a word and looks it up. It picks a next word, using the chances. Then it looks **that** word up, and so on.
 
 :::{.real-world title="A new sentence!"}
 Start with **My**: My → friend → likes → rice → and → beans → end.
@@ -78,7 +84,16 @@ Start with **My**: My → friend → likes → rice → and → beans → end.
 
 ### 2.9.2 - From Counting to ChatGPT
 
-A real chatbot is a {{< glink "large language model" >}} (Lesson 1.6). It has the same goal: predict the next word. But it's much, much bigger.
+A real chatbot is a {{< glink "large language model" >}} (Lesson 1.6). It has the same goal: predict the next word. But it doesn't keep a table. It's a **neural network**.
+
+![This shows the idea. The percentages are made up.](/images/Unit_2/2.9_chatbot_network.svg){width="760px" fig-align="center" fig-alt="A chatbot as a neural network. On the left, the words so far: Peanut, butter, and. In the middle, many layers of neurons, with attention, and billions of weights. On the right, one neuron for every word, with how likely it is next: jelly 81 percent, honey 5 percent, bananas 3 percent, crackers 2 percent, jam 2 percent, and about 100,000 more."}
+
+1. The words so far go in.
+2. They pass through many layers. **Attention** (Lesson 1.6) lets each word look back at the other words.
+3. The output layer has **one neuron for every word** it knows, about 100,000. Each one says how likely its word is to come next.
+4. The chatbot picks a word, adds it, and runs the whole network again for the next word.
+
+The answers look like your table's chances. But a real chatbot looks back at thousands of words, not just one.
 
 | | The tiny chatbot | A real chatbot |
 |---|---|---|
@@ -134,11 +149,12 @@ The tiny chatbot wrote "My friend likes rice and beans." Did it **understand** t
 :::{.project title="Day 2: The Word-Counting Chatbot"}
 This chatbot does what you did with the dice, on screen. Work with a partner.
 
-1. Press **Learn from this text**. Click some words. Do the counts match your table?
-2. Choose **always pick the most common next word**. Write a sentence. Write it again. Is it always the same?
-3. Choose **pick by chance**. Write 5 sentences. Are they different?
-4. Choose **a story about school**. Write some sentences. Do any of them sound strange?
-5. Choose **my own text**. Write 5 sentences in **your home language**. Press **Learn**. Can it write in your language?
+1. Press **Learn from this text**. Click some words. Do the chances match your table?
+2. Choose **no chance**. Write a sentence. Write it again. Is it always the same?
+3. Choose **a little chance**. Write 5 sentences. Are they different?
+4. Choose **a lot of chance**. Click **Next word** and watch the bars. What happens to the chances?
+5. Choose **a story about school**. Write some sentences. Do any of them sound strange?
+6. Choose **my own text**. Write 5 sentences in **your home language**. Press **Learn**. Can it write in your language?
 :::
 
 {{< include /assets/Unit_2/word_chatbot.html >}}
@@ -146,7 +162,7 @@ This chatbot does what you did with the dice, on screen. Work with a partner.
 :::{.think title="Why do real chatbots mix in a little chance?"}
 If a chatbot always picks the most common word, it writes the same thing every time. It can get stuck saying ordinary, boring sentences.
 
-A little chance makes the writing more interesting. Too much chance makes it strange. Chatbot makers pick a setting in between.
+A little chance makes the writing more interesting. Too much chance makes the bars flatter, so rare words win more often, and the writing gets strange. Chatbot makers pick a setting in between.
 :::
 
 :::{.think title="Could the tiny chatbot write in your language?"}

@@ -1,0 +1,37 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\usetikzlibrary{backgrounds}
+\begin{document}
+\begin{tikzpicture}[
+  inp/.style={personbox, minimum width=2.2cm, font=\normalsize},
+  hid/.style={circle, draw=machine, fill=machine!12, line width=1.1pt, minimum size=0.42cm, inner sep=0pt},
+  wire/.style={draw=ink!25, line width=0.6pt},
+]
+% A real chatbot is a network. The words so far go in. Many layers. The
+% output layer has one neuron for every word, each with a percentage.
+% The percentages are made up to show the idea.
+\node[inp] (w1) at (0,2.2) {Peanut};
+\node[inp] (w2) at (0,1.0) {butter};
+\node[inp] (w3) at (0,-0.2) {and};
+\node[font=\small\bfseries, text=person, align=center] at (0,3.3) {the words so far};
+\foreach \c in {0,...,4} \foreach \r in {0,...,5} \node[hid] (h\c-\r) at (2.6+\c*0.9, 2.6-\r*0.6) {};
+\begin{scope}[on background layer]
+  \foreach \i in {1,2,3} \foreach \r in {0,...,5} \draw[wire] (w\i.east) -- (h0-\r);
+  \foreach \c [evaluate=\c as \n using int(\c+1)] in {0,...,3} \foreach \r in {0,...,5} \foreach \s in {0,...,5} \draw[wire] (h\c-\r) -- (h\n-\s);
+\end{scope}
+\node[font=\small\bfseries, text=machine, align=center] at (4.4,3.45) {many layers\\(with attention)};
+\node[font=\scriptsize, text=ink!70] at (4.4,-1.0) {billions of weights};
+% output layer: one neuron per word, with percentage bars
+\foreach \w/\p/\r in {jelly/81/0, honey/5/1, bananas/3/2, crackers/2/3, jam/2/4} {
+  \node[circle, draw=result, fill=result!12, line width=1.1pt, minimum size=0.42cm, inner sep=0pt] (o\r) at (8.4, 2.6-\r*0.62) {};
+  \node[anchor=west, font=\small\bfseries] at (8.75, 2.6-\r*0.62) {\w};
+  \fill[result!70] (10.5, 2.6-\r*0.62-0.13) rectangle ++(\p*0.04, 0.26);
+  \node[anchor=west, font=\small] at (10.55+\p*0.04, 2.6-\r*0.62) {\p\%};
+}
+\node[font=\small, text=ink, anchor=west] at (8.75,-0.65) {\dots\ and about 100,000 more};
+\begin{scope}[on background layer]
+  \foreach \r in {0,...,5} \foreach \o in {0,...,4} \draw[wire] (h4-\r) -- (o\o);
+\end{scope}
+\node[font=\small\bfseries, text=result, align=center] at (9.6,3.45) {one neuron for every word:\\how likely is it next?};
+\end{tikzpicture}
+\end{document}

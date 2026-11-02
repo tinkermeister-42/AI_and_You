@@ -43,7 +43,7 @@
   "false-positive": "When a test says “yes” but the true answer is “no.” When a detector calls human writing “AI,” that’s a false positive.",
   "feed": "The list of posts, videos, or stories an app shows you. An AI chooses what goes in it.",
   "feedback": "Comments that tell you what is good about your work and what to make better. Good feedback is kind, specific, and helpful.",
-  "filter": "A small grid of numbers that slides over a picture. At each spot, it multiplies and adds. A filter can find edges or make a picture blurry.",
+  "filter": "A small grid of weights that slides over a picture. It’s a neuron that looks at one small patch at a time: at each spot, it multiplies and adds. A filter can find edges or make a picture blurry.",
   "filter-bubble": "When an app shows you only what you already like and agree with, so you miss everything else. Two people can live in very different filter bubbles.",
   "follow-up-question": "A question you ask after an answer, to make the answer better. For example: “Explain it in simple words” or “Give me an example.”",
   "format": "What an answer should look like: a list, a table, 3 sentences, simple words, or a certain language.",

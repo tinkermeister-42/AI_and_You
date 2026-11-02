@@ -1,0 +1,40 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[
+  px/.style={draw=ink!60, minimum size=0.9cm, inner sep=0pt, font=\small\bfseries},
+  wt/.style={draw=machine, fill=white, minimum size=0.9cm, inner sep=0pt, font=\normalsize\bfseries, text=machine},
+]
+% A filter is a neuron with 9 inputs: a 3 by 3 patch of the picture.
+% Patch at an edge: dark (0) on the left, light (255) on the right.
+\foreach \r in {0,1,2} {
+  \node[px, fill=black, text=white] at (0,-\r*0.9) {0};
+  \node[px, fill=black, text=white] at (0.9,-\r*0.9) {0};
+  \node[px, fill=white, text=ink] at (1.8,-\r*0.9) {255};
+}
+\node[font=\small\bfseries, text=person, align=center] at (0.9,0.95) {9 inputs: a 3 by 3\\patch of the picture};
+\node[font=\Large] at (2.95,-0.9) {$\times$};
+\foreach \r in {0,1,2} {
+  \node[wt] at (4.1,-\r*0.9) {$-1$};
+  \node[wt] at (5.0,-\r*0.9) {$0$};
+  \node[wt] at (5.9,-\r*0.9) {$+1$};
+}
+\node[font=\small\bfseries, text=machine, align=center] at (5.0,0.95) {9 weights:\\the filter};
+\node[draw=machine, fill=machine!12, circle, line width=1.6pt, minimum size=2.3cm, align=center, font=\small] (n) at (8.7,-0.9)
+  {add up\\[1pt]$255 + 255 + 255$\\$= 765$};
+\draw[flow] (6.45,-0.9) -- (n);
+\node[font=\small\bfseries, text=machine] at (8.7,0.75) {neuron};
+\node[draw=ink!60, fill=white, rounded corners=4pt, font=\small, align=center] (th) at (11.6,-0.9) {Big?\\\textbf{Yes: it fires.}\\An edge!};
+\draw[flow] (n) -- (th);
+% the output map: the same neuron at every spot
+\begin{scope}[shift={(13.6,0.1)}]
+  \foreach \i in {0,...,5} \foreach \j in {0,...,5} {
+    \pgfmathsetmacro{\on}{(\j==2 || \j==3) ? 1 : 0}
+    \ifdim \on pt>0.5pt \fill[person!75] (\j*0.36,-\i*0.36) rectangle ++(0.36,-0.36); \fi
+    \draw[ink!35] (\j*0.36,-\i*0.36) rectangle ++(0.36,-0.36);
+  }
+  \node[font=\small\bfseries, text=ink, align=center, anchor=north] at (1.08,-2.3) {the same neuron at\\every spot makes\\a map of the edges};
+\end{scope}
+\draw[flow] (th) -- (13.5,-0.9);
+\end{tikzpicture}
+\end{document}

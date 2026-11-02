@@ -28,8 +28,8 @@ Most lessons also have a **🚀 Go Further** part. It can fill a second day, or 
 | 2.5 | [Train a Human Neural Network](chapters/Unit_2/2.5_Train_a_Human_Neural_Network.qmd) | One neuron can't learn the club rule, so the class becomes a network with a hidden layer. Feed it creature cards and play Who's to Blame after every mistake. |
 | 2.6 | [Build a Real AI](chapters/Unit_2/2.6_Build_a_Real_AI.qmd) | Train a real neural network on 300 creatures, and watch its weights change while it learns. Then test it, and find what it can't learn. |
 | 2.7 | [Train Your Own AI](chapters/Unit_2/2.7_Train_Your_Own_AI.qmd) | Teach Teachable Machine your own hand signs. Then try to fool it. |
-| 2.8 | [How AI Sees](chapters/Unit_2/2.8_How_AI_Sees.qmd) | Turn a picture into numbers on a grid. Find the edges with a filter. |
-| 2.9 | [How Chatbots Work](chapters/Unit_2/2.9_How_Chatbots_Work.qmd) | Build a tiny chatbot that counts which word comes next. Make it write. |
+| 2.8 | [How AI Sees](chapters/Unit_2/2.8_How_AI_Sees.qmd) | A picture is numbers. A filter is a neuron that finds edges. Watch layers go from edges to corners, and see what real networks find layer by layer. |
+| 2.9 | [How Chatbots Work](chapters/Unit_2/2.9_How_Chatbots_Work.qmd) | Build a tiny chatbot that counts which word comes next and turns counts into chances. Then see a real chatbot as a network with one neuron for every word. |
 
 ## Unit 3: Using AI Well
 

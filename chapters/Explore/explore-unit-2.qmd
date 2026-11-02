@@ -183,7 +183,7 @@ Most AI today uses transfer learning. A company trains one very big network, for
 
 ### Layers: From Edges to a Cat
 
-In Lesson 2.8, a filter found edges. But an edge isn't a cat. How does a network get from edges to "cat"?
+In Lesson 2.8, a filter found edges, and a second layer found corners. But a corner isn't a cat. How does a network get from edges to "cat"?
 
 A vision network has many layers of neurons. Each layer builds on the one before.
 
@@ -199,7 +199,7 @@ Each layer is only multiply and add, like one neuron. But many layers, one after
 
 ### See It for Yourself
 
-Scientists have made pictures of what each layer in a real network looks for. In early layers, the pictures look like stripes and edges. In later layers, they look like eyes, wheels, and faces. Search the web for "feature visualization" to see some.
+The pictures in Lesson 2.8 come from an article called "[Feature Visualization](https://distill.pub/2017/feature-visualization/){target="_blank"}" (Distill, 2017). It has many more. Its appendix shows a picture for **every** neuron in GoogLeNet, layer by layer. Scroll from the first layer to the last and watch stripes turn into eyes, wheels, and faces.
 
 ## From Lesson 2.9: How Chatbots Work {#explore-2-9}
 

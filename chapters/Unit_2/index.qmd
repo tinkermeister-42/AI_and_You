@@ -44,7 +44,7 @@ Six steps to build an AI. Train a real neural network on 300 creatures, and watc
 Teach Teachable Machine your own hand signs. Then try to fool it.
 
 [**How AI Sees**](2.8_How_AI_Sees.qmd)\
-A picture is a grid of numbers. Color by number, then find the edges with a filter.
+A picture is a grid of numbers. A filter is a neuron that finds edges, and each layer finds something more complicated: edges, corners, then whole things.
 
 [**How Chatbots Work**](2.9_How_Chatbots_Work.qmd)\
-Build a tiny chatbot that only counts which word comes next. Roll dice to make it write.
+Build a tiny chatbot that counts which word comes next. Roll dice to make it write, then see how a real chatbot does the same job with a network.

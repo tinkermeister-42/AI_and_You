@@ -390,9 +390,9 @@ Comments that tell you what is good about your work and what to make better. Goo
 
 ### filter {#glossary-filter}
 
-A small grid of numbers that slides over a picture. At each spot, it multiplies and adds. A filter can find edges or make a picture blurry.
+A small grid of weights that slides over a picture. It's a neuron that looks at one small patch at a time: at each spot, it multiplies and adds. A filter can find edges or make a picture blurry.
 
-**See Also:** {{< glink edge >}}, {{< glink pixel >}}
+**See Also:** {{< glink edge >}}, {{< glink pixel >}}, {{< glink weight >}}
 
 ***
 

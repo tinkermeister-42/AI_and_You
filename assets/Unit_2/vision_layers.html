@@ -1,0 +1,165 @@
+```{=html}
+<!-- vision_layers.html: Lesson 2.8. A tiny vision network with two layers.
+     Layer 1: two edge neurons (filters), copied to every spot.
+     Layer 2: a corner neuron that looks at layer 1's maps, not the picture:
+     it fires where BOTH edge maps fire. Draw a shape and watch each layer. -->
+<div class="vl" id="vl">
+  <div class="vl-bar">
+    <span class="vl-lbl">Picture:</span>
+    <button type="button" data-pic="square">square</button>
+    <button type="button" data-pic="L">letter L</button>
+    <button type="button" data-pic="T">letter T</button>
+    <button type="button" data-pic="plus">plus</button>
+    <button type="button" data-pic="house">house</button>
+    <button type="button" data-pic="circle">circle</button>
+    <button type="button" data-pic="blank">blank</button>
+  </div>
+  <div class="vl-bar">
+    <span class="vl-lbl">Pen:</span>
+    <button type="button" class="vl-pen on" data-v="0">⬛ dark (0)</button>
+    <button type="button" class="vl-pen" data-v="255">⬜ light (255)</button>
+    <span class="vl-hint">Click or drag on the picture to draw.</span>
+  </div>
+  <div class="vl-flow">
+    <div class="vl-col">
+      <div class="vl-h">The picture<br><small>numbers: 0 dark, 255 light</small></div>
+      <canvas class="vl-pic" width="320" height="320" aria-label="The picture. Click to draw."></canvas>
+    </div>
+    <div class="vl-arrow">→</div>
+    <div class="vl-col">
+      <div class="vl-h">Layer 1: edge neurons<br><small>each one is copied to every spot</small></div>
+      <div class="vl-sub">finds <b class="cv">up-and-down</b> edges</div>
+      <canvas class="vl-mv" width="192" height="192" aria-label="Up-and-down edge map"></canvas>
+      <div class="vl-sub">finds <b class="ch">side-to-side</b> edges</div>
+      <canvas class="vl-mh" width="192" height="192" aria-label="Side-to-side edge map"></canvas>
+    </div>
+    <div class="vl-arrow">→</div>
+    <div class="vl-col">
+      <div class="vl-h">Layer 2: corner neuron<br><small>looks at layer 1, not the picture</small></div>
+      <div class="vl-sub">fires where <b>both</b> edge maps fire</div>
+      <canvas class="vl-mc" width="192" height="192" aria-label="Corner map"></canvas>
+      <div class="vl-count" aria-live="polite"></div>
+    </div>
+  </div>
+  <div class="vl-explain" aria-live="polite">Click a square on any map to see why it fired.</div>
+</div>
+
+<style>
+.vl { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.vl-bar { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; align-items: center; margin-bottom: 0.45rem; }
+.vl-bar button { border: 1px solid #b8c4cf; background: #fff; border-radius: 6px; padding: 0.15rem 0.6rem; cursor: pointer; }
+.vl-bar button.on { background: #2c3e50; color: #fff; border-color: #2c3e50; }
+.vl-lbl { font-weight: bold; }
+.vl-hint { color: #555; font-size: 0.88rem; }
+.vl-flow { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: center; }
+.vl-col { display: flex; flex-direction: column; align-items: center; gap: 0.2rem; }
+.vl-h { font-weight: 700; text-align: center; font-size: 0.92rem; line-height: 1.25; }
+.vl-h small { font-weight: 400; color: #555; }
+.vl-sub { font-size: 0.85rem; }
+.vl-sub .cv { color: #2c6fae; } .vl-sub .ch { color: #d35400; }
+.vl-arrow { font-size: 1.8rem; color: #7f8c8d; }
+@media (max-width: 700px) { .vl-arrow { display: none; } }
+.vl canvas { border: 1px solid #2c3e50; background: #fff; cursor: pointer; touch-action: none; image-rendering: pixelated; max-width: 100%; height: auto; }
+.vl-pic { width: 320px; }
+.vl-mv, .vl-mh, .vl-mc { width: 192px; }
+.vl-count { font-size: 1.1rem; font-weight: 700; color: #1e8449; min-height: 1.5em; text-align: center; }
+.vl-explain { margin-top: 0.6rem; background: #fff; border-left: 4px solid #d35400; padding: 0.4rem 0.6rem; border-radius: 4px; line-height: 1.5; min-height: 4.5em; }
+.vl-explain table { border-collapse: collapse; display: inline-table; margin: 0.2rem 0.5rem 0.2rem 0; vertical-align: middle; }
+.vl-explain td { border: 1px solid #ccc; padding: 0 0.3rem; text-align: center; font-size: 0.82rem; min-width: 2.2em; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("vl");
+  if (!root) return;
+  const N = 16, FIRE = 510;
+  const PICS = {
+    square: ["................", "................", "................", "................", "....########....", "....########....", "....########....", "....########....", "....########....", "....########....", "....########....", "....########....", "................", "................", "................", "................"],
+    L: ["................", "................", "...###..........", "...###..........", "...###..........", "...###..........", "...###..........", "...###..........", "...###..........", "...###..........", "...###..........", "...##########...", "...##########...", "...##########...", "................", "................"],
+    T: ["................", "..############..", "..############..", "..############..", "......####......", "......####......", "......####......", "......####......", "......####......", "......####......", "......####......", "......####......", "......####......", "................", "................", "................"],
+    plus: ["................", "................", "......####......", "......####......", "......####......", "..############..", "..############..", "..############..", "..############..", "......####......", "......####......", "......####......", "................", "................", "................", "................"],
+    house: ["................", "................", ".......##.......", "......####......", ".....######.....", "....########....", "...##########...", "..############..", "...##########...", "...##......##...", "...##..##..##...", "...##..##..##...", "...##..##..##...", "...##########...", "................", "................"],
+  };
+  const circle = () => Array.from({ length: N }, (_, i) => Array.from({ length: N }, (_, j) => ((i - 7.5) ** 2 + (j - 7.5) ** 2 <= 5.6 ** 2 ? 0 : 255)));
+  const fromRows = (rows) => rows.map((r) => [...r].map((ch) => (ch === "#" ? 0 : 255)));
+  const KV = [[-1, 0, 1], [-1, 0, 1], [-1, 0, 1]], KH = [[-1, -1, -1], [0, 0, 0], [1, 1, 1]];
+  let img = fromRows(PICS.square), pen = 0, V, H, Cn, sel = null;
+
+  const pic = root.querySelector(".vl-pic"), px = pic.getContext("2d");
+  const maps = { v: root.querySelector(".vl-mv"), h: root.querySelector(".vl-mh"), c: root.querySelector(".vl-mc") };
+  const explain = root.querySelector(".vl-explain"), count = root.querySelector(".vl-count");
+  const at = (i, j) => (i < 0 || j < 0 || i >= N || j >= N ? img[Math.max(0, Math.min(N - 1, i))][Math.max(0, Math.min(N - 1, j))] : img[i][j]);
+  const conv = (K) => Array.from({ length: N }, (_, i) => Array.from({ length: N }, (_, j) => {
+    let s = 0; for (let a = 0; a < 3; a++) for (let b = 0; b < 3; b++) s += K[a][b] * at(i + a - 1, j + b - 1); return s;
+  }));
+  function compute() {
+    V = conv(KV); H = conv(KH);
+    Cn = V.map((row, i) => row.map((v, j) => Math.abs(v) >= FIRE && Math.abs(H[i][j]) >= FIRE));
+    // count corner spots: groups of touching corner squares
+    const seen = Cn.map((r) => r.map(() => false)); let n = 0;
+    for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) if (Cn[i][j] && !seen[i][j]) {
+      n++; const st = [[i, j]]; seen[i][j] = true;
+      while (st.length) { const [a, b] = st.pop(); for (let da = -1; da <= 1; da++) for (let db = -1; db <= 1; db++) { const x = a + da, y = b + db; if (x >= 0 && y >= 0 && x < N && y < N && Cn[x][y] && !seen[x][y]) { seen[x][y] = true; st.push([x, y]); } } }
+    }
+    count.textContent = `Corners found: ${n}`;
+    root.dataset.corners = n;
+  }
+  function drawPic() {
+    const c = pic.width / N;
+    for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) { const v = img[i][j]; px.fillStyle = `rgb(${v},${v},${v})`; px.fillRect(j * c, i * c, c, c); }
+    px.strokeStyle = "rgba(127,140,141,0.35)"; px.lineWidth = 1;
+    for (let k = 0; k <= N; k++) { px.beginPath(); px.moveTo(k * c, 0); px.lineTo(k * c, pic.height); px.stroke(); px.beginPath(); px.moveTo(0, k * c); px.lineTo(pic.width, k * c); px.stroke(); }
+    if (sel) { px.strokeStyle = "#d35400"; px.lineWidth = 3; px.strokeRect((sel[1] - 1) * c, (sel[0] - 1) * c, 3 * c, 3 * c); }
+  }
+  function drawMap(key, M, rgb) {
+    const cv = maps[key], cx = cv.getContext("2d"), c = cv.width / N;
+    for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) {
+      let a, fired;
+      if (key === "c") { fired = M[i][j]; a = fired ? 1 : 0; } else { a = Math.min(1, Math.abs(M[i][j]) / 765); fired = Math.abs(M[i][j]) >= FIRE; }
+      const s = fired ? a : a * 0.35;
+      cx.fillStyle = `rgb(${Math.round(255 - (255 - rgb[0]) * s)},${Math.round(255 - (255 - rgb[1]) * s)},${Math.round(255 - (255 - rgb[2]) * s)})`;
+      cx.fillRect(j * c, i * c, c, c);
+    }
+    cx.strokeStyle = "rgba(127,140,141,0.25)"; cx.lineWidth = 1;
+    for (let k = 0; k <= N; k++) { cx.beginPath(); cx.moveTo(k * c, 0); cx.lineTo(k * c, cv.height); cx.stroke(); cx.beginPath(); cx.moveTo(0, k * c); cx.lineTo(cv.width, k * c); cx.stroke(); }
+    if (sel) { cx.strokeStyle = "#000"; cx.lineWidth = 2.5; cx.strokeRect(sel[1] * c, sel[0] * c, c, c); }
+  }
+  function draw() { compute(); drawPic(); drawMap("v", V, [44, 111, 174]); drawMap("h", H, [211, 84, 0]); drawMap("c", Cn, [30, 132, 73]); }
+
+  const cell = (e, cv) => { const r = cv.getBoundingClientRect(); return [Math.floor(((e.clientY - r.top) / r.height) * N), Math.floor(((e.clientX - r.left) / r.width) * N)]; };
+  const n = (v) => String(v).replace("-", "−");
+  function why(key, i, j) {
+    sel = [i, j]; draw();
+    if (key === "c") {
+      const v = Math.abs(V[i][j]) >= FIRE, h = Math.abs(H[i][j]) >= FIRE;
+      explain.innerHTML = `<b>Corner neuron, row ${i + 1}, column ${j + 1}.</b> It doesn't look at the picture. It looks at layer 1. ` +
+        `Up-and-down edge here? <b>${v ? "yes" : "no"}</b>. Side-to-side edge here? <b>${h ? "yes" : "no"}</b>. ` +
+        (v && h ? `<b style="color:#1e8449">Both: it fires. A corner!</b>` : `Not both, so it doesn't fire.`);
+      return;
+    }
+    const K = key === "v" ? KV : KH, M = key === "v" ? V : H;
+    const patch = [], prod = [];
+    for (let a = 0; a < 3; a++) { patch.push([]); prod.push([]); for (let b = 0; b < 3; b++) { const p = at(i + a - 1, j + b - 1); patch[a].push(p); prod[a].push(p * K[a][b]); } }
+    const tbl = (g) => `<table>${g.map((r) => `<tr>${r.map((x) => `<td>${n(x)}</td>`).join("")}</tr>`).join("")}</table>`;
+    const fired = Math.abs(M[i][j]) >= FIRE;
+    explain.innerHTML = `<b>${key === "v" ? "Up-and-down" : "Side-to-side"} edge neuron, row ${i + 1}, column ${j + 1}.</b> It looks at the 3 by 3 patch in the orange box.<br>` +
+      `patch ${tbl(patch)} × weights ${tbl(K)} = ${tbl(prod)} add them up: <b>${n(M[i][j])}</b>. ` +
+      (fired ? `That's far from 0${M[i][j] < 0 ? " (a big minus number: the edge goes from light to dark)" : ""}, so <b>it fires. An edge!</b>`
+             : `That's close to 0, so it doesn't fire.`) + ` <i>(It fires at 510 or more, plus or minus.)</i>`;
+  }
+  let down = false;
+  const paint = (e) => { const [i, j] = cell(e, pic); if (i < 0 || j < 0 || i >= N || j >= N) return; if (img[i][j] !== pen) { img[i][j] = pen; sel = null; draw(); } };
+  pic.addEventListener("pointerdown", (e) => { e.preventDefault(); down = true; try { pic.setPointerCapture(e.pointerId); } catch (_) {} paint(e); });
+  pic.addEventListener("pointermove", (e) => { if (down) paint(e); });
+  pic.addEventListener("pointerup", () => (down = false)); pic.addEventListener("pointercancel", () => (down = false));
+  for (const key of ["v", "h", "c"]) maps[key].addEventListener("click", (e) => { const [i, j] = cell(e, maps[key]); if (i >= 0 && j >= 0 && i < N && j < N) why(key, i, j); });
+  root.querySelectorAll("[data-pic]").forEach((b) => b.addEventListener("click", () => {
+    const k = b.dataset.pic;
+    img = k === "circle" ? circle() : k === "blank" ? fromRows(Array(N).fill(".".repeat(N))) : fromRows(PICS[k]);
+    sel = null; draw(); explain.textContent = "Click a square on any map to see why it fired.";
+  }));
+  root.querySelectorAll(".vl-pen").forEach((b) => b.addEventListener("click", () => { pen = +b.dataset.v; root.querySelectorAll(".vl-pen").forEach((x) => x.classList.toggle("on", x === b)); }));
+  draw();
+})();
+</script>
+```

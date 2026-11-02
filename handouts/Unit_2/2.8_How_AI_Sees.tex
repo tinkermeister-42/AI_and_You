@@ -28,31 +28,70 @@ In a black-and-white picture, \ansline{0.6in}{0} is black and \ansline{0.6in}{25
 In a color picture, each pixel is \ansline{0.6in}{3} numbers: red, green, and \ansline{0.8in}{blue}.
 
 \newpage
+\renewcommand{\arraystretch}{1.25}
 
-{\large\textbf{3. Find the edges on screen.}}
+\wordbank[You can use a word more than once.]{\wb{corners}\wb{edges}\wb{neuron}\wb{objects}\wb{weights}}
+
+{\large\textbf{3. A filter is a neuron.}}
+
+\vspace{0.4em}
+A filter is a \ansline{0.9in}{neuron} with 9 inputs. Its 9 numbers are its \ansline{0.9in}{weights}.
+
+\vspace{0.6em}
+\begin{tabular}{|c|c|c|}
+\hline
+0 & 0 & 255 \\ \hline
+0 & 0 & 255 \\ \hline
+0 & 0 & 255 \\ \hline
+\end{tabular}
+\ $\times$\ 
+\begin{tabular}{|c|c|c|}
+\hline
+$-1$ & 0 & $+1$ \\ \hline
+$-1$ & 0 & $+1$ \\ \hline
+$-1$ & 0 & $+1$ \\ \hline
+\end{tabular}
+\qquad Total $=$ \ansline{0.8in}{765} \quad Does it fire? \ansline{0.5in}{yes}
+
+\vspace{0.6em}
+If all 9 picture numbers are 255, the total is \ansline{0.5in}{0}. Is there an edge? \ansline{0.5in}{no}
+
+\vspace{0.6em}
+{\large\textbf{4. Layers.}}
+
+\vspace{0.4em}
+Layer 1 finds \ansline{0.9in}{edges}. Layer 2 looks at layer 1's maps, not the picture. It finds \ansline{0.9in}{corners}.
+
+\vspace{0.6em}
+In the pictures from a real network, early layers find \ansline{0.9in}{edges}. Later layers find parts and whole \ansline{0.9in}{objects}.
+
+\vspace{0.6em}
+Who chose the real network's filters? \ansline{3.6in}{Nobody. Training found them.}
+
+\vspace{0.6em}
+{\large\textbf{5. Watch the layers.}} Count the corners yourself first. Then check the network.
+
+\vspace{0.3em}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Shape} & \textbf{My count} & \textbf{The network's count} \\ \hline
+square & \ans{4} & \ans{4} \\ \hline
+letter L & \ans{6} & \ans{6} \\ \hline
+letter T & \ans{8} & \ans{8} \\ \hline
+plus & \ans{12} & \ans{12} \\ \hline
+circle & \ans{0} & \ans{4} \\ \hline
+\end{tabular}
 
 \vspace{0.5em}
-With the \textbf{up-and-down} filter, the bright squares are on the \ansline{2.4in}{walls of the house.}
+Why did the network find corners on the circle? \ansline{3.0in}{Its pixels make tiny steps. Each step is a tiny corner.}
 
-\vspace{0.8em}
-I clicked a bright square. The answer was \ansline{0.9in}{Answers vary.} I clicked a dark square. The answer was \ansline{0.6in}{0}.
-
-\vspace{0.8em}
-With the \textbf{side-to-side} filter, the bright squares are on the \ansline{2.2in}{top and bottom edges.}
-
-\vspace{0.8em}
-A big answer means \ansline{4.9in}{the picture changes fast here: an edge.}
-
-\vspace{1.1em}
-{\large\textbf{4. Talk about it.}} What could a self-driving car miss?
+\vspace{0.6em}
+{\large\textbf{6. Talk about it.}} What could a self-driving car miss?
 
 \vspace{0.6em}
 A self-driving car could make a mistake when \ansline{3.6in}{Answers vary. It sees something new.}
 
-\vspace{0.9em}
-Computer vision is helpful when \ansline{2.0in}{Answers vary.} and dangerous when \ansline{1.8in}{}
-
-\vspace{1.0em}
+\vspace{0.6em}
 \hrule
 \vspace{0.6em}
 {\large\textbf{Go Further (Day 2).}} Find the edge by hand. Here is a tiny picture (0 = dark, 9 = bright) and a filter.
@@ -91,5 +130,5 @@ Put the filter over 3 columns of the picture. Multiply each pair of numbers, the
 \vspace{0.7em}
 Where are the big answers? \ansline{4.6in}{Where the picture changes from 0 to 9: the edge.}
 
-\vspace{1.1em}
+\vspace{0.5em}
 \end{document}
