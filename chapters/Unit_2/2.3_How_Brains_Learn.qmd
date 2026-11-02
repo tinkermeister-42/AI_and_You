@@ -76,11 +76,11 @@ AI copies this idea. In a neural network, the strength of each connection is a n
 
 ### 2.3.2 - Mirror Drawing
 
-Drag a green dot around a star with a "mirror" pen. When your hand moves **down**, the pen moves **up**. Your brain has never done this before!
+Move a green dot around a star with a "mirror" pen. When your hand moves **down**, the dot moves **up**. Your brain has never done this before!
 
 :::{.steps}
-1. Move the orange pen onto the green dot. Press and hold to grab it.
-2. Drag the dot all the way around the star, back to the green ring. Stay inside the blue path. If you let go, grab the dot again and keep going. (The clock stops while you let go.)
+1. Press anywhere in the box and drag. You don't have to touch the dot. It moves when your hand moves, but flipped.
+2. Move the dot all the way around the star, back to the green ring. Stay inside the blue path. If you let go, press again and keep going. (The clock stops while you let go.)
 3. Do **5 tries** with the same pen. Write your time and mistakes on your sheet after each try.
 4. Make a graph of your times. This is your **{{< glink "learning curve" >}}**.
 :::
