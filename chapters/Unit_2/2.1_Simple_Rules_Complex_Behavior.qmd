@@ -10,15 +10,15 @@ Your brain works a little like this. Each brain cell follows simple rules. About
 **Today's Plan** (40 minutes)
 
 - [🔥]{.icon} **Warm Up** Make a wave [5 min]{.time}
-- [👥]{.icon} **Learn Together** One row, one rule [10 min]{.time}
-- [🛠️]{.icon} **Try It** Explore the rules, then watch Life [18 min]{.time}
-- [💬]{.icon} **Talk About It** Can simple make smart? [7 min]{.time}
+- [👥]{.icon} **Learn Together** One rule, one small change [12 min]{.time}
+- [🛠️]{.icon} **Try It** Explore the rules, then simple rules everywhere [17 min]{.time}
+- [💬]{.icon} **Talk About It** Can simple make smart? [6 min]{.time}
 :::
 
 :::{.objectives}
 - [ ] I can follow a rule card to make the next row of cells.
 - [ ] I can test rules and sort what they make: no change, a pattern that repeats, chaos, or complex.
-- [ ] I can explain how simple rules can make complicated patterns.
+- [ ] I can give real examples of simple rules making complicated patterns.
 - [ ] I can explain what emergence means.
 :::
 
@@ -67,17 +67,21 @@ When many simple parts make something bigger that nobody planned, we call it **{
 
 Picture a row of squares. Each square is black or white. Every square looks at **itself** and its **two neighbors**. Then the rule card says what color it will be in the next row.
 
-![](/images/Unit_2/2.1_rule30_card.svg){width="700px" fig-align="center" fig-alt="The Rule 30 card. Eight patterns of three squares. Under each, the color of the middle square in the next row. Black, black, black gives white. Black, black, white gives white. Black, white, black gives white. Black, white, white gives black. White, black, black gives black. White, black, white gives black. White, white, black gives black. White, white, white gives white."}
+![](/images/Unit_2/2.1_rule90_card.svg){width="700px" fig-align="center" fig-alt="The Rule 90 card. Eight patterns of three squares. Under each, the color of the middle square in the next row. Black, black, black gives white. Black, black, white gives black. Black, white, black gives white. Black, white, white gives black. White, black, black gives black. White, black, white gives white. White, white, black gives black. White, white, white gives white."}
 
-There are only 8 possible patterns of 3 squares. So a rule card has 8 answers. This card is called **Rule 30**. A world like this is called a {{< glink "cellular automaton" >}}.
+There are only 8 possible patterns of 3 squares. So a rule card has 8 answers. This card is called **Rule 90**. A world like this is called a {{< glink "cellular automaton" >}}.
 
 :::{.you-try title="Make a few rows"}
-On your sheet, start with **one black square** in the middle of the top row. Make the next 4 rows with the Rule 30 card. Look at each square and its two neighbors in the row above. (Outside the grid, everything is white.)
+On your sheet, start with **one black square** in the middle of the top row. Make the next 4 rows with the Rule 90 card. Look at each square and its two neighbors in the row above. (Outside the grid, everything is white.) What shape is starting to appear?
 :::
 
 ***
 
-### 2.1.2 - Rule 30
+### 2.1.2 - One Small Change: Rule 30
+
+Now change just **2** of the 8 answers on the card. The new card is **Rule 30**:
+
+![](/images/Unit_2/2.1_rule30_card.svg){width="700px" fig-align="center" fig-alt="The Rule 30 card. Eight patterns of three squares, each with its answer. Two answers are circled: black, black, white gives white, and white, black, white gives black. The 2 circled answers are the only ones that are different from Rule 90."}
 
 Wolfram studied Rule 30 in 1983. Here it's after 80 rows, starting from **one black square**:
 
@@ -85,13 +89,17 @@ Wolfram studied Rule 30 in 1983. Here it's after 80 rows, starting from **one bl
 
 The rule is tiny. But the middle of the picture looks **{{< glink random >}}**. Even Wolfram can't say what row 1,000 will look like. The only way to know is to make all 999 rows before it.
 
+Nature makes patterns like this. A sea snail's shell grows at its edge, one thin row at a time. Each cell on the edge makes color or doesn't, depending on its neighbors. That's a row of cells following a rule! Look at the shell of this cone snail:
+
+![A textile cone snail (*Conus textile*) on the Great Barrier Reef. Look at the triangles on its shell. Do they look like Rule 30? (Photo: Richard Ling, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/){target="_blank"}, Wikimedia Commons)](/images/Unit_2/explore_conus_textile.jpg){width="420px" fig-align="center" fig-alt="A cone snail on sand. Its shell is covered with small brown and white triangles of many sizes."}
+
 :::{.remember title="The big idea"}
 Simple rules can make behavior that is **just as complicated** as anything else. Wolfram calls this the **Principle of Computational Equivalence**. He thinks a row of cells, the weather, and a brain can all be equally complicated. Not every scientist agrees.
 
 This matters for AI. A neural network is made of tiny parts that follow simple rules. So is your brain.
 :::
 
-Here's a tool that makes the rows for you. Press **Draw it** to make Rule 30. Do the first rows match yours?
+Here's a tool that makes the rows for you. It starts on Rule 90. Press **Draw it**. Your rows are the top of this picture. Keep going down. What does Rule 90 make?
 
 {{< include /assets/Unit_2/ca_rules.html >}}
 
@@ -102,32 +110,44 @@ Here's a tool that makes the rows for you. Press **Draw it** to make Rule 30. Do
 There are **256** different rule cards. Most of them were never studied by anyone before computers. Use the tool in 2.1.2 with a partner.
 
 :::{.steps}
-1. Press **90**. What does it make? Then try **110**, **4**, **184**, and **150**.
-2. For each rule, circle what it looks like on your sheet: **never changes**, **a pattern that repeats**, **chaos**, or **complex**.
-3. **Make your own rule.** Click the bottom squares on the rule card to change them. What's your rule's number? What kind is it?
-4. Choose **Start: random** and draw Rule 30 again. Does it still look random?
+1. Try **110**, **4**, **150**, and **30**. For each rule, circle what it looks like on your sheet: **never changes**, **a pattern that repeats**, **chaos**, or **complex**.
+2. **Make your own rule.** Click the bottom squares on the rule card to change them. What's your rule's number? What kind is it?
+3. **Traffic!** Choose **184** and **Start: random**, then press **Draw it**. Each black square is a car. A car moves one square to the right if the square in front of it is empty. Each row is the same road, one moment later. Find a traffic jam: a thick dark stripe. As you go down the picture, which way does the jam move?
 :::
 
-:::{.think title="What did you find?"}
-Most rules are plain: they never change, or they make a pattern that repeats, like Rule 90's triangles inside triangles. A few, like **Rule 30**, make chaos. **Rule 110** is the strangest: it makes shapes that move and crash into each other. Scientists proved that Rule 110 can do any calculation a computer can do, if the row is long enough.
+:::{.think title="Every car moves forward. Which way did the jams move?"}
+**Backward!** No car ever moves backward. But a jam does. Cars at the front of the jam drive away, and new cars join at the back. Real traffic jams on highways do the same thing. Nobody planned it. It emerges from one simple rule.
 
-Nobody could guess which rules do this by reading the card. You have to run them and look.
+You can't tell what a rule will do by reading its card. **Rule 110** is the strangest: it makes shapes that move and crash into each other. Scientists proved that Rule 110 can do any calculation a computer can do, if the row is long enough. You have to run a rule and look.
 :::
 
-### 2.1.4 - Watch the Game of Life
+### 2.1.4 - Simple Rules Everywhere
 
-The **Game of Life** is a grid, not a row. Each square follows simple rules about its 8 neighbors. Your teacher shows it on the screen.
+Your teacher shows these on the screen.
+
+**A flock of birds.** Thousands of birds can turn together like one animal. There is no leader. Each bird follows 3 simple rules about the birds near it:
+
+{{< include /assets/Unit_2/flock.html >}}
 
 :::{.steps}
-1. Your teacher adds a **glider** and presses **Run**.
-2. Watch the glider. What does it do?
-3. Look closely at one square. Does it move?
+1. Watch the flocks form. Turn on **Watch one bird**. It only sees the birds inside its circle.
+2. Turn off rule 2, **Fly the same way**. What happens?
+3. Turn it back on. Turn off rule 3, **Stay close**. What happens?
 :::
+
+**The Game of Life.** This is a grid, not a row. Each square follows simple rules about its 8 neighbors. Your teacher adds a **glider** and presses **Run**. Watch the glider. Look closely at one square. Does it move?
 
 {{< include /assets/Unit_2/game_of_life.html >}}
 
 :::{.think title="The glider moves across the screen. But does any cell move?"}
-No! Each cell stays in its place. It only turns black or white. The "glider" is a **pattern** that moves, like the wave in the Warm Up.
+No! Each cell stays in its place. It only turns black or white. The "glider" is a **pattern** that moves, like the wave in the Warm Up and the traffic jam.
+:::
+
+:::{.real-world title="More simple rules, more complicated results"}
+- **Ants:** each ant follows the smell trails of other ants. Together, a colony finds the shortest path to food.
+- **Termites:** each termite moves bits of mud by simple rules. Together, they build mounds taller than a person, with tunnels that keep the air fresh. No termite has a plan.
+- **Fireflies:** in some forests, thousands of fireflies flash **at the same time**. Each one only watches the fireflies near it.
+- **Your brain:** each brain cell follows simple rules. About 86 billion of them together make you. (That's Lesson 2.2.)
 :::
 
 {{< talk >}}
@@ -136,7 +156,8 @@ A brain cell follows simple rules. A part of a neural network follows simple rul
 
 :::{.frames}
 - I think simple rules **can** / **cannot** make something smart, because ...
-- The wave and Rule 30 are alike because ...
+- The wave, the traffic jam, and the flock are alike because ...
+- Another place I've seen simple rules make something complicated is ...
 - A brain **is** / **is not** just simple rules, because ...
 :::
 
@@ -147,7 +168,7 @@ The class becomes a row of cells. Each time the caller says "Go!", the **same** 
 
 1. Each **cell** gets a paper that's black on one side and white on the other. Stand in a row. (Small class? Put 15 papers in a row on the desks. Each person is in charge of 3 or 4 of them.)
 2. Start with **only the middle cell black**. Everyone else shows white.
-3. **Each cell:** look at your left neighbor, yourself, and your right neighbor. Find the same 3 colors on the Rule 30 card. That's your color in the next row. Don't flip your paper yet! (The ends of the row have a white neighbor outside.)
+3. **Each cell:** look at your left neighbor, yourself, and your right neighbor. Find the same 3 colors on the Rule 30 card (in 2.1.2). That's your color in the next row. Don't flip your paper yet! (The ends of the row have a white neighbor outside.)
 4. The **caller** says "Ready ... Go!" Everyone flips to their new color **at the same time**. Now the class shows the next row.
 5. The **recorder** presses **Show the next row** in the tool below. Does the class match? Everyone colors the row on the Go Further grid on their sheet.
 6. Do at least 6 rows.

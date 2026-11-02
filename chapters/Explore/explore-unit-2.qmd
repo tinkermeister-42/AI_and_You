@@ -22,10 +22,8 @@ Try them yourself with the rules tool in Lesson 2.1.
 ### Rule 30 in the Real World
 
 - **Random numbers.** *Mathematica* used Rule 30 to make random numbers.
-- **A sea snail.** A cone snail called *Conus textile* has a pattern on its shell that looks like Rule 30. See photos: [Conus textile (Wikipedia)](https://en.wikipedia.org/wiki/Conus_textile){target="_blank"}. Does it look like Rule 30?
+- **A sea snail.** The cone snail in Lesson 2.1 is called *Conus textile*. See more photos: [Conus textile (Wikipedia)](https://en.wikipedia.org/wiki/Conus_textile){target="_blank"}. Does every shell look like Rule 30?
 - **A train station.** Cambridge North station in England has Rule 30 patterns on its walls.
-
-![A textile cone snail (*Conus textile*) on the Great Barrier Reef. Look at the triangles on its shell. (Photo: Richard Ling, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/){target="_blank"}, Wikimedia Commons)](/images/Unit_2/explore_conus_textile.jpg){width="420px" fig-align="center" fig-alt="A cone snail on sand. Its shell is covered with small brown and white triangles of many sizes."}
 
 ![Cambridge North station in England, in 2017. The pattern on its walls is based on Rule 30. (Photo: Hugh Venables, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/){target="_blank"}, Geograph, via Wikimedia Commons)](/images/Unit_2/explore_cambridge_north.jpg){width="560px" fig-align="center" fig-alt="The sign Cambridge North on top of a station wall made of metal panels. The panels are full of small square holes in a pattern of triangles and lines."}
 

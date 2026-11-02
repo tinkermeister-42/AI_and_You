@@ -18,8 +18,8 @@
 .rb-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.3rem 0.8rem; font-weight: 600; cursor: pointer; }
 .rb-btn.rb-plain { background: #fff; color: #2c3e50; }
 .rb-msg { font-weight: 600; }
-.rb-row { display: grid; grid-template-columns: 2.2em repeat(21, 1fr); gap: 2px; margin-bottom: 2px; max-width: 720px; }
-.rb-row span { aspect-ratio: 1; border: 1px solid #2c3e50; border-radius: 3px; background: #fff; }
+.rb-row { display: grid; grid-template-columns: 1.6em repeat(21, minmax(0, 1fr)); gap: 2px; margin-bottom: 2px; max-width: 720px; }
+.rb-row span { display: block; min-width: 0; aspect-ratio: 1; border: 1px solid #2c3e50; border-radius: 2px; background: #fff; }
 .rb-row span.on { background: #2c3e50; }
 .rb-row b { align-self: center; font-size: 0.85rem; color: #555; }
 </style>
