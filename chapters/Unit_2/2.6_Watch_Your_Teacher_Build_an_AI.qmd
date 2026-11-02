@@ -60,7 +60,7 @@ A computer does it in a few seconds.
 1. **Get data.** The {{< glink dataset >}} has **1,281 Pokémon**. For each one, it has 8 numbers: height, weight, HP, Attack, Defense, Special Attack, Special Defense, and Speed. It also has the type.
 2. **Ask a question.** For example: *Is it Fighting or Psychic?*
 3. **Split the data.** Most Pokémon go into the **training data**. The rest go into the {{< glink "test data" >}}. The network never trains on the test data.
-4. **Build the network.** Choose how many neurons it has.
+4. **Build the network.** Choose how many neurons go in its hidden layer (Lesson 2.4).
 5. **Train.** Show the network every training Pokémon, again and again. Each time through is one **pass**. After each pass, the network fixes its weights a little, like the class neuron did.
 6. **Test, then use it.** Check it on the test Pokémon. Then ask it about any Pokémon.
 

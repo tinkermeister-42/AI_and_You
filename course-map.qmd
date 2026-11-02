@@ -24,7 +24,7 @@ Most lessons also have a **🚀 Go Further** part. It can fill a second day, or 
 | 2.1 | [Simple Rules, Complex Behavior](chapters/Unit_2/2.1_Simple_Rules_Complex_Behavior.qmd) | Be a cell in a human Rule 30. Then watch the Game of Life on the projector. |
 | 2.2 | [Your Brain Is Made of Cells](chapters/Unit_2/2.2_Your_Brain_Is_Made_of_Cells.qmd) | Measure your reaction time with a falling ruler. Send a signal around the room. |
 | 2.3 | [How Brains Learn](chapters/Unit_2/2.3_How_Brains_Learn.qmd) | Practice a hard task (writing with your other hand). Graph how you get better. Meet Pavlov's dogs. |
-| 2.4 | [The Artificial Neuron](chapters/Unit_2/2.4_The_Artificial_Neuron.qmd) | Be a neuron: add up signals and decide to fire. |
+| 2.4 | [The Artificial Neuron](chapters/Unit_2/2.4_The_Artificial_Neuron.qmd) | Be a neuron: add up signals and decide to fire. See how neurons connect in layers. |
 | 2.5 | [Train a Human Neural Network](chapters/Unit_2/2.5_Train_a_Human_Neural_Network.qmd) | The class becomes a network, with its weights written on cards. Feed it example cards and fix the weights after every mistake. |
 | 2.6 | [Watch Your Teacher Build an AI](chapters/Unit_2/2.6_Watch_Your_Teacher_Build_an_AI.qmd) | Your teacher trains a neural network on hundreds of real examples while you watch. Then you test it with your own guesses. |
 | 2.7 | [Train Your Own AI](chapters/Unit_2/2.7_Train_Your_Own_AI.qmd) | Teach Teachable Machine your own hand signs. Then try to fool it. |

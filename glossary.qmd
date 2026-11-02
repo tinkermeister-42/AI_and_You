@@ -542,6 +542,14 @@ Checking a fact by opening new tabs to see what other sources say, instead of re
 
 ***
 
+### layer {#glossary-layer}
+
+A row of neurons in a neural network. The **input layer** holds the numbers that go in. Each **hidden layer** sends its answers to the next layer. The **output layer** gives the answer. A big network has many hidden layers.
+
+**See Also:** {{< glink "neural network" >}}, {{< glink weight >}}
+
+***
+
 ### learning curve {#glossary-learning-curve}
 
 A graph that shows how you get better with practice. The time or the number of mistakes usually drops fast at first, then more slowly.
@@ -584,9 +592,9 @@ Hidden information about a file. A photo's metadata can include the kind of phon
 
 ### neural network {#glossary-neural-network}
 
-A kind of AI made of many small parts, based on an idea from brain cells. Each part does a tiny bit of math. A neural network learns from examples.
+A kind of AI made of many small parts, based on an idea from brain cells. Each part does a tiny bit of math. The parts are arranged in layers. A neural network learns from examples.
 
-**See Also:** {{< glink "machine learning" >}}, {{< glink GPU >}}
+**See Also:** {{< glink "machine learning" >}}, {{< glink layer >}}, {{< glink GPU >}}
 
 ***
 

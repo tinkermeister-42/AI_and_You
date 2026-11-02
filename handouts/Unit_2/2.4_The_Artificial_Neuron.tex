@@ -59,19 +59,47 @@ Total $=$ \ansline{2.4in}{$1 - 2 - 1 = -2$} \quad Does it fire? \ansline{0.8in}{
 
 \newpage
 
+\wordbank[You can use a word more than once.]{\wb{hidden}\wb{input}\wb{output}\wb{threshold}\wb{weight}}
+
 {\large\textbf{4. Real neuron, artificial neuron.}} Match each part.
 
 \vspace{0.3em}
 \begin{tabular}{|R{2.6in}|R{2.6in}|}
 \hline
 \textbf{Real neuron} & \textbf{Artificial neuron} \\ \hline
-Dendrites take signals in & \ans{inputs} \\ \hline
-Strong or weak synapses & \ans{weights} \\ \hline
-Fires only if the total is big enough & \ans{the threshold} \\ \hline
+Dendrites take signals in & \ans{input} \\ \hline
+Strong or weak synapses & \ans{weight} \\ \hline
+Fires only if the total is big enough & \ans{threshold} \\ \hline
 \end{tabular}
 
-\vspace{1.1em}
-{\large\textbf{5. Talk about it.}} ChatGPT has billions of weights. Nobody can choose them by hand.
+\vspace{1.0em}
+{\large\textbf{5. From one neuron to a network.}} Name each layer.
+
+\vspace{0.2em}
+\begin{center}
+\begin{tikzpicture}[x=1cm, y=0.75cm,
+  nin/.style={circle, draw=person, fill=person!12, line width=1.1pt, minimum size=0.6cm},
+  nhid/.style={circle, draw=machine, fill=machine!12, line width=1.1pt, minimum size=0.6cm},
+  nout/.style={circle, draw=result, fill=result!12, line width=1.1pt, minimum size=0.6cm}]
+  \foreach \i/\y in {1/2.5, 2/1.5, 3/0.5} \node[nin] (a\i) at (0,\y) {};
+  \foreach \j/\y in {1/3, 2/2, 3/1, 4/0} \node[nhid] (b\j) at (4.5,\y) {};
+  \foreach \k/\y in {1/2, 2/1} \node[nout] (c\k) at (9,\y) {};
+  \foreach \i in {1,2,3} \foreach \j in {1,...,4} \draw[ink!45, line width=0.7pt] (a\i) -- (b\j);
+  \foreach \j in {1,...,4} \foreach \k in {1,2} \draw[ink!45, line width=0.7pt] (b\j) -- (c\k);
+  \node[anchor=north] at (0,-0.4) {\ansline{0.9in}{input} layer};
+  \node[anchor=north] at (4.5,-0.4) {\ansline{0.9in}{hidden} layer};
+  \node[anchor=north] at (9,-0.4) {\ansline{0.9in}{output} layer};
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.3em}
+Each line is a \ansline{0.9in}{weight}. \quad How many lines? \quad $3 \times 4 + 4 \times 2 =$ \ansline{0.7in}{$20$}
+
+\vspace{0.8em}
+Why is the middle layer called hidden? \ansline{3.6in}{You don't see what those neurons decide.}
+
+\vspace{1.0em}
+{\large\textbf{6. Talk about it.}} ChatGPT has billions of weights. Nobody can choose them by hand.
 
 \vspace{0.6em}
 I think an AI with billions of weights gets them by \ansline{3.4in}{Answers vary. (Next lesson: it learns them.)}

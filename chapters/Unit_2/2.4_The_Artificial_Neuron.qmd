@@ -12,15 +12,16 @@ That simple idea is the building block of every neural network today. Today, the
 **Today's Plan** (40 minutes)
 
 - [🔥]{.icon} **Warm Up** Should I go? [7 min]{.time}
-- [👥]{.icon} **Learn Together** Multiply, add, compare [10 min]{.time}
-- [🛠️]{.icon} **Try It** Be a neuron [16 min]{.time}
-- [💬]{.icon} **Talk About It** Who picks the weights? [7 min]{.time}
+- [👥]{.icon} **Learn Together** One neuron, then a network [13 min]{.time}
+- [🛠️]{.icon} **Try It** Be a neuron [14 min]{.time}
+- [💬]{.icon} **Talk About It** Who picks the weights? [6 min]{.time}
 :::
 
 :::{.objectives}
 - [ ] I can explain inputs, weights, and a threshold.
 - [ ] I can calculate what an artificial neuron decides.
 - [ ] I can compare an artificial neuron with a real neuron.
+- [ ] I can name the layers of a neural network.
 :::
 
 ::::{.vocab}
@@ -29,6 +30,7 @@ That simple idea is the building block of every neural network today. Today, the
 - [⚖️]{.icon} {{< glink weight >}}: a number that says how much an input matters
 - [🚦]{.icon} {{< glink threshold >}}: the number the total must pass for the neuron to fire
 - [🔵]{.icon} {{< glink perceptron >}}: the first artificial neuron that could learn (1958)
+- [🧱]{.icon} {{< glink layer >}}: a row of neurons in a neural network. Each layer sends its answers to the next one
 :::
 ::::
 
@@ -83,9 +85,25 @@ A weight can be **negative**. A negative weight says: *this input makes me LESS 
 An artificial neuron is only **multiply, add, compare**. That's all. A neural network is many of these, connected together.
 :::
 
+### 2.4.2 - From One Neuron to a Network
+
+One neuron makes one small decision. A {{< glink "neural network" >}} connects many neurons. They're arranged in rows called {{< glink slug="layer" text="layers" >}}.
+
+![](/images/Unit_2/2.4_network.svg){width="720px" fig-align="center" fig-alt="A small neural network. On the left, three inputs: Sunny 1, Friends going 1, Homework done 0. In the middle, a column of four neurons. On the right, two neurons: go and stay home. Lines connect every input to every middle neuron, and every middle neuron to both right neurons. The top middle neuron's three lines are highlighted with weights times 2, times 3, and times 1. It's labeled: one neuron, like the one above: multiply, add, compare. A note says each line is a weight. Labels under the columns: input layer, the numbers go in. Hidden layer, its answers go to the next layer. Output layer, one neuron for each answer."}
+
+1. The **input layer** holds the numbers that go in. Here, they're the three answers from the warm-up.
+2. Every neuron in the **hidden layer** gets every input. Each one multiplies, adds, and compares, like the neuron above. Each one has its **own** weights. Its answer isn't "go" or "stay". Its answer goes to the next layer as an input.
+3. The **output layer** gives the answer. There's one neuron for each possible answer. The one with the biggest total wins.
+
+Every line is a **weight**. Count them: $3 \times 4 + 4 \times 2 = 20$ weights. The chatbots you use have **billions** of weights and many hidden layers.
+
+:::{.think title="Why is it called hidden?"}
+You see the numbers that go in and the answer that comes out. You don't see what the middle neurons decide. Nobody tells them what to look for, either. They find it while the network learns. (Lesson 2.5 shows how.)
+:::
+
 {{< tryit >}}
 
-### 2.4.2 - Be a Neuron
+### 2.4.3 - Be a Neuron
 
 :::{.steps}
 1. One person is the **neuron**. The neuron gets a **threshold** card: 3.
@@ -96,7 +114,7 @@ An artificial neuron is only **multiply, add, compare**. That's all. A neural ne
 :::
 
 :::{.teacher title="Class size"}
-**4 students:** one neuron and three inputs. **More students:** make two or three neurons. Then connect them: the neurons' answers become the inputs for one more neuron. That's a **network**!
+**4 students:** one neuron and three inputs. **More students:** make two or three neurons. Then connect them: the neurons' answers become the inputs for one more neuron. That's a **network** with one hidden layer, like the picture in 2.4.2.
 :::
 
 {{< talk >}}
