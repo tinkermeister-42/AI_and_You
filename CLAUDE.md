@@ -348,10 +348,11 @@ is a sentence that costs them the idea.
   after. The cat rule in 1.1.2 is the pattern to copy
 - **"Your teacher", not "Mr. Ross".** Another teacher may use this book.
   Student pages, sheets and widgets say "your teacher". "Mr. Ross" appears
-  only where the book credits the author: the home page, the syllabus header,
-  About Your Teacher and credit line, the footer, and a lesson that says where
-  an idea came from ("Mr. Ross, who wrote this book, ..."). Teacher blocks
-  say "the teacher"
+  only at the beginning, where the book credits the author and his
+  background: the home page, the syllabus header, About Your Teacher and
+  credit line, and the footer. After that it's a textbook: lessons, Explore
+  More, sheets and widgets never mention the author (the teacher's words).
+  Teacher blocks say "the teacher"
 - **Say what is true.** No "AI thinks" or "AI knows" as plain fact. Whether
   AI is like a brain is the question the class is asking, so the book does
   not answer it in passing

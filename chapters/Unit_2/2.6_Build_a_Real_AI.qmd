@@ -4,7 +4,7 @@ In Lesson 2.5, the class trained a network of 3 neurons on 8 cards. It took abou
 
 A computer can do the same work on **300** creatures, with **many** neurons, in a few seconds. Today, you build it yourself. You'll watch its weights change while it learns.
 
-Mr. Ross, who wrote this book, built AI for his job for many years. He made this tool for you. Your job is to **predict** what will happen, then train the network, and then test it.
+Your job is to **predict** what will happen, then train the network, and then test it.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)

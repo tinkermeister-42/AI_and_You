@@ -123,7 +123,7 @@ For a **network**, there's no promise like that. Start C in the Lesson 2.5 tool 
 
 ### The Secret Recipe
 
-The creatures in Lessons 2.4, 2.5, and 2.6 are made up. Mr. Ross made them with a computer, from this recipe:
+The creatures in Lessons 2.4, 2.5, and 2.6 are made up. A computer made them from this recipe:
 
 | Type | How many | Strength | Magic | Size |
 |---|:---:|:---:|:---:|---|

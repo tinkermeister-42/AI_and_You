@@ -62,7 +62,7 @@ When many simple parts make something bigger that nobody planned, we call it **{
 
 ### 2.1.1 - One Row, One Rule
 
-Mr. Ross, who wrote this book, worked at **Wolfram Research** before he became a teacher. Its founder is **Stephen Wolfram**. He spent years on one question: *how can very simple rules make very complicated things?* He studied rows of squares like this one.
+**Stephen Wolfram** started **Wolfram Research**, the company that makes the math program Mathematica. He spent years on one question: *how can very simple rules make very complicated things?* He studied rows of squares like this one.
 
 Picture a row of squares. Each square is black or white. Every square looks at **itself** and its **two neighbors**. Then the rule card says what color it will be in the next row.
 
