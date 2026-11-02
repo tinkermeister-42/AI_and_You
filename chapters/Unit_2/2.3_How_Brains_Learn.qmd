@@ -88,7 +88,7 @@ Drag a green dot around a star with a "mirror" pen. When your hand moves **down*
 {{< include /assets/Unit_2/mirror_draw.html >}}
 
 :::{.gotcha title="No mouse?"}
-On a touch screen, use the gray pad under the star. Your finger moves on the pad, and the pen moves on the star, so your finger doesn't hide it. (In a real mirror test, your hand is hidden too.) On a laptop, a mouse is easier than a touch pad, but a touch pad works too.
+On a touch screen, use your finger. On a laptop, a mouse is easier than a touch pad, but a touch pad works too.
 :::
 
 :::{.think title="What does your learning curve look like?"}

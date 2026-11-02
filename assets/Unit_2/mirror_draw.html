@@ -1,10 +1,9 @@
 ```{=html}
 <!-- mirror_draw.html: Lesson 2.3. Drag a green dot around a star with a
      "mirror" pen: the pen moves up when your hand moves down. Letting go is
-     fine: the dot stays put, and the clock only runs while you hold it. Each try records time and mistakes,
-     so students can graph how practice changes their brain. On a touch screen
-     a pad under the star takes the finger, so the finger never hides the star
-     (like a real mirror test, where your hand is hidden). -->
+     fine: the dot stays put, and the clock only runs while you hold it. Each
+     try records time and mistakes, so students can graph how practice changes
+     their brain. -->
 <div class="md" id="md">
   <div class="md-bar">
     <label>Pen: <select class="md-mode">
@@ -14,9 +13,8 @@
     </select></label>
     <button type="button" class="md-btn md-plain md-reset">↺ Clear my tries</button>
   </div>
-  <div class="md-msg">Move the orange pen onto the green dot. Press and hold to grab it, then drag it around the star.</div>
+  <div class="md-msg">Press and slide until the orange pen touches the green dot. Then drag the dot around the star.</div>
   <canvas class="md-canvas" width="480" height="480" aria-label="Mirror drawing area"></canvas>
-  <div class="md-pad" aria-label="Touch pad: move your finger here and watch the star"><span>Trace here with your finger.<br>Watch the star, not your finger.</span></div>
   <table class="md-table"><thead><tr><th>Try</th><th>Pen</th><th>Time (seconds)</th><th>Mistakes</th></tr></thead><tbody></tbody></table>
 </div>
 
@@ -25,11 +23,8 @@
 .md-bar { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; margin-bottom: 0.5rem; }
 .md-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.3rem 0.8rem; font-weight: 600; cursor: pointer; }
 .md-btn.md-plain { background: #fff; color: #2c3e50; }
-.md-msg { min-height: 4.6em; line-height: 1.5; font-weight: 600; margin-bottom: 0.4rem; }  /* fixed height: the star and pad never jump while you draw */
+.md-msg { min-height: 4.6em; line-height: 1.5; font-weight: 600; margin-bottom: 0.4rem; }  /* fixed height: the star never jumps while you draw */
 .md-canvas { display: block; width: 100%; max-width: 480px; height: auto; margin: 0 auto; border: 2px solid #2c3e50; border-radius: 8px; background: #fff; cursor: none; touch-action: none; }
-.md-pad { display: none; position: relative; width: 100%; max-width: 480px; aspect-ratio: 1 / 1; margin: 0.5rem auto 0; background: #f2f4f6; border: 2px dashed #95a5a6; border-radius: 8px; touch-action: none; user-select: none; -webkit-user-select: none; }
-.md-pad span { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; color: #7f8c8d; font-weight: 600; pointer-events: none; }
-.md.pad-on .md-pad { display: block; }
 .md-table { margin: 0.6rem auto 0; border-collapse: collapse; }
 .md-table th, .md-table td { border: 1px solid #d9e1e8; padding: 0.2rem 0.7rem; text-align: center; }
 </style>
@@ -39,7 +34,6 @@
   const root = document.getElementById("md");
   if (!root) return;
   const cv = root.querySelector(".md-canvas"), cx = cv.getContext("2d");
-  const pad = root.querySelector(".md-pad");
   const msg = root.querySelector(".md-msg"), mode = root.querySelector(".md-mode");
   const tbody = root.querySelector(".md-table tbody");
   const W = cv.width, H = cv.height, BAND = 46, DOT_R = 15, GRAB = 26, HOME_R = 20;
@@ -141,43 +135,27 @@
     draw();
   }
   function press(e, el) {
-    if (el === cv && e.pointerType === "touch") {
-      usePad(true);
-      msg.textContent = "Use the gray pad under the star, so your finger doesn't hide it.";
-      return;
-    }
     e.preventDefault();
     try { el.setPointerCapture(e.pointerId); } catch (_) { /* drawing still works */ }
     down = true; needLift = false;
     pen = map(e, el);
     if (dist(pen, dot) < GRAB) grab();
-    else msg.textContent = el === pad
-      ? "Slide your finger until the orange pen touches the green dot."
-      : "Move the orange pen onto the green dot first.";
+    else msg.textContent = "Slide until the orange pen touches the green dot.";
     draw();
   }
-  function release(el) {
+  function release(e) {
     down = false;
     letGo("You let go. That's OK! Grab the green dot again and keep going. The clock waits for you.");
-    if (el === pad) pen = null;
+    if (e.pointerType !== "mouse") pen = null;
     draw();
   }
-  function usePad(on) {
-    root.classList.toggle("pad-on", on);
-    msg.textContent = on
-      ? "Touch the gray pad. Slide until the orange pen touches the green dot, then drag the dot around the star."
-      : "Move the orange pen onto the green dot. Press and hold to grab it, then drag it around the star.";
-  }
-  [cv, pad].forEach((el) => {
-    el.addEventListener("pointermove", (e) => move(e, el));
-    el.addEventListener("pointerdown", (e) => press(e, el));
-    el.addEventListener("pointerup", () => release(el));
-    el.addEventListener("pointercancel", () => release(el));
-  });
+  cv.addEventListener("pointermove", (e) => move(e, cv));
+  cv.addEventListener("pointerdown", (e) => press(e, cv));
+  cv.addEventListener("pointerup", release);
+  cv.addEventListener("pointercancel", release);
   cv.addEventListener("pointerleave", () => { if (!down) { pen = null; draw(); } });
   mode.addEventListener("change", () => { holding = false; newTry(); draw(); msg.textContent = "New pen! Grab the green dot to start."; });
   root.querySelector(".md-reset").addEventListener("click", () => { tries = []; tbody.innerHTML = ""; holding = false; newTry(); draw(); });
-  usePad(window.matchMedia ? matchMedia("(any-pointer: coarse)").matches : false);
   draw();
 })();
 </script>

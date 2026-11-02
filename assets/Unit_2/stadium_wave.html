@@ -15,7 +15,7 @@
     <label><input type="checkbox" class="sw-watch"> Watch one person</label>
     <label><input type="checkbox" class="sw-break"> One person ignores the rule</label>
   </div>
-  <svg class="sw-svg" viewBox="0 0 600 150" role="img" aria-label="A row of 20 people sitting in a stadium. A wave of raised hands moves from left to right."></svg>
+  <svg class="sw-svg" viewBox="0 0 790 150" role="img" aria-label="A row of 28 people sitting in a stadium. A wave of raised hands moves from left to right."></svg>
   <div class="sw-msg" aria-live="polite">Everyone follows the same rule. Press Start.</div>
 </div>
 
@@ -33,13 +33,13 @@
   if (!root) return;
   const svg = root.querySelector(".sw-svg"), msg = root.querySelector(".sw-msg");
   const speed = root.querySelector(".sw-speed"), watch = root.querySelector(".sw-watch"), brk = root.querySelector(".sw-break");
-  const NS = "http://www.w3.org/2000/svg", N = 20, GAP = 28, X0 = 34, SEAT = 118;
-  const WATCH = 9, BROKEN = 12, HOLD = 1000;   // one second up
+  const NS = "http://www.w3.org/2000/svg", N = 28, GAP = 27, X0 = 30, SEAT = 118;
+  const WATCH = 11, BROKEN = 17, HOLD = 1000;   // one second up
   const PERSON = "#2e86c1", IGNORE = "#aab7b8", INK = "#2c3e50";
   const el = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); (parent || svg).appendChild(e); return e; };
 
   // the stands: one long bench
-  el("rect", { x: 10, y: SEAT, width: 580, height: 8, rx: 3, fill: "#d5dbdb" });
+  el("rect", { x: 8, y: SEAT, width: 774, height: 8, rx: 3, fill: "#d5dbdb" });
   const marker = el("g", { visibility: "hidden" });
   el("text", { x: X0 + WATCH * GAP, y: 16, "text-anchor": "middle", "font-size": 12, "font-weight": 700, fill: INK }, marker).textContent = "watch me";
   el("path", { d: `M ${X0 + WATCH * GAP - 5} 22 l 5 7 l 5 -7 z`, fill: INK }, marker);
