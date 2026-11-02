@@ -76,64 +76,78 @@ In 1943, Warren McCulloch and Walter Pitts showed that a neuron could be written
 
 The newspapers were very excited. One story said the Navy expected it to walk, talk, see, and even be conscious one day. (You read about this in Lesson 1.4.)
 
-### The Problem One Neuron Can't Solve
+### A Neuron That Sees
 
-Try to make one neuron that answers this question with two inputs, A and B:
+The Mark I looked at pictures. Here's a tiny version. This neuron looks at a 3 by 3 picture. Each square is an input: **1** if it's black, **0** if it's white. Each square has its own **weight**. The neuron says **X** if the total is more than the threshold. Otherwise it says **O**.
 
-> Is **exactly one** of them on?
+1. Draw an X. All the weights are 0. What does the neuron say? Why?
+2. Change the weights with **+** and **−**. Try to get **6 out of 6** right on the test pictures.
+3. Stuck? Ask: which squares are black in an X but white in an O?
 
-| A | B | The answer should be |
-|:---:|:---:|:---:|
-| 0 | 0 | NO |
-| 1 | 0 | YES |
-| 0 | 1 | YES |
-| 1 | 1 | NO |
+{{< include /assets/Unit_2/xo_neuron.html >}}
 
-Choose weights for A and B and a threshold. Test all 4 rows. You won't find any that work! Here is why. To say YES when only A is on, A needs a big enough weight. The same for B. But then when **both** are on, the total is even bigger, and the neuron says YES again.
+:::{.think title="Look at your weights. Do they make a picture?"}
+They often do! Squares that are **only black in an X** (like the center) get **positive** weights. Squares that are **only black in an O** (like the sides) get **negative** weights. The weights are a picture of what the neuron is looking for.
+:::
 
-In 1969, Marvin Minsky and Seymour Papert wrote a famous book that proved one neuron can't solve problems like this. Many people stopped working on neural networks for years. This was part of an AI winter (Lesson 1.4).
-
-### The Fix: More Neurons
-
-The answer is a **network**. Two neurons can look at the inputs first. A third neuron looks at their answers. Try it with the class: one neuron fires if A or B is on. Another fires only if A and B are both on. The last neuron fires if the first one fires and the second one does **not**. Together, they solve it.
-
-Today's neural networks have many layers of neurons, one after another. Each layer looks at the answers of the layer before.
+:::{.project title="A Neuron for a Letter"}
+Make the picture bigger in your head: 5 by 5 squares. On grid paper, choose weights that tell a **T** from an **L**. Test your weights on a partner's T and L.
+:::
 
 ## From Lesson 2.5: Train a Human Neural Network {#explore-2-5}
 
 ### Why the Fix Rule Works
 
-Say the neuron said PSYCHIC, but the card is FIGHTING. The total was too small. The fix rule says **ADD**: Attack weight + A, Special weight + S, bias + 1.
+Say a neuron should have fired, but it didn't. Its total wasn't more than its threshold. The fix rule says **ADD**: +1 to the weight of each input that was 1, and threshold −1.
 
-What happens to the total for that same card? Each part of the total gets bigger:
+What happens for that same card? Each input that was 1 adds 1 more to the total. And the threshold drops by 1. So the gap between the total and the threshold shrinks by **at least 1**. The fix always pushes that neuron **toward the right answer** for that card. SUBTRACT works the same way, in the other direction.
 
-- The Attack part grows by $A \times A$.
-- The Special part grows by $S \times S$.
-- The bias grows by 1.
+**Try it with Hidden 1 and card T2, Pasir** (inputs 0 and 1). Before the fix, the weights were $-1$ and $+1$, and the threshold was 1. The total was 1: not more than 1. After ADD, the weights are $-1$ and $+2$, and the threshold is 0. Now the total is 2: more than 0. It fires!
 
-So the new total is bigger by $A \times A + S \times S + 1$. That number is always more than 0. The fix always pushes the total **toward the right answer** for that card. SUBTRACT works the same way, in the other direction.
+### Who's to Blame, for Real
 
-**Try it with Machop** ($A = 3$, $S = 1$): the total was $-2$. After the fix, it should be bigger by $3 \times 3 + 1 \times 1 + 1 = 11$. Check: $(3 \times 2) + (1 \times 2) + 1 = 9$. And $-2 + 11 = 9$. It works!
+Your class's rule is a simple version of **MADALINE Rule II**, made by Bernard Widrow and Rodney Winter in 1988. Its big idea: change the neuron that was **least sure**, because that changes the network as little as possible.
+
+Today's networks use **backpropagation** instead. It became famous in 1986, from a paper by David Rumelhart, Geoffrey Hinton, and Ronald Williams. Two things make it different:
+
+1. Each neuron gives a **smooth** answer, like "0.8 sure", not only yes or no. So the computer can work out **how much** each weight caused the mistake.
+2. Every weight changes, a little, after every pass. The blame starts at the answer and goes **back** through the layers, one at a time. That's where the name comes from.
 
 ### Will It Always Finish?
 
-Frank Rosenblatt used this fix rule for his perceptron in 1958. Mathematicians later proved something surprising. If **any** straight line can split the training cards into two groups, the fix rule will always find one. It makes a limited number of mistakes, and then it stops making them.
+For **one** neuron, mathematicians proved something surprising in the 1960s. If **any** straight line can split the training cards into two groups, the fix rule will always find one. It makes a limited number of mistakes, and then it stops.
 
-But if no straight line can split the cards, the neuron never stops making mistakes. (See the problem one neuron can't solve, in the section for Lesson 2.4.)
+For a **network**, there's no promise like that. Start C in the Lesson 2.5 tool gets stuck forever. Real networks can get stuck too. Computer scientists fix this with more neurons, random starting weights, and lots of practice runs.
 
-### Shuffle the Cards
+## From Lesson 2.6: Build a Real AI {#explore-2-6}
 
-Train again, but shuffle the training cards first. Use the **Check Our Math** tool in Lesson 2.5, or do it on paper. Do you end with the same weights? Does the neuron still get the training cards right? Do different weights give different answers on the test cards?
+### The Secret Recipe
 
-## From Lesson 2.6: Watch Your Teacher Build an AI {#explore-2-6}
+The creatures in Lessons 2.4, 2.5, and 2.6 are made up. Mr. Ross made them with a computer, from this recipe:
+
+| Type | How many | Strength | Magic | Size |
+|---|:---:|:---:|:---:|---|
+| Fighter | 70 | about 66 | about 40 | about 1.5 meters tall |
+| Wizard | 70 | about 40 | about 66 | about 1.5 meters tall |
+| Giant | 60 | about 82 | about 82 | about 3 meters tall |
+| Mini | 100 | about 24 | about 24 | about half a meter tall |
+
+- Each creature's numbers are **spread out** around these, so some Fighters have lots of Magic, and some Wizards are strong.
+- **Speed** and **Toughness** are about 50 for every type. They say nothing about the type.
+- **Weight** comes from height: taller creatures are heavier.
+- **Home** (Forest, Mountain, or Lake) was picked **at random**.
+
+Now you can check the networks against the truth. For *Fighter or Wizard?*, the best rule is "more Strength than Magic: Fighter." It gets **128 of 140** right, about 91%. Even a perfect AI can't do better, because some Fighters and Wizards overlap. For *Where does it live?*, even a perfect AI can't beat guessing.
+
+Real data is different: **nobody** knows the recipe. That's why scientists need AI to find patterns, and why they need test data to check them.
 
 ### How a Network Draws a Curved Border
 
-The class neuron in Lesson 2.5 had one rule: one straight line. Everything on one side was FIGHTING. Everything on the other side was PSYCHIC.
+The class neuron in Lesson 2.4 had one rule: one straight line.
 
-A network has **hidden neurons** between the inputs and the answer. Each hidden neuron draws its own line. The last neuron looks at all of their answers together. Many short lines, put together, can make a curved border.
+A network has **hidden neurons** between the inputs and the answer. Each hidden neuron draws its own line. The output neurons look at all of their answers together. Two lines can make a band, like the club in Run 2. Many short lines, put together, can make a curved border.
 
-Try it with the AI tool in Lesson 2.6. Choose *Fighting or Psychic?* with 2 numbers. Train with **0** hidden neurons and look at the colored map. Then train with **16**. How is the border different?
+Try it with the tool in Lesson 2.6. Choose *Which type?* Train with **0** hidden neurons and look at the colored map. Then train with **16**. How is the border different?
 
 ### Three Piles, Not Two
 
@@ -147,13 +161,13 @@ Why three? Say you try 10 network sizes, and you keep the one with the best test
 
 ### The Data Behind the AI
 
-The Pokédex has 1,281 Pokémon. That's small for AI. A big image AI learns from millions or billions of pictures. A chatbot learns from a huge amount of text. The steps are the same six steps you saw in class. Only the size is different.
+The creature data has 300 creatures. That's tiny for AI. A big image AI learns from millions or billions of pictures. A chatbot learns from a huge amount of text. The steps are the same six steps you saw in class. Only the size is different.
 
 ## From Lesson 2.7: Train Your Own AI {#explore-2-7}
 
 ### Why Teachable Machine Learns So Fast
 
-The Pokémon AI in Lesson 2.6 started from nothing. Teachable Machine doesn't. It starts with a network that **already learned** from millions of pictures, like the ImageNet pictures in Lesson 1.5. That network already knows about edges, shapes, and colors (you'll see how in Lesson 2.8).
+The creature AI in Lesson 2.6 started from nothing. Teachable Machine doesn't. It starts with a network that **already learned** from millions of pictures, like the ImageNet pictures in Lesson 1.5. That network already knows about edges, shapes, and colors (you'll see how in Lesson 2.8).
 
 So Teachable Machine only learns the **last step** from your pictures: which shapes go with "rock." That's why it needs only about 50 pictures and a few seconds.
 

@@ -1,0 +1,107 @@
+\documentclass[11pt]{article}
+\input{../preamble}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\lessontitle{Build a Real AI}
+\partner
+
+\wordbank{\wb{bigger}\wb{fires}\wb{negative}\wb{positive}}
+
+{\large\textbf{1. How long by hand?}} 240 cards, 300 passes, 1 minute per card.
+
+\vspace{0.5em}
+$240 \times 300 =$ \ansline{1.0in}{72,000} cards $=$ \ansline{1.0in}{72,000} minutes $\approx$ \ansline{0.8in}{1,200} hours $\approx$ \ansline{0.6in}{50} days
+
+\vspace{1.0em}
+{\large\textbf{2. Six steps to build an AI.}} Number the steps in order, 1 to 6.
+
+\vspace{0.3em}
+\begin{tabular}{|c|R{2.5in}||c|R{2.5in}|}
+\hline
+\ans{5} & Train: many passes, fix the weights & \ans{1} & Get data \\ \hline
+\ans{3} & Split the data: training and test & \ans{6} & Test, then use it \\ \hline
+\ans{2} & Ask a question & \ans{4} & Build the network \\ \hline
+\end{tabular}
+
+\vspace{0.8em}
+Why does the network never train on the test data? \ansline{3.2in}{So we can check it on data it never saw.}
+
+\vspace{1.0em}
+{\large\textbf{3. Read the network.}}
+
+\vspace{0.4em}
+A blue line is a \ansline{1.0in}{positive} weight. An orange line is a \ansline{1.0in}{negative} weight.
+
+\vspace{0.6em}
+A thicker line is a \ansline{0.9in}{bigger} weight. \quad A hidden neuron's square is blue where it \ansline{0.8in}{fires}.
+
+\vspace{1.0em}
+{\large\textbf{4. Predict, train, and test.}} Write your prediction \textbf{before} each run.
+
+\vspace{0.3em}
+\begin{tabular}{|c|R{2.3in}|c|R{0.95in}|R{0.8in}|R{0.8in}|}
+\hline
+\textbf{Run} & \textbf{Question} & \textbf{Hidden} & \textbf{My prediction (test \%)} & \textbf{Training \%} & \textbf{Test \%} \\ \hline
+1 & Fighter or Wizard? (2 numbers) & 4 & \ans{Answers vary.} & \ans{about 90\%} & \ans{about 85\%} \\ \hline
+2a & Can it join the club? (2 numbers) & 0 & & \ans{about 60\%} & \ans{about 55\%} \\ \hline
+2b & Can it join the club? (2 numbers) & 2 & & \ans{about 96\%} & \ans{about 97\%} \\ \hline
+3 & Fighter or Wizard? (6 numbers) & 16 & & \ans{100\%} & \ans{about 80\%} \\ \hline
+4 & Where does it live? (6 numbers) & 16 & & \ans{about 75\%} & \ans{about 35\%} \\ \hline
+\end{tabular}
+
+\vspace{0.4em}
+\ifkey{\small\textcolor{keyred}{Scores change a little with each random split. The patterns stay the same.}}\fi
+
+\newpage
+
+\wordbank{\wb{data}\wb{Giants}\wb{line}\wb{Minis}\wb{overfitting}}
+
+{\large\textbf{5. What did you see?}}
+
+\vspace{0.5em}
+In Run 2a, the network had no hidden layer. It could only draw one \ansline{0.9in}{line}.
+
+\vspace{0.9em}
+In Run 2b, one hidden neuron fires only for \ansline{1.0in}{Giants}. The other fires for everything except \ansline{1.0in}{Minis}.
+
+\vspace{0.9em}
+In Run 3, the training score went up, but the test score went down. The network learned the training examples by heart. This is called \ansline{1.4in}{overfitting}.
+
+\vspace{0.9em}
+In Run 4, the network wasn't better than guessing. Why? \ansline{2.8in}{The home was picked at random. It isn't in the data.}
+
+\vspace{0.9em}
+An AI can only learn what is in its \ansline{1.0in}{data}.
+
+\vspace{1.1em}
+{\large\textbf{6. Talk about it.}} What if someone used an AI like this to decide who gets a job?
+
+\vspace{0.6em}
+A problem could be \ansline{5.6in}{Answers vary. It only knows what is in its data; it can be wrong.}
+
+\vspace{0.9em}
+\blank{6.9in}
+
+\vspace{1.2em}
+\hrule
+\vspace{0.8em}
+{\large\textbf{Go Further (Day 2).}} Ask the network about 3 creatures from the cards.
+
+\vspace{0.3em}
+\begin{tabular}{|R{1.4in}|R{1.5in}|R{1.4in}|c|c|}
+\hline
+\textbf{Creature} & \textbf{The network said} & \textbf{Really} & \textbf{Right?} & \textbf{Test creature?} \\ \hline
+\ans{Answers vary.} & & & & \\[0.2em] \hline
+ & & & & \\[0.2em] \hline
+ & & & & \\[0.2em] \hline
+\end{tabular}
+
+\vspace{0.6em}
+\textit{Fighter or Wizard?} (all 6 numbers). Test score with 0 hidden: \ansline{0.5in}{89\%} \quad 4: \ansline{0.5in}{82\%} \quad 16: \ansline{0.5in}{79\%}
+
+\vspace{0.6em}
+Is the biggest network always the best? \ansline{0.5in}{no} \quad Why? \ansline{2.8in}{A big network can memorize the noise.}
+
+\end{document}

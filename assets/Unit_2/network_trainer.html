@@ -1,0 +1,232 @@
+```{=html}
+<!-- network_trainer.html: Lesson 2.5. The class network (2 inputs, 2 hidden
+     neurons, 1 output) learns the club question with the fix rule and
+     "Who's to Blame?" (a simple version of MADALINE Rule II, Winter and
+     Widrow 1988). Same cards, same order, same starting numbers as the sheet.
+     Start B learns a different way; Start C gets stuck. -->
+<div class="ntw" id="ntw">
+  <div class="ntw-bar">
+    <span class="ntw-lbl">Start:</span>
+    <button type="button" class="ntw-btn ntw-start ntw-on" data-s="A">A (the class)</button>
+    <button type="button" class="ntw-btn ntw-start" data-s="B">B</button>
+    <button type="button" class="ntw-btn ntw-start" data-s="C">C</button>
+    <span class="ntw-pass"></span>
+  </div>
+  <svg class="ntw-svg" viewBox="0 0 660 330" role="img" aria-label="The class network: two inputs, two hidden neurons, and one output neuron. Each line shows its weight."></svg>
+  <div class="ntw-key"><span class="pos">━</span> positive weight &nbsp; <span class="neg">━</span> negative weight &nbsp; thicker = bigger &nbsp; <span class="fire">●</span> fires (stands up)</div>
+  <div class="ntw-bar">
+    <button type="button" class="ntw-btn ntw-main ntw-next">▶ Next step</button>
+    <button type="button" class="ntw-btn ntw-pass-btn">⏩ Finish this pass</button>
+    <button type="button" class="ntw-btn ntw-test">🧪 Test cards</button>
+  </div>
+  <div class="ntw-msg" aria-live="polite"></div>
+  <div class="ntw-tables">
+    <table class="ntw-what" data-quarto-disable-processing="true"><caption>What each neuron fires for, right now</caption>
+      <thead><tr><th></th><th>Fighter<br><small>1, 0</small></th><th>Wizard<br><small>0, 1</small></th><th>Giant<br><small>1, 1</small></th><th>Mini<br><small>0, 0</small></th></tr></thead><tbody></tbody></table>
+    <div class="ntw-try"><b>Try it:</b> show the network a creature.
+      <div><button type="button" class="ntw-btn" data-x="1,0">Fighter</button><button type="button" class="ntw-btn" data-x="0,1">Wizard</button><button type="button" class="ntw-btn" data-x="1,1">Giant</button><button type="button" class="ntw-btn" data-x="0,0">Mini</button></div>
+    </div>
+  </div>
+  <div class="ntw-res"></div>
+</div>
+
+<style>
+.ntw { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.ntw-bar { display: flex; flex-wrap: wrap; gap: 0.4rem 0.5rem; align-items: center; margin: 0.3rem 0; }
+.ntw-lbl { font-weight: bold; }
+.ntw-btn { border: 1px solid #2c3e50; background: #fff; color: #2c3e50; border-radius: 6px; padding: 0.3rem 0.7rem; font-weight: 600; cursor: pointer; }
+.ntw-btn.ntw-main, .ntw-btn.ntw-on { background: #2c3e50; color: #fff; }
+.ntw-pass { margin-left: auto; font-weight: bold; }
+.ntw-svg { display: block; width: 100%; height: auto; background: #fff; border: 1px solid #d9e1e8; border-radius: 8px; }
+.ntw-key { font-size: 0.82rem; margin: 0.25rem 0 0.2rem; }
+.ntw-key .pos { color: #2c6fae; font-weight: bold; } .ntw-key .neg { color: #d35400; font-weight: bold; } .ntw-key .fire { color: #f1c40f; font-size: 1.1rem; }
+.ntw-msg { background: #fff; border: 1px solid #d9e1e8; border-radius: 8px; padding: 0.5rem 0.7rem; line-height: 1.6; min-height: 9.5em; }
+.ntw-msg .ok { color: #1e8449; font-weight: bold; } .ntw-msg .no { color: #c0392b; font-weight: bold; }
+.ntw-tables { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: flex-start; margin-top: 0.6rem; }
+.ntw-what { border-collapse: collapse; font-size: 0.9rem; }
+.ntw-what caption { text-align: left; font-weight: bold; padding-bottom: 0.2rem; }
+.ntw-what th, .ntw-what td { border: 1px solid #d9e1e8; padding: 0.15rem 0.45rem; text-align: center; }
+.ntw-what td.y { background: #fdebd0; font-weight: bold; }
+.ntw-try div { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.3rem; }
+.ntw-res { margin-top: 0.5rem; line-height: 1.5; }
+.ntw-res table { border-collapse: collapse; margin-top: 0.3rem; font-size: 0.92rem; }
+.ntw-res td, .ntw-res th { border: 1px solid #d9e1e8; padding: 0.15rem 0.5rem; text-align: center; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("ntw");
+  if (!root) return;
+  const NS = "http://www.w3.org/2000/svg";
+  // name, strength stars, magic stars, type
+  const DECK = [["T1 Konik", 4, 2, "Fighter"], ["T2 Pasir", 2, 4, "Wizard"], ["T3 Vasi", 5, 5, "Giant"], ["T4 Skape", 2, 2, "Mini"],
+                ["T5 Porris", 5, 2, "Fighter"], ["T6 Galla", 1, 4, "Wizard"], ["T7 Gilax", 4, 4, "Giant"], ["T8 Grapis", 2, 1, "Mini"]];
+  const TEST = [["X1 Kromos", 5, 2, "Fighter"], ["X2 Vepul", 2, 4, "Wizard"], ["X3 Tarra", 5, 4, "Giant"], ["X4 Volar", 1, 2, "Mini"],
+                ["X5 Tibi", 3, 2, "Fighter"], ["X6 Gobur", 3, 5, "Giant"]];
+  // [strength weight, magic weight, threshold] for each hidden neuron; [hidden 1 weight, hidden 2 weight, threshold] for the output
+  const STARTS = { A: { H: [[-1, 1, 1], [0, -1, 1]], O: [1, 1, 1] }, B: { H: [[1, 1, 0], [1, 1, 1]], O: [1, 0, 0] }, C: { H: [[1, 1, 0], [1, 1, 0]], O: [1, 1, 1] } };
+  const MAXPASS = 6;
+  const joins = (t) => t === "Fighter" || t === "Wizard";
+  const strong = (s) => (s >= 4 ? 1 : 0);
+  const n = (v) => String(v).replace("-", "−");
+
+  let H, O, start = "A", i, pass, mistakes, passLog, phase, cur, changed, done;
+  const svg = root.querySelector(".ntw-svg"), msg = root.querySelector(".ntw-msg"), res = root.querySelector(".ntw-res");
+  const el = (tag, a, p) => { const e = document.createElementNS(NS, tag); for (const k in a) e.setAttribute(k, a[k]); (p || svg).appendChild(e); return e; };
+
+  // positions
+  const P = { s: [85, 90], m: [85, 240], h1: [345, 90], h2: [345, 240], o: [560, 165] };
+  const edges = [["s", "h1", () => H[0][0], () => H[0]], ["m", "h1", () => H[0][1], () => H[0]], ["s", "h2", () => H[1][0], () => H[1]],
+                 ["m", "h2", () => H[1][1], () => H[1]], ["h1", "o", () => O[0], () => O], ["h2", "o", () => O[1], () => O]];
+  const lines = [], tags = [];
+  edges.forEach(([a, b], k) => {
+    const x1 = P[a][0] + (a.length === 1 ? 70 : 40), y1 = P[a][1], x2 = P[b][0] - 40, y2 = P[b][1];
+    lines.push(el("line", { x1, y1, x2, y2, "stroke-linecap": "round" }));
+    const t = k < 4 ? (k === 1 || k === 2 ? 0.25 : 0.5) : 0.45;
+    const tx = x1 + t * (x2 - x1), ty = y1 + t * (y2 - y1) + (k === 0 ? -16 : k === 3 ? 18 : 0);
+    const g = el("g", {});
+    const r = el("rect", { x: tx - 20, y: ty - 13, width: 40, height: 26, rx: 5, fill: "#fff", "stroke-width": 2 }, g);
+    const tx2 = el("text", { x: tx, y: ty + 6, "text-anchor": "middle", "font-size": 17, "font-weight": 700 }, g);
+    tags.push([r, tx2]);
+  });
+  const box = (key, label) => {
+    const [x, y] = P[key];
+    el("rect", { x: x - 70, y: y - 30, width: 140, height: 60, rx: 8, fill: "#eaf2fa", stroke: "#2c6fae", "stroke-width": 2 });
+    el("text", { x, y: y - 8, "text-anchor": "middle", "font-size": 14, "font-weight": 700, fill: "#2c3e50" }).textContent = label;
+    return el("text", { x, y: y + 18, "text-anchor": "middle", "font-size": 20, "font-weight": 700, fill: "#2c6fae" });
+  };
+  const inS = box("s", "Strong Strength?"), inM = box("m", "Strong Magic?");
+  const neuron = (key, label, color) => {
+    const [x, y] = P[key];
+    const c = el("circle", { cx: x, cy: y, r: 40, "stroke-width": 3, stroke: color });
+    el("text", { x, y: y - 47, "text-anchor": "middle", "font-size": 14, "font-weight": 700, fill: color }).textContent = label;
+    const th = el("text", { x, y: y - 6, "text-anchor": "middle", "font-size": 12, fill: "#2c3e50" });
+    const tot = el("text", { x, y: y + 16, "text-anchor": "middle", "font-size": 15, "font-weight": 700, fill: "#2c3e50" });
+    return { c, th, tot, color };
+  };
+  const N = { h1: neuron("h1", "Hidden 1", "#d35400"), h2: neuron("h2", "Hidden 2", "#d35400"), o: neuron("o", "Output", "#1e8449") };
+  const outTxt = el("text", { x: 560, y: 235, "text-anchor": "middle", "font-size": 15, "font-weight": 700, fill: "#1e8449" });
+
+  function forward(x) {
+    const ht = H.map((w) => w[0] * x[0] + w[1] * x[1]);
+    const h = ht.map((t, j) => (t > H[j][2] ? 1 : 0));
+    const ot = O[0] * h[0] + O[1] * h[1];
+    return { x, ht, h, ot, y: ot > O[2] ? 1 : 0 };
+  }
+  function draw(f) {
+    edges.forEach(([a, b, wv, owner], k) => {
+      const w = wv(), L = lines[k], [r, t] = tags[k];
+      const col = w > 0 ? "#2c6fae" : w < 0 ? "#d35400" : "#b8c4ce";
+      const active = f && ((a === "s" && f.x[0]) || (a === "m" && f.x[1]) || (a === "h1" && f.h[0]) || (a === "h2" && f.h[1]));
+      L.setAttribute("stroke", col); L.setAttribute("stroke-width", 2 + 2.2 * Math.min(4, Math.abs(w)));
+      L.setAttribute("stroke-dasharray", w === 0 ? "6 5" : ""); L.setAttribute("opacity", f && !active ? 0.35 : 1);
+      r.setAttribute("stroke", col); t.setAttribute("fill", col === "#b8c4ce" ? "#7f8c8d" : col);
+      t.textContent = (w > 0 ? "+" : "") + n(w);
+      r.setAttribute("fill", changed && changed.includes(k) ? "#fff3b0" : "#fff");
+    });
+    inS.textContent = f ? f.x[0] : "1 or 0"; inM.textContent = f ? f.x[1] : "1 or 0";
+    [["h1", 0], ["h2", 1]].forEach(([key, j]) => {
+      const nn = N[key];
+      nn.th.textContent = "threshold " + n(H[j][2]);
+      nn.tot.textContent = f ? "total " + n(f.ht[j]) : "";
+      nn.c.setAttribute("fill", f && f.h[j] ? "#f9d56e" : "#fdf2e9");
+      nn.th.setAttribute("font-weight", changed && changed.includes(10 + j) ? 700 : 400);
+    });
+    N.o.th.textContent = "threshold " + n(O[2]);
+    N.o.th.setAttribute("font-weight", changed && changed.includes(12) ? 700 : 400);
+    N.o.tot.textContent = f ? "total " + n(f.ot) : "";
+    N.o.c.setAttribute("fill", f && f.y ? "#f9d56e" : "#eafaf1");
+    outTxt.textContent = f ? (f.y ? "Can join!" : "Can't join") : "Can it join?";
+    // what each neuron fires for
+    const pats = [[1, 0], [0, 1], [1, 1], [0, 0]];
+    const fr = pats.map(forward);
+    root.querySelector(".ntw-what tbody").innerHTML = [["Hidden 1", (q) => q.h[0]], ["Hidden 2", (q) => q.h[1]], ["Output (can join)", (q) => q.y]]
+      .map(([lbl, g]) => `<tr><th>${lbl}</th>${fr.map((q) => `<td class="${g(q) ? "y" : ""}">${g(q) ? "fires" : "–"}</td>`).join("")}</tr>`).join("");
+    root.dataset.h = JSON.stringify(H); root.dataset.o = JSON.stringify(O);
+  }
+  const stars = (k) => "★".repeat(k) + "☆".repeat(5 - k);
+
+  function reset(s) {
+    start = s; H = STARTS[s].H.map((w) => w.slice()); O = STARTS[s].O.slice();
+    i = 0; pass = 1; mistakes = 0; passLog = []; phase = "run"; cur = null; changed = null; done = false;
+    root.querySelectorAll(".ntw-start").forEach((b) => b.classList.toggle("ntw-on", b.dataset.s === s));
+    msg.innerHTML = `Start ${s}. Press <b>Next step</b> to show the network card T1.`;
+    res.innerHTML = ""; showPass(); draw(null);
+  }
+  function showPass() {
+    root.querySelector(".ntw-pass").textContent = `Pass ${pass}` + (passLog.length ? ` · mistakes so far: ${passLog.map((m, k) => `pass ${k + 1}: ${m}`).join(", ")}` : "");
+  }
+  function runCard() {
+    const [name, s, m, t] = DECK[i], x = [strong(s), strong(m)], f = forward(x), want = joins(t) ? 1 : 0;
+    changed = null;
+    cur = { name, s, m, t, f, want };
+    const hid = (j) => `<b>Hidden ${j + 1}:</b> total ${n(f.ht[j])}. More than ${n(H[j][2])}? ${f.h[j] ? "Yes: it stands up." : "No: it stays seated."}`;
+    msg.innerHTML = `<b>${name}</b>: Strength ${stars(s)} (${s}), Magic ${stars(m)} (${m}). Inputs: <b>${x[0]}</b> and <b>${x[1]}</b>.<br>` +
+      `${hid(0)}<br>${hid(1)}<br><b>Output:</b> total ${n(f.ot)}. More than ${n(O[2])}? ${f.y ? "Yes: <b>Can join!</b>" : "No: <b>Can't join.</b>"}<br>` +
+      `Really: ${t}, ${want ? "can join" : "can't join"}. ` + (f.y === want ? `<span class="ok">✓ Right.</span>` : `<span class="no">✗ Wrong.</span> Press <b>Next step</b> for Who's to Blame.`);
+    draw(f);
+    if (f.y !== want) { mistakes++; phase = "fix"; } else advance();
+  }
+  function fixCard() {
+    const { f, want } = cur, x = f.x;
+    const d = [0, 1].map((j) => Math.abs(f.ht[j] - H[j][2]));
+    const j = d[0] <= d[1] ? 0 : 1;
+    const h2 = f.h.slice(); h2[j] = 1 - h2[j];
+    const fixes = O[0] * h2[0] + O[1] * h2[1] > O[2] ? 1 : 0;
+    let text = `<b>Who's to Blame?</b> Hidden 1 is ${d[0]} away from its threshold. Hidden 2 is ${d[1]} away. <b>Hidden ${j + 1}</b> is least sure. `;
+    if (fixes === want) {
+      const up = h2[j] === 1, sgn = up ? 1 : -1;
+      H[j][0] += sgn * x[0]; H[j][1] += sgn * x[1]; H[j][2] -= sgn;
+      changed = [x[0] ? (j ? 2 : 0) : -1, x[1] ? (j ? 3 : 1) : -1, 10 + j];
+      text += `If it changed its answer, the network would be right. So <b>Hidden ${j + 1} fixes itself</b>: it ${up ? "should have fired: <b>ADD</b>" : "fired, but shouldn't have: <b>SUBTRACT</b>"}. ` +
+        `New numbers: weights ${n(H[j][0])} and ${n(H[j][1])}, threshold ${n(H[j][2])}.`;
+    } else {
+      const sgn = want ? 1 : -1;
+      O[0] += sgn * f.h[0]; O[1] += sgn * f.h[1]; O[2] -= sgn;
+      changed = [f.h[0] ? 4 : -1, f.h[1] ? 5 : -1, 12];
+      text += `If it changed its answer, the network would still be wrong. So <b>the output fixes itself</b>: it ${want ? "should have fired: <b>ADD</b>" : "fired, but shouldn't have: <b>SUBTRACT</b>"}. ` +
+        `New numbers: weights ${n(O[0])} and ${n(O[1])}, threshold ${n(O[2])}.`;
+    }
+    msg.innerHTML += `<br>${text} <i>(Changed numbers are highlighted.)</i>`;
+    draw(f);
+    phase = "run"; advance();
+  }
+  function advance() {
+    i++;
+    if (i < DECK.length) return;
+    passLog.push(mistakes);
+    if (mistakes === 0) { done = true; msg.innerHTML += `<br><span class="ok">Pass ${pass} had 0 mistakes. The network learned the rule!</span> Press <b>Test cards</b>.`; }
+    else if (pass >= MAXPASS) { done = true; msg.innerHTML += `<br><span class="no">${MAXPASS} passes and still making mistakes. This network is stuck.</span>`; }
+    else { msg.innerHTML += `<br>End of pass ${pass}: ${mistakes} mistake${mistakes === 1 ? "" : "s"}. Next: pass ${pass + 1}.`; i = 0; pass++; mistakes = 0; }
+    root.dataset.done = done ? "1" : ""; root.dataset.passes = JSON.stringify(passLog);
+    showPass();
+  }
+  function step() { if (done) return; if (phase === "fix") fixCard(); else runCard(); }
+  root.querySelector(".ntw-next").addEventListener("click", step);
+  root.querySelector(".ntw-pass-btn").addEventListener("click", () => {
+    if (done) return;
+    const p = pass;
+    let guard = 0;
+    while (!done && pass === p && guard++ < 40) step();
+  });
+  root.querySelectorAll(".ntw-start").forEach((b) => b.addEventListener("click", () => reset(b.dataset.s)));
+  root.querySelectorAll(".ntw-try button").forEach((b) => b.addEventListener("click", () => {
+    const x = b.dataset.x.split(",").map(Number), f = forward(x);
+    changed = null; draw(f);
+    msg.innerHTML = `<b>A ${b.textContent}</b>: inputs ${x[0]} and ${x[1]}. Hidden 1 ${f.h[0] ? "fires" : "stays seated"}. Hidden 2 ${f.h[1] ? "fires" : "stays seated"}. ` +
+      `The network says <b>${f.y ? "Can join!" : "Can't join."}</b> (Training goes on from where it was.)`;
+  }));
+  root.querySelector(".ntw-test").addEventListener("click", () => {
+    let right = 0;
+    const rows = TEST.map(([name, s, m, t]) => {
+      const f = forward([strong(s), strong(m)]), want = joins(t) ? 1 : 0, ok = f.y === want; if (ok) right++;
+      return `<tr><td>${name}</td><td>${s}</td><td>${m}</td><td>${f.x[0]}, ${f.x[1]}</td><td>${f.y ? "Can join" : "Can't join"}</td><td>${t}</td><td>${ok ? "✓" : "✗"}</td></tr>`;
+    });
+    res.innerHTML = `With the numbers it has now, the network gets <b>${right} of ${TEST.length}</b> test cards right. (No fixing on a test!)` +
+      `<table><tr><th>Card</th><th>Strength</th><th>Magic</th><th>Inputs</th><th>Network says</th><th>Really</th><th></th></tr>${rows.join("")}</table>`;
+    root.dataset.test = right;
+  });
+  reset("A");
+})();
+</script>
+```

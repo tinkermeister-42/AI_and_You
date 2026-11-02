@@ -1,0 +1,28 @@
+\documentclass[border=6pt]{standalone}
+\input{../preamble}
+\begin{document}
+\begin{tikzpicture}[
+  inp/.style={personbox, minimum width=3.0cm, font=\normalsize, align=center},
+  neu/.style={circle, line width=1.6pt, minimum size=2.1cm, align=center, font=\small},
+  wt/.style={fill=white, draw=machine, rounded corners=3pt, font=\large\bfseries, text=machine, inner sep=2.5pt},
+  ln/.style={-{Stealth[length=7pt]}, line width=1.3pt, draw=ink!70},
+]
+% The class network for Lesson 2.5, with its starting numbers.
+\node[inp] (s) at (0,2.6) {Strong Strength?\\\textbf{1 or 0}};
+\node[inp] (m) at (0,-0.2) {Strong Magic?\\\textbf{1 or 0}};
+\node[neu, draw=machine, fill=machine!12] (h1) at (5.4,2.6) {\textbf{Hidden 1}\\[2pt]threshold\\{\Large\bfseries 1}};
+\node[neu, draw=machine, fill=machine!12] (h2) at (5.4,-0.2) {\textbf{Hidden 2}\\[2pt]threshold\\{\Large\bfseries 1}};
+\node[neu, draw=result, fill=result!12] (o) at (10.0,1.2) {\textbf{Output}\\[2pt]threshold\\{\Large\bfseries 1}};
+\node[font=\normalsize\bfseries, text=result, anchor=west, align=left] at (11.2,1.2) {Can it\\join?};
+\draw[ln] (s.east) -- node[wt, pos=0.5, above=1pt] {$-1$} (h1);
+\draw[ln] (s.east) -- node[wt, pos=0.22] {$0$} (h2);
+\draw[ln] (m.east) -- node[wt, pos=0.22] {$+1$} (h1);
+\draw[ln] (m.east) -- node[wt, pos=0.5, below=1pt] {$-1$} (h2);
+\draw[ln] (h1) -- node[wt, pos=0.45, above right=-1pt] {$+1$} (o);
+\draw[ln] (h2) -- node[wt, pos=0.45, below right=-1pt] {$+1$} (o);
+\node[font=\small\bfseries, text=person] at (0,4.0) {inputs};
+\node[font=\small\bfseries, text=machine] at (5.4,4.0) {hidden layer};
+\node[font=\small\bfseries, text=result] at (10.0,4.0) {output layer};
+\node[font=\small, text=ink, align=center] at (5.4,-2.0) {A neuron fires (stands up) if its total is \textbf{more than} its threshold.};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,22 @@
+% Creature cards for Lessons 2.4 and 2.5.  The creatures are made up
+% (scripts/make-creatures.py); stars = stat / 20, rounded up, from 1 to 5.
+\newcommand{\stars}[1]{%
+  \foreach \k in {1,...,5}{%
+    \ifnum\k>#1\relax\node[star, star points=5, star point ratio=2.3, draw=black!45, fill=white, inner sep=1.6pt] at (\k*0.42,0) {};%
+    \else\node[star, star points=5, star point ratio=2.3, draw=black, fill=black!75, inner sep=1.6pt] at (\k*0.42,0) {};\fi}}
+\newcommand{\ccard}[6]{% #1 id, #2 name, #3 strength stars, #4 magic stars, #5 type, #6 t = test card (dashed)
+  \ifx#6t\tikzset{cardb/.style={dash pattern=on 5pt off 2pt}}\else\tikzset{cardb/.style={solid}}\fi
+  \begin{tikzpicture}
+    \draw[line width=0.9pt, rounded corners=4pt, cardb] (0,0) rectangle (5.6,4.5);
+    \node[anchor=north west, font=\small\bfseries, text=black!60] at (0.2,4.35) {#1};
+    \node[anchor=north, font=\Large\bfseries] at (2.8,4.3) {#2};
+    \node[anchor=west, font=\small\bfseries] at (0.25,3.15) {Strength};
+    \node[anchor=east, font=\Large\bfseries] at (5.35,3.15) {#3};
+    \begin{scope}[shift={(1.75,3.15)}]\stars{#3}\end{scope}
+    \node[anchor=west, font=\small\bfseries] at (0.25,2.35) {Magic};
+    \node[anchor=east, font=\Large\bfseries] at (5.35,2.35) {#4};
+    \begin{scope}[shift={(1.75,2.35)}]\stars{#4}\end{scope}
+    \draw[black!40, dash pattern=on 4pt off 2pt] (0.15,1.55) -- (5.45,1.55);
+    \node[anchor=south east, font=\scriptsize, text=black!50] at (5.45,1.57) {fold here};
+    \node[anchor=center, font=\normalsize, align=center, text width=5.2cm] at (2.8,0.8) {#5};
+  \end{tikzpicture}}

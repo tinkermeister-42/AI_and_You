@@ -2,7 +2,7 @@
 
 On the first day of this class, you answered a question: *Is AI like a human brain?* Your teacher kept your answer.
 
-Since then, you were a neuron. You trained a neural network with Pokémon cards. You sat in the Klingon Room. You caught chatbots making things up, and you saw how AI changes jobs, news, and friendship.
+Since then, you were a neuron. You trained a neural network with creature cards. You sat in the Klingon Room. You caught chatbots making things up, and you saw how AI changes jobs, news, and friendship.
 
 Today you get your first answer back. Then you answer again, with everything you know now.
 

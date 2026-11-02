@@ -114,13 +114,26 @@ The teacher wants kids' hands on real things in every lesson.
   collects no student data (its concern is personal information tied to a
   login, so students never log in or type personal information). The
   teacher checks the network block; list any new outside tool for him
-- **Students see AI built, but do not build it.** The teacher builds AI
-  professionally. In Unit 2 he trains a real model live (his Pokémon stats
-  demo: the CSV from his old Algebra site, a neural network instead of the
-  regression he used then), and the class first trains a **physical**
-  neural network on the same kind of data, so they can see how a simple
-  network makes decisions. Students watch, test, and change things; they do
-  not write code
+- **Students train AI in the page, but do not write code.** The teacher
+  builds AI professionally. Unit 2 uses **one dataset** for 2.4 to 2.6: 300
+  made-up creatures (Fighter, Wizard, Giant, Mini) from a recipe the book
+  knows (`scripts/make-creatures.py` writes `data/creatures.json`;
+  `scripts/embed-creatures.py` puts it in every widget with a
+  `const CREATURES = ` line). Don't switch to a real dataset with many
+  categories: the teacher found the Pokémon data too muddy, and a known
+  recipe lets Explore More compare what the network learned with the truth.
+  In 2.4 one neuron sorts Fighter or Wizard (weights fixed by hand); in 2.5
+  the class is a 2-2-1 network that learns the club question (Fighter or
+  Wizard can join, Giant or Mini can't: one neuron can't) with the fix rule
+  and Who's to Blame; in 2.6 students train a real network in the browser
+  and **watch it**: the network picture shows every weight (blue positive,
+  orange negative, thickness = size) changing while it trains, and hidden
+  neurons on 2-number questions show a small map of where they fire. The
+  teacher wants visuals that explain themselves. Students watch, test, and
+  change things; they do not write code
+- **The 2.5 key path is computed, not guessed.** Changing the 2.5 cards,
+  order, or starting numbers changes every number on the sheet. Rerun the
+  path (as the widget does) and rebuild the key
 - A widget that shows an idea with made-up numbers says so on the page
   ("This shows the idea. A real ... uses ...")
 

@@ -3,7 +3,7 @@
 \usetikzlibrary{backgrounds}
 \begin{document}
 \begin{tikzpicture}[
-  inp/.style={personbox, minimum width=2.9cm, font=\normalsize},
+  inp/.style={personbox, minimum width=2.7cm, font=\normalsize},
   hid/.style={circle, draw=machine, fill=machine!12, line width=1.4pt, minimum size=1.0cm},
   outn/.style={circle, draw=result, fill=result!12, line width=1.4pt, minimum size=1.0cm},
   wire/.style={draw=ink!35, line width=0.9pt},
@@ -12,34 +12,32 @@
   laycap/.style={font=\normalsize\bfseries, text=ink, align=center},
   laysub/.style={font=\small, text=ink, align=center, anchor=north},
 ]
-% A small neural network: 3 inputs, a hidden layer of 4 neurons, 2 outputs.
+% A small neural network: 2 inputs, a hidden layer of 3 neurons, 2 outputs.
 % The top hidden neuron is the neuron from 2.4.1 (same inputs, same weights).
-\node[inp] (i1) at (0,2.9) {Sunny? \textbf{1}};
-\node[inp] (i2) at (0,1.5) {Friends going? \textbf{1}};
-\node[inp] (i3) at (0,0.1) {Homework done? \textbf{0}};
-\foreach \j/\y in {1/3.6, 2/2.2, 3/0.8, 4/-0.6} \node[hid] (h\j) at (5.6,\y) {};
-\node[outn] (o1) at (9.6,2.2) {};
-\node[outn] (o2) at (9.6,0.8) {};
-\node[font=\large\bfseries, text=result, anchor=west] at (10.25,2.2) {go};
-\node[font=\large\bfseries, text=result, anchor=west] at (10.25,0.8) {stay home};
+\node[inp] (i1) at (0,2.9) {Strength \textbf{4}};
+\node[inp] (i2) at (0,0.5) {Magic \textbf{2}};
+\foreach \j/\y in {1/3.6, 2/1.7, 3/-0.2} \node[hid] (h\j) at (5.4,\y) {};
+\node[outn] (o1) at (9.4,2.5) {};
+\node[outn] (o2) at (9.4,0.9) {};
+\node[font=\large\bfseries, text=result, anchor=west] at (10.05,2.5) {Fighter};
+\node[font=\large\bfseries, text=result, anchor=west] at (10.05,0.9) {Wizard};
 
 % every line is a weight
 \begin{scope}[on background layer]
-  \foreach \i in {1,2,3} \foreach \j in {2,3,4} \draw[wire] (i\i.east) -- (h\j);
-  \foreach \j in {1,...,4} \foreach \k in {1,2} \draw[wire] (h\j) -- (o\k);
-  \draw[hot] (i1.east) -- (h1); \draw[hot] (i2.east) -- (h1); \draw[hot] (i3.east) -- (h1);
+  \foreach \i in {1,2} \foreach \j in {2,3} \draw[wire] (i\i.east) -- (h\j);
+  \foreach \j in {1,2,3} \foreach \k in {1,2} \draw[wire] (h\j) -- (o\k);
+  \draw[hot] (i1.east) -- (h1); \draw[hot] (i2.east) -- (h1);
 \end{scope}
-\node[wt] at ($(i1.east)!0.3!(h1)$) {$\times$ 2};
-\node[wt] at ($(i2.east)!0.3!(h1)$) {$\times$ 3};
-\node[wt] at ($(i3.east)!0.3!(h1)$) {$\times$ 1};
-\node[font=\small\bfseries, text=machine, align=center, anchor=south] at (5.6,4.15) {one neuron, like the one above:\\multiply, add, compare};
+\node[wt] at ($(i1.east)!0.45!(h1)$) {$\times$ 1};
+\node[wt] at ($(i2.east)!0.4!(h1)$) {$\times$ $-1$};
+\node[font=\small\bfseries, text=machine, align=center, anchor=south] at (5.4,4.15) {one neuron, like the one above:\\multiply, add, compare};
 
 % point at one plain line
-\coordinate (w) at ($(h4)!0.5!(o2)$);
-\draw[ink, line width=0.9pt, -{Stealth[length=6pt]}] (8.4,-1.0) node[anchor=north, font=\small\bfseries, text=ink] {each line is a weight} -- (w);
+\coordinate (w) at ($(h3)!0.5!(o2)$);
+\draw[ink, line width=0.9pt, -{Stealth[length=6pt]}] (8.3,-1.0) node[anchor=north, font=\small\bfseries, text=ink] {each line is a weight} -- (w);
 
 % the layers
-\foreach \x/\c/\s in {0/input layer/the numbers\\go in, 5.6/hidden layer/its answers go\\to the next layer, 9.6/output layer/one neuron\\for each answer} {
+\foreach \x/\c/\s in {0/input layer/the numbers\\go in, 5.4/hidden layer/its answers go\\to the next layer, 9.4/output layer/one neuron\\for each answer} {
   \node[laycap] at (\x,-2.05) {\c};
   \node[laysub] at (\x,-2.35) {\s};
 }

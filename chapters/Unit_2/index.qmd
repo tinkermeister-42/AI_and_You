@@ -32,13 +32,13 @@ Catch a falling ruler, pass a squeeze around the room, and learn how a neuron se
 Write with your other hand, meet Pavlov's dogs, and graph your own learning with mirror drawing.
 
 [**The Artificial Neuron**](2.4_The_Artificial_Neuron.qmd)\
-Multiply, add, compare. The class acts out a neuron that adds up signals and decides to fire.
+Multiply, add, compare. The class fixes a neuron's weights by hand until it tells Fighters from Wizards.
 
 [**Train a Human Neural Network**](2.5_Train_a_Human_Neural_Network.qmd)\
-The class becomes a neuron that starts with the wrong idea, then fixes its weights after every mistake.
+The class becomes a network with a hidden layer. It starts with bad weights and learns by fixing its own mistakes.
 
-[**Watch Your Teacher Build an AI**](2.6_Watch_Your_Teacher_Build_an_AI.qmd)\
-Six steps to build an AI. Predict, then watch a real neural network learn from 1,281 Pokémon.
+[**Build a Real AI**](2.6_Build_a_Real_AI.qmd)\
+Six steps to build an AI. Train a real neural network on 300 creatures, and watch its weights change.
 
 [**Train Your Own AI**](2.7_Train_Your_Own_AI.qmd)\
 Teach Teachable Machine your own hand signs. Then try to fool it.

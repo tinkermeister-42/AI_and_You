@@ -1,29 +1,21 @@
 \documentclass[11pt]{article}
 \input{../preamble}
-\renewcommand{\arraystretch}{1.5}
+\renewcommand{\arraystretch}{1.45}
 
 \begin{document}
 
 \lessontitle{The Artificial Neuron}
 \partner
 
+\wordbank[You can use a word more than once.]{\wb{adds}\wb{compares}\wb{Fighter}\wb{multiplies}\wb{Wizard}}
 
-\wordbank{\wb{adds}\wb{compares}\wb{multiplies}}
-\vspace{0.4em}
-{\large\textbf{1. Should I go?}} Answer 1 (yes) or 0 (no). Then choose how much each one matters to you (0 to 3).
+{\large\textbf{1. Fighter or Wizard?}} These creatures are made up.
 
 \vspace{0.3em}
-\begin{tabular}{|R{2.1in}|c|c|c|}
-\hline
- & \textbf{Answer (1 or 0)} & \textbf{How much it matters} & \textbf{Answer $\times$ how much} \\ \hline
-Is it sunny? & \ans{Answers vary.} & & \\ \hline
-Are my friends going? & & & \\ \hline
-Is my homework done? & & & \\ \hline
-\multicolumn{3}{|r|}{\textbf{Total}} & \\ \hline
-\end{tabular}
+Krellis: Strength 4, Magic 2. It's a \ansline{0.9in}{Fighter}. \qquad Lullom: Strength 2, Magic 4. It's a \ansline{0.9in}{Wizard}.
 
 \vspace{0.6em}
-Is the total 4 or more? \ansline{0.7in}{} \quad Do I go? \ansline{0.7in}{} \quad Did my partner decide the same? \ansline{0.7in}{}
+The rule I used: \ansline{5.3in}{Answers vary. (More Strength than Magic: Fighter.)}
 
 \vspace{1.0em}
 {\large\textbf{2. Multiply, add, compare.}}
@@ -31,30 +23,45 @@ Is the total 4 or more? \ansline{0.7in}{} \quad Do I go? \ansline{0.7in}{} \quad
 \vspace{0.4em}
 An artificial neuron \ansline{1.1in}{multiplies} each input by its weight, \ansline{0.8in}{adds} them up, and \ansline{1.1in}{compares} the total with the threshold.
 
-\vspace{0.9em}
-Inputs: 1, 0, 1. \quad Weights: 3, 2, $-1$. \quad Threshold: 2.
+\vspace{0.8em}
+Strength 5, Magic 2. \quad Weights: Strength 1, Magic $-1$. \quad Threshold: 0. \quad More than the threshold: Fighter.
 
 \vspace{0.5em}
-Total $= (1 \times 3) + (0 \times 2) + (1 \times -1) =$ \ansline{0.9in}{$2$} \quad Does it fire (2 or more)? \ansline{0.8in}{yes}
+Total $= (5 \times 1) + (2 \times -1) =$ \ansline{1.0in}{$5 - 2 = 3$} \quad Fighter or Wizard? \ansline{0.9in}{Fighter}
 
-\vspace{0.9em}
-Inputs: 1, 1, 1. \quad Weights: 1, $-2$, $-1$. \quad Threshold: 2.
+\vspace{0.8em}
+Strength 2, Magic 3. \quad Weights: Strength 2, Magic $-1$. \quad Threshold: 2.
 
 \vspace{0.5em}
-Total $=$ \ansline{2.4in}{$1 - 2 - 1 = -2$} \quad Does it fire? \ansline{0.8in}{no}
+Total $=$ \ansline{2.2in}{$(2 \times 2) + (3 \times -1) = 4 - 3 = 1$} \quad Fighter or Wizard? \ansline{0.9in}{Wizard}
 
 \vspace{1.0em}
-{\large\textbf{3. Be a neuron.}} Weights: \textbf{A: $+2$}, \textbf{B: $+2$}, \textbf{C: $-1$}. Threshold: \textbf{3 or more}.
+{\large\textbf{3. Find the weights.}} Write every try. Change one number at a time.
 
 \vspace{0.3em}
-\begin{tabular}{|c|R{1.6in}|c|c|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline
-\textbf{Round} & \textbf{Inputs that are on} & \textbf{Total} & \textbf{Fire?} \\ \hline
-1 & A and B & \ans{4} & \ans{yes} \\ \hline
-2 & A and C & \ans{1} & \ans{no} \\ \hline
-3 & A, B, and C & \ans{3} & \ans{yes} \\ \hline
-4 & B and C & \ans{1} & \ans{no} \\ \hline
-5 & A only & \ans{2} & \ans{no} \\ \hline
+\textbf{Try} & \textbf{Strength weight} & \textbf{Magic weight} & \textbf{Threshold} & \textbf{Cards right (of 6)} \\ \hline
+Start & 1 & 1 & 5 & \ans{2} \\ \hline
+2 & & & & \\ \hline
+3 & & & & \\ \hline
+4 & & & & \\ \hline
+5 & & & & \\ \hline
+\end{tabular}
+
+\vspace{0.6em}
+Our weights that got 6 of 6: \quad Strength \ansline{0.5in}{1} \quad Magic \ansline{0.5in}{$-1$} \quad Threshold \ansline{0.5in}{0} \quad \ifkey\textcolor{keyred}{(one answer)}\fi
+
+\vspace{0.5em}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Card} & \textbf{Strength} & \textbf{Magic} & \textbf{Total} & \textbf{Neuron says} & \textbf{Really} \\ \hline
+1 Krellis & 4 & 2 & \ans{2} & \ans{Fighter} & Fighter \\ \hline
+2 Lullom & 2 & 4 & \ans{$-2$} & \ans{Wizard} & Wizard \\ \hline
+3 Rezivil & 5 & 2 & \ans{3} & \ans{Fighter} & Fighter \\ \hline
+4 Pona & 1 & 5 & \ans{$-4$} & \ans{Wizard} & Wizard \\ \hline
+5 Sandam & 3 & 2 & \ans{1} & \ans{Fighter} & Fighter \\ \hline
+6 Skabil & 3 & 4 & \ans{$-1$} & \ans{Wizard} & Wizard \\ \hline
 \end{tabular}
 
 \newpage
@@ -81,11 +88,15 @@ Fires only if the total is big enough & \ans{threshold} \\ \hline
   nin/.style={circle, draw=person, fill=person!12, line width=1.1pt, minimum size=0.6cm},
   nhid/.style={circle, draw=machine, fill=machine!12, line width=1.1pt, minimum size=0.6cm},
   nout/.style={circle, draw=result, fill=result!12, line width=1.1pt, minimum size=0.6cm}]
-  \foreach \i/\y in {1/2.5, 2/1.5, 3/0.5} \node[nin] (a\i) at (0,\y) {};
-  \foreach \j/\y in {1/3, 2/2, 3/1, 4/0} \node[nhid] (b\j) at (4.5,\y) {};
-  \foreach \k/\y in {1/2, 2/1} \node[nout] (c\k) at (9,\y) {};
-  \foreach \i in {1,2,3} \foreach \j in {1,...,4} \draw[ink!45, line width=0.7pt] (a\i) -- (b\j);
-  \foreach \j in {1,...,4} \foreach \k in {1,2} \draw[ink!45, line width=0.7pt] (b\j) -- (c\k);
+  \foreach \i/\y in {1/2.2, 2/0.8} \node[nin] (a\i) at (0,\y) {};
+  \foreach \j/\y in {1/3, 2/1.5, 3/0} \node[nhid] (b\j) at (4.5,\y) {};
+  \foreach \k/\y in {1/2.2, 2/0.8} \node[nout] (c\k) at (9,\y) {};
+  \foreach \i in {1,2} \foreach \j in {1,2,3} \draw[ink!45, line width=0.7pt] (a\i) -- (b\j);
+  \foreach \j in {1,2,3} \foreach \k in {1,2} \draw[ink!45, line width=0.7pt] (b\j) -- (c\k);
+  \node[anchor=east, font=\small] at (-0.45,2.2) {Strength};
+  \node[anchor=east, font=\small] at (-0.45,0.8) {Magic};
+  \node[anchor=west, font=\small] at (9.45,2.2) {Fighter};
+  \node[anchor=west, font=\small] at (9.45,0.8) {Wizard};
   \node[anchor=north] at (0,-0.4) {\ansline{0.9in}{input} layer};
   \node[anchor=north] at (4.5,-0.4) {\ansline{0.9in}{hidden} layer};
   \node[anchor=north] at (9,-0.4) {\ansline{0.9in}{output} layer};
@@ -93,51 +104,29 @@ Fires only if the total is big enough & \ans{threshold} \\ \hline
 \end{center}
 
 \vspace{0.3em}
-Each line is a \ansline{0.9in}{weight}. \quad How many lines? \quad $3 \times 4 + 4 \times 2 =$ \ansline{0.7in}{$20$}
+Each line is a \ansline{0.9in}{weight}. \quad How many lines? \quad $2 \times 3 + 3 \times 2 =$ \ansline{0.7in}{$12$}
 
 \vspace{0.8em}
 Why is the middle layer called hidden? \ansline{3.6in}{You don't see what those neurons decide.}
 
 \vspace{1.0em}
-{\large\textbf{6. Talk about it.}} ChatGPT has billions of weights. Nobody can choose them by hand.
+{\large\textbf{6. Talk about it.}}
 
-\vspace{0.6em}
+\vspace{0.4em}
+We fixed the weights by \ansline{4.9in}{Answers vary. (Testing the cards and changing one number at a time.)}
+
+\vspace{0.8em}
 I think an AI with billions of weights gets them by \ansline{3.4in}{Answers vary. (Next lesson: it learns them.)}
-
-\vspace{0.9em}
-\blank{6.9in}
 
 \vspace{1.4em}
 \hrule
 \vspace{0.8em}
-{\large\textbf{Go Further (Day 2).}} A neuron that sees. Write the weights that got the most test pictures right.
+{\large\textbf{Go Further (Day 2).}} Test your neuron on all 140 Fighters and Wizards.
 
-\vspace{0.5em}
-\begin{center}
-\begin{tikzpicture}[x=1.5cm, y=1.5cm]
-  \foreach \i in {0,...,3} { \draw[line width=1.2pt] (\i,0) -- (\i,3); \draw[line width=1.2pt] (0,\i) -- (3,\i); }
-  \ifkey
-    \foreach \x/\y/\w in {0/2/0, 1/2/{$-1$}, 2/2/0, 0/1/{$-1$}, 1/1/{$+3$}, 2/1/{$-1$}, 0/0/0, 1/0/{$-1$}, 2/0/0}
-      \node[keyred, font=\Large\bfseries] at (\x+0.5,\y+0.5) {\w};
-  \fi
-\end{tikzpicture}
-\qquad
-\begin{minipage}[b]{3in}
-Threshold: \ansline{0.8in}{0}
+\vspace{0.6em}
+Our class's neuron: \ansline{0.6in}{88} \% right. \qquad My best: \ansline{0.6in}{88} \% with weights \ansline{0.4in}{1} \ansline{0.4in}{$-1$} \ansline{0.4in}{0}
 
 \vspace{0.8em}
-Test pictures right: \ansline{0.6in}{6} out of 6
+Can any line get all 140 right? \ansline{0.5in}{no} Why? \ansline{3.6in}{Some Fighters have high Magic. Some Wizards are strong.}
 
-\vspace{0.8em}
-\ifkey\textcolor{keyred}{One good answer. Others work too.}\fi
-\end{minipage}
-\end{center}
-
-\vspace{0.8em}
-Which squares got \textbf{positive} weights? Why? \ansline{3.4in}{The center: it's black in an X, not in an O.}
-
-\vspace{0.9em}
-Which squares got \textbf{negative} weights? Why? \ansline{3.3in}{The sides: they're black in an O, not in an X.}
-
-\vspace{1.1em}
 \end{document}

@@ -1,8 +1,6 @@
 # 2.7 - Train Your Own AI {.unnumbered}
 
-Until now, someone else trained the AI: the class, or your teacher.
-
-Today, **you** train an AI to recognize hand signs, with your camera, in about 10 minutes. No code. No account.
+In Lesson 2.6, you trained a network on numbers. Today, **you** train an AI to see. It learns to recognize Rock, Paper, and Scissors hand signs, with your camera, in about 10 minutes. No code. No account.
 
 Then you try to fool it. That's the most important part.
 
@@ -37,7 +35,7 @@ Then you try to fool it. That's the most important part.
 
 You can train an AI to tell apart any pictures your camera can see. What would you teach it? Write two ideas on your sheet.
 
-Examples: rock and paper. Thumbs up and thumbs down. A pen and a pencil. A cup and a book.
+Examples: rock, paper, and scissors. Thumbs up and thumbs down. A pen and a pencil. A cup and a book.
 
 {{< learn >}}
 
@@ -66,7 +64,7 @@ Work in a group of **2 or 3**, with one computer that has a camera.
 
 :::{.steps}
 1. Open [Teachable Machine](https://teachablemachine.withgoogle.com/train/image){target="_blank"}. Choose **Standard image model**.
-2. Rename **Class 1** to "Rock" and **Class 2** to "Paper."
+2. Rename **Class 1** to "Rock" and **Class 2** to "Paper." Press **Add a class** and name it "Scissors."
 3. For each class, press **Webcam**. Make the hand sign. **Hold to Record** about **50 pictures**. Move your hand a little while you record.
 4. Press **Train Model**. Wait. Don't switch to another tab while it trains.
 5. In **Preview**, make each sign. Watch the bars. Is your AI right?
@@ -104,14 +102,13 @@ Your AI worked well for **you**. Would it work for everyone? Who was **missing**
 {{< further >}}
 
 :::{.project title="Day 2: Make It Harder to Fool"}
-Open Teachable Machine again with your partner. Train Rock and Paper like yesterday.
+Open Teachable Machine again with your partner. Train Rock, Paper, and Scissors like yesterday.
 
-1. Press **Add a class** and name it "Scissors." Record about 50 pictures.
-2. Try two new tricks. Change the **background**: hold up a book or a poster. Then make the sign with a **glove** or a sock on your hand.
-3. Now make your AI harder to fool. Add more **kinds** of examples: both hands, different people, near and far, different light. Train again.
-4. Test all the tricks again. Did your AI get better? Write what changed on your sheet.
-5. **Class model:** train one model with pictures from **everyone**. Test it on a teacher who wasn't in the pictures. Is it better than a one-person model?
-6. Train a new model on one of your Warm Up ideas. Then try to fool it.
+1. Try two new tricks. Change the **background**: hold up a book or a poster. Then make the sign with a **glove** or a sock on your hand.
+2. Now make your AI harder to fool. Add more **kinds** of examples: both hands, different people, near and far, different light. Train again.
+3. Test all the tricks again. Did your AI get better? Write what changed on your sheet.
+4. **Class model:** train one model with pictures from **everyone**. Test it on a teacher who wasn't in the pictures. Is it better than a one-person model?
+5. Train a new model on one of your Warm Up ideas. Then try to fool it.
 :::
 
 :::{.project title="Hello in Three Languages"}

@@ -70,6 +70,18 @@ The long part of a neuron that carries the signal away from the cell body, towar
 
 ***
 
+### backpropagation {#glossary-backpropagation}
+
+How real neural networks learn. After a mistake, the computer works out how much each weight caused it. The blame goes back through the layers, from the answer to the inputs. Then every weight changes a little.
+
+> **Example:**
+>
+> In Lesson 2.5, the class played Who's to Blame? by hand. Backpropagation does the same job for billions of weights.
+
+**See Also:** {{< glink training >}}, {{< glink layer >}}, {{< glink weight >}}
+
+***
+
 ### back translation {#glossary-back-translation}
 
 Translating a translation back to the first language, to check it. If the meaning changed, something went wrong.
@@ -84,25 +96,13 @@ Translating a translation back to the first language, to check it. If the meanin
 
 ### bias {#glossary-bias}
 
-When a system is unfair to some people, or works better for some people than for others. In AI, bias usually comes from the training data, from people missing in the data, or from shortcuts. (A different meaning: {{< glink slug="bias-number" text="bias, a number in a neuron" >}}.)
+When a system is unfair to some people, or works better for some people than for others. In AI, bias usually comes from the training data, from people missing in the data, or from shortcuts.
 
 > **Example:**
 >
 > A face program that's right 99% of the time for some faces and 65% of the time for others is biased.
 
 **See Also:** {{< glink stereotype >}}, {{< glink shortcut >}}
-
-***
-
-### bias (a number in a neuron) {#glossary-bias-number}
-
-In a neuron, an extra number that's always added to the total. It does the same job as a threshold. (The word "bias" has another meaning too: being unfair. See Unit 4.)
-
-> **Example:**
->
-> total = (A × Attack weight) + (S × Special weight) + bias
-
-**See Also:** {{< glink weight >}}, {{< glink threshold >}}
 
 ***
 
@@ -638,7 +638,7 @@ Something that's the same, or repeats, in many examples.
 
 ### perceptron {#glossary-perceptron}
 
-The first artificial neuron that could learn. Frank Rosenblatt built it in 1958. It multiplies inputs by weights, adds them, and fires if the total passes a threshold.
+The first artificial neuron that could learn. Frank Rosenblatt built it in 1958. It multiplies inputs by weights, adds them, and fires if the total is more than a threshold.
 
 **See Also:** {{< glink weight >}}, {{< glink threshold >}}, {{< glink "neural network" >}}
 
@@ -868,11 +868,11 @@ New examples that an AI never saw during training. We use them to check what the
 
 ### threshold {#glossary-threshold}
 
-The number that the total must pass for a neuron to fire.
+The number that the total must be more than for a neuron to fire.
 
 > **Example:**
 >
-> If the threshold is 4 and the total is 5, the neuron fires.
+> If the threshold is 4 and the total is 5, the neuron fires. If the total is 4, it doesn't.
 
 **See Also:** {{< glink weight >}}
 

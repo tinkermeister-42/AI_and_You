@@ -6,21 +6,21 @@ In 1943, two scientists, Warren McCulloch and Walter Pitts, wrote this idea as *
 
 ![The Mark I Perceptron, around 1960. Its camera has 400 light sensors. Here it looks at a letter C. The panels behind it hold its connections and their weights. (U.S. Navy photo, public domain)](/images/Unit_2/2.4_mark1_perceptron.jpg){width="560px" fig-align="center" fig-alt="An old photo. A man in a white shirt and tie adjusts a camera on a stand. Two lamps light a large white letter C on a black board in front of the camera. Tall panels full of wires and dials stand behind him."}
 
-That simple idea is the building block of every neural network today. Today, the class becomes one.
+That simple idea is the building block of every neural network today. Today, you'll build one by hand.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
 
-- [🔥]{.icon} **Warm Up** Should I go? [7 min]{.time}
+- [🔥]{.icon} **Warm Up** Fighter or Wizard? [7 min]{.time}
 - [👥]{.icon} **Learn Together** One neuron, then a network [13 min]{.time}
-- [🛠️]{.icon} **Try It** Be a neuron [14 min]{.time}
+- [🛠️]{.icon} **Try It** Find the weights [14 min]{.time}
 - [💬]{.icon} **Talk About It** Who picks the weights? [6 min]{.time}
 :::
 
 :::{.objectives}
 - [ ] I can explain inputs, weights, and a threshold.
 - [ ] I can calculate what an artificial neuron decides.
-- [ ] I can compare an artificial neuron with a real neuron.
+- [ ] I can change the weights to fix a neuron's mistakes.
 - [ ] I can name the layers of a neural network.
 :::
 
@@ -28,7 +28,7 @@ That simple idea is the building block of every neural network today. Today, the
 :::{.word-cards}
 - [📥]{.icon} {{< glink input >}}: a number that goes into a neuron
 - [⚖️]{.icon} {{< glink weight >}}: a number that says how much an input matters
-- [🚦]{.icon} {{< glink threshold >}}: the number the total must pass for the neuron to fire
+- [🚦]{.icon} {{< glink threshold >}}: the number the total must be more than for the neuron to fire
 - [🔵]{.icon} {{< glink perceptron >}}: the first artificial neuron that could learn (1958)
 - [🧱]{.icon} {{< glink layer >}}: a row of neurons in a neural network. Each layer sends its answers to the next one
 :::
@@ -38,24 +38,31 @@ That simple idea is the building block of every neural network today. Today, the
 [Printable lesson sheet](/handouts/Unit_2/2.4_The_Artificial_Neuron.pdf){target="_blank"} - the sheet you write on today.
 :::
 
+:::{.guided-notes-link}
+[Creature cards](/handouts/Unit_2/2.4_Creature_Cards.pdf){target="_blank"}: print one set for the class.
+:::
+
+:::{.teacher title="Before class"}
+Print and cut one set of creature cards. Fold each card so the type is hidden.
+
+The creatures are made up, from a recipe in `scripts/make-creatures.py`: Fighters have high Strength and low Magic, Wizards the opposite, with some overlap. The same 300 creatures are used in 2.4, 2.5, and 2.6, so the class can compare what each network learns with the real recipe (Explore More, Unit 2).
+:::
+
 {{< warmup >}}
 
-Your friends invite you to play soccer after school. Should you go? Three things matter:
+These cards are for made-up creatures. Each card shows two numbers, as stars: **Strength** (how hard it hits) and **Magic**.
 
-| Question | Answer: 1 = yes, 0 = no | How much does it matter to you? (0 to 3) |
+| Card | Strength | Magic |
 |---|:---:|:---:|
-| Is it sunny? | | |
-| Are my friends going? | | |
-| Is my homework done? | | |
+| **Krellis** | ★★★★☆ (4) | ★★☆☆☆ (2) |
+| **Lullom** | ★★☆☆☆ (2) | ★★★★☆ (4) |
 
-1. Fill in the table on your sheet. **You** decide how much each thing matters.
-2. Multiply each answer by how much it matters. Add them up.
-3. If the total is **4 or more**, you go!
+One is a **Fighter**. One is a **Wizard**. Which is which? Tell a partner why.
 
-Compare with a partner. You had the same answers (1 or 0). Did you make the same decision?
+:::{.think title="Answer"}
+Krellis is the **Fighter**: more Strength than Magic. Lullom is the **Wizard**: more Magic than Strength.
 
-:::{.think title="Why did partners make different decisions?"}
-Because you chose different numbers for **how much it matters**. Those numbers are called **weights**. The weights decide everything.
+You used a rule in your head: *compare the two numbers.* Today, you'll build a neuron that uses a rule like that.
 :::
 
 {{< learn >}}
@@ -64,22 +71,22 @@ Because you chose different numbers for **how much it matters**. Those numbers a
 
 An artificial neuron does three things:
 
-![](/images/Unit_2/2.4_artificial_neuron.svg){width="720px" fig-align="center" fig-alt="Three inputs: Sunny 1, Friends going 1, Homework done 0. Each is multiplied by a weight: 2, 3, and 1. The neuron adds them up: 2 plus 3 plus 0 is 5. Is it 4 or more? Yes. Output: go."}
+![](/images/Unit_2/2.4_artificial_neuron.svg){width="720px" fig-align="center" fig-alt="Two inputs from a card: Strength 4 stars and Magic 2 stars. Strength is multiplied by 1. Magic is multiplied by minus 1. The neuron adds them up: 4 minus 2 is 2. Is it more than 0? Yes. Output: Fighter."}
 
 1. **Multiply** each {{< glink input >}} by its {{< glink weight >}}.
 2. **Add** them up.
-3. **Compare** the total with the {{< glink threshold >}}. If the total is big enough, the neuron fires: **YES**. If not: **NO**.
+3. **Compare** the total with the {{< glink threshold >}}. If the total is **more than** the threshold, the neuron fires: **Fighter**. If not: **Wizard**.
 
-$$\text{total} = (\text{input}_1 \times \text{weight}_1) + (\text{input}_2 \times \text{weight}_2) + (\text{input}_3 \times \text{weight}_3)$$
+$$\text{total} = (\text{Strength} \times \text{Strength weight}) + (\text{Magic} \times \text{Magic weight})$$
 
-A weight can be **negative**. A negative weight says: *this input makes me LESS likely to fire.*
+A weight can be **negative**. Here the Magic weight is $-1$. It says: *more Magic makes me LESS likely to say Fighter.*
 
 | Real neuron | Artificial neuron |
 |---|---|
 | Dendrites take signals in | Inputs |
 | Strong or weak synapses | Weights |
 | The cell body adds up the signals | Add up input × weight |
-| Fires only if the total is big enough | Fires only if the total passes the threshold |
+| Fires only if the total is big enough | Fires only if the total is more than the threshold |
 
 :::{.remember}
 An artificial neuron is only **multiply, add, compare**. That's all. A neural network is many of these, connected together.
@@ -89,39 +96,53 @@ An artificial neuron is only **multiply, add, compare**. That's all. A neural ne
 
 One neuron makes one small decision. A {{< glink "neural network" >}} connects many neurons. They're arranged in rows called {{< glink slug="layer" text="layers" >}}.
 
-![](/images/Unit_2/2.4_network.svg){width="720px" fig-align="center" fig-alt="A small neural network. On the left, three inputs: Sunny 1, Friends going 1, Homework done 0. In the middle, a column of four neurons. On the right, two neurons: go and stay home. Lines connect every input to every middle neuron, and every middle neuron to both right neurons. The top middle neuron's three lines are highlighted with weights times 2, times 3, and times 1. It's labeled: one neuron, like the one above: multiply, add, compare. A note says each line is a weight. Labels under the columns: input layer, the numbers go in. Hidden layer, its answers go to the next layer. Output layer, one neuron for each answer."}
+![](/images/Unit_2/2.4_network.svg){width="720px" fig-align="center" fig-alt="A small neural network. On the left, two inputs: Strength 4 and Magic 2. In the middle, a column of three neurons. On the right, two neurons: Fighter and Wizard. Lines connect every input to every middle neuron, and every middle neuron to both right neurons. The top middle neuron's two lines are highlighted with weights times 1 and times minus 1. It's labeled: one neuron, like the one above: multiply, add, compare. A note says each line is a weight. Labels under the columns: input layer, the numbers go in. Hidden layer, its answers go to the next layer. Output layer, one neuron for each answer."}
 
-1. The **input layer** holds the numbers that go in. Here, they're the three answers from the warm-up.
-2. Every neuron in the **hidden layer** gets every input. Each one multiplies, adds, and compares, like the neuron above. Each one has its **own** weights. Its answer isn't "go" or "stay". Its answer goes to the next layer as an input.
+1. The **input layer** holds the numbers that go in. Here, they're the two numbers from a card.
+2. Every neuron in the **hidden layer** gets every input. Each one multiplies, adds, and compares, like the neuron above. Each one has its **own** weights. Its answer isn't "Fighter" or "Wizard". Its answer goes to the next layer as an input.
 3. The **output layer** gives the answer. There's one neuron for each possible answer. The one with the biggest total wins.
 
-Every line is a **weight**. Count them: $3 \times 4 + 4 \times 2 = 20$ weights. The chatbots you use have **billions** of weights and many hidden layers.
+Every line is a **weight**. Count them: $2 \times 3 + 3 \times 2 = 12$ weights. The chatbots you use have **billions** of weights and many hidden layers.
 
 :::{.think title="Why is it called hidden?"}
-You see the numbers that go in and the answer that comes out. You don't see what the middle neurons decide. Nobody tells them what to look for, either. They find it while the network learns. (Lesson 2.5 shows how.)
+You see the numbers that go in and the answer that comes out. You don't see what the middle neurons decide. Nobody tells them what to look for, either. They find it while the network learns. In Lesson 2.5, the class becomes a network and watches this happen.
 :::
 
 {{< tryit >}}
 
-### 2.4.3 - Be a Neuron
+### 2.4.3 - Find the Weights
+
+Your teacher writes a neuron on the board. Its numbers are **wrong**. Your job is to fix them.
 
 :::{.steps}
-1. One person is the **neuron**. The neuron gets a **threshold** card: 3.
-2. Three people are **inputs**: **A**, **B**, and **C**. Their weight cards are **A: +2**, **B: +2**, and **C: −1**.
-3. Your teacher calls out who is "on" (the rounds are on your sheet). The inputs that are on hold up their cards.
-4. The neuron adds the cards that are up. If the total is **3 or more**, the neuron stands up (fires)!
-5. Do 5 rounds. Then switch jobs.
+1. The neuron starts with **Strength weight 1**, **Magic weight 1**, and **threshold 5**.
+2. Each group gets one or two creature cards. Keep the type folded under.
+3. Calculate the total for your card. Is it more than the threshold? Say "Fighter" or "Wizard" out loud. Then unfold the card. Right or wrong?
+4. Count the right answers on the board.
+5. As a class, change **one** number. Look at the wrong cards first. Should a weight go up or down? Then test every card again.
+6. Keep going until all 6 cards are right. Write your weights on your sheet.
 :::
 
-:::{.teacher title="Class size"}
-**4 students:** one neuron and three inputs. **More students:** make two or three neurons. Then connect them: the neurons' answers become the inputs for one more neuron. That's a **network** with one hidden layer, like the picture in 2.4.2.
+:::{.teacher title="Class size and hints"}
+**4 students:** each student takes one or two cards. **More students:** groups of 2 or 3, one card each. Extra students keep score and write the numbers on the board. **Big class:** two teams fix their own neuron. Who gets 6 of 6 first?
+
+**If the class is stuck:** "Lullom has more Magic. Which weight should push its total down?" One answer that works: Strength weight 1, Magic weight $-1$, threshold 0. Many others work too. The starting numbers get 2 of 6 right.
+:::
+
+Check your class's weights here. Change the numbers and watch the line move.
+
+{{< include /assets/Unit_2/neuron_weights.html >}}
+
+:::{.think title="Look at the graph. What does the neuron's rule look like?"}
+It's **one straight line**. The neuron says Fighter on one side and Wizard on the other. Every set of weights makes a line. Changing a weight turns or moves the line.
 :::
 
 {{< talk >}}
 
-Today, **you** chose every weight. But ChatGPT has billions of weights. Nobody can choose them by hand.
+Your class picked **3 numbers**, and it took a while. The network in 2.4.2 has 12. A chatbot has **billions**. Nobody can choose them by hand.
 
 :::{.frames}
+- We fixed the weights by ...
 - An artificial neuron is like a real neuron because ...
 - An artificial neuron is different from a real neuron because ...
 - I think an AI with billions of weights gets them by ...
@@ -129,29 +150,23 @@ Today, **you** chose every weight. But ChatGPT has billions of weights. Nobody c
 
 {{< further >}}
 
-:::{.project title="Day 2: Build a Neuron That Sees"}
-This neuron looks at a 3 by 3 picture. Each square is an input: **1** if it's black, **0** if it's white. Each square has its own **weight**. The neuron says **X** if the total is more than the threshold. Otherwise it says **O**. Work with a partner.
+:::{.project title="Day 2: Test Your Neuron on 140 Creatures"}
+The data has 140 Fighters and Wizards. Your class's neuron only saw 6 of them. Work with a partner.
 
-1. Draw an X. All the weights are 0. What does the neuron say? Why?
-2. Change the weights with **+** and **−**. Try to get **6 out of 6** right on the test pictures.
-3. Write your weights on your sheet.
-4. Stuck? Ask: which squares are black in an X but white in an O?
+1. Put your class's weights into the tool in 2.4.3.
+2. Press **Test on all 140 Fighters and Wizards**. Write the score on your sheet.
+3. Try to beat it. Change the numbers. What's your best score?
+4. Look at the graph. Can **any** line get all 140 right? Why not?
 :::
 
-{{< include /assets/Unit_2/xo_neuron.html >}}
-
-:::{.think title="Look at your weights. Do they make a picture?"}
-They often do! Squares that are **only black in an X** (like the center) get **positive** weights. Squares that are **only black in an O** (like the sides) get **negative** weights. The weights are a picture of what the neuron is looking for.
+:::{.think title="Why can't one line get 100%?"}
+A few Fighters have as much Magic as a Wizard. A few Wizards are strong. They land on the wrong side of every line. The best line gets about **88%** right.
 :::
 
 :::{.project title="My Decision Neuron"}
 Make a neuron for a decision in your life: what to eat, what to watch, whether to go out. Pick 4 inputs and give each a weight. Test it on 5 days from last week. Does it decide what you really did?
 :::
 
-:::{.project title="A Neuron for a Letter"}
-Make the picture bigger in your head: 5 by 5 squares. On grid paper, choose weights that tell a **T** from an **L**. Test your weights on a partner's T and L.
-:::
-
 :::{.explore-link}
-🔭 **Explore More:** [the first neuron machine, and the problem one neuron can't solve](/chapters/Explore/explore-unit-2.qmd#explore-2-4). Read it on your own, if you want to learn more.
+🔭 **Explore More:** [the first neuron machine, and a neuron that sees](/chapters/Explore/explore-unit-2.qmd#explore-2-4). Read it on your own, if you want to learn more.
 :::

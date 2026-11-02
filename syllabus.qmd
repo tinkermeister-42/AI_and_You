@@ -47,7 +47,7 @@ The story of AI, from Alan Turing's question "Can machines think?" to ChatGPT. Y
 
 ### Unit 2: Brains and Neural Networks
 
-How simple rules make complex behavior, how brain cells work, and how computer scientists copied the idea. You become a neuron, then the class trains a neural network made of people, using Pokémon cards. You watch your teacher build a real AI. You train your own AI with a camera. You see how AI sees pictures and how chatbots write.
+How simple rules make complex behavior, how brain cells work, and how computer scientists copied the idea. You become a neuron, then the class trains a neural network made of people, using cards for made-up creatures. You build and train a real AI on a computer. You train your own AI with a camera. You see how AI sees pictures and how chatbots write.
 
 ### Unit 3: Using AI Well
 
