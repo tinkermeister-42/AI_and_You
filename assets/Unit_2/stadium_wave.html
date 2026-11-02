@@ -1,7 +1,7 @@
 ```{=html}
 <!-- stadium_wave.html: Lesson 2.1 warm-up. A row of people who all follow one
      rule: "When the person on your left raises their hands, raise yours. Put
-     them down after one second." The wave moves down the row, but each person
+     them down quickly." The wave moves down the row, but each person
      only moves up and down: emergence. For classes too small to make a
      convincing wave themselves. -->
 <div class="sw" id="sw">
@@ -34,7 +34,8 @@
   const svg = root.querySelector(".sw-svg"), msg = root.querySelector(".sw-msg");
   const speed = root.querySelector(".sw-speed"), watch = root.querySelector(".sw-watch"), brk = root.querySelector(".sw-break");
   const NS = "http://www.w3.org/2000/svg", N = 28, GAP = 27, X0 = 30, SEAT = 118;
-  const WATCH = 11, BROKEN = 17, HOLD = 1000;   // one second up
+  const WATCH = 11, BROKEN = 17, DOWN = 140;
+  let HOLD = 560;   // time up; set from the speed so about 3 or 4 people are up at once
   const PERSON = "#2e86c1", IGNORE = "#aab7b8", INK = "#2c3e50";
   const el = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); (parent || svg).appendChild(e); return e; };
 
@@ -81,12 +82,13 @@
     if (t === null || t < 0) return 0;
     if (t < 150) return t / 150;
     if (t < HOLD) return 1;
-    if (t < HOLD + 220) return 1 - (t - HOLD) / 220;
+    if (t < HOLD + DOWN) return 1 - (t - HOLD) / DOWN;
     return 0;
   }
   function plan() {
     // each person watches only the person on their left
     const react = +speed.value;
+    HOLD = 3.5 * react;
     raisedAt = new Array(N).fill(null);
     for (let i = 0; i < N; i++) {
       if (brk.checked && i === BROKEN) break;           // this person never raises, so nobody after them does
@@ -99,7 +101,7 @@
     for (let i = 0; i < N; i++) {
       const r = raisedAt[i];
       pose(i, lift(r === null ? null : t - r));
-      if (r !== null && t - r < HOLD + 220) busy = true;
+      if (r !== null && t - r < HOLD + DOWN) busy = true;
       if (r !== null && t >= r) front = i;
     }
     if (front !== lastSeen) {

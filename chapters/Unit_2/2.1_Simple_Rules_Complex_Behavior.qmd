@@ -38,7 +38,7 @@ Your brain works a little like this. Each brain cell follows simple rules. About
 
 Watch a crowd make a wave. Every person follows **one rule**:
 
-> When the person on your left raises their hands, raise your hands. Put them down after one second.
+> When the person on your left raises their hands, raise your hands. Put them down quickly.
 
 {{< include /assets/Unit_2/stadium_wave.html >}}
 
