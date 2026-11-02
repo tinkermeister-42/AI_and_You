@@ -90,21 +90,21 @@ This matters for AI. A neural network is made of tiny parts that follow simple r
 
 ### 2.1.3 - Be Rule 30
 
-The class becomes a row of cells.
+The class becomes a row of cells. Each time the caller says "Go!", the **same** row turns into the next row.
 
 :::{.steps}
 1. Each **cell** gets a paper that's black on one side and white on the other. Stand in a row. (Small class? Put 15 papers in a row on the desks. Each person is in charge of 3 or 4 of them.)
 2. Start with **only the middle cell black**. Everyone else shows white.
-3. **Each cell:** look at your left neighbor, yourself, and your right neighbor. Find the same 3 colors on the Rule 30 card. (The ends of the row have a white neighbor outside.)
-4. The **caller** says "Ready ... Go!" Everyone shows their new color **at the same time**.
+3. **Each cell:** look at your left neighbor, yourself, and your right neighbor. Find the same 3 colors on the Rule 30 card. That's your color in the next row. Don't flip your paper yet! (The ends of the row have a white neighbor outside.)
+4. The **caller** says "Ready ... Go!" Everyone flips to their new color **at the same time**. Now the class shows the next row.
 5. The **recorder** presses **Show the next row** in the tool below. Does the class match? Everyone colors the row on their sheet too.
 6. Do at least 6 rows. Then finish 10 rows on your sheet with a partner.
 :::
 
 {{< include /assets/Unit_2/rule30_board.html >}}
 
-:::{.gotcha title="Everyone changes at the same time"}
-Decide your new color, but wait for "Go!" If you change early, your neighbors will see the wrong color.
+:::{.gotcha title="Why wait for the caller?"}
+On paper, each new row goes under the old one, so the old row is still there. Here, the class is the only row. When you flip your paper, your old color is gone. If you flip early, a neighbor who's still deciding sees your **new** color and gets the wrong answer.
 :::
 
 ### 2.1.4 - Watch the Game of Life
