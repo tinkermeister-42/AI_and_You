@@ -1,6 +1,7 @@
 ```{=html}
-<!-- mirror_draw.html: Lesson 2.3. Trace a star with a "mirror" pen: the pen
-     moves up when your hand moves down. Each try records time and mistakes,
+<!-- mirror_draw.html: Lesson 2.3. Drag a green dot around a star with a
+     "mirror" pen: the pen moves up when your hand moves down. Letting go is
+     fine: the dot stays put, and the clock only runs while you hold it. Each try records time and mistakes,
      so students can graph how practice changes their brain. On a touch screen
      a pad under the star takes the finger, so the finger never hides the star
      (like a real mirror test, where your hand is hidden). -->
@@ -13,7 +14,7 @@
     </select></label>
     <button type="button" class="md-btn md-plain md-reset">↺ Clear my tries</button>
   </div>
-  <div class="md-msg">Put the orange pen dot on the green circle. Then press and hold, and trace the star all the way around.</div>
+  <div class="md-msg">Move the orange pen onto the green dot. Press and hold to grab it, then drag it around the star.</div>
   <canvas class="md-canvas" width="480" height="480" aria-label="Mirror drawing area"></canvas>
   <div class="md-pad" aria-label="Touch pad: move your finger here and watch the star"><span>Trace here with your finger.<br>Watch the star, not your finger.</span></div>
   <table class="md-table"><thead><tr><th>Try</th><th>Pen</th><th>Time (seconds)</th><th>Mistakes</th></tr></thead><tbody></tbody></table>
@@ -37,42 +38,36 @@
 (() => {
   const root = document.getElementById("md");
   if (!root) return;
-  const cv = root.querySelector(".md-canvas");
-  const cx = cv.getContext("2d");
-  const msg = root.querySelector(".md-msg");
-  const mode = root.querySelector(".md-mode");
+  const cv = root.querySelector(".md-canvas"), cx = cv.getContext("2d");
+  const pad = root.querySelector(".md-pad");
+  const msg = root.querySelector(".md-msg"), mode = root.querySelector(".md-mode");
   const tbody = root.querySelector(".md-table tbody");
-  const W = cv.width, H = cv.height, BAND = 30, START_R = 16;
+  const W = cv.width, H = cv.height, BAND = 46, DOT_R = 15, GRAB = 26, HOME_R = 20;
 
   // a 5-point star, starting at the top point
   const P = [];
   for (let k = 0; k < 10; k++) {
-    const r = k % 2 ? 78 : 195, a = -Math.PI / 2 + (k * Math.PI) / 5;
-    P.push([W / 2 + r * Math.cos(a), H / 2 + 12 + r * Math.sin(a)]);
+    const r = k % 2 ? 78 : 195, ang = -Math.PI / 2 + (k * Math.PI) / 5;
+    P.push([W / 2 + r * Math.cos(ang), H / 2 + 12 + r * Math.sin(ang)]);
   }
-  const SEG = P.map((p, i) => [p, P[(i + 1) % 10]]);
+  const SEG = P.map((q, i) => [q, P[(i + 1) % 10]]);
+  const dist = (u, v) => Math.hypot(u[0] - v[0], u[1] - v[1]);
 
-  let pen = null, drawing = false, started = false, inside = true;
-  let t0 = 0, mistakes = 0, trail = [], visited = new Set(), tries = [];
+  // dot: the green dot you drag around the star. It stays put when you let go.
+  let pen = null, dot = P[0].slice(), down = false, holding = false, needLift = false;  // needLift: after a finish, wait for a new press
+  let started = false, done = false, inside = true, mistakes = 0;
+  let clock = 0, heldSince = 0, trail = [], visited = new Set(), tries = [];
 
-  function segDist([a, b], [x, y]) {
-    const dx = b[0] - a[0], dy = b[1] - a[1];
-    let t = ((x - a[0]) * dx + (y - a[1]) * dy) / (dx * dx + dy * dy);
+  function segDist([u, v], [x, y]) {
+    const dx = v[0] - u[0], dy = v[1] - u[1];
+    let t = ((x - u[0]) * dx + (y - u[1]) * dy) / (dx * dx + dy * dy);
     t = Math.max(0, Math.min(1, t));
-    return Math.hypot(x - (a[0] + t * dx), y - (a[1] + t * dy));
+    return Math.hypot(x - (u[0] + t * dx), y - (u[1] + t * dy));
   }
-  function nearest(p) {
+  function nearest(q) {
     let best = 0, d = Infinity;
-    SEG.forEach((s, i) => { const e = segDist(s, p); if (e < d) { d = e; best = i; } });
+    SEG.forEach((sg, i) => { const e = segDist(sg, q); if (e < d) { d = e; best = i; } });
     return { i: best, d };
-  }
-  const pad = root.querySelector(".md-pad");
-  let down = false, justDone = false;  // justDone: don't restart until the finger lifts or leaves the circle
-  function usePad(on) {
-    root.classList.toggle("pad-on", on);
-    msg.textContent = on
-      ? "Touch the gray pad. Slide until the orange dot is on the green circle, then trace the star."
-      : "Put the orange pen dot on the green circle. Then press and hold, and trace the star all the way around.";
   }
   function map(e, el) {
     const r = el.getBoundingClientRect();
@@ -81,70 +76,97 @@
     if (mode.value === "lr") x = W - x;
     return [x, y];
   }
-  const atStart = (p, f = 1) => Math.hypot(p[0] - P[0][0], p[1] - P[0][1]) < START_R * f;
-  function begin(p) {
-    drawing = true; started = false; mistakes = 0; inside = true; visited = new Set(); trail = [p];
-    msg.textContent = "Go! Trace the star. Stay inside the blue path.";
-  }
+  const seconds = () => (clock + (holding && started ? performance.now() - heldSince : 0)) / 1000;
+
   function draw() {
     cx.clearRect(0, 0, W, H);
     cx.lineJoin = "round"; cx.lineCap = "round";
     cx.strokeStyle = "#d6eaf8"; cx.lineWidth = BAND;
-    cx.beginPath(); P.forEach((p, i) => (i ? cx.lineTo(...p) : cx.moveTo(...p))); cx.closePath(); cx.stroke();
+    cx.beginPath(); P.forEach((q, i) => (i ? cx.lineTo(...q) : cx.moveTo(...q))); cx.closePath(); cx.stroke();
     cx.strokeStyle = "#85c1e9"; cx.lineWidth = 1.5;
-    cx.beginPath(); P.forEach((p, i) => (i ? cx.lineTo(...p) : cx.moveTo(...p))); cx.closePath(); cx.stroke();
-    cx.fillStyle = "#1e8449"; cx.beginPath(); cx.arc(P[0][0], P[0][1], START_R, 0, 2 * Math.PI); cx.fill();
+    cx.beginPath(); P.forEach((q, i) => (i ? cx.lineTo(...q) : cx.moveTo(...q))); cx.closePath(); cx.stroke();
+    // the start and finish: a green ring
+    cx.strokeStyle = "#1e8449"; cx.lineWidth = 3;
+    cx.beginPath(); cx.arc(P[0][0], P[0][1], HOME_R + 4, 0, 2 * Math.PI); cx.stroke();
+    cx.fillStyle = "#1e8449"; cx.font = "bold 13px system-ui, sans-serif"; cx.textAlign = "center";
+    cx.fillText("start and finish", P[0][0], P[0][1] - HOME_R - 10);
+    // the trail
     cx.strokeStyle = "#2c3e50"; cx.lineWidth = 3; cx.beginPath();
-    trail.forEach((p, i) => (i && !p.lift ? cx.lineTo(p[0], p[1]) : cx.moveTo(p[0], p[1]))); cx.stroke();
-    if (pen) { cx.fillStyle = "#d35400"; cx.beginPath(); cx.arc(pen[0], pen[1], 7, 0, 2 * Math.PI); cx.fill(); }
+    trail.forEach((q, i) => (i && !q.lift ? cx.lineTo(q[0], q[1]) : cx.moveTo(q[0], q[1]))); cx.stroke();
+    // the green dot
+    cx.fillStyle = "#1e8449"; cx.beginPath(); cx.arc(dot[0], dot[1], DOT_R, 0, 2 * Math.PI); cx.fill();
+    if (holding) { cx.strokeStyle = "#145a32"; cx.lineWidth = 3; cx.beginPath(); cx.arc(dot[0], dot[1], DOT_R + 4, 0, 2 * Math.PI); cx.stroke(); }
+    // the pen: where your hand is (mirrored)
+    if (pen && !holding) { cx.fillStyle = "#d35400"; cx.beginPath(); cx.arc(pen[0], pen[1], 7, 0, 2 * Math.PI); cx.fill(); }
+  }
+
+  function newTry() {
+    dot = P[0].slice(); trail = []; visited = new Set(); mistakes = 0; inside = true;
+    started = false; done = false; clock = 0;
+  }
+  function grab() {
+    if (done) newTry();
+    holding = true; heldSince = performance.now();
+    trail.push(Object.assign(dot.slice(), { lift: true }));
+    msg.textContent = started ? "Keep going! Stay inside the blue path." : "Drag the green dot all the way around the star.";
+  }
+  function letGo(text) {
+    if (holding && started) clock += performance.now() - heldSince;
+    holding = false;
+    if (!done && started && text) msg.textContent = text;
   }
   function finish() {
-    drawing = false; started = false; justDone = true;
-    const secs = ((performance.now() - t0) / 1000).toFixed(1);
+    letGo(); done = true; needLift = true;
+    const secs = (clock / 1000).toFixed(1);
     tries.push([mode.options[mode.selectedIndex].text.replace("mirror: ", ""), secs, mistakes]);
     tbody.innerHTML = tries.map((t, i) => `<tr><td>${i + 1}</td><td>${t[0]}</td><td>${t[1]}</td><td>${t[2]}</td></tr>`).join("");
-    msg.textContent = `Done! ${secs} seconds, ${mistakes} mistakes. Go back to the green circle to try again.`;
+    msg.textContent = `Done! ${secs} seconds, ${mistakes} mistakes. Grab the green dot to try again.`;
   }
+
   function move(e, el) {
     pen = map(e, el);
-    if (justDone && !atStart(pen, 1.4)) justDone = false;
-    if (down && !drawing && !justDone && atStart(pen, 1.4)) begin(pen);
-    if (drawing) {
-      const n = nearest(pen);
-      const now = n.d <= BAND / 2;
+    if (down && !holding && !needLift && dist(pen, dot) < GRAB) grab();
+    if (holding) {
+      dot = pen.slice();
+      const n = nearest(dot), now = n.d <= BAND / 2;
       if (!now && inside) { mistakes++; msg.textContent = `Mistakes: ${mistakes}. Get back on the path!`; }
+      else if (now && !inside) msg.textContent = "Good. Keep going!";
       inside = now;
       if (now) visited.add(n.i);
-      trail.push(pen);
-      if (!started && !atStart(pen)) { started = true; t0 = performance.now(); }
-      if (started && atStart(pen) && visited.size === 10) finish();
+      trail.push(dot.slice());
+      const home = dist(dot, P[0]) < HOME_R;
+      if (!started && !home) { started = true; heldSince = performance.now(); }
+      if (started && home && visited.size === 10) finish();
     }
     draw();
   }
   function press(e, el) {
     if (el === cv && e.pointerType === "touch") {
-      // a finger on the star hides it: use the pad instead
       usePad(true);
       msg.textContent = "Use the gray pad under the star, so your finger doesn't hide it.";
       return;
     }
     e.preventDefault();
-    try { el.setPointerCapture(e.pointerId); } catch (_) { /* some browsers refuse; drawing still works */ }
-    down = true; justDone = false;
+    try { el.setPointerCapture(e.pointerId); } catch (_) { /* drawing still works */ }
+    down = true; needLift = false;
     pen = map(e, el);
-    if (atStart(pen, 1.4)) begin(pen);
-    else if (!drawing) msg.textContent = el === pad
-      ? "Slide your finger until the orange dot is on the green circle."
-      : "Start on the green circle. Move the orange dot there first.";
+    if (dist(pen, dot) < GRAB) grab();
+    else msg.textContent = el === pad
+      ? "Slide your finger until the orange pen touches the green dot."
+      : "Move the orange pen onto the green dot first.";
     draw();
   }
   function release(el) {
     down = false;
-    if (drawing) {
-      if (started) msg.textContent = "You let go! Go back to the green circle and start again.";
-      drawing = false; started = false;
-    }
-    if (el === pad) { pen = null; draw(); }
+    letGo("You let go. That's OK! Grab the green dot again and keep going. The clock waits for you.");
+    if (el === pad) pen = null;
+    draw();
+  }
+  function usePad(on) {
+    root.classList.toggle("pad-on", on);
+    msg.textContent = on
+      ? "Touch the gray pad. Slide until the orange pen touches the green dot, then drag the dot around the star."
+      : "Move the orange pen onto the green dot. Press and hold to grab it, then drag it around the star.";
   }
   [cv, pad].forEach((el) => {
     el.addEventListener("pointermove", (e) => move(e, el));
@@ -153,8 +175,8 @@
     el.addEventListener("pointercancel", () => release(el));
   });
   cv.addEventListener("pointerleave", () => { if (!down) { pen = null; draw(); } });
-  mode.addEventListener("change", () => { drawing = false; trail = []; draw(); msg.textContent = "New pen! Start on the green circle."; });
-  root.querySelector(".md-reset").addEventListener("click", () => { tries = []; tbody.innerHTML = ""; trail = []; draw(); });
+  mode.addEventListener("change", () => { holding = false; newTry(); draw(); msg.textContent = "New pen! Grab the green dot to start."; });
+  root.querySelector(".md-reset").addEventListener("click", () => { tries = []; tbody.innerHTML = ""; holding = false; newTry(); draw(); });
   usePad(window.matchMedia ? matchMedia("(any-pointer: coarse)").matches : false);
   draw();
 })();
