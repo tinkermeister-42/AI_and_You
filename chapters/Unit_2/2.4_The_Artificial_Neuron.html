@@ -643,11 +643,11 @@ window.Quarto = {
 <div class="vocab">
 <div class="word-cards">
 <ul>
-<li><span class="icon">📥</span> <a href="../../glossary.html#glossary-input" class="glossary-link" data-original-href="#glossary-input" data-term="input" data-slug="input">input</a>: a number that goes into a neuron</li>
-<li><span class="icon">⚖️</span> <a href="../../glossary.html#glossary-weight" class="glossary-link" data-original-href="#glossary-weight" data-term="weight" data-slug="weight">weight</a>: a number that says how much an input matters</li>
-<li><span class="icon">🚦</span> <a href="../../glossary.html#glossary-threshold" class="glossary-link" data-original-href="#glossary-threshold" data-term="threshold" data-slug="threshold">threshold</a>: the number the total must be more than for the neuron to fire</li>
-<li><span class="icon">🔵</span> <a href="../../glossary.html#glossary-perceptron" class="glossary-link" data-original-href="#glossary-perceptron" data-term="perceptron" data-slug="perceptron">perceptron</a>: the first artificial neuron that could learn (1958)</li>
-<li><span class="icon">🧱</span> <a href="../../glossary.html#glossary-layer" class="glossary-link" data-original-href="#glossary-layer" data-term="layer" data-slug="layer">layer</a>: a row of neurons in a neural network. Each layer sends its answers to the next one</li>
+<li><span class="icon">📥</span> <a href="../../glossary.html#glossary-input" class="glossary-link" data-slug="input" data-original-href="#glossary-input" data-term="input">input</a>: a number that goes into a neuron</li>
+<li><span class="icon">⚖️</span> <a href="../../glossary.html#glossary-weight" class="glossary-link" data-slug="weight" data-original-href="#glossary-weight" data-term="weight">weight</a>: a number that says how much an input matters</li>
+<li><span class="icon">🚦</span> <a href="../../glossary.html#glossary-threshold" class="glossary-link" data-slug="threshold" data-original-href="#glossary-threshold" data-term="threshold">threshold</a>: the number the total must be more than for the neuron to fire</li>
+<li><span class="icon">🔵</span> <a href="../../glossary.html#glossary-perceptron" class="glossary-link" data-slug="perceptron" data-original-href="#glossary-perceptron" data-term="perceptron">perceptron</a>: the first artificial neuron that could learn (1958)</li>
+<li><span class="icon">🧱</span> <a href="../../glossary.html#glossary-layer" class="glossary-link" data-slug="layer" data-original-href="#glossary-layer" data-term="layer">layer</a>: a row of neurons in a neural network. Each layer sends its answers to the next one</li>
 </ul>
 </div>
 </div>
@@ -698,9 +698,9 @@ window.Quarto = {
 </figure>
 </div>
 <ol type="1">
-<li><strong>Multiply</strong> each <a href="../../glossary.html#glossary-input" class="glossary-link" data-original-href="#glossary-input" data-term="input" data-slug="input">input</a> by its <a href="../../glossary.html#glossary-weight" class="glossary-link" data-original-href="#glossary-weight" data-term="weight" data-slug="weight">weight</a>.</li>
+<li><strong>Multiply</strong> each <a href="../../glossary.html#glossary-input" class="glossary-link" data-slug="input" data-original-href="#glossary-input" data-term="input">input</a> by its <a href="../../glossary.html#glossary-weight" class="glossary-link" data-slug="weight" data-original-href="#glossary-weight" data-term="weight">weight</a>.</li>
 <li><strong>Add</strong> them up.</li>
-<li><strong>Compare</strong> the total with the <a href="../../glossary.html#glossary-threshold" class="glossary-link" data-original-href="#glossary-threshold" data-term="threshold" data-slug="threshold">threshold</a>. If the total is <strong>more than</strong> the threshold, the neuron fires: <strong>Fighter</strong>. If not: <strong>Wizard</strong>.</li>
+<li><strong>Compare</strong> the total with the <a href="../../glossary.html#glossary-threshold" class="glossary-link" data-slug="threshold" data-original-href="#glossary-threshold" data-term="threshold">threshold</a>. If the total is <strong>more than</strong> the threshold, the neuron fires: <strong>Fighter</strong>. If not: <strong>Wizard</strong>.</li>
 </ol>
 <p><span class="math display">\[\text{total} = (\text{Strength} \times \text{Strength weight}) + (\text{Magic} \times \text{Magic weight})\]</span></p>
 <p>A weight can be <strong>negative</strong>. Here the Magic weight is <span class="math inline">\(-1\)</span>. It says: <em>more Magic makes me LESS likely to say Fighter.</em></p>
@@ -740,7 +740,7 @@ window.Quarto = {
 </section>
 <section id="from-one-neuron-to-a-network" class="level3">
 <h3 class="anchored" data-anchor-id="from-one-neuron-to-a-network">2.4.2 - From One Neuron to a Network</h3>
-<p>One neuron makes one small decision. A <a href="../../glossary.html#glossary-neural-network" class="glossary-link" data-original-href="#glossary-neural-network" data-term="neural network" data-slug="neural-network">neural network</a> connects many neurons. They’re arranged in rows called <a href="../../glossary.html#glossary-layer" class="glossary-link" data-original-href="#glossary-layer" data-term="layers" data-slug="layer">layers</a>.</p>
+<p>One neuron makes one small decision. A <a href="../../glossary.html#glossary-neural-network" class="glossary-link" data-slug="neural-network" data-original-href="#glossary-neural-network" data-term="neural network">neural network</a> connects many neurons. They’re arranged in rows called <a href="../../glossary.html#glossary-layer" class="glossary-link" data-slug="layer" data-original-href="#glossary-layer" data-term="layers">layers</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../images/Unit_2/2.4_network.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A small neural network. On the left, two inputs: Strength 4 and Magic 2. In the middle, a column of three neurons. On the right, two neurons: Fighter and Wizard. Lines connect every input to every middle neuron, and every middle neuron to both right neurons. The top middle neuron's two lines are highlighted with weights times 1 and times minus 1. It's labeled: one neuron, like the one above: multiply, add, compare. A note says each line is a weight. Labels under the columns: input layer, the numbers go in. Hidden layer, its answers go to the next layer. Output layer, one neuron for each answer." width="720"></p>

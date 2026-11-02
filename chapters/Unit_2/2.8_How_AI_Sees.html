@@ -637,10 +637,10 @@ window.Quarto = {
 <div class="vocab">
 <div class="word-cards">
 <ul>
-<li><span class="icon">🟦</span> <a href="../../glossary.html#glossary-pixel" class="glossary-link" data-term="pixel" data-slug="pixel" data-original-href="#glossary-pixel">pixel</a>: one tiny square of a picture. It’s stored as a number.</li>
-<li><span class="icon">🔍</span> <a href="../../glossary.html#glossary-filter" class="glossary-link" data-term="filter" data-slug="filter" data-original-href="#glossary-filter">filter</a>: a small grid of weights that slides over a picture to find something, like edges</li>
-<li><span class="icon">📐</span> <a href="../../glossary.html#glossary-edge" class="glossary-link" data-term="edge" data-slug="edge" data-original-href="#glossary-edge">edge</a>: a place where a picture changes fast from dark to light</li>
-<li><span class="icon">👁️</span> <a href="../../glossary.html#glossary-computer-vision" class="glossary-link" data-term="computer vision" data-slug="computer-vision" data-original-href="#glossary-computer-vision">computer vision</a>: AI that finds things in pictures and video</li>
+<li><span class="icon">🟦</span> <a href="../../glossary.html#glossary-pixel" class="glossary-link" data-original-href="#glossary-pixel" data-slug="pixel" data-term="pixel">pixel</a>: one tiny square of a picture. It’s stored as a number.</li>
+<li><span class="icon">🔍</span> <a href="../../glossary.html#glossary-filter" class="glossary-link" data-original-href="#glossary-filter" data-slug="filter" data-term="filter">filter</a>: a small grid of weights that slides over a picture to find something, like edges</li>
+<li><span class="icon">📐</span> <a href="../../glossary.html#glossary-edge" class="glossary-link" data-original-href="#glossary-edge" data-slug="edge" data-term="edge">edge</a>: a place where a picture changes fast from dark to light</li>
+<li><span class="icon">👁️</span> <a href="../../glossary.html#glossary-computer-vision" class="glossary-link" data-original-href="#glossary-computer-vision" data-slug="computer-vision" data-term="computer vision">computer vision</a>: AI that finds things in pictures and video</li>
 </ul>
 </div>
 </div>
@@ -659,7 +659,7 @@ window.Quarto = {
 <h2 class="unnumbered anchored" data-anchor-id="learn">👥 Learn Together</h2>
 <section id="pixels-are-numbers" class="level3">
 <h3 class="anchored" data-anchor-id="pixels-are-numbers">2.8.1 - Pixels Are Numbers</h3>
-<p>Zoom in on any photo and you see tiny squares. Each square is a <a href="../../glossary.html#glossary-pixel" class="glossary-link" data-term="pixel" data-slug="pixel" data-original-href="#glossary-pixel">pixel</a>.</p>
+<p>Zoom in on any photo and you see tiny squares. Each square is a <a href="../../glossary.html#glossary-pixel" class="glossary-link" data-original-href="#glossary-pixel" data-slug="pixel" data-term="pixel">pixel</a>.</p>
 <ul>
 <li>In a black-and-white picture, each pixel is one number: <strong>0</strong> is black, <strong>255</strong> is white, and the numbers between are grays.</li>
 <li>In a color picture, each pixel is <strong>three</strong> numbers: how much red, green, and blue.</li>
@@ -669,8 +669,8 @@ window.Quarto = {
 </section>
 <section id="a-filter-is-a-neuron" class="level3">
 <h3 class="anchored" data-anchor-id="a-filter-is-a-neuron">2.8.2 - A Filter Is a Neuron</h3>
-<p>Where does a picture change fast from dark to light? That’s an <a href="../../glossary.html#glossary-edge" class="glossary-link" data-term="edge" data-slug="edge" data-original-href="#glossary-edge">edge</a>. Edges show where things begin and end.</p>
-<p>To find edges, a vision network uses a <a href="../../glossary.html#glossary-filter" class="glossary-link" data-term="filter" data-slug="filter" data-original-href="#glossary-filter">filter</a>. A filter is a <strong>neuron</strong> with 9 inputs: a 3 by 3 patch of the picture. Its 9 weights are the filter’s numbers.</p>
+<p>Where does a picture change fast from dark to light? That’s an <a href="../../glossary.html#glossary-edge" class="glossary-link" data-original-href="#glossary-edge" data-slug="edge" data-term="edge">edge</a>. Edges show where things begin and end.</p>
+<p>To find edges, a vision network uses a <a href="../../glossary.html#glossary-filter" class="glossary-link" data-original-href="#glossary-filter" data-slug="filter" data-term="filter">filter</a>. A filter is a <strong>neuron</strong> with 9 inputs: a 3 by 3 patch of the picture. Its 9 weights are the filter’s numbers.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../images/Unit_2/2.8_filter_neuron.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A 3 by 3 patch of a picture: the left two columns are dark, 0, and the right column is light, 255. It's multiplied by 9 weights: minus 1, 0, plus 1 in each row. The neuron adds up 255 plus 255 plus 255 equals 765. Big? Yes, it fires: an edge. The same neuron at every spot makes a map of the edges: a small grid with a bright stripe down the middle." width="760"></p>

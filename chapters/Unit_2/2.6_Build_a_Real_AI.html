@@ -637,10 +637,10 @@ window.Quarto = {
 <div class="vocab">
 <div class="word-cards">
 <ul>
-<li><span class="icon">🏋️</span> <a href="../../glossary.html#glossary-training" class="glossary-link" data-original-href="#glossary-training" data-term="training" data-slug="training">training</a>: showing an AI many examples so it can fix its weights</li>
-<li><span class="icon">🧪</span> <a href="../../glossary.html#glossary-test-data" class="glossary-link" data-original-href="#glossary-test-data" data-term="test data" data-slug="test-data">test data</a>: new examples the AI never trained on, used to check what it learned</li>
-<li><span class="icon">📝</span> <a href="../../glossary.html#glossary-overfitting" class="glossary-link" data-original-href="#glossary-overfitting" data-term="overfitting" data-slug="overfitting">overfitting</a>: when an AI memorizes its training examples instead of learning the real pattern</li>
-<li><span class="icon">🖼️</span> <a href="../../glossary.html#glossary-dataset" class="glossary-link" data-original-href="#glossary-dataset" data-term="dataset" data-slug="dataset">dataset</a>: a big collection of examples</li>
+<li><span class="icon">🏋️</span> <a href="../../glossary.html#glossary-training" class="glossary-link" data-term="training" data-original-href="#glossary-training" data-slug="training">training</a>: showing an AI many examples so it can fix its weights</li>
+<li><span class="icon">🧪</span> <a href="../../glossary.html#glossary-test-data" class="glossary-link" data-term="test data" data-original-href="#glossary-test-data" data-slug="test-data">test data</a>: new examples the AI never trained on, used to check what it learned</li>
+<li><span class="icon">📝</span> <a href="../../glossary.html#glossary-overfitting" class="glossary-link" data-term="overfitting" data-original-href="#glossary-overfitting" data-slug="overfitting">overfitting</a>: when an AI memorizes its training examples instead of learning the real pattern</li>
+<li><span class="icon">🖼️</span> <a href="../../glossary.html#glossary-dataset" class="glossary-link" data-term="dataset" data-original-href="#glossary-dataset" data-slug="dataset">dataset</a>: a big collection of examples</li>
 </ul>
 </div>
 </div>
@@ -666,11 +666,11 @@ window.Quarto = {
 </figure>
 </div>
 <ol type="1">
-<li><strong>Get data.</strong> The <a href="../../glossary.html#glossary-dataset" class="glossary-link" data-original-href="#glossary-dataset" data-term="dataset" data-slug="dataset">dataset</a> has <strong>300 creatures</strong>, the same made-up creatures from the cards. Each one has 6 numbers: Strength, Magic, Speed, Toughness, Height, and Weight. Each one also has a type and a home.</li>
+<li><strong>Get data.</strong> The <a href="../../glossary.html#glossary-dataset" class="glossary-link" data-term="dataset" data-original-href="#glossary-dataset" data-slug="dataset">dataset</a> has <strong>300 creatures</strong>, the same made-up creatures from the cards. Each one has 6 numbers: Strength, Magic, Speed, Toughness, Height, and Weight. Each one also has a type and a home.</li>
 <li><strong>Ask a question.</strong> For example: <em>Is it a Fighter or a Wizard?</em></li>
-<li><strong>Split the data.</strong> Most creatures go into the <strong>training data</strong>. The rest go into the <a href="../../glossary.html#glossary-test-data" class="glossary-link" data-original-href="#glossary-test-data" data-term="test data" data-slug="test-data">test data</a>. The network never trains on the test data.</li>
+<li><strong>Split the data.</strong> Most creatures go into the <strong>training data</strong>. The rest go into the <a href="../../glossary.html#glossary-test-data" class="glossary-link" data-term="test data" data-original-href="#glossary-test-data" data-slug="test-data">test data</a>. The network never trains on the test data.</li>
 <li><strong>Build the network.</strong> Choose how many neurons go in its hidden layer.</li>
-<li><strong>Train.</strong> Each <strong>pass</strong>, the network looks at every training creature. Then it changes every weight a little, to make fewer mistakes. This is <a href="../../glossary.html#glossary-backpropagation" class="glossary-link" data-original-href="#glossary-backpropagation" data-term="backpropagation" data-slug="backpropagation">backpropagation</a>, the computer’s way to play Who’s to Blame (Lesson 2.5).</li>
+<li><strong>Train.</strong> Each <strong>pass</strong>, the network looks at every training creature. Then it changes every weight a little, to make fewer mistakes. This is <a href="../../glossary.html#glossary-backpropagation" class="glossary-link" data-term="backpropagation" data-original-href="#glossary-backpropagation" data-slug="backpropagation">backpropagation</a>, the computer’s way to play Who’s to Blame (Lesson 2.5).</li>
 <li><strong>Test, then use it.</strong> Check it on the test creatures. Then ask it about any creature.</li>
 </ol>
 <div class="remember" title="Why keep the test data apart?">
@@ -1062,7 +1062,7 @@ window.Quarto = {
 </div>
 <div class="think" title="Run 3 used MORE numbers. Why was it worse?">
 <p>The training score went up to <strong>100%</strong>, but the test score went down, to about <strong>80%</strong>.</p>
-<p>In the recipe for these creatures, Fighters and Wizards have the <strong>same</strong> Speed, Toughness, Height, and Weight. Those numbers are noise. The network found “patterns” in the training data that weren’t real. This is called <a href="../../glossary.html#glossary-overfitting" class="glossary-link" data-original-href="#glossary-overfitting" data-term="overfitting" data-slug="overfitting">overfitting</a>: learning the training examples by heart instead of the real pattern. Look for the gap between the blue line (training) and the orange line (test).</p>
+<p>In the recipe for these creatures, Fighters and Wizards have the <strong>same</strong> Speed, Toughness, Height, and Weight. Those numbers are noise. The network found “patterns” in the training data that weren’t real. This is called <a href="../../glossary.html#glossary-overfitting" class="glossary-link" data-term="overfitting" data-original-href="#glossary-overfitting" data-slug="overfitting">overfitting</a>: learning the training examples by heart instead of the real pattern. Look for the gap between the blue line (training) and the orange line (test).</p>
 </div>
 <div class="think" title="Run 4: why couldn't it learn where a creature lives?">
 <p>The training score climbed, but the test score stayed at about <strong>35%</strong>, the same as guessing. In the recipe, each creature’s home was picked <strong>at random</strong>. Nothing in the 6 numbers says where it lives. The network only memorized the training creatures.</p>
