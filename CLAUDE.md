@@ -26,7 +26,9 @@ many with little math background. The six units and every lesson are in
   is for students working on their own. Each lesson that has one ends with an
   `.explore-link` div pointing there. Never cut an acted-out experiment or a
   teacher favorite (Klingon Room, human network, live build, Rule 30) from a
-  core to make room
+  core to make room. (2.1 is the teacher's own exception: its core makes a
+  few Rule 30 rows by hand, then explores the rules on screen; acting out
+  Rule 30 as a class is its Day 2)
 - The teacher thinks 38 is already plenty. Do not add lessons to the map
   without asking
 - Students miss days, so every lesson stands alone and the page is the

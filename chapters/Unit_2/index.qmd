@@ -23,7 +23,7 @@ By the end of this unit, you'll be able to:
 ## Topics in This Unit
 
 [**Simple Rules, Complex Behavior**](2.1_Simple_Rules_Complex_Behavior.qmd)\
-Make a human wave and a human Rule 30. See how tiny rules make chaos, and watch the Game of Life.
+Watch a wave nobody leads. Make a few rows of Rule 30, explore the other rules, and watch the Game of Life.
 
 [**Your Brain Is Made of Cells**](2.2_Your_Brain_Is_Made_of_Cells.qmd)\
 Catch a falling ruler, pass a squeeze around the room, and learn how a neuron sends a signal.

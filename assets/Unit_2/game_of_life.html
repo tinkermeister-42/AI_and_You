@@ -1,0 +1,110 @@
+```{=html}
+<!-- game_of_life.html: Lesson 2.1. Conway's Game of Life: click cells, or add
+     a shape, then press Run. -->
+<div class="gl" id="gl">
+    <p class="gl-life-rules">
+      <b>The rules.</b> Every cell looks at its 8 neighbors.
+      ⬛ A black cell with <b>2 or 3</b> black neighbors stays black. Otherwise it dies (turns white).
+      ⬜ A white cell with <b>exactly 3</b> black neighbors is born (turns black).
+    </p>
+    <div class="gl-bar">
+      <button type="button" class="gl-btn gl-run">▶ Run</button>
+      <button type="button" class="gl-btn gl-plain gl-step">Step</button>
+      <button type="button" class="gl-btn gl-plain gl-clear">Clear</button>
+      <span class="gl-presets">Add:
+        <button type="button" data-shape="glider">glider</button>
+        <button type="button" data-shape="blinker">blinker</button>
+        <button type="button" data-shape="rpent">R-pentomino</button>
+        <button type="button" data-shape="random">random</button>
+      </span>
+      <span class="gl-gen">Step 0</span>
+    </div>
+    <canvas class="gl-life" width="800" height="440"></canvas>
+    <p class="gl-hint">Click a square to make it black or white.</p>
+</div>
+
+<style>
+.gl { border: 1px solid #d9e1e8; border-radius: 10px; padding: 0.8rem; margin: 0.75rem 0 1.25rem; background: #fbfcfd; }
+.gl-bar { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; margin: 0.4rem 0; }
+.gl-rule { width: 4.5em; font-size: 1rem; padding: 0.15rem 0.3rem; }
+.gl-presets button { border: 1px solid #b8c4cf; background: #fff; border-radius: 6px; padding: 0.1rem 0.5rem; cursor: pointer; margin-left: 0.15rem; }
+.gl-btn { border: 1px solid #2c3e50; background: #2c3e50; color: #fff; border-radius: 6px; padding: 0.3rem 0.8rem; font-weight: 600; cursor: pointer; }
+.gl-btn.gl-plain { background: #fff; color: #2c3e50; }
+.gl-card { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.5rem 0; }
+.gl-pat { display: flex; flex-direction: column; align-items: center; gap: 0.2rem; }
+.gl-three { display: flex; }
+.gl-three span, .gl-out { width: 18px; height: 18px; border: 1px solid #2c3e50; display: inline-block; }
+.gl-three span.on { background: #2c3e50; }
+.gl-out { cursor: pointer; border-width: 2px; }
+.gl-out.on { background: #2c3e50; }
+.gl-arrow { font-size: 0.8rem; line-height: 1; color: #555; }
+.gl-canvas, .gl-life { width: 100%; height: auto; border: 1px solid #e3e8ed; background: #fff; image-rendering: pixelated; display: block; }
+.gl-life { cursor: pointer; }
+.gl-life-rules { margin: 0 0 0.4rem; line-height: 1.5; }
+.gl-gen { font-weight: 600; color: #555; }
+.gl-hint { font-size: 0.85rem; color: #555; margin: 0.3rem 0 0; }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("gl");
+  if (!root) return;
+
+  // ---------- the Game of Life ----------
+  const lv = root.querySelector(".gl-life");
+  const lx = lv.getContext("2d");
+  const CW = 50, CH = 28, LC = 16;
+  lv.width = CW * LC; lv.height = CH * LC;
+  let g = Array.from({ length: CH }, () => new Array(CW).fill(0));
+  let gen = 0, timer = null;
+  const genEl = root.querySelector(".gl-gen");
+  const runBtn = root.querySelector(".gl-run");
+
+  function drawLife() {
+    lx.fillStyle = "#fff"; lx.fillRect(0, 0, lv.width, lv.height);
+    lx.strokeStyle = "#e6ebef"; lx.lineWidth = 1;
+    for (let x = 0; x <= CW; x++) { lx.beginPath(); lx.moveTo(x * LC + 0.5, 0); lx.lineTo(x * LC + 0.5, lv.height); lx.stroke(); }
+    for (let y = 0; y <= CH; y++) { lx.beginPath(); lx.moveTo(0, y * LC + 0.5); lx.lineTo(lv.width, y * LC + 0.5); lx.stroke(); }
+    lx.fillStyle = "#2c3e50";
+    g.forEach((row, y) => row.forEach((v, x) => { if (v) lx.fillRect(x * LC + 1, y * LC + 1, LC - 1, LC - 1); }));
+    genEl.textContent = "Step " + gen;
+  }
+  function step() {
+    const n = g.map((row, y) => row.map((v, x) => {
+      let c = 0;
+      for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
+        if (!dx && !dy) continue;
+        const yy = (y + dy + CH) % CH, xx = (x + dx + CW) % CW;
+        c += g[yy][xx];
+      }
+      return v ? (c === 2 || c === 3 ? 1 : 0) : (c === 3 ? 1 : 0);
+    }));
+    g = n; gen++; drawLife();
+  }
+  function stop() { if (timer) { clearInterval(timer); timer = null; runBtn.textContent = "▶ Run"; } }
+  runBtn.addEventListener("click", () => {
+    if (timer) stop(); else { timer = setInterval(step, 140); runBtn.textContent = "⏸ Stop"; }
+  });
+  root.querySelector(".gl-step").addEventListener("click", () => { stop(); step(); });
+  root.querySelector(".gl-clear").addEventListener("click", () => { stop(); g = g.map((r) => r.map(() => 0)); gen = 0; drawLife(); });
+  const SHAPES = {
+    glider: [[0, 1], [1, 2], [2, 0], [2, 1], [2, 2]],
+    blinker: [[0, 0], [0, 1], [0, 2]],
+    rpent: [[0, 1], [0, 2], [1, 0], [1, 1], [2, 1]],
+  };
+  root.querySelectorAll("[data-shape]").forEach((b) => b.addEventListener("click", () => {
+    if (b.dataset.shape === "random") { g = g.map((r) => r.map(() => (Math.random() < 0.25 ? 1 : 0))); gen = 0; drawLife(); return; }
+    const ox = 4 + Math.floor(Math.random() * (CW - 12)), oy = 3 + Math.floor(Math.random() * (CH - 9));
+    SHAPES[b.dataset.shape].forEach(([y, x]) => (g[oy + y][ox + x] = 1));
+    drawLife();
+  }));
+  lv.addEventListener("click", (e) => {
+    const r = lv.getBoundingClientRect();
+    const x = Math.floor(((e.clientX - r.left) / r.width) * CW);
+    const y = Math.floor(((e.clientY - r.top) / r.height) * CH);
+    if (x >= 0 && x < CW && y >= 0 && y < CH) { g[y][x] ^= 1; drawLife(); }
+  });
+  drawLife();
+})();
+</script>
+```

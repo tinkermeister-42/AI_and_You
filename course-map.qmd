@@ -21,7 +21,7 @@ Most lessons also have a **🚀 Go Further** part. It can fill a second day, or 
 
 | | Lesson | What you do |
 |---|---|---|
-| 2.1 | [Simple Rules, Complex Behavior](chapters/Unit_2/2.1_Simple_Rules_Complex_Behavior.qmd) | Be a cell in a human Rule 30. Then watch the Game of Life on the projector. |
+| 2.1 | [Simple Rules, Complex Behavior](chapters/Unit_2/2.1_Simple_Rules_Complex_Behavior.qmd) | Make a few rows of Rule 30 by hand, then explore hundreds of rules on screen and sort what they make. Watch the Game of Life. |
 | 2.2 | [Your Brain Is Made of Cells](chapters/Unit_2/2.2_Your_Brain_Is_Made_of_Cells.qmd) | Measure your reaction time with a falling ruler. Send a signal around the room. |
 | 2.3 | [How Brains Learn](chapters/Unit_2/2.3_How_Brains_Learn.qmd) | Practice a hard task (writing with your other hand). Graph how you get better. Meet Pavlov's dogs. |
 | 2.4 | [The Artificial Neuron](chapters/Unit_2/2.4_The_Artificial_Neuron.qmd) | One neuron sorts made-up creatures into Fighters and Wizards. The class fixes its weights by hand, then sees how neurons connect in layers. |
