@@ -6,12 +6,12 @@ In March 2023, a photo of Pope Francis went around the world. He was wearing a h
 
 It wasn't a photo. A man in Chicago made it with an AI image generator, as a joke. He didn't expect so many people to believe it.
 
-Today you test your eyes against AI faces. Then you learn something surprising: looking for clues stops working. You need a better way to check.
+Today you test your eyes against AI pictures. Then you learn something surprising: looking for clues stops working. You need a better way to check.
 
 :::{.agenda}
 **Today's Plan** (40 minutes)
 
-- [🔥]{.icon} **Warm Up** Which face is real? [7 min]{.time}
+- [🔥]{.icon} **Warm Up** Which picture is AI? [7 min]{.time}
 - [👥]{.icon} **Learn Together** Why the clues stop working [10 min]{.time}
 - [🛠️]{.icon} **Try It** Trace it back [17 min]{.time}
 - [💬]{.icon} **Talk About It** What happens to trust? [6 min]{.time}
@@ -38,16 +38,26 @@ Today you test your eyes against AI faces. Then you learn something surprising: 
 
 :::{.teacher title="Before class"}
 Choose 2 pictures that spread online recently for Trace It Back. Reverse image search (TinEye, Google Lens) is blocked for students: run it from your account on the projector, or have a fact-check article ready for each picture.
+
+For the Warm Up, check that sightengine.com loads on a student Chromebook. Its pictures come from s3.eu-west-1.amazonaws.com. If either is blocked, play it on the projector and let the class vote on each round.
 :::
 
 {{< warmup >}}
 
-Work with a partner. Open [Which Face Is Real?](https://www.whichfaceisreal.com/){target="_blank"} Each round shows two faces. One is a real photo. One was made by AI. Click the one you think is **real**.
+Can you spot a picture made by AI? Before you start, **guess** your score. Write your guess on your sheet.
 
-Play 10 rounds. Write your score on your sheet. Then the class adds up all the scores. Did we do better than guessing?
+Work with a partner. Open [Which Image Is AI?](https://sightengine.com/which-image-is-ai){target="_blank"} Each round shows two pictures. One is a real photo. One was made by AI. Click the one you think is **AI**. Then press **Next**.
+
+Keep going. When you see **End & see stats**, press it. Write your score on your sheet. Then the class finds its average score. Were you as good as you guessed?
+
+:::{.gotcha title="No account needed"}
+The site keeps your answers, with no name, to compare you with other players. Don't sign up, and don't share your score.
+:::
 
 :::{.think title="How did we do?"}
-If you guessed with a coin, you would get about 5 of 10 right. In a 2022 study, people picked the real face only **48%** of the time: the same as guessing. These faces were made in 2019. Newer AI faces are harder.
+If you guessed with a coin, you'd get about **50%** right. Look at your end screen. How did you do, compared with other people?
+
+In a 2026 study, scientists in Australia tested people on real faces and AI faces. Most people were sure they could spot the AI faces. But they did only a little better than guessing. Even people with an amazing memory for faces did only a little better. Feeling sure isn't the same as being right.
 :::
 
 {{< learn >}}
@@ -114,7 +124,7 @@ Never make or share a fake picture, video, or voice of a real person, even as a 
 If anyone can make a fake video of anyone, what happens to trust? A politician caught on a real video could just say, "That is AI." How do we know what is real?
 
 :::{.frames}
-- I scored ... of 10 on the faces game. It was (easy / hard) because ...
+- On the AI picture test, I guessed ...% and got ...%. It was (easy / hard) because ...
 - Looking for clues stops working because ...
 - Before I share a picture, I will ...
 - When anyone can make fakes, people might ...

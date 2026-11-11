@@ -78,6 +78,15 @@ Scientists Sophie Nightingale and Hany Farid showed people real faces and AI fac
 - People rated the AI faces as a little **more trustworthy** than the real ones.
 :::
 
+:::{.real-world title="Can people tell? (2026)"}
+Scientists in Australia tested 125 people. 36 of them were **super-recognizers**: people with an amazing memory for faces.
+
+- The scientists took out every AI face with an easy clue, like strange teeth or ears.
+- Most people did only a little better than guessing. Super-recognizers did only a little better than that.
+- People felt sure they could spot the AI faces, even when they couldn't.
+- The best AI faces gave themselves away by being **too perfect**: very average, with both sides almost the same. That clue may not last either.
+:::
+
 ### Labels That Show Where a Picture Came From
 
 :::{.note title="Right now (fall 2026)"}
