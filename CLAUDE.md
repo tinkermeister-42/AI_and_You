@@ -179,6 +179,10 @@ The teacher wants kids' hands on real things in every lesson.
   name, a law, a number of users) goes in a `.note` titled "Right now (fall
   2026)" so it is easy to find and update. History before 2026 does not need
   one
+- **Point to live numbers, don't copy them.** When a maintained tool shows
+  its own results (a score, a pass rate, a leaderboard), the page says where
+  to look ("look at your end screen") instead of quoting a figure. A study's
+  finding is different: quote it, with its year, in the "Right now" box
 - **Course map and unit intro change with the lesson.** Writing a lesson
   means linking it in `course-map.qmd`, adding it under "Topics in This
   Unit" in its unit `index.qmd`, and adding it to `_quarto.yml`
